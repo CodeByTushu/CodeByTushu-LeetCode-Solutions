@@ -1,0 +1,24 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build / Compiled artifacts
+*.class
+*.exe
+*.o
+*.obj
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary & debug files
+*.log
+.tmp/
+scratch/

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeByTushu — Daily LeetCode Solutions Hub | Java • Python • C++ • JavaScript</title>
+    <meta name="description" content="Daily LeetCode Solutions by CodeByTushu across Java, Python, C++, and JavaScript. Practice. Learn. Solve. Grow.">
+    <meta name="keywords" content="LeetCode, DSA, CodeByTushu, Data Structures, Algorithms, Java, Python, C++, JavaScript, Daily LeetCode Solutions">
+    <meta name="author" content="CodeByTushu (Tushpendra Kumar)">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="CodeByTushu — Daily LeetCode Solutions Hub">
+    <meta property="og:description" content="Practice. Learn. Solve. Grow with CodeByTushu. Daily LeetCode solutions in Java, Python, C++, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Ambient Glow & Grid -->
+    <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow ambient-glow-bottom" aria-hidden="true"></div>
+    <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo-link" aria-label="CodeByTushu Home">
+                <img src="assets/logo.png" alt="CodeByTushu Logo" class="brand-logo-img" id="navLogo" onerror="this.style.display='none'">
+                <div class="brand-text-group">
+                    <span class="brand-name">CodeBy<span class="gold-text">Tushu</span></span>
+                    <span class="brand-badge">LeetCode Hub</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#languages" class="nav-link">Languages</a>
+                <a href="#workflow" class="nav-link">Workflow</a>
+                <a href="https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions" target="_blank" rel="noopener noreferrer" class="nav-link github-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub Repo</span>
+                </a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="mainContent">
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>Daily Algorithmic Mastery • 4 Languages</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Daily <span class="gold-gradient-text">LeetCode</span> Solutions
+                </h1>
+
+                <p class="hero-subtitle">
+                    Practice. Learn. Solve. Grow with <strong class="text-white">CodeByTushu</strong>.
+                    <br class="hero-br">
+                    Every day, we publish complete, optimal solutions in <span class="gold-text">Java, Python, C++, and JavaScript</span>,
+                    backed by rigorous Big-O complexity analysis and step-by-step logic.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#solutions" class="btn btn-primary">
+                        <span>Explore Solutions</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>Star Repository</span>
+                    </a>
+                </div>
+
+                <!-- Stats Dashboard (Derived Dynamically) -->
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-card">
+                        <div class="stat-number gold-text" id="statTotalProblems">0</div>
+                        <div class="stat-label">Published Problems</div>
+                        <div class="stat-subtext">Verified & Documented</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number text-white" id="statTotalLanguages">4</div>
+                        <div class="stat-label">Supported Languages</div>
+                        <div class="stat-subtext">Java • Python • C++ • JS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number text-easy" id="statEasyCount">0</div>
+                        <div class="stat-label">Easy Problems</div>
+                        <div class="stat-subtext">Foundational DSA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number text-medium" id="statMediumCount">0</div>
+                        <div class="stat-label">Medium Problems</div>
+                        <div class="stat-subtext">Core Interview Level</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number text-hard" id="statHardCount">0</div>
+                        <div class="stat-label">Hard Problems</div>
+                        <div class="stat-subtext">Advanced Challenges</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supported Languages Spotlight Section -->
+        <section class="languages-section" id="languages">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Cross-Language Mastery</span>
+                    <h2 class="section-title">Every Problem in <span class="gold-text">4 Languages</span></h2>
+                    <p class="section-subtitle">Consistent, idiomatic code written to interview standards for each ecosystem.</p>
+                </div>
+
+                <div class="languages-grid">
+                    <div class="language-card">
+                        <div class="lang-icon-badge java-badge">Java</div>
+                        <h3 class="lang-title">Java 17+</h3>
+                        <p class="lang-desc">Enterprise-grade OOP, standard collection algorithms, and optimal primitive operations.</p>
+                        <span class="lang-file-indicator">Solution.java</span>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="lang-icon-badge python-badge">Python</div>
+                        <h3 class="lang-title">Python 3</h3>
+                        <p class="lang-desc">Clean, readable Pythonic code with type annotations and standard library data structures.</p>
+                        <span class="lang-file-indicator">solution.py</span>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="lang-icon-badge cpp-badge">C++</div>
+                        <h3 class="lang-title">C++ 20</h3>
+                        <p class="lang-desc">High-performance STL algorithms, fast I/O, cache-friendly vectors, and low memory footprints.</p>
+                        <span class="lang-file-indicator">solution.cpp</span>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="lang-icon-badge js-badge">JavaScript</div>
+                        <h3 class="lang-title">JavaScript (ES6+)</h3>
+                        <p class="lang-desc">Modern JS with typed arrays (Int32Array/BigInt) optimized for V8 runtime execution.</p>
+                        <span class="lang-file-indicator">solution.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Explorer Section -->
+        <section class="solutions-section" id="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-split">
+                        <div>
+                            <span class="section-tag">Interactive Archive</span>
+                            <h2 class="section-title">Explore <span class="gold-text">Daily Solutions</span></h2>
+                            <p class="section-subtitle">Filter by difficulty, publication date, tags, or search by problem number and title.</p>
+                        </div>
+                        <div class="results-badge-wrap">
+                            <span class="results-count-pill" id="resultsCount">Showing 0 solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Filter & Search Hub -->
+                <div class="filter-toolbar">
+                    <!-- Row 1: Search & Sort -->
+                    <div class="filter-row search-sort-row">
+                        <div class="search-box">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <input type="text" id="searchInput" placeholder="Search by number (e.g. 2333), title, tag (e.g. Greedy)..." autocomplete="off" aria-label="Search problems">
+                            <button class="clear-search-btn" id="clearSearchBtn" title="Clear search" aria-label="Clear search">&times;</button>
+                            <span class="search-shortcut-hint" aria-hidden="true">/</span>
+                        </div>
+
+                        <div class="sort-box">
+                            <label for="sortSelect" class="filter-label">Sort:</label>
+                            <select id="sortSelect" class="filter-select">
+                                <option value="newest">Newest First</option>
+                                <option value="oldest">Older First</option>
+                                <option value="num-asc">Problem # (Asc)</option>
+                                <option value="num-desc">Problem # (Desc)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Difficulty Filters & Date Archive Selectors -->
+                    <div class="filter-row filters-meta-row">
+                        <!-- Difficulty Filters -->
+                        <div class="difficulty-filters" role="group" aria-label="Filter by difficulty">
+                            <button class="filter-pill active" data-difficulty="all">
+                                <span>All</span>
+                                <span class="pill-count" id="countAll">0</span>
+                            </button>
+                            <button class="filter-pill pill-easy" data-difficulty="Easy">
+                                <span class="difficulty-dot dot-easy"></span>
+                                <span>Easy</span>
+                                <span class="pill-count" id="countEasy">0</span>
+                            </button>
+                            <button class="filter-pill pill-medium" data-difficulty="Medium">
+                                <span class="difficulty-dot dot-medium"></span>
+                                <span>Medium</span>
+                                <span class="pill-count" id="countMedium">0</span>
+                            </button>
+                            <button class="filter-pill pill-hard" data-difficulty="Hard">
+                                <span class="difficulty-dot dot-hard"></span>
+                                <span>Hard</span>
+                                <span class="pill-count" id="countHard">0</span>
+                            </button>
+                        </div>
+
+                        <!-- Date / Year / Month Dropdowns -->
+                        <div class="date-archive-selectors">
+                            <div class="select-group">
+                                <label for="yearFilterSelect" class="filter-label">Year:</label>
+                                <select id="yearFilterSelect" class="filter-select">
+                                    <option value="all">All Years</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <label for="monthFilterSelect" class="filter-label">Month:</label>
+                                <select id="monthFilterSelect" class="filter-select">
+                                    <option value="all">All Months</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Language Tabs -->
+                    <div class="filter-row language-filter-row">
+                        <div class="language-tabs" id="languageTabs">
+                            <button class="lang-tab-btn active" data-lang="all">All Languages</button>
+                            <button class="lang-tab-btn" data-lang="java">Java</button>
+                            <button class="lang-tab-btn" data-lang="python">Python</button>
+                            <button class="lang-tab-btn" data-lang="cpp">C++</button>
+                            <button class="lang-tab-btn" data-lang="javascript">JavaScript</button>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Dynamic Topic Tags Cloud -->
+                    <div class="filter-row tags-filter-row">
+                        <span class="tags-row-label">Topics:</span>
+                        <div class="tags-cloud" id="tagsCloud">
+                            <!-- Dynamic Tag Pills will be generated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Filter Reset Notice -->
+                <div class="active-filter-bar" id="activeFilterBar" style="display: none;">
+                    <span id="activeFilterText">Filtered view active</span>
+                    <button class="reset-filters-btn" id="resetFiltersBtn">Reset All Filters</button>
+                </div>
+
+                <!-- Problem Cards Grid -->
+                <div class="solutions-grid" id="solutionsGrid" aria-live="polite">
+                    <!-- Cards populated dynamically by script.js -->
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <div class="empty-state-icon">🔍</div>
+                    <h3 class="empty-state-title">No Solutions Found</h3>
+                    <p class="empty-state-desc" id="emptyStateDesc">No problems match your current filter and search criteria.</p>
+                    <button class="btn btn-secondary" id="emptyResetBtn">Clear All Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Workflow Section -->
+        <section class="workflow-section" id="workflow">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Engineering Standard</span>
+                    <h2 class="section-title">The Daily Publishing <span class="gold-text">Workflow</span></h2>
+                    <p class="section-subtitle">How each daily LeetCode solution is curated, verified, and synchronized across this repository.</p>
+                </div>
+
+                <div class="workflow-steps-grid">
+                    <div class="workflow-card">
+                        <div class="step-badge">01</div>
+                        <h3 class="step-title">Problem Selection & Analysis</h3>
+                        <p class="step-desc">Extracting problem number, constraints, official LeetCode link, and core algorithmic pattern.</p>
+                    </div>
+                    <div class="workflow-card">
+                        <div class="step-badge">02</div>
+                        <h3 class="step-title">Quad-Language Implementation</h3>
+                        <p class="step-desc">Crafting idiomatic solutions in Java, Python, C++, and JavaScript ensuring consistent Big-O performance.</p>
+                    </div>
+                    <div class="workflow-card">
+                        <div class="step-badge">03</div>
+                        <h3 class="step-title">Standardized Folder Structure</h3>
+                        <p class="step-desc">Organized under <code>solutions/YYYY/MM-Month/DD-MM-YYYY/ID-Title/</code> with dedicated README documentation.</p>
+                    </div>
+                    <div class="workflow-card">
+                        <div class="step-badge">04</div>
+                        <h3 class="step-title">Hub Sync & YouTube Linking</h3>
+                        <p class="step-desc">Instant synchronization into the static database powering search, filtering, and live video walkthroughs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Individual Problem Detail & Code Viewer Modal -->
+    <div class="code-modal-backdrop" id="codeModal" role="dialog" aria-modal="true" aria-labelledby="modalProblemTitle" style="display: none;">
+        <div class="code-modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <div class="modal-tags-row">
+                        <span class="modal-prob-id" id="modalProbId">#0000</span>
+                        <span class="difficulty-badge" id="modalDifficultyBadge">Medium</span>
+                        <span class="modal-date-tag" id="modalDateTag">Oct 10, 2026</span>
+                    </div>
+                    <h2 class="modal-problem-title" id="modalProblemTitle">Problem Title</h2>
+                </div>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            </div>
+
+            <!-- Modal Complexity, Topic Tags & Links Bar -->
+            <div class="modal-meta-bar">
+                <div class="meta-item">
+                    <span class="meta-label">Time:</span>
+                    <span class="meta-val gold-text" id="modalTimeComplexity">O(N)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Auxiliary Space:</span>
+                    <span class="meta-val text-white" id="modalAuxSpaceComplexity">O(1)</span>
+                </div>
+                <div class="meta-actions">
+                    <a href="#" id="modalLeetcodeLink" target="_blank" rel="noopener noreferrer" class="meta-link-btn" title="Open official LeetCode problem">
+                        <span>Official LeetCode</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <a href="#" id="modalFolderLink" target="_blank" rel="noopener noreferrer" class="meta-link-btn" title="Open problem GitHub folder">
+                        <span>GitHub Folder</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Problem Summary & Approach Bar -->
+            <div class="modal-explanation-section">
+                <div class="modal-summary-box">
+                    <span class="modal-sec-heading">Problem Summary:</span>
+                    <p id="modalSummaryText" class="modal-sec-text"></p>
+                </div>
+                <div class="modal-approach-box">
+                    <span class="modal-sec-heading gold-text">Approach & Algorithm:</span>
+                    <p id="modalApproachText" class="modal-sec-text"></p>
+                </div>
+                <div class="modal-tags-box" id="modalTagsBox">
+                    <!-- Tags rendered here -->
+                </div>
+            </div>
+
+            <!-- YouTube Video Section (Embed or Pending status) -->
+            <div class="modal-video-section" id="modalVideoSection">
+                <div class="video-container-wrap" id="modalVideoContainer">
+                    <!-- YouTube iframe or pending banner injected by JS -->
+                </div>
+            </div>
+
+            <!-- Modal Language Selection Tabs -->
+            <div class="modal-lang-tabs" id="modalLangTabs" role="tablist">
+                <button class="modal-tab-btn active" data-lang="java" role="tab" aria-selected="true">
+                    <span>Java</span>
+                </button>
+                <button class="modal-tab-btn" data-lang="python" role="tab" aria-selected="false">
+                    <span>Python</span>
+                </button>
+                <button class="modal-tab-btn" data-lang="cpp" role="tab" aria-selected="false">
+                    <span>C++</span>
+                </button>
+                <button class="modal-tab-btn" data-lang="javascript" role="tab" aria-selected="false">
+                    <span>JavaScript</span>
+                </button>
+            </div>
+
+            <!-- Modal Code Toolbar -->
+            <div class="modal-code-toolbar">
+                <div class="file-name-indicator" id="modalFileNameIndicator">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                    <span id="modalCurrentFileName">Solution.java</span>
+                </div>
+                <div class="code-toolbar-actions">
+                    <a href="#" id="modalRawFileLink" class="toolbar-btn secondary-btn" title="Open source file directly">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        <span>Open Source File</span>
+                    </a>
+                    <button class="toolbar-btn copy-btn" id="modalCopyBtn" title="Copy isolated code to clipboard">
+                        <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <span class="copy-text">Copy Code</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Code Display Area -->
+            <div class="modal-code-container">
+                <pre class="code-pre"><code class="code-block" id="modalCodeDisplay"></code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer" aria-live="assertive"></div>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+                <div class="footer-brand-column">
+                    <div class="footer-brand-header">
+                        <img src="assets/logo.png" alt="CodeByTushu Logo" class="footer-logo-img" onerror="this.style.display='none'">
+                        <span class="footer-brand-name">CodeBy<span class="gold-text">Tushu</span></span>
+                    </div>
+                    <p class="footer-tagline">Learn. Build. Share. Grow.</p>
+                    <p class="footer-bio">
+                        Central public hub for daily LeetCode solutions, Data Structures & Algorithms, and engineering excellence.
+                    </p>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="footer-column-heading">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#hero">Home Hub</a></li>
+                        <li><a href="#solutions">All Solutions</a></li>
+                        <li><a href="#languages">Language Support</a></li>
+                        <li><a href="#workflow">Publishing Workflow</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="footer-column-heading">Official Channels</h4>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="https://www.youtube.com/@codebytushu" target="_blank" rel="noopener noreferrer">
+                                <span>YouTube Channel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/CodeByTushu" target="_blank" rel="noopener noreferrer">
+                                <span>GitHub Organization</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/codebytushu/" target="_blank" rel="noopener noreferrer">
+                                <span>LinkedIn Page</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/codebytushu" target="_blank" rel="noopener noreferrer">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="footer-column-heading">Repository Info</h4>
+                    <p class="footer-subtext">
+                        Hosted on GitHub Pages with zero external dependencies. Static, lightning fast, and accessible everywhere.
+                    </p>
+                    <div class="repo-badge-box">
+                        <a href="https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions" target="_blank" rel="noopener noreferrer" class="github-pill-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            <span>CodeByTushu-LeetCode-Solutions</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    &copy; 2026 <strong>CodeByTushu</strong>. Curated by Tushpendra Kumar. All Rights Reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#hero">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Solution Data Store (Safe for file:// and GitHub Pages) -->
+    <script src="solutions-data.js"></script>
+
+    <!-- Main JavaScript Controller -->
+    <script src="script.js"></script>
+</body>
+</html>

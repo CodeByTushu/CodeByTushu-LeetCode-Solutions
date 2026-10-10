@@ -1,0 +1,53 @@
+[
+  {
+    "id": "2333",
+    "title": "Minimum Sum of Squared Difference",
+    "slug": "minimum-sum-of-squared-difference",
+    "date": "10 October 2026",
+    "dateIso": "2026-10-10",
+    "formattedDate": "10 Oct 2026",
+    "year": "2026",
+    "month": "10-October",
+    "dayFolder": "10-10-2026",
+    "problemFolder": "2333-Minimum-Sum-of-Squared-Difference",
+    "folderPath": "solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+    "youtubeUrl": null,
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy",
+      "Bucket Sort",
+      "Sorting"
+    ],
+    "summary": "Minimize the sum of squared difference by greedily reducing largest absolute differences first using a frequency bucket array.",
+    "approach": "Pool total reductions k = k1 + k2. Since (x)^2 - (x-1)^2 = 2x - 1, largest differences yield the greatest square decrease. Use a frequency bucket count[d] over bounded differences (<= 10^5) to step down from maxDiff in O(N + M) time.",
+    "timeComplexity": "O(N + M) where M = max(diff) ≤ 10⁵",
+    "auxiliarySpaceComplexity": "O(M) for frequency bucket array",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js"
+      }
+    }
+  }
+]

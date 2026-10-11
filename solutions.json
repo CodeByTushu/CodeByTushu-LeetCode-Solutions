@@ -1,5 +1,55 @@
 [
   {
+    "id": "2778",
+    "title": "Sum of Squares of Special Elements",
+    "slug": "sum-of-squares-of-special-elements",
+    "date": "11 October 2026",
+    "dateIso": "2026-10-11",
+    "formattedDate": "11 Oct 2026",
+    "year": "2026",
+    "month": "10-October",
+    "dayFolder": "11-10-2026",
+    "problemFolder": "2778-Sum-of-Squares-of-Special-Elements",
+    "folderPath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
+    "youtubeUrl": null,
+    "tags": [
+      "Array",
+      "Math",
+      "Simulation",
+      "Enumeration"
+    ],
+    "summary": "Calculate the sum of squares of special elements in a 1-indexed array where index i divides the length of the array n.",
+    "approach": "Iterate i from 1 to n. If n % i == 0, square nums[i - 1] and add to the running sum. Runs in O(N) time with O(1) auxiliary space.",
+    "timeComplexity": "O(N) where N = nums.length ≤ 50",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js"
+      }
+    }
+  },
+  {
     "id": "2333",
     "title": "Minimum Sum of Squared Difference",
     "slug": "minimum-sum-of-squared-difference",

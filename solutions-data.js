@@ -5,6 +5,60 @@
 
 window.SOLUTIONS_DATA = [
   {
+    "id": "2778",
+    "title": "Sum of Squares of Special Elements",
+    "slug": "sum-of-squares-of-special-elements",
+    "date": "11 October 2026",
+    "dateIso": "2026-10-11",
+    "formattedDate": "11 Oct 2026",
+    "year": "2026",
+    "month": "10-October",
+    "dayFolder": "11-10-2026",
+    "problemFolder": "2778-Sum-of-Squares-of-Special-Elements",
+    "folderPath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
+    "youtubeUrl": null,
+    "tags": [
+      "Array",
+      "Math",
+      "Simulation",
+      "Enumeration"
+    ],
+    "summary": "Calculate the sum of squares of special elements in a 1-indexed array where index i divides the length of the array n.",
+    "approach": "Iterate i from 1 to n. If n % i == 0, square nums[i - 1] and add to the running sum. Runs in O(N) time with O(1) auxiliary space.",
+    "timeComplexity": "O(N) where N = nums.length ≤ 50",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java",
+        "code": "class Solution {\n    public int sumOfSquares(int[] nums) {\n        int n = nums.length;\n        int sum = 0;\n\n        for (int i = 1; i <= n; i++) {\n            if (n % i == 0) {\n                sum += nums[i - 1] * nums[i - 1];\n            }\n        }\n\n        return sum;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py",
+        "code": "class Solution:\n    def sumOfSquares(self, nums: list[int]) -> int:\n        n = len(nums)\n        total_sum = 0\n\n        for i in range(1, n + 1):\n            if n % i == 0:\n                total_sum += nums[i - 1] * nums[i - 1]\n\n        return total_sum\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp",
+        "code": "#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int sumOfSquares(vector<int>& nums) {\n        int n = nums.size();\n        int sum = 0;\n\n        for (int i = 1; i <= n; i++) {\n            if (n % i == 0) {\n                sum += nums[i - 1] * nums[i - 1];\n            }\n        }\n\n        return sum;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js",
+        "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sumOfSquares = function(nums) {\n    const n = nums.length;\n    let sum = 0;\n\n    for (let i = 1; i <= n; i++) {\n        if (n % i === 0) {\n            sum += nums[i - 1] * nums[i - 1];\n        }\n    }\n\n    return sum;\n};\n"
+      }
+    }
+  },
+  {
     "id": "2333",
     "title": "Minimum Sum of Squared Difference",
     "slug": "minimum-sum-of-squared-difference",

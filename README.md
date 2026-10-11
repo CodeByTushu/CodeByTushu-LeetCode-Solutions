@@ -26,16 +26,16 @@ Every day, we publish complete, optimal solutions in **four major programming la
 - ☕ **Java** (`Solution.java`) — Enterprise OOP, standard collections, optimal primitive logic.
 - 🐍 **Python** (`solution.py`) — Clean Pythonic code with type annotations and standard data structures.
 - ⚡ **C++** (`solution.cpp`) — High-performance STL algorithms, cache-friendly vectors, and fast I/O.
-- 🌐 **JavaScript** (`solution.js`) — Modern ES6+, typed arrays (`Int32Array`), and 64-bit `BigInt` precision.
+- 🌐 **JavaScript** (`solution.js`) — Modern ES6+, typed arrays, and performance-tuned JS.
 
 ---
 
 ## 📊 Repository Statistics (Live & Verified)
 
-- **Total Published Problems:** `1`
+- **Total Published Problems:** `2`
 - **Supported Languages:** `4` (Java, Python, C++, JavaScript)
 - **Difficulty Breakdown:**
-  - 🟢 **Easy:** `0`
+  - 🟢 **Easy:** `1`
   - 🟡 **Medium:** `1`
   - 🔴 **Hard:** `0`
 - **Active Year:** `2026`
@@ -49,10 +49,10 @@ Experience the repository through our responsive static web application on GitHu
 👉 **[Launch Daily LeetCode Solutions Hub](https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/)**
 
 ### Website Capabilities:
-- 🔍 **Real-Time Instant Search:** Filter by problem number (e.g. `2333`), title, or topic keywords with keyboard shortcut <kbd>/</kbd>.
+- 🔍 **Real-Time Instant Search:** Filter by problem number (e.g. `2778`, `2333`), title, or topic keywords with keyboard shortcut <kbd>/</kbd>.
 - 🎯 **Difficulty Filtering:** Instant one-click toggles for Easy, Medium, and Hard challenges.
 - 📅 **Date & Archive Selectors:** Browse solutions chronologically by Year and Month.
-- 🏷️ **Topic Tag Cloud:** Filter solutions by DSA topics (Array, Greedy, Math, Bucket Sort, etc.).
+- 🏷️ **Topic Tag Cloud:** Filter solutions by DSA topics (Array, Math, Simulation, Greedy, Bucket Sort, etc.).
 - ⚡ **Sort Order:** Sort by Newest First, Older First, or Problem Number.
 - 💻 **Interactive Code Viewer:** Isolated tabbed viewer with syntax highlighting and direct source file links.
 - 📋 **One-Click Code Copy:** Dedicated copy action for the active language with clipboard toast notifications.
@@ -80,13 +80,20 @@ CodeByTushu-LeetCode-Solutions/
 └── solutions/
     └── 2026/
         └── 10-October/
-            └── 10-10-2026/
-                └── 2333-Minimum-Sum-of-Squared-Difference/
-                    ├── README.md                      # Problem documentation & complexity analysis
-                    ├── Solution.java                  # Java implementation
-                    ├── solution.py                    # Python implementation
-                    ├── solution.cpp                   # C++ implementation
-                    └── solution.js                    # JavaScript implementation
+            ├── 10-10-2026/
+            │   └── 2333-Minimum-Sum-of-Squared-Difference/
+            │       ├── README.md
+            │       ├── Solution.java
+            │       ├── solution.py
+            │       ├── solution.cpp
+            │       └── solution.js
+            └── 11-10-2026/
+                └── 2778-Sum-of-Squares-of-Special-Elements/
+                    ├── README.md
+                    ├── Solution.java
+                    ├── solution.py
+                    ├── solution.cpp
+                    └── solution.js
 ```
 
 ---
@@ -95,6 +102,7 @@ CodeByTushu-LeetCode-Solutions/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/README.md) |
 | **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/README.md) |
 
 ---
@@ -103,16 +111,19 @@ CodeByTushu-LeetCode-Solutions/
 
 ### 2026
 #### October 2026
+- **11 October 2026**: [#2778 Sum of Squares of Special Elements](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/) (Easy)
 - **10 October 2026**: [#2333 Minimum Sum of Squared Difference](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/) (Medium)
 
 ---
 
 ## 🏷️ Topic & Tag Index
 
-- **Array**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Array**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 - **Bucket Sort / Frequency Array**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Enumeration**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
 - **Greedy**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
-- **Math**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Math**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Simulation**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 
 ---
@@ -120,7 +131,7 @@ CodeByTushu-LeetCode-Solutions/
 ## 🛠️ The Daily Publishing Workflow
 
 To add today's problem, you only need to supply:
-1. **Today's publication date** (e.g. `10 October 2026`)
+1. **Today's publication date** (e.g. `11 October 2026`)
 2. **Problem screenshot or statement**
 3. **Your solution code** (Java or any preferred language)
 4. **YouTube video URL** (optional, leave pending if not yet recorded)
@@ -139,33 +150,14 @@ Everything else is automated:
 
 ## 🚀 GitHub Pages Deployment Guide
 
-To deploy this platform live:
-
-1. Visit the repository: [github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)
-2. Open **Settings** → **Pages** (in the left sidebar under *Code and automation*).
-3. Under **Build and deployment**:
-   - **Source:** Select `Deploy from a branch`
-   - **Branch:** Select `main` and folder `/ (root)`
-   - Click **Save**.
-4. GitHub Actions will deploy the site live at:
-   `https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/`
+The website is live on GitHub Pages:
+👉 **[https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/](https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/)**
 
 ---
 
 ## 💻 Local Preview
 
-Preview the site locally with zero installation:
-
-### Method 1: Direct Browser Launch
-Open `index.html` directly in any web browser. The lightweight static data architecture works seamlessly offline without CORS limitations.
-
-### Method 2: Local HTTP Server
-```powershell
-npx serve .
-# or
-python -m http.server 8000
-```
-Then visit `http://localhost:8000`.
+Open [index.html](file:///e:/CodeByTushu-LeetCode-Solutions/index.html) directly in any browser.
 
 ---
 

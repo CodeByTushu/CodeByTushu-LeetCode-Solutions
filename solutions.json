@@ -544,5 +544,54 @@
         "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.js"
       }
     }
+  },
+  {
+    "id": "20",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "date": "01 September 2026",
+    "dateIso": "2026-09-01",
+    "formattedDate": "01 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "01-09-2026",
+    "problemFolder": "20-Valid-Parentheses",
+    "folderPath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/valid-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+    "youtubeUrl": "https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "summary": "Determine if an input string with brackets '()', '{}', and '[]' is valid.",
+    "approach": "Parity check length, then use a primitive character stack to match closing brackets with opening brackets.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(N) for array stack",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.js"
+      }
+    }
   }
 ]
+

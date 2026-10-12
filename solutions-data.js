@@ -593,5 +593,57 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {number} n\n * @return {string[]}\n */\nvar generateParenthesis = function(n) {\n    const result = [];\n\n    const backtrack = (current, open, close) => {\n        if (current.length === 2 * n) {\n            result.push(current);\n            return;\n        }\n\n        if (open < n) {\n            backtrack(current + '(', open + 1, close);\n        }\n\n        if (close < open) {\n            backtrack(current + ')', open, close + 1);\n        }\n    };\n\n    backtrack('', 0, 0);\n    return result;\n};\n"
       }
     }
+  },
+  {
+    "id": "20",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "date": "01 September 2026",
+    "dateIso": "2026-09-01",
+    "formattedDate": "01 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "01-09-2026",
+    "problemFolder": "20-Valid-Parentheses",
+    "folderPath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/valid-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+    "youtubeUrl": "https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "summary": "Determine if an input string with brackets '()', '{}', and '[]' is valid.",
+    "approach": "Parity check length, then use a primitive character stack to match closing brackets with opening brackets.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(N) for array stack",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/Solution.java",
+        "code": "class Solution {\n    public boolean isValid(String s) {\n        if ((s.length() & 1) == 1) return false;\n        char[] stack = new char[s.length()];\n        int top = -1;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(' || c == '{' || c == '[') {\n                stack[++top] = c;\n            } else {\n                if (top < 0) return false;\n                char open = stack[top--];\n                if ((c == ')' && open != '(') ||\n                    (c == '}' && open != '{') ||\n                    (c == ']' && open != '[')) {\n                    return false;\n                }\n            }\n        }\n        return top == -1;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.py",
+        "code": "class Solution:\n    def isValid(self, s: str) -> bool:\n        if len(s) % 2 != 0:\n            return False\n        stack = []\n        matching = {')': '(', '}': '{', ']': '['}\n        for c in s:\n            if c in \"({[\":\n                stack.append(c)\n            else:\n                if not stack or stack.pop() != matching[c]:\n                    return False\n        return len(stack) == 0\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.cpp",
+        "code": "#include <string>\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool isValid(string s) {\n        if (s.length() % 2 != 0) return false;\n        vector<char> stack(s.length());\n        int top = -1;\n        for (char c : s) {\n            if (c == '(' || c == '{' || c == '[') {\n                stack[++top] = c;\n            } else {\n                if (top < 0) return false;\n                char open = stack[top--];\n                if ((c == ')' && open != '(') ||\n                    (c == '}' && open != '{') ||\n                    (c == ']' && open != '[')) {\n                    return false;\n                }\n            }\n        }\n        return top == -1;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar isValid = function(s) {\n    if ((s.length & 1) === 1) return false;\n    const stack = [];\n    const map = { ')': '(', '}': '{', ']': '[' };\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(' || c === '{' || c === '[') {\n            stack.push(c);\n        } else {\n            if (stack.length === 0 || stack.pop() !== map[c]) {\n                return false;\n            }\n        }\n    }\n    return stack.length === 0;\n};\n"
+      }
+    }
   }
 ];

@@ -487,5 +487,58 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkValidString = function(s) {\n    let lo = 0;\n    let hi = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            lo++;\n            hi++;\n        } else if (c === ')') {\n            lo--;\n            hi--;\n        } else { // '*'\n            lo--;\n            hi++;\n        }\n        if (hi < 0) return false;\n        if (lo < 0) lo = 0;\n    }\n    return lo === 0;\n};\n"
       }
     }
+  },
+  {
+    "id": "32",
+    "title": "Longest Valid Parentheses",
+    "slug": "longest-valid-parentheses",
+    "date": "03 September 2026",
+    "dateIso": "2026-09-03",
+    "formattedDate": "03 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "03-09-2026",
+    "problemFolder": "32-Longest-Valid-Parentheses",
+    "folderPath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "youtubeUrl": "https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack"
+    ],
+    "summary": "Find the length of the longest valid parentheses substring in a given string of parentheses.",
+    "approach": "Index-based stack tracking with base boundary at -1. Pop on ')' and either update maximum substring length (i - stack[top]) or set new barrier index.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/Solution.java",
+        "code": "class Solution {\n    public int longestValidParentheses(String s) {\n        int n = s.length();\n        int[] stack = new int[n + 1];\n        int top = -1;\n        int max = 0;\n        stack[++top] = -1;\n        for (int i = 0; i < n; i++) {\n            if (s.charAt(i) == '(') {\n                stack[++top] = i;\n            } else {\n                top--;\n                if (top < 0) {\n                    stack[++top] = i;\n                } else {\n                    max = Math.max(max, i - stack[top]);\n                }\n            }\n        }\n        return max;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.py",
+        "code": "class Solution:\n    def longestValidParentheses(self, s: str) -> int:\n        stack = [-1]\n        max_len = 0\n\n        for i, c in enumerate(s):\n            if c == '(':\n                stack.append(i)\n            else:\n                stack.pop()\n                if not stack:\n                    stack.append(i)\n                else:\n                    max_len = max(max_len, i - stack[-1])\n\n        return max_len\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.cpp",
+        "code": "#include <string>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int longestValidParentheses(string s) {\n        int n = s.length();\n        vector<int> stack(n + 1);\n        int top = -1;\n        int maxLen = 0;\n        stack[++top] = -1;\n\n        for (int i = 0; i < n; i++) {\n            if (s[i] == '(') {\n                stack[++top] = i;\n            } else {\n                top--;\n                if (top < 0) {\n                    stack[++top] = i;\n                } else {\n                    maxLen = max(maxLen, i - stack[top]);\n                }\n            }\n        }\n\n        return maxLen;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestValidParentheses = function(s) {\n    const n = s.length;\n    const stack = [-1];\n    let maxLen = 0;\n\n    for (let i = 0; i < n; i++) {\n        if (s[i] === '(') {\n            stack.push(i);\n        } else {\n            stack.pop();\n            if (stack.length === 0) {\n                stack.push(i);\n            } else {\n                maxLen = Math.max(maxLen, i - stack[stack.length - 1]);\n            }\n        }\n    }\n\n    return maxLen;\n};\n"
+      }
+    }
   }
 ];

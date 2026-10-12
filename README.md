@@ -1,7 +1,7 @@
 # CodeByTushu — Daily LeetCode Solutions Publishing Platform ⚡
 
 <p align="center">
-  <img src="assets/logo.png" alt="CodeByTushu Logo" width="90" style="border-radius: 12px;"/>
+  <img src="assets/logo.png" alt="CodeByTushu Logo" width="95" height="95" style="border-radius: 50%; object-fit: cover;"/>
   <br>
   <strong>Learn. Build. Share. Grow.</strong>
   <br>

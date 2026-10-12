@@ -201,8 +201,8 @@ button {
 .brand-logo-img {
     width: 36px;
     height: 36px;
-    object-fit: contain;
-    border-radius: var(--radius-sm);
+    object-fit: cover;
+    border-radius: 50%;
     filter: drop-shadow(0 0 8px var(--gold-glow));
 }
 
@@ -1466,7 +1466,7 @@ button {
 }
 
 .footer-brand-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.footer-logo-img { width: 32px; height: 32px; object-fit: contain; }
+.footer-logo-img { width: 32px; height: 32px; object-fit: cover; border-radius: 50%; }
 .footer-brand-name { font-size: 1.2rem; font-weight: 700; color: #ffffff; }
 .footer-tagline { font-size: 0.85rem; font-weight: 600; color: var(--gold-primary); margin-bottom: 8px; letter-spacing: 0.3px; }
 .footer-bio { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; max-width: 320px; }

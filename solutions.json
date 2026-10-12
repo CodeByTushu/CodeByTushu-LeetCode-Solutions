@@ -247,5 +247,55 @@
         "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.js"
       }
     }
+  },
+  {
+    "id": "301",
+    "title": "Remove Invalid Parentheses",
+    "slug": "remove-invalid-parentheses",
+    "date": "07 September 2026",
+    "dateIso": "2026-09-07",
+    "formattedDate": "07 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "07-09-2026",
+    "problemFolder": "301-Remove-Invalid-Parentheses",
+    "folderPath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
+    "youtubeUrl": "https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p",
+    "tags": [
+      "String",
+      "Backtracking",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "summary": "Remove the minimum number of invalid parentheses to make the input string valid, returning all unique results.",
+    "approach": "Precompute misplaced '(' and ')' counts to bound search depth. Use DFS backtracking with adjacent duplicate pruning and validity checking.",
+    "timeComplexity": "O(2^N) bounded by O(C(N, rem) * N)",
+    "auxiliarySpaceComplexity": "O(N) recursion stack",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.js"
+      }
+    }
   }
 ]

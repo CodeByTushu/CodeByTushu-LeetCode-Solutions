@@ -272,5 +272,59 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar removeOuterParentheses = function(s) {\n    let result = '';\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            if (depth > 0) result += c;\n            depth++;\n        } else {\n            depth--;\n            if (depth > 0) result += c;\n        }\n    }\n    return result;\n};\n"
       }
     }
+  },
+  {
+    "id": "301",
+    "title": "Remove Invalid Parentheses",
+    "slug": "remove-invalid-parentheses",
+    "date": "07 September 2026",
+    "dateIso": "2026-09-07",
+    "formattedDate": "07 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "07-09-2026",
+    "problemFolder": "301-Remove-Invalid-Parentheses",
+    "folderPath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
+    "youtubeUrl": "https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p",
+    "tags": [
+      "String",
+      "Backtracking",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "summary": "Remove the minimum number of invalid parentheses to make the input string valid, returning all unique results.",
+    "approach": "Precompute misplaced '(' and ')' counts to bound search depth. Use DFS backtracking with adjacent duplicate pruning and validity checking.",
+    "timeComplexity": "O(2^N) bounded by O(C(N, rem) * N)",
+    "auxiliarySpaceComplexity": "O(N) recursion stack",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/Solution.java",
+        "code": "import java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    public List<String> removeInvalidParentheses(String s) {\n        int leftRem = 0, rightRem = 0;\n\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                leftRem++;\n            } else if (c == ')') {\n                if (leftRem > 0) leftRem--;\n                else rightRem++;\n            }\n        }\n\n        List<String> result = new ArrayList<>();\n        dfs(s, 0, leftRem, rightRem, result);\n        return result;\n    }\n\n    private void dfs(String s, int start, int leftRem, int rightRem, List<String> result) {\n        if (leftRem == 0 && rightRem == 0) {\n            if (isValid(s)) result.add(s);\n            return;\n        }\n\n        for (int i = start; i < s.length(); i++) {\n            // Skip duplicates\n            if (i > start && s.charAt(i) == s.charAt(i - 1)) continue;\n\n            char c = s.charAt(i);\n            if (c != '(' && c != ')') continue;\n\n            String next = s.substring(0, i) + s.substring(i + 1);\n\n            if (c == '(' && leftRem > 0) {\n                dfs(next, i, leftRem - 1, rightRem, result);\n            } else if (c == ')' && rightRem > 0) {\n                dfs(next, i, leftRem, rightRem - 1, result);\n            }\n        }\n    }\n\n    private boolean isValid(String s) {\n        int count = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') count++;\n            else if (c == ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count == 0;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.py",
+        "code": "from typing import List\n\nclass Solution:\n    def removeInvalidParentheses(self, s: str) -> List[str]:\n        left_rem = 0\n        right_rem = 0\n\n        for c in s:\n            if c == '(':\n                left_rem += 1\n            elif c == ')':\n                if left_rem > 0:\n                    left_rem -= 1\n                else:\n                    right_rem += 1\n\n        result = []\n\n        def is_valid(string: str) -> bool:\n            count = 0\n            for char in string:\n                if char == '(':\n                    count += 1\n                elif char == ')':\n                    count -= 1\n                    if count < 0:\n                        return False\n            return count == 0\n\n        def dfs(string: str, start: int, left: int, right: int):\n            if left == 0 and right == 0:\n                if is_valid(string):\n                    result.append(string)\n                return\n\n            for i in range(start, len(string)):\n                # Skip duplicate adjacent removals to prevent redundant branches\n                if i > start and string[i] == string[i - 1]:\n                    continue\n\n                c = string[i]\n                if c != '(' and c != ')':\n                    continue\n\n                next_str = string[:i] + string[i + 1:]\n\n                if c == '(' and left > 0:\n                    dfs(next_str, i, left - 1, right)\n                elif c == ')' and right > 0:\n                    dfs(next_str, i, left, right - 1)\n\n        dfs(s, 0, left_rem, right_rem)\n        return result\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.cpp",
+        "code": "#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<string> removeInvalidParentheses(string s) {\n        int leftRem = 0, rightRem = 0;\n\n        for (char c : s) {\n            if (c == '(') {\n                leftRem++;\n            } else if (c == ')') {\n                if (leftRem > 0) leftRem--;\n                else rightRem++;\n            }\n        }\n\n        vector<string> result;\n        dfs(s, 0, leftRem, rightRem, result);\n        return result;\n    }\n\nprivate:\n    void dfs(const string& s, int start, int leftRem, int rightRem, vector<string>& result) {\n        if (leftRem == 0 && rightRem == 0) {\n            if (isValid(s)) result.push_back(s);\n            return;\n        }\n\n        for (int i = start; i < s.length(); i++) {\n            // Skip duplicates\n            if (i > start && s[i] == s[i - 1]) continue;\n\n            char c = s[i];\n            if (c != '(' && c != ')') continue;\n\n            string next = s.substr(0, i) + s.substr(i + 1);\n\n            if (c == '(' && leftRem > 0) {\n                dfs(next, i, leftRem - 1, rightRem, result);\n            } else if (c == ')' && rightRem > 0) {\n                dfs(next, i, leftRem, rightRem - 1, result);\n            }\n        }\n    }\n\n    bool isValid(const string& s) {\n        int count = 0;\n        for (char c : s) {\n            if (c == '(') count++;\n            else if (c == ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count == 0;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar removeInvalidParentheses = function(s) {\n    let leftRem = 0;\n    let rightRem = 0;\n\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            leftRem++;\n        } else if (c === ')') {\n            if (leftRem > 0) leftRem--;\n            else rightRem++;\n        }\n    }\n\n    const result = [];\n\n    const isValid = (str) => {\n        let count = 0;\n        for (let i = 0; i < str.length; i++) {\n            const c = str[i];\n            if (c === '(') count++;\n            else if (c === ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count === 0;\n    };\n\n    const dfs = (str, start, left, right) => {\n        if (left === 0 && right === 0) {\n            if (isValid(str)) result.push(str);\n            return;\n        }\n\n        for (let i = start; i < str.length; i++) {\n            // Skip duplicates\n            if (i > start && str[i] === str[i - 1]) continue;\n\n            const c = str[i];\n            if (c !== '(' && c !== ')') continue;\n\n            const next = str.slice(0, i) + str.slice(i + 1);\n\n            if (c === '(' && left > 0) {\n                dfs(next, i, left - 1, right);\n            } else if (c === ')' && right > 0) {\n                dfs(next, i, left, right - 1);\n            }\n        }\n    };\n\n    dfs(s, 0, leftRem, rightRem);\n    return result;\n};\n"
+      }
+    }
   }
 ];

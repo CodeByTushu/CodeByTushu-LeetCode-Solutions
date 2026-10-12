@@ -297,5 +297,54 @@
         "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.js"
       }
     }
+  },
+  {
+    "id": "921",
+    "title": "Minimum Add to Make Parentheses Valid",
+    "slug": "minimum-add-to-make-parentheses-valid",
+    "date": "06 September 2026",
+    "dateIso": "2026-09-06",
+    "formattedDate": "06 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "06-09-2026",
+    "problemFolder": "921-Minimum-Add-to-Make-Parentheses-Valid",
+    "folderPath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "youtubeUrl": "https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy"
+    ],
+    "summary": "Determine the minimum number of parentheses additions needed to make a string of parentheses valid.",
+    "approach": "Greedy linear scan counting unmatched open parentheses and insertions required for unmatched closing parentheses in O(N) time and O(1) space.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js"
+      }
+    }
   }
 ]

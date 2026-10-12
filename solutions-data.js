@@ -326,5 +326,58 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar removeInvalidParentheses = function(s) {\n    let leftRem = 0;\n    let rightRem = 0;\n\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            leftRem++;\n        } else if (c === ')') {\n            if (leftRem > 0) leftRem--;\n            else rightRem++;\n        }\n    }\n\n    const result = [];\n\n    const isValid = (str) => {\n        let count = 0;\n        for (let i = 0; i < str.length; i++) {\n            const c = str[i];\n            if (c === '(') count++;\n            else if (c === ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count === 0;\n    };\n\n    const dfs = (str, start, left, right) => {\n        if (left === 0 && right === 0) {\n            if (isValid(str)) result.push(str);\n            return;\n        }\n\n        for (let i = start; i < str.length; i++) {\n            // Skip duplicates\n            if (i > start && str[i] === str[i - 1]) continue;\n\n            const c = str[i];\n            if (c !== '(' && c !== ')') continue;\n\n            const next = str.slice(0, i) + str.slice(i + 1);\n\n            if (c === '(' && left > 0) {\n                dfs(next, i, left - 1, right);\n            } else if (c === ')' && right > 0) {\n                dfs(next, i, left, right - 1);\n            }\n        }\n    };\n\n    dfs(s, 0, leftRem, rightRem);\n    return result;\n};\n"
       }
     }
+  },
+  {
+    "id": "921",
+    "title": "Minimum Add to Make Parentheses Valid",
+    "slug": "minimum-add-to-make-parentheses-valid",
+    "date": "06 September 2026",
+    "dateIso": "2026-09-06",
+    "formattedDate": "06 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "06-09-2026",
+    "problemFolder": "921-Minimum-Add-to-Make-Parentheses-Valid",
+    "folderPath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "youtubeUrl": "https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy"
+    ],
+    "summary": "Determine the minimum number of parentheses additions needed to make a string of parentheses valid.",
+    "approach": "Greedy linear scan counting unmatched open parentheses and insertions required for unmatched closing parentheses in O(N) time and O(1) space.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java",
+        "code": "class Solution {\n    public int minAddToMakeValid(String s) {\n        int open = 0; // unmatched '('\n        int add = 0;  // unmatched ')'\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '(') {\n                open++;\n            } else {\n                if (open > 0) {\n                    open--;\n                } else {\n                    add++;\n                }\n            }\n        }\n        return add + open;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py",
+        "code": "class Solution:\n    def minAddToMakeValid(self, s: str) -> int:\n        open_count = 0  # unmatched '('\n        add = 0         # unmatched ')'\n        for c in s:\n            if c == '(':\n                open_count += 1\n            else:\n                if open_count > 0:\n                    open_count -= 1\n                else:\n                    add += 1\n        return add + open_count\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp",
+        "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        int open = 0; // unmatched '('\n        int add = 0;  // unmatched ')'\n        for (char c : s) {\n            if (c == '(') {\n                open++;\n            } else {\n                if (open > 0) {\n                    open--;\n                } else {\n                    add++;\n                }\n            }\n        }\n        return add + open;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minAddToMakeValid = function(s) {\n    let open = 0; // unmatched '('\n    let add = 0;  // unmatched ')'\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            open++;\n        } else {\n            if (open > 0) {\n                open--;\n            } else {\n                add++;\n            }\n        }\n    }\n    return add + open;\n};\n"
+      }
+    }
   }
 ];

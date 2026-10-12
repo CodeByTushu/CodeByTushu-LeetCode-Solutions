@@ -3,7 +3,7 @@
 - **Publication Date:** 11 October 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/sum-of-squares-of-special-elements/](https://leetcode.com/problems/sum-of-squares-of-special-elements/)
-- **YouTube Solution:** *Video coming soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ)
 
 ---
 
@@ -61,5 +61,4 @@ Return the **sum of the squares of all special elements** of `nums`.
 
 ## Video Explanation
 
-- **Status:** *Video coming soon*
-- When published on the [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu), the dedicated video explanation and walkthrough will be linked here.
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ)

@@ -3,7 +3,7 @@
 - **Publication Date:** 12 October 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/)
-- **YouTube Solution:** *Video coming soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)
 
 ---
 
@@ -75,5 +75,4 @@ Choose `k` elements from the final array to maximize the sum of their squares. R
 
 ## Video Explanation
 
-- **Status:** *Video coming soon*
-- When published on the [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu), the dedicated video explanation and walkthrough will be linked here.
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)

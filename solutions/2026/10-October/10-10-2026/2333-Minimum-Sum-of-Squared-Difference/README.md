@@ -3,7 +3,7 @@
 - **Publication Date:** 10 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-sum-of-squared-difference/](https://leetcode.com/problems/minimum-sum-of-squared-difference/)
-- **YouTube Solution:** *Video coming soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)
 
 ---
 
@@ -74,5 +74,4 @@ Return the **minimum sum of squared difference** $\sum_{i=0}^{n-1} (nums1[i] - n
 
 ## Video Explanation
 
-- **Status:** *Video coming soon*
-- When published on the [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu), the dedicated video explanation and walkthrough will be linked here.
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)

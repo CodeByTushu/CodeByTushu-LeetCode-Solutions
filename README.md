@@ -56,7 +56,7 @@ Experience the repository through our responsive static web application on GitHu
 - ⚡ **Sort Order:** Sort by Newest First, Older First, or Problem Number.
 - 💻 **Interactive Code Viewer:** Isolated tabbed viewer with syntax highlighting and direct source file links.
 - 📋 **One-Click Code Copy:** Dedicated copy action for the active language with clipboard toast notifications.
-- 🎥 **YouTube Walkthroughs:** Watch video explanations directly in the platform or follow channel updates.
+- 🎥 **YouTube Walkthroughs:** Watch embedded video explanations directly in the platform or open YouTube.
 
 ---
 
@@ -109,9 +109,9 @@ CodeByTushu-LeetCode-Solutions/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **2897** | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | <span style="color:#ef4444">**Hard**</span> | 12 Oct 2026 | [Java](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java) | [Python](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py) | [C++](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp) | [JS](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/README.md) |
-| **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/README.md) |
-| **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/README.md) |
+| **2897** | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | <span style="color:#ef4444">**Hard**</span> | 12 Oct 2026 | [Java](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java) | [Python](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py) | [C++](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp) | [JS](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js) | [Watch Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f) | [README](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/README.md) |
+| **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js) | [Watch Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ) | [README](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/README.md) |
+| **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js) | [Watch Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a) | [README](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/README.md) |
 
 ---
 
@@ -119,9 +119,9 @@ CodeByTushu-LeetCode-Solutions/
 
 ### 2026
 #### October 2026
-- **12 October 2026**: [#2897 Apply Operations on Array to Maximize Sum of Squares](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/) (Hard)
-- **11 October 2026**: [#2778 Sum of Squares of Special Elements](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/) (Easy)
-- **10 October 2026**: [#2333 Minimum Sum of Squared Difference](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/) (Medium)
+- **12 October 2026**: [#2897 Apply Operations on Array to Maximize Sum of Squares](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/) (Hard) — [Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)
+- **11 October 2026**: [#2778 Sum of Squares of Special Elements](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/) (Easy) — [Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ)
+- **10 October 2026**: [#2333 Minimum Sum of Squared Difference](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/) (Medium) — [Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)
 
 ---
 

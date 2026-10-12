@@ -19,7 +19,7 @@ window.SOLUTIONS_DATA = [
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
     "leetcodeUrl": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
-    "youtubeUrl": null,
+    "youtubeUrl": "https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f",
     "tags": [
       "Array",
       "Hash Table",
@@ -74,7 +74,7 @@ window.SOLUTIONS_DATA = [
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
     "leetcodeUrl": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
-    "youtubeUrl": null,
+    "youtubeUrl": "https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ",
     "tags": [
       "Array",
       "Math",
@@ -128,7 +128,7 @@ window.SOLUTIONS_DATA = [
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
-    "youtubeUrl": null,
+    "youtubeUrl": "https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a",
     "tags": [
       "Array",
       "Math",

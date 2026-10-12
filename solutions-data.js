@@ -540,5 +540,58 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestValidParentheses = function(s) {\n    const n = s.length;\n    const stack = [-1];\n    let maxLen = 0;\n\n    for (let i = 0; i < n; i++) {\n        if (s[i] === '(') {\n            stack.push(i);\n        } else {\n            stack.pop();\n            if (stack.length === 0) {\n                stack.push(i);\n            } else {\n                maxLen = Math.max(maxLen, i - stack[stack.length - 1]);\n            }\n        }\n    }\n\n    return maxLen;\n};\n"
       }
     }
+  },
+  {
+    "id": "22",
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses",
+    "date": "02 September 2026",
+    "dateIso": "2026-09-02",
+    "formattedDate": "02 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "02-09-2026",
+    "problemFolder": "22-Generate-Parentheses",
+    "folderPath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/generate-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
+    "youtubeUrl": "https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Backtracking"
+    ],
+    "summary": "Generate all combinations of well-formed parentheses given n pairs.",
+    "approach": "Backtracking ensuring valid prefix invariants: only add '(' if open < n, and only add ')' if close < open.",
+    "timeComplexity": "O(4^n / sqrt(n)) bounded by n-th Catalan number",
+    "auxiliarySpaceComplexity": "O(n) recursion call stack",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/Solution.java",
+        "code": "import java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> result = new ArrayList<>();\n        backtrack(result, new StringBuilder(), 0, 0, n);\n        return result;\n    }\n\n    private void backtrack(List<String> result, StringBuilder sb, int open, int close, int n) {\n        if (sb.length() == 2 * n) {\n            result.add(sb.toString());\n            return;\n        }\n        if (open < n) {\n            sb.append('(');\n            backtrack(result, sb, open + 1, close, n);\n            sb.deleteCharAt(sb.length() - 1);\n        }\n        if (close < open) {\n            sb.append(')');\n            backtrack(result, sb, open, close + 1, n);\n            sb.deleteCharAt(sb.length() - 1);\n        }\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.py",
+        "code": "from typing import List\n\nclass Solution:\n    def generateParenthesis(self, n: int) -> List[str]:\n        result = []\n\n        def backtrack(current: list, open_count: int, close_count: int):\n            if len(current) == 2 * n:\n                result.append(\"\".join(current))\n                return\n\n            if open_count < n:\n                current.append('(')\n                backtrack(current, open_count + 1, close_count)\n                current.pop()\n\n            if close_count < open_count:\n                current.append(')')\n                backtrack(current, open_count, close_count + 1)\n                current.pop()\n\n        backtrack([], 0, 0)\n        return result\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.cpp",
+        "code": "#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<string> generateParenthesis(int n) {\n        vector<string> result;\n        string current = \"\";\n        backtrack(result, current, 0, 0, n);\n        return result;\n    }\n\nprivate:\n    void backtrack(vector<string>& result, string& current, int open, int close, int n) {\n        if (current.length() == 2 * n) {\n            result.push_back(current);\n            return;\n        }\n\n        if (open < n) {\n            current.push_back('(');\n            backtrack(result, current, open + 1, close, n);\n            current.pop_back();\n        }\n\n        if (close < open) {\n            current.push_back(')');\n            backtrack(result, current, open, close + 1, n);\n            current.pop_back();\n        }\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.js",
+        "code": "/**\n * @param {number} n\n * @return {string[]}\n */\nvar generateParenthesis = function(n) {\n    const result = [];\n\n    const backtrack = (current, open, close) => {\n        if (current.length === 2 * n) {\n            result.push(current);\n            return;\n        }\n\n        if (open < n) {\n            backtrack(current + '(', open + 1, close);\n        }\n\n        if (close < open) {\n            backtrack(current + ')', open, close + 1);\n        }\n    };\n\n    backtrack('', 0, 0);\n    return result;\n};\n"
+      }
+    }
   }
 ];

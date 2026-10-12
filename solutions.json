@@ -495,5 +495,54 @@
         "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.js"
       }
     }
+  },
+  {
+    "id": "22",
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses",
+    "date": "02 September 2026",
+    "dateIso": "2026-09-02",
+    "formattedDate": "02 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "02-09-2026",
+    "problemFolder": "22-Generate-Parentheses",
+    "folderPath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/generate-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
+    "youtubeUrl": "https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Backtracking"
+    ],
+    "summary": "Generate all combinations of well-formed parentheses given n pairs.",
+    "approach": "Backtracking ensuring valid prefix invariants: only add '(' if open < n, and only add ')' if close < open.",
+    "timeComplexity": "O(4^n / sqrt(n)) bounded by n-th Catalan number",
+    "auxiliarySpaceComplexity": "O(n) recursion call stack",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.js"
+      }
+    }
   }
 ]

@@ -5,6 +5,61 @@
 
 window.SOLUTIONS_DATA = [
   {
+    "id": "2897",
+    "title": "Apply Operations on Array to Maximize Sum of Squares",
+    "slug": "apply-operations-on-array-to-maximize-sum-of-squares",
+    "date": "12 October 2026",
+    "dateIso": "2026-10-12",
+    "formattedDate": "12 Oct 2026",
+    "year": "2026",
+    "month": "10-October",
+    "dayFolder": "12-10-2026",
+    "problemFolder": "2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares",
+    "folderPath": "solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
+    "leetcodeUrl": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
+    "youtubeUrl": null,
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Greedy",
+      "Bit Manipulation"
+    ],
+    "summary": "Maximize sum of squares of k elements after applying bitwise AND/OR operations by greedily concentrating conserved set bits into the largest possible numbers.",
+    "approach": "Total set bits at each position are invariant under AND/OR. Count bits at positions 0..29, greedily construct k numbers with all available bits, and sum squares modulo 10^9 + 7.",
+    "timeComplexity": "O(N + K) where N = nums.length, K = k",
+    "auxiliarySpaceComplexity": "O(1) (30-element bit counter)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java",
+        "code": "import java.util.List;\n\nclass Solution {\n    public int maxSum(List<Integer> nums, int k) {\n        final int MOD = 1_000_000_007;\n        int[] cnt = new int[30];\n        for (int num : nums) {\n            for (int b = 0; b < 30; b++) {\n                if (((num >> b) & 1) == 1) cnt[b]++;\n            }\n        }\n        long ans = 0;\n        for (int i = 0; i < k; i++) {\n            long cur = 0;\n            for (int b = 0; b < 30; b++) {\n                if (cnt[b] > 0) {\n                    cur |= (1L << b);\n                    cnt[b]--;\n                }\n            }\n            ans = (ans + (cur % MOD) * (cur % MOD)) % MOD;\n        }\n        return (int) ans;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py",
+        "code": "from typing import List\n\nclass Solution:\n    def maxSum(self, nums: List[int], k: int) -> int:\n        MOD = 1_000_000_007\n        cnt = [0] * 30\n\n        for num in nums:\n            for b in range(30):\n                if (num >> b) & 1:\n                    cnt[b] += 1\n\n        ans = 0\n        for _ in range(k):\n            cur = 0\n            for b in range(30):\n                if cnt[b] > 0:\n                    cur |= (1 << b)\n                    cnt[b] -= 1\n            ans = (ans + cur * cur) % MOD\n\n        return ans\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp",
+        "code": "#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int maxSum(vector<int>& nums, int k) {\n        const int MOD = 1'000'000'007;\n        vector<int> cnt(30, 0);\n\n        for (int num : nums) {\n            for (int b = 0; b < 30; b++) {\n                if ((num >> b) & 1) {\n                    cnt[b]++;\n                }\n            }\n        }\n\n        long long ans = 0;\n        for (int i = 0; i < k; i++) {\n            long long cur = 0;\n            for (int b = 0; b < 30; b++) {\n                if (cnt[b] > 0) {\n                    cur |= (1LL << b);\n                    cnt[b]--;\n                }\n            }\n            ans = (ans + (cur % MOD) * (cur % MOD)) % MOD;\n        }\n\n        return (int) ans;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js",
+        "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxSum = function(nums, k) {\n    const MOD = 1000000007n;\n    const cnt = new Int32Array(30);\n\n    for (let i = 0; i < nums.length; i++) {\n        const num = nums[i];\n        for (let b = 0; b < 30; b++) {\n            if ((num >> b) & 1) {\n                cnt[b]++;\n            }\n        }\n    }\n\n    let ans = 0n;\n    for (let i = 0; i < k; i++) {\n        let cur = 0n;\n        for (let b = 0; b < 30; b++) {\n            if (cnt[b] > 0) {\n                cur |= (1n << BigInt(b));\n                cnt[b]--;\n            }\n        }\n        ans = (ans + cur * cur) % MOD;\n    }\n\n    return Number(ans);\n};\n"
+      }
+    }
+  },
+  {
     "id": "2778",
     "title": "Sum of Squares of Special Elements",
     "slug": "sum-of-squares-of-special-elements",

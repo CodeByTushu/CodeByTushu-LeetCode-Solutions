@@ -32,12 +32,12 @@ Every day, we publish complete, optimal solutions in **four major programming la
 
 ## 📊 Repository Statistics (Live & Verified)
 
-- **Total Published Problems:** `2`
+- **Total Published Problems:** `3`
 - **Supported Languages:** `4` (Java, Python, C++, JavaScript)
 - **Difficulty Breakdown:**
   - 🟢 **Easy:** `1`
   - 🟡 **Medium:** `1`
-  - 🔴 **Hard:** `0`
+  - 🔴 **Hard:** `1`
 - **Active Year:** `2026`
 
 ---
@@ -49,10 +49,10 @@ Experience the repository through our responsive static web application on GitHu
 👉 **[Launch Daily LeetCode Solutions Hub](https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/)**
 
 ### Website Capabilities:
-- 🔍 **Real-Time Instant Search:** Filter by problem number (e.g. `2778`, `2333`), title, or topic keywords with keyboard shortcut <kbd>/</kbd>.
+- 🔍 **Real-Time Instant Search:** Filter by problem number (e.g. `2897`, `2778`, `2333`), title, or topic keywords with keyboard shortcut <kbd>/</kbd>.
 - 🎯 **Difficulty Filtering:** Instant one-click toggles for Easy, Medium, and Hard challenges.
 - 📅 **Date & Archive Selectors:** Browse solutions chronologically by Year and Month.
-- 🏷️ **Topic Tag Cloud:** Filter solutions by DSA topics (Array, Math, Simulation, Greedy, Bucket Sort, etc.).
+- 🏷️ **Topic Tag Cloud:** Filter solutions by DSA topics (Array, Bit Manipulation, Greedy, Math, Simulation, etc.).
 - ⚡ **Sort Order:** Sort by Newest First, Older First, or Problem Number.
 - 💻 **Interactive Code Viewer:** Isolated tabbed viewer with syntax highlighting and direct source file links.
 - 📋 **One-Click Code Copy:** Dedicated copy action for the active language with clipboard toast notifications.
@@ -87,8 +87,15 @@ CodeByTushu-LeetCode-Solutions/
             │       ├── solution.py
             │       ├── solution.cpp
             │       └── solution.js
-            └── 11-10-2026/
-                └── 2778-Sum-of-Squares-of-Special-Elements/
+            ├── 11-10-2026/
+            │   └── 2778-Sum-of-Squares-of-Special-Elements/
+            │       ├── README.md
+            │       ├── Solution.java
+            │       ├── solution.py
+            │       ├── solution.cpp
+            │       └── solution.js
+            └── 12-10-2026/
+                └── 2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/
                     ├── README.md
                     ├── Solution.java
                     ├── solution.py
@@ -102,6 +109,7 @@ CodeByTushu-LeetCode-Solutions/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2897** | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | <span style="color:#ef4444">**Hard**</span> | 12 Oct 2026 | [Java](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java) | [Python](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py) | [C++](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp) | [JS](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/README.md) |
 | **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/README.md) |
 | **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js) | *Coming Soon* | [README](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/README.md) |
 
@@ -111,6 +119,7 @@ CodeByTushu-LeetCode-Solutions/
 
 ### 2026
 #### October 2026
+- **12 October 2026**: [#2897 Apply Operations on Array to Maximize Sum of Squares](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/) (Hard)
 - **11 October 2026**: [#2778 Sum of Squares of Special Elements](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/) (Easy)
 - **10 October 2026**: [#2333 Minimum Sum of Squared Difference](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/) (Medium)
 
@@ -118,11 +127,13 @@ CodeByTushu-LeetCode-Solutions/
 
 ## 🏷️ Topic & Tag Index
 
-- **Array**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Array**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Bit Manipulation**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
 - **Bucket Sort / Frequency Array**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 - **Enumeration**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
-- **Greedy**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
-- **Math**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Greedy**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Hash Table**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
+- **Math**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 - **Simulation**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 
@@ -131,7 +142,7 @@ CodeByTushu-LeetCode-Solutions/
 ## 🛠️ The Daily Publishing Workflow
 
 To add today's problem, you only need to supply:
-1. **Today's publication date** (e.g. `11 October 2026`)
+1. **Today's publication date** (e.g. `12 October 2026`)
 2. **Problem screenshot or statement**
 3. **Your solution code** (Java or any preferred language)
 4. **YouTube video URL** (optional, leave pending if not yet recorded)

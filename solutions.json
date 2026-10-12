@@ -150,5 +150,54 @@
         "relativePath": "solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js"
       }
     }
+  },
+  {
+    "id": "1541",
+    "title": "Minimum Insertions to Balance a Parentheses String",
+    "slug": "minimum-insertions-to-balance-a-parentheses-string",
+    "date": "09 September 2026",
+    "dateIso": "2026-09-09",
+    "formattedDate": "09 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "09-09-2026",
+    "problemFolder": "1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "folderPath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+    "youtubeUrl": "https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy"
+    ],
+    "summary": "Find minimum insertions required to balance parentheses where each '(' requires two consecutive '))'.",
+    "approach": "Greedy linear traversal maintaining count of unmatched '(' and required insertions. Consecutive ')' are grouped together, inserting missing ')' or '(' when necessary.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js"
+      }
+    }
   }
 ]

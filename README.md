@@ -112,6 +112,7 @@ CodeByTushu-LeetCode-Solutions/
 | **2897** | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | <span style="color:#ef4444">**Hard**</span> | 12 Oct 2026 | [Java](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java) | [Python](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py) | [C++](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp) | [JS](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js) | [Watch Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f) | [README](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/README.md) |
 | **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js) | [Watch Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ) | [README](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/README.md) |
 | **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js) | [Watch Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a) | [README](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/README.md) |
+| **1541** | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | <span style="color:#ffc400">**Medium**</span> | 09 Sep 2026 | [Java](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java) | [Python](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py) | [C++](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp) | [JS](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js) | [Watch Video](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx) | [README](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/README.md) |
 
 ---
 
@@ -123,6 +124,9 @@ CodeByTushu-LeetCode-Solutions/
 - **11 October 2026**: [#2778 Sum of Squares of Special Elements](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/) (Easy) — [Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ)
 - **10 October 2026**: [#2333 Minimum Sum of Squared Difference](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/) (Medium) — [Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)
 
+#### September 2026
+- **09 September 2026**: [#1541 Minimum Insertions to Balance a Parentheses String](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/) (Medium) — [Video](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)
+
 ---
 
 ## 🏷️ Topic & Tag Index
@@ -131,11 +135,13 @@ CodeByTushu-LeetCode-Solutions/
 - **Bit Manipulation**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
 - **Bucket Sort / Frequency Array**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 - **Enumeration**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
-- **Greedy**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Greedy**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/), [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/)
 - **Hash Table**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
 - **Math**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 - **Simulation**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
+- **Stack**: [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/)
+- **String**: [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/)
 
 ---
 

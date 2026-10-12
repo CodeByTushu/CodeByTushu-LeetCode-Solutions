@@ -167,5 +167,58 @@ window.SOLUTIONS_DATA = [
         "code": "class Solution {\n    minSumSquareDiff(nums1, nums2, k1, k2) {\n        const maxDiff = 100000;\n        const cnt = new Array(maxDiff + 2).fill(0);\n\n        for (let i = 0; i < nums1.length; i++) {\n            cnt[Math.abs(nums1[i] - nums2[i])]++;\n        }\n\n        let k = k1 + k2;\n\n        for (let d = maxDiff; d >= 1 && k > 0; d--) {\n            if (cnt[d] === 0) continue;\n\n            if (cnt[d] <= k) {\n                k -= cnt[d];\n                cnt[d - 1] += cnt[d];\n                cnt[d] = 0;\n            } else {\n                cnt[d - 1] += k;\n                cnt[d] -= k;\n                k = 0;\n            }\n        }\n\n        let ans = 0;\n\n        for (let d = 1; d <= maxDiff; d++) {\n            ans += d * d * cnt[d];\n        }\n\n        return ans;\n    }\n}\n"
       }
     }
+  },
+  {
+    "id": "1541",
+    "title": "Minimum Insertions to Balance a Parentheses String",
+    "slug": "minimum-insertions-to-balance-a-parentheses-string",
+    "date": "09 September 2026",
+    "dateIso": "2026-09-09",
+    "formattedDate": "09 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "09-09-2026",
+    "problemFolder": "1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "folderPath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+    "youtubeUrl": "https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy"
+    ],
+    "summary": "Find minimum insertions required to balance parentheses where each '(' requires two consecutive '))'.",
+    "approach": "Greedy linear traversal maintaining count of unmatched '(' and required insertions. Consecutive ')' are grouped together, inserting missing ')' or '(' when necessary.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java",
+        "code": "class Solution {\n    public int minInsertions(String s) {\n        int open = 0; // unmatched '('\n        int ans = 0;  // insertions\n        int i = 0, n = s.length();\n\n        while (i < n) {\n            if (s.charAt(i) == '(') {\n                open++;\n                i++;\n            } else {\n                // Need two consecutive ')'\n                if (i + 1 < n && s.charAt(i + 1) == ')') {\n                    i += 2;\n                } else {\n                    ans++; // insert missing ')'\n                    i++;\n                }\n\n                if (open > 0) {\n                    open--;\n                } else {\n                    ans++; // insert missing '('\n                }\n            }\n        }\n\n        return ans + open * 2;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py",
+        "code": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        open_count = 0  # unmatched '('\n        ans = 0         # insertions\n        i = 0\n        n = len(s)\n\n        while i < n:\n            if s[i] == '(':\n                open_count += 1\n                i += 1\n            else:\n                # Need two consecutive ')'\n                if i + 1 < n and s[i + 1] == ')':\n                    i += 2\n                else:\n                    ans += 1  # insert missing ')'\n                    i += 1\n\n                if open_count > 0:\n                    open_count -= 1\n                else:\n                    ans += 1  # insert missing '('\n\n        return ans + open_count * 2\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp",
+        "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minInsertions(string s) {\n        int open = 0; // unmatched '('\n        int ans = 0;  // insertions\n        int i = 0, n = s.length();\n\n        while (i < n) {\n            if (s[i] == '(') {\n                open++;\n                i++;\n            } else {\n                // Need two consecutive ')'\n                if (i + 1 < n && s[i + 1] == ')') {\n                    i += 2;\n                } else {\n                    ans++; // insert missing ')'\n                    i++;\n                }\n\n                if (open > 0) {\n                    open--;\n                } else {\n                    ans++; // insert missing '('\n                }\n            }\n        }\n\n        return ans + open * 2;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minInsertions = function(s) {\n    let open = 0; // unmatched '('\n    let ans = 0;  // insertions\n    let i = 0;\n    const n = s.length;\n\n    while (i < n) {\n        if (s[i] === '(') {\n            open++;\n            i++;\n        } else {\n            // Need two consecutive ')'\n            if (i + 1 < n && s[i + 1] === ')') {\n                i += 2;\n            } else {\n                ans++; // insert missing ')'\n                i++;\n            }\n\n            if (open > 0) {\n                open--;\n            } else {\n                ans++; // insert missing '('\n            }\n        }\n    }\n\n    return ans + open * 2;\n};\n"
+      }
+    }
   }
 ];

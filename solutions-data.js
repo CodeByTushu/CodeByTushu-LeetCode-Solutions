@@ -379,5 +379,59 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minAddToMakeValid = function(s) {\n    let open = 0; // unmatched '('\n    let add = 0;  // unmatched ')'\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            open++;\n        } else {\n            if (open > 0) {\n                open--;\n            } else {\n                add++;\n            }\n        }\n    }\n    return add + open;\n};\n"
       }
     }
+  },
+  {
+    "id": "856",
+    "title": "Score of Parentheses",
+    "slug": "score-of-parentheses",
+    "date": "05 September 2026",
+    "dateIso": "2026-09-05",
+    "formattedDate": "05 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "05-09-2026",
+    "problemFolder": "856-Score-of-Parentheses",
+    "folderPath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/score-of-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/score-of-parentheses/",
+    "youtubeUrl": "https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT",
+    "tags": [
+      "String",
+      "Stack",
+      "Bit Manipulation",
+      "Math"
+    ],
+    "summary": "Calculate the numerical score of a balanced parentheses string according to compounding nesting rules.",
+    "approach": "Track nesting depth linearly. Each immediate '()' pair contributes 2^depth (1 << depth) to the total score in O(N) time and O(1) space.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/Solution.java",
+        "code": "class Solution {\n    public int scoreOfParentheses(String s) {\n        int score = 0;\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '(') {\n                depth++;\n            } else {\n                depth--;\n                // Direct \"()\" pair found\n                if (s.charAt(i - 1) == '(') {\n                    score += 1 << depth;\n                }\n            }\n        }\n        return score;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.py",
+        "code": "class Solution:\n    def scoreOfParentheses(self, s: str) -> int:\n        score = 0\n        depth = 0\n        for i in range(len(s)):\n            if s[i] == '(':\n                depth += 1\n            else:\n                depth -= 1\n                # Direct \"()\" pair found\n                if s[i - 1] == '(':\n                    score += 1 << depth\n        return score\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.cpp",
+        "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int scoreOfParentheses(string s) {\n        int score = 0;\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            if (s[i] == '(') {\n                depth++;\n            } else {\n                depth--;\n                // Direct \"()\" pair found\n                if (s[i - 1] == '(') {\n                    score += 1 << depth;\n                }\n            }\n        }\n        return score;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar scoreOfParentheses = function(s) {\n    let score = 0;\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            depth++;\n        } else {\n            depth--;\n            // Direct \"()\" pair found\n            if (s[i - 1] === '(') {\n                score += 1 << depth;\n            }\n        }\n    }\n    return score;\n};\n"
+      }
+    }
   }
 ];

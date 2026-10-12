@@ -346,5 +346,55 @@
         "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js"
       }
     }
+  },
+  {
+    "id": "856",
+    "title": "Score of Parentheses",
+    "slug": "score-of-parentheses",
+    "date": "05 September 2026",
+    "dateIso": "2026-09-05",
+    "formattedDate": "05 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "05-09-2026",
+    "problemFolder": "856-Score-of-Parentheses",
+    "folderPath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/score-of-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/score-of-parentheses/",
+    "youtubeUrl": "https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT",
+    "tags": [
+      "String",
+      "Stack",
+      "Bit Manipulation",
+      "Math"
+    ],
+    "summary": "Calculate the numerical score of a balanced parentheses string according to compounding nesting rules.",
+    "approach": "Track nesting depth linearly. Each immediate '()' pair contributes 2^depth (1 << depth) to the total score in O(N) time and O(1) space.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.js"
+      }
+    }
   }
 ]

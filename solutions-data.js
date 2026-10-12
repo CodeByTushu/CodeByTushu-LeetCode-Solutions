@@ -433,5 +433,59 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar scoreOfParentheses = function(s) {\n    let score = 0;\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            depth++;\n        } else {\n            depth--;\n            // Direct \"()\" pair found\n            if (s[i - 1] === '(') {\n                score += 1 << depth;\n            }\n        }\n    }\n    return score;\n};\n"
       }
     }
+  },
+  {
+    "id": "678",
+    "title": "Valid Parenthesis String",
+    "slug": "valid-parenthesis-string",
+    "date": "04 September 2026",
+    "dateIso": "2026-09-04",
+    "formattedDate": "04 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "04-09-2026",
+    "problemFolder": "678-Valid-Parenthesis-String",
+    "folderPath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "youtubeUrl": "https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack",
+      "Greedy"
+    ],
+    "summary": "Check whether a string with '(', ')' and wildcard '*' can represent a valid balanced parentheses sequence.",
+    "approach": "Greedy range tracking maintaining minimum and maximum possible open parentheses count [lo, hi]. If hi < 0 at any point return false; return lo == 0 at the end.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/Solution.java",
+        "code": "class Solution {\n    public boolean checkValidString(String s) {\n        int lo = 0, hi = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                lo++;\n                hi++;\n            } else if (c == ')') {\n                lo--;\n                hi--;\n            } else { // '*'\n                lo--;\n                hi++;\n            }\n            if (hi < 0) return false;\n            if (lo < 0) lo = 0;\n        }\n        return lo == 0;\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.py",
+        "code": "class Solution:\n    def checkValidString(self, s: str) -> bool:\n        lo = 0\n        hi = 0\n        for c in s:\n            if c == '(':\n                lo += 1\n                hi += 1\n            elif c == ')':\n                lo -= 1\n                hi -= 1\n            else:  # '*'\n                lo -= 1\n                hi += 1\n            if hi < 0:\n                return False\n            if lo < 0:\n                lo = 0\n        return lo == 0\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.cpp",
+        "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool checkValidString(string s) {\n        int lo = 0, hi = 0;\n        for (char c : s) {\n            if (c == '(') {\n                lo++;\n                hi++;\n            } else if (c == ')') {\n                lo--;\n                hi--;\n            } else { // '*'\n                lo--;\n                hi++;\n            }\n            if (hi < 0) return false;\n            if (lo < 0) lo = 0;\n        }\n        return lo == 0;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkValidString = function(s) {\n    let lo = 0;\n    let hi = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            lo++;\n            hi++;\n        } else if (c === ')') {\n            lo--;\n            hi--;\n        } else { // '*'\n            lo--;\n            hi++;\n        }\n        if (hi < 0) return false;\n        if (lo < 0) lo = 0;\n    }\n    return lo === 0;\n};\n"
+      }
+    }
   }
 ];

@@ -396,5 +396,55 @@
         "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.js"
       }
     }
+  },
+  {
+    "id": "678",
+    "title": "Valid Parenthesis String",
+    "slug": "valid-parenthesis-string",
+    "date": "04 September 2026",
+    "dateIso": "2026-09-04",
+    "formattedDate": "04 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "04-09-2026",
+    "problemFolder": "678-Valid-Parenthesis-String",
+    "folderPath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "youtubeUrl": "https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack",
+      "Greedy"
+    ],
+    "summary": "Check whether a string with '(', ')' and wildcard '*' can represent a valid balanced parentheses sequence.",
+    "approach": "Greedy range tracking maintaining minimum and maximum possible open parentheses count [lo, hi]. If hi < 0 at any point return false; return lo == 0 at the end.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.js"
+      }
+    }
   }
 ]

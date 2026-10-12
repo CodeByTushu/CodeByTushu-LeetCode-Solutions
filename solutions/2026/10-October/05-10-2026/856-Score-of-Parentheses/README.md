@@ -1,6 +1,6 @@
-# LeetCode 856: Score of Parentheses
+﻿# LeetCode 856: Score of Parentheses
 
-- **Publication Date:** 05 September 2026
+- **Publication Date:** 05 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/score-of-parentheses/](https://leetcode.com/problems/score-of-parentheses/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)
@@ -57,13 +57,13 @@ The score of a balanced parentheses string is based on the following rule:
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)

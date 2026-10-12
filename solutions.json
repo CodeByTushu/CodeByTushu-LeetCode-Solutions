@@ -155,14 +155,14 @@
     "id": "1541",
     "title": "Minimum Insertions to Balance a Parentheses String",
     "slug": "minimum-insertions-to-balance-a-parentheses-string",
-    "date": "09 September 2026",
-    "dateIso": "2026-09-09",
-    "formattedDate": "09 Sep 2026",
+    "date": "09 October 2026",
+    "dateIso": "2026-10-09",
+    "formattedDate": "09 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "09-09-2026",
+    "month": "10-October",
+    "dayFolder": "09-10-2026",
     "problemFolder": "1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
-    "folderPath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "folderPath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
@@ -181,22 +181,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java"
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py"
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp"
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js"
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js"
       }
     }
   },
@@ -204,14 +204,14 @@
     "id": "1021",
     "title": "Remove Outermost Parentheses",
     "slug": "remove-outermost-parentheses",
-    "date": "08 September 2026",
-    "dateIso": "2026-09-08",
-    "formattedDate": "08 Sep 2026",
+    "date": "08 October 2026",
+    "dateIso": "2026-10-08",
+    "formattedDate": "08 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "08-09-2026",
+    "month": "10-October",
+    "dayFolder": "08-10-2026",
     "problemFolder": "1021-Remove-Outermost-Parentheses",
-    "folderPath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses",
+    "folderPath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
@@ -229,22 +229,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/Solution.java"
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.py"
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.cpp"
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.js"
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/solution.js"
       }
     }
   },
@@ -252,14 +252,14 @@
     "id": "301",
     "title": "Remove Invalid Parentheses",
     "slug": "remove-invalid-parentheses",
-    "date": "07 September 2026",
-    "dateIso": "2026-09-07",
-    "formattedDate": "07 Sep 2026",
+    "date": "07 October 2026",
+    "dateIso": "2026-10-07",
+    "formattedDate": "07 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "07-09-2026",
+    "month": "10-October",
+    "dayFolder": "07-10-2026",
     "problemFolder": "301-Remove-Invalid-Parentheses",
-    "folderPath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses",
+    "folderPath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
@@ -279,22 +279,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/Solution.java"
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.py"
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.cpp"
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.js"
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/solution.js"
       }
     }
   },
@@ -302,14 +302,14 @@
     "id": "921",
     "title": "Minimum Add to Make Parentheses Valid",
     "slug": "minimum-add-to-make-parentheses-valid",
-    "date": "06 September 2026",
-    "dateIso": "2026-09-06",
-    "formattedDate": "06 Sep 2026",
+    "date": "06 October 2026",
+    "dateIso": "2026-10-06",
+    "formattedDate": "06 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "06-09-2026",
+    "month": "10-October",
+    "dayFolder": "06-10-2026",
     "problemFolder": "921-Minimum-Add-to-Make-Parentheses-Valid",
-    "folderPath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid",
+    "folderPath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
@@ -328,22 +328,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java"
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py"
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp"
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js"
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js"
       }
     }
   },
@@ -351,14 +351,14 @@
     "id": "856",
     "title": "Score of Parentheses",
     "slug": "score-of-parentheses",
-    "date": "05 September 2026",
-    "dateIso": "2026-09-05",
-    "formattedDate": "05 Sep 2026",
+    "date": "05 October 2026",
+    "dateIso": "2026-10-05",
+    "formattedDate": "05 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "05-09-2026",
+    "month": "10-October",
+    "dayFolder": "05-10-2026",
     "problemFolder": "856-Score-of-Parentheses",
-    "folderPath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses",
+    "folderPath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/score-of-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/score-of-parentheses/",
@@ -378,22 +378,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/Solution.java"
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.py"
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.cpp"
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.js"
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/solution.js"
       }
     }
   },
@@ -401,14 +401,14 @@
     "id": "678",
     "title": "Valid Parenthesis String",
     "slug": "valid-parenthesis-string",
-    "date": "04 September 2026",
-    "dateIso": "2026-09-04",
-    "formattedDate": "04 Sep 2026",
+    "date": "04 October 2026",
+    "dateIso": "2026-10-04",
+    "formattedDate": "04 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "04-09-2026",
+    "month": "10-October",
+    "dayFolder": "04-10-2026",
     "problemFolder": "678-Valid-Parenthesis-String",
-    "folderPath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String",
+    "folderPath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
     "leetcodeUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
@@ -428,22 +428,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/Solution.java"
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.py"
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.cpp"
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.js"
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/solution.js"
       }
     }
   },
@@ -451,14 +451,14 @@
     "id": "32",
     "title": "Longest Valid Parentheses",
     "slug": "longest-valid-parentheses",
-    "date": "03 September 2026",
-    "dateIso": "2026-09-03",
-    "formattedDate": "03 Sep 2026",
+    "date": "03 October 2026",
+    "dateIso": "2026-10-03",
+    "formattedDate": "03 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "03-09-2026",
+    "month": "10-October",
+    "dayFolder": "03-10-2026",
     "problemFolder": "32-Longest-Valid-Parentheses",
-    "folderPath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses",
+    "folderPath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
@@ -477,22 +477,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/Solution.java"
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.py"
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.cpp"
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.js"
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/solution.js"
       }
     }
   },
@@ -500,14 +500,14 @@
     "id": "22",
     "title": "Generate Parentheses",
     "slug": "generate-parentheses",
-    "date": "02 September 2026",
-    "dateIso": "2026-09-02",
-    "formattedDate": "02 Sep 2026",
+    "date": "02 October 2026",
+    "dateIso": "2026-10-02",
+    "formattedDate": "02 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "02-09-2026",
+    "month": "10-October",
+    "dayFolder": "02-10-2026",
     "problemFolder": "22-Generate-Parentheses",
-    "folderPath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses",
+    "folderPath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/generate-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
@@ -526,22 +526,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/Solution.java"
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.py"
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.cpp"
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.js"
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/solution.js"
       }
     }
   },
@@ -549,14 +549,14 @@
     "id": "20",
     "title": "Valid Parentheses",
     "slug": "valid-parentheses",
-    "date": "01 September 2026",
-    "dateIso": "2026-09-01",
-    "formattedDate": "01 Sep 2026",
+    "date": "01 October 2026",
+    "dateIso": "2026-10-01",
+    "formattedDate": "01 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "01-09-2026",
+    "month": "10-October",
+    "dayFolder": "01-10-2026",
     "problemFolder": "20-Valid-Parentheses",
-    "folderPath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses",
+    "folderPath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/valid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
@@ -574,24 +574,23 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/Solution.java"
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.py"
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.cpp"
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.js"
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/solution.js"
       }
     }
   }
 ]
-

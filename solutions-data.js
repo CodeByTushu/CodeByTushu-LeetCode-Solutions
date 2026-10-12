@@ -172,14 +172,14 @@ window.SOLUTIONS_DATA = [
     "id": "1541",
     "title": "Minimum Insertions to Balance a Parentheses String",
     "slug": "minimum-insertions-to-balance-a-parentheses-string",
-    "date": "09 September 2026",
-    "dateIso": "2026-09-09",
-    "formattedDate": "09 Sep 2026",
+    "date": "09 October 2026",
+    "dateIso": "2026-10-09",
+    "formattedDate": "09 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "09-09-2026",
+    "month": "10-October",
+    "dayFolder": "09-10-2026",
     "problemFolder": "1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
-    "folderPath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "folderPath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
@@ -198,25 +198,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java",
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java",
         "code": "class Solution {\n    public int minInsertions(String s) {\n        int open = 0; // unmatched '('\n        int ans = 0;  // insertions\n        int i = 0, n = s.length();\n\n        while (i < n) {\n            if (s.charAt(i) == '(') {\n                open++;\n                i++;\n            } else {\n                // Need two consecutive ')'\n                if (i + 1 < n && s.charAt(i + 1) == ')') {\n                    i += 2;\n                } else {\n                    ans++; // insert missing ')'\n                    i++;\n                }\n\n                if (open > 0) {\n                    open--;\n                } else {\n                    ans++; // insert missing '('\n                }\n            }\n        }\n\n        return ans + open * 2;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py",
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py",
         "code": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        open_count = 0  # unmatched '('\n        ans = 0         # insertions\n        i = 0\n        n = len(s)\n\n        while i < n:\n            if s[i] == '(':\n                open_count += 1\n                i += 1\n            else:\n                # Need two consecutive ')'\n                if i + 1 < n and s[i + 1] == ')':\n                    i += 2\n                else:\n                    ans += 1  # insert missing ')'\n                    i += 1\n\n                if open_count > 0:\n                    open_count -= 1\n                else:\n                    ans += 1  # insert missing '('\n\n        return ans + open_count * 2\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp",
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp",
         "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minInsertions(string s) {\n        int open = 0; // unmatched '('\n        int ans = 0;  // insertions\n        int i = 0, n = s.length();\n\n        while (i < n) {\n            if (s[i] == '(') {\n                open++;\n                i++;\n            } else {\n                // Need two consecutive ')'\n                if (i + 1 < n && s[i + 1] == ')') {\n                    i += 2;\n                } else {\n                    ans++; // insert missing ')'\n                    i++;\n                }\n\n                if (open > 0) {\n                    open--;\n                } else {\n                    ans++; // insert missing '('\n                }\n            }\n        }\n\n        return ans + open * 2;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js",
+        "relativePath": "solutions/2026/10-October/09-10-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js",
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minInsertions = function(s) {\n    let open = 0; // unmatched '('\n    let ans = 0;  // insertions\n    let i = 0;\n    const n = s.length;\n\n    while (i < n) {\n        if (s[i] === '(') {\n            open++;\n            i++;\n        } else {\n            // Need two consecutive ')'\n            if (i + 1 < n && s[i + 1] === ')') {\n                i += 2;\n            } else {\n                ans++; // insert missing ')'\n                i++;\n            }\n\n            if (open > 0) {\n                open--;\n            } else {\n                ans++; // insert missing '('\n            }\n        }\n    }\n\n    return ans + open * 2;\n};\n"
       }
     }
@@ -225,14 +225,14 @@ window.SOLUTIONS_DATA = [
     "id": "1021",
     "title": "Remove Outermost Parentheses",
     "slug": "remove-outermost-parentheses",
-    "date": "08 September 2026",
-    "dateIso": "2026-09-08",
-    "formattedDate": "08 Sep 2026",
+    "date": "08 October 2026",
+    "dateIso": "2026-10-08",
+    "formattedDate": "08 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "08-09-2026",
+    "month": "10-October",
+    "dayFolder": "08-10-2026",
     "problemFolder": "1021-Remove-Outermost-Parentheses",
-    "folderPath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses",
+    "folderPath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
@@ -250,25 +250,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/Solution.java",
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/Solution.java",
         "code": "class Solution {\n    public String removeOuterParentheses(String s) {\n        StringBuilder sb = new StringBuilder();\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                if (depth > 0) sb.append(c);\n                depth++;\n            } else {\n                depth--;\n                if (depth > 0) sb.append(c);\n            }\n        }\n        return sb.toString();\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.py",
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/solution.py",
         "code": "class Solution:\n    def removeOuterParentheses(self, s: str) -> str:\n        res = []\n        depth = 0\n        for c in s:\n            if c == '(':\n                if depth > 0:\n                    res.append(c)\n                depth += 1\n            else:\n                depth -= 1\n                if depth > 0:\n                    res.append(c)\n        return \"\".join(res)\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.cpp",
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/solution.cpp",
         "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    string removeOuterParentheses(string s) {\n        string result = \"\";\n        int depth = 0;\n        for (char c : s) {\n            if (c == '(') {\n                if (depth > 0) result += c;\n                depth++;\n            } else {\n                depth--;\n                if (depth > 0) result += c;\n            }\n        }\n        return result;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.js",
+        "relativePath": "solutions/2026/10-October/08-10-2026/1021-Remove-Outermost-Parentheses/solution.js",
         "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar removeOuterParentheses = function(s) {\n    let result = '';\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            if (depth > 0) result += c;\n            depth++;\n        } else {\n            depth--;\n            if (depth > 0) result += c;\n        }\n    }\n    return result;\n};\n"
       }
     }
@@ -277,14 +277,14 @@ window.SOLUTIONS_DATA = [
     "id": "301",
     "title": "Remove Invalid Parentheses",
     "slug": "remove-invalid-parentheses",
-    "date": "07 September 2026",
-    "dateIso": "2026-09-07",
-    "formattedDate": "07 Sep 2026",
+    "date": "07 October 2026",
+    "dateIso": "2026-10-07",
+    "formattedDate": "07 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "07-09-2026",
+    "month": "10-October",
+    "dayFolder": "07-10-2026",
     "problemFolder": "301-Remove-Invalid-Parentheses",
-    "folderPath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses",
+    "folderPath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
@@ -304,25 +304,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/Solution.java",
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/Solution.java",
         "code": "import java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    public List<String> removeInvalidParentheses(String s) {\n        int leftRem = 0, rightRem = 0;\n\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                leftRem++;\n            } else if (c == ')') {\n                if (leftRem > 0) leftRem--;\n                else rightRem++;\n            }\n        }\n\n        List<String> result = new ArrayList<>();\n        dfs(s, 0, leftRem, rightRem, result);\n        return result;\n    }\n\n    private void dfs(String s, int start, int leftRem, int rightRem, List<String> result) {\n        if (leftRem == 0 && rightRem == 0) {\n            if (isValid(s)) result.add(s);\n            return;\n        }\n\n        for (int i = start; i < s.length(); i++) {\n            // Skip duplicates\n            if (i > start && s.charAt(i) == s.charAt(i - 1)) continue;\n\n            char c = s.charAt(i);\n            if (c != '(' && c != ')') continue;\n\n            String next = s.substring(0, i) + s.substring(i + 1);\n\n            if (c == '(' && leftRem > 0) {\n                dfs(next, i, leftRem - 1, rightRem, result);\n            } else if (c == ')' && rightRem > 0) {\n                dfs(next, i, leftRem, rightRem - 1, result);\n            }\n        }\n    }\n\n    private boolean isValid(String s) {\n        int count = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') count++;\n            else if (c == ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count == 0;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.py",
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/solution.py",
         "code": "from typing import List\n\nclass Solution:\n    def removeInvalidParentheses(self, s: str) -> List[str]:\n        left_rem = 0\n        right_rem = 0\n\n        for c in s:\n            if c == '(':\n                left_rem += 1\n            elif c == ')':\n                if left_rem > 0:\n                    left_rem -= 1\n                else:\n                    right_rem += 1\n\n        result = []\n\n        def is_valid(string: str) -> bool:\n            count = 0\n            for char in string:\n                if char == '(':\n                    count += 1\n                elif char == ')':\n                    count -= 1\n                    if count < 0:\n                        return False\n            return count == 0\n\n        def dfs(string: str, start: int, left: int, right: int):\n            if left == 0 and right == 0:\n                if is_valid(string):\n                    result.append(string)\n                return\n\n            for i in range(start, len(string)):\n                # Skip duplicate adjacent removals to prevent redundant branches\n                if i > start and string[i] == string[i - 1]:\n                    continue\n\n                c = string[i]\n                if c != '(' and c != ')':\n                    continue\n\n                next_str = string[:i] + string[i + 1:]\n\n                if c == '(' and left > 0:\n                    dfs(next_str, i, left - 1, right)\n                elif c == ')' and right > 0:\n                    dfs(next_str, i, left, right - 1)\n\n        dfs(s, 0, left_rem, right_rem)\n        return result\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.cpp",
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/solution.cpp",
         "code": "#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<string> removeInvalidParentheses(string s) {\n        int leftRem = 0, rightRem = 0;\n\n        for (char c : s) {\n            if (c == '(') {\n                leftRem++;\n            } else if (c == ')') {\n                if (leftRem > 0) leftRem--;\n                else rightRem++;\n            }\n        }\n\n        vector<string> result;\n        dfs(s, 0, leftRem, rightRem, result);\n        return result;\n    }\n\nprivate:\n    void dfs(const string& s, int start, int leftRem, int rightRem, vector<string>& result) {\n        if (leftRem == 0 && rightRem == 0) {\n            if (isValid(s)) result.push_back(s);\n            return;\n        }\n\n        for (int i = start; i < s.length(); i++) {\n            // Skip duplicates\n            if (i > start && s[i] == s[i - 1]) continue;\n\n            char c = s[i];\n            if (c != '(' && c != ')') continue;\n\n            string next = s.substr(0, i) + s.substr(i + 1);\n\n            if (c == '(' && leftRem > 0) {\n                dfs(next, i, leftRem - 1, rightRem, result);\n            } else if (c == ')' && rightRem > 0) {\n                dfs(next, i, leftRem, rightRem - 1, result);\n            }\n        }\n    }\n\n    bool isValid(const string& s) {\n        int count = 0;\n        for (char c : s) {\n            if (c == '(') count++;\n            else if (c == ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count == 0;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/07-09-2026/301-Remove-Invalid-Parentheses/solution.js",
+        "relativePath": "solutions/2026/10-October/07-10-2026/301-Remove-Invalid-Parentheses/solution.js",
         "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar removeInvalidParentheses = function(s) {\n    let leftRem = 0;\n    let rightRem = 0;\n\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            leftRem++;\n        } else if (c === ')') {\n            if (leftRem > 0) leftRem--;\n            else rightRem++;\n        }\n    }\n\n    const result = [];\n\n    const isValid = (str) => {\n        let count = 0;\n        for (let i = 0; i < str.length; i++) {\n            const c = str[i];\n            if (c === '(') count++;\n            else if (c === ')') {\n                count--;\n                if (count < 0) return false;\n            }\n        }\n        return count === 0;\n    };\n\n    const dfs = (str, start, left, right) => {\n        if (left === 0 && right === 0) {\n            if (isValid(str)) result.push(str);\n            return;\n        }\n\n        for (let i = start; i < str.length; i++) {\n            // Skip duplicates\n            if (i > start && str[i] === str[i - 1]) continue;\n\n            const c = str[i];\n            if (c !== '(' && c !== ')') continue;\n\n            const next = str.slice(0, i) + str.slice(i + 1);\n\n            if (c === '(' && left > 0) {\n                dfs(next, i, left - 1, right);\n            } else if (c === ')' && right > 0) {\n                dfs(next, i, left, right - 1);\n            }\n        }\n    };\n\n    dfs(s, 0, leftRem, rightRem);\n    return result;\n};\n"
       }
     }
@@ -331,14 +331,14 @@ window.SOLUTIONS_DATA = [
     "id": "921",
     "title": "Minimum Add to Make Parentheses Valid",
     "slug": "minimum-add-to-make-parentheses-valid",
-    "date": "06 September 2026",
-    "dateIso": "2026-09-06",
-    "formattedDate": "06 Sep 2026",
+    "date": "06 October 2026",
+    "dateIso": "2026-10-06",
+    "formattedDate": "06 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "06-09-2026",
+    "month": "10-October",
+    "dayFolder": "06-10-2026",
     "problemFolder": "921-Minimum-Add-to-Make-Parentheses-Valid",
-    "folderPath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid",
+    "folderPath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
@@ -357,25 +357,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java",
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java",
         "code": "class Solution {\n    public int minAddToMakeValid(String s) {\n        int open = 0; // unmatched '('\n        int add = 0;  // unmatched ')'\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '(') {\n                open++;\n            } else {\n                if (open > 0) {\n                    open--;\n                } else {\n                    add++;\n                }\n            }\n        }\n        return add + open;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py",
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py",
         "code": "class Solution:\n    def minAddToMakeValid(self, s: str) -> int:\n        open_count = 0  # unmatched '('\n        add = 0         # unmatched ')'\n        for c in s:\n            if c == '(':\n                open_count += 1\n            else:\n                if open_count > 0:\n                    open_count -= 1\n                else:\n                    add += 1\n        return add + open_count\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp",
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp",
         "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        int open = 0; // unmatched '('\n        int add = 0;  // unmatched ')'\n        for (char c : s) {\n            if (c == '(') {\n                open++;\n            } else {\n                if (open > 0) {\n                    open--;\n                } else {\n                    add++;\n                }\n            }\n        }\n        return add + open;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/06-09-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js",
+        "relativePath": "solutions/2026/10-October/06-10-2026/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js",
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minAddToMakeValid = function(s) {\n    let open = 0; // unmatched '('\n    let add = 0;  // unmatched ')'\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            open++;\n        } else {\n            if (open > 0) {\n                open--;\n            } else {\n                add++;\n            }\n        }\n    }\n    return add + open;\n};\n"
       }
     }
@@ -384,14 +384,14 @@ window.SOLUTIONS_DATA = [
     "id": "856",
     "title": "Score of Parentheses",
     "slug": "score-of-parentheses",
-    "date": "05 September 2026",
-    "dateIso": "2026-09-05",
-    "formattedDate": "05 Sep 2026",
+    "date": "05 October 2026",
+    "dateIso": "2026-10-05",
+    "formattedDate": "05 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "05-09-2026",
+    "month": "10-October",
+    "dayFolder": "05-10-2026",
     "problemFolder": "856-Score-of-Parentheses",
-    "folderPath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses",
+    "folderPath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/score-of-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/score-of-parentheses/",
@@ -411,25 +411,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/Solution.java",
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/Solution.java",
         "code": "class Solution {\n    public int scoreOfParentheses(String s) {\n        int score = 0;\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '(') {\n                depth++;\n            } else {\n                depth--;\n                // Direct \"()\" pair found\n                if (s.charAt(i - 1) == '(') {\n                    score += 1 << depth;\n                }\n            }\n        }\n        return score;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.py",
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/solution.py",
         "code": "class Solution:\n    def scoreOfParentheses(self, s: str) -> int:\n        score = 0\n        depth = 0\n        for i in range(len(s)):\n            if s[i] == '(':\n                depth += 1\n            else:\n                depth -= 1\n                # Direct \"()\" pair found\n                if s[i - 1] == '(':\n                    score += 1 << depth\n        return score\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.cpp",
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/solution.cpp",
         "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int scoreOfParentheses(string s) {\n        int score = 0;\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            if (s[i] == '(') {\n                depth++;\n            } else {\n                depth--;\n                // Direct \"()\" pair found\n                if (s[i - 1] == '(') {\n                    score += 1 << depth;\n                }\n            }\n        }\n        return score;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/05-09-2026/856-Score-of-Parentheses/solution.js",
+        "relativePath": "solutions/2026/10-October/05-10-2026/856-Score-of-Parentheses/solution.js",
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar scoreOfParentheses = function(s) {\n    let score = 0;\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            depth++;\n        } else {\n            depth--;\n            // Direct \"()\" pair found\n            if (s[i - 1] === '(') {\n                score += 1 << depth;\n            }\n        }\n    }\n    return score;\n};\n"
       }
     }
@@ -438,14 +438,14 @@ window.SOLUTIONS_DATA = [
     "id": "678",
     "title": "Valid Parenthesis String",
     "slug": "valid-parenthesis-string",
-    "date": "04 September 2026",
-    "dateIso": "2026-09-04",
-    "formattedDate": "04 Sep 2026",
+    "date": "04 October 2026",
+    "dateIso": "2026-10-04",
+    "formattedDate": "04 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "04-09-2026",
+    "month": "10-October",
+    "dayFolder": "04-10-2026",
     "problemFolder": "678-Valid-Parenthesis-String",
-    "folderPath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String",
+    "folderPath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
     "leetcodeUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
@@ -465,25 +465,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/Solution.java",
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/Solution.java",
         "code": "class Solution {\n    public boolean checkValidString(String s) {\n        int lo = 0, hi = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                lo++;\n                hi++;\n            } else if (c == ')') {\n                lo--;\n                hi--;\n            } else { // '*'\n                lo--;\n                hi++;\n            }\n            if (hi < 0) return false;\n            if (lo < 0) lo = 0;\n        }\n        return lo == 0;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.py",
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/solution.py",
         "code": "class Solution:\n    def checkValidString(self, s: str) -> bool:\n        lo = 0\n        hi = 0\n        for c in s:\n            if c == '(':\n                lo += 1\n                hi += 1\n            elif c == ')':\n                lo -= 1\n                hi -= 1\n            else:  # '*'\n                lo -= 1\n                hi += 1\n            if hi < 0:\n                return False\n            if lo < 0:\n                lo = 0\n        return lo == 0\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.cpp",
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/solution.cpp",
         "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool checkValidString(string s) {\n        int lo = 0, hi = 0;\n        for (char c : s) {\n            if (c == '(') {\n                lo++;\n                hi++;\n            } else if (c == ')') {\n                lo--;\n                hi--;\n            } else { // '*'\n                lo--;\n                hi++;\n            }\n            if (hi < 0) return false;\n            if (lo < 0) lo = 0;\n        }\n        return lo == 0;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/04-09-2026/678-Valid-Parenthesis-String/solution.js",
+        "relativePath": "solutions/2026/10-October/04-10-2026/678-Valid-Parenthesis-String/solution.js",
         "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkValidString = function(s) {\n    let lo = 0;\n    let hi = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            lo++;\n            hi++;\n        } else if (c === ')') {\n            lo--;\n            hi--;\n        } else { // '*'\n            lo--;\n            hi++;\n        }\n        if (hi < 0) return false;\n        if (lo < 0) lo = 0;\n    }\n    return lo === 0;\n};\n"
       }
     }
@@ -492,14 +492,14 @@ window.SOLUTIONS_DATA = [
     "id": "32",
     "title": "Longest Valid Parentheses",
     "slug": "longest-valid-parentheses",
-    "date": "03 September 2026",
-    "dateIso": "2026-09-03",
-    "formattedDate": "03 Sep 2026",
+    "date": "03 October 2026",
+    "dateIso": "2026-10-03",
+    "formattedDate": "03 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "03-09-2026",
+    "month": "10-October",
+    "dayFolder": "03-10-2026",
     "problemFolder": "32-Longest-Valid-Parentheses",
-    "folderPath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses",
+    "folderPath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
@@ -518,25 +518,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/Solution.java",
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/Solution.java",
         "code": "class Solution {\n    public int longestValidParentheses(String s) {\n        int n = s.length();\n        int[] stack = new int[n + 1];\n        int top = -1;\n        int max = 0;\n        stack[++top] = -1;\n        for (int i = 0; i < n; i++) {\n            if (s.charAt(i) == '(') {\n                stack[++top] = i;\n            } else {\n                top--;\n                if (top < 0) {\n                    stack[++top] = i;\n                } else {\n                    max = Math.max(max, i - stack[top]);\n                }\n            }\n        }\n        return max;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.py",
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/solution.py",
         "code": "class Solution:\n    def longestValidParentheses(self, s: str) -> int:\n        stack = [-1]\n        max_len = 0\n\n        for i, c in enumerate(s):\n            if c == '(':\n                stack.append(i)\n            else:\n                stack.pop()\n                if not stack:\n                    stack.append(i)\n                else:\n                    max_len = max(max_len, i - stack[-1])\n\n        return max_len\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.cpp",
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/solution.cpp",
         "code": "#include <string>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int longestValidParentheses(string s) {\n        int n = s.length();\n        vector<int> stack(n + 1);\n        int top = -1;\n        int maxLen = 0;\n        stack[++top] = -1;\n\n        for (int i = 0; i < n; i++) {\n            if (s[i] == '(') {\n                stack[++top] = i;\n            } else {\n                top--;\n                if (top < 0) {\n                    stack[++top] = i;\n                } else {\n                    maxLen = max(maxLen, i - stack[top]);\n                }\n            }\n        }\n\n        return maxLen;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/03-09-2026/32-Longest-Valid-Parentheses/solution.js",
+        "relativePath": "solutions/2026/10-October/03-10-2026/32-Longest-Valid-Parentheses/solution.js",
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestValidParentheses = function(s) {\n    const n = s.length;\n    const stack = [-1];\n    let maxLen = 0;\n\n    for (let i = 0; i < n; i++) {\n        if (s[i] === '(') {\n            stack.push(i);\n        } else {\n            stack.pop();\n            if (stack.length === 0) {\n                stack.push(i);\n            } else {\n                maxLen = Math.max(maxLen, i - stack[stack.length - 1]);\n            }\n        }\n    }\n\n    return maxLen;\n};\n"
       }
     }
@@ -545,14 +545,14 @@ window.SOLUTIONS_DATA = [
     "id": "22",
     "title": "Generate Parentheses",
     "slug": "generate-parentheses",
-    "date": "02 September 2026",
-    "dateIso": "2026-09-02",
-    "formattedDate": "02 Sep 2026",
+    "date": "02 October 2026",
+    "dateIso": "2026-10-02",
+    "formattedDate": "02 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "02-09-2026",
+    "month": "10-October",
+    "dayFolder": "02-10-2026",
     "problemFolder": "22-Generate-Parentheses",
-    "folderPath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses",
+    "folderPath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/generate-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
@@ -571,25 +571,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/Solution.java",
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/Solution.java",
         "code": "import java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> result = new ArrayList<>();\n        backtrack(result, new StringBuilder(), 0, 0, n);\n        return result;\n    }\n\n    private void backtrack(List<String> result, StringBuilder sb, int open, int close, int n) {\n        if (sb.length() == 2 * n) {\n            result.add(sb.toString());\n            return;\n        }\n        if (open < n) {\n            sb.append('(');\n            backtrack(result, sb, open + 1, close, n);\n            sb.deleteCharAt(sb.length() - 1);\n        }\n        if (close < open) {\n            sb.append(')');\n            backtrack(result, sb, open, close + 1, n);\n            sb.deleteCharAt(sb.length() - 1);\n        }\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.py",
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/solution.py",
         "code": "from typing import List\n\nclass Solution:\n    def generateParenthesis(self, n: int) -> List[str]:\n        result = []\n\n        def backtrack(current: list, open_count: int, close_count: int):\n            if len(current) == 2 * n:\n                result.append(\"\".join(current))\n                return\n\n            if open_count < n:\n                current.append('(')\n                backtrack(current, open_count + 1, close_count)\n                current.pop()\n\n            if close_count < open_count:\n                current.append(')')\n                backtrack(current, open_count, close_count + 1)\n                current.pop()\n\n        backtrack([], 0, 0)\n        return result\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.cpp",
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/solution.cpp",
         "code": "#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<string> generateParenthesis(int n) {\n        vector<string> result;\n        string current = \"\";\n        backtrack(result, current, 0, 0, n);\n        return result;\n    }\n\nprivate:\n    void backtrack(vector<string>& result, string& current, int open, int close, int n) {\n        if (current.length() == 2 * n) {\n            result.push_back(current);\n            return;\n        }\n\n        if (open < n) {\n            current.push_back('(');\n            backtrack(result, current, open + 1, close, n);\n            current.pop_back();\n        }\n\n        if (close < open) {\n            current.push_back(')');\n            backtrack(result, current, open, close + 1, n);\n            current.pop_back();\n        }\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/02-09-2026/22-Generate-Parentheses/solution.js",
+        "relativePath": "solutions/2026/10-October/02-10-2026/22-Generate-Parentheses/solution.js",
         "code": "/**\n * @param {number} n\n * @return {string[]}\n */\nvar generateParenthesis = function(n) {\n    const result = [];\n\n    const backtrack = (current, open, close) => {\n        if (current.length === 2 * n) {\n            result.push(current);\n            return;\n        }\n\n        if (open < n) {\n            backtrack(current + '(', open + 1, close);\n        }\n\n        if (close < open) {\n            backtrack(current + ')', open, close + 1);\n        }\n    };\n\n    backtrack('', 0, 0);\n    return result;\n};\n"
       }
     }
@@ -598,14 +598,14 @@ window.SOLUTIONS_DATA = [
     "id": "20",
     "title": "Valid Parentheses",
     "slug": "valid-parentheses",
-    "date": "01 September 2026",
-    "dateIso": "2026-09-01",
-    "formattedDate": "01 Sep 2026",
+    "date": "01 October 2026",
+    "dateIso": "2026-10-01",
+    "formattedDate": "01 Oct 2026",
     "year": "2026",
-    "month": "09-September",
-    "dayFolder": "01-09-2026",
+    "month": "10-October",
+    "dayFolder": "01-10-2026",
     "problemFolder": "20-Valid-Parentheses",
-    "folderPath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses",
+    "folderPath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/valid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
@@ -623,25 +623,25 @@ window.SOLUTIONS_DATA = [
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/Solution.java",
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/Solution.java",
         "code": "class Solution {\n    public boolean isValid(String s) {\n        if ((s.length() & 1) == 1) return false;\n        char[] stack = new char[s.length()];\n        int top = -1;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(' || c == '{' || c == '[') {\n                stack[++top] = c;\n            } else {\n                if (top < 0) return false;\n                char open = stack[top--];\n                if ((c == ')' && open != '(') ||\n                    (c == '}' && open != '{') ||\n                    (c == ']' && open != '[')) {\n                    return false;\n                }\n            }\n        }\n        return top == -1;\n    }\n}\n"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.py",
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/solution.py",
         "code": "class Solution:\n    def isValid(self, s: str) -> bool:\n        if len(s) % 2 != 0:\n            return False\n        stack = []\n        matching = {')': '(', '}': '{', ']': '['}\n        for c in s:\n            if c in \"({[\":\n                stack.append(c)\n            else:\n                if not stack or stack.pop() != matching[c]:\n                    return False\n        return len(stack) == 0\n"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.cpp",
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/solution.cpp",
         "code": "#include <string>\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool isValid(string s) {\n        if (s.length() % 2 != 0) return false;\n        vector<char> stack(s.length());\n        int top = -1;\n        for (char c : s) {\n            if (c == '(' || c == '{' || c == '[') {\n                stack[++top] = c;\n            } else {\n                if (top < 0) return false;\n                char open = stack[top--];\n                if ((c == ')' && open != '(') ||\n                    (c == '}' && open != '{') ||\n                    (c == ']' && open != '[')) {\n                    return false;\n                }\n            }\n        }\n        return top == -1;\n    }\n};\n"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/2026/09-September/01-09-2026/20-Valid-Parentheses/solution.js",
+        "relativePath": "solutions/2026/10-October/01-10-2026/20-Valid-Parentheses/solution.js",
         "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar isValid = function(s) {\n    if ((s.length & 1) === 1) return false;\n    const stack = [];\n    const map = { ')': '(', '}': '{', ']': '[' };\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(' || c === '{' || c === '[') {\n            stack.push(c);\n        } else {\n            if (stack.length === 0 || stack.pop() !== map[c]) {\n                return false;\n            }\n        }\n    }\n    return stack.length === 0;\n};\n"
       }
     }

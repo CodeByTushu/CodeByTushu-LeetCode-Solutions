@@ -1,6 +1,6 @@
-# LeetCode 32: Longest Valid Parentheses
+﻿# LeetCode 32: Longest Valid Parentheses
 
-- **Publication Date:** 03 September 2026
+- **Publication Date:** 03 October 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/longest-valid-parentheses/](https://leetcode.com/problems/longest-valid-parentheses/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)
@@ -57,13 +57,13 @@ Given a string containing just the characters `'('` and `')'`, return the length
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)

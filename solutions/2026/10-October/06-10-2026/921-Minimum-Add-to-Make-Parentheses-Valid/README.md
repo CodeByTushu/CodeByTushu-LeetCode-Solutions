@@ -1,6 +1,6 @@
-# LeetCode 921: Minimum Add to Make Parentheses Valid
+﻿# LeetCode 921: Minimum Add to Make Parentheses Valid
 
-- **Publication Date:** 06 September 2026
+- **Publication Date:** 06 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)
@@ -60,13 +60,13 @@ Return the minimum number of moves required to make `s` valid.
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)

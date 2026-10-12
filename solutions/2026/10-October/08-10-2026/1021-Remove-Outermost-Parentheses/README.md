@@ -1,6 +1,6 @@
-# LeetCode 1021: Remove Outermost Parentheses
+﻿# LeetCode 1021: Remove Outermost Parentheses
 
-- **Publication Date:** 08 September 2026
+- **Publication Date:** 08 October 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/remove-outermost-parentheses/](https://leetcode.com/problems/remove-outermost-parentheses/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)
@@ -58,13 +58,13 @@ Return `s` after removing the outermost parentheses of every primitive string in
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)

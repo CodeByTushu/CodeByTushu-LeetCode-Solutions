@@ -1,6 +1,6 @@
-# LeetCode 301: Remove Invalid Parentheses
+﻿# LeetCode 301: Remove Invalid Parentheses
 
-- **Publication Date:** 07 September 2026
+- **Publication Date:** 07 October 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/remove-invalid-parentheses/](https://leetcode.com/problems/remove-invalid-parentheses/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p)
@@ -58,13 +58,13 @@ Return a list of **unique strings** that are valid with the minimum number of re
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p](https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p](https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p)

@@ -1,6 +1,6 @@
-# LeetCode 1541: Minimum Insertions to Balance a Parentheses String
+﻿# LeetCode 1541: Minimum Insertions to Balance a Parentheses String
 
-- **Publication Date:** 09 September 2026
+- **Publication Date:** 09 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)
@@ -65,13 +65,13 @@ Return the minimum number of insertions needed to make `s` balanced.
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)

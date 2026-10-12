@@ -1,6 +1,6 @@
-# LeetCode 22: Generate Parentheses
+﻿# LeetCode 22: Generate Parentheses
 
-- **Publication Date:** 02 September 2026
+- **Publication Date:** 02 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/generate-parentheses/](https://leetcode.com/problems/generate-parentheses/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)
@@ -49,13 +49,13 @@ Given `n` pairs of parentheses, write a function to generate all combinations of
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)

@@ -1,6 +1,6 @@
-# LeetCode 20: Valid Parentheses
+﻿# LeetCode 20: Valid Parentheses
 
-- **Publication Date:** 01 September 2026
+- **Publication Date:** 01 October 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/)
 - **YouTube Solution:** [Watch on YouTube](https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e)
@@ -56,13 +56,13 @@ An input string is valid if:
 
 ## Solutions
 
-- [☕ Java Solution (`Solution.java`)](./Solution.java)
-- [🐍 Python Solution (`solution.py`)](./solution.py)
-- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
-- [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+- [â˜• Java Solution (`Solution.java`)](./Solution.java)
+- [ðŸ Python Solution (`solution.py`)](./solution.py)
+- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)
+- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)
 
 ---
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e](https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e)
+- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e](https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e)

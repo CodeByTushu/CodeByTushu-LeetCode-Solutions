@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/"><img src="https://img.shields.io/badge/Live%20Platform-GitHub%20Pages-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
+  <a href="https://codebytushu.com/Leetcode/"><img src="https://img.shields.io/badge/Live%20Platform-codebytushu.com%2FLeetcode-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
   <a href="https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions"><img src="https://img.shields.io/badge/Repository-LeetCode%20Solutions-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Repository"/></a>
   <a href="https://codebytushu.com"><img src="https://img.shields.io/badge/Official%20Site-CodeByTushu.com-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="Official Website"/></a>
   <a href="https://www.youtube.com/@codebytushu"><img src="https://img.shields.io/badge/YouTube-@codebytushu-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Channel"/></a>
@@ -20,14 +20,30 @@
 
 ## 🎯 Executive Overview
 
-Welcome to the **CodeByTushu Daily LeetCode Solutions Publishing Platform**. Our official platform [codebytushu.com](https://codebytushu.com) and this open-source repository work together to provide daily, interview-ready LeetCode solutions, detailed complexity proofs, and multi-language implementations.
+Welcome to the **CodeByTushu Daily LeetCode Solutions Publishing Platform**. All daily LeetCode solutions, deep-dive algorithmic approaches, and video walkthroughs are publicly accessible on our official platform:
 
-Every day, we publish complete, optimal solutions in **four major programming languages**:
+👉 **[CodeByTushu LeetCode Portal (https://codebytushu.com/Leetcode/)](https://codebytushu.com/Leetcode/)**
+
+This GitHub repository serves as the official, structured open-source code archive providing complete, optimal implementations across **four major programming languages**:
 
 - ☕ **Java** (`Solution.java`) — Enterprise OOP, standard collections, optimal primitive logic.
 - 🐍 **Python** (`solution.py`) — Clean Pythonic code with type annotations and standard data structures.
 - ⚡ **C++** (`solution.cpp`) — High-performance STL algorithms, cache-friendly vectors, and fast I/O.
 - 🌐 **JavaScript** (`solution.js`) — Modern ES6+, typed arrays, and performance-tuned JS.
+
+---
+
+## 🌐 Official LeetCode Live Platform
+
+Explore the full interactive LeetCode experience on our official platform:
+
+👉 **[https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)**
+
+### 🌟 Key Highlights:
+- 🚀 **Daily DSA Series:** Curated daily algorithmic challenges solved step-by-step.
+- ⏱️ **Optimal Memory & Speed:** Strict $\mathcal{O}(1)$ or minimal auxiliary memory benchmarks.
+- 💡 **Detailed Approaches & Invariants:** Comprehensive explanations and dry runs.
+- 🎥 **Video Solutions:** Embedded walkthroughs directly integrated from our YouTube channel.
 
 ---
 
@@ -88,27 +104,6 @@ Every problem in this repository is solved across **four industry-standard langu
 
 ---
 
-## 🌐 Public Interactive Website
-
-Experience the repository through our responsive static web application hosted on GitHub Pages:
-
-👉 **[Launch Daily LeetCode Solutions Hub](https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/)**
-
-> [!TIP]
-> You can also browse the complete source code directly in this repository or open [`index.html`](./index.html) locally in any browser.
-
-### Website Capabilities:
-- 🔍 **Real-Time Instant Search:** Filter by problem number (e.g. `2897`, `2778`, `2333`), title, or topic keywords with keyboard shortcut <kbd>/</kbd>.
-- 🎯 **Difficulty Filtering:** Instant one-click toggles for Easy, Medium, and Hard challenges.
-- 📅 **Date & Archive Selectors:** Browse solutions chronologically by Year and Month.
-- 🏷️ **Topic Tag Cloud:** Filter solutions by DSA topics (Array, Bit Manipulation, Greedy, Math, Simulation, etc.).
-- ⚡ **Sort Order:** Sort by Newest First, Older First, or Problem Number.
-- 💻 **Interactive Code Viewer:** Isolated tabbed viewer with syntax highlighting and direct source file links.
-- 📋 **One-Click Code Copy:** Dedicated copy action for the active language with clipboard toast notifications.
-- 🎥 **YouTube Walkthroughs:** Watch embedded video explanations directly in the platform or open YouTube.
-
----
-
 ## 📂 Repository Folder Structure
 
 Solutions are organized cleanly by month and date:
@@ -116,18 +111,12 @@ Solutions are organized cleanly by month and date:
 ```text
 CodeByTushu-LeetCode-Solutions/
 ├── README.md                                          # Main repository documentation & archive
-├── index.html                                         # Interactive public website
-├── style.css                                          # Responsive dark-gold design system
-├── script.js                                          # Client-side search, filtering, and modal logic
-├── solutions-data.js                                  # Lightweight structured database (offline & Pages ready)
-├── solutions.json                                     # JSON database export
+├── solutions.json                                     # Structured JSON problem archive
 ├── .gitignore                                         # Git ignore specifications
-├── .github/
-│   └── workflows/
-│       └── deploy-pages.yml                           # Automated GitHub Pages CI/CD workflow
 ├── assets/                                            # Official CodeByTushu brand assets
-│   ├── logo.png
+│   ├── logo.png                                       # Circular brand logo
 │   ├── logo-dark.png
+│   ├── black-logo.png
 │   └── avatar.jpg
 └── solutions/
     └── October/
@@ -227,37 +216,18 @@ Everything else is automated:
 - Detailed time and auxiliary space complexity analysis.
 - Problem folder creation: `solutions/October/DD-October/ID-Title/`.
 - Individual problem `README.md` creation.
-- Website data synchronization (`solutions-data.js` and `solutions.json`).
+- JSON problem archive synchronization (`solutions.json`).
 - Main `README.md` archive update and tag index linking.
 - Review and Git status inspection prior to publishing.
 
 ---
 
-## 🚀 GitHub Pages Deployment Guide
-
-The interactive platform is deployed directly from this repository to GitHub Pages:
-👉 **[Open Live Platform](https://codebytushu.github.io/CodeByTushu-LeetCode-Solutions/)**
-
-### How Deployment Works:
-1. **Automated CI/CD Workflow**: We have configured an automated GitHub Actions workflow at [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml) that triggers on every push to the `main` branch.
-2. **Repository Pages Configuration**: To ensure GitHub serves the site, verify your settings under:
-   - [Repository Settings ➔ Pages](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/settings/pages)
-   - Under **Build and deployment ➔ Source**, select **GitHub Actions** (recommended) or select **Deploy from a branch** (`main` / `/ root`).
-3. **Instant Global Access**: Once deployed, the static single-page app serves real-time search, difficulty toggles, multi-language code viewers, and video solutions worldwide with fast global CDN caching.
-
----
-
-## 💻 Local Preview
-
-Open [index.html](file:///e:/CodeByTushu-LeetCode-Solutions/index.html) directly in any browser.
-
----
-
 ## 🌟 Connect With CodeByTushu
 
+- 🌐 **Official LeetCode Platform:** [codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)
 - 📺 **YouTube:** [youtube.com/@codebytushu](https://www.youtube.com/@codebytushu)
 - 🐙 **GitHub:** [github.com/CodeByTushu](https://github.com/CodeByTushu)
-- 💼 **LinkedIn:** [linkedin.com/company/codebytushu](https://www.linkedin.com/company/codebytushu/)
+- 💼 **LinkedIn:** [linkedin.com/company/codebytushu](https://linkedin.com/company/codebytushu/)
 - 📸 **Instagram:** [instagram.com/codebytushu](https://instagram.com/codebytushu)
 - 🌍 **Official Website:** [codebytushu.com](https://codebytushu.com)
 

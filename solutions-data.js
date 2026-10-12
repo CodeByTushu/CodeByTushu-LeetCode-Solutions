@@ -220,5 +220,57 @@ window.SOLUTIONS_DATA = [
         "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minInsertions = function(s) {\n    let open = 0; // unmatched '('\n    let ans = 0;  // insertions\n    let i = 0;\n    const n = s.length;\n\n    while (i < n) {\n        if (s[i] === '(') {\n            open++;\n            i++;\n        } else {\n            // Need two consecutive ')'\n            if (i + 1 < n && s[i + 1] === ')') {\n                i += 2;\n            } else {\n                ans++; // insert missing ')'\n                i++;\n            }\n\n            if (open > 0) {\n                open--;\n            } else {\n                ans++; // insert missing '('\n            }\n        }\n    }\n\n    return ans + open * 2;\n};\n"
       }
     }
+  },
+  {
+    "id": "1021",
+    "title": "Remove Outermost Parentheses",
+    "slug": "remove-outermost-parentheses",
+    "date": "08 September 2026",
+    "dateIso": "2026-09-08",
+    "formattedDate": "08 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "08-09-2026",
+    "problemFolder": "1021-Remove-Outermost-Parentheses",
+    "folderPath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
+    "youtubeUrl": "https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "summary": "Remove the outermost parentheses of every primitive substring in a valid parentheses string.",
+    "approach": "Track nesting depth linearly. Only include '(' when current depth > 0 before incrementing, and include ')' when depth > 0 after decrementing.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/Solution.java",
+        "code": "class Solution {\n    public String removeOuterParentheses(String s) {\n        StringBuilder sb = new StringBuilder();\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                if (depth > 0) sb.append(c);\n                depth++;\n            } else {\n                depth--;\n                if (depth > 0) sb.append(c);\n            }\n        }\n        return sb.toString();\n    }\n}\n"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.py",
+        "code": "class Solution:\n    def removeOuterParentheses(self, s: str) -> str:\n        res = []\n        depth = 0\n        for c in s:\n            if c == '(':\n                if depth > 0:\n                    res.append(c)\n                depth += 1\n            else:\n                depth -= 1\n                if depth > 0:\n                    res.append(c)\n        return \"\".join(res)\n"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.cpp",
+        "code": "#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    string removeOuterParentheses(string s) {\n        string result = \"\";\n        int depth = 0;\n        for (char c : s) {\n            if (c == '(') {\n                if (depth > 0) result += c;\n                depth++;\n            } else {\n                depth--;\n                if (depth > 0) result += c;\n            }\n        }\n        return result;\n    }\n};\n"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.js",
+        "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar removeOuterParentheses = function(s) {\n    let result = '';\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            if (depth > 0) result += c;\n            depth++;\n        } else {\n            depth--;\n            if (depth > 0) result += c;\n        }\n    }\n    return result;\n};\n"
+      }
+    }
   }
 ];

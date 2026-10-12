@@ -113,6 +113,7 @@ CodeByTushu-LeetCode-Solutions/
 | **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/solution.js) | [Watch Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ) | [README](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/README.md) |
 | **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/solution.js) | [Watch Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a) | [README](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/README.md) |
 | **1541** | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | <span style="color:#ffc400">**Medium**</span> | 09 Sep 2026 | [Java](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java) | [Python](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py) | [C++](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp) | [JS](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js) | [Watch Video](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx) | [README](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/README.md) |
+| **1021** | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | <span style="color:#10b981">**Easy**</span> | 08 Sep 2026 | [Java](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/Solution.java) | [Python](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.py) | [C++](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.cpp) | [JS](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.js) | [Watch Video](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn) | [README](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/README.md) |
 
 ---
 
@@ -126,6 +127,7 @@ CodeByTushu-LeetCode-Solutions/
 
 #### September 2026
 - **09 September 2026**: [#1541 Minimum Insertions to Balance a Parentheses String](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/) (Medium) — [Video](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)
+- **08 September 2026**: [#1021 Remove Outermost Parentheses](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/) (Easy) — [Video](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)
 
 ---
 
@@ -140,8 +142,8 @@ CodeByTushu-LeetCode-Solutions/
 - **Math**: [#2897](./solutions/2026/10-October/12-10-2026/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
 - **Simulation**: [#2778](./solutions/2026/10-October/11-10-2026/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#2333](./solutions/2026/10-October/10-10-2026/2333-Minimum-Sum-of-Squared-Difference/)
-- **Stack**: [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/)
-- **String**: [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/)
+- **Stack**: [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/)
+- **String**: [#1541](./solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/)
 
 ---
 

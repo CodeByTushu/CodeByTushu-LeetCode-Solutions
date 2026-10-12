@@ -199,5 +199,53 @@
         "relativePath": "solutions/2026/09-September/09-09-2026/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js"
       }
     }
+  },
+  {
+    "id": "1021",
+    "title": "Remove Outermost Parentheses",
+    "slug": "remove-outermost-parentheses",
+    "date": "08 September 2026",
+    "dateIso": "2026-09-08",
+    "formattedDate": "08 Sep 2026",
+    "year": "2026",
+    "month": "09-September",
+    "dayFolder": "08-09-2026",
+    "problemFolder": "1021-Remove-Outermost-Parentheses",
+    "folderPath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
+    "youtubeUrl": "https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "summary": "Remove the outermost parentheses of every primitive substring in a valid parentheses string.",
+    "approach": "Track nesting depth linearly. Only include '(' when current depth > 0 before incrementing, and include ')' when depth > 0 after decrementing.",
+    "timeComplexity": "O(N) where N = s.length",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/2026/09-September/08-09-2026/1021-Remove-Outermost-Parentheses/solution.js"
+      }
+    }
   }
 ]

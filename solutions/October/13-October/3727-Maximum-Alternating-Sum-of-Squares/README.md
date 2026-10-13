@@ -3,7 +3,7 @@
 - **Publication Date:** 13 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-alternating-sum-of-squares/](https://leetcode.com/problems/maximum-alternating-sum-of-squares/)
-- **YouTube Solution:** [Watch on YouTube](https://www.youtube.com/@codebytushu)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)
 
 ---
 
@@ -98,4 +98,4 @@ Return an integer denoting the **maximum possible alternating score** of `nums` 
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu)
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)

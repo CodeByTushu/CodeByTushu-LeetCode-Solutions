@@ -1,5 +1,55 @@
 [
   {
+    "id": "3727",
+    "title": "Maximum Alternating Sum of Squares",
+    "slug": "maximum-alternating-sum-of-squares",
+    "date": "13 October 2026",
+    "dateIso": "2026-10-13",
+    "formattedDate": "13 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "13-October",
+    "problemFolder": "3727-Maximum-Alternating-Sum-of-Squares",
+    "folderPath": "solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-alternating-sum-of-squares/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-alternating-sum-of-squares/",
+    "youtubeUrl": "https://www.youtube.com/@codebytushu",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Math"
+    ],
+    "summary": "Maximize the alternating sum of squares by greedily assigning the smallest squares to subtracted odd positions and the largest squares to added even positions.",
+    "approach": "Compute squares of all elements, sort them in ascending order. Assign the smallest n // 2 squares with negative signs and the remaining larger squares with positive signs.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.js"
+      }
+    }
+  },
+  {
     "id": "2897",
     "title": "Apply Operations on Array to Maximize Sum of Squares",
     "slug": "apply-operations-on-array-to-maximize-sum-of-squares",

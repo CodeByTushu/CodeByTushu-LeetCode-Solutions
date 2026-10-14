@@ -1,5 +1,54 @@
 [
   {
+    "id": "3723",
+    "title": "Maximize Sum of Squares of Digits",
+    "slug": "maximize-sum-of-squares-of-digits",
+    "date": "14 October 2026",
+    "dateIso": "2026-10-14",
+    "formattedDate": "14 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "14-October",
+    "problemFolder": "3723-Maximize-Sum-of-Squares-of-Digits",
+    "folderPath": "solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximize-sum-of-squares-of-digits/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-sum-of-squares-of-digits/",
+    "youtubeUrl": "https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o",
+    "tags": [
+      "Math",
+      "Greedy",
+      "String"
+    ],
+    "summary": "Find the good integer of length num with digit sum equal to sum that achieves the maximum sum of digit squares, choosing the largest number in case of ties.",
+    "approach": "Return empty string if sum > 9 * num. By convexity of x^2, greedily place as many 9s as possible from the highest place value, followed by the remainder digit, and then 0s.",
+    "timeComplexity": "O(num)",
+    "auxiliarySpaceComplexity": "O(num)",
+    "spaceComplexity": "O(num)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.js"
+      }
+    }
+  },
+  {
     "id": "3727",
     "title": "Maximum Alternating Sum of Squares",
     "slug": "maximum-alternating-sum-of-squares",

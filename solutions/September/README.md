@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **6** | September Daily Series in progress |
+| **Total Solved Problems** | **7** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **2** | Problems #3875, #3903 |
 | 🟡 **Medium Problems** | **3** | Problems #3568, #3876, #3904 |
-| 🔴 **Hard Problems** | **1** | Problem #115 |
+| 🔴 **Hard Problems** | **2** | Problems #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **6 / 6** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **7 / 7** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **940** | [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | <span style="color:#ef4444">**Hard**</span> | 07 Sep 2026 | [Java](./7-September/940-Distinct-Subsequences-II/Solution.java) | [Python](./7-September/940-Distinct-Subsequences-II/solution.py) | [C++](./7-September/940-Distinct-Subsequences-II/solution.cpp) | [JS](./7-September/940-Distinct-Subsequences-II/solution.js) | [Watch Video](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va) | [📁 7-September](./7-September/940-Distinct-Subsequences-II/) |
 | **115** | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | <span style="color:#ef4444">**Hard**</span> | 06 Sep 2026 | [Java](./6-September/115-Distinct-Subsequences/Solution.java) | [Python](./6-September/115-Distinct-Subsequences/solution.py) | [C++](./6-September/115-Distinct-Subsequences/solution.cpp) | [JS](./6-September/115-Distinct-Subsequences/solution.js) | [Watch Video](https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK) | [📁 6-September](./6-September/115-Distinct-Subsequences/) |
 | **3904** | [Smallest Stable Index II](https://leetcode.com/problems/smallest-stable-index-ii/) | <span style="color:#ffc400">**Medium**</span> | 05 Sep 2026 | [Java](./5-September/3904-Smallest-Stable-Index-II/Solution.java) | [Python](./5-September/3904-Smallest-Stable-Index-II/solution.py) | [C++](./5-September/3904-Smallest-Stable-Index-II/solution.cpp) | [JS](./5-September/3904-Smallest-Stable-Index-II/solution.js) | [Watch Video](https://youtu.be/tB7oX6In4vQ?si=gtkgXZRhkf2ur_gq) | [📁 5-September](./5-September/3904-Smallest-Stable-Index-II/) |
 | **3903** | [Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i/) | <span style="color:#10b981">**Easy**</span> | 04 Sep 2026 | [Java](./4-September/3903-Smallest-Stable-Index-I/Solution.java) | [Python](./4-September/3903-Smallest-Stable-Index-I/solution.py) | [C++](./4-September/3903-Smallest-Stable-Index-I/solution.cpp) | [JS](./4-September/3903-Smallest-Stable-Index-I/solution.js) | [Watch Video](https://youtu.be/zbkfS8-C1gY?si=BWfFKVbQWwGslKDH) | [📁 4-September](./4-September/3903-Smallest-Stable-Index-I/) |
@@ -46,6 +47,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[07 September 2026](./7-September/)**: [#940 Distinct Subsequences II](./7-September/940-Distinct-Subsequences-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[06 September 2026](./6-September/)**: [#115 Distinct Subsequences](./6-September/115-Distinct-Subsequences/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[05 September 2026](./5-September/)**: [#3904 Smallest Stable Index II](./5-September/3904-Smallest-Stable-Index-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[04 September 2026](./4-September/)**: [#3903 Smallest Stable Index I](./4-September/3903-Smallest-Stable-Index-I/) — <span style="color:#10b981">Easy</span>
@@ -60,11 +62,11 @@
 - **Array / Matrix**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
-- **Dynamic Programming**: [#115](./6-September/115-Distinct-Subsequences/)
+- **Dynamic Programming**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Greedy**: [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
 - **Math**: [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
-- **String**: [#115](./6-September/115-Distinct-Subsequences/)
+- **String**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 
 ---
 

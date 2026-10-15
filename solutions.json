@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "940",
+    "title": "Distinct Subsequences II",
+    "slug": "distinct-subsequences-ii",
+    "date": "07 September 2026",
+    "dateIso": "2026-09-07",
+    "formattedDate": "07 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "7-September",
+    "problemFolder": "940-Distinct-Subsequences-II",
+    "folderPath": "solutions/September/7-September/940-Distinct-Subsequences-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/distinct-subsequences-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/distinct-subsequences-ii/",
+    "youtubeUrl": "https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va",
+    "tags": [
+      "String",
+      "Dynamic Programming"
+    ],
+    "summary": "Calculate the number of distinct non-empty subsequences of a string modulo 10^9 + 7 using dynamic programming tracked by the last character of each subsequence.",
+    "approach": "Maintain dp[c] representing distinct subsequences ending with character c. For each character ch, compute total = 1 + sum(dp) modulo 10^9 + 7, then set dp[ch - 'a'] = total. The final answer is sum(dp) modulo 10^9 + 7.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "115",
     "title": "Distinct Subsequences",
     "slug": "distinct-subsequences",

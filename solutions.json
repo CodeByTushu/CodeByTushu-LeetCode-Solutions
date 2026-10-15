@@ -1,5 +1,54 @@
 [
   {
+    "id": "2913",
+    "title": "Subarrays Distinct Element Sum of Squares I",
+    "slug": "subarrays-distinct-element-sum-of-squares-i",
+    "date": "15 October 2026",
+    "dateIso": "2026-10-15",
+    "formattedDate": "15 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "15-October",
+    "problemFolder": "2913-Subarrays-Distinct-Element-Sum-of-Squares-I",
+    "folderPath": "solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/",
+    "youtubeUrl": "",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Simulation"
+    ],
+    "summary": "Compute the sum of squares of distinct element counts across all subarrays of nums using an incremental hash set per start index.",
+    "approach": "Iterate through each starting index i and incrementally add elements nums[j] to a hash set for j >= i. Add the square of the set size to the running total.",
+    "timeComplexity": "O(N²)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3723",
     "title": "Maximize Sum of Squares of Digits",
     "slug": "maximize-sum-of-squares-of-digits",

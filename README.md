@@ -93,10 +93,10 @@ Every problem in this repository is solved across **four industry-standard langu
 
 ## 📊 Repository Statistics (Live & Verified)
 
-- **Total Published Problems:** `14`
+- **Total Published Problems:** `15`
 - **Supported Languages:** `4` (Java, Python, C++, JavaScript)
 - **Difficulty Breakdown:**
-  - 🟢 **Easy:** `3`
+  - 🟢 **Easy:** `4`
   - 🟡 **Medium:** `8`
   - 🔴 **Hard:** `3`
 - **Active Year:** `2026`
@@ -149,6 +149,7 @@ CodeByTushu-LeetCode-Solutions/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2913** | [Subarrays Distinct Element Sum of Squares I](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/) | <span style="color:#10b981">**Easy**</span> | 15 Oct 2026 | [Java](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/Solution.java) | [Python](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.py) | [C++](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.cpp) | [JS](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.js) | Pending | [README](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/README.md) |
 | **3723** | [Maximize Sum of Squares of Digits](https://leetcode.com/problems/maximize-sum-of-squares-of-digits/) | <span style="color:#ffc400">**Medium**</span> | 14 Oct 2026 | [Java](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/Solution.java) | [Python](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.py) | [C++](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.cpp) | [JS](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.js) | [Watch Video](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o) | [README](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/README.md) |
 | **3727** | [Maximum Alternating Sum of Squares](https://leetcode.com/problems/maximum-alternating-sum-of-squares/) | <span style="color:#ffc400">**Medium**</span> | 13 Oct 2026 | [Java](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/Solution.java) | [Python](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.py) | [C++](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.cpp) | [JS](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.js) | [Watch Video](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo) | [README](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/README.md) |
 | **2897** | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | <span style="color:#ef4444">**Hard**</span> | 12 Oct 2026 | [Java](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java) | [Python](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py) | [C++](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp) | [JS](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js) | [Watch Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f) | [README](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/README.md) |
@@ -170,6 +171,7 @@ CodeByTushu-LeetCode-Solutions/
 
 ### 2026
 #### October 2026
+- **15 October 2026**: [#2913 Subarrays Distinct Element Sum of Squares I](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/) (Easy)
 - **14 October 2026**: [#3723 Maximize Sum of Squares of Digits](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/) (Medium) — [Video](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o)
 - **13 October 2026**: [#3727 Maximum Alternating Sum of Squares](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/) (Medium) — [Video](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)
 - **12 October 2026**: [#2897 Apply Operations on Array to Maximize Sum of Squares](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/) (Hard) — [Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)
@@ -189,7 +191,7 @@ CodeByTushu-LeetCode-Solutions/
 
 ## 🏷️ Topic & Tag Index
 
-- **Array**: [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/)
+- **Array**: [#2913](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Backtracking**: [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/), [#22](./solutions/October/2-October/22-Generate-Parentheses/)
 - **Bit Manipulation**: [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/)
 - **Breadth-First Search / Depth-First Search**: [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/)
@@ -197,9 +199,9 @@ CodeByTushu-LeetCode-Solutions/
 - **Dynamic Programming**: [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/), [#32](./solutions/October/3-October/32-Longest-Valid-Parentheses/), [#22](./solutions/October/2-October/22-Generate-Parentheses/)
 - **Enumeration**: [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/)
 - **Greedy**: [#3723](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/), [#1541](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#921](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/)
-- **Hash Table**: [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
+- **Hash Table**: [#2913](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
 - **Math**: [#3723](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/)
-- **Simulation**: [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/)
+- **Simulation**: [#2913](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Stack**: [#1541](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/), [#921](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/), [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/), [#32](./solutions/October/3-October/32-Longest-Valid-Parentheses/), [#20](./solutions/October/1-October/20-Valid-Parentheses/)
 - **String**: [#3723](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#1541](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/), [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/), [#921](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/), [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/), [#32](./solutions/October/3-October/32-Longest-Valid-Parentheses/), [#22](./solutions/October/2-October/22-Generate-Parentheses/), [#20](./solutions/October/1-October/20-Valid-Parentheses/)

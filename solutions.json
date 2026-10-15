@@ -742,6 +742,56 @@
     }
   },
   {
+    "id": "1477",
+    "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+    "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+    "date": "17 September 2026",
+    "dateIso": "2026-09-17",
+    "formattedDate": "17 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "17-September",
+    "problemFolder": "1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum",
+    "folderPath": "solutions/September/17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+    "youtubeUrl": "https://youtu.be/gvV8MrYsq1k?si=dp6dVewbmYYwNV0F",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Dynamic Programming",
+      "Sliding Window"
+    ],
+    "summary": "Find two non-overlapping subarrays each summing to target such that the sum of their lengths is minimized.",
+    "approach": "Use prefix sums and a hash map to detect subarrays summing to target, paired with a prefix DP array storing the minimum length of any preceding valid subarray.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.js"
+      }
+    }
+  },
+  {
     "id": "1621",
     "title": "Number of Sets of K Non-Overlapping Line Segments",
     "slug": "number-of-sets-of-k-non-overlapping-line-segments",

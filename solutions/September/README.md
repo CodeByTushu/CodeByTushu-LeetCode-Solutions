@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **16** | September Daily Series in progress |
+| **Total Solved Problems** | **17** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **5** | Problems #836, #3483, #3870, #3875, #3903 |
-| 🟡 **Medium Problems** | **7** | Problems #1621, #835, #2265, #3871, #3904, #3876, #3568 |
+| 🟡 **Medium Problems** | **8** | Problems #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **4** | Problems #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **16 / 16** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **17 / 17** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1477** | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/) | <span style="color:#ffc400">**Medium**</span> | 17 Sep 2026 | [Java](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/Solution.java) | [Python](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.py) | [C++](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.cpp) | [JS](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.js) | [Watch Video](https://youtu.be/gvV8MrYsq1k?si=dp6dVewbmYYwNV0F) | [📁 17-September](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/) |
 | **1621** | [Number of Sets of K Non-Overlapping Line Segments](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/) | <span style="color:#ffc400">**Medium**</span> | 16 Sep 2026 | [Java](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/Solution.java) | [Python](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/solution.py) | [C++](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/solution.cpp) | [JS](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/solution.js) | [Watch Video](https://youtu.be/r9DXMrihTso?si=UcojJ4yjGpvu2EMG) | [📁 16-September](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/) |
 | **2472** | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) | <span style="color:#ef4444">**Hard**</span> | 15 Sep 2026 | [Java](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/Solution.java) | [Python](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/solution.py) | [C++](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/solution.cpp) | [JS](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/solution.js) | [Watch Video](https://youtu.be/JeveqUyRSPo?si=T6jg7y3n6m5aD70T) | [📁 15-September](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/) |
 | **836** | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | <span style="color:#10b981">**Easy**</span> | 14 Sep 2026 | [Java](./14-September/836-Rectangle-Overlap/Solution.java) | [Python](./14-September/836-Rectangle-Overlap/solution.py) | [C++](./14-September/836-Rectangle-Overlap/solution.cpp) | [JS](./14-September/836-Rectangle-Overlap/solution.js) | [Watch Video](https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF) | [📁 14-September](./14-September/836-Rectangle-Overlap/) |
@@ -56,6 +57,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[17 September 2026](./17-September/)**: [#1477 Find Two Non-overlapping Sub-arrays Each With Target Sum](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[16 September 2026](./16-September/)**: [#1621 Number of Sets of K Non-Overlapping Line Segments](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[15 September 2026](./15-September/)**: [#2472 Maximum Number of Non-overlapping Palindrome Substrings](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[14 September 2026](./14-September/)**: [#836 Rectangle Overlap](./14-September/836-Rectangle-Overlap/) — <span style="color:#10b981">Easy</span>
@@ -77,20 +79,21 @@
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Binary Search**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Combinatorics**: [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/)
 - **Depth-First Search**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
-- **Dynamic Programming**: [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Dynamic Programming**: [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Enumeration**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Geometry**: [#836](./14-September/836-Rectangle-Overlap/)
 - **Greedy**: [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
-- **Hash Table**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
+- **Hash Table**: [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Math**: [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
+- **Sliding Window**: [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **String**: [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)

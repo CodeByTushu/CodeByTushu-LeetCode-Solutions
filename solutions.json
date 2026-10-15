@@ -742,6 +742,56 @@
     }
   },
   {
+    "id": "3525",
+    "title": "Find X Value of Array II",
+    "slug": "find-x-value-of-array-ii",
+    "date": "22 September 2026",
+    "dateIso": "2026-09-22",
+    "formattedDate": "22 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "22-September",
+    "problemFolder": "3525-Find-X-Value-of-Array-II",
+    "folderPath": "solutions/September/22-September/3525-Find-X-Value-of-Array-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/find-x-value-of-array-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-x-value-of-array-ii/",
+    "youtubeUrl": "https://youtu.be/0bCLt32jDVA?si=yPUjMNsXENJAY0uU",
+    "tags": [
+      "Array",
+      "Segment Tree",
+      "Dynamic Programming",
+      "Math"
+    ],
+    "summary": "Process persistent point updates and count the number of non-empty prefixes of a query suffix whose product modulo k equals x.",
+    "approach": "Build a segment tree where each node maintains total product modulo k and a frequency array of prefix remainder products, merge children by scaling right prefixes by left product, apply point updates, and query the suffix range [start, n - 1].",
+    "timeComplexity": "O(N * k + Q * k * log N)",
+    "auxiliarySpaceComplexity": "O(N * k)",
+    "spaceComplexity": "O(N * k)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/22-September/3525-Find-X-Value-of-Array-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/22-September/3525-Find-X-Value-of-Array-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/22-September/3525-Find-X-Value-of-Array-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/22-September/3525-Find-X-Value-of-Array-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3524",
     "title": "Find X Value of Array I",
     "slug": "find-x-value-of-array-i",

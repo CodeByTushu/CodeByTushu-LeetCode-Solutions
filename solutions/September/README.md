@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **21** | September Daily Series in progress |
+| **Total Solved Problems** | **22** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **6** | Problems #3498, #836, #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **10** | Problems #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
-| 🔴 **Hard Problems** | **5** | Problems #1520, #2472, #3414, #115, #940 |
+| 🔴 **Hard Problems** | **6** | Problems #3525, #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **21 / 21** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **22 / 22** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3525** | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 22 Sep 2026 | [Java](./22-September/3525-Find-X-Value-of-Array-II/Solution.java) | [Python](./22-September/3525-Find-X-Value-of-Array-II/solution.py) | [C++](./22-September/3525-Find-X-Value-of-Array-II/solution.cpp) | [JS](./22-September/3525-Find-X-Value-of-Array-II/solution.js) | [Watch Video](https://youtu.be/0bCLt32jDVA?si=yPUjMNsXENJAY0uU) | [📁 22-September](./22-September/3525-Find-X-Value-of-Array-II/) |
 | **3524** | [Find X Value of Array I](https://leetcode.com/problems/find-x-value-of-array-i/) | <span style="color:#ffc400">**Medium**</span> | 21 Sep 2026 | [Java](./21-September/3524-Find-X-Value-of-Array-I/Solution.java) | [Python](./21-September/3524-Find-X-Value-of-Array-I/solution.py) | [C++](./21-September/3524-Find-X-Value-of-Array-I/solution.cpp) | [JS](./21-September/3524-Find-X-Value-of-Array-I/solution.js) | [Watch Video](https://youtu.be/FCwbXVDanq0?si=T8qaMp3EAPfIc-iw) | [📁 21-September](./21-September/3524-Find-X-Value-of-Array-I/) |
 | **3498** | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | <span style="color:#10b981">**Easy**</span> | 20 Sep 2026 | [Java](./20-September/3498-Reverse-Degree-of-a-String/Solution.java) | [Python](./20-September/3498-Reverse-Degree-of-a-String/solution.py) | [C++](./20-September/3498-Reverse-Degree-of-a-String/solution.cpp) | [JS](./20-September/3498-Reverse-Degree-of-a-String/solution.js) | [Watch Video](https://youtu.be/OVJ_v_ACBXk?si=RWGC1Gh-sJ4g5xWH) | [📁 20-September](./20-September/3498-Reverse-Degree-of-a-String/) |
 | **1401** | [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | <span style="color:#ffc400">**Medium**</span> | 19 Sep 2026 | [Java](./19-September/1401-Circle-and-Rectangle-Overlapping/Solution.java) | [Python](./19-September/1401-Circle-and-Rectangle-Overlapping/solution.py) | [C++](./19-September/1401-Circle-and-Rectangle-Overlapping/solution.cpp) | [JS](./19-September/1401-Circle-and-Rectangle-Overlapping/solution.js) | [Watch Video](https://youtu.be/t1-1bEsleUw?si=s1gebZKnVh9SHB_r) | [📁 19-September](./19-September/1401-Circle-and-Rectangle-Overlapping/) |
@@ -61,6 +62,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[22 September 2026](./22-September/)**: [#3525 Find X Value of Array II](./22-September/3525-Find-X-Value-of-Array-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[21 September 2026](./21-September/)**: [#3524 Find X Value of Array I](./21-September/3524-Find-X-Value-of-Array-I/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[20 September 2026](./20-September/)**: [#3498 Reverse Degree of a String](./20-September/3498-Reverse-Degree-of-a-String/) — <span style="color:#10b981">Easy</span>
 - 📍 **[19 September 2026](./19-September/)**: [#1401 Circle and Rectangle Overlapping](./19-September/1401-Circle-and-Rectangle-Overlapping/) — <span style="color:#ffc400">Medium</span>
@@ -87,20 +89,21 @@
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Binary Search**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Combinatorics**: [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/)
 - **Depth-First Search**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
-- **Dynamic Programming**: [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Dynamic Programming**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Enumeration**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Geometry**: [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#836](./14-September/836-Rectangle-Overlap/)
 - **Greedy**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
 - **Hash Table**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
-- **Math**: [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
+- **Math**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
+- **Segment Tree**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/)
 - **Simulation**: [#3498](./20-September/3498-Reverse-Degree-of-a-String/)
 - **Sliding Window**: [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)

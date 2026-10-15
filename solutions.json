@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "3903",
+    "title": "Smallest Stable Index I",
+    "slug": "smallest-stable-index-i",
+    "date": "04 September 2026",
+    "dateIso": "2026-09-04",
+    "formattedDate": "04 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "4-September",
+    "problemFolder": "3903-Smallest-Stable-Index-I",
+    "folderPath": "solutions/September/4-September/3903-Smallest-Stable-Index-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/smallest-stable-index-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-i/",
+    "youtubeUrl": "https://youtu.be/zbkfS8-C1gY?si=BWfFKVbQWwGslKDH",
+    "tags": [
+      "Array",
+      "Prefix / Suffix"
+    ],
+    "summary": "Find the smallest index i such that the instability score, defined as max(nums[0..i]) - min(nums[i..n-1]), is less than or equal to k using prefix maximum and suffix minimum arrays.",
+    "approach": "Precompute prefix maximums and suffix minimums across the array in O(N). Iterate through each index i from 0 to n-1 and return the first index where prefixMax[i] - suffixMin[i] <= k. Return -1 if no such index exists.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3876",
     "title": "Construct Uniform Parity Array II",
     "slug": "construct-uniform-parity-array-ii",

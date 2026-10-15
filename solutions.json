@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "115",
+    "title": "Distinct Subsequences",
+    "slug": "distinct-subsequences",
+    "date": "06 September 2026",
+    "dateIso": "2026-09-06",
+    "formattedDate": "06 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "6-September",
+    "problemFolder": "115-Distinct-Subsequences",
+    "folderPath": "solutions/September/6-September/115-Distinct-Subsequences",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/distinct-subsequences/",
+    "leetcodeUrl": "https://leetcode.com/problems/distinct-subsequences/",
+    "youtubeUrl": "https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK",
+    "tags": [
+      "String",
+      "Dynamic Programming"
+    ],
+    "summary": "Calculate the number of distinct subsequences of string s that match target string t using a 2D dynamic programming grid.",
+    "approach": "Define dp[i][j] as the number of distinct subsequences of prefix s[0..i-1] equal to t[0..j-1]. Transition using dp[i][j] = dp[i-1][j] + (s[i-1] == t[j-1] ? dp[i-1][j-1] : 0) with base case dp[i][0] = 1.",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/solution.js"
+      }
+    }
+  },
+  {
     "id": "3904",
     "title": "Smallest Stable Index II",
     "slug": "smallest-stable-index-ii",

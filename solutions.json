@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "835",
+    "title": "Image Overlap",
+    "slug": "image-overlap",
+    "date": "13 September 2026",
+    "dateIso": "2026-09-13",
+    "formattedDate": "13 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "13-September",
+    "problemFolder": "835-Image-Overlap",
+    "folderPath": "solutions/September/13-September/835-Image-Overlap",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/image-overlap/",
+    "leetcodeUrl": "https://leetcode.com/problems/image-overlap/",
+    "youtubeUrl": "https://youtu.be/dcYVhJnlWtc?si=XIQ6S2f17pVRYlpc",
+    "tags": [
+      "Array",
+      "Matrix"
+    ],
+    "summary": "Calculate the maximum possible overlap of 1 bits between two binary images by testing all horizontal and vertical translation shifts.",
+    "approach": "Iterate through all (2n - 1) * (2n - 1) possible shift vectors (dx, dy). For each shift, count overlapping 1s within valid matrix boundaries and take the maximum.",
+    "timeComplexity": "O(N⁴)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/13-September/835-Image-Overlap/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/13-September/835-Image-Overlap/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/13-September/835-Image-Overlap/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/13-September/835-Image-Overlap/solution.js"
+      }
+    }
+  },
+  {
     "id": "3414",
     "title": "Maximum Score of Non-overlapping Intervals",
     "slug": "maximum-score-of-non-overlapping-intervals",

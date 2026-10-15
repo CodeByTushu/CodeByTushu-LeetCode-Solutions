@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **12** | September Daily Series in progress |
+| **Total Solved Problems** | **13** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **4** | Problems #3483, #3870, #3875, #3903 |
-| 🟡 **Medium Problems** | **5** | Problems #2265, #3871, #3904, #3876, #3568 |
+| 🟡 **Medium Problems** | **6** | Problems #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **3** | Problems #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **12 / 12** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **13 / 13** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **835** | [Image Overlap](https://leetcode.com/problems/image-overlap/) | <span style="color:#ffc400">**Medium**</span> | 13 Sep 2026 | [Java](./13-September/835-Image-Overlap/Solution.java) | [Python](./13-September/835-Image-Overlap/solution.py) | [C++](./13-September/835-Image-Overlap/solution.cpp) | [JS](./13-September/835-Image-Overlap/solution.js) | [Watch Video](https://youtu.be/dcYVhJnlWtc?si=XIQ6S2f17pVRYlpc) | [📁 13-September](./13-September/835-Image-Overlap/) |
 | **3414** | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | <span style="color:#ef4444">**Hard**</span> | 12 Sep 2026 | [Java](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/Solution.java) | [Python](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.py) | [C++](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.cpp) | [JS](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.js) | [Watch Video](https://youtu.be/bQDwhfF4AZE?si=-6KFXu8LPNqIobVx) | [📁 12-September](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/) |
 | **3483** | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | <span style="color:#10b981">**Easy**</span> | 11 Sep 2026 | [Java](./11-September/3483-Unique-3-Digit-Even-Numbers/Solution.java) | [Python](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.py) | [C++](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.cpp) | [JS](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.js) | [Watch Video](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1) | [📁 11-September](./11-September/3483-Unique-3-Digit-Even-Numbers/) |
 | **2265** | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | <span style="color:#ffc400">**Medium**</span> | 10 Sep 2026 | [Java](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/Solution.java) | [Python](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.py) | [C++](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.cpp) | [JS](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.js) | [Watch Video](https://youtu.be/zLxyNlF6FUs?si=YcvHdbwd0A0MGDao) | [📁 10-September](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/) |
@@ -52,6 +53,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[13 September 2026](./13-September/)**: [#835 Image Overlap](./13-September/835-Image-Overlap/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[12 September 2026](./12-September/)**: [#3414 Maximum Score of Non-overlapping Intervals](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[11 September 2026](./11-September/)**: [#3483 Unique 3-Digit Even Numbers](./11-September/3483-Unique-3-Digit-Even-Numbers/) — <span style="color:#10b981">Easy</span>
 - 📍 **[10 September 2026](./10-September/)**: [#2265 Count Nodes Equal to Average of Subtree](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/) — <span style="color:#ffc400">Medium</span>
@@ -69,7 +71,7 @@
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Binary Search**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)

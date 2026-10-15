@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "836",
+    "title": "Rectangle Overlap",
+    "slug": "rectangle-overlap",
+    "date": "14 September 2026",
+    "dateIso": "2026-09-14",
+    "formattedDate": "14 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "14-September",
+    "problemFolder": "836-Rectangle-Overlap",
+    "folderPath": "solutions/September/14-September/836-Rectangle-Overlap",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/rectangle-overlap/",
+    "leetcodeUrl": "https://leetcode.com/problems/rectangle-overlap/",
+    "youtubeUrl": "https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF",
+    "tags": [
+      "Math",
+      "Geometry"
+    ],
+    "summary": "Determine whether two axis-aligned rectangles have an intersection with positive area.",
+    "approach": "Check the complementary condition where rec2 is entirely to the right, left, above, or below rec1. Return the negation of this disjunction.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/14-September/836-Rectangle-Overlap/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/14-September/836-Rectangle-Overlap/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/14-September/836-Rectangle-Overlap/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/14-September/836-Rectangle-Overlap/solution.js"
+      }
+    }
+  },
+  {
     "id": "835",
     "title": "Image Overlap",
     "slug": "image-overlap",

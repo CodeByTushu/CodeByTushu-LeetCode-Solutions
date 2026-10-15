@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **13** | September Daily Series in progress |
-| 🟢 **Easy Problems** | **4** | Problems #3483, #3870, #3875, #3903 |
+| **Total Solved Problems** | **14** | September Daily Series in progress |
+| 🟢 **Easy Problems** | **5** | Problems #836, #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **6** | Problems #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **3** | Problems #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **13 / 13** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **14 / 14** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **836** | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | <span style="color:#10b981">**Easy**</span> | 14 Sep 2026 | [Java](./14-September/836-Rectangle-Overlap/Solution.java) | [Python](./14-September/836-Rectangle-Overlap/solution.py) | [C++](./14-September/836-Rectangle-Overlap/solution.cpp) | [JS](./14-September/836-Rectangle-Overlap/solution.js) | [Watch Video](https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF) | [📁 14-September](./14-September/836-Rectangle-Overlap/) |
 | **835** | [Image Overlap](https://leetcode.com/problems/image-overlap/) | <span style="color:#ffc400">**Medium**</span> | 13 Sep 2026 | [Java](./13-September/835-Image-Overlap/Solution.java) | [Python](./13-September/835-Image-Overlap/solution.py) | [C++](./13-September/835-Image-Overlap/solution.cpp) | [JS](./13-September/835-Image-Overlap/solution.js) | [Watch Video](https://youtu.be/dcYVhJnlWtc?si=XIQ6S2f17pVRYlpc) | [📁 13-September](./13-September/835-Image-Overlap/) |
 | **3414** | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | <span style="color:#ef4444">**Hard**</span> | 12 Sep 2026 | [Java](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/Solution.java) | [Python](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.py) | [C++](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.cpp) | [JS](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.js) | [Watch Video](https://youtu.be/bQDwhfF4AZE?si=-6KFXu8LPNqIobVx) | [📁 12-September](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/) |
 | **3483** | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | <span style="color:#10b981">**Easy**</span> | 11 Sep 2026 | [Java](./11-September/3483-Unique-3-Digit-Even-Numbers/Solution.java) | [Python](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.py) | [C++](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.cpp) | [JS](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.js) | [Watch Video](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1) | [📁 11-September](./11-September/3483-Unique-3-Digit-Even-Numbers/) |
@@ -53,6 +54,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[14 September 2026](./14-September/)**: [#836 Rectangle Overlap](./14-September/836-Rectangle-Overlap/) — <span style="color:#10b981">Easy</span>
 - 📍 **[13 September 2026](./13-September/)**: [#835 Image Overlap](./13-September/835-Image-Overlap/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[12 September 2026](./12-September/)**: [#3414 Maximum Score of Non-overlapping Intervals](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[11 September 2026](./11-September/)**: [#3483 Unique 3-Digit Even Numbers](./11-September/3483-Unique-3-Digit-Even-Numbers/) — <span style="color:#10b981">Easy</span>
@@ -79,9 +81,10 @@
 - **Depth-First Search**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Dynamic Programming**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Enumeration**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
+- **Geometry**: [#836](./14-September/836-Rectangle-Overlap/)
 - **Greedy**: [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
 - **Hash Table**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
-- **Math**: [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
+- **Math**: [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **String**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)

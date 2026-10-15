@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **8** | September Daily Series in progress |
+| **Total Solved Problems** | **9** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **3** | Problems #3870, #3875, #3903 |
-| 🟡 **Medium Problems** | **3** | Problems #3568, #3876, #3904 |
+| 🟡 **Medium Problems** | **4** | Problems #3568, #3876, #3904, #3871 |
 | 🔴 **Hard Problems** | **2** | Problems #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **8 / 8** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **9 / 9** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3871** | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/) | <span style="color:#ffc400">**Medium**</span> | 09 Sep 2026 | [Java](./9-September/3871-Count-Commas-in-Range-II/Solution.java) | [Python](./9-September/3871-Count-Commas-in-Range-II/solution.py) | [C++](./9-September/3871-Count-Commas-in-Range-II/solution.cpp) | [JS](./9-September/3871-Count-Commas-in-Range-II/solution.js) | [Watch Video](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i) | [📁 9-September](./9-September/3871-Count-Commas-in-Range-II/) |
 | **3870** | [Count Commas in Range](https://leetcode.com/problems/count-commas-in-range/) | <span style="color:#10b981">**Easy**</span> | 08 Sep 2026 | [Java](./8-September/3870-Count-Commas-in-Range/Solution.java) | [Python](./8-September/3870-Count-Commas-in-Range/solution.py) | [C++](./8-September/3870-Count-Commas-in-Range/solution.cpp) | [JS](./8-September/3870-Count-Commas-in-Range/solution.js) | [Watch Video](https://youtu.be/hUH9riQvJPg?si=MQIlnQtNZd6CPESr) | [📁 8-September](./8-September/3870-Count-Commas-in-Range/) |
 | **940** | [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | <span style="color:#ef4444">**Hard**</span> | 07 Sep 2026 | [Java](./7-September/940-Distinct-Subsequences-II/Solution.java) | [Python](./7-September/940-Distinct-Subsequences-II/solution.py) | [C++](./7-September/940-Distinct-Subsequences-II/solution.cpp) | [JS](./7-September/940-Distinct-Subsequences-II/solution.js) | [Watch Video](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va) | [📁 7-September](./7-September/940-Distinct-Subsequences-II/) |
 | **115** | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | <span style="color:#ef4444">**Hard**</span> | 06 Sep 2026 | [Java](./6-September/115-Distinct-Subsequences/Solution.java) | [Python](./6-September/115-Distinct-Subsequences/solution.py) | [C++](./6-September/115-Distinct-Subsequences/solution.cpp) | [JS](./6-September/115-Distinct-Subsequences/solution.js) | [Watch Video](https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK) | [📁 6-September](./6-September/115-Distinct-Subsequences/) |
@@ -48,6 +49,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[09 September 2026](./9-September/)**: [#3871 Count Commas in Range II](./9-September/3871-Count-Commas-in-Range-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[08 September 2026](./8-September/)**: [#3870 Count Commas in Range](./8-September/3870-Count-Commas-in-Range/) — <span style="color:#10b981">Easy</span>
 - 📍 **[07 September 2026](./7-September/)**: [#940 Distinct Subsequences II](./7-September/940-Distinct-Subsequences-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[06 September 2026](./6-September/)**: [#115 Distinct Subsequences](./6-September/115-Distinct-Subsequences/) — <span style="color:#ef4444">Hard</span>
@@ -66,7 +68,7 @@
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Dynamic Programming**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Greedy**: [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
-- **Math**: [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
+- **Math**: [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
 - **String**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 

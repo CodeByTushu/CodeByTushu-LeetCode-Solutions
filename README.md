@@ -93,11 +93,11 @@ Every problem in this repository is solved across **four industry-standard langu
 
 ## 📊 Repository Statistics (Live & Verified)
 
-- **Total Published Problems:** `24`
+- **Total Published Problems:** `25`
 - **Supported Languages:** `4` (Java, Python, C++, JavaScript)
 - **Difficulty Breakdown:**
   - 🟢 **Easy:** `7`
-  - 🟡 **Medium:** `12`
+  - 🟡 **Medium:** `13`
   - 🔴 **Hard:** `5`
 - **Active Year:** `2026`
 - **Active Months:** `October 2026`, `September 2026`
@@ -168,7 +168,7 @@ Daily LeetCode solutions are organized into dedicated monthly archives. Click on
 | 🌊 **June** | Summer (Q2) | 📁 Planned / Ingesting | — | [📂 Open June Folder](./solutions/June/) |
 | 🍉 **July** | Mid Summer (Q3) | 📁 Planned / Ingesting | — | [📂 Open July Folder](./solutions/July/) |
 | 🌴 **August** | Late Summer (Q3) | 📁 Planned / Ingesting | — | [📂 Open August Folder](./solutions/August/) |
-| 🍂 **September** | Autumn (Q3) | 🟢 **Active Series** | **9 Solved** | [👉 **Open September Folder (9 Solved)**](./solutions/September/) |
+| 🍂 **September** | Autumn (Q3) | 🟢 **Active Series** | **10 Solved** | [👉 **Open September Folder (10 Solved)**](./solutions/September/) |
 | 🎃 **October** | **Autumn (Q4)** | 🟢 **Active Series** | **15 Solved** | [👉 **Open October Folder (15 Days Solved)**](./solutions/October/) |
 | 🍁 **November** | Late Autumn (Q4) | 📁 Upcoming Series | — | [📂 Open November Folder](./solutions/November/) |
 | 🎄 **December** | Winter Finale (Q4) | 📁 Upcoming Series | — | [📂 Open December Folder](./solutions/December/) |
@@ -197,7 +197,7 @@ Daily LeetCode solutions are organized into dedicated monthly archives. Click on
 Explore daily solutions organized by month:
 
 - 🎃 **[October 2026 Monthly Archive (15 Problems Solved)](./solutions/October/)**: Complete solutions for Days 01 – 15 October across Java, Python, C++, and JavaScript.
-- 🍂 **[September 2026 Monthly Archive (9 Problems Solved)](./solutions/September/)**: Problems #3871 (09 September 2026), #3870 (08 September 2026), #940 (07 September 2026), #115 (06 September 2026), #3904 (05 September 2026), #3903 (04 September 2026), #3876 (03 September 2026), #3875 (02 September 2026), #3568 (01 September 2026).
+- 🍂 **[September 2026 Monthly Archive (10 Problems Solved)](./solutions/September/)**: Problems #2265 (10 September 2026), #3871 (09 September 2026), #3870 (08 September 2026), #940 (07 September 2026), #115 (06 September 2026), #3904 (05 September 2026), #3903 (04 September 2026), #3876 (03 September 2026), #3875 (02 September 2026), #3568 (01 September 2026).
 - ❄️ **[January 2026](./solutions/January/)** • 🌸 **[February 2026](./solutions/February/)** • 🌷 **[March 2026](./solutions/March/)**
 - 🌿 **[April 2026](./solutions/April/)** • ☀️ **[May 2026](./solutions/May/)** • 🌊 **[June 2026](./solutions/June/)**
 - 🍉 **[July 2026](./solutions/July/)** • 🌴 **[August 2026](./solutions/August/)**
@@ -210,7 +210,7 @@ Explore daily solutions organized by month:
 - **Array**: [#3904](./solutions/September/5-September/3904-Smallest-Stable-Index-II/), [#3903](./solutions/September/4-September/3903-Smallest-Stable-Index-I/), [#3876](./solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/), [#2913](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Backtracking**: [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/), [#22](./solutions/October/2-October/22-Generate-Parentheses/)
 - **Bit Manipulation**: [#3568](./solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/), [#2897](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/)
-- **Breadth-First Search / Depth-First Search**: [#3568](./solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/), [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/)
+- **Breadth-First Search / Depth-First Search**: [#2265](./solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/), [#3568](./solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/), [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/)
 - **Bucket Sort / Frequency Array**: [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Dynamic Programming**: [#940](./solutions/September/7-September/940-Distinct-Subsequences-II/), [#115](./solutions/September/6-September/115-Distinct-Subsequences/), [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/), [#32](./solutions/October/3-October/32-Longest-Valid-Parentheses/), [#22](./solutions/October/2-October/22-Generate-Parentheses/)
 - **Enumeration**: [#2778](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/)
@@ -223,6 +223,7 @@ Explore daily solutions organized by month:
 - **Sorting**: [#3727](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2333](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Stack**: [#1541](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/), [#921](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/), [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/), [#32](./solutions/October/3-October/32-Longest-Valid-Parentheses/), [#20](./solutions/October/1-October/20-Valid-Parentheses/)
 - **String**: [#940](./solutions/September/7-September/940-Distinct-Subsequences-II/), [#115](./solutions/September/6-September/115-Distinct-Subsequences/), [#3723](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#1541](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/), [#301](./solutions/October/7-October/301-Remove-Invalid-Parentheses/), [#921](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./solutions/October/5-October/856-Score-of-Parentheses/), [#678](./solutions/October/4-October/678-Valid-Parenthesis-String/), [#32](./solutions/October/3-October/32-Longest-Valid-Parentheses/), [#22](./solutions/October/2-October/22-Generate-Parentheses/), [#20](./solutions/October/1-October/20-Valid-Parentheses/)
+- **Tree / Binary Tree**: [#2265](./solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---
 

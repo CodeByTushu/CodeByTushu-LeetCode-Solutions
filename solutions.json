@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "2265",
+    "title": "Count Nodes Equal to Average of Subtree",
+    "slug": "count-nodes-equal-to-average-of-subtree",
+    "date": "10 September 2026",
+    "dateIso": "2026-09-10",
+    "formattedDate": "10 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "10-September",
+    "problemFolder": "2265-Count-Nodes-Equal-to-Average-of-Subtree",
+    "folderPath": "solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/",
+    "youtubeUrl": "https://youtu.be/zLxyNlF6FUs?si=YcvHdbwd0A0MGDao",
+    "tags": [
+      "Tree",
+      "Binary Tree",
+      "Depth-First Search"
+    ],
+    "summary": "Return the number of nodes in a binary tree where the node's value equals the integer average of the values in its subtree using post-order DFS.",
+    "approach": "Perform a bottom-up post-order DFS where each recursive call returns the subtree sum and subtree node count. Compute the integer average at each node and increment the count if it matches the node's value.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(H)",
+    "spaceComplexity": "O(H)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.js"
+      }
+    }
+  },
+  {
     "id": "3871",
     "title": "Count Commas in Range II",
     "slug": "count-commas-in-range-ii",

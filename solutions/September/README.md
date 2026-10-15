@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **9** | September Daily Series in progress |
+| **Total Solved Problems** | **10** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **3** | Problems #3870, #3875, #3903 |
-| 🟡 **Medium Problems** | **4** | Problems #3568, #3876, #3904, #3871 |
+| 🟡 **Medium Problems** | **5** | Problems #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **2** | Problems #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **9 / 9** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **10 / 10** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2265** | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | <span style="color:#ffc400">**Medium**</span> | 10 Sep 2026 | [Java](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/Solution.java) | [Python](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.py) | [C++](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.cpp) | [JS](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.js) | [Watch Video](https://youtu.be/zLxyNlF6FUs?si=YcvHdbwd0A0MGDao) | [📁 10-September](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/) |
 | **3871** | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/) | <span style="color:#ffc400">**Medium**</span> | 09 Sep 2026 | [Java](./9-September/3871-Count-Commas-in-Range-II/Solution.java) | [Python](./9-September/3871-Count-Commas-in-Range-II/solution.py) | [C++](./9-September/3871-Count-Commas-in-Range-II/solution.cpp) | [JS](./9-September/3871-Count-Commas-in-Range-II/solution.js) | [Watch Video](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i) | [📁 9-September](./9-September/3871-Count-Commas-in-Range-II/) |
 | **3870** | [Count Commas in Range](https://leetcode.com/problems/count-commas-in-range/) | <span style="color:#10b981">**Easy**</span> | 08 Sep 2026 | [Java](./8-September/3870-Count-Commas-in-Range/Solution.java) | [Python](./8-September/3870-Count-Commas-in-Range/solution.py) | [C++](./8-September/3870-Count-Commas-in-Range/solution.cpp) | [JS](./8-September/3870-Count-Commas-in-Range/solution.js) | [Watch Video](https://youtu.be/hUH9riQvJPg?si=MQIlnQtNZd6CPESr) | [📁 8-September](./8-September/3870-Count-Commas-in-Range/) |
 | **940** | [Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) | <span style="color:#ef4444">**Hard**</span> | 07 Sep 2026 | [Java](./7-September/940-Distinct-Subsequences-II/Solution.java) | [Python](./7-September/940-Distinct-Subsequences-II/solution.py) | [C++](./7-September/940-Distinct-Subsequences-II/solution.cpp) | [JS](./7-September/940-Distinct-Subsequences-II/solution.js) | [Watch Video](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va) | [📁 7-September](./7-September/940-Distinct-Subsequences-II/) |
@@ -49,6 +50,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[10 September 2026](./10-September/)**: [#2265 Count Nodes Equal to Average of Subtree](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[09 September 2026](./9-September/)**: [#3871 Count Commas in Range II](./9-September/3871-Count-Commas-in-Range-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[08 September 2026](./8-September/)**: [#3870 Count Commas in Range](./8-September/3870-Count-Commas-in-Range/) — <span style="color:#10b981">Easy</span>
 - 📍 **[07 September 2026](./7-September/)**: [#940 Distinct Subsequences II](./7-September/940-Distinct-Subsequences-II/) — <span style="color:#ef4444">Hard</span>
@@ -64,13 +66,16 @@
 ## 🏷️ Problem Categories & Tags in September
 
 - **Array / Matrix**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Depth-First Search**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Dynamic Programming**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Greedy**: [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
 - **Math**: [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
 - **String**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---
 

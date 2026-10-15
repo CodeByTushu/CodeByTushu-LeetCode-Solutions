@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "3498",
+    "title": "Reverse Degree of a String",
+    "slug": "reverse-degree-of-a-string",
+    "date": "20 September 2026",
+    "dateIso": "2026-09-20",
+    "formattedDate": "20 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "20-September",
+    "problemFolder": "3498-Reverse-Degree-of-a-String",
+    "folderPath": "solutions/September/20-September/3498-Reverse-Degree-of-a-String",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+    "youtubeUrl": "https://youtu.be/OVJ_v_ACBXk?si=RWGC1Gh-sJ4g5xWH",
+    "tags": [
+      "String",
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Calculate the reverse degree of a string by summing the product of each character's reversed alphabet position and its 1-indexed string position.",
+    "approach": "Iterate through each character, compute its reversed alphabet position (26 - (ch - 'a')), multiply by (index + 1), and sum the results.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/20-September/3498-Reverse-Degree-of-a-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/20-September/3498-Reverse-Degree-of-a-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/20-September/3498-Reverse-Degree-of-a-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/20-September/3498-Reverse-Degree-of-a-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1401",
     "title": "Circle and Rectangle Overlapping",
     "slug": "circle-and-rectangle-overlapping",

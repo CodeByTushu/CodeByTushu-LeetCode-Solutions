@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **19** | September Daily Series in progress |
-| 🟢 **Easy Problems** | **5** | Problems #836, #3483, #3870, #3875, #3903 |
+| **Total Solved Problems** | **20** | September Daily Series in progress |
+| 🟢 **Easy Problems** | **6** | Problems #3498, #836, #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **9** | Problems #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **5** | Problems #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **19 / 19** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **20 / 20** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3498** | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | <span style="color:#10b981">**Easy**</span> | 20 Sep 2026 | [Java](./20-September/3498-Reverse-Degree-of-a-String/Solution.java) | [Python](./20-September/3498-Reverse-Degree-of-a-String/solution.py) | [C++](./20-September/3498-Reverse-Degree-of-a-String/solution.cpp) | [JS](./20-September/3498-Reverse-Degree-of-a-String/solution.js) | [Watch Video](https://youtu.be/OVJ_v_ACBXk?si=RWGC1Gh-sJ4g5xWH) | [📁 20-September](./20-September/3498-Reverse-Degree-of-a-String/) |
 | **1401** | [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | <span style="color:#ffc400">**Medium**</span> | 19 Sep 2026 | [Java](./19-September/1401-Circle-and-Rectangle-Overlapping/Solution.java) | [Python](./19-September/1401-Circle-and-Rectangle-Overlapping/solution.py) | [C++](./19-September/1401-Circle-and-Rectangle-Overlapping/solution.cpp) | [JS](./19-September/1401-Circle-and-Rectangle-Overlapping/solution.js) | [Watch Video](https://youtu.be/t1-1bEsleUw?si=s1gebZKnVh9SHB_r) | [📁 19-September](./19-September/1401-Circle-and-Rectangle-Overlapping/) |
 | **1520** | [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/) | <span style="color:#ef4444">**Hard**</span> | 18 Sep 2026 | [Java](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/Solution.java) | [Python](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/solution.py) | [C++](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/solution.cpp) | [JS](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/solution.js) | [Watch Video](https://youtu.be/LwmKiOhrPpI?si=u0BmrzkVgvwSVJAI) | [📁 18-September](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/) |
 | **1477** | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/) | <span style="color:#ffc400">**Medium**</span> | 17 Sep 2026 | [Java](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/Solution.java) | [Python](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.py) | [C++](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.cpp) | [JS](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/solution.js) | [Watch Video](https://youtu.be/gvV8MrYsq1k?si=dp6dVewbmYYwNV0F) | [📁 17-September](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/) |
@@ -59,6 +60,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[20 September 2026](./20-September/)**: [#3498 Reverse Degree of a String](./20-September/3498-Reverse-Degree-of-a-String/) — <span style="color:#10b981">Easy</span>
 - 📍 **[19 September 2026](./19-September/)**: [#1401 Circle and Rectangle Overlapping](./19-September/1401-Circle-and-Rectangle-Overlapping/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[18 September 2026](./18-September/)**: [#1520 Maximum Number of Non-Overlapping Substrings](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[17 September 2026](./17-September/)**: [#1477 Find Two Non-overlapping Sub-arrays Each With Target Sum](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/) — <span style="color:#ffc400">Medium</span>
@@ -95,11 +97,12 @@
 - **Geometry**: [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#836](./14-September/836-Rectangle-Overlap/)
 - **Greedy**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
 - **Hash Table**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
-- **Math**: [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
+- **Math**: [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
+- **Simulation**: [#3498](./20-September/3498-Reverse-Degree-of-a-String/)
 - **Sliding Window**: [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
-- **String**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **String**: [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---

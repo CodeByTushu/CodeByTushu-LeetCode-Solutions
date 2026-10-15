@@ -106,7 +106,7 @@ Every problem in this repository is solved across **four industry-standard langu
 
 ## 📂 Repository Folder Structure
 
-Solutions are organized cleanly by month and date:
+Solutions are organized cleanly by month and date inside the `solutions/` directory:
 
 ```text
 CodeByTushu-LeetCode-Solutions/
@@ -119,73 +119,89 @@ CodeByTushu-LeetCode-Solutions/
 │   ├── black-logo.png
 │   └── avatar.jpg
 └── solutions/
-    └── October/
-        ├── 1-October/
-        │   └── 20-Valid-Parentheses/
-        │       ├── README.md
-        │       ├── Solution.java
-        │       ├── solution.py
-        │       ├── solution.cpp
-        │       └── solution.js
-        ├── 2-October/
-        │   └── 22-Generate-Parentheses/
-        │       ├── README.md
-        │       ├── Solution.java
-        │       ├── solution.py
-        │       ├── solution.cpp
-        │       └── solution.js
-        └── 3-October/
-            └── 32-Longest-Valid-Parentheses/
-                ├── README.md
-                ├── Solution.java
-                ├── solution.py
-                ├── solution.cpp
-                └── solution.js
+    ├── README.md                                      # Monthly Solutions Archive Hub
+    ├── January/                                       # January daily solutions & README
+    ├── February/                                      # February daily solutions & README
+    ├── March/                                         # March daily solutions & README
+    ├── April/                                         # April daily solutions & README
+    ├── May/                                           # May daily solutions & README
+    ├── June/                                          # June daily solutions & README
+    ├── July/                                          # July daily solutions & README
+    ├── August/                                        # August daily solutions & README
+    ├── September/                                     # September daily solutions & README
+    ├── October/                                       # October daily solutions (ACTIVE 🟢)
+    │   ├── README.md                                  # October monthly dashboard & table
+    │   ├── 1-October/
+    │   │   └── 20-Valid-Parentheses/
+    │   │       ├── README.md
+    │   │       ├── Solution.java
+    │   │       ├── solution.py
+    │   │       ├── solution.cpp
+    │   │       └── solution.js
+    │   ├── ...
+    │   └── 15-October/
+    │       └── 2913-Subarrays-Distinct-Element-Sum-of-Squares-I/
+    │           ├── README.md
+    │           ├── Solution.java
+    │           ├── solution.py
+    │           ├── solution.cpp
+    │           └── solution.js
+    ├── November/                                      # November daily solutions & README
+    └── December/                                      # December daily solutions & README
 ```
 
 ---
 
-## 📚 Solutions Archive
+## 📚 Solutions Archive — Monthly Folders System
+
+Daily LeetCode solutions are organized into dedicated monthly archives. Click on any month below to view that month's complete date-wise problem index, direct solution code (**Java**, **Python**, **C++**, **JavaScript**), video walkthroughs, and editorial notes:
+
+### 📅 2026 Monthly Archives Directory
+
+| Month | Season / Quarter | Status | Solved Problems | Direct Folder Link |
+| :--- | :---: | :---: | :---: | :--- |
+| ❄️ **January** | Winter (Q1) | 📁 Planned / Ingesting | — | [📂 Open January Folder](./solutions/January/) |
+| 🌸 **February** | Late Winter (Q1) | 📁 Planned / Ingesting | — | [📂 Open February Folder](./solutions/February/) |
+| 🌷 **March** | Spring (Q1) | 📁 Planned / Ingesting | — | [📂 Open March Folder](./solutions/March/) |
+| 🌿 **April** | Spring (Q2) | 📁 Planned / Ingesting | — | [📂 Open April Folder](./solutions/April/) |
+| ☀️ **May** | Early Summer (Q2) | 📁 Planned / Ingesting | — | [📂 Open May Folder](./solutions/May/) |
+| 🌊 **June** | Summer (Q2) | 📁 Planned / Ingesting | — | [📂 Open June Folder](./solutions/June/) |
+| 🍉 **July** | Mid Summer (Q3) | 📁 Planned / Ingesting | — | [📂 Open July Folder](./solutions/July/) |
+| 🌴 **August** | Late Summer (Q3) | 📁 Planned / Ingesting | — | [📂 Open August Folder](./solutions/August/) |
+| 🍂 **September** | Autumn (Q3) | 📁 Planned / Ingesting | — | [📂 Open September Folder](./solutions/September/) |
+| 🎃 **October** | **Autumn (Q4)** | 🟢 **Active Series** | **15 Solved** | [👉 **Open October Folder (15 Days Solved)**](./solutions/October/) |
+| 🍁 **November** | Late Autumn (Q4) | 📁 Upcoming Series | — | [📂 Open November Folder](./solutions/November/) |
+| 🎄 **December** | Winter Finale (Q4) | 📁 Upcoming Series | — | [📂 Open December Folder](./solutions/December/) |
+
+> [!TIP]
+> **Clicking any month above directly opens that month's dedicated folder**, displaying its interactive date-wise problem table, direct Java, Python, C++, and JavaScript code links, video walkthroughs, and comprehensive READMEs!
+
+---
+
+### ⚡ Today's Daily Problem (Featured: 15 October 2026)
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **2913** | [Subarrays Distinct Element Sum of Squares I](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/) | <span style="color:#10b981">**Easy**</span> | 15 Oct 2026 | [Java](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/Solution.java) | [Python](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.py) | [C++](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.cpp) | [JS](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/solution.js) | [Watch Video](https://youtu.be/xgn9QVNJWjE?si=r7dmg6ogKPC4qc4V) | [README](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/README.md) |
-| **3723** | [Maximize Sum of Squares of Digits](https://leetcode.com/problems/maximize-sum-of-squares-of-digits/) | <span style="color:#ffc400">**Medium**</span> | 14 Oct 2026 | [Java](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/Solution.java) | [Python](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.py) | [C++](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.cpp) | [JS](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/solution.js) | [Watch Video](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o) | [README](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/README.md) |
-| **3727** | [Maximum Alternating Sum of Squares](https://leetcode.com/problems/maximum-alternating-sum-of-squares/) | <span style="color:#ffc400">**Medium**</span> | 13 Oct 2026 | [Java](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/Solution.java) | [Python](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.py) | [C++](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.cpp) | [JS](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/solution.js) | [Watch Video](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo) | [README](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/README.md) |
-| **2897** | [Apply Operations on Array to Maximize Sum of Squares](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | <span style="color:#ef4444">**Hard**</span> | 12 Oct 2026 | [Java](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/Solution.java) | [Python](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.py) | [C++](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.cpp) | [JS](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/solution.js) | [Watch Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f) | [README](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/README.md) |
-| **2778** | [Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-Elements/) | <span style="color:#10b981">**Easy**</span> | 11 Oct 2026 | [Java](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/Solution.java) | [Python](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/solution.py) | [C++](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/solution.cpp) | [JS](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/solution.js) | [Watch Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ) | [README](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/README.md) |
-| **2333** | [Minimum Sum of Squared Difference](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | <span style="color:#ffc400">**Medium**</span> | 10 Oct 2026 | [Java](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/Solution.java) | [Python](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/solution.py) | [C++](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/solution.cpp) | [JS](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/solution.js) | [Watch Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a) | [README](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/README.md) |
-| **1541** | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | <span style="color:#ffc400">**Medium**</span> | 09 Oct 2026 | [Java](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java) | [Python](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py) | [C++](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp) | [JS](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js) | [Watch Video](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx) | [README](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/README.md) |
-| **1021** | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | <span style="color:#10b981">**Easy**</span> | 08 Oct 2026 | [Java](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/Solution.java) | [Python](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/solution.py) | [C++](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/solution.cpp) | [JS](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/solution.js) | [Watch Video](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn) | [README](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/README.md) |
-| **301** | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | <span style="color:#ef4444">**Hard**</span> | 07 Oct 2026 | [Java](./solutions/October/7-October/301-Remove-Invalid-Parentheses/Solution.java) | [Python](./solutions/October/7-October/301-Remove-Invalid-Parentheses/solution.py) | [C++](./solutions/October/7-October/301-Remove-Invalid-Parentheses/solution.cpp) | [JS](./solutions/October/7-October/301-Remove-Invalid-Parentheses/solution.js) | [Watch Video](https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p) | [README](./solutions/October/7-October/301-Remove-Invalid-Parentheses/README.md) |
-| **921** | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | <span style="color:#ffc400">**Medium**</span> | 06 Oct 2026 | [Java](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java) | [Python](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py) | [C++](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp) | [JS](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js) | [Watch Video](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6) | [README](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/README.md) |
-| **856** | [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | <span style="color:#ffc400">**Medium**</span> | 05 Oct 2026 | [Java](./solutions/October/5-October/856-Score-of-Parentheses/Solution.java) | [Python](./solutions/October/5-October/856-Score-of-Parentheses/solution.py) | [C++](./solutions/October/5-October/856-Score-of-Parentheses/solution.cpp) | [JS](./solutions/October/5-October/856-Score-of-Parentheses/solution.js) | [Watch Video](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT) | [README](./solutions/October/5-October/856-Score-of-Parentheses/README.md) |
-| **678** | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) | <span style="color:#ffc400">**Medium**</span> | 04 Oct 2026 | [Java](./solutions/October/4-October/678-Valid-Parenthesis-String/Solution.java) | [Python](./solutions/October/4-October/678-Valid-Parenthesis-String/solution.py) | [C++](./solutions/October/4-October/678-Valid-Parenthesis-String/solution.cpp) | [JS](./solutions/October/4-October/678-Valid-Parenthesis-String/solution.js) | [Watch Video](https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw) | [README](./solutions/October/4-October/678-Valid-Parenthesis-String/README.md) |
-| **32** | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | <span style="color:#ef4444">**Hard**</span> | 03 Oct 2026 | [Java](./solutions/October/3-October/32-Longest-Valid-Parentheses/Solution.java) | [Python](./solutions/October/3-October/32-Longest-Valid-Parentheses/solution.py) | [C++](./solutions/October/3-October/32-Longest-Valid-Parentheses/solution.cpp) | [JS](./solutions/October/3-October/32-Longest-Valid-Parentheses/solution.js) | [Watch Video](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ) | [README](./solutions/October/3-October/32-Longest-Valid-Parentheses/README.md) |
-| **22** | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | <span style="color:#ffc400">**Medium**</span> | 02 Oct 2026 | [Java](./solutions/October/2-October/22-Generate-Parentheses/Solution.java) | [Python](./solutions/October/2-October/22-Generate-Parentheses/solution.py) | [C++](./solutions/October/2-October/22-Generate-Parentheses/solution.cpp) | [JS](./solutions/October/2-October/22-Generate-Parentheses/solution.js) | [Watch Video](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9) | [README](./solutions/October/2-October/22-Generate-Parentheses/README.md) |
-| **20** | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | <span style="color:#10b981">**Easy**</span> | 01 Oct 2026 | [Java](./solutions/October/1-October/20-Valid-Parentheses/Solution.java) | [Python](./solutions/October/1-October/20-Valid-Parentheses/solution.py) | [C++](./solutions/October/1-October/20-Valid-Parentheses/solution.cpp) | [JS](./solutions/October/1-October/20-Valid-Parentheses/solution.js) | [Watch Video](https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e) | [README](./solutions/October/1-October/20-Valid-Parentheses/README.md) |
+
+<p align="center">
+  <a href="./solutions/October/">
+    <img src="https://img.shields.io/badge/🎃_Open_Complete_October_Folder_(15_Days_Archive)-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Open October Archive"/>
+  </a>
+</p>
 
 ---
 
-## 📅 Date-Wise Archive Index
+## 📅 Monthly Archive Index
 
-### 2026
-#### October 2026
-- **15 October 2026**: [#2913 Subarrays Distinct Element Sum of Squares I](./solutions/October/15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/) (Easy) — [Video](https://youtu.be/xgn9QVNJWjE?si=r7dmg6ogKPC4qc4V)
-- **14 October 2026**: [#3723 Maximize Sum of Squares of Digits](./solutions/October/14-October/3723-Maximize-Sum-of-Squares-of-Digits/) (Medium) — [Video](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o)
-- **13 October 2026**: [#3727 Maximum Alternating Sum of Squares](./solutions/October/13-October/3727-Maximum-Alternating-Sum-of-Squares/) (Medium) — [Video](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)
-- **12 October 2026**: [#2897 Apply Operations on Array to Maximize Sum of Squares](./solutions/October/12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/) (Hard) — [Video](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)
-- **11 October 2026**: [#2778 Sum of Squares of Special Elements](./solutions/October/11-October/2778-Sum-of-Squares-of-Special-Elements/) (Easy) — [Video](https://youtu.be/rkheEQ8QSDA?si=PmU4H8NbyDMNlBoQ)
-- **10 October 2026**: [#2333 Minimum Sum of Squared Difference](./solutions/October/10-October/2333-Minimum-Sum-of-Squared-Difference/) (Medium) — [Video](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)
-- **09 October 2026**: [#1541 Minimum Insertions to Balance a Parentheses String](./solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/) (Medium) — [Video](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)
-- **08 October 2026**: [#1021 Remove Outermost Parentheses](./solutions/October/8-October/1021-Remove-Outermost-Parentheses/) (Easy) — [Video](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)
-- **07 October 2026**: [#301 Remove Invalid Parentheses](./solutions/October/7-October/301-Remove-Invalid-Parentheses/) (Hard) — [Video](https://youtu.be/TukqIpezH1Q?si=pxo2hmt0K1zlbU_p)
-- **06 October 2026**: [#921 Minimum Add to Make Parentheses Valid](./solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/) (Medium) — [Video](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)
-- **05 October 2026**: [#856 Score of Parentheses](./solutions/October/5-October/856-Score-of-Parentheses/) (Medium) — [Video](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)
-- **04 October 2026**: [#678 Valid Parenthesis String](./solutions/October/4-October/678-Valid-Parenthesis-String/) (Medium) — [Video](https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw)
-- **03 October 2026**: [#32 Longest Valid Parentheses](./solutions/October/3-October/32-Longest-Valid-Parentheses/) (Hard) — [Video](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)
-- **02 October 2026**: [#22 Generate Parentheses](./solutions/October/2-October/22-Generate-Parentheses/) (Medium) — [Video](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)
-- **01 October 2026**: [#20 Valid Parentheses](./solutions/October/1-October/20-Valid-Parentheses/) (Easy) — [Video](https://youtu.be/gBgfrrCf6BA?si=_dSZg_1Iw7OY6O2e)
+Explore daily solutions organized by month:
+
+- 🎃 **[October 2026 Monthly Archive (15 Problems Solved)](./solutions/October/)**: Complete solutions for Days 01 – 15 October across Java, Python, C++, and JavaScript.
+- 🍂 **[September 2026 Monthly Archive](./solutions/September/)**: Archived daily series problems.
+- ❄️ **[January 2026](./solutions/January/)** • 🌸 **[February 2026](./solutions/February/)** • 🌷 **[March 2026](./solutions/March/)**
+- 🌿 **[April 2026](./solutions/April/)** • ☀️ **[May 2026](./solutions/May/)** • 🌊 **[June 2026](./solutions/June/)**
+- 🍉 **[July 2026](./solutions/July/)** • 🌴 **[August 2026](./solutions/August/)**
+- 🍁 **[November 2026](./solutions/November/)** • 🎄 **[December 2026](./solutions/December/)**
 
 ---
 

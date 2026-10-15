@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "1401",
+    "title": "Circle and Rectangle Overlapping",
+    "slug": "circle-and-rectangle-overlapping",
+    "date": "19 September 2026",
+    "dateIso": "2026-09-19",
+    "formattedDate": "19 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "19-September",
+    "problemFolder": "1401-Circle-and-Rectangle-Overlapping",
+    "folderPath": "solutions/September/19-September/1401-Circle-and-Rectangle-Overlapping",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/circle-and-rectangle-overlapping/",
+    "leetcodeUrl": "https://leetcode.com/problems/circle-and-rectangle-overlapping/",
+    "youtubeUrl": "https://youtu.be/t1-1bEsleUw?si=s1gebZKnVh9SHB_r",
+    "tags": [
+      "Math",
+      "Geometry"
+    ],
+    "summary": "Determine if an axis-aligned rectangle and a circle have at least one common overlapping point.",
+    "approach": "Find the closest point on the rectangle to the circle's center by clamping the coordinates, then verify if the squared Euclidean distance is within radius squared.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/19-September/1401-Circle-and-Rectangle-Overlapping/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/19-September/1401-Circle-and-Rectangle-Overlapping/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/19-September/1401-Circle-and-Rectangle-Overlapping/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/19-September/1401-Circle-and-Rectangle-Overlapping/solution.js"
+      }
+    }
+  },
+  {
     "id": "1520",
     "title": "Maximum Number of Non-Overlapping Substrings",
     "slug": "maximum-number-of-non-overlapping-substrings",

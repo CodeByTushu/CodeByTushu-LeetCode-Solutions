@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "1621",
+    "title": "Number of Sets of K Non-Overlapping Line Segments",
+    "slug": "number-of-sets-of-k-non-overlapping-line-segments",
+    "date": "16 September 2026",
+    "dateIso": "2026-09-16",
+    "formattedDate": "16 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "16-September",
+    "problemFolder": "1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments",
+    "folderPath": "solutions/September/16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/",
+    "youtubeUrl": "https://youtu.be/r9DXMrihTso?si=UcojJ4yjGpvu2EMG",
+    "tags": [
+      "Math",
+      "Dynamic Programming",
+      "Combinatorics"
+    ],
+    "summary": "Calculate the number of ways to draw k non-overlapping line segments that may share endpoints using a combinatorial bijection to binomial coefficient.",
+    "approach": "By mapping shared boundary points through coordinate expansion, the problem is equivalent to choosing 2k points out of n + k - 1 points. Computed using Pascal's triangle DP modulo 10^9 + 7.",
+    "timeComplexity": "O((n + k) * k)",
+    "auxiliarySpaceComplexity": "O((n + k) * k)",
+    "spaceComplexity": "O((n + k) * k)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/solution.js"
+      }
+    }
+  },
+  {
     "id": "2472",
     "title": "Maximum Number of Non-overlapping Palindrome Substrings",
     "slug": "maximum-number-of-non-overlapping-palindrome-substrings",

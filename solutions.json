@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "2472",
+    "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+    "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+    "date": "15 September 2026",
+    "dateIso": "2026-09-15",
+    "formattedDate": "15 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "15-September",
+    "problemFolder": "2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings",
+    "folderPath": "solutions/September/15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/",
+    "youtubeUrl": "https://youtu.be/JeveqUyRSPo?si=T6jg7y3n6m5aD70T",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "summary": "Find the maximum count of non-overlapping palindrome substrings of length at least k using dynamic programming precomputation and greedy interval selection.",
+    "approach": "Precompute all palindrome substrings using an O(N²) DP table. Then greedily pick the earliest non-overlapping palindromes of minimal valid length (k or k+1).",
+    "timeComplexity": "O(N²)",
+    "auxiliarySpaceComplexity": "O(N²)",
+    "spaceComplexity": "O(N²)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/solution.js"
+      }
+    }
+  },
+  {
     "id": "836",
     "title": "Rectangle Overlap",
     "slug": "rectangle-overlap",

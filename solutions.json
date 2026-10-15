@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "3524",
+    "title": "Find X Value of Array I",
+    "slug": "find-x-value-of-array-i",
+    "date": "21 September 2026",
+    "dateIso": "2026-09-21",
+    "formattedDate": "21 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "21-September",
+    "problemFolder": "3524-Find-X-Value-of-Array-I",
+    "folderPath": "solutions/September/21-September/3524-Find-X-Value-of-Array-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-x-value-of-array-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-x-value-of-array-i/",
+    "youtubeUrl": "https://youtu.be/FCwbXVDanq0?si=T8qaMp3EAPfIc-iw",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Math"
+    ],
+    "summary": "Count the number of contiguous non-empty subarrays whose element product modulo k equals x for each x from 0 to k - 1.",
+    "approach": "Maintain a DP frequency array tracking remainder counts of subarrays ending at the previous position, transition each remainder by multiplying with (nums[r] % k) modulo k, include the single-element subarray nums[r], and accumulate into the result array.",
+    "timeComplexity": "O(N * k)",
+    "auxiliarySpaceComplexity": "O(k)",
+    "spaceComplexity": "O(k)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/21-September/3524-Find-X-Value-of-Array-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/21-September/3524-Find-X-Value-of-Array-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/21-September/3524-Find-X-Value-of-Array-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/21-September/3524-Find-X-Value-of-Array-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3498",
     "title": "Reverse Degree of a String",
     "slug": "reverse-degree-of-a-string",

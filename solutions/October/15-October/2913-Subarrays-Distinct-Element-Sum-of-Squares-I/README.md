@@ -3,6 +3,7 @@
 - **Publication Date:** 15 October 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/xgn9QVNJWjE?si=r7dmg6ogKPC4qc4V)
 
 ---
 
@@ -95,6 +96,12 @@ A subarray is a contiguous non-empty sequence of elements within an array.
 - [🐍 Python Solution (`solution.py`)](./solution.py)
 - [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)
 - [🌐 JavaScript Solution (`solution.js`)](./solution.js)
+
+---
+
+## Video Explanation
+
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/xgn9QVNJWjE?si=r7dmg6ogKPC4qc4V](https://youtu.be/xgn9QVNJWjE?si=r7dmg6ogKPC4qc4V)
 
 ---
 

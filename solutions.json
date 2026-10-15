@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "3904",
+    "title": "Smallest Stable Index II",
+    "slug": "smallest-stable-index-ii",
+    "date": "05 September 2026",
+    "dateIso": "2026-09-05",
+    "formattedDate": "05 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "5-September",
+    "problemFolder": "3904-Smallest-Stable-Index-II",
+    "folderPath": "solutions/September/5-September/3904-Smallest-Stable-Index-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/smallest-stable-index-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-ii/",
+    "youtubeUrl": "https://youtu.be/tB7oX6In4vQ?si=gtkgXZRhkf2ur_gq",
+    "tags": [
+      "Array",
+      "Prefix / Suffix"
+    ],
+    "summary": "Find the smallest index i such that the instability score max(nums[0..i]) - min(nums[i..n-1]) is less than or equal to k for arrays up to 10^5 elements using prefix maximum and suffix minimum arrays.",
+    "approach": "Precompute prefix maximums and suffix minimums across nums in O(N). Traverse index i from 0 to n-1 and return the first index where prefixMax[i] - suffixMin[i] <= k. Return -1 if no such index exists.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3903",
     "title": "Smallest Stable Index I",
     "slug": "smallest-stable-index-i",

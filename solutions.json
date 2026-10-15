@@ -740,5 +740,55 @@
         "relativePath": "solutions/October/1-October/20-Valid-Parentheses/solution.js"
       }
     }
+  },
+  {
+    "id": "3568",
+    "title": "Minimum Moves to Clean the Classroom",
+    "slug": "minimum-moves-to-clean-the-classroom",
+    "date": "01 September 2026",
+    "dateIso": "2026-09-01",
+    "formattedDate": "01 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "1-September",
+    "problemFolder": "3568-Minimum-Moves-to-Clean-the-Classroom",
+    "folderPath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
+    "youtubeUrl": "https://youtu.be/LMePGGkRx9E?si=1v_-BLwW6jIIa0Um",
+    "tags": [
+      "Array",
+      "Breadth-First Search",
+      "Bit Manipulation",
+      "Matrix"
+    ],
+    "summary": "Find the minimum moves required for a student to collect all litter items in an m x n classroom using energy replenishment areas and obstacles via BFS with bitmask state tracking.",
+    "approach": "Model the search as a shortest-path problem on a multi-dimensional state graph (r, c, energy, litterMask). Use Breadth-First Search (BFS) starting from S with full energy. When stepping onto R, restore energy to maximum capacity. When stepping onto a litter cell L, flip its corresponding bit in the bitmask. The first state reaching fullMask yields the minimum moves.",
+    "timeComplexity": "O(M * N * Energy * 2^L)",
+    "auxiliarySpaceComplexity": "O(M * N * Energy * 2^L)",
+    "spaceComplexity": "O(M * N * Energy * 2^L)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.js"
+      }
+    }
   }
 ]

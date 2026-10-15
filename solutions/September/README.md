@@ -11,44 +11,45 @@
 <p align="center">
   <a href="../../README.md"><img src="https://img.shields.io/badge/⬅️_Back_to-Main_Repository-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Main Repo"/></a>
   <a href="../README.md"><img src="https://img.shields.io/badge/🗂️_Browse-All_Months_Hub-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="All Months"/></a>
-  <a href="../October/"><img src="https://img.shields.io/badge/🎃_Active_Month-October_2026-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Active October"/></a>
+  <a href="../October/"><img src="https://img.shields.io/badge/🎃_Browse-October_2026-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Active October"/></a>
   <a href="https://codebytushu.com/Leetcode/"><img src="https://img.shields.io/badge/Live_Platform-codebytushu.com%2FLeetcode-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
+  <a href="https://www.youtube.com/@codebytushu"><img src="https://img.shields.io/badge/YouTube-@codebytushu-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Channel"/></a>
 </p>
 
 ---
 
-## 📊 Month Overview: September 2026
+## 📊 September 2026 Statistics
 
-| Attribute | Details |
-| :--- | :--- |
-| **Month / Quarter** | September 2026 (Q3 — Autumn) |
-| **Status** | `Archive / Transitioned to Oct` |
-| **Total Days** | 30 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
-
----
-
-## 📂 Folder & Solution Structure
-
-When new daily problems are added for September, each problem is organized as:
-
-```text
-solutions/September/
-├── DD-September/
-│   └── <Problem-ID>-<Problem-Title>/
-│       ├── README.md        # Comprehensive problem statement, approach & complexity
-│       ├── Solution.java    # Optimal Java implementation
-│       ├── solution.py      # Pythonic solution with type annotations
-│       ├── solution.cpp     # High-performance C++ solution
-│       └── solution.js      # Modern ECMAScript (ES6+) implementation
-```
+| Metric | Count | Details |
+| :--- | :---: | :--- |
+| **Total Solved Problems** | **1** | September Daily Series in progress |
+| 🟢 **Easy Problems** | **0** | — |
+| 🟡 **Medium Problems** | **1** | Problem #3568 |
+| 🔴 **Hard Problems** | **0** | — |
+| 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
+| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ September Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for September. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3568** | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | <span style="color:#ffc400">**Medium**</span> | 01 Sep 2026 | [Java](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/Solution.java) | [Python](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.py) | [C++](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.cpp) | [JS](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.js) | [Watch Video](https://youtu.be/LMePGGkRx9E?si=1v_-BLwW6jIIa0Um) | [📁 1-September](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/) |
+
+---
+
+## 📅 Date-Wise Directory Navigation
+
+- 📍 **[01 September 2026](./1-September/)**: [#3568 Minimum Moves to Clean the Classroom](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/) — <span style="color:#ffc400">Medium</span>
+
+---
+
+## 🏷️ Problem Categories & Tags in September
+
+- **Array / Matrix**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 
 ---
 

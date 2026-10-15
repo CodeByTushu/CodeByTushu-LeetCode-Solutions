@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **1** | September Daily Series in progress |
-| 🟢 **Easy Problems** | **0** | — |
+| **Total Solved Problems** | **2** | September Daily Series in progress |
+| 🟢 **Easy Problems** | **1** | Problem #3875 |
 | 🟡 **Medium Problems** | **1** | Problem #3568 |
 | 🔴 **Hard Problems** | **0** | — |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **2 / 2** | Available on YouTube |
 
 ---
 
@@ -35,21 +35,24 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3875** | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/) | <span style="color:#10b981">**Easy**</span> | 02 Sep 2026 | [Java](./2-September/3875-Construct-Uniform-Parity-Array-I/Solution.java) | [Python](./2-September/3875-Construct-Uniform-Parity-Array-I/solution.py) | [C++](./2-September/3875-Construct-Uniform-Parity-Array-I/solution.cpp) | [JS](./2-September/3875-Construct-Uniform-Parity-Array-I/solution.js) | [Watch Video](https://youtu.be/KHNY5calb70?si=IphvDkMDaBJKEtbw) | [📁 2-September](./2-September/3875-Construct-Uniform-Parity-Array-I/) |
 | **3568** | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | <span style="color:#ffc400">**Medium**</span> | 01 Sep 2026 | [Java](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/Solution.java) | [Python](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.py) | [C++](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.cpp) | [JS](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.js) | [Watch Video](https://youtu.be/LMePGGkRx9E?si=1v_-BLwW6jIIa0Um) | [📁 1-September](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/) |
 
 ---
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[02 September 2026](./2-September/)**: [#3875 Construct Uniform Parity Array I](./2-September/3875-Construct-Uniform-Parity-Array-I/) — <span style="color:#10b981">Easy</span>
 - 📍 **[01 September 2026](./1-September/)**: [#3568 Minimum Moves to Clean the Classroom](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/) — <span style="color:#ffc400">Medium</span>
 
 ---
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Math**: [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 
 ---
 

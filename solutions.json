@@ -742,6 +742,54 @@
     }
   },
   {
+    "id": "3875",
+    "title": "Construct Uniform Parity Array I",
+    "slug": "construct-uniform-parity-array-i",
+    "date": "02 September 2026",
+    "dateIso": "2026-09-02",
+    "formattedDate": "02 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "2-September",
+    "problemFolder": "3875-Construct-Uniform-Parity-Array-I",
+    "folderPath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/construct-uniform-parity-array-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-uniform-parity-array-i/",
+    "youtubeUrl": "https://youtu.be/KHNY5calb70?si=IphvDkMDaBJKEtbw",
+    "tags": [
+      "Array",
+      "Math"
+    ],
+    "summary": "Determine if an array nums1 can be converted to an all-even or all-odd array nums2 by choosing to keep elements or subtract another element using parity analysis.",
+    "approach": "Count even and odd elements. All even is possible if oddCount == 0 or oddCount >= 2. All odd is possible if evenCount == 0 or oddCount >= 1. Return allEven || allOdd.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3568",
     "title": "Minimum Moves to Clean the Classroom",
     "slug": "minimum-moves-to-clean-the-classroom",

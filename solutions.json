@@ -742,6 +742,56 @@
     }
   },
   {
+    "id": "3414",
+    "title": "Maximum Score of Non-overlapping Intervals",
+    "slug": "maximum-score-of-non-overlapping-intervals",
+    "date": "12 September 2026",
+    "dateIso": "2026-09-12",
+    "formattedDate": "12 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "12-September",
+    "problemFolder": "3414-Maximum-Score-of-Non-overlapping-Intervals",
+    "folderPath": "solutions/September/12-September/3414-Maximum-Score-of-Non-overlapping-Intervals",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/",
+    "youtubeUrl": "https://youtu.be/bQDwhfF4AZE?si=-6KFXu8LPNqIobVx",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming",
+      "Sorting"
+    ],
+    "summary": "Find the lexicographically smallest sorted list of up to 4 non-overlapping intervals yielding maximum total weight using interval sorting, binary search, and prefix DP.",
+    "approach": "Sort intervals by right endpoint. For each interval, binary search for the rightmost non-overlapping preceding interval. Maintain prefix DP tables for choosing up to 4 intervals with tie-breaking for lexicographically smaller index combinations.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.js"
+      }
+    }
+  },
+  {
     "id": "3483",
     "title": "Unique 3-Digit Even Numbers",
     "slug": "unique-3-digit-even-numbers",

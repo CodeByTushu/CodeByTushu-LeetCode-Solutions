@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **11** | September Daily Series in progress |
+| **Total Solved Problems** | **12** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **4** | Problems #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **5** | Problems #2265, #3871, #3904, #3876, #3568 |
-| 🔴 **Hard Problems** | **2** | Problems #115, #940 |
+| 🔴 **Hard Problems** | **3** | Problems #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **11 / 11** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **12 / 12** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3414** | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | <span style="color:#ef4444">**Hard**</span> | 12 Sep 2026 | [Java](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/Solution.java) | [Python](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.py) | [C++](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.cpp) | [JS](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/solution.js) | [Watch Video](https://youtu.be/bQDwhfF4AZE?si=-6KFXu8LPNqIobVx) | [📁 12-September](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/) |
 | **3483** | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | <span style="color:#10b981">**Easy**</span> | 11 Sep 2026 | [Java](./11-September/3483-Unique-3-Digit-Even-Numbers/Solution.java) | [Python](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.py) | [C++](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.cpp) | [JS](./11-September/3483-Unique-3-Digit-Even-Numbers/solution.js) | [Watch Video](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1) | [📁 11-September](./11-September/3483-Unique-3-Digit-Even-Numbers/) |
 | **2265** | [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | <span style="color:#ffc400">**Medium**</span> | 10 Sep 2026 | [Java](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/Solution.java) | [Python](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.py) | [C++](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.cpp) | [JS](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/solution.js) | [Watch Video](https://youtu.be/zLxyNlF6FUs?si=YcvHdbwd0A0MGDao) | [📁 10-September](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/) |
 | **3871** | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/) | <span style="color:#ffc400">**Medium**</span> | 09 Sep 2026 | [Java](./9-September/3871-Count-Commas-in-Range-II/Solution.java) | [Python](./9-September/3871-Count-Commas-in-Range-II/solution.py) | [C++](./9-September/3871-Count-Commas-in-Range-II/solution.cpp) | [JS](./9-September/3871-Count-Commas-in-Range-II/solution.js) | [Watch Video](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i) | [📁 9-September](./9-September/3871-Count-Commas-in-Range-II/) |
@@ -51,6 +52,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[12 September 2026](./12-September/)**: [#3414 Maximum Score of Non-overlapping Intervals](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[11 September 2026](./11-September/)**: [#3483 Unique 3-Digit Even Numbers](./11-September/3483-Unique-3-Digit-Even-Numbers/) — <span style="color:#10b981">Easy</span>
 - 📍 **[10 September 2026](./10-September/)**: [#2265 Count Nodes Equal to Average of Subtree](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[09 September 2026](./9-September/)**: [#3871 Count Commas in Range II](./9-September/3871-Count-Commas-in-Range-II/) — <span style="color:#ffc400">Medium</span>
@@ -67,17 +69,19 @@
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Binary Search**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Depth-First Search**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
-- **Dynamic Programming**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Dynamic Programming**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Enumeration**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Greedy**: [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
 - **Hash Table**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Math**: [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
+- **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **String**: [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 

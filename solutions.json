@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "3483",
+    "title": "Unique 3-Digit Even Numbers",
+    "slug": "unique-3-digit-even-numbers",
+    "date": "11 September 2026",
+    "dateIso": "2026-09-11",
+    "formattedDate": "11 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "11-September",
+    "problemFolder": "3483-Unique-3-Digit-Even-Numbers",
+    "folderPath": "solutions/September/11-September/3483-Unique-3-Digit-Even-Numbers",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/unique-3-digit-even-numbers/",
+    "leetcodeUrl": "https://leetcode.com/problems/unique-3-digit-even-numbers/",
+    "youtubeUrl": "https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Enumeration"
+    ],
+    "summary": "Determine the number of distinct three-digit even numbers with no leading zeros that can be formed from an array of digits using permutations and set deduplication.",
+    "approach": "Iterate through all unique index triplets (i, j, k) with distinct indices. Verify that digits[i] != 0 and digits[k] is even. Add the resulting 3-digit number to a set to remove duplicates, returning the set size.",
+    "timeComplexity": "O(N³)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/11-September/3483-Unique-3-Digit-Even-Numbers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/11-September/3483-Unique-3-Digit-Even-Numbers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/11-September/3483-Unique-3-Digit-Even-Numbers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/11-September/3483-Unique-3-Digit-Even-Numbers/solution.js"
+      }
+    }
+  },
+  {
     "id": "2265",
     "title": "Count Nodes Equal to Average of Subtree",
     "slug": "count-nodes-equal-to-average-of-subtree",

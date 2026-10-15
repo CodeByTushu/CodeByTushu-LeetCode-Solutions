@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "3876",
+    "title": "Construct Uniform Parity Array II",
+    "slug": "construct-uniform-parity-array-ii",
+    "date": "03 September 2026",
+    "dateIso": "2026-09-03",
+    "formattedDate": "03 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "3-September",
+    "problemFolder": "3876-Construct-Uniform-Parity-Array-II",
+    "folderPath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/construct-uniform-parity-array-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-uniform-parity-array-ii/",
+    "youtubeUrl": "https://youtu.be/31WSaoYfhjc?si=Wot4aNMPvr2nLo2L",
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy"
+    ],
+    "summary": "Determine if an array nums1 can be converted to an all-even or all-odd array nums2 by optionally subtracting a strictly smaller element of appropriate parity.",
+    "approach": "Evaluate target parities 0 and 1. If an element does not match target parity, verify that a strictly smaller element of needed parity exists by checking against the global minimum of that parity.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3875",
     "title": "Construct Uniform Parity Array I",
     "slug": "construct-uniform-parity-array-i",

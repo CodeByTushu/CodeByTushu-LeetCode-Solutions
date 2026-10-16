@@ -742,6 +742,56 @@
     }
   },
   {
+    "id": "1658",
+    "title": "Minimum Operations to Reduce X to Zero",
+    "slug": "minimum-operations-to-reduce-x-to-zero",
+    "date": "23 September 2026",
+    "dateIso": "2026-09-23",
+    "formattedDate": "23 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "23-September",
+    "problemFolder": "1658-Minimum-Operations-to-Reduce-X-to-Zero",
+    "folderPath": "solutions/September/23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/",
+    "youtubeUrl": "https://youtu.be/-x_tYLqL-_8?si=vNtxBiTInMGZ5ZrE",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window",
+      "Prefix Sum"
+    ],
+    "summary": "Find the minimum number of operations to remove elements from either end summing to x by finding the longest central contiguous subarray summing to total - x.",
+    "approach": "Invert the problem to find the maximum length contiguous subarray summing to total - x using a two-pointer sliding window, leveraging the positivity of array elements for strict monotonicity.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.js"
+      }
+    }
+  },
+  {
     "id": "3525",
     "title": "Find X Value of Array II",
     "slug": "find-x-value-of-array-ii",

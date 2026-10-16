@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **25** | September Daily Series in progress |
+| **Total Solved Problems** | **26** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **7** | Problems #3550, #3498, #836, #3483, #3870, #3875, #3903 |
-| 🟡 **Medium Problems** | **11** | Problems #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
+| 🟡 **Medium Problems** | **12** | Problems #1807, #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **7** | Problems #1096, #3525, #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **25 / 25** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **26 / 26** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1807** | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | <span style="color:#ffc400">**Medium**</span> | 26 Sep 2026 | [Java](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/Solution.java) | [Python](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.py) | [C++](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.cpp) | [JS](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.js) | [Watch Video](https://youtu.be/kyGkqOjhF5k?si=09TMHzctv23g4XlZ) | [📁 26-September](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) |
 | **1096** | [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | <span style="color:#ef4444">**Hard**</span> | 25 Sep 2026 | [Java](./25-September/1096-Brace-Expansion-II/Solution.java) | [Python](./25-September/1096-Brace-Expansion-II/solution.py) | [C++](./25-September/1096-Brace-Expansion-II/solution.cpp) | [JS](./25-September/1096-Brace-Expansion-II/solution.js) | [Watch Video](https://youtu.be/S1EVtAF4wQ4?si=BzKLWkqRRRWOZnAX) | [📁 25-September](./25-September/1096-Brace-Expansion-II/) |
 | **3550** | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | <span style="color:#10b981">**Easy**</span> | 24 Sep 2026 | [Java](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/Solution.java) | [Python](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.py) | [C++](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.cpp) | [JS](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.js) | [Watch Video](https://youtu.be/8iL2OXi1ElA?si=c6kDkQhlsyme3kKH) | [📁 24-September](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/) |
 | **1658** | [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | <span style="color:#ffc400">**Medium**</span> | 23 Sep 2026 | [Java](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/Solution.java) | [Python](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.py) | [C++](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.cpp) | [JS](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.js) | [Watch Video](https://youtu.be/-x_tYLqL-_8?si=vNtxBiTInMGZ5ZrE) | [📁 23-September](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/) |
@@ -65,6 +66,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[26 September 2026](./26-September/)**: [#1807 Evaluate the Bracket Pairs of a String](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[25 September 2026](./25-September/)**: [#1096 Brace Expansion II](./25-September/1096-Brace-Expansion-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[24 September 2026](./24-September/)**: [#3550 Smallest Index With Digit Sum Equal to Index](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/) — <span style="color:#10b981">Easy</span>
 - 📍 **[23 September 2026](./23-September/)**: [#1658 Minimum Operations to Reduce X to Zero](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/) — <span style="color:#ffc400">Medium</span>
@@ -95,7 +97,7 @@
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Binary Search**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
@@ -106,7 +108,7 @@
 - **Enumeration**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Geometry**: [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#836](./14-September/836-Rectangle-Overlap/)
 - **Greedy**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)
-- **Hash Table**: [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
+- **Hash Table**: [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Math**: [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
 - **Segment Tree**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/)
@@ -115,7 +117,7 @@
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Backtracking / Recursion**: [#1096](./25-September/1096-Brace-Expansion-II/)
 - **Stack**: [#1096](./25-September/1096-Brace-Expansion-II/)
-- **String**: [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **String**: [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---

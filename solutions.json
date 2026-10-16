@@ -742,6 +742,55 @@
     }
   },
   {
+    "id": "1807",
+    "title": "Evaluate the Bracket Pairs of a String",
+    "slug": "evaluate-the-bracket-pairs-of-a-string",
+    "date": "26 September 2026",
+    "dateIso": "2026-09-26",
+    "formattedDate": "26 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "26-September",
+    "problemFolder": "1807-Evaluate-the-Bracket-Pairs-of-a-String",
+    "folderPath": "solutions/September/26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/",
+    "youtubeUrl": "https://youtu.be/kyGkqOjhF5k?si=09TMHzctv23g4XlZ",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String"
+    ],
+    "summary": "Replace bracketed keys in a string with their corresponding values from a knowledge dictionary, or '?' if the key is not present.",
+    "approach": "Populate a hash map with knowledge key-value pairs, then linearly parse the string replacing each bracketed (key) with map lookup or '?' otherwise appending characters directly.",
+    "timeComplexity": "O(|s| + K * L)",
+    "auxiliarySpaceComplexity": "O(K * L + |s|)",
+    "spaceComplexity": "O(K * L + |s|)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1096",
     "title": "Brace Expansion II",
     "slug": "brace-expansion-ii",

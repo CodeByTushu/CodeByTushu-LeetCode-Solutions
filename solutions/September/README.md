@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **24** | September Daily Series in progress |
+| **Total Solved Problems** | **25** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **7** | Problems #3550, #3498, #836, #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **11** | Problems #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
-| 🔴 **Hard Problems** | **6** | Problems #3525, #1520, #2472, #3414, #115, #940 |
+| 🔴 **Hard Problems** | **7** | Problems #1096, #3525, #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **24 / 24** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **25 / 25** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1096** | [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | <span style="color:#ef4444">**Hard**</span> | 25 Sep 2026 | [Java](./25-September/1096-Brace-Expansion-II/Solution.java) | [Python](./25-September/1096-Brace-Expansion-II/solution.py) | [C++](./25-September/1096-Brace-Expansion-II/solution.cpp) | [JS](./25-September/1096-Brace-Expansion-II/solution.js) | [Watch Video](https://youtu.be/S1EVtAF4wQ4?si=BzKLWkqRRRWOZnAX) | [📁 25-September](./25-September/1096-Brace-Expansion-II/) |
 | **3550** | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | <span style="color:#10b981">**Easy**</span> | 24 Sep 2026 | [Java](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/Solution.java) | [Python](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.py) | [C++](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.cpp) | [JS](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.js) | [Watch Video](https://youtu.be/8iL2OXi1ElA?si=c6kDkQhlsyme3kKH) | [📁 24-September](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/) |
 | **1658** | [Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | <span style="color:#ffc400">**Medium**</span> | 23 Sep 2026 | [Java](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/Solution.java) | [Python](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.py) | [C++](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.cpp) | [JS](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/solution.js) | [Watch Video](https://youtu.be/-x_tYLqL-_8?si=vNtxBiTInMGZ5ZrE) | [📁 23-September](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/) |
 | **3525** | [Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 22 Sep 2026 | [Java](./22-September/3525-Find-X-Value-of-Array-II/Solution.java) | [Python](./22-September/3525-Find-X-Value-of-Array-II/solution.py) | [C++](./22-September/3525-Find-X-Value-of-Array-II/solution.cpp) | [JS](./22-September/3525-Find-X-Value-of-Array-II/solution.js) | [Watch Video](https://youtu.be/0bCLt32jDVA?si=yPUjMNsXENJAY0uU) | [📁 22-September](./22-September/3525-Find-X-Value-of-Array-II/) |
@@ -64,6 +65,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[25 September 2026](./25-September/)**: [#1096 Brace Expansion II](./25-September/1096-Brace-Expansion-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[24 September 2026](./24-September/)**: [#3550 Smallest Index With Digit Sum Equal to Index](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/) — <span style="color:#10b981">Easy</span>
 - 📍 **[23 September 2026](./23-September/)**: [#1658 Minimum Operations to Reduce X to Zero](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[22 September 2026](./22-September/)**: [#3525 Find X Value of Array II](./22-September/3525-Find-X-Value-of-Array-II/) — <span style="color:#ef4444">Hard</span>
@@ -111,7 +113,9 @@
 - **Simulation**: [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/)
 - **Sliding Window**: [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
-- **String**: [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Backtracking / Recursion**: [#1096](./25-September/1096-Brace-Expansion-II/)
+- **Stack**: [#1096](./25-September/1096-Brace-Expansion-II/)
+- **String**: [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---

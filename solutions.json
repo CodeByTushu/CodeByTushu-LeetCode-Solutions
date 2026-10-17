@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "3702",
+    "title": "Longest Subsequence With Non-Zero Bitwise XOR",
+    "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+    "date": "15 August 2026",
+    "dateIso": "2026-08-15",
+    "formattedDate": "15 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "15-August",
+    "problemFolder": "3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR",
+    "folderPath": "solutions/August/15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/",
+    "youtubeUrl": "https://youtu.be/p_DGMnYCGL0?si=YmC1yz2kaeD-qKe8",
+    "tags": [
+      "Array",
+      "Math",
+      "Bit Manipulation"
+    ],
+    "summary": "Find the maximum length of a subsequence whose bitwise XOR sum is non-zero.",
+    "approach": "Compute the total XOR sum. If non-zero, the entire array of length N is valid. If zero, removing any single non-zero element yields a non-zero XOR sum of length N - 1; otherwise, return 0 if all elements are zero.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/solution.js"
+      }
+    }
+  },
+  {
     "id": "3090",
     "title": "Maximum Length Substring With Two Occurrences",
     "slug": "maximum-length-substring-with-two-occurrences",

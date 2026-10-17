@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **14** | August Daily Series in progress |
+| **Total Solved Problems** | **15** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **4** | Problems #3090, #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **6** | Problems #2958, #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **7** | Problems #3702, #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **4** | Problems #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **14 / 14** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **15 / 15** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3702** | [Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | <span style="color:#ffc400">**Medium**</span> | 15 Aug 2026 | [Java](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/Solution.java) | [Python](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/solution.py) | [C++](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/solution.cpp) | [JS](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/solution.js) | [Watch Video](https://youtu.be/p_DGMnYCGL0?si=YmC1yz2kaeD-qKe8) | [📁 15-August](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/) |
 | **3090** | [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | <span style="color:#10b981">**Easy**</span> | 14 Aug 2026 | [Java](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/Solution.java) | [Python](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/solution.py) | [C++](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/solution.cpp) | [JS](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/solution.js) | [Watch Video](https://youtu.be/J8Y3UhpZ-H4?si=TujrIga45VUF_-12) | [📁 14-August](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/) |
 | **2213** | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) | <span style="color:#ef4444">**Hard**</span> | 13 Aug 2026 | [Java](./13-August/2213-Longest-Substring-of-One-Repeating-Character/Solution.java) | [Python](./13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.py) | [C++](./13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.cpp) | [JS](./13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.js) | [Watch Video](https://youtu.be/VMxBZjdcTH4?si=mFM06zWGzYoH3T5p) | [📁 13-August](./13-August/2213-Longest-Substring-of-One-Repeating-Character/) |
 | **2958** | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | <span style="color:#ffc400">**Medium**</span> | 12 Aug 2026 | [Java](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/Solution.java) | [Python](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.py) | [C++](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.cpp) | [JS](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.js) | [Watch Video](https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917) | [📁 12-August](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/) |
@@ -55,6 +56,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[15 August 2026](./15-August/)**: [#3702 Longest Subsequence With Non-Zero Bitwise XOR](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[14 August 2026](./14-August/)**: [#3090 Maximum Length Substring With Two Occurrences](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/) — <span style="color:#10b981">Easy</span>
 - 📍 **[13 August 2026](./13-August/)**: [#2213 Longest Substring of One Repeating Character](./13-August/2213-Longest-Substring-of-One-Repeating-Character/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[12 August 2026](./12-August/)**: [#2958 Length of Longest Subarray With at Most K Frequency](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/) — <span style="color:#ffc400">Medium</span>
@@ -74,7 +76,8 @@
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Array**: [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Bit Manipulation**: [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/)
 - **Breadth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Depth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Dynamic Programming**: [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
@@ -82,7 +85,7 @@
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Greedy**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Hash Table**: [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
-- **Math**: [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Math**: [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Ordered Set**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Prefix Sum**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/)

@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "3310",
+    "title": "Remove Methods From Project",
+    "slug": "remove-methods-from-project",
+    "date": "05 August 2026",
+    "dateIso": "2026-08-05",
+    "formattedDate": "05 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "5-August",
+    "problemFolder": "3310-Remove-Methods-From-Project",
+    "folderPath": "solutions/August/5-August/3310-Remove-Methods-From-Project",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/remove-methods-from-project/",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-methods-from-project/",
+    "youtubeUrl": "https://youtu.be/L3ArLvS-Zak?si=oroVfsGiL7zFKSjJ",
+    "tags": [
+      "Array",
+      "Graph",
+      "Breadth-First Search",
+      "Depth-First Search"
+    ],
+    "summary": "Remove a buggy method and all methods reachable from it, provided no non-suspicious method invokes any suspicious method.",
+    "approach": "Traverse the directed invocation graph starting from method k using BFS to discover all suspicious methods. Then check all invocations: if any non-suspicious method calls a suspicious method, abort and return all methods; otherwise, return all non-suspicious methods.",
+    "timeComplexity": "O(N + M)",
+    "auxiliarySpaceComplexity": "O(N + M)",
+    "spaceComplexity": "O(N + M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/solution.js"
+      }
+    }
+  },
+  {
     "id": "3731",
     "title": "Find Missing Elements",
     "slug": "find-missing-elements",

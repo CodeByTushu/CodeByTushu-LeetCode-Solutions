@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **18** | August Daily Series in progress |
+| **Total Solved Problems** | **19** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **5** | Problems #3471, #3090, #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **8** | Problems #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **9** | Problems #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **5** | Problems #1563, #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **18 / 18** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **19 / 19** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1386** | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) | <span style="color:#ffc400">**Medium**</span> | 19 Aug 2026 | [Java](./19-August/1386-Cinema-Seat-Allocation/Solution.java) | [Python](./19-August/1386-Cinema-Seat-Allocation/solution.py) | [C++](./19-August/1386-Cinema-Seat-Allocation/solution.cpp) | [JS](./19-August/1386-Cinema-Seat-Allocation/solution.js) | [Watch Video](https://youtu.be/Sz2EF170fTQ?si=yvjT3IAAwchLylJy) | [📁 19-August](./19-August/1386-Cinema-Seat-Allocation/) |
 | **3471** | [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | <span style="color:#10b981">**Easy**</span> | 18 Aug 2026 | [Java](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/Solution.java) | [Python](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.py) | [C++](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.cpp) | [JS](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.js) | [Watch Video](https://youtu.be/3dpjR5wKrZs?si=_vHmGj0wOPxzREqK) | [📁 18-August](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/) |
 | **1563** | [Stone Game V](https://leetcode.com/problems/stone-game-v/) | <span style="color:#ef4444">**Hard**</span> | 17 Aug 2026 | [Java](./17-August/1563-Stone-Game-V/Solution.java) | [Python](./17-August/1563-Stone-Game-V/solution.py) | [C++](./17-August/1563-Stone-Game-V/solution.cpp) | [JS](./17-August/1563-Stone-Game-V/solution.js) | [Watch Video](https://youtu.be/OdLAqBQsvhk?si=iZQTtgItQbrJVag3) | [📁 17-August](./17-August/1563-Stone-Game-V/) |
 | **2029** | [Stone Game IX](https://leetcode.com/problems/stone-game-ix/) | <span style="color:#ffc400">**Medium**</span> | 16 Aug 2026 | [Java](./16-August/2029-Stone-Game-IX/Solution.java) | [Python](./16-August/2029-Stone-Game-IX/solution.py) | [C++](./16-August/2029-Stone-Game-IX/solution.cpp) | [JS](./16-August/2029-Stone-Game-IX/solution.js) | [Watch Video](https://youtu.be/0xYKStmu5Lo?si=GW0kUTFhNjQDeP4s) | [📁 16-August](./16-August/2029-Stone-Game-IX/) |
@@ -59,6 +60,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[19 August 2026](./19-August/)**: [#1386 Cinema Seat Allocation](./19-August/1386-Cinema-Seat-Allocation/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[18 August 2026](./18-August/)**: [#3471 Find the Largest Almost Missing Integer](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/) — <span style="color:#10b981">Easy</span>
 - 📍 **[17 August 2026](./17-August/)**: [#1563 Stone Game V](./17-August/1563-Stone-Game-V/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[16 August 2026](./16-August/)**: [#2029 Stone Game IX](./16-August/2029-Stone-Game-IX/) — <span style="color:#ffc400">Medium</span>
@@ -82,16 +84,16 @@
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
-- **Bit Manipulation**: [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/)
+- **Array**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Bit Manipulation**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/)
 - **Breadth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Counting**: [#2029](./16-August/2029-Stone-Game-IX/)
 - **Depth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Dynamic Programming**: [#1563](./17-August/1563-Stone-Game-V/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Game Theory**: [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
-- **Greedy**: [#2029](./16-August/2029-Stone-Game-IX/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
-- **Hash Table**: [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
+- **Greedy**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#2029](./16-August/2029-Stone-Game-IX/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **Hash Table**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
 - **Math**: [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Ordered Set**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)

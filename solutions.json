@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "1386",
+    "title": "Cinema Seat Allocation",
+    "slug": "cinema-seat-allocation",
+    "date": "19 August 2026",
+    "dateIso": "2026-08-19",
+    "formattedDate": "19 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "19-August",
+    "problemFolder": "1386-Cinema-Seat-Allocation",
+    "folderPath": "solutions/August/19-August/1386-Cinema-Seat-Allocation",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/cinema-seat-allocation/",
+    "leetcodeUrl": "https://leetcode.com/problems/cinema-seat-allocation/",
+    "youtubeUrl": "https://youtu.be/Sz2EF170fTQ?si=yvjT3IAAwchLylJy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Greedy",
+      "Bit Manipulation"
+    ],
+    "summary": "Determine the maximum number of 4-person family groups that can be seated across an n-row cinema with reserved seats.",
+    "approach": "Represent reserved seats per row as a bitmask in a hash map. For reserved rows, greedily check disjoint 4-seat candidate blocks [2-5] and [6-9], falling back to [4-7]. Add 2 families for every unreserved row.",
+    "timeComplexity": "O(M)",
+    "auxiliarySpaceComplexity": "O(U)",
+    "spaceComplexity": "O(U)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/19-August/1386-Cinema-Seat-Allocation/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/19-August/1386-Cinema-Seat-Allocation/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/19-August/1386-Cinema-Seat-Allocation/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/19-August/1386-Cinema-Seat-Allocation/solution.js"
+      }
+    }
+  },
+  {
     "id": "3471",
     "title": "Find the Largest Almost Missing Integer",
     "slug": "find-the-largest-almost-missing-integer",

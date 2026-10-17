@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "1563",
+    "title": "Stone Game V",
+    "slug": "stone-game-v",
+    "date": "17 August 2026",
+    "dateIso": "2026-08-17",
+    "formattedDate": "17 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "17-August",
+    "problemFolder": "1563-Stone-Game-V",
+    "folderPath": "solutions/August/17-August/1563-Stone-Game-V",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/stone-game-v/",
+    "leetcodeUrl": "https://leetcode.com/problems/stone-game-v/",
+    "youtubeUrl": "https://youtu.be/OdLAqBQsvhk?si=iZQTtgItQbrJVag3",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Game Theory"
+    ],
+    "summary": "Find the maximum score Alice can achieve in Stone Game V by dividing rows into two non-empty segments where the higher sum is discarded.",
+    "approach": "Use interval dynamic programming with memoization memo[l][r]. Precompute prefix sums for O(1) interval sum queries. For each partition point m from l to r - 1, compare leftSum and rightSum: keep the segment with smaller sum, or choose the optimal if sums are equal.",
+    "timeComplexity": "O(N^3)",
+    "auxiliarySpaceComplexity": "O(N^2)",
+    "spaceComplexity": "O(N^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/17-August/1563-Stone-Game-V/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/17-August/1563-Stone-Game-V/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/17-August/1563-Stone-Game-V/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/17-August/1563-Stone-Game-V/solution.js"
+      }
+    }
+  },
+  {
     "id": "2029",
     "title": "Stone Game IX",
     "slug": "stone-game-ix",

@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "2213",
+    "title": "Longest Substring of One Repeating Character",
+    "slug": "longest-substring-of-one-repeating-character",
+    "date": "13 August 2026",
+    "dateIso": "2026-08-13",
+    "formattedDate": "13 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "13-August",
+    "problemFolder": "2213-Longest-Substring-of-One-Repeating-Character",
+    "folderPath": "solutions/August/13-August/2213-Longest-Substring-of-One-Repeating-Character",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/",
+    "youtubeUrl": "https://youtu.be/VMxBZjdcTH4?si=mFM06zWGzYoH3T5p",
+    "tags": [
+      "String",
+      "Segment Tree",
+      "Ordered Set"
+    ],
+    "summary": "Process dynamic point updates on a string and return the maximum length of a repeating character substring after each update.",
+    "approach": "Build a segment tree maintaining boundary characters, longest prefix/suffix of identical characters, and the best repeating substring. Combine child intervals across mid boundaries in O(1) per pull and handle updates in O(log N).",
+    "timeComplexity": "O(N + K log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/13-August/2213-Longest-Substring-of-One-Repeating-Character/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.js"
+      }
+    }
+  },
+  {
     "id": "2958",
     "title": "Length of Longest Subarray With at Most K Frequency",
     "slug": "length-of-longest-subarray-with-at-most-k-frequency",

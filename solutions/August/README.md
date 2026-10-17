@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **12** | August Daily Series in progress |
+| **Total Solved Problems** | **13** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **3** | Problems #2996, #3345, #3731 |
 | 🟡 **Medium Problems** | **6** | Problems #2958, #1140, #3302, #3310, #877, #486 |
-| 🔴 **Hard Problems** | **3** | Problems #1510, #3348, #1406 |
+| 🔴 **Hard Problems** | **4** | Problems #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **12 / 12** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **13 / 13** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2213** | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) | <span style="color:#ef4444">**Hard**</span> | 13 Aug 2026 | [Java](./13-August/2213-Longest-Substring-of-One-Repeating-Character/Solution.java) | [Python](./13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.py) | [C++](./13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.cpp) | [JS](./13-August/2213-Longest-Substring-of-One-Repeating-Character/solution.js) | [Watch Video](https://youtu.be/VMxBZjdcTH4?si=mFM06zWGzYoH3T5p) | [📁 13-August](./13-August/2213-Longest-Substring-of-One-Repeating-Character/) |
 | **2958** | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | <span style="color:#ffc400">**Medium**</span> | 12 Aug 2026 | [Java](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/Solution.java) | [Python](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.py) | [C++](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.cpp) | [JS](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.js) | [Watch Video](https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917) | [📁 12-August](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/) |
 | **2996** | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | <span style="color:#10b981">**Easy**</span> | 11 Aug 2026 | [Java](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/Solution.java) | [Python](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.py) | [C++](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.cpp) | [JS](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.js) | [Watch Video](https://youtu.be/B46sB6XHfLQ?si=lsCDtikQl0QXDpzD) | [📁 11-August](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/) |
 | **1510** | [Stone Game IV](https://leetcode.com/problems/stone-game-iv/) | <span style="color:#ef4444">**Hard**</span> | 10 Aug 2026 | [Java](./10-August/1510-Stone-Game-IV/Solution.java) | [Python](./10-August/1510-Stone-Game-IV/solution.py) | [C++](./10-August/1510-Stone-Game-IV/solution.cpp) | [JS](./10-August/1510-Stone-Game-IV/solution.js) | [Watch Video](https://youtu.be/QFVxluA9TG4?si=QwKoR_unwgKplQOe) | [📁 10-August](./10-August/1510-Stone-Game-IV/) |
@@ -53,6 +54,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[13 August 2026](./13-August/)**: [#2213 Longest Substring of One Repeating Character](./13-August/2213-Longest-Substring-of-One-Repeating-Character/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[12 August 2026](./12-August/)**: [#2958 Length of Longest Subarray With at Most K Frequency](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[11 August 2026](./11-August/)**: [#2996 Smallest Missing Integer Greater Than Sequential Prefix Sum](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/) — <span style="color:#10b981">Easy</span>
 - 📍 **[10 August 2026](./10-August/)**: [#1510 Stone Game IV](./10-August/1510-Stone-Game-IV/) — <span style="color:#ef4444">Hard</span>
@@ -80,12 +82,14 @@
 - **Hash Table**: [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
 - **Math**: [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **Ordered Set**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Prefix Sum**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/)
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
+- **Segment Tree**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Simulation**: [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
 - **Sliding Window**: [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/)
 - **Sorting**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
-- **String**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **String**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Two Pointers**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/)
 
 ---

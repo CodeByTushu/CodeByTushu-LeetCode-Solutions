@@ -1,5 +1,56 @@
 [
   {
+    "id": "3551",
+    "title": "Minimum Swaps to Sort by Digit Sum",
+    "slug": "minimum-swaps-to-sort-by-digit-sum",
+    "date": "17 October 2026",
+    "dateIso": "2026-10-17",
+    "formattedDate": "17 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "17-October",
+    "problemFolder": "3551-Minimum-Swaps-to-Sort-by-Digit-Sum",
+    "folderPath": "solutions/October/17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/",
+    "youtubeUrl": "https://youtu.be/jjMwisPTHhE?si=880_8v7Hdqx7VLOv",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Sorting",
+      "Graph"
+    ],
+    "summary": "Find the minimum number of swaps to sort an array by digit sums (and numerical values on ties) using permutation cycle decomposition.",
+    "approach": "Compute digit sums for each element, sort indices by (digit_sum, value) to find target positions, and decompose the permutation into disjoint cycles. Each cycle of length K requires K - 1 swaps.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/solution.js"
+      }
+    }
+  },
+  {
     "id": "2916",
     "title": "Subarrays Distinct Element Sum of Squares II",
     "slug": "subarrays-distinct-element-sum-of-squares-ii",

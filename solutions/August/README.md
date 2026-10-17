@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **28** | August Daily Series in progress |
+| **Total Solved Problems** | **29** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **8** | Problems #3718, #3622, #3069, #3471, #3090, #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **12** | Problems #3720, #2904, #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **13** | Problems #2948, #3720, #2904, #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **8** | Problems #3734, #1872, #3116, #1563, #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **28 / 28** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **29 / 29** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2948** | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | <span style="color:#ffc400">**Medium**</span> | 29 Aug 2026 | [Java](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/Solution.java) | [Python](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.py) | [C++](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.cpp) | [JS](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.js) | [Watch Video](https://youtu.be/e-WYxZqwgXU?si=0vyxh1TrRNA_HXJ_) | [📁 29-August](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/) |
 | **3734** | [Lexicographically Smallest Palindromic Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) | <span style="color:#ef4444">**Hard**</span> | 28 Aug 2026 | [Java](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/Solution.java) | [Python](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.py) | [C++](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.cpp) | [JS](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.js) | [Watch Video](https://youtu.be/xl6HBWMH0p8?si=rIWpZrmgQAbI-5zo) | [📁 28-August](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/) |
 | **3720** | [Lexicographically Smallest Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/) | <span style="color:#ffc400">**Medium**</span> | 27 Aug 2026 | [Java](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/Solution.java) | [Python](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/solution.py) | [C++](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/solution.cpp) | [JS](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/solution.js) | [Watch Video](https://youtu.be/G1tCTGT4XSk?si=EI0lM3tY5ATyaD_k) | [📁 27-August](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/) |
 | **2904** | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | <span style="color:#ffc400">**Medium**</span> | 26 Aug 2026 | [Java](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/Solution.java) | [Python](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.py) | [C++](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.cpp) | [JS](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.js) | [Watch Video](https://youtu.be/T8dxEI5b1MQ?si=qDMUWM2grTqI5DYy) | [📁 26-August](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/) |
@@ -69,6 +70,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[29 August 2026](./29-August/)**: [#2948 Make Lexicographically Smallest Array by Swapping Elements](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[28 August 2026](./28-August/)**: [#3734 Lexicographically Smallest Palindromic Permutation Greater Than Target](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[27 August 2026](./27-August/)**: [#3720 Lexicographically Smallest Permutation Greater Than Target](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[26 August 2026](./26-August/)**: [#2904 Shortest and Lexicographically Smallest Beautiful String](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/) — <span style="color:#ffc400">Medium</span>
@@ -102,7 +104,7 @@
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#3718](./25-August/3718-Smallest-Missing-Multiple-of-K/), [#1872](./24-August/1872-Stone-Game-VIII/), [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Array**: [#2948](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/), [#3718](./25-August/3718-Smallest-Missing-Multiple-of-K/), [#1872](./24-August/1872-Stone-Game-VIII/), [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Binary Search**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/)
 - **Bit Manipulation**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/)
 - **Breadth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
@@ -122,9 +124,10 @@
 - **Segment Tree**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Simulation**: [#3622](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/), [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
 - **Sliding Window**: [#2904](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/)
-- **Sorting**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
+- **Sorting**: [#2948](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
 - **String**: [#3734](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/), [#3720](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/), [#2904](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/), [#1927](./23-August/1927-Sum-Game/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
-- **Two Pointers**: [#3734](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/)
+- **Two Pointers**: [#2948](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/), [#3734](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/)
+- **Union Find**: [#2948](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/)
 
 ---
 

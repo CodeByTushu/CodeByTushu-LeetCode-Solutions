@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "2948",
+    "title": "Make Lexicographically Smallest Array by Swapping Elements",
+    "slug": "make-lexicographically-smallest-array-by-swapping-elements",
+    "date": "29 August 2026",
+    "dateIso": "2026-08-29",
+    "formattedDate": "29 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "29-August",
+    "problemFolder": "2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements",
+    "folderPath": "solutions/August/29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/",
+    "leetcodeUrl": "https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/",
+    "youtubeUrl": "https://youtu.be/e-WYxZqwgXU?si=0vyxh1TrRNA_HXJ_",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Two Pointers",
+      "Union Find"
+    ],
+    "summary": "Rearrange an array into its lexicographically smallest permutation by swapping elements differing by at most limit.",
+    "approach": "Sort array indices by their values, partition consecutive elements differing by at most limit into connected component groups, sort the indices within each group, and place sorted values back into sorted index positions.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.js"
+      }
+    }
+  },
+  {
     "id": "3734",
     "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
     "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",

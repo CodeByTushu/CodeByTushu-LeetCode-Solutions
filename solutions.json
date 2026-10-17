@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "1406",
+    "title": "Stone Game III",
+    "slug": "stone-game-iii",
+    "date": "03 August 2026",
+    "dateIso": "2026-08-03",
+    "formattedDate": "03 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "3-August",
+    "problemFolder": "1406-Stone-Game-III",
+    "folderPath": "solutions/August/3-August/1406-Stone-Game-III",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/stone-game-iii/",
+    "leetcodeUrl": "https://leetcode.com/problems/stone-game-iii/",
+    "youtubeUrl": "https://youtu.be/OQrWpN7LNZI?si=TNHpWlVC-m-fxSWQ",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Game Theory"
+    ],
+    "summary": "Determine the winner (Alice, Bob, or Tie) of a turn-based game where players take 1, 2, or 3 stones from the remaining row to maximize relative score advantage.",
+    "approach": "Use linear Dynamic Programming dp[i] from right to left tracking the maximum score difference (current player - opponent) achievable from stoneValue[i..n-1] by evaluating choices k in {1, 2, 3}.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/solution.js"
+      }
+    }
+  },
+  {
     "id": "877",
     "title": "Stone Game",
     "slug": "stone-game",

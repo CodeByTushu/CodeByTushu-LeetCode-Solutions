@@ -2295,6 +2295,54 @@
     }
   },
   {
+    "id": "3622",
+    "title": "Check Divisibility by Digit Sum and Product",
+    "slug": "check-divisibility-by-digit-sum-and-product",
+    "date": "22 August 2026",
+    "dateIso": "2026-08-22",
+    "formattedDate": "22 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "22-August",
+    "problemFolder": "3622-Check-Divisibility-by-Digit-Sum-and-Product",
+    "folderPath": "solutions/August/22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/",
+    "youtubeUrl": "https://youtu.be/zRTF8a8pECM?si=RNyqWMulvcgGlk_z",
+    "tags": [
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Determine whether a given positive integer n is divisible by the sum of its digit sum and digit product.",
+    "approach": "Extract digits of n sequentially to accumulate digit sum and digit product. Check if n is divisible by the combined sum.",
+    "timeComplexity": "O(log10 N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/solution.js"
+      }
+    }
+  },
+  {
     "id": "3116",
     "title": "Kth Smallest Amount With Single Denomination Combination",
     "slug": "kth-smallest-amount-with-single-denomination-combination",

@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **22** | August Daily Series in progress |
+| **Total Solved Problems** | **23** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **7** | Problems #3622, #3069, #3471, #3090, #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **9** | Problems #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **10** | Problems #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **6** | Problems #3116, #1563, #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **22 / 22** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **23 / 23** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1927** | [Sum Game](https://leetcode.com/problems/sum-game/) | <span style="color:#ffc400">**Medium**</span> | 23 Aug 2026 | [Java](./23-August/1927-Sum-Game/Solution.java) | [Python](./23-August/1927-Sum-Game/solution.py) | [C++](./23-August/1927-Sum-Game/solution.cpp) | [JS](./23-August/1927-Sum-Game/solution.js) | [Watch Video](https://youtu.be/vQ0iABESqvk?si=XDI-GisCWhYbkbyK) | [📁 23-August](./23-August/1927-Sum-Game/) |
 | **3622** | [Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/) | <span style="color:#10b981">**Easy**</span> | 22 Aug 2026 | [Java](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/Solution.java) | [Python](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/solution.py) | [C++](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/solution.cpp) | [JS](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/solution.js) | [Watch Video](https://youtu.be/zRTF8a8pECM?si=RNyqWMulvcgGlk_z) | [📁 22-August](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/) |
 | **3116** | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | <span style="color:#ef4444">**Hard**</span> | 21 Aug 2026 | [Java](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/Solution.java) | [Python](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.py) | [C++](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.cpp) | [JS](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.js) | [Watch Video](https://youtu.be/NBCDNnXg-vQ?si=h0WS-7vUmmTN3M1f) | [📁 21-August](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/) |
 | **3069** | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/) | <span style="color:#10b981">**Easy**</span> | 20 Aug 2026 | [Java](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/Solution.java) | [Python](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.py) | [C++](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.cpp) | [JS](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.js) | [Watch Video](https://youtu.be/UJimcNSmAOs?si=fQFr8AIcEztV7Ce2) | [📁 20-August](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/) |
@@ -63,6 +64,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[23 August 2026](./23-August/)**: [#1927 Sum Game](./23-August/1927-Sum-Game/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[22 August 2026](./22-August/)**: [#3622 Check Divisibility by Digit Sum and Product](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/) — <span style="color:#10b981">Easy</span>
 - 📍 **[21 August 2026](./21-August/)**: [#3116 Kth Smallest Amount With Single Denomination Combination](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[20 August 2026](./20-August/)**: [#3069 Distribute Elements Into Two Arrays I](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/) — <span style="color:#10b981">Easy</span>
@@ -98,11 +100,11 @@
 - **Counting**: [#2029](./16-August/2029-Stone-Game-IX/)
 - **Depth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Dynamic Programming**: [#1563](./17-August/1563-Stone-Game-V/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
-- **Game Theory**: [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Game Theory**: [#1927](./23-August/1927-Sum-Game/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
-- **Greedy**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#2029](./16-August/2029-Stone-Game-IX/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **Greedy**: [#1927](./23-August/1927-Sum-Game/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#2029](./16-August/2029-Stone-Game-IX/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Hash Table**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
-- **Math**: [#3622](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/), [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Math**: [#1927](./23-August/1927-Sum-Game/), [#3622](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/), [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Ordered Set**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Prefix Sum**: [#1563](./17-August/1563-Stone-Game-V/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/)
@@ -111,7 +113,7 @@
 - **Simulation**: [#3622](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/), [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
 - **Sliding Window**: [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/)
 - **Sorting**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
-- **String**: [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **String**: [#1927](./23-August/1927-Sum-Game/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Two Pointers**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/)
 
 ---

@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "1927",
+    "title": "Sum Game",
+    "slug": "sum-game",
+    "date": "23 August 2026",
+    "dateIso": "2026-08-23",
+    "formattedDate": "23 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "23-August",
+    "problemFolder": "1927-Sum-Game",
+    "folderPath": "solutions/August/23-August/1927-Sum-Game",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/sum-game/",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-game/",
+    "youtubeUrl": "https://youtu.be/vQ0iABESqvk?si=XDI-GisCWhYbkbyK",
+    "tags": [
+      "Math",
+      "Greedy",
+      "Game Theory",
+      "String"
+    ],
+    "summary": "Determine if Alice can guarantee unequal digit sums across both halves of an even-length string with wildcard question marks.",
+    "approach": "Alice always wins if total question marks are odd. When even, Bob can pair question mark plays to force sums of 9; Bob wins if and only if known sum difference perfectly counters the question mark disparity.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/23-August/1927-Sum-Game/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/23-August/1927-Sum-Game/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/23-August/1927-Sum-Game/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/23-August/1927-Sum-Game/solution.js"
+      }
+    }
+  },
+  {
     "id": "3622",
     "title": "Check Divisibility by Digit Sum and Product",
     "slug": "check-divisibility-by-digit-sum-and-product",

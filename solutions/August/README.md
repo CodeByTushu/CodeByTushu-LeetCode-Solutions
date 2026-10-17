@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **1** | August Daily Series in progress |
+| **Total Solved Problems** | **2** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **0** | — |
-| 🟡 **Medium Problems** | **1** | Problem #486 |
+| 🟡 **Medium Problems** | **2** | Problems #877, #486 |
 | 🔴 **Hard Problems** | **0** | — |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **2 / 2** | Available on YouTube |
 
 ---
 
@@ -36,22 +36,24 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **877** | [Stone Game](https://leetcode.com/problems/stone-game/) | <span style="color:#ffc400">**Medium**</span> | 02 Aug 2026 | [Java](./2-August/877-Stone-Game/Solution.java) | [Python](./2-August/877-Stone-Game/solution.py) | [C++](./2-August/877-Stone-Game/solution.cpp) | [JS](./2-August/877-Stone-Game/solution.js) | [Watch Video](https://youtu.be/0oUOGGbZLTw?si=4U6o2FHprhwsdGIf) | [📁 2-August](./2-August/877-Stone-Game/) |
 | **486** | [Predict the Winner](https://leetcode.com/problems/predict-the-winner/) | <span style="color:#ffc400">**Medium**</span> | 01 Aug 2026 | [Java](./1-August/486-Predict-the-Winner/Solution.java) | [Python](./1-August/486-Predict-the-Winner/solution.py) | [C++](./1-August/486-Predict-the-Winner/solution.cpp) | [JS](./1-August/486-Predict-the-Winner/solution.js) | [Watch Video](https://youtu.be/NmFcU3huV5g?si=j-DWd_1nGuALGshK) | [📁 1-August](./1-August/486-Predict-the-Winner/) |
 
 ---
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[02 August 2026](./2-August/)**: [#877 Stone Game](./2-August/877-Stone-Game/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[01 August 2026](./1-August/)**: [#486 Predict the Winner](./1-August/486-Predict-the-Winner/) — <span style="color:#ffc400">Medium</span>
 
 ---
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#486](./1-August/486-Predict-the-Winner/)
-- **Dynamic Programming**: [#486](./1-August/486-Predict-the-Winner/)
-- **Game Theory**: [#486](./1-August/486-Predict-the-Winner/)
-- **Math**: [#486](./1-August/486-Predict-the-Winner/)
+- **Array**: [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Dynamic Programming**: [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Game Theory**: [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Math**: [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
 
 ---

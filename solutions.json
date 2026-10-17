@@ -2295,6 +2295,57 @@
     }
   },
   {
+    "id": "1872",
+    "title": "Stone Game VIII",
+    "slug": "stone-game-viii",
+    "date": "24 August 2026",
+    "dateIso": "2026-08-24",
+    "formattedDate": "24 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "24-August",
+    "problemFolder": "1872-Stone-Game-VIII",
+    "folderPath": "solutions/August/24-August/1872-Stone-Game-VIII",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/stone-game-viii/",
+    "leetcodeUrl": "https://leetcode.com/problems/stone-game-viii/",
+    "youtubeUrl": "https://youtu.be/3YcfHs8mapA?si=GNDPeRspfZmKpFXY",
+    "tags": [
+      "Game Theory",
+      "Dynamic Programming",
+      "Math",
+      "Prefix Sum",
+      "Array"
+    ],
+    "summary": "Find the maximum score difference Alice can achieve by removing stones, scoring their prefix sum, and replacing them with a single merged stone.",
+    "approach": "Prefix sums are invariant under stone merges. Using backward dynamic programming, each state computes dp = max(dp, prefix[i] - dp) to determine the optimal score difference in linear time.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/24-August/1872-Stone-Game-VIII/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/24-August/1872-Stone-Game-VIII/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/24-August/1872-Stone-Game-VIII/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/24-August/1872-Stone-Game-VIII/solution.js"
+      }
+    }
+  },
+  {
     "id": "1927",
     "title": "Sum Game",
     "slug": "sum-game",

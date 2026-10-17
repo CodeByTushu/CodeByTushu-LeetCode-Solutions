@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **26** | September Daily Series in progress |
+| **Total Solved Problems** | **27** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **7** | Problems #3550, #3498, #836, #3483, #3870, #3875, #3903 |
-| 🟡 **Medium Problems** | **12** | Problems #1807, #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
+| 🟡 **Medium Problems** | **13** | Problems #1190, #1807, #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **7** | Problems #1096, #3525, #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **26 / 26** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **27 / 27** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1190** | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/) | <span style="color:#ffc400">**Medium**</span> | 27 Sep 2026 | [Java](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/Solution.java) | [Python](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.py) | [C++](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.cpp) | [JS](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.js) | [Watch Video](https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-) | [📁 27-September](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/) |
 | **1807** | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | <span style="color:#ffc400">**Medium**</span> | 26 Sep 2026 | [Java](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/Solution.java) | [Python](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.py) | [C++](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.cpp) | [JS](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.js) | [Watch Video](https://youtu.be/kyGkqOjhF5k?si=09TMHzctv23g4XlZ) | [📁 26-September](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) |
 | **1096** | [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | <span style="color:#ef4444">**Hard**</span> | 25 Sep 2026 | [Java](./25-September/1096-Brace-Expansion-II/Solution.java) | [Python](./25-September/1096-Brace-Expansion-II/solution.py) | [C++](./25-September/1096-Brace-Expansion-II/solution.cpp) | [JS](./25-September/1096-Brace-Expansion-II/solution.js) | [Watch Video](https://youtu.be/S1EVtAF4wQ4?si=BzKLWkqRRRWOZnAX) | [📁 25-September](./25-September/1096-Brace-Expansion-II/) |
 | **3550** | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | <span style="color:#10b981">**Easy**</span> | 24 Sep 2026 | [Java](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/Solution.java) | [Python](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.py) | [C++](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.cpp) | [JS](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/solution.js) | [Watch Video](https://youtu.be/8iL2OXi1ElA?si=c6kDkQhlsyme3kKH) | [📁 24-September](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/) |
@@ -66,6 +67,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[27 September 2026](./27-September/)**: [#1190 Reverse Substrings Between Each Pair of Parentheses](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[26 September 2026](./26-September/)**: [#1807 Evaluate the Bracket Pairs of a String](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[25 September 2026](./25-September/)**: [#1096 Brace Expansion II](./25-September/1096-Brace-Expansion-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[24 September 2026](./24-September/)**: [#3550 Smallest Index With Digit Sum Equal to Index](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/) — <span style="color:#10b981">Easy</span>
@@ -116,8 +118,8 @@
 - **Sliding Window**: [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Backtracking / Recursion**: [#1096](./25-September/1096-Brace-Expansion-II/)
-- **Stack**: [#1096](./25-September/1096-Brace-Expansion-II/)
-- **String**: [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Stack**: [#1190](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/), [#1096](./25-September/1096-Brace-Expansion-II/)
+- **String**: [#1190](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/), [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---

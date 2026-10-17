@@ -832,6 +832,54 @@
     }
   },
   {
+    "id": "1190",
+    "title": "Reverse Substrings Between Each Pair of Parentheses",
+    "slug": "reverse-substrings-between-each-pair-of-parentheses",
+    "date": "27 September 2026",
+    "dateIso": "2026-09-27",
+    "formattedDate": "27 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "27-September",
+    "problemFolder": "1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses",
+    "folderPath": "solutions/September/27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/",
+    "youtubeUrl": "https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "summary": "Reverse the strings in each pair of matching parentheses, starting from the innermost one, returning the bracket-free resulting string.",
+    "approach": "Maintain a stack of string buffers representing enclosing scopes. When encountering '(', push the current buffer and start anew. When encountering ')', reverse the current buffer, pop the outer buffer, and append to it.",
+    "timeComplexity": "O(N²)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.js"
+      }
+    }
+  },
+  {
     "id": "1807",
     "title": "Evaluate the Bracket Pairs of a String",
     "slug": "evaluate-the-bracket-pairs-of-a-string",

@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **8** | August Daily Series in progress |
+| **Total Solved Problems** | **9** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **2** | Problems #3345, #3731 |
-| 🟡 **Medium Problems** | **4** | Problems #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **5** | Problems #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **2** | Problems #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **8 / 8** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **9 / 9** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1140** | [Stone Game II](https://leetcode.com/problems/stone-game-ii/) | <span style="color:#ffc400">**Medium**</span> | 09 Aug 2026 | [Java](./9-August/1140-Stone-Game-II/Solution.java) | [Python](./9-August/1140-Stone-Game-II/solution.py) | [C++](./9-August/1140-Stone-Game-II/solution.cpp) | [JS](./9-August/1140-Stone-Game-II/solution.js) | [Watch Video](https://youtu.be/KOI9rfiAfTw?si=zLmIk9cYXhWH3t5m) | [📁 9-August](./9-August/1140-Stone-Game-II/) |
 | **3302** | [Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | <span style="color:#ffc400">**Medium**</span> | 08 Aug 2026 | [Java](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/Solution.java) | [Python](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.py) | [C++](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.cpp) | [JS](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.js) | [Watch Video](https://youtu.be/WpnWTvKaMS0?si=DvjmzDqpXzATt8QD) | [📁 8-August](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/) |
 | **3348** | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | <span style="color:#ef4444">**Hard**</span> | 07 Aug 2026 | [Java](./7-August/3348-Smallest-Divisible-Digit-Product-II/Solution.java) | [Python](./7-August/3348-Smallest-Divisible-Digit-Product-II/solution.py) | [C++](./7-August/3348-Smallest-Divisible-Digit-Product-II/solution.cpp) | [JS](./7-August/3348-Smallest-Divisible-Digit-Product-II/solution.js) | [Watch Video](https://youtu.be/PaAX31HX3kw?si=hmbUMET4sm4Apbwm) | [📁 7-August](./7-August/3348-Smallest-Divisible-Digit-Product-II/) |
 | **3345** | [Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | <span style="color:#10b981">**Easy**</span> | 06 Aug 2026 | [Java](./6-August/3345-Smallest-Divisible-Digit-Product-I/Solution.java) | [Python](./6-August/3345-Smallest-Divisible-Digit-Product-I/solution.py) | [C++](./6-August/3345-Smallest-Divisible-Digit-Product-I/solution.cpp) | [JS](./6-August/3345-Smallest-Divisible-Digit-Product-I/solution.js) | [Watch Video](https://youtu.be/s5l_psaxdqg?si=8xiX7X6n_y8FQLK8) | [📁 6-August](./6-August/3345-Smallest-Divisible-Digit-Product-I/) |
@@ -49,6 +50,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[09 August 2026](./9-August/)**: [#1140 Stone Game II](./9-August/1140-Stone-Game-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[08 August 2026](./8-August/)**: [#3302 Find the Lexicographically Smallest Valid Sequence](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[07 August 2026](./7-August/)**: [#3348 Smallest Divisible Digit Product II](./7-August/3348-Smallest-Divisible-Digit-Product-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[06 August 2026](./6-August/)**: [#3345 Smallest Divisible Digit Product I](./6-August/3345-Smallest-Divisible-Digit-Product-I/) — <span style="color:#10b981">Easy</span>
@@ -62,16 +64,17 @@
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Array**: [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Breadth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Depth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
-- **Dynamic Programming**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
-- **Game Theory**: [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Dynamic Programming**: [#1140](./9-August/1140-Stone-Game-II/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Game Theory**: [#1140](./9-August/1140-Stone-Game-II/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Greedy**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Hash Table**: [#3731](./4-August/3731-Find-Missing-Elements/)
-- **Math**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Math**: [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **Prefix Sum**: [#1140](./9-August/1140-Stone-Game-II/)
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
 - **Simulation**: [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
 - **Sorting**: [#3731](./4-August/3731-Find-Missing-Elements/)

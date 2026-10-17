@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "2996",
+    "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+    "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+    "date": "11 August 2026",
+    "dateIso": "2026-08-11",
+    "formattedDate": "11 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "11-August",
+    "problemFolder": "2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum",
+    "folderPath": "solutions/August/11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+    "youtubeUrl": "https://youtu.be/B46sB6XHfLQ?si=lsCDtikQl0QXDpzD",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting",
+      "Prefix Sum"
+    ],
+    "summary": "Find the smallest integer missing from an array that is greater than or equal to the sum of its longest sequential prefix starting at index 0.",
+    "approach": "Sum the longest sequential prefix where nums[i] == nums[i - 1] + 1, store all elements in a hash set, and increment the sum until finding a value absent from the set.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.js"
+      }
+    }
+  },
+  {
     "id": "1510",
     "title": "Stone Game IV",
     "slug": "stone-game-iv",

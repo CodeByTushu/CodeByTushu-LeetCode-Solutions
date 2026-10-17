@@ -1,5 +1,55 @@
 [
   {
+    "id": "2916",
+    "title": "Subarrays Distinct Element Sum of Squares II",
+    "slug": "subarrays-distinct-element-sum-of-squares-ii",
+    "date": "16 October 2026",
+    "dateIso": "2026-10-16",
+    "formattedDate": "16 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "16-October",
+    "problemFolder": "2916-Subarrays-Distinct-Element-Sum-of-Squares-II",
+    "folderPath": "solutions/October/16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
+    "youtubeUrl": "https://youtu.be/fCsrMnIoxUU?si=HHZbINBY9Qff_bip",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Segment Tree",
+      "Binary Indexed Tree"
+    ],
+    "summary": "Compute the sum of squares of distinct element counts across all subarrays modulo 10^9 + 7 using a lazy segment tree.",
+    "approach": "Maintain distinct counts f(i, j) as j increases using a segment tree. Increment values for starting indices in (last[nums[j]], j] by 1 and query the sum of squares at each step.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "2913",
     "title": "Subarrays Distinct Element Sum of Squares I",
     "slug": "subarrays-distinct-element-sum-of-squares-i",

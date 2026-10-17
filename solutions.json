@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "3302",
+    "title": "Find the Lexicographically Smallest Valid Sequence",
+    "slug": "find-the-lexicographically-smallest-valid-sequence",
+    "date": "08 August 2026",
+    "dateIso": "2026-08-08",
+    "formattedDate": "08 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "8-August",
+    "problemFolder": "3302-Find-the-Lexicographically-Smallest-Valid-Sequence",
+    "folderPath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
+    "youtubeUrl": "https://youtu.be/WpnWTvKaMS0?si=DvjmzDqpXzATt8QD",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "Greedy",
+      "Dynamic Programming"
+    ],
+    "summary": "Find the lexicographically smallest sequence of indices in word1 forming a subsequence almost equal to word2 (with at most one character changed).",
+    "approach": "Precompute the latest valid suffix matching positions in word1 using a backward two-pointer pass. Then make a forward greedy pass through word1, matching characters identically when possible, or consuming the single allowed mismatch when the remaining suffix of word2 can still be matched in the remainder of word1.",
+    "timeComplexity": "O(|word1| + |word2|)",
+    "auxiliarySpaceComplexity": "O(|word2|)",
+    "spaceComplexity": "O(|word2|)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.js"
+      }
+    }
+  },
+  {
     "id": "3348",
     "title": "Smallest Divisible Digit Product II",
     "slug": "smallest-divisible-digit-product-ii",

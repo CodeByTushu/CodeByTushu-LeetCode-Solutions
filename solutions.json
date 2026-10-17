@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "3090",
+    "title": "Maximum Length Substring With Two Occurrences",
+    "slug": "maximum-length-substring-with-two-occurrences",
+    "date": "14 August 2026",
+    "dateIso": "2026-08-14",
+    "formattedDate": "14 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "14-August",
+    "problemFolder": "3090-Maximum-Length-Substring-With-Two-Occurrences",
+    "folderPath": "solutions/August/14-August/3090-Maximum-Length-Substring-With-Two-Occurrences",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/",
+    "youtubeUrl": "https://youtu.be/J8Y3UhpZ-H4?si=TujrIga45VUF_-12",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "summary": "Find the length of the longest substring containing at most two occurrences of each character using a sliding window.",
+    "approach": "Track character frequencies within the active window using a 26-element array. Expand the right pointer, and shrink the window from the left whenever any character frequency exceeds 2.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/solution.js"
+      }
+    }
+  },
+  {
     "id": "2213",
     "title": "Longest Substring of One Repeating Character",
     "slug": "longest-substring-of-one-repeating-character",

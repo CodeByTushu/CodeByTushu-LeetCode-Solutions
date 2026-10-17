@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **27** | September Daily Series in progress |
-| 🟢 **Easy Problems** | **7** | Problems #3550, #3498, #836, #3483, #3870, #3875, #3903 |
+| **Total Solved Problems** | **28** | September Daily Series in progress |
+| 🟢 **Easy Problems** | **8** | Problems #1614, #3550, #3498, #836, #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **13** | Problems #1190, #1807, #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
 | 🔴 **Hard Problems** | **7** | Problems #1096, #3525, #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **27 / 27** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **28 / 28** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1614** | [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | <span style="color:#10b981">**Easy**</span> | 28 Sep 2026 | [Java](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/Solution.java) | [Python](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.py) | [C++](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.cpp) | [JS](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.js) | [Watch Video](https://youtu.be/eBkkcXZRTbw?si=Ti1tucS3wUKj69dl) | [📁 28-September](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/) |
 | **1190** | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/) | <span style="color:#ffc400">**Medium**</span> | 27 Sep 2026 | [Java](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/Solution.java) | [Python](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.py) | [C++](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.cpp) | [JS](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.js) | [Watch Video](https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-) | [📁 27-September](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/) |
 | **1807** | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | <span style="color:#ffc400">**Medium**</span> | 26 Sep 2026 | [Java](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/Solution.java) | [Python](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.py) | [C++](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.cpp) | [JS](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.js) | [Watch Video](https://youtu.be/kyGkqOjhF5k?si=09TMHzctv23g4XlZ) | [📁 26-September](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) |
 | **1096** | [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii/) | <span style="color:#ef4444">**Hard**</span> | 25 Sep 2026 | [Java](./25-September/1096-Brace-Expansion-II/Solution.java) | [Python](./25-September/1096-Brace-Expansion-II/solution.py) | [C++](./25-September/1096-Brace-Expansion-II/solution.cpp) | [JS](./25-September/1096-Brace-Expansion-II/solution.js) | [Watch Video](https://youtu.be/S1EVtAF4wQ4?si=BzKLWkqRRRWOZnAX) | [📁 25-September](./25-September/1096-Brace-Expansion-II/) |
@@ -67,6 +68,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[28 September 2026](./28-September/)**: [#1614 Maximum Nesting Depth of the Parentheses](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/) — <span style="color:#10b981">Easy</span>
 - 📍 **[27 September 2026](./27-September/)**: [#1190 Reverse Substrings Between Each Pair of Parentheses](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[26 September 2026](./26-September/)**: [#1807 Evaluate the Bracket Pairs of a String](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[25 September 2026](./25-September/)**: [#1096 Brace Expansion II](./25-September/1096-Brace-Expansion-II/) — <span style="color:#ef4444">Hard</span>
@@ -114,12 +116,12 @@
 - **Math**: [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#836](./14-September/836-Rectangle-Overlap/), [#3871](./9-September/3871-Count-Commas-in-Range-II/), [#3870](./8-September/3870-Count-Commas-in-Range/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/)
 - **Prefix / Suffix Precomputation**: [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/)
 - **Segment Tree**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/)
-- **Simulation**: [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/)
+- **Simulation**: [#1614](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/), [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/)
 - **Sliding Window**: [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/)
 - **Sorting**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Backtracking / Recursion**: [#1096](./25-September/1096-Brace-Expansion-II/)
-- **Stack**: [#1190](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/), [#1096](./25-September/1096-Brace-Expansion-II/)
-- **String**: [#1190](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/), [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Stack**: [#1614](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/), [#1190](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/), [#1096](./25-September/1096-Brace-Expansion-II/)
+- **String**: [#1614](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/), [#1190](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/), [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#1096](./25-September/1096-Brace-Expansion-II/), [#3498](./20-September/3498-Reverse-Degree-of-a-String/), [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 
 ---

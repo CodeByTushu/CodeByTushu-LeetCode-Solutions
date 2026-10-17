@@ -31,8 +31,8 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌊 **June** | Q2 (Summer) | — | 📁 Planned / Ingesting | [📂 Browse June](./June/) |
 | 🍉 **July** | Q3 (Mid Summer) | — | 📁 Planned / Ingesting | [📂 Browse July](./July/) |
 | 🌴 **August** | Q3 (Late Summer) | — | 📁 Planned / Ingesting | [📂 Browse August](./August/) |
-| 🍂 **September** | Q3 (Autumn) | **27 Solved** | 🟢 **Active Series** | [👉 **Browse September Solutions (27 Days)**](./September/) |
-| 🎃 **October** | **Q4 (Autumn)** | **15 Solved** | 🟢 **Active Series** | [👉 **Browse October Solutions (15 Days)**](./October/) |
+| 🍂 **September** | Q3 (Autumn) | **28 Solved** | 🟢 **Active Series** | [👉 **Browse September Solutions (28 Days)**](./September/) |
+| 🎃 **October** | **Q4 (Autumn)** | **17 Solved** | 🟢 **Active Series** | [👉 **Browse October Solutions (17 Days)**](./October/) |
 | 🍁 **November** | Q4 (Late Autumn) | — | 📁 Upcoming Series | [📂 Browse November](./November/) |
 | 🎄 **December** | Q4 (Winter Finale) | — | 📁 Upcoming Series | [📂 Browse December](./December/) |
 
@@ -40,16 +40,16 @@ Select any month below to jump straight to that month's folder and view its date
 
 ## ⚡ Current Active Series: October 2026
 
-The **October 2026 Daily Series** is actively running! All solutions for Days 01 through 15 are fully solved and verified across all four languages with dedicated video explanations.
+The **October 2026 Daily Series** is actively running! All solutions for Days 01 through 17 are fully solved and verified across all four languages with dedicated video explanations.
 
 👉 **[Click here to view the complete October 2026 Archive](./October/)**
 
 ### October Quick Highlights:
 - 🟢 **Easy Problems (4):** #20, #1021, #2778, #2913
-- 🟡 **Medium Problems (8):** #22, #678, #856, #921, #1541, #2333, #3727, #3723
-- 🔴 **Hard Problems (3):** #32, #301, #2897
+- 🟡 **Medium Problems (9):** #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551
+- 🔴 **Hard Problems (4):** #32, #301, #2897, #2916
 - 💻 **Language Coverage:** Java, Python, C++, JavaScript (100%)
-- 🎥 **Video Solutions:** 15 YouTube walkthroughs attached
+- 🎥 **Video Solutions:** 17 YouTube walkthroughs attached
 
 ---
 
@@ -75,7 +75,7 @@ solutions/
 <p align="center">
   <a href="../README.md"><strong>⬅️ Return to Main Repository</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="./October/"><strong>🎃 Browse October Solutions (15 Solved)</strong></a>
+  <a href="./October/"><strong>🎃 Browse October Solutions (17 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

@@ -832,6 +832,55 @@
     }
   },
   {
+    "id": "1614",
+    "title": "Maximum Nesting Depth of the Parentheses",
+    "slug": "maximum-nesting-depth-of-the-parentheses",
+    "date": "28 September 2026",
+    "dateIso": "2026-09-28",
+    "formattedDate": "28 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "28-September",
+    "problemFolder": "1614-Maximum-Nesting-Depth-of-the-Parentheses",
+    "folderPath": "solutions/September/28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+    "youtubeUrl": "https://youtu.be/eBkkcXZRTbw?si=Ti1tucS3wUKj69dl",
+    "tags": [
+      "String",
+      "Stack",
+      "Simulation"
+    ],
+    "summary": "Return the maximum nesting depth of parentheses in a valid parentheses string s.",
+    "approach": "Scan through the string using a depth counter: increment on '(' updating maxDepth, and decrement on ')'.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.js"
+      }
+    }
+  },
+  {
     "id": "1190",
     "title": "Reverse Substrings Between Each Pair of Parentheses",
     "slug": "reverse-substrings-between-each-pair-of-parentheses",

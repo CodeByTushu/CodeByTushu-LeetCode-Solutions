@@ -2295,6 +2295,54 @@
     }
   },
   {
+    "id": "3069",
+    "title": "Distribute Elements Into Two Arrays I",
+    "slug": "distribute-elements-into-two-arrays-i",
+    "date": "20 August 2026",
+    "dateIso": "2026-08-20",
+    "formattedDate": "20 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "20-August",
+    "problemFolder": "3069-Distribute-Elements-Into-Two-Arrays-I",
+    "folderPath": "solutions/August/20-August/3069-Distribute-Elements-Into-Two-Arrays-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/",
+    "youtubeUrl": "https://youtu.be/UJimcNSmAOs?si=fQFr8AIcEztV7Ce2",
+    "tags": [
+      "Array",
+      "Simulation"
+    ],
+    "summary": "Distribute elements of an array into two arrays based on which array currently has the greater last element, and return their concatenation.",
+    "approach": "Direct simulation by initializing arr1 with nums[0] and arr2 with nums[1]. For subsequent elements, append to arr1 if its last element exceeds arr2's last element, else append to arr2. Return arr1 concatenated with arr2.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/20-August/3069-Distribute-Elements-Into-Two-Arrays-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "1386",
     "title": "Cinema Seat Allocation",
     "slug": "cinema-seat-allocation",

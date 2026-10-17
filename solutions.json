@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "3720",
+    "title": "Lexicographically Smallest Permutation Greater Than Target",
+    "slug": "lexicographically-smallest-permutation-greater-than-target",
+    "date": "27 August 2026",
+    "dateIso": "2026-08-27",
+    "formattedDate": "27 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "27-August",
+    "problemFolder": "3720-Lexicographically-Smallest-Permutation-Greater-Than-Target",
+    "folderPath": "solutions/August/27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
+    "leetcodeUrl": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
+    "youtubeUrl": "https://youtu.be/G1tCTGT4XSk?si=EI0lM3tY5ATyaD_k",
+    "tags": [
+      "String",
+      "Greedy",
+      "Hash Table"
+    ],
+    "summary": "Find the lexicographically smallest permutation of s that is strictly greater than target.",
+    "approach": "Scan from left to right to find the rightmost breakpoint where an unused character greater than target[i] is available while matching target prefix. At this breakpoint, pick the smallest strictly greater character, and sort all remaining characters in ascending order.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/solution.js"
+      }
+    }
+  },
+  {
     "id": "2904",
     "title": "Shortest and Lexicographically Smallest Beautiful String",
     "slug": "shortest-and-lexicographically-smallest-beautiful-string",

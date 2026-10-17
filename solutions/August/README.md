@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **25** | August Daily Series in progress |
+| **Total Solved Problems** | **26** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **8** | Problems #3718, #3622, #3069, #3471, #3090, #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **10** | Problems #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **11** | Problems #2904, #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **7** | Problems #1872, #3116, #1563, #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **25 / 25** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **26 / 26** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2904** | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | <span style="color:#ffc400">**Medium**</span> | 26 Aug 2026 | [Java](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/Solution.java) | [Python](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.py) | [C++](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.cpp) | [JS](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.js) | [Watch Video](https://youtu.be/T8dxEI5b1MQ?si=qDMUWM2grTqI5DYy) | [📁 26-August](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/) |
 | **3718** | [Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/) | <span style="color:#10b981">**Easy**</span> | 25 Aug 2026 | [Java](./25-August/3718-Smallest-Missing-Multiple-of-K/Solution.java) | [Python](./25-August/3718-Smallest-Missing-Multiple-of-K/solution.py) | [C++](./25-August/3718-Smallest-Missing-Multiple-of-K/solution.cpp) | [JS](./25-August/3718-Smallest-Missing-Multiple-of-K/solution.js) | [Watch Video](https://youtu.be/OdnT2Zwdr74?si=MS3GVoWnevP6KzZF) | [📁 25-August](./25-August/3718-Smallest-Missing-Multiple-of-K/) |
 | **1872** | [Stone Game VIII](https://leetcode.com/problems/stone-game-viii/) | <span style="color:#ef4444">**Hard**</span> | 24 Aug 2026 | [Java](./24-August/1872-Stone-Game-VIII/Solution.java) | [Python](./24-August/1872-Stone-Game-VIII/solution.py) | [C++](./24-August/1872-Stone-Game-VIII/solution.cpp) | [JS](./24-August/1872-Stone-Game-VIII/solution.js) | [Watch Video](https://youtu.be/3YcfHs8mapA?si=GNDPeRspfZmKpFXY) | [📁 24-August](./24-August/1872-Stone-Game-VIII/) |
 | **1927** | [Sum Game](https://leetcode.com/problems/sum-game/) | <span style="color:#ffc400">**Medium**</span> | 23 Aug 2026 | [Java](./23-August/1927-Sum-Game/Solution.java) | [Python](./23-August/1927-Sum-Game/solution.py) | [C++](./23-August/1927-Sum-Game/solution.cpp) | [JS](./23-August/1927-Sum-Game/solution.js) | [Watch Video](https://youtu.be/vQ0iABESqvk?si=XDI-GisCWhYbkbyK) | [📁 23-August](./23-August/1927-Sum-Game/) |
@@ -66,6 +67,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[26 August 2026](./26-August/)**: [#2904 Shortest and Lexicographically Smallest Beautiful String](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[25 August 2026](./25-August/)**: [#3718 Smallest Missing Multiple of K](./25-August/3718-Smallest-Missing-Multiple-of-K/) — <span style="color:#10b981">Easy</span>
 - 📍 **[24 August 2026](./24-August/)**: [#1872 Stone Game VIII](./24-August/1872-Stone-Game-VIII/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[23 August 2026](./23-August/)**: [#1927 Sum Game](./23-August/1927-Sum-Game/) — <span style="color:#ffc400">Medium</span>
@@ -115,9 +117,9 @@
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
 - **Segment Tree**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Simulation**: [#3622](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/), [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
-- **Sliding Window**: [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/)
+- **Sliding Window**: [#2904](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/)
 - **Sorting**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
-- **String**: [#1927](./23-August/1927-Sum-Game/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **String**: [#2904](./26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/), [#1927](./23-August/1927-Sum-Game/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Two Pointers**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/)
 
 ---

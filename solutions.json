@@ -2295,6 +2295,54 @@
     }
   },
   {
+    "id": "2904",
+    "title": "Shortest and Lexicographically Smallest Beautiful String",
+    "slug": "shortest-and-lexicographically-smallest-beautiful-string",
+    "date": "26 August 2026",
+    "dateIso": "2026-08-26",
+    "formattedDate": "26 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "26-August",
+    "problemFolder": "2904-Shortest-and-Lexicographically-Smallest-Beautiful-String",
+    "folderPath": "solutions/August/26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/",
+    "youtubeUrl": "https://youtu.be/T8dxEI5b1MQ?si=qDMUWM2grTqI5DYy",
+    "tags": [
+      "String",
+      "Sliding Window"
+    ],
+    "summary": "Find the shortest substring with exactly k ones, breaking ties by lexicographically smallest order.",
+    "approach": "Use a sliding window tracking the count of ones; dynamically trim excess ones and leading zeros to maintain minimal window length and compare candidates lexicographically.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/26-August/2904-Shortest-and-Lexicographically-Smallest-Beautiful-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "3718",
     "title": "Smallest Missing Multiple of K",
     "slug": "smallest-missing-multiple-of-k",

@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "3718",
+    "title": "Smallest Missing Multiple of K",
+    "slug": "smallest-missing-multiple-of-k",
+    "date": "25 August 2026",
+    "dateIso": "2026-08-25",
+    "formattedDate": "25 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "25-August",
+    "problemFolder": "3718-Smallest-Missing-Multiple-of-K",
+    "folderPath": "solutions/August/25-August/3718-Smallest-Missing-Multiple-of-K",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
+    "youtubeUrl": "https://youtu.be/OdnT2Zwdr74?si=MS3GVoWnevP6KzZF",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math"
+    ],
+    "summary": "Find the smallest positive multiple of k that does not appear in the given integer array nums.",
+    "approach": "Insert all elements of nums into a hash set for O(1) membership lookup, then iteratively check multiples k, 2k, 3k... and return the first one missing from the set.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/25-August/3718-Smallest-Missing-Multiple-of-K/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/25-August/3718-Smallest-Missing-Multiple-of-K/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/25-August/3718-Smallest-Missing-Multiple-of-K/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/25-August/3718-Smallest-Missing-Multiple-of-K/solution.js"
+      }
+    }
+  },
+  {
     "id": "1872",
     "title": "Stone Game VIII",
     "slug": "stone-game-viii",

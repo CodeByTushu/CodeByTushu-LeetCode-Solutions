@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **30** | August Daily Series in progress |
+| **Total Solved Problems** | **31** | August Daily Series Complete 🏆 |
 | 🟢 **Easy Problems** | **8** | Problems #3718, #3622, #3069, #3471, #3090, #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **14** | Problems #2091, #2948, #3720, #2904, #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **15** | Problems #2058, #2091, #2948, #3720, #2904, #1927, #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **8** | Problems #3734, #1872, #3116, #1563, #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **30 / 30** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **31 / 31** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2058** | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | <span style="color:#ffc400">**Medium**</span> | 31 Aug 2026 | [Java](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/Solution.java) | [Python](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/solution.py) | [C++](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/solution.cpp) | [JS](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/solution.js) | [Watch Video](https://youtu.be/yX_uc3LzluE?si=6Gf5JVhPpkHcBden) | [📁 31-August](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/) |
 | **2091** | [Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/) | <span style="color:#ffc400">**Medium**</span> | 30 Aug 2026 | [Java](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/Solution.java) | [Python](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/solution.py) | [C++](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/solution.cpp) | [JS](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/solution.js) | [Watch Video](https://youtu.be/cZKW_78Ixvk?si=7lXwUplubmuaG8mW) | [📁 30-August](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/) |
 | **2948** | [Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | <span style="color:#ffc400">**Medium**</span> | 29 Aug 2026 | [Java](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/Solution.java) | [Python](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.py) | [C++](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.cpp) | [JS](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/solution.js) | [Watch Video](https://youtu.be/e-WYxZqwgXU?si=0vyxh1TrRNA_HXJ_) | [📁 29-August](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/) |
 | **3734** | [Lexicographically Smallest Palindromic Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) | <span style="color:#ef4444">**Hard**</span> | 28 Aug 2026 | [Java](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/Solution.java) | [Python](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.py) | [C++](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.cpp) | [JS](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.js) | [Watch Video](https://youtu.be/xl6HBWMH0p8?si=rIWpZrmgQAbI-5zo) | [📁 28-August](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/) |
@@ -71,6 +72,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[31 August 2026](./31-August/)**: [#2058 Find the Minimum and Maximum Number of Nodes Between Critical Points](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[30 August 2026](./30-August/)**: [#2091 Removing Minimum and Maximum From Array](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[29 August 2026](./29-August/)**: [#2948 Make Lexicographically Smallest Array by Swapping Elements](./29-August/2948-Make-Lexicographically-Smallest-Array-by-Swapping-Elements/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[28 August 2026](./28-August/)**: [#3734 Lexicographically Smallest Palindromic Permutation Greater Than Target](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/) — <span style="color:#ef4444">Hard</span>
@@ -118,6 +120,7 @@
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Greedy**: [#2091](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/), [#3734](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/), [#3720](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/), [#1927](./23-August/1927-Sum-Game/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#2029](./16-August/2029-Stone-Game-IX/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Hash Table**: [#3734](./28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/), [#3720](./27-August/3720-Lexicographically-Smallest-Permutation-Greater-Than-Target/), [#3718](./25-August/3718-Smallest-Missing-Multiple-of-K/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
+- **Linked List**: [#2058](./31-August/2058-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/)
 - **Math**: [#2091](./30-August/2091-Removing-Minimum-and-Maximum-From-Array/), [#3718](./25-August/3718-Smallest-Missing-Multiple-of-K/), [#1872](./24-August/1872-Stone-Game-VIII/), [#1927](./23-August/1927-Sum-Game/), [#3622](./22-August/3622-Check-Divisibility-by-Digit-Sum-and-Product/), [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Ordered Set**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)

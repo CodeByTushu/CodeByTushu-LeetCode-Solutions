@@ -832,6 +832,55 @@
     }
   },
   {
+    "id": "2267",
+    "title": "Check if There Is a Valid Parentheses String Path",
+    "slug": "check-if-there-is-a-valid-parentheses-string-path",
+    "date": "29 September 2026",
+    "dateIso": "2026-09-29",
+    "formattedDate": "29 Sep 2026",
+    "year": "2026",
+    "month": "September",
+    "dayFolder": "29-September",
+    "problemFolder": "2267-Check-if-There-Is-a-Valid-Parentheses-String-Path",
+    "folderPath": "solutions/September/29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/",
+    "youtubeUrl": "https://youtu.be/qJRuFpVRlNE?si=ghZkgQozXWSDUgw5",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "summary": "Check if there is a path from (0, 0) to (m - 1, n - 1) in a grid of '(' and ')' that forms a valid balanced parentheses string.",
+    "approach": "Prune early if path length is odd or boundary brackets are invalid. Use 3D Dynamic Programming dp[i][j][b] tracking reachability of open parentheses balance b at cell (i, j).",
+    "timeComplexity": "O(m * n * (m + n))",
+    "auxiliarySpaceComplexity": "O(m * n * (m + n))",
+    "spaceComplexity": "O(m * n * (m + n))",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/September/29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/September/29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/September/29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/September/29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/solution.js"
+      }
+    }
+  },
+  {
     "id": "1614",
     "title": "Maximum Nesting Depth of the Parentheses",
     "slug": "maximum-nesting-depth-of-the-parentheses",

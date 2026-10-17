@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **28** | September Daily Series in progress |
+| **Total Solved Problems** | **29** | September Daily Series in progress |
 | 🟢 **Easy Problems** | **8** | Problems #1614, #3550, #3498, #836, #3483, #3870, #3875, #3903 |
 | 🟡 **Medium Problems** | **13** | Problems #1190, #1807, #1658, #3524, #1401, #1477, #1621, #835, #2265, #3871, #3904, #3876, #3568 |
-| 🔴 **Hard Problems** | **7** | Problems #1096, #3525, #1520, #2472, #3414, #115, #940 |
+| 🔴 **Hard Problems** | **8** | Problems #2267, #1096, #3525, #1520, #2472, #3414, #115, #940 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **28 / 28** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **29 / 29** | Available on YouTube |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2267** | [Check if There Is a Valid Parentheses String Path](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/) | <span style="color:#ef4444">**Hard**</span> | 29 Sep 2026 | [Java](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/Solution.java) | [Python](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/solution.py) | [C++](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/solution.cpp) | [JS](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/solution.js) | [Watch Video](https://youtu.be/qJRuFpVRlNE?si=ghZkgQozXWSDUgw5) | [📁 29-September](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/) |
 | **1614** | [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | <span style="color:#10b981">**Easy**</span> | 28 Sep 2026 | [Java](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/Solution.java) | [Python](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.py) | [C++](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.cpp) | [JS](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/solution.js) | [Watch Video](https://youtu.be/eBkkcXZRTbw?si=Ti1tucS3wUKj69dl) | [📁 28-September](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/) |
 | **1190** | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/) | <span style="color:#ffc400">**Medium**</span> | 27 Sep 2026 | [Java](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/Solution.java) | [Python](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.py) | [C++](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.cpp) | [JS](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/solution.js) | [Watch Video](https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-) | [📁 27-September](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/) |
 | **1807** | [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | <span style="color:#ffc400">**Medium**</span> | 26 Sep 2026 | [Java](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/Solution.java) | [Python](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.py) | [C++](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.cpp) | [JS](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/solution.js) | [Watch Video](https://youtu.be/kyGkqOjhF5k?si=09TMHzctv23g4XlZ) | [📁 26-September](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) |
@@ -68,6 +69,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[29 September 2026](./29-September/)**: [#2267 Check if There Is a Valid Parentheses String Path](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[28 September 2026](./28-September/)**: [#1614 Maximum Nesting Depth of the Parentheses](./28-September/1614-Maximum-Nesting-Depth-of-the-Parentheses/) — <span style="color:#10b981">Easy</span>
 - 📍 **[27 September 2026](./27-September/)**: [#1190 Reverse Substrings Between Each Pair of Parentheses](./27-September/1190-Reverse-Substrings-Between-Each-Pair-of-Parentheses/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[26 September 2026](./26-September/)**: [#1807 Evaluate the Bracket Pairs of a String](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/) — <span style="color:#ffc400">Medium</span>
@@ -101,14 +103,14 @@
 
 ## 🏷️ Problem Categories & Tags in September
 
-- **Array / Matrix**: [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
+- **Array / Matrix**: [#2267](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/), [#1807](./26-September/1807-Evaluate-the-Bracket-Pairs-of-a-String/), [#3550](./24-September/3550-Smallest-Index-With-Digit-Sum-Equal-to-Index/), [#1658](./23-September/1658-Minimum-Operations-to-Reduce-X-to-Zero/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#835](./13-September/835-Image-Overlap/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/), [#3904](./5-September/3904-Smallest-Stable-Index-II/), [#3903](./4-September/3903-Smallest-Stable-Index-I/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/), [#3875](./2-September/3875-Construct-Uniform-Parity-Array-I/), [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Binary Search**: [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/)
 - **Binary Tree**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
 - **Bit Manipulation / Bitmask**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Breadth-First Search**: [#3568](./1-September/3568-Minimum-Moves-to-Clean-the-Classroom/)
 - **Combinatorics**: [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-LineSegments/)
 - **Depth-First Search**: [#2265](./10-September/2265-Count-Nodes-Equal-to-Average-of-Subtree/)
-- **Dynamic Programming**: [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
+- **Dynamic Programming**: [#2267](./29-September/2267-Check-if-There-Is-a-Valid-Parentheses-String-Path/), [#3525](./22-September/3525-Find-X-Value-of-Array-II/), [#3524](./21-September/3524-Find-X-Value-of-Array-I/), [#1477](./17-September/1477-Find-Two-Non-overlapping-Sub-arrays-Each-With-Target-Sum/), [#1621](./16-September/1621-Number-of-Sets-of-K-Non-Overlapping-Line-Segments/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3414](./12-September/3414-Maximum-Score-of-Non-overlapping-Intervals/), [#940](./7-September/940-Distinct-Subsequences-II/), [#115](./6-September/115-Distinct-Subsequences/)
 - **Enumeration**: [#3483](./11-September/3483-Unique-3-Digit-Even-Numbers/)
 - **Geometry**: [#1401](./19-September/1401-Circle-and-Rectangle-Overlapping/), [#836](./14-September/836-Rectangle-Overlap/)
 - **Greedy**: [#1520](./18-September/1520-Maximum-Number-of-Non-Overlapping-Substrings/), [#2472](./15-September/2472-Maximum-Number-of-Non-overlapping-Palindrome-Substrings/), [#3876](./3-September/3876-Construct-Uniform-Parity-Array-II/)

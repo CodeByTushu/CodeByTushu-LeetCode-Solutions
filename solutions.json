@@ -2293,5 +2293,56 @@
         "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.js"
       }
     }
+  },
+  {
+    "id": "486",
+    "title": "Predict the Winner",
+    "slug": "predict-the-winner",
+    "date": "01 August 2026",
+    "dateIso": "2026-08-01",
+    "formattedDate": "01 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "1-August",
+    "problemFolder": "486-Predict-the-Winner",
+    "folderPath": "solutions/August/1-August/486-Predict-the-Winner",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/predict-the-winner/",
+    "leetcodeUrl": "https://leetcode.com/problems/predict-the-winner/",
+    "youtubeUrl": "https://youtu.be/NmFcU3huV5g?si=j-DWd_1nGuALGshK",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Recursion",
+      "Game Theory"
+    ],
+    "summary": "Determine if Player 1 can win or tie in an optimal two-player zero-sum game picking numbers from either end of an array.",
+    "approach": "Use interval Dynamic Programming dp[i][j] tracking the maximum relative score difference achievable by the current player from subarray nums[i..j].",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(N^2)",
+    "spaceComplexity": "O(N^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.js"
+      }
+    }
   }
 ]

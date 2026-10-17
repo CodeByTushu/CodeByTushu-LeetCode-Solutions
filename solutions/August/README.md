@@ -11,44 +11,48 @@
 <p align="center">
   <a href="../../README.md"><img src="https://img.shields.io/badge/⬅️_Back_to-Main_Repository-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Main Repo"/></a>
   <a href="../README.md"><img src="https://img.shields.io/badge/🗂️_Browse-All_Months_Hub-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="All Months"/></a>
+  <a href="../September/"><img src="https://img.shields.io/badge/🍂_Browse-September_2026-ffc400?style=for-the-badge&logo=codeforces&logoColor=white" alt="September Archive"/></a>
   <a href="../October/"><img src="https://img.shields.io/badge/🎃_Active_Month-October_2026-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Active October"/></a>
   <a href="https://codebytushu.com/Leetcode/"><img src="https://img.shields.io/badge/Live_Platform-codebytushu.com%2FLeetcode-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
+  <a href="https://www.youtube.com/@codebytushu"><img src="https://img.shields.io/badge/YouTube-@codebytushu-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Channel"/></a>
 </p>
 
 ---
 
-## 📊 Month Overview: August 2026
+## 📊 August 2026 Statistics
 
-| Attribute | Details |
-| :--- | :--- |
-| **Month / Quarter** | August 2026 (Q3 — Late Summer) |
-| **Status** | `Archive / Ingesting` |
-| **Total Days** | 31 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
-
----
-
-## 📂 Folder & Solution Structure
-
-When new daily problems are added for August, each problem is organized as:
-
-```text
-solutions/August/
-├── DD-August/
-│   └── <Problem-ID>-<Problem-Title>/
-│       ├── README.md        # Comprehensive problem statement, approach & complexity
-│       ├── Solution.java    # Optimal Java implementation
-│       ├── solution.py      # Pythonic solution with type annotations
-│       ├── solution.cpp     # High-performance C++ solution
-│       └── solution.js      # Modern ECMAScript (ES6+) implementation
-```
+| Metric | Count | Details |
+| :--- | :---: | :--- |
+| **Total Solved Problems** | **1** | August Daily Series in progress |
+| 🟢 **Easy Problems** | **0** | — |
+| 🟡 **Medium Problems** | **1** | Problem #486 |
+| 🔴 **Hard Problems** | **0** | — |
+| 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
+| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ August Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for August. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **486** | [Predict the Winner](https://leetcode.com/problems/predict-the-winner/) | <span style="color:#ffc400">**Medium**</span> | 01 Aug 2026 | [Java](./1-August/486-Predict-the-Winner/Solution.java) | [Python](./1-August/486-Predict-the-Winner/solution.py) | [C++](./1-August/486-Predict-the-Winner/solution.cpp) | [JS](./1-August/486-Predict-the-Winner/solution.js) | [Watch Video](https://youtu.be/NmFcU3huV5g?si=j-DWd_1nGuALGshK) | [📁 1-August](./1-August/486-Predict-the-Winner/) |
+
+---
+
+## 📅 Date-Wise Directory Navigation
+
+- 📍 **[01 August 2026](./1-August/)**: [#486 Predict the Winner](./1-August/486-Predict-the-Winner/) — <span style="color:#ffc400">Medium</span>
+
+---
+
+## 🏷️ Problem Categories & Tags in August
+
+- **Array**: [#486](./1-August/486-Predict-the-Winner/)
+- **Dynamic Programming**: [#486](./1-August/486-Predict-the-Winner/)
+- **Game Theory**: [#486](./1-August/486-Predict-the-Winner/)
+- **Math**: [#486](./1-August/486-Predict-the-Winner/)
+- **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
 
 ---
 
@@ -57,7 +61,9 @@ solutions/August/
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md"><strong>🗂️ View All Months Hub</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="../October/"><strong>🎃 Browse October Solutions (15 Solved)</strong></a>
+  <a href="../September/"><strong>🍂 Browse September Solutions (30 Solved)</strong></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="../October/"><strong>🎃 Browse October Solutions (17 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

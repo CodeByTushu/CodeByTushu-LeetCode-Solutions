@@ -2295,6 +2295,54 @@
     }
   },
   {
+    "id": "3345",
+    "title": "Smallest Divisible Digit Product I",
+    "slug": "smallest-divisible-digit-product-i",
+    "date": "06 August 2026",
+    "dateIso": "2026-08-06",
+    "formattedDate": "06 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "6-August",
+    "problemFolder": "3345-Smallest-Divisible-Digit-Product-I",
+    "folderPath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
+    "youtubeUrl": "https://youtu.be/s5l_psaxdqg?si=8xiX7X6n_y8FQLK8",
+    "tags": [
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Find the smallest number greater than or equal to n whose digit product is divisible by t.",
+    "approach": "Iterate upwards starting from n and compute the digit product of each candidate integer. Return the first number whose digit product is divisible by t. Within at most 10 iterations, a multiple of 10 is reached (digit product 0), guaranteeing O(1) termination.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3310",
     "title": "Remove Methods From Project",
     "slug": "remove-methods-from-project",

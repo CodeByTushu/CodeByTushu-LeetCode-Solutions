@@ -2295,6 +2295,57 @@
     }
   },
   {
+    "id": "2029",
+    "title": "Stone Game IX",
+    "slug": "stone-game-ix",
+    "date": "16 August 2026",
+    "dateIso": "2026-08-16",
+    "formattedDate": "16 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "16-August",
+    "problemFolder": "2029-Stone-Game-IX",
+    "folderPath": "solutions/August/16-August/2029-Stone-Game-IX",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/stone-game-ix/",
+    "leetcodeUrl": "https://leetcode.com/problems/stone-game-ix/",
+    "youtubeUrl": "https://youtu.be/0xYKStmu5Lo?si=GW0kUTFhNjQDeP4s",
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy",
+      "Game Theory",
+      "Counting"
+    ],
+    "summary": "Determine whether Alice can force a win in an optimal turn-based stone removal game avoiding running sums divisible by 3.",
+    "approach": "Classify stones by remainder modulo 3. Stones with remainder 0 toggle parity without altering modulo state. Analyze whether Alice can guarantee alternating moves without reaching a multiple of 3 based on 0-stone parity.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/16-August/2029-Stone-Game-IX/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/16-August/2029-Stone-Game-IX/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/16-August/2029-Stone-Game-IX/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/16-August/2029-Stone-Game-IX/solution.js"
+      }
+    }
+  },
+  {
     "id": "3702",
     "title": "Longest Subsequence With Non-Zero Bitwise XOR",
     "slug": "longest-subsequence-with-non-zero-bitwise-xor",

@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "1510",
+    "title": "Stone Game IV",
+    "slug": "stone-game-iv",
+    "date": "10 August 2026",
+    "dateIso": "2026-08-10",
+    "formattedDate": "10 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "10-August",
+    "problemFolder": "1510-Stone-Game-IV",
+    "folderPath": "solutions/August/10-August/1510-Stone-Game-IV",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/stone-game-iv/",
+    "leetcodeUrl": "https://leetcode.com/problems/stone-game-iv/",
+    "youtubeUrl": "https://youtu.be/QFVxluA9TG4?si=QwKoR_unwgKplQOe",
+    "tags": [
+      "Math",
+      "Dynamic Programming",
+      "Game Theory"
+    ],
+    "summary": "Determine if Alice can win the stone game by repeatedly removing any non-zero square number of stones until no moves remain.",
+    "approach": "Impartial game DP: a position i is winning if there exists some perfect square k^2 <= i such that i - k^2 is a losing position for the opponent.",
+    "timeComplexity": "O(N sqrt(N))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/10-August/1510-Stone-Game-IV/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/10-August/1510-Stone-Game-IV/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/10-August/1510-Stone-Game-IV/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/10-August/1510-Stone-Game-IV/solution.js"
+      }
+    }
+  },
+  {
     "id": "1140",
     "title": "Stone Game II",
     "slug": "stone-game-ii",

@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "2091",
+    "title": "Removing Minimum and Maximum From Array",
+    "slug": "removing-minimum-and-maximum-from-array",
+    "date": "30 August 2026",
+    "dateIso": "2026-08-30",
+    "formattedDate": "30 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "30-August",
+    "problemFolder": "2091-Removing-Minimum-and-Maximum-From-Array",
+    "folderPath": "solutions/August/30-August/2091-Removing-Minimum-and-Maximum-From-Array",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/",
+    "youtubeUrl": "https://youtu.be/cZKW_78Ixvk?si=7lXwUplubmuaG8mW",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Math"
+    ],
+    "summary": "Find the minimum number of deletions from the front and/or back of an array to remove both the minimum and maximum elements.",
+    "approach": "Identify the indices of the minimum and maximum elements. Compare the cost of three candidate deletion strategies: deleting both from the front, deleting both from the back, or deleting each from opposite ends.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/30-August/2091-Removing-Minimum-and-Maximum-From-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/30-August/2091-Removing-Minimum-and-Maximum-From-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/30-August/2091-Removing-Minimum-and-Maximum-From-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/30-August/2091-Removing-Minimum-and-Maximum-From-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": "2948",
     "title": "Make Lexicographically Smallest Array by Swapping Elements",
     "slug": "make-lexicographically-smallest-array-by-swapping-elements",

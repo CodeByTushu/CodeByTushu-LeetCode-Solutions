@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "2958",
+    "title": "Length of Longest Subarray With at Most K Frequency",
+    "slug": "length-of-longest-subarray-with-at-most-k-frequency",
+    "date": "12 August 2026",
+    "dateIso": "2026-08-12",
+    "formattedDate": "12 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "12-August",
+    "problemFolder": "2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency",
+    "folderPath": "solutions/August/12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/",
+    "leetcodeUrl": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/",
+    "youtubeUrl": "https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "summary": "Find the length of the longest contiguous subarray where no element appears more than k times using a sliding window.",
+    "approach": "Expand the right pointer while maintaining element frequencies in a hash map. When any frequency exceeds k, advance the left pointer until validity is restored.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.js"
+      }
+    }
+  },
+  {
     "id": "2996",
     "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
     "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",

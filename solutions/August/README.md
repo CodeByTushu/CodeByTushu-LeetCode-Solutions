@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **11** | August Daily Series in progress |
+| **Total Solved Problems** | **12** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **3** | Problems #2996, #3345, #3731 |
-| 🟡 **Medium Problems** | **5** | Problems #1140, #3302, #3310, #877, #486 |
+| 🟡 **Medium Problems** | **6** | Problems #2958, #1140, #3302, #3310, #877, #486 |
 | 🔴 **Hard Problems** | **3** | Problems #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **11 / 11** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **12 / 12** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2958** | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | <span style="color:#ffc400">**Medium**</span> | 12 Aug 2026 | [Java](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/Solution.java) | [Python](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.py) | [C++](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.cpp) | [JS](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/solution.js) | [Watch Video](https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917) | [📁 12-August](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/) |
 | **2996** | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | <span style="color:#10b981">**Easy**</span> | 11 Aug 2026 | [Java](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/Solution.java) | [Python](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.py) | [C++](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.cpp) | [JS](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/solution.js) | [Watch Video](https://youtu.be/B46sB6XHfLQ?si=lsCDtikQl0QXDpzD) | [📁 11-August](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/) |
 | **1510** | [Stone Game IV](https://leetcode.com/problems/stone-game-iv/) | <span style="color:#ef4444">**Hard**</span> | 10 Aug 2026 | [Java](./10-August/1510-Stone-Game-IV/Solution.java) | [Python](./10-August/1510-Stone-Game-IV/solution.py) | [C++](./10-August/1510-Stone-Game-IV/solution.cpp) | [JS](./10-August/1510-Stone-Game-IV/solution.js) | [Watch Video](https://youtu.be/QFVxluA9TG4?si=QwKoR_unwgKplQOe) | [📁 10-August](./10-August/1510-Stone-Game-IV/) |
 | **1140** | [Stone Game II](https://leetcode.com/problems/stone-game-ii/) | <span style="color:#ffc400">**Medium**</span> | 09 Aug 2026 | [Java](./9-August/1140-Stone-Game-II/Solution.java) | [Python](./9-August/1140-Stone-Game-II/solution.py) | [C++](./9-August/1140-Stone-Game-II/solution.cpp) | [JS](./9-August/1140-Stone-Game-II/solution.js) | [Watch Video](https://youtu.be/KOI9rfiAfTw?si=zLmIk9cYXhWH3t5m) | [📁 9-August](./9-August/1140-Stone-Game-II/) |
@@ -52,6 +53,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[12 August 2026](./12-August/)**: [#2958 Length of Longest Subarray With at Most K Frequency](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[11 August 2026](./11-August/)**: [#2996 Smallest Missing Integer Greater Than Sequential Prefix Sum](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/) — <span style="color:#10b981">Easy</span>
 - 📍 **[10 August 2026](./10-August/)**: [#1510 Stone Game IV](./10-August/1510-Stone-Game-IV/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[09 August 2026](./9-August/)**: [#1140 Stone Game II](./9-August/1140-Stone-Game-II/) — <span style="color:#ffc400">Medium</span>
@@ -68,19 +70,20 @@
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Array**: [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Breadth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Depth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Dynamic Programming**: [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Game Theory**: [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Greedy**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
-- **Hash Table**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
+- **Hash Table**: [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
 - **Math**: [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Prefix Sum**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/)
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
 - **Simulation**: [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
+- **Sliding Window**: [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/)
 - **Sorting**: [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
 - **String**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Two Pointers**: [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/)

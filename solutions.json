@@ -2295,6 +2295,54 @@
     }
   },
   {
+    "id": "3471",
+    "title": "Find the Largest Almost Missing Integer",
+    "slug": "find-the-largest-almost-missing-integer",
+    "date": "18 August 2026",
+    "dateIso": "2026-08-18",
+    "formattedDate": "18 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "18-August",
+    "problemFolder": "3471-Find-the-Largest-Almost-Missing-Integer",
+    "folderPath": "solutions/August/18-August/3471-Find-the-Largest-Almost-Missing-Integer",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/",
+    "youtubeUrl": "https://youtu.be/3dpjR5wKrZs?si=_vHmGj0wOPxzREqK",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "summary": "Find the largest integer that appears in exactly one contiguous subarray of length k within nums.",
+    "approach": "Iterate through each subarray of size k, mark unique values in each window, and track subarray appearance counts in a frequency table. Return the maximum value whose count equals 1.",
+    "timeComplexity": "O(N * k)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/18-August/3471-Find-the-Largest-Almost-Missing-Integer/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.js"
+      }
+    }
+  },
+  {
     "id": "1563",
     "title": "Stone Game V",
     "slug": "stone-game-v",

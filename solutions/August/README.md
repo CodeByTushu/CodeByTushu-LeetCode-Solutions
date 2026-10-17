@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **20** | August Daily Series in progress |
+| **Total Solved Problems** | **21** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **6** | Problems #3069, #3471, #3090, #2996, #3345, #3731 |
 | 🟡 **Medium Problems** | **9** | Problems #1386, #2029, #3702, #2958, #1140, #3302, #3310, #877, #486 |
-| 🔴 **Hard Problems** | **5** | Problems #1563, #2213, #1510, #3348, #1406 |
+| 🔴 **Hard Problems** | **6** | Problems #3116, #1563, #2213, #1510, #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **20 / 20** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **21 / 21** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3116** | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | <span style="color:#ef4444">**Hard**</span> | 21 Aug 2026 | [Java](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/Solution.java) | [Python](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.py) | [C++](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.cpp) | [JS](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.js) | [Watch Video](https://youtu.be/NBCDNnXg-vQ?si=h0WS-7vUmmTN3M1f) | [📁 21-August](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/) |
 | **3069** | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/) | <span style="color:#10b981">**Easy**</span> | 20 Aug 2026 | [Java](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/Solution.java) | [Python](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.py) | [C++](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.cpp) | [JS](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/solution.js) | [Watch Video](https://youtu.be/UJimcNSmAOs?si=fQFr8AIcEztV7Ce2) | [📁 20-August](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/) |
 | **1386** | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) | <span style="color:#ffc400">**Medium**</span> | 19 Aug 2026 | [Java](./19-August/1386-Cinema-Seat-Allocation/Solution.java) | [Python](./19-August/1386-Cinema-Seat-Allocation/solution.py) | [C++](./19-August/1386-Cinema-Seat-Allocation/solution.cpp) | [JS](./19-August/1386-Cinema-Seat-Allocation/solution.js) | [Watch Video](https://youtu.be/Sz2EF170fTQ?si=yvjT3IAAwchLylJy) | [📁 19-August](./19-August/1386-Cinema-Seat-Allocation/) |
 | **3471** | [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | <span style="color:#10b981">**Easy**</span> | 18 Aug 2026 | [Java](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/Solution.java) | [Python](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.py) | [C++](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.cpp) | [JS](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/solution.js) | [Watch Video](https://youtu.be/3dpjR5wKrZs?si=_vHmGj0wOPxzREqK) | [📁 18-August](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/) |
@@ -61,6 +62,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[21 August 2026](./21-August/)**: [#3116 Kth Smallest Amount With Single Denomination Combination](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[20 August 2026](./20-August/)**: [#3069 Distribute Elements Into Two Arrays I](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/) — <span style="color:#10b981">Easy</span>
 - 📍 **[19 August 2026](./19-August/)**: [#1386 Cinema Seat Allocation](./19-August/1386-Cinema-Seat-Allocation/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[18 August 2026](./18-August/)**: [#3471 Find the Largest Almost Missing Integer](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/) — <span style="color:#10b981">Easy</span>
@@ -86,9 +88,11 @@
 
 ## 🏷️ Problem Categories & Tags in August
 
-- **Array**: [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
-- **Bit Manipulation**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/)
+- **Array**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#3069](./20-August/3069-Distribute-Elements-Into-Two-Arrays-I/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/), [#3310](./5-August/3310-Remove-Methods-From-Project/), [#3731](./4-August/3731-Find-Missing-Elements/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Binary Search**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/)
+- **Bit Manipulation**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/)
 - **Breadth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
+- **Combinatorics**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/)
 - **Counting**: [#2029](./16-August/2029-Stone-Game-IX/)
 - **Depth-First Search**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Dynamic Programming**: [#1563](./17-August/1563-Stone-Game-V/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
@@ -96,8 +100,8 @@
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
 - **Greedy**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#2029](./16-August/2029-Stone-Game-IX/), [#3302](./8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Hash Table**: [#1386](./19-August/1386-Cinema-Seat-Allocation/), [#3471](./18-August/3471-Find-the-Largest-Almost-Missing-Integer/), [#3090](./14-August/3090-Maximum-Length-Substring-With-Two-Occurrences/), [#2958](./12-August/2958-Length-of-Longest-Subarray-With-at-Most-K-Frequency/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#3731](./4-August/3731-Find-Missing-Elements/)
-- **Math**: [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
-- **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
+- **Math**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#1563](./17-August/1563-Stone-Game-V/), [#2029](./16-August/2029-Stone-Game-IX/), [#3702](./15-August/3702-Longest-Subsequence-With-Non-Zero-Bitwise-XOR/), [#1510](./10-August/1510-Stone-Game-IV/), [#1140](./9-August/1140-Stone-Game-II/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Number Theory**: [#3116](./21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/), [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Ordered Set**: [#2213](./13-August/2213-Longest-Substring-of-One-Repeating-Character/)
 - **Prefix Sum**: [#1563](./17-August/1563-Stone-Game-V/), [#2996](./11-August/2996-Smallest-Missing-Integer-Greater-Than-Sequential-Prefix-Sum/), [#1140](./9-August/1140-Stone-Game-II/)
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)

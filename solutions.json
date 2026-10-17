@@ -2295,6 +2295,58 @@
     }
   },
   {
+    "id": "3116",
+    "title": "Kth Smallest Amount With Single Denomination Combination",
+    "slug": "kth-smallest-amount-with-single-denomination-combination",
+    "date": "21 August 2026",
+    "dateIso": "2026-08-21",
+    "formattedDate": "21 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "21-August",
+    "problemFolder": "3116-Kth-Smallest-Amount-With-Single-Denomination-Combination",
+    "folderPath": "solutions/August/21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/",
+    "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/",
+    "youtubeUrl": "https://youtu.be/NBCDNnXg-vQ?si=h0WS-7vUmmTN3M1f",
+    "tags": [
+      "Array",
+      "Math",
+      "Binary Search",
+      "Bit Manipulation",
+      "Combinatorics",
+      "Number Theory"
+    ],
+    "summary": "Find the k-th smallest amount that can be formed as a multiple of any single coin denomination using binary search and the Principle of Inclusion-Exclusion.",
+    "approach": "Binary search on the answer in range [1, k * min(coins)]. For a candidate amount x, count numbers <= x divisible by at least one coin denomination using bitmask inclusion-exclusion over coin LCMs.",
+    "timeComplexity": "O(2^N * N * log(k * min(coins)))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/21-August/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination/solution.js"
+      }
+    }
+  },
+  {
     "id": "3069",
     "title": "Distribute Elements Into Two Arrays I",
     "slug": "distribute-elements-into-two-arrays-i",

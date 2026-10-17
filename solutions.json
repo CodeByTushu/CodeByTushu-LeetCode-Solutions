@@ -15,13 +15,7 @@
     "problemUrl": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/",
     "youtubeUrl": "https://youtu.be/jjMwisPTHhE?si=880_8v7Hdqx7VLOv",
-    "tags": [
-      "Array",
-      "Hash Table",
-      "Math",
-      "Sorting",
-      "Graph"
-    ],
+    "tags": [],
     "summary": "Find the minimum number of swaps to sort an array by digit sums (and numerical values on ties) using permutation cycle decomposition.",
     "approach": "Compute digit sums for each element, sort indices by (digit_sum, value) to find target positions, and decompose the permutation into disjoint cycles. Each cycle of length K requires K - 1 swaps.",
     "timeComplexity": "O(N log N)",
@@ -66,12 +60,7 @@
     "problemUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
     "youtubeUrl": "https://youtu.be/fCsrMnIoxUU?si=HHZbINBY9Qff_bip",
-    "tags": [
-      "Array",
-      "Dynamic Programming",
-      "Segment Tree",
-      "Binary Indexed Tree"
-    ],
+    "tags": [],
     "summary": "Compute the sum of squares of distinct element counts across all subarrays modulo 10^9 + 7 using a lazy segment tree.",
     "approach": "Maintain distinct counts f(i, j) as j increases using a segment tree. Increment values for starting indices in (last[nums[j]], j] by 1 and query the sum of squares at each step.",
     "timeComplexity": "O(N log N)",

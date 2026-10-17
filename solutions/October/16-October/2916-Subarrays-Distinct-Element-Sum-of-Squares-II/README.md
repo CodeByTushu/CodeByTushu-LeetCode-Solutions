@@ -58,10 +58,7 @@ A subarray is a contiguous **non-empty** sequence of elements within an array.
 
 ## Topics and Tags
 
-- **Array**
-- **Dynamic Programming**
-- **Segment Tree**
-- **Binary Indexed Tree**
+- *(Unassigned / Pending)*
 
 ---
 

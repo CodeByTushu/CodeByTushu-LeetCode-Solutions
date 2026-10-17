@@ -53,11 +53,7 @@ Return the **minimum number of swaps** required to rearrange `nums` into this so
 
 ## Topics and Tags
 
-- **Array**
-- **Hash Table**
-- **Math**
-- **Sorting**
-- **Graph**
+- *(Unassigned / Pending)*
 
 ---
 

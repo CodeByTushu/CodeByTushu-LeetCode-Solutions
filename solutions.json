@@ -2295,6 +2295,55 @@
     }
   },
   {
+    "id": "3731",
+    "title": "Find Missing Elements",
+    "slug": "find-missing-elements",
+    "date": "04 August 2026",
+    "dateIso": "2026-08-04",
+    "formattedDate": "04 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "4-August",
+    "problemFolder": "3731-Find-Missing-Elements",
+    "folderPath": "solutions/August/4-August/3731-Find-Missing-Elements",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-missing-elements/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-missing-elements/",
+    "youtubeUrl": "https://youtu.be/DFShzZTuOvY?si=P5R1yv417pDQPPx0",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "summary": "Find all missing integers between the minimum and maximum elements of a unique integer array.",
+    "approach": "Find the minimum and maximum elements in nums, insert all elements into a hash set for O(1) membership testing, and collect all integers from min to max absent from the set into a sorted result list.",
+    "timeComplexity": "O(N + (max - min))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/solution.js"
+      }
+    }
+  },
+  {
     "id": "1406",
     "title": "Stone Game III",
     "slug": "stone-game-iii",

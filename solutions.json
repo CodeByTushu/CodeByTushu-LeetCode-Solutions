@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "3734",
+    "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+    "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+    "date": "28 August 2026",
+    "dateIso": "2026-08-28",
+    "formattedDate": "28 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "28-August",
+    "problemFolder": "3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target",
+    "folderPath": "solutions/August/28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
+    "leetcodeUrl": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
+    "youtubeUrl": "https://youtu.be/xl6HBWMH0p8?si=rIWpZrmgQAbI-5zo",
+    "tags": [
+      "String",
+      "Greedy",
+      "Two Pointers",
+      "Hash Table"
+    ],
+    "summary": "Find the lexicographically smallest palindromic permutation of s that is strictly greater than target.",
+    "approach": "Validate palindrome feasibility, halve the character pool to construct the left half, and greedily explore matching the target prefix while branching with the smallest strictly greater character and filling the remainder in ascending order.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/28-August/3734-Lexicographically-Smallest-Palindromic-Permutation-Greater-Than-Target/solution.js"
+      }
+    }
+  },
+  {
     "id": "3720",
     "title": "Lexicographically Smallest Permutation Greater Than Target",
     "slug": "lexicographically-smallest-permutation-greater-than-target",

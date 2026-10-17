@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **6** | August Daily Series in progress |
+| **Total Solved Problems** | **7** | August Daily Series in progress |
 | 🟢 **Easy Problems** | **2** | Problems #3345, #3731 |
 | 🟡 **Medium Problems** | **3** | Problems #3310, #877, #486 |
-| 🔴 **Hard Problems** | **1** | Problem #1406 |
+| 🔴 **Hard Problems** | **2** | Problems #3348, #1406 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **6 / 6** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **7 / 7** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3348** | [Smallest Divisible Digit Product II](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | <span style="color:#ef4444">**Hard**</span> | 07 Aug 2026 | [Java](./7-August/3348-Smallest-Divisible-Digit-Product-II/Solution.java) | [Python](./7-August/3348-Smallest-Divisible-Digit-Product-II/solution.py) | [C++](./7-August/3348-Smallest-Divisible-Digit-Product-II/solution.cpp) | [JS](./7-August/3348-Smallest-Divisible-Digit-Product-II/solution.js) | [Watch Video](https://youtu.be/PaAX31HX3kw?si=hmbUMET4sm4Apbwm) | [📁 7-August](./7-August/3348-Smallest-Divisible-Digit-Product-II/) |
 | **3345** | [Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | <span style="color:#10b981">**Easy**</span> | 06 Aug 2026 | [Java](./6-August/3345-Smallest-Divisible-Digit-Product-I/Solution.java) | [Python](./6-August/3345-Smallest-Divisible-Digit-Product-I/solution.py) | [C++](./6-August/3345-Smallest-Divisible-Digit-Product-I/solution.cpp) | [JS](./6-August/3345-Smallest-Divisible-Digit-Product-I/solution.js) | [Watch Video](https://youtu.be/s5l_psaxdqg?si=8xiX7X6n_y8FQLK8) | [📁 6-August](./6-August/3345-Smallest-Divisible-Digit-Product-I/) |
 | **3310** | [Remove Methods From Project](https://leetcode.com/problems/remove-methods-from-project/) | <span style="color:#ffc400">**Medium**</span> | 05 Aug 2026 | [Java](./5-August/3310-Remove-Methods-From-Project/Solution.java) | [Python](./5-August/3310-Remove-Methods-From-Project/solution.py) | [C++](./5-August/3310-Remove-Methods-From-Project/solution.cpp) | [JS](./5-August/3310-Remove-Methods-From-Project/solution.js) | [Watch Video](https://youtu.be/L3ArLvS-Zak?si=oroVfsGiL7zFKSjJ) | [📁 5-August](./5-August/3310-Remove-Methods-From-Project/) |
 | **3731** | [Find Missing Elements](https://leetcode.com/problems/find-missing-elements/) | <span style="color:#10b981">**Easy**</span> | 04 Aug 2026 | [Java](./4-August/3731-Find-Missing-Elements/Solution.java) | [Python](./4-August/3731-Find-Missing-Elements/solution.py) | [C++](./4-August/3731-Find-Missing-Elements/solution.cpp) | [JS](./4-August/3731-Find-Missing-Elements/solution.js) | [Watch Video](https://youtu.be/DFShzZTuOvY?si=P5R1yv417pDQPPx0) | [📁 4-August](./4-August/3731-Find-Missing-Elements/) |
@@ -47,6 +48,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[07 August 2026](./7-August/)**: [#3348 Smallest Divisible Digit Product II](./7-August/3348-Smallest-Divisible-Digit-Product-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[06 August 2026](./6-August/)**: [#3345 Smallest Divisible Digit Product I](./6-August/3345-Smallest-Divisible-Digit-Product-I/) — <span style="color:#10b981">Easy</span>
 - 📍 **[05 August 2026](./5-August/)**: [#3310 Remove Methods From Project](./5-August/3310-Remove-Methods-From-Project/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[04 August 2026](./4-August/)**: [#3731 Find Missing Elements](./4-August/3731-Find-Missing-Elements/) — <span style="color:#10b981">Easy</span>
@@ -64,11 +66,14 @@
 - **Dynamic Programming**: [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Game Theory**: [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
 - **Graph**: [#3310](./5-August/3310-Remove-Methods-From-Project/)
+- **Greedy**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Hash Table**: [#3731](./4-August/3731-Find-Missing-Elements/)
-- **Math**: [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Math**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/), [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/), [#1406](./3-August/1406-Stone-Game-III/), [#877](./2-August/877-Stone-Game/), [#486](./1-August/486-Predict-the-Winner/)
+- **Number Theory**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 - **Recursion**: [#486](./1-August/486-Predict-the-Winner/)
 - **Simulation**: [#3345](./6-August/3345-Smallest-Divisible-Digit-Product-I/)
 - **Sorting**: [#3731](./4-August/3731-Find-Missing-Elements/)
+- **String**: [#3348](./7-August/3348-Smallest-Divisible-Digit-Product-II/)
 
 ---
 

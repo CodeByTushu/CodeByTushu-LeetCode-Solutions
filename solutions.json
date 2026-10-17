@@ -2295,6 +2295,56 @@
     }
   },
   {
+    "id": "3348",
+    "title": "Smallest Divisible Digit Product II",
+    "slug": "smallest-divisible-digit-product-ii",
+    "date": "07 August 2026",
+    "dateIso": "2026-08-07",
+    "formattedDate": "07 Aug 2026",
+    "year": "2026",
+    "month": "August",
+    "dayFolder": "7-August",
+    "problemFolder": "3348-Smallest-Divisible-Digit-Product-II",
+    "folderPath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
+    "youtubeUrl": "https://youtu.be/PaAX31HX3kw?si=hmbUMET4sm4Apbwm",
+    "tags": [
+      "Math",
+      "String",
+      "Greedy",
+      "Number Theory"
+    ],
+    "summary": "Find the smallest zero-free number greater than or equal to num whose digit product is divisible by t.",
+    "approach": "Factorize t into prime factors 2, 3, 5, 7 (returning -1 if any larger prime factor exists). Greedily decompose factors into minimal digits (8, 9, 4, 6, 2, 3, 5, 7). Iterate right-to-left across valid zero-free prefixes to find the first position that can be incremented while fitting remaining required digits in the suffix, or extend the number length by prepending '1's.",
+    "timeComplexity": "O(|num|)",
+    "auxiliarySpaceComplexity": "O(|num|)",
+    "spaceComplexity": "O(|num|)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3345",
     "title": "Smallest Divisible Digit Product I",
     "slug": "smallest-divisible-digit-product-i",

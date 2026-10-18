@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3536,
+    "title": "Maximum Product of Two Digits",
+    "slug": "maximum-product-of-two-digits",
+    "date": "25 July 2026",
+    "dateIso": "2026-07-25",
+    "formattedDate": "25 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "25-July",
+    "problemFolder": "3536-Maximum-Product-of-Two-Digits",
+    "folderPath": "solutions/July/25-July/3536-Maximum-Product-of-Two-Digits",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/maximum-product-of-two-digits/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-product-of-two-digits/",
+    "youtubeUrl": "https://youtu.be/rZcPoUpOtLU?si=1Yp3OyflWRo0ByHC",
+    "tags": [
+      "Math",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Return the maximum product of any two digits in a positive integer n.",
+    "approach": "Extract digits of n and greedily track the top two largest digits seen so far (first and second). Return first * second.",
+    "timeComplexity": "O(log10(N))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/25-July/3536-Maximum-Product-of-Two-Digits/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/25-July/3536-Maximum-Product-of-Two-Digits/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/25-July/3536-Maximum-Product-of-Two-Digits/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/25-July/3536-Maximum-Product-of-Two-Digits/solution.js"
+      }
+    }
+  },
+  {
     "id": 3514,
     "title": "Number of Unique XOR Triplets II",
     "slug": "number-of-unique-xor-triplets-ii",

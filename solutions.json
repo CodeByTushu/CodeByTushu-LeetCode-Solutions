@@ -3883,6 +3883,58 @@
     }
   },
   {
+    "id": 3534,
+    "title": "Path Existence Queries in a Graph II",
+    "slug": "path-existence-queries-in-a-graph-ii",
+    "dateIso": "2026-07-10",
+    "formattedDate": "10 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "10-July",
+    "problemFolder": "3534-Path-Existence-Queries-in-a-Graph-II",
+    "folderPath": "solutions/July/10-July/3534-Path-Existence-Queries-in-a-Graph-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/",
+    "youtubeUrl": "https://youtu.be/lS5OVEtbv_I?si=l4X3ZeapEzLQ_uWs",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Bit Manipulation",
+      "Dynamic Programming",
+      "Sorting",
+      "Graph",
+      "Two Pointers"
+    ],
+    "summary": "Find the minimum distance between pairs of nodes in an unweighted undirected graph where edges connect nodes with absolute value difference at most maxDiff.",
+    "approach": "Sort nodes by value and use a two-pointer scan to identify the greedy furthest jump. Build a binary lifting table to answer shortest path queries in O(log N) time.",
+    "timeComplexity": "O((N + Q) log N)",
+    "auxiliarySpaceComplexity": "O(N log N)",
+    "spaceComplexity": "O(N log N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/10-July/3534-Path-Existence-Queries-in-a-Graph-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3532,
     "title": "Path Existence Queries in a Graph I",
     "slug": "path-existence-queries-in-a-graph-i",

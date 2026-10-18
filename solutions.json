@@ -3881,5 +3881,54 @@
         "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.js"
       }
     }
+  },
+  {
+    "id": 2812,
+    "title": "Find the Safest Path in a Grid",
+    "slug": "find-the-safest-path-in-a-grid",
+    "dateIso": "2026-07-01",
+    "formattedDate": "01 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "1-July",
+    "problemFolder": "2812-Find-the-Safest-Path-in-a-Grid",
+    "folderPath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
+    "youtubeUrl": "https://youtu.be/NvG19Aj7__Q?si=9Jjox02w3nEN8WHc",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Breadth-First Search",
+      "Matrix"
+    ],
+    "summary": "Find the maximum safeness factor of all paths from the top-left cell to the bottom-right cell in a grid containing thieves.",
+    "approach": "Run multi-source BFS from all thieves to compute the distance transform matrix, then binary search on the minimum safeness factor using BFS reachability.",
+    "timeComplexity": "O(N^2 log N)",
+    "auxiliarySpaceComplexity": "O(N^2)",
+    "spaceComplexity": "O(N^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js"
+      }
+    }
   }
 ]

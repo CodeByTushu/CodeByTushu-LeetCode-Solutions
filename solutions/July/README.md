@@ -11,44 +11,47 @@
 <p align="center">
   <a href="../../README.md"><img src="https://img.shields.io/badge/⬅️_Back_to-Main_Repository-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Main Repo"/></a>
   <a href="../README.md"><img src="https://img.shields.io/badge/🗂️_Browse-All_Months_Hub-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="All Months"/></a>
+  <a href="../August/"><img src="https://img.shields.io/badge/🌴_Browse-August_2026-ffc400?style=for-the-badge&logo=codeforces&logoColor=white" alt="August Archive"/></a>
   <a href="../October/"><img src="https://img.shields.io/badge/🎃_Active_Month-October_2026-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Active October"/></a>
   <a href="https://codebytushu.com/Leetcode/"><img src="https://img.shields.io/badge/Live_Platform-codebytushu.com%2FLeetcode-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
+  <a href="https://www.youtube.com/@codebytushu"><img src="https://img.shields.io/badge/YouTube-@codebytushu-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Channel"/></a>
 </p>
 
 ---
 
-## 📊 Month Overview: July 2026
+## 📊 July 2026 Statistics
 
-| Attribute | Details |
-| :--- | :--- |
-| **Month / Quarter** | July 2026 (Q3 — Mid Summer) |
-| **Status** | `Archive / Ingesting` |
-| **Total Days** | 31 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
-
----
-
-## 📂 Folder & Solution Structure
-
-When new daily problems are added for July, each problem is organized as:
-
-```text
-solutions/July/
-├── DD-July/
-│   └── <Problem-ID>-<Problem-Title>/
-│       ├── README.md        # Comprehensive problem statement, approach & complexity
-│       ├── Solution.java    # Optimal Java implementation
-│       ├── solution.py      # Pythonic solution with type annotations
-│       ├── solution.cpp     # High-performance C++ solution
-│       └── solution.js      # Modern ECMAScript (ES6+) implementation
-```
+| Metric | Count | Details |
+| :--- | :---: | :--- |
+| **Total Solved Problems** | **1** | July Daily Series In Progress 🚀 |
+| 🟢 **Easy Problems** | **0** | — |
+| 🟡 **Medium Problems** | **1** | Problem #2812 |
+| 🔴 **Hard Problems** | **0** | — |
+| 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
+| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ July Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for July. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2812** | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 01 Jul 2026 | [Java](./1-July/2812-Find-the-Safest-Path-in-a-Grid/Solution.java) | [Python](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.py) | [C++](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.cpp) | [JS](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js) | [Watch Video](https://youtu.be/NvG19Aj7__Q?si=9Jjox02w3nEN8WHc) | [📁 1-July](./1-July/2812-Find-the-Safest-Path-in-a-Grid/) |
+
+---
+
+## 📅 Date-Wise Directory Navigation
+
+- 📍 **[01 July 2026](./1-July/)**: [#2812 Find the Safest Path in a Grid](./1-July/2812-Find-the-Safest-Path-in-a-Grid/) — <span style="color:#ffc400">Medium</span>
+
+---
+
+## 🏷️ Problem Categories & Tags in July
+
+- **Array**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Binary Search**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Breadth-First Search**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Matrix**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 
 ---
 
@@ -57,7 +60,9 @@ solutions/July/
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md"><strong>🗂️ View All Months Hub</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="../October/"><strong>🎃 Browse October Solutions (15 Solved)</strong></a>
+  <a href="../August/"><strong>🌴 Browse August Solutions (31 Solved)</strong></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="../October/"><strong>🎃 Browse October Solutions (18 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

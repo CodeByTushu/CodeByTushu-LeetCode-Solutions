@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3514,
+    "title": "Number of Unique XOR Triplets II",
+    "slug": "number-of-unique-xor-triplets-ii",
+    "date": "24 July 2026",
+    "dateIso": "2026-07-24",
+    "formattedDate": "24 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "24-July",
+    "problemFolder": "3514-Number-of-Unique-XOR-Triplets-II",
+    "folderPath": "solutions/July/24-July/3514-Number-of-Unique-XOR-Triplets-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-unique-xor-triplets-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-unique-xor-triplets-ii/",
+    "youtubeUrl": "https://youtu.be/o8OQ4-V2yDo?si=PW3P9gcL8GH71hWp",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Bit Manipulation"
+    ],
+    "summary": "Calculate the number of unique XOR triplet values formed by taking three elements from nums where indices satisfy i <= j <= k.",
+    "approach": "Model the multiset selection of 3 elements using a bounded DP table dp[k][v] of size 4 x 2048. For each element x, allow choosing it up to 3 times via reverse knapsack transitions, then count reachable XOR values in dp[3].",
+    "timeComplexity": "O(N * MAX)",
+    "auxiliarySpaceComplexity": "O(MAX)",
+    "spaceComplexity": "O(MAX)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/24-July/3514-Number-of-Unique-XOR-Triplets-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/24-July/3514-Number-of-Unique-XOR-Triplets-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/24-July/3514-Number-of-Unique-XOR-Triplets-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/24-July/3514-Number-of-Unique-XOR-Triplets-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3513,
     "title": "Number of Unique XOR Triplets I",
     "slug": "number-of-unique-xor-triplets-i",

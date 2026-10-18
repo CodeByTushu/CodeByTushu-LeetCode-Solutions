@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **1** | July Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **2** | July Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **0** | — |
-| 🟡 **Medium Problems** | **1** | Problem #2812 |
+| 🟡 **Medium Problems** | **2** | Problems #3286, #2812 |
 | 🔴 **Hard Problems** | **0** | — |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **2 / 2** | Available on YouTube |
 
 ---
 
@@ -36,22 +36,27 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3286** | [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 02 Jul 2026 | [Java](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/Solution.java) | [Python](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.py) | [C++](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.cpp) | [JS](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.js) | [Watch Video](https://youtu.be/qwi9A01vQCM?si=ofSN8LxSltsQYN_t) | [📁 2-July](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/) |
 | **2812** | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 01 Jul 2026 | [Java](./1-July/2812-Find-the-Safest-Path-in-a-Grid/Solution.java) | [Python](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.py) | [C++](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.cpp) | [JS](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js) | [Watch Video](https://youtu.be/NvG19Aj7__Q?si=9Jjox02w3nEN8WHc) | [📁 1-July](./1-July/2812-Find-the-Safest-Path-in-a-Grid/) |
 
 ---
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[02 July 2026](./2-July/)**: [#3286 Find a Safe Walk Through a Grid](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[01 July 2026](./1-July/)**: [#2812 Find the Safest Path in a Grid](./1-July/2812-Find-the-Safest-Path-in-a-Grid/) — <span style="color:#ffc400">Medium</span>
 
 ---
 
 ## 🏷️ Problem Categories & Tags in July
 
-- **Array**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Array**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Binary Search**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
-- **Breadth-First Search**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
-- **Matrix**: [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Breadth-First Search**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Graph**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
+- **Heap (Priority Queue)**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
+- **Matrix**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Shortest Path**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 
 ---
 

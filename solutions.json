@@ -3883,6 +3883,57 @@
     }
   },
   {
+    "id": 3286,
+    "title": "Find a Safe Walk Through a Grid",
+    "slug": "find-a-safe-walk-through-a-grid",
+    "dateIso": "2026-07-02",
+    "formattedDate": "02 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "2-July",
+    "problemFolder": "3286-Find-a-Safe-Walk-Through-a-Grid",
+    "folderPath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
+    "youtubeUrl": "https://youtu.be/qwi9A01vQCM?si=ofSN8LxSltsQYN_t",
+    "tags": [
+      "Array",
+      "Breadth-First Search",
+      "Graph",
+      "Heap (Priority Queue)",
+      "Matrix",
+      "Shortest Path"
+    ],
+    "summary": "Determine if there exists a walk from (0, 0) to (m - 1, n - 1) in a binary grid such that remaining health stays at least 1.",
+    "approach": "Use modified Dijkstra algorithm with a max-heap tracking the maximum health achievable upon entering each cell.",
+    "timeComplexity": "O(M * N log(M * N))",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": 2812,
     "title": "Find the Safest Path in a Grid",
     "slug": "find-the-safest-path-in-a-grid",

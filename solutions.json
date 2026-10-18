@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3014,
+    "title": "Minimum Number of Pushes to Type Word I",
+    "slug": "minimum-number-of-pushes-to-type-word-i",
+    "date": "30 July 2026",
+    "dateIso": "2026-07-30",
+    "formattedDate": "30 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "30-July",
+    "problemFolder": "3014-Minimum-Number-of-Pushes-to-Type-Word-I",
+    "folderPath": "solutions/July/30-July/3014-Minimum-Number-of-Pushes-to-Type-Word-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/",
+    "youtubeUrl": "https://youtu.be/-JUGKx9yLtI?si=y5iKS10uDS3SP_oD",
+    "tags": [
+      "Math",
+      "String",
+      "Greedy"
+    ],
+    "summary": "Find the minimum number of key pushes needed to type a string of distinct characters on a remappable 8-key keypad.",
+    "approach": "Greedily distribute characters across the 8 keys so that each character is assigned the minimum available push depth. For character index i, pushes equal (i / 8) + 1.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/30-July/3014-Minimum-Number-of-Pushes-to-Type-Word-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/30-July/3014-Minimum-Number-of-Pushes-to-Type-Word-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/30-July/3014-Minimum-Number-of-Pushes-to-Type-Word-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/30-July/3014-Minimum-Number-of-Pushes-to-Type-Word-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 3518,
     "title": "Smallest Palindromic Rearrangement II",
     "slug": "smallest-palindromic-rearrangement-ii",

@@ -3883,6 +3883,57 @@
     }
   },
   {
+    "id": 3016,
+    "title": "Minimum Number of Pushes to Type Word II",
+    "slug": "minimum-number-of-pushes-to-type-word-ii",
+    "date": "31 July 2026",
+    "dateIso": "2026-07-31",
+    "formattedDate": "31 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "31-July",
+    "problemFolder": "3016-Minimum-Number-of-Pushes-to-Type-Word-II",
+    "folderPath": "solutions/July/31-July/3016-Minimum-Number-of-Pushes-to-Type-Word-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/",
+    "youtubeUrl": "https://youtu.be/hvb1oRNYMbg?si=vCCz17Sq8kp5ftiN",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Greedy",
+      "Sorting",
+      "Counting"
+    ],
+    "summary": "Find the minimum number of key pushes needed to type a word on a remappable 8-key telephone keypad.",
+    "approach": "Count the frequency of each character, sort frequencies in descending order, and greedily place the most frequent characters in the earliest available push depths (each depth holds 8 keys).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/31-July/3016-Minimum-Number-of-Pushes-to-Type-Word-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/31-July/3016-Minimum-Number-of-Pushes-to-Type-Word-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/31-July/3016-Minimum-Number-of-Pushes-to-Type-Word-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/31-July/3016-Minimum-Number-of-Pushes-to-Type-Word-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3014,
     "title": "Minimum Number of Pushes to Type Word I",
     "slug": "minimum-number-of-pushes-to-type-word-i",

@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **12** | July Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **13** | July Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **2** | Problems #1331, #3754 |
-| 🟡 **Medium Problems** | **7** | Problems #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
+| 🟡 **Medium Problems** | **8** | Problems #1291, #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
 | 🔴 **Hard Problems** | **3** | Problems #3534, #1301, #3620 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **12 / 12** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **13 / 13** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1291** | [Sequential Digits](https://leetcode.com/problems/sequential-digits/) | <span style="color:#ffc400">**Medium**</span> | 13 Jul 2026 | [Java](./13-July/1291-Sequential-Digits/Solution.java) | [Python](./13-July/1291-Sequential-Digits/solution.py) | [C++](./13-July/1291-Sequential-Digits/solution.cpp) | [JS](./13-July/1291-Sequential-Digits/solution.js) | [Watch Video](https://youtu.be/sYN1lfIinxw?si=9nQ2oLjfLTM3VMpd) | [📁 13-July](./13-July/1291-Sequential-Digits/) |
 | **1331** | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | <span style="color:#10b981">**Easy**</span> | 12 Jul 2026 | [Java](./12-July/1331-Rank-Transform-of-an-Array/Solution.java) | [Python](./12-July/1331-Rank-Transform-of-an-Array/solution.py) | [C++](./12-July/1331-Rank-Transform-of-an-Array/solution.cpp) | [JS](./12-July/1331-Rank-Transform-of-an-Array/solution.js) | [Watch Video](https://youtu.be/LFkjoNaZd5A?si=lYzHBFD5OVozX8Jh) | [📁 12-July](./12-July/1331-Rank-Transform-of-an-Array/) |
 | **2685** | [Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/) | <span style="color:#ffc400">**Medium**</span> | 11 Jul 2026 | [Java](./11-July/2685-Count-the-Number-of-Complete-Components/Solution.java) | [Python](./11-July/2685-Count-the-Number-of-Complete-Components/solution.py) | [C++](./11-July/2685-Count-the-Number-of-Complete-Components/solution.cpp) | [JS](./11-July/2685-Count-the-Number-of-Complete-Components/solution.js) | [Watch Video](https://youtu.be/_g8uFFU5Mtk?si=khRMqI7MY97PJcXl) | [📁 11-July](./11-July/2685-Count-the-Number-of-Complete-Components/) |
 | **3534** | [Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | <span style="color:#ef4444">**Hard**</span> | 10 Jul 2026 | [Java](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/Solution.java) | [Python](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.py) | [C++](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.cpp) | [JS](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.js) | [Watch Video](https://youtu.be/lS5OVEtbv_I?si=l4X3ZeapEzLQ_uWs) | [📁 10-July](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/) |
@@ -53,6 +54,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[13 July 2026](./13-July/)**: [#1291 Sequential Digits](./13-July/1291-Sequential-Digits/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[12 July 2026](./12-July/)**: [#1331 Rank Transform of an Array](./12-July/1331-Rank-Transform-of-an-Array/) — <span style="color:#10b981">Easy</span>
 - 📍 **[11 July 2026](./11-July/)**: [#2685 Count the Number of Complete Components](./11-July/2685-Count-the-Number-of-Complete-Components/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[10 July 2026](./10-July/)**: [#3534 Path Existence Queries in a Graph II](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/) — <span style="color:#ef4444">Hard</span>
@@ -73,9 +75,10 @@
 - **Array**: [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Binary Search**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Bit Manipulation**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
-- **Breadth-First Search**: [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Breadth-First Search**: [#1291](./13-July/1291-Sequential-Digits/), [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Depth-First Search**: [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/)
 - **Dynamic Programming**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3620](./3-July/3620-Network-Recovery-Pathways/)
+- **Enumeration**: [#1291](./13-July/1291-Sequential-Digits/)
 - **Graph**: [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Hash Table**: [#1331](./12-July/1331-Rank-Transform-of-an-Array/)
 - **Heap (Priority Queue)**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
@@ -85,7 +88,7 @@
 - **Segment Tree**: [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Shortest Path**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Simulation**: [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
-- **Sorting**: [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1288](./6-July/1288-Remove-Covered-Intervals/)
+- **Sorting**: [#1291](./13-July/1291-Sequential-Digits/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1288](./6-July/1288-Remove-Covered-Intervals/)
 - **String**: [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Topological Sort**: [#3620](./3-July/3620-Network-Recovery-Pathways/)
 - **Two Pointers**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)

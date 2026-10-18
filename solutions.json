@@ -3883,6 +3883,54 @@
     }
   },
   {
+    "id": 1291,
+    "title": "Sequential Digits",
+    "slug": "sequential-digits",
+    "dateIso": "2026-07-13",
+    "formattedDate": "13 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "13-July",
+    "problemFolder": "1291-Sequential-Digits",
+    "folderPath": "solutions/July/13-July/1291-Sequential-Digits",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/sequential-digits/",
+    "leetcodeUrl": "https://leetcode.com/problems/sequential-digits/",
+    "youtubeUrl": "https://youtu.be/sYN1lfIinxw?si=9nQ2oLjfLTM3VMpd",
+    "tags": [
+      "Enumeration",
+      "Breadth-First Search",
+      "Sorting"
+    ],
+    "summary": "Find all numbers within a given range [low, high] whose digits are strictly sequential and increasing.",
+    "approach": "Use a queue seeded with digits 1 through 9. Incrementally append the next sequential digit (lastDigit + 1) while the number remains within range, then sort the results.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/13-July/1291-Sequential-Digits/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/13-July/1291-Sequential-Digits/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/13-July/1291-Sequential-Digits/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/13-July/1291-Sequential-Digits/solution.js"
+      }
+    }
+  },
+  {
     "id": 1331,
     "title": "Rank Transform of an Array",
     "slug": "rank-transform-of-an-array",

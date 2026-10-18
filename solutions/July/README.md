@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **26** | July Daily Series In Progress 🚀 |
-| 🟢 **Easy Problems** | **7** | Problems #628, #3536, #1260, #1979, #3658, #1331, #3754 |
+| **Total Solved Problems** | **27** | July Daily Series In Progress 🚀 |
+| 🟢 **Easy Problems** | **8** | Problems #1464, #628, #3536, #1260, #1979, #3658, #1331, #3754 |
 | 🟡 **Medium Problems** | **13** | Problems #3514, #3513, #3499, #1081, #3867, #1291, #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
 | 🔴 **Hard Problems** | **6** | Problems #3501, #3312, #3336, #3534, #1301, #3620 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **26 / 26** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **27 / 27** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1464** | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | <span style="color:#10b981">**Easy**</span> | 27 Jul 2026 | [Java](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/Solution.java) | [Python](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/solution.py) | [C++](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/solution.cpp) | [JS](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/solution.js) | [Watch Video](https://youtu.be/ZTa6oHtIDMM?si=54-tRAm-OZFSCUxa) | [📁 27-July](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/) |
 | **628** | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) | <span style="color:#10b981">**Easy**</span> | 26 Jul 2026 | [Java](./26-July/628-Maximum-Product-of-Three-Numbers/Solution.java) | [Python](./26-July/628-Maximum-Product-of-Three-Numbers/solution.py) | [C++](./26-July/628-Maximum-Product-of-Three-Numbers/solution.cpp) | [JS](./26-July/628-Maximum-Product-of-Three-Numbers/solution.js) | [Watch Video](https://youtu.be/Mcq84C3PKTs?si=zovlxqrDnauzdslZ) | [📁 26-July](./26-July/628-Maximum-Product-of-Three-Numbers/) |
 | **3536** | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/) | <span style="color:#10b981">**Easy**</span> | 25 Jul 2026 | [Java](./25-July/3536-Maximum-Product-of-Two-Digits/Solution.java) | [Python](./25-July/3536-Maximum-Product-of-Two-Digits/solution.py) | [C++](./25-July/3536-Maximum-Product-of-Two-Digits/solution.cpp) | [JS](./25-July/3536-Maximum-Product-of-Two-Digits/solution.js) | [Watch Video](https://youtu.be/rZcPoUpOtLU?si=1Yp3OyflWRo0ByHC) | [📁 25-July](./25-July/3536-Maximum-Product-of-Two-Digits/) |
 | **3514** | [Number of Unique XOR Triplets II](https://leetcode.com/problems/number-of-unique-xor-triplets-ii/) | <span style="color:#ffc400">**Medium**</span> | 24 Jul 2026 | [Java](./24-July/3514-Number-of-Unique-XOR-Triplets-II/Solution.java) | [Python](./24-July/3514-Number-of-Unique-XOR-Triplets-II/solution.py) | [C++](./24-July/3514-Number-of-Unique-XOR-Triplets-II/solution.cpp) | [JS](./24-July/3514-Number-of-Unique-XOR-Triplets-II/solution.js) | [Watch Video](https://youtu.be/o8OQ4-V2yDo?si=PW3P9gcL8GH71hWp) | [📁 24-July](./24-July/3514-Number-of-Unique-XOR-Triplets-II/) |
@@ -67,6 +68,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[27 July 2026](./27-July/)**: [#1464 Maximum Product of Two Elements in an Array](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/) — <span style="color:#10b981">Easy</span>
 - 📍 **[26 July 2026](./26-July/)**: [#628 Maximum Product of Three Numbers](./26-July/628-Maximum-Product-of-Three-Numbers/) — <span style="color:#10b981">Easy</span>
 - 📍 **[25 July 2026](./25-July/)**: [#3536 Maximum Product of Two Digits](./25-July/3536-Maximum-Product-of-Two-Digits/) — <span style="color:#10b981">Easy</span>
 - 📍 **[24 July 2026](./24-July/)**: [#3514 Number of Unique XOR Triplets II](./24-July/3514-Number-of-Unique-XOR-Triplets-II/) — <span style="color:#ffc400">Medium</span>
@@ -98,7 +100,7 @@
 
 ## 🏷️ Problem Categories & Tags in July
 
-- **Array**: [#628](./26-July/628-Maximum-Product-of-Three-Numbers/), [#3514](./24-July/3514-Number-of-Unique-XOR-Triplets-II/), [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#1260](./20-July/1260-Shift-2D-Grid/), [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Array**: [#1464](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/), [#628](./26-July/628-Maximum-Product-of-Three-Numbers/), [#3514](./24-July/3514-Number-of-Unique-XOR-Triplets-II/), [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#1260](./20-July/1260-Shift-2D-Grid/), [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Binary Search**: [#3501](./22-July/3501-Maximize-Active-Section-with-Trade-II/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Bit Manipulation**: [#3514](./24-July/3514-Number-of-Unique-XOR-Triplets-II/), [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
 - **Breadth-First Search**: [#1291](./13-July/1291-Sequential-Digits/), [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
@@ -110,7 +112,7 @@
 - **Graph**: [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Greedy**: [#3536](./25-July/3536-Maximum-Product-of-Two-Digits/), [#3499](./21-July/3499-Maximize-Active-Section-with-Trade-I/), [#1081](./19-July/1081-Smallest-Subsequence-of-Distinct-Characters/)
 - **Hash Table**: [#1331](./12-July/1331-Rank-Transform-of-an-Array/)
-- **Heap (Priority Queue)**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
+- **Heap (Priority Queue)**: [#1464](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Math**: [#628](./26-July/628-Maximum-Product-of-Three-Numbers/), [#3536](./25-July/3536-Maximum-Product-of-Two-Digits/), [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/), [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
 - **Matrix**: [#1260](./20-July/1260-Shift-2D-Grid/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Monotonic Stack**: [#1081](./19-July/1081-Smallest-Subsequence-of-Distinct-Characters/)
@@ -119,7 +121,7 @@
 - **Segment Tree**: [#3501](./22-July/3501-Maximize-Active-Section-with-Trade-II/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Shortest Path**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Simulation**: [#1260](./20-July/1260-Shift-2D-Grid/), [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
-- **Sorting**: [#628](./26-July/628-Maximum-Product-of-Three-Numbers/), [#3536](./25-July/3536-Maximum-Product-of-Two-Digits/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#1291](./13-July/1291-Sequential-Digits/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1288](./6-July/1288-Remove-Covered-Intervals/)
+- **Sorting**: [#1464](./27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/), [#628](./26-July/628-Maximum-Product-of-Three-Numbers/), [#3536](./25-July/3536-Maximum-Product-of-Two-Digits/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#1291](./13-July/1291-Sequential-Digits/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1288](./6-July/1288-Remove-Covered-Intervals/)
 - **Stack**: [#1081](./19-July/1081-Smallest-Subsequence-of-Distinct-Characters/)
 - **String**: [#3501](./22-July/3501-Maximize-Active-Section-with-Trade-II/), [#3499](./21-July/3499-Maximize-Active-Section-with-Trade-I/), [#1081](./19-July/1081-Smallest-Subsequence-of-Distinct-Characters/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Topological Sort**: [#3620](./3-July/3620-Network-Recovery-Pathways/)

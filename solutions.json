@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 1464,
+    "title": "Maximum Product of Two Elements in an Array",
+    "slug": "maximum-product-of-two-elements-in-an-array",
+    "date": "27 July 2026",
+    "dateIso": "2026-07-27",
+    "formattedDate": "27 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "27-July",
+    "problemFolder": "1464-Maximum-Product-of-Two-Elements-in-an-Array",
+    "folderPath": "solutions/July/27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/",
+    "youtubeUrl": "https://youtu.be/ZTa6oHtIDMM?si=54-tRAm-OZFSCUxa",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "summary": "Choose two different indices i and j of an integer array to maximize (nums[i] - 1) * (nums[j] - 1).",
+    "approach": "Track the two largest elements in nums (max1 and max2) during a single pass and return (max1 - 1) * (max2 - 1).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/27-July/1464-Maximum-Product-of-Two-Elements-in-an-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": 628,
     "title": "Maximum Product of Three Numbers",
     "slug": "maximum-product-of-three-numbers",

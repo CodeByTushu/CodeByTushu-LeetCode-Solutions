@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 1260,
+    "title": "Shift 2D Grid",
+    "slug": "shift-2d-grid",
+    "date": "20 July 2026",
+    "dateIso": "2026-07-20",
+    "formattedDate": "20 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "20-July",
+    "problemFolder": "1260-Shift-2D-Grid",
+    "folderPath": "solutions/July/20-July/1260-Shift-2D-Grid",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/shift-2d-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/shift-2d-grid/",
+    "youtubeUrl": "https://youtu.be/AXx9c4YUOZM?si=rkj8QeQRgQDzQuLY",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "summary": "Shift a 2D grid of size m x n by k steps cyclicly according to the given transformation rules.",
+    "approach": "Flatten the 2D grid concept into 1D indices [0..m*n-1], apply modulo shift (idx + k) % (m * n), and map the new 1D index back to 2D coordinates (newIdx / n, newIdx % n).",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/20-July/1260-Shift-2D-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/20-July/1260-Shift-2D-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/20-July/1260-Shift-2D-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/20-July/1260-Shift-2D-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": 1081,
     "title": "Smallest Subsequence of Distinct Characters",
     "slug": "smallest-subsequence-of-distinct-characters",

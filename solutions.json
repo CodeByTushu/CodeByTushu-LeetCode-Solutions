@@ -3883,6 +3883,56 @@
     }
   },
   {
+    "id": 1081,
+    "title": "Smallest Subsequence of Distinct Characters",
+    "slug": "smallest-subsequence-of-distinct-characters",
+    "date": "19 July 2026",
+    "dateIso": "2026-07-19",
+    "formattedDate": "19 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "19-July",
+    "problemFolder": "1081-Smallest-Subsequence-of-Distinct-Characters",
+    "folderPath": "solutions/July/19-July/1081-Smallest-Subsequence-of-Distinct-Characters",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/",
+    "youtubeUrl": "https://youtu.be/mIf0IhC4LQc?si=T1JVw42oyY5TyS56",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy",
+      "Monotonic Stack"
+    ],
+    "summary": "Return the lexicographically smallest subsequence of a string containing all distinct characters exactly once.",
+    "approach": "Precompute the last occurrence index of each character. Traverse the string while using a monotonic stack and a visited boolean array, greedily popping characters larger than the current character if they appear again later.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(Σ)",
+    "spaceComplexity": "O(Σ)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/19-July/1081-Smallest-Subsequence-of-Distinct-Characters/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/19-July/1081-Smallest-Subsequence-of-Distinct-Characters/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/19-July/1081-Smallest-Subsequence-of-Distinct-Characters/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/19-July/1081-Smallest-Subsequence-of-Distinct-Characters/solution.js"
+      }
+    }
+  },
+  {
     "id": 1979,
     "title": "Find Greatest Common Divisor of Array",
     "slug": "find-greatest-common-divisor-of-array",

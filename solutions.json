@@ -3883,6 +3883,53 @@
     }
   },
   {
+    "id": 3658,
+    "title": "GCD of Odd and Even Sums",
+    "slug": "gcd-of-odd-and-even-sums",
+    "dateIso": "2026-07-15",
+    "formattedDate": "15 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "15-July",
+    "problemFolder": "3658-GCD-of-Odd-and-Even-Sums",
+    "folderPath": "solutions/July/15-July/3658-GCD-of-Odd-and-Even-Sums",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/gcd-of-odd-and-even-sums/",
+    "leetcodeUrl": "https://leetcode.com/problems/gcd-of-odd-and-even-sums/",
+    "youtubeUrl": "https://youtu.be/C7o33wjkeKs?si=4dD_J2qmNbdw3Qrr",
+    "tags": [
+      "Math",
+      "Number Theory"
+    ],
+    "summary": "Compute the greatest common divisor of the sum of the first n positive odd numbers and the sum of the first n positive even numbers.",
+    "approach": "The sum of the first n odd numbers is n^2 and the sum of the first n even numbers is n(n + 1). Since gcd(n^2, n(n + 1)) = n * gcd(n, n + 1) and consecutive integers are coprime, the result is always n.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/15-July/3658-GCD-of-Odd-and-Even-Sums/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/15-July/3658-GCD-of-Odd-and-Even-Sums/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/15-July/3658-GCD-of-Odd-and-Even-Sums/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/15-July/3658-GCD-of-Odd-and-Even-Sums/solution.js"
+      }
+    }
+  },
+  {
     "id": 3336,
     "title": "Find the Number of Subsequences With Equal GCD",
     "slug": "find-the-number-of-subsequences-with-equal-gcd",

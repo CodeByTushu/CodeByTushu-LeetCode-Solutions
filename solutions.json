@@ -3883,6 +3883,56 @@
     }
   },
   {
+    "id": 3517,
+    "title": "Smallest Palindromic Rearrangement I",
+    "slug": "smallest-palindromic-rearrangement-i",
+    "date": "28 July 2026",
+    "dateIso": "2026-07-28",
+    "formattedDate": "28 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "28-July",
+    "problemFolder": "3517-Smallest-Palindromic-Rearrangement-I",
+    "folderPath": "solutions/July/28-July/3517-Smallest-Palindromic-Rearrangement-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/",
+    "youtubeUrl": "https://youtu.be/0Ubxy-GYdXo?si=53zyuP0Nrdx8Wsex",
+    "tags": [
+      "String",
+      "Greedy",
+      "Sorting",
+      "Two Pointers"
+    ],
+    "summary": "Rearrange the characters of a given palindromic string s to form the lexicographically smallest palindrome.",
+    "approach": "Count character frequencies across all 26 lowercase English letters. Greedily append pairs of characters in alphabetical order to the left half, place the unique odd character (if any) at the center, and append the reversed left half to form the final palindrome.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/28-July/3517-Smallest-Palindromic-Rearrangement-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/28-July/3517-Smallest-Palindromic-Rearrangement-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/28-July/3517-Smallest-Palindromic-Rearrangement-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/28-July/3517-Smallest-Palindromic-Rearrangement-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 1464,
     "title": "Maximum Product of Two Elements in an Array",
     "slug": "maximum-product-of-two-elements-in-an-array",

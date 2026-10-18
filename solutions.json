@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3499,
+    "title": "Maximize Active Section with Trade I",
+    "slug": "maximize-active-section-with-trade-i",
+    "date": "21 July 2026",
+    "dateIso": "2026-07-21",
+    "formattedDate": "21 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "21-July",
+    "problemFolder": "3499-Maximize-Active-Section-with-Trade-I",
+    "folderPath": "solutions/July/21-July/3499-Maximize-Active-Section-with-Trade-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
+    "youtubeUrl": "https://youtu.be/djKnC0xMFRQ?si=crs-Mjx_887YYAw9",
+    "tags": [
+      "String",
+      "Greedy",
+      "Two Pointers"
+    ],
+    "summary": "Maximize the count of active sections in a binary string by executing at most one trade that clears a block of 1s between two 0 blocks and flips the resulting merged block to 1s.",
+    "approach": "Scan the string to count total 1s and group consecutive runs of identical characters. Whenever two 0-blocks are separated by a 1-block, trading the intermediate 1-block enables merging both 0-blocks, adding L1 + L2 active sections.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/21-July/3499-Maximize-Active-Section-with-Trade-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/21-July/3499-Maximize-Active-Section-with-Trade-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/21-July/3499-Maximize-Active-Section-with-Trade-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/21-July/3499-Maximize-Active-Section-with-Trade-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 1260,
     "title": "Shift 2D Grid",
     "slug": "shift-2d-grid",

@@ -3883,6 +3883,53 @@
     }
   },
   {
+    "id": 3754,
+    "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+    "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+    "dateIso": "2026-07-07",
+    "formattedDate": "07 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "7-July",
+    "problemFolder": "3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I",
+    "folderPath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
+    "youtubeUrl": "https://youtu.be/GXzw2DnuScQ?si=9ZVaWQGkCqKTQqsM",
+    "tags": [
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Concatenate all non-zero digits of an integer n into a new integer x and return x multiplied by the sum of its digits.",
+    "approach": "Iterate through the digits of n, filtering out zeroes to construct x while concurrently accumulating the digit sum.",
+    "timeComplexity": "O(log10 n)",
+    "auxiliarySpaceComplexity": "O(log10 n)",
+    "spaceComplexity": "O(log10 n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 1288,
     "title": "Remove Covered Intervals",
     "slug": "remove-covered-intervals",

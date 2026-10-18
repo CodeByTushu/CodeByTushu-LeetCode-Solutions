@@ -3883,6 +3883,56 @@
     }
   },
   {
+    "id": 3867,
+    "title": "Sum of GCD of Formed Pairs",
+    "slug": "sum-of-gcd-of-formed-pairs",
+    "dateIso": "2026-07-16",
+    "formattedDate": "16 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "16-July",
+    "problemFolder": "3867-Sum-of-GCD-of-Formed-Pairs",
+    "folderPath": "solutions/July/16-July/3867-Sum-of-GCD-of-Formed-Pairs",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/",
+    "youtubeUrl": "https://youtu.be/ssruc2PL15k?si=OIgm_0ia1aabagPM",
+    "tags": [
+      "Array",
+      "Math",
+      "Number Theory",
+      "Sorting",
+      "Two Pointers"
+    ],
+    "summary": "Compute prefix GCDs with running maximums, sort the resulting array, and find the sum of GCDs of symmetric pairs using two pointers.",
+    "approach": "Iterate through nums maintaining running maximum mx and compute prefixGcd[i] = gcd(nums[i], mx). Sort prefixGcd in non-decreasing order and pair the l-th and r-th elements inward using two pointers, accumulating their GCD.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/16-July/3867-Sum-of-GCD-of-Formed-Pairs/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.js"
+      }
+    }
+  },
+  {
     "id": 3658,
     "title": "GCD of Odd and Even Sums",
     "slug": "gcd-of-odd-and-even-sums",

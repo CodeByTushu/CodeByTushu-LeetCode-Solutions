@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **15** | July Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **16** | July Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **3** | Problems #3658, #1331, #3754 |
-| 🟡 **Medium Problems** | **8** | Problems #1291, #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
+| 🟡 **Medium Problems** | **9** | Problems #3867, #1291, #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
 | 🔴 **Hard Problems** | **4** | Problems #3336, #3534, #1301, #3620 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **15 / 15** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **16 / 16** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3867** | [Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) | <span style="color:#ffc400">**Medium**</span> | 16 Jul 2026 | [Java](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/Solution.java) | [Python](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.py) | [C++](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.cpp) | [JS](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.js) | [Watch Video](https://youtu.be/ssruc2PL15k?si=OIgm_0ia1aabagPM) | [📁 16-July](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/) |
 | **3658** | [GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/) | <span style="color:#10b981">**Easy**</span> | 15 Jul 2026 | [Java](./15-July/3658-GCD-of-Odd-and-Even-Sums/Solution.java) | [Python](./15-July/3658-GCD-of-Odd-and-Even-Sums/solution.py) | [C++](./15-July/3658-GCD-of-Odd-and-Even-Sums/solution.cpp) | [JS](./15-July/3658-GCD-of-Odd-and-Even-Sums/solution.js) | [Watch Video](https://youtu.be/C7o33wjkeKs?si=4dD_J2qmNbdw3Qrr) | [📁 15-July](./15-July/3658-GCD-of-Odd-and-Even-Sums/) |
 | **3336** | [Find the Number of Subsequences With Equal GCD](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/) | <span style="color:#ef4444">**Hard**</span> | 14 Jul 2026 | [Java](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/Solution.java) | [Python](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.py) | [C++](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.cpp) | [JS](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.js) | [Watch Video](https://youtu.be/weuau0mPpt4?si=4tD1xTtwud-elWdk) | [📁 14-July](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/) |
 | **1291** | [Sequential Digits](https://leetcode.com/problems/sequential-digits/) | <span style="color:#ffc400">**Medium**</span> | 13 Jul 2026 | [Java](./13-July/1291-Sequential-Digits/Solution.java) | [Python](./13-July/1291-Sequential-Digits/solution.py) | [C++](./13-July/1291-Sequential-Digits/solution.cpp) | [JS](./13-July/1291-Sequential-Digits/solution.js) | [Watch Video](https://youtu.be/sYN1lfIinxw?si=9nQ2oLjfLTM3VMpd) | [📁 13-July](./13-July/1291-Sequential-Digits/) |
@@ -56,6 +57,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[16 July 2026](./16-July/)**: [#3867 Sum of GCD of Formed Pairs](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[15 July 2026](./15-July/)**: [#3658 GCD of Odd and Even Sums](./15-July/3658-GCD-of-Odd-and-Even-Sums/) — <span style="color:#10b981">Easy</span>
 - 📍 **[14 July 2026](./14-July/)**: [#3336 Find the Number of Subsequences With Equal GCD](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[13 July 2026](./13-July/)**: [#1291 Sequential Digits](./13-July/1291-Sequential-Digits/) — <span style="color:#ffc400">Medium</span>
@@ -76,7 +78,7 @@
 
 ## 🏷️ Problem Categories & Tags in July
 
-- **Array**: [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Array**: [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Binary Search**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Bit Manipulation**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
 - **Breadth-First Search**: [#1291](./13-July/1291-Sequential-Digits/), [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
@@ -86,17 +88,17 @@
 - **Graph**: [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Hash Table**: [#1331](./12-July/1331-Rank-Transform-of-an-Array/)
 - **Heap (Priority Queue)**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
-- **Math**: [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/), [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
+- **Math**: [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/), [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
 - **Matrix**: [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
-- **Number Theory**: [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/)
+- **Number Theory**: [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/)
 - **Prefix Sum**: [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Segment Tree**: [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Shortest Path**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Simulation**: [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
-- **Sorting**: [#1291](./13-July/1291-Sequential-Digits/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1288](./6-July/1288-Remove-Covered-Intervals/)
+- **Sorting**: [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#1291](./13-July/1291-Sequential-Digits/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#1288](./6-July/1288-Remove-Covered-Intervals/)
 - **String**: [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/)
 - **Topological Sort**: [#3620](./3-July/3620-Network-Recovery-Pathways/)
-- **Two Pointers**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
+- **Two Pointers**: [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
 - **Union Find**: [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/)
 
 ---

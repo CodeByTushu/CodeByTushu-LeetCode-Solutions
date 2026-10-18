@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 1979,
+    "title": "Find Greatest Common Divisor of Array",
+    "slug": "find-greatest-common-divisor-of-array",
+    "date": "18 July 2026",
+    "dateIso": "2026-07-18",
+    "formattedDate": "18 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "18-July",
+    "problemFolder": "1979-Find-Greatest-Common-Divisor-of-Array",
+    "folderPath": "solutions/July/18-July/1979-Find-Greatest-Common-Divisor-of-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+    "youtubeUrl": "https://youtu.be/3OjdkRCfohM?si=AKPh09CWRMdBtd5e",
+    "tags": [
+      "Array",
+      "Math",
+      "Number Theory"
+    ],
+    "summary": "Find the greatest common divisor of the minimum and maximum numbers in an array.",
+    "approach": "Scan the array in a single pass to find the minimum and maximum elements, then compute and return their GCD using the Euclidean algorithm.",
+    "timeComplexity": "O(N + log(min A))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/18-July/1979-Find-Greatest-Common-Divisor-of-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/18-July/1979-Find-Greatest-Common-Divisor-of-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/18-July/1979-Find-Greatest-Common-Divisor-of-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/18-July/1979-Find-Greatest-Common-Divisor-of-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": 3312,
     "title": "Sorted GCD Pair Queries",
     "slug": "sorted-gcd-pair-queries",

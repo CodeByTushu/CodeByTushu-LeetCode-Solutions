@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3336,
+    "title": "Find the Number of Subsequences With Equal GCD",
+    "slug": "find-the-number-of-subsequences-with-equal-gcd",
+    "dateIso": "2026-07-14",
+    "formattedDate": "14 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "14-July",
+    "problemFolder": "3336-Find-the-Number-of-Subsequences-With-Equal-GCD",
+    "folderPath": "solutions/July/14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/",
+    "youtubeUrl": "https://youtu.be/weuau0mPpt4?si=4tD1xTtwud-elWdk",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Number Theory"
+    ],
+    "summary": "Find the number of pairs of disjoint non-empty subsequences of nums that have equal GCD modulo 10^9 + 7.",
+    "approach": "Maintain 2D DP table tracking running GCD pairs (g1, g2) for both subsequences. For each element, either skip it or update g1 or g2 via gcd. Sum dp[g][g] for all g >= 1.",
+    "timeComplexity": "O(N * M^2 log M)",
+    "auxiliarySpaceComplexity": "O(M^2)",
+    "spaceComplexity": "O(M^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.js"
+      }
+    }
+  },
+  {
     "id": 1291,
     "title": "Sequential Digits",
     "slug": "sequential-digits",

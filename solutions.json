@@ -3883,6 +3883,54 @@
     }
   },
   {
+    "id": 1301,
+    "title": "Number of Paths with Max Score",
+    "slug": "number-of-paths-with-max-score",
+    "dateIso": "2026-07-05",
+    "formattedDate": "05 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "5-July",
+    "problemFolder": "1301-Number-of-Paths-with-Max-Score",
+    "folderPath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/number-of-paths-with-max-score/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-paths-with-max-score/",
+    "youtubeUrl": "https://youtu.be/E9IDkU781ZM?si=vKUxb-fT4btuBGmZ",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "summary": "Find the maximum sum of numeric characters and number of paths modulo 10^9 + 7 to reach E from S on a grid with obstacles.",
+    "approach": "Use bottom-up dynamic programming from (n-1, n-1) to (0, 0) simultaneously tracking maximum path scores and counts of optimal paths.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(N^2)",
+    "spaceComplexity": "O(N^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.js"
+      }
+    }
+  },
+  {
     "id": 2492,
     "title": "Minimum Score of a Path Between Two Cities",
     "slug": "minimum-score-of-a-path-between-two-cities",

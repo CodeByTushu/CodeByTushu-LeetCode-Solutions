@@ -3883,6 +3883,54 @@
     }
   },
   {
+    "id": 3532,
+    "title": "Path Existence Queries in a Graph I",
+    "slug": "path-existence-queries-in-a-graph-i",
+    "dateIso": "2026-07-09",
+    "formattedDate": "09 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "9-July",
+    "problemFolder": "3532-Path-Existence-Queries-in-a-Graph-I",
+    "folderPath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/path-existence-queries-in-a-graph-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/path-existence-queries-in-a-graph-i/",
+    "youtubeUrl": "https://youtu.be/wy-9brMdD5c?si=SfOpbq6DL7d9Xtku",
+    "tags": [
+      "Array",
+      "Graph",
+      "Union Find"
+    ],
+    "summary": "Determine whether paths exist between pairs of nodes in an undirected graph where edges connect nodes whose values differ by at most maxDiff.",
+    "approach": "Utilize the non-decreasing order of nums: whenever nums[i] - nums[i - 1] > maxDiff, a new connected component begins. Answer queries in O(1) by checking component equivalence.",
+    "timeComplexity": "O(N + Q)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 3756,
     "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
     "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",

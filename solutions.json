@@ -3883,6 +3883,56 @@
     }
   },
   {
+    "id": 3518,
+    "title": "Smallest Palindromic Rearrangement II",
+    "slug": "smallest-palindromic-rearrangement-ii",
+    "date": "29 July 2026",
+    "dateIso": "2026-07-29",
+    "formattedDate": "29 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "29-July",
+    "problemFolder": "3518-Smallest-Palindromic-Rearrangement-II",
+    "folderPath": "solutions/July/29-July/3518-Smallest-Palindromic-Rearrangement-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/",
+    "youtubeUrl": "https://youtu.be/wNEHnZRr3Bo?si=J-MBJDlyfExhL3t_",
+    "tags": [
+      "String",
+      "Math",
+      "Combinatorics",
+      "Greedy"
+    ],
+    "summary": "Find the k-th lexicographically smallest distinct palindromic permutation of a given palindromic string s.",
+    "approach": "Reduce the problem to determining the first half using multinomial permutations with repetition. For each position, greedily test characters in alphabetical order, subtract counts when skipped, and cap combination calculations at 2,000,000 to prevent overflow.",
+    "timeComplexity": "O(N * |Sigma| + |Sigma|^2)",
+    "auxiliarySpaceComplexity": "O(|Sigma|)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/29-July/3518-Smallest-Palindromic-Rearrangement-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/29-July/3518-Smallest-Palindromic-Rearrangement-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/29-July/3518-Smallest-Palindromic-Rearrangement-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/29-July/3518-Smallest-Palindromic-Rearrangement-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3517,
     "title": "Smallest Palindromic Rearrangement I",
     "slug": "smallest-palindromic-rearrangement-i",

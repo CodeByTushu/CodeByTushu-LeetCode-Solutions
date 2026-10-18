@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 2492,
+    "title": "Minimum Score of a Path Between Two Cities",
+    "slug": "minimum-score-of-a-path-between-two-cities",
+    "dateIso": "2026-07-04",
+    "formattedDate": "04 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "4-July",
+    "problemFolder": "2492-Minimum-Score-of-a-Path-Between-Two-Cities",
+    "folderPath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
+    "youtubeUrl": "https://youtu.be/E9IDkU781ZM?si=V7EW90f_v8NOc9tW",
+    "tags": [
+      "Graph",
+      "Breadth-First Search",
+      "Depth-First Search",
+      "Union Find"
+    ],
+    "summary": "Find the minimum score (minimum edge distance) among all roads in a connected component containing city 1 and city n.",
+    "approach": "Traverse the connected component containing city 1 using Breadth-First Search (BFS), tracking the minimum distance across all explored edges.",
+    "timeComplexity": "O(V + E)",
+    "auxiliarySpaceComplexity": "O(V + E)",
+    "spaceComplexity": "O(V + E)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.js"
+      }
+    }
+  },
+  {
     "id": 3620,
     "title": "Network Recovery Pathways",
     "slug": "network-recovery-pathways",

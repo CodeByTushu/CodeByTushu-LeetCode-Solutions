@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **3** | July Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **4** | July Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **0** | — |
-| 🟡 **Medium Problems** | **2** | Problems #3286, #2812 |
+| 🟡 **Medium Problems** | **3** | Problems #2492, #3286, #2812 |
 | 🔴 **Hard Problems** | **1** | Problem #3620 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **3 / 3** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **4 / 4** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2492** | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | <span style="color:#ffc400">**Medium**</span> | 04 Jul 2026 | [Java](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/Solution.java) | [Python](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.py) | [C++](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.cpp) | [JS](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.js) | [Watch Video](https://youtu.be/E9IDkU781ZM?si=V7EW90f_v8NOc9tW) | [📁 4-July](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/) |
 | **3620** | [Network Recovery Pathways](https://leetcode.com/problems/network-recovery-pathways/) | <span style="color:#ef4444">**Hard**</span> | 03 Jul 2026 | [Java](./3-July/3620-Network-Recovery-Pathways/Solution.java) | [Python](./3-July/3620-Network-Recovery-Pathways/solution.py) | [C++](./3-July/3620-Network-Recovery-Pathways/solution.cpp) | [JS](./3-July/3620-Network-Recovery-Pathways/solution.js) | [Watch Video](https://youtu.be/hLHsId2w4sk?si=DAhHFwX3vn5i8N2y) | [📁 3-July](./3-July/3620-Network-Recovery-Pathways/) |
 | **3286** | [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 02 Jul 2026 | [Java](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/Solution.java) | [Python](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.py) | [C++](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.cpp) | [JS](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.js) | [Watch Video](https://youtu.be/qwi9A01vQCM?si=ofSN8LxSltsQYN_t) | [📁 2-July](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/) |
 | **2812** | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 01 Jul 2026 | [Java](./1-July/2812-Find-the-Safest-Path-in-a-Grid/Solution.java) | [Python](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.py) | [C++](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.cpp) | [JS](./1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js) | [Watch Video](https://youtu.be/NvG19Aj7__Q?si=9Jjox02w3nEN8WHc) | [📁 1-July](./1-July/2812-Find-the-Safest-Path-in-a-Grid/) |
@@ -44,6 +45,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[04 July 2026](./4-July/)**: [#2492 Minimum Score of a Path Between Two Cities](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[03 July 2026](./3-July/)**: [#3620 Network Recovery Pathways](./3-July/3620-Network-Recovery-Pathways/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[02 July 2026](./2-July/)**: [#3286 Find a Safe Walk Through a Grid](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[01 July 2026](./1-July/)**: [#2812 Find the Safest Path in a Grid](./1-July/2812-Find-the-Safest-Path-in-a-Grid/) — <span style="color:#ffc400">Medium</span>
@@ -54,13 +56,15 @@
 
 - **Array**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Binary Search**: [#3620](./3-July/3620-Network-Recovery-Pathways/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
-- **Breadth-First Search**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Breadth-First Search**: [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Depth-First Search**: [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/)
 - **Dynamic Programming**: [#3620](./3-July/3620-Network-Recovery-Pathways/)
-- **Graph**: [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
+- **Graph**: [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Heap (Priority Queue)**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Matrix**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Shortest Path**: [#3620](./3-July/3620-Network-Recovery-Pathways/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
 - **Topological Sort**: [#3620](./3-July/3620-Network-Recovery-Pathways/)
+- **Union Find**: [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/)
 
 ---
 

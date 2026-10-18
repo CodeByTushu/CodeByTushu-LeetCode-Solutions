@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **22** | July Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **23** | July Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **5** | Problems #1260, #1979, #3658, #1331, #3754 |
-| 🟡 **Medium Problems** | **11** | Problems #3499, #1081, #3867, #1291, #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
+| 🟡 **Medium Problems** | **12** | Problems #3513, #3499, #1081, #3867, #1291, #2685, #3532, #3756, #1288, #2492, #3286, #2812 |
 | 🔴 **Hard Problems** | **6** | Problems #3501, #3312, #3336, #3534, #1301, #3620 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **22 / 22** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **23 / 23** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3513** | [Number of Unique XOR Triplets I](https://leetcode.com/problems/number-of-unique-xor-triplets-i/) | <span style="color:#ffc400">**Medium**</span> | 23 Jul 2026 | [Java](./23-July/3513-Number-of-Unique-XOR-Triplets-I/Solution.java) | [Python](./23-July/3513-Number-of-Unique-XOR-Triplets-I/solution.py) | [C++](./23-July/3513-Number-of-Unique-XOR-Triplets-I/solution.cpp) | [JS](./23-July/3513-Number-of-Unique-XOR-Triplets-I/solution.js) | [Watch Video](https://youtu.be/4l7KYM-hVA8?si=txV_pVPo-KCtDqvv) | [📁 23-July](./23-July/3513-Number-of-Unique-XOR-Triplets-I/) |
 | **3501** | [Maximize Active Section with Trade II](https://leetcode.com/problems/maximize-active-section-with-trade-ii/) | <span style="color:#ef4444">**Hard**</span> | 22 Jul 2026 | [Java](./22-July/3501-Maximize-Active-Section-with-Trade-II/Solution.java) | [Python](./22-July/3501-Maximize-Active-Section-with-Trade-II/solution.py) | [C++](./22-July/3501-Maximize-Active-Section-with-Trade-II/solution.cpp) | [JS](./22-July/3501-Maximize-Active-Section-with-Trade-II/solution.js) | [Watch Video](https://youtu.be/9kIrRN4puCg?si=YbIMGvSScucVlfdu) | [📁 22-July](./22-July/3501-Maximize-Active-Section-with-Trade-II/) |
 | **3499** | [Maximize Active Section with Trade I](https://leetcode.com/problems/maximize-active-section-with-trade-i/) | <span style="color:#ffc400">**Medium**</span> | 21 Jul 2026 | [Java](./21-July/3499-Maximize-Active-Section-with-Trade-I/Solution.java) | [Python](./21-July/3499-Maximize-Active-Section-with-Trade-I/solution.py) | [C++](./21-July/3499-Maximize-Active-Section-with-Trade-I/solution.cpp) | [JS](./21-July/3499-Maximize-Active-Section-with-Trade-I/solution.js) | [Watch Video](https://youtu.be/djKnC0xMFRQ?si=crs-Mjx_887YYAw9) | [📁 21-July](./21-July/3499-Maximize-Active-Section-with-Trade-I/) |
 | **1260** | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | <span style="color:#10b981">**Easy**</span> | 20 Jul 2026 | [Java](./20-July/1260-Shift-2D-Grid/Solution.java) | [Python](./20-July/1260-Shift-2D-Grid/solution.py) | [C++](./20-July/1260-Shift-2D-Grid/solution.cpp) | [JS](./20-July/1260-Shift-2D-Grid/solution.js) | [Watch Video](https://youtu.be/AXx9c4YUOZM?si=rkj8QeQRgQDzQuLY) | [📁 20-July](./20-July/1260-Shift-2D-Grid/) |
@@ -63,6 +64,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[23 July 2026](./23-July/)**: [#3513 Number of Unique XOR Triplets I](./23-July/3513-Number-of-Unique-XOR-Triplets-I/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[22 July 2026](./22-July/)**: [#3501 Maximize Active Section with Trade II](./22-July/3501-Maximize-Active-Section-with-Trade-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[21 July 2026](./21-July/)**: [#3499 Maximize Active Section with Trade I](./21-July/3499-Maximize-Active-Section-with-Trade-I/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[20 July 2026](./20-July/)**: [#1260 Shift 2D Grid](./20-July/1260-Shift-2D-Grid/) — <span style="color:#10b981">Easy</span>
@@ -90,9 +92,9 @@
 
 ## 🏷️ Problem Categories & Tags in July
 
-- **Array**: [#1260](./20-July/1260-Shift-2D-Grid/), [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
+- **Array**: [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#1260](./20-July/1260-Shift-2D-Grid/), [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#1331](./12-July/1331-Rank-Transform-of-an-Array/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3532](./9-July/3532-Path-Existence-Queries-in-a-Graph-I/), [#1288](./6-July/1288-Remove-Covered-Intervals/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Binary Search**: [#3501](./22-July/3501-Maximize-Active-Section-with-Trade-II/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/), [#3620](./3-July/3620-Network-Recovery-Pathways/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
-- **Bit Manipulation**: [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
+- **Bit Manipulation**: [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#3534](./10-July/3534-Path-Existence-Queries-in-a-Graph-II/)
 - **Breadth-First Search**: [#1291](./13-July/1291-Sequential-Digits/), [#2685](./11-July/2685-Count-the-Number-of-Complete-Components/), [#2492](./4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Combinatorics**: [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/)
 - **Counting**: [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/)
@@ -103,7 +105,7 @@
 - **Greedy**: [#3499](./21-July/3499-Maximize-Active-Section-with-Trade-I/), [#1081](./19-July/1081-Smallest-Subsequence-of-Distinct-Characters/)
 - **Hash Table**: [#1331](./12-July/1331-Rank-Transform-of-an-Array/)
 - **Heap (Priority Queue)**: [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/)
-- **Math**: [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/), [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
+- **Math**: [#3513](./23-July/3513-Number-of-Unique-XOR-Triplets-I/), [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/), [#3756](./8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/), [#3754](./7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/)
 - **Matrix**: [#1260](./20-July/1260-Shift-2D-Grid/), [#1301](./5-July/1301-Number-of-Paths-with-Max-Score/), [#3286](./2-July/3286-Find-a-Safe-Walk-Through-a-Grid/), [#2812](./1-July/2812-Find-the-Safest-Path-in-a-Grid/)
 - **Monotonic Stack**: [#1081](./19-July/1081-Smallest-Subsequence-of-Distinct-Characters/)
 - **Number Theory**: [#1979](./18-July/1979-Find-Greatest-Common-Divisor-of-Array/), [#3312](./17-July/3312-Sorted-GCD-Pair-Queries/), [#3867](./16-July/3867-Sum-of-GCD-of-Formed-Pairs/), [#3658](./15-July/3658-GCD-of-Odd-and-Even-Sums/), [#3336](./14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/)

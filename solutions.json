@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3513,
+    "title": "Number of Unique XOR Triplets I",
+    "slug": "number-of-unique-xor-triplets-i",
+    "date": "23 July 2026",
+    "dateIso": "2026-07-23",
+    "formattedDate": "23 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "23-July",
+    "problemFolder": "3513-Number-of-Unique-XOR-Triplets-I",
+    "folderPath": "solutions/July/23-July/3513-Number-of-Unique-XOR-Triplets-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/",
+    "youtubeUrl": "https://youtu.be/4l7KYM-hVA8?si=txV_pVPo-KCtDqvv",
+    "tags": [
+      "Array",
+      "Math",
+      "Bit Manipulation"
+    ],
+    "summary": "Determine the number of unique XOR triplet values possible by taking the XOR sum of three elements from a permutation of numbers 1 to n.",
+    "approach": "Analyze cases: for n=1 return 1, for n=2 return 2. For n >= 3, all numbers from 0 up to the next power of 2 minus 1 are formable; compute the smallest power of 2 strictly greater than n.",
+    "timeComplexity": "O(log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/23-July/3513-Number-of-Unique-XOR-Triplets-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/23-July/3513-Number-of-Unique-XOR-Triplets-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/23-July/3513-Number-of-Unique-XOR-Triplets-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/23-July/3513-Number-of-Unique-XOR-Triplets-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 3501,
     "title": "Maximize Active Section with Trade II",
     "slug": "maximize-active-section-with-trade-ii",

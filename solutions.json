@@ -1,5 +1,59 @@
 [
   {
+    "id": "1569",
+    "title": "Number of Ways to Reorder Array to Get Same BST",
+    "slug": "number-of-ways-to-reorder-array-to-get-same-bst",
+    "date": "18 October 2026",
+    "dateIso": "2026-10-18",
+    "formattedDate": "18 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "18-October",
+    "problemFolder": "1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST",
+    "folderPath": "solutions/October/18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
+    "youtubeUrl": "https://youtu.be/ivpejwbyliY?si=Dk7VL6VZPP0j9mHQ",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Tree",
+      "Combinatorics",
+      "Binary Tree",
+      "Recursion",
+      "Modular Arithmetic"
+    ],
+    "summary": "Find the number of ways to reorder an array such that the constructed BST is identical to the one formed by the original array modulo 10^9 + 7.",
+    "approach": "Identify root as first element, divide remainder into left and right subtrees. Count interleavings via combinations C(L+R, L) multiplied by recursive subtree ways, subtracting 1 for original permutation.",
+    "timeComplexity": "O(N²)",
+    "auxiliarySpaceComplexity": "O(N²)",
+    "spaceComplexity": "O(N²)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/solution.js"
+      }
+    }
+  },
+  {
     "id": "3551",
     "title": "Minimum Swaps to Sort by Digit Sum",
     "slug": "minimum-swaps-to-sort-by-digit-sum",

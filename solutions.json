@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 2685,
+    "title": "Count the Number of Complete Components",
+    "slug": "count-the-number-of-complete-components",
+    "dateIso": "2026-07-11",
+    "formattedDate": "11 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "11-July",
+    "problemFolder": "2685-Count-the-Number-of-Complete-Components",
+    "folderPath": "solutions/July/11-July/2685-Count-the-Number-of-Complete-Components",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-the-number-of-complete-components/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-the-number-of-complete-components/",
+    "youtubeUrl": "https://youtu.be/_g8uFFU5Mtk?si=khRMqI7MY97PJcXl",
+    "tags": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Graph"
+    ],
+    "summary": "Count the number of connected components in an undirected graph where every vertex has an edge to every other vertex in its component.",
+    "approach": "Traverse each connected component using Breadth-First Search (BFS) to gather all vertices. A component with k vertices is complete if and only if every vertex in it has a degree of exactly k - 1.",
+    "timeComplexity": "O(V + E)",
+    "auxiliarySpaceComplexity": "O(V + E)",
+    "spaceComplexity": "O(V + E)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/11-July/2685-Count-the-Number-of-Complete-Components/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/11-July/2685-Count-the-Number-of-Complete-Components/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/11-July/2685-Count-the-Number-of-Complete-Components/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/11-July/2685-Count-the-Number-of-Complete-Components/solution.js"
+      }
+    }
+  },
+  {
     "id": 3534,
     "title": "Path Existence Queries in a Graph II",
     "slug": "path-existence-queries-in-a-graph-ii",

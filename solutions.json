@@ -3883,6 +3883,56 @@
     }
   },
   {
+    "id": 3620,
+    "title": "Network Recovery Pathways",
+    "slug": "network-recovery-pathways",
+    "dateIso": "2026-07-03",
+    "formattedDate": "03 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "3-July",
+    "problemFolder": "3620-Network-Recovery-Pathways",
+    "folderPath": "solutions/July/3-July/3620-Network-Recovery-Pathways",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/network-recovery-pathways/",
+    "leetcodeUrl": "https://leetcode.com/problems/network-recovery-pathways/",
+    "youtubeUrl": "https://youtu.be/hLHsId2w4sk?si=DAhHFwX3vn5i8N2y",
+    "tags": [
+      "Binary Search",
+      "Dynamic Programming",
+      "Graph",
+      "Topological Sort",
+      "Shortest Path"
+    ],
+    "summary": "Find the maximum path score (minimum edge cost) among all valid paths from 0 to n - 1 in a DAG within total budget k.",
+    "approach": "Binary search on the minimum edge weight threshold and verify reachability within total cost k using DAG topological shortest path.",
+    "timeComplexity": "O((V + E) log(maxCost))",
+    "auxiliarySpaceComplexity": "O(V + E)",
+    "spaceComplexity": "O(V + E)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.js"
+      }
+    }
+  },
+  {
     "id": 3286,
     "title": "Find a Safe Walk Through a Grid",
     "slug": "find-a-safe-walk-through-a-grid",

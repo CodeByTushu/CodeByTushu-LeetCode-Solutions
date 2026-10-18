@@ -3883,6 +3883,54 @@
     }
   },
   {
+    "id": 1331,
+    "title": "Rank Transform of an Array",
+    "slug": "rank-transform-of-an-array",
+    "dateIso": "2026-07-12",
+    "formattedDate": "12 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "12-July",
+    "problemFolder": "1331-Rank-Transform-of-an-Array",
+    "folderPath": "solutions/July/12-July/1331-Rank-Transform-of-an-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/rank-transform-of-an-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/rank-transform-of-an-array/",
+    "youtubeUrl": "https://youtu.be/LFkjoNaZd5A?si=lYzHBFD5OVozX8Jh",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "summary": "Replace each element in an array with its 1-based rank, where larger elements receive larger ranks and equal elements share the same rank.",
+    "approach": "Sort a copy of the array and map each distinct value to its 1-based rank using a Hash Map. Then replace elements in the original array with their corresponding ranks.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/12-July/1331-Rank-Transform-of-an-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/12-July/1331-Rank-Transform-of-an-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/12-July/1331-Rank-Transform-of-an-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/12-July/1331-Rank-Transform-of-an-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": 2685,
     "title": "Count the Number of Complete Components",
     "slug": "count-the-number-of-complete-components",

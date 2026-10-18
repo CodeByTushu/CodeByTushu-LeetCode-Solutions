@@ -3883,6 +3883,55 @@
     }
   },
   {
+    "id": 3756,
+    "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+    "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+    "dateIso": "2026-07-08",
+    "formattedDate": "08 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "8-July",
+    "problemFolder": "3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II",
+    "folderPath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
+    "youtubeUrl": "https://youtu.be/-vnZ4qg9DkQ?si=OIqqOmAPUoPdBJ3G",
+    "tags": [
+      "Segment Tree",
+      "Prefix Sum",
+      "String",
+      "Math"
+    ],
+    "summary": "Process range queries on a digit string to extract non-zero digits, form concatenated values modulo 10^9 + 7, and multiply by their digit sums.",
+    "approach": "Build a Segment Tree or use Prefix Arrays with modular arithmetic and powers of 10 to evaluate range concatenated values and digit sums efficiently.",
+    "timeComplexity": "O(N + Q log N) or O(N + Q)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3754,
     "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
     "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",

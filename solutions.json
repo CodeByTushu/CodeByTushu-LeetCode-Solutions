@@ -3883,6 +3883,56 @@
     }
   },
   {
+    "id": 3501,
+    "title": "Maximize Active Section with Trade II",
+    "slug": "maximize-active-section-with-trade-ii",
+    "date": "22 July 2026",
+    "dateIso": "2026-07-22",
+    "formattedDate": "22 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "22-July",
+    "problemFolder": "3501-Maximize-Active-Section-with-Trade-II",
+    "folderPath": "solutions/July/22-July/3501-Maximize-Active-Section-with-Trade-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximize-active-section-with-trade-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-active-section-with-trade-ii/",
+    "youtubeUrl": "https://youtu.be/9kIrRN4puCg?si=YbIMGvSScucVlfdu",
+    "tags": [
+      "String",
+      "Binary Search",
+      "Segment Tree",
+      "Prefix Sum"
+    ],
+    "summary": "Process range queries on a binary string to find the maximum possible active sections after performing at most one trade that merges adjacent 0-blocks inside each query range.",
+    "approach": "Run-length encode the string to identify candidate 1-blocks flanked by 0-blocks. For each query [l, r], binary search finds candidate ranges; query internal candidates via Sparse Table (RMQ) in O(1) and evaluate partially clipped boundaries.",
+    "timeComplexity": "O(N log N + Q)",
+    "auxiliarySpaceComplexity": "O(N log N)",
+    "spaceComplexity": "O(N log N + Q)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/22-July/3501-Maximize-Active-Section-with-Trade-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/22-July/3501-Maximize-Active-Section-with-Trade-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/22-July/3501-Maximize-Active-Section-with-Trade-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/22-July/3501-Maximize-Active-Section-with-Trade-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3499,
     "title": "Maximize Active Section with Trade I",
     "slug": "maximize-active-section-with-trade-i",

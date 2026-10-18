@@ -3883,6 +3883,59 @@
     }
   },
   {
+    "id": 3312,
+    "title": "Sorted GCD Pair Queries",
+    "slug": "sorted-gcd-pair-queries",
+    "date": "17 July 2026",
+    "dateIso": "2026-07-17",
+    "formattedDate": "17 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "17-July",
+    "problemFolder": "3312-Sorted-GCD-Pair-Queries",
+    "folderPath": "solutions/July/17-July/3312-Sorted-GCD-Pair-Queries",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/sorted-gcd-pair-queries/",
+    "leetcodeUrl": "https://leetcode.com/problems/sorted-gcd-pair-queries/",
+    "youtubeUrl": "https://youtu.be/Psee_5soKek?si=pKdWvWyD-tdnSOM3",
+    "tags": [
+      "Array",
+      "Math",
+      "Binary Search",
+      "Combinatorics",
+      "Number Theory",
+      "Counting",
+      "Prefix Sum"
+    ],
+    "summary": "Find the GCD of all pairs, sort them ascending, and answer queries asking for the k-th smallest GCD pair.",
+    "approach": "Count multiples for each divisor g in O(M log M) to calculate total pairs divisible by g. Use backwards sieve-like inclusion-exclusion to determine exact GCD frequencies. Build prefix sums and answer each query using binary search in O(log M).",
+    "timeComplexity": "O(N + M log M + Q log M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/17-July/3312-Sorted-GCD-Pair-Queries/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/17-July/3312-Sorted-GCD-Pair-Queries/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/17-July/3312-Sorted-GCD-Pair-Queries/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/17-July/3312-Sorted-GCD-Pair-Queries/solution.js"
+      }
+    }
+  },
+  {
     "id": 3867,
     "title": "Sum of GCD of Formed Pairs",
     "slug": "sum-of-gcd-of-formed-pairs",

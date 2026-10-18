@@ -3883,6 +3883,53 @@
     }
   },
   {
+    "id": 1288,
+    "title": "Remove Covered Intervals",
+    "slug": "remove-covered-intervals",
+    "dateIso": "2026-07-06",
+    "formattedDate": "06 Jul 2026",
+    "year": "2026",
+    "month": "July",
+    "dayFolder": "6-July",
+    "problemFolder": "1288-Remove-Covered-Intervals",
+    "folderPath": "solutions/July/6-July/1288-Remove-Covered-Intervals",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/remove-covered-intervals/",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-covered-intervals/",
+    "youtubeUrl": "https://youtu.be/80ycan6T6jk?si=olTBuqXYrQg_lk-T",
+    "tags": [
+      "Array",
+      "Sorting"
+    ],
+    "summary": "Remove all intervals that are covered by another interval in the list and return the count of remaining intervals.",
+    "approach": "Sort intervals by start ascending and end descending, then greedily count intervals whose end exceeds the maximum end seen so far.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.js"
+      }
+    }
+  },
+  {
     "id": 1301,
     "title": "Number of Paths with Max Score",
     "slug": "number-of-paths-with-max-score",

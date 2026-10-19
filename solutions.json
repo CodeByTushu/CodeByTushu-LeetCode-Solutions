@@ -5460,6 +5460,58 @@
     }
   },
   {
+    "id": 3559,
+    "title": "Number of Ways to Assign Edge Weights II",
+    "slug": "number-of-ways-to-assign-edge-weights-ii",
+    "date": "12 June 2026",
+    "dateIso": "2026-06-12",
+    "formattedDate": "12 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "12-June",
+    "problemFolder": "3559-Number-of-Ways-to-Assign-Edge-Weights-II",
+    "folderPath": "solutions/June/12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/",
+    "youtubeUrl": "https://youtu.be/7RiQJUbG1Kc?si=8h_nBxHlAQxRMdmN",
+    "tags": [
+      "Binary Lifting",
+      "Breadth-First Search / Depth-First Search",
+      "Combinatorics",
+      "Math",
+      "Tree",
+      "Tree / Binary Tree"
+    ],
+    "summary": "Find the number of ways to assign weights 1 or 2 to edges on the path between query pairs (u, v) such that the total path cost is odd.",
+    "approach": "Compute path length L = depth[u] + depth[v] - 2 * depth[LCA(u, v)] using Binary Lifting. If L == 0, answer is 0. If L >= 1, the first L - 1 edges have 2^(L - 1) assignments and the final edge's parity choice is uniquely determined, giving 2^(L - 1) % (10^9 + 7).",
+    "timeComplexity": "O((N + Q) log N)",
+    "auxiliarySpaceComplexity": "O(N log N + Q)",
+    "spaceComplexity": "O(N log N + Q)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3558,
     "title": "Number of Ways to Assign Edge Weights I",
     "slug": "number-of-ways-to-assign-edge-weights-i",

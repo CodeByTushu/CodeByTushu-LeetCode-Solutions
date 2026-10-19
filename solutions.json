@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 3689,
+    "title": "Maximum Total Subarray Value I",
+    "slug": "maximum-total-subarray-value-i",
+    "date": "09 June 2026",
+    "dateIso": "2026-06-09",
+    "formattedDate": "09 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "9-June",
+    "problemFolder": "3689-Maximum-Total-Subarray-Value-I",
+    "folderPath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
+    "youtubeUrl": "https://youtu.be/i55hAAnD0Is?si=aS1uEZSA1wGjtwGX",
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy"
+    ],
+    "summary": "Choose exactly k non-empty subarrays to maximize the sum of max - min values, allowing repeated selection.",
+    "approach": "Any chosen subarray's value is at most max(nums) - min(nums). Since duplicate subarray selection is permitted, choose the subarray containing both extremes all k times, giving (max - min) * k in O(N) time and O(1) space.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 2161,
     "title": "Partition Array According to Given Pivot",
     "slug": "partition-array-according-to-given-pivot",

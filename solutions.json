@@ -5460,6 +5460,56 @@
     }
   },
   {
+    "id": 1840,
+    "title": "Maximum Building Height",
+    "slug": "maximum-building-height",
+    "date": "20 June 2026",
+    "dateIso": "2026-06-20",
+    "formattedDate": "20 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "20-June",
+    "problemFolder": "1840-Maximum-Building-Height",
+    "folderPath": "solutions/June/20-June/1840-Maximum-Building-Height",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximum-building-height/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-building-height/",
+    "youtubeUrl": "https://youtu.be/WJUIHRNH65s?si=nlY6thDe_hTxC11A",
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Find the maximum possible height of the tallest building under adjacent height constraints and specific building height limits.",
+    "approach": "Add boundary restrictions at 1 and n, sort restrictions, perform two-pass forward and backward relaxation, then calculate peak heights between adjacent restrictions.",
+    "timeComplexity": "O(M log M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/20-June/1840-Maximum-Building-Height/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/20-June/1840-Maximum-Building-Height/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/20-June/1840-Maximum-Building-Height/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/20-June/1840-Maximum-Building-Height/solution.js"
+      }
+    }
+  },
+  {
     "id": 1732,
     "title": "Find the Highest Altitude",
     "slug": "find-the-highest-altitude",

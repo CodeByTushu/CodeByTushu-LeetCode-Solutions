@@ -5460,6 +5460,54 @@
     }
   },
   {
+    "id": 1732,
+    "title": "Find the Highest Altitude",
+    "slug": "find-the-highest-altitude",
+    "date": "19 June 2026",
+    "dateIso": "2026-06-19",
+    "formattedDate": "19 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "19-June",
+    "problemFolder": "1732-Find-the-Highest-Altitude",
+    "folderPath": "solutions/June/19-June/1732-Find-the-Highest-Altitude",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-the-highest-altitude/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-highest-altitude/",
+    "youtubeUrl": "https://youtu.be/sOtYOSroows?si=coS-WYZe0fCy1XkI",
+    "tags": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "summary": "Find the highest altitude reached by a biker on a road trip given net altitude changes.",
+    "approach": "Maintain a running prefix sum of net gains starting from altitude 0, tracking and returning the maximum peak value encountered.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/19-June/1732-Find-the-Highest-Altitude/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/19-June/1732-Find-the-Highest-Altitude/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/19-June/1732-Find-the-Highest-Altitude/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/19-June/1732-Find-the-Highest-Altitude/solution.js"
+      }
+    }
+  },
+  {
     "id": 1344,
     "title": "Angle Between Hands of a Clock",
     "slug": "angle-between-hands-of-a-clock",

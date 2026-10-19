@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **18** | June Daily Series In Progress 🚀 |
-| 🟢 **Easy Problems** | **4** | Problems #3838, #2574, #3633, #2144 |
+| **Total Solved Problems** | **19** | June Daily Series In Progress 🚀 |
+| 🟢 **Easy Problems** | **5** | Problems #1732, #3838, #2574, #3633, #2144 |
 | 🟡 **Medium Problems** | **10** | Problems #1344, #3612, #2095, #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
 | 🔴 **Hard Problems** | **4** | Problems #3614, #3559, #3691, #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **18 / 18** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **19 / 19** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1732** | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | <span style="color:#10b981">**Easy**</span> | 19 Jun 2026 | [Java](./19-June/1732-Find-the-Highest-Altitude/Solution.java) | [Python](./19-June/1732-Find-the-Highest-Altitude/solution.py) | [C++](./19-June/1732-Find-the-Highest-Altitude/solution.cpp) | [JS](./19-June/1732-Find-the-Highest-Altitude/solution.js) | [Watch Video](https://youtu.be/sOtYOSroows?si=coS-WYZe0fCy1XkI) | [📁 19-June](./19-June/1732-Find-the-Highest-Altitude/) |
 | **1344** | [Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/) | <span style="color:#ffc400">**Medium**</span> | 18 Jun 2026 | [Java](./18-June/1344-Angle-Between-Hands-of-a-Clock/Solution.java) | [Python](./18-June/1344-Angle-Between-Hands-of-a-Clock/solution.py) | [C++](./18-June/1344-Angle-Between-Hands-of-a-Clock/solution.cpp) | [JS](./18-June/1344-Angle-Between-Hands-of-a-Clock/solution.js) | [Watch Video](https://youtu.be/lU5YQ5kKC_E?si=XSubHKr0YodMPPXm) | [📁 18-June](./18-June/1344-Angle-Between-Hands-of-a-Clock/) |
 | **3614** | [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | <span style="color:#ef4444">**Hard**</span> | 17 Jun 2026 | [Java](./17-June/3614-Process-String-with-Special-Operations-II/Solution.java) | [Python](./17-June/3614-Process-String-with-Special-Operations-II/solution.py) | [C++](./17-June/3614-Process-String-with-Special-Operations-II/solution.cpp) | [JS](./17-June/3614-Process-String-with-Special-Operations-II/solution.js) | [Watch Video](https://youtu.be/TleL2gNlTAo?si=-TyNaAkuPteJLONx) | [📁 17-June](./17-June/3614-Process-String-with-Special-Operations-II/) |
 | **3612** | [Process String with Special Operations I](https://leetcode.com/problems/process-string-with-special-operations-i/) | <span style="color:#ffc400">**Medium**</span> | 16 Jun 2026 | [Java](./16-June/3612-Process-String-with-Special-Operations-I/Solution.java) | [Python](./16-June/3612-Process-String-with-Special-Operations-I/solution.py) | [C++](./16-June/3612-Process-String-with-Special-Operations-I/solution.cpp) | [JS](./16-June/3612-Process-String-with-Special-Operations-I/solution.js) | [Watch Video](https://youtu.be/cRZmZxVi3nc?si=KhMsd3PN_s4vmJFK) | [📁 16-June](./16-June/3612-Process-String-with-Special-Operations-I/) |
@@ -59,6 +60,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[19 June 2026](./19-June/)**: [#1732 Find the Highest Altitude](./19-June/1732-Find-the-Highest-Altitude/) — <span style="color:#10b981">Easy</span>
 - 📍 **[18 June 2026](./18-June/)**: [#1344 Angle Between Hands of a Clock](./18-June/1344-Angle-Between-Hands-of-a-Clock/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[17 June 2026](./17-June/)**: [#3614 Process String with Special Operations II](./17-June/3614-Process-String-with-Special-Operations-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[16 June 2026](./16-June/)**: [#3612 Process String with Special Operations I](./16-June/3612-Process-String-with-Special-Operations-I/) — <span style="color:#ffc400">Medium</span>
@@ -82,7 +84,7 @@
 
 ## 🏷️ Problem Categories & Tags in June
 
-- **Array**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/), [#2574](./6-June/2574-Left-and-Right-Sum-Differences/), [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
+- **Array**: [#1732](./19-June/1732-Find-the-Highest-Altitude/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/), [#2574](./6-June/2574-Left-and-Right-Sum-Differences/), [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Binary Lifting**: [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/)
 - **Binary Search**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Binary Tree**: [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
@@ -97,7 +99,7 @@
 - **Linked List**: [#2095](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/), [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
 - **Math**: [#1344](./18-June/1344-Angle-Between-Hands-of-a-Clock/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
-- **Prefix Sum**: [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
+- **Prefix Sum**: [#1732](./19-June/1732-Find-the-Highest-Altitude/), [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
 - **Simulation**: [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 - **Sorting**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Stack**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)

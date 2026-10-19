@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **14** | June Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **15** | June Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **4** | Problems #3838, #2574, #3633, #2144 |
-| 🟡 **Medium Problems** | **7** | Problems #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
+| 🟡 **Medium Problems** | **8** | Problems #2095, #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
 | 🔴 **Hard Problems** | **3** | Problems #3559, #3691, #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **14 / 14** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **15 / 15** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2095** | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | <span style="color:#ffc400">**Medium**</span> | 15 Jun 2026 | [Java](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/Solution.java) | [Python](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/solution.py) | [C++](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/solution.cpp) | [JS](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/solution.js) | [Watch Video](https://youtu.be/b688RLBzCN4?si=DTTRzKGA5awZy8gQ) | [📁 15-June](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/) |
 | **2130** | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | <span style="color:#ffc400">**Medium**</span> | 14 Jun 2026 | [Java](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/Solution.java) | [Python](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.py) | [C++](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.cpp) | [JS](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.js) | [Watch Video](https://youtu.be/an7c2jBXsF0?si=SBXUlKSEHdvE-dco) | [📁 14-June](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/) |
 | **3838** | [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | <span style="color:#10b981">**Easy**</span> | 13 Jun 2026 | [Java](./13-June/3838-Weighted-Word-Mapping/Solution.java) | [Python](./13-June/3838-Weighted-Word-Mapping/solution.py) | [C++](./13-June/3838-Weighted-Word-Mapping/solution.cpp) | [JS](./13-June/3838-Weighted-Word-Mapping/solution.js) | [Watch Video](https://youtu.be/Sv0sgqKjSqk?si=mdSMVKp_x6Ryi1W10) | [📁 13-June](./13-June/3838-Weighted-Word-Mapping/) |
 | **3559** | [Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/) | <span style="color:#ef4444">**Hard**</span> | 12 Jun 2026 | [Java](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/Solution.java) | [Python](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.py) | [C++](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.cpp) | [JS](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.js) | [Watch Video](https://youtu.be/7RiQJUbG1Kc?si=8h_nBxHlAQxRMdmN) | [📁 12-June](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/) |
@@ -55,6 +56,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[15 June 2026](./15-June/)**: [#2095 Delete the Middle Node of a Linked List](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[14 June 2026](./14-June/)**: [#2130 Maximum Twin Sum of a Linked List](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[13 June 2026](./13-June/)**: [#3838 Weighted Word Mapping](./13-June/3838-Weighted-Word-Mapping/) — <span style="color:#10b981">Easy</span>
 - 📍 **[12 June 2026](./12-June/)**: [#3559 Number of Ways to Assign Edge Weights II](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/) — <span style="color:#ef4444">Hard</span>
@@ -85,7 +87,7 @@
 - **Greedy**: [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Hash Table**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
 - **Heap (Priority Queue)**: [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/)
-- **Linked List**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
+- **Linked List**: [#2095](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/), [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
 - **Math**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Prefix Sum**: [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
@@ -94,7 +96,7 @@
 - **Stack**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
 - **String**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Tree**: [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
-- **Two Pointers**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
+- **Two Pointers**: [#2095](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/), [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 
 ---
 

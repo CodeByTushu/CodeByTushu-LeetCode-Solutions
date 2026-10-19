@@ -5460,6 +5460,56 @@
     }
   },
   {
+    "id": 3737,
+    "title": "Count Subarrays With Majority Element I",
+    "slug": "count-subarrays-with-majority-element-i",
+    "date": "25 June 2026",
+    "dateIso": "2026-06-25",
+    "formattedDate": "25 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "25-June",
+    "problemFolder": "3737-Count-Subarrays-With-Majority-Element-I",
+    "folderPath": "solutions/June/25-June/3737-Count-Subarrays-With-Majority-Element-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-subarrays-with-majority-element-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-subarrays-with-majority-element-i/",
+    "youtubeUrl": "https://youtu.be/mrevhEsRkzg?si=nlv7mtIClT8TKMpT",
+    "tags": [
+      "Array",
+      "Counting",
+      "Prefix Sum",
+      "Hash Table"
+    ],
+    "summary": "Return the number of subarrays in nums where target is the majority element (appears strictly more than half of the times).",
+    "approach": "Iterate over all possible starting indices i and expand ending indices j while tracking the frequency of target. Check if cnt * 2 > len in O(1) time per subarray.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/25-June/3737-Count-Subarrays-With-Majority-Element-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/25-June/3737-Count-Subarrays-With-Majority-Element-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/25-June/3737-Count-Subarrays-With-Majority-Element-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/25-June/3737-Count-Subarrays-With-Majority-Element-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 3700,
     "title": "Number of ZigZag Arrays II",
     "slug": "number-of-zigzag-arrays-ii",

@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 1189,
+    "title": "Maximum Number of Balloons",
+    "slug": "maximum-number-of-balloons",
+    "date": "22 June 2026",
+    "dateIso": "2026-06-22",
+    "formattedDate": "22 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "22-June",
+    "problemFolder": "1189-Maximum-Number-of-Balloons",
+    "folderPath": "solutions/June/22-June/1189-Maximum-Number-of-Balloons",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/maximum-number-of-balloons/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-balloons/",
+    "youtubeUrl": "https://youtu.be/sTxKOFHh_TU?si=LpG6fYcoAY3GpPq_",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "summary": "Given a string text, return the maximum number of instances of the word \"balloon\" that can be formed using the characters in text at most once.",
+    "approach": "Count the frequency of each character in text. Since \"balloon\" requires 1 'b', 1 'a', 2 'l's, 2 'o's, and 1 'n', return the bottleneck: min(count['b'], count['a'], count['l'] / 2, count['o'] / 2, count['n']).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/22-June/1189-Maximum-Number-of-Balloons/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/22-June/1189-Maximum-Number-of-Balloons/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/22-June/1189-Maximum-Number-of-Balloons/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/22-June/1189-Maximum-Number-of-Balloons/solution.js"
+      }
+    }
+  },
+  {
     "id": 1833,
     "title": "Maximum Ice Cream Bars",
     "slug": "maximum-ice-cream-bars",

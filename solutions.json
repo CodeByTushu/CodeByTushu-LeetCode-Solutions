@@ -5460,6 +5460,53 @@
     }
   },
   {
+    "id": 1967,
+    "title": "Number of Strings That Appear as Substrings in Word",
+    "slug": "number-of-strings-that-appear-as-substrings-in-word",
+    "date": "29 June 2026",
+    "dateIso": "2026-06-29",
+    "formattedDate": "29 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "29-June",
+    "problemFolder": "1967-Number-of-Strings-That-Appear-as-Substrings-in-Word",
+    "folderPath": "solutions/June/29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/",
+    "youtubeUrl": "https://youtu.be/xv20n7ZUwB4?si=jj35Jf38wbXWf_eA",
+    "tags": [
+      "String"
+    ],
+    "summary": "Count how many strings in an array of patterns appear as substrings in a given target word.",
+    "approach": "Iterate through each pattern in patterns and check if word contains pattern as a substring using the native substring search method, incrementing the counter whenever true.",
+    "timeComplexity": "O(N * M * L)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/solution.js"
+      }
+    }
+  },
+  {
     "id": 1846,
     "title": "Maximum Element After Decreasing and Rearranging",
     "slug": "maximum-element-after-decreasing-and-rearranging",

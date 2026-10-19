@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **28** | June Daily Series In Progress 🚀 |
-| 🟢 **Easy Problems** | **6** | Problems #1189, #1732, #3838, #2574, #3633, #2144 |
+| **Total Solved Problems** | **29** | June Daily Series In Progress 🚀 |
+| 🟢 **Easy Problems** | **7** | Problems #1967, #1189, #1732, #3838, #2574, #3633, #2144 |
 | 🟡 **Medium Problems** | **14** | Problems #1846, #3020, #3737, #1833, #1344, #3612, #2095, #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
 | 🔴 **Hard Problems** | **8** | Problems #3739, #3700, #3699, #1840, #3614, #3559, #3691, #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **28 / 28** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **29 / 29** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1967** | [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) | <span style="color:#10b981">**Easy**</span> | 29 Jun 2026 | [Java](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/Solution.java) | [Python](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/solution.py) | [C++](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/solution.cpp) | [JS](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/solution.js) | [Watch Video](https://youtu.be/xv20n7ZUwB4?si=jj35Jf38wbXWf_eA) | [📁 29-June](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/) |
 | **1846** | [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) | <span style="color:#ffc400">**Medium**</span> | 28 Jun 2026 | [Java](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/Solution.java) | [Python](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/solution.py) | [C++](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/solution.cpp) | [JS](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/solution.js) | [Watch Video](https://youtu.be/IZNyIfgbRmc?si=OkpwNgWd55IcPyV6) | [📁 28-June](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/) |
 | **3020** | [Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | <span style="color:#ffc400">**Medium**</span> | 27 Jun 2026 | [Java](./27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/Solution.java) | [Python](./27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/solution.py) | [C++](./27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/solution.cpp) | [JS](./27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/solution.js) | [Watch Video](https://youtu.be/m5DVJ6ZEbDk?si=Kt-sW7k2HPW1bm6U) | [📁 27-June](./27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/) |
 | **3739** | [Count Subarrays With Majority Element II](https://leetcode.com/problems/count-subarrays-with-majority-element-ii/) | <span style="color:#ef4444">**Hard**</span> | 26 Jun 2026 | [Java](./26-June/3739-Count-Subarrays-With-Majority-Element-II/Solution.java) | [Python](./26-June/3739-Count-Subarrays-With-Majority-Element-II/solution.py) | [C++](./26-June/3739-Count-Subarrays-With-Majority-Element-II/solution.cpp) | [JS](./26-June/3739-Count-Subarrays-With-Majority-Element-II/solution.js) | [Watch Video](https://youtu.be/6sFE5_T_DsE?si=9Utt09w88az4aWMM) | [📁 26-June](./26-June/3739-Count-Subarrays-With-Majority-Element-II/) |
@@ -69,6 +70,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[29 June 2026](./29-June/)**: [#1967 Number of Strings That Appear as Substrings in Word](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/) — <span style="color:#10b981">Easy</span>
 - 📍 **[28 June 2026](./28-June/)**: [#1846 Maximum Element After Decreasing and Rearranging](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[27 June 2026](./27-June/)**: [#3020 Find the Maximum Number of Elements in Subset](./27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[26 June 2026](./26-June/)**: [#3739 Count Subarrays With Majority Element II](./26-June/3739-Count-Subarrays-With-Majority-Element-II/) — <span style="color:#ef4444">Hard</span>
@@ -125,7 +127,7 @@
 - **Simulation**: [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 - **Sorting**: [#1846](./28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/), [#1833](./21-June/1833-Maximum-Ice-Cream-Bars/), [#1840](./20-June/1840-Maximum-Building-Height/), [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Stack**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
-- **String**: [#1189](./22-June/1189-Maximum-Number-of-Balloons/), [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
+- **String**: [#1967](./29-June/1967-Number-of-Strings-That-Appear-as-Substrings-in-Word/), [#1189](./22-June/1189-Maximum-Number-of-Balloons/), [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Tree**: [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
 - **Two Pointers**: [#2095](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/), [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 

@@ -5458,5 +5458,54 @@
         "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js"
       }
     }
+  },
+  {
+    "id": 2144,
+    "title": "Minimum Cost of Buying Candies With Discount",
+    "slug": "minimum-cost-of-buying-candies-with-discount",
+    "date": "01 June 2026",
+    "dateIso": "2026-06-01",
+    "formattedDate": "01 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "1-June",
+    "problemFolder": "2144-Minimum-Cost-of-Buying-Candies-With-Discount",
+    "folderPath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
+    "youtubeUrl": "https://youtu.be/N7CyU4tE96g?si=dF31v_3u982-EJ_D",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Find the minimum cost of buying all candies when every third candy is free if its cost is less than or equal to the two purchased candies.",
+    "approach": "Sort the candies in descending order and greedily pair the two most expensive candies to take the third most expensive for free.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.js"
+      }
+    }
   }
 ]

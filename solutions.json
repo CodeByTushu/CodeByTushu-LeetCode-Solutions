@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 3753,
+    "title": "Total Waviness of Numbers in Range II",
+    "slug": "total-waviness-of-numbers-in-range-ii",
+    "date": "05 June 2026",
+    "dateIso": "2026-06-05",
+    "formattedDate": "05 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "5-June",
+    "problemFolder": "3753-Total-Waviness-of-Numbers-in-Range-II",
+    "folderPath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
+    "youtubeUrl": "https://youtu.be/vvz487n8tqo?si=wOGmhlM-zyUvZrHB",
+    "tags": [
+      "Dynamic Programming",
+      "Math",
+      "String"
+    ],
+    "summary": "Calculate the sum of peaks and valleys across all digits for each number within an inclusive range up to 10^15 using Digit DP.",
+    "approach": "Decompose the range via prefix subtraction and use memoized Digit DP tracking position, preceding two digits, accumulated waviness, and tight constraint.",
+    "timeComplexity": "O(L * 11 * 11 * 20 * 10)",
+    "auxiliarySpaceComplexity": "O(L * 11 * 11 * 20)",
+    "spaceComplexity": "O(L * 11 * 11 * 20)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3751,
     "title": "Total Waviness of Numbers in Range I",
     "slug": "total-waviness-of-numbers-in-range-i",

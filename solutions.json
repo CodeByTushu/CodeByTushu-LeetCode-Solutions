@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 1846,
+    "title": "Maximum Element After Decreasing and Rearranging",
+    "slug": "maximum-element-after-decreasing-and-rearranging",
+    "date": "28 June 2026",
+    "dateIso": "2026-06-28",
+    "formattedDate": "28 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "28-June",
+    "problemFolder": "1846-Maximum-Element-After-Decreasing-and-Rearranging",
+    "folderPath": "solutions/June/28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/",
+    "youtubeUrl": "https://youtu.be/IZNyIfgbRmc?si=OkpwNgWd55IcPyV6",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Rearrange and decrease elements of an array such that the first element is 1 and adjacent differences are at most 1, maximizing the largest value.",
+    "approach": "Sort the array in ascending order. Initialize the first element to 1, and for each subsequent element take min(arr[i], prev + 1).",
+    "timeComplexity": "O(N * log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/28-June/1846-Maximum-Element-After-Decreasing-and-Rearranging/solution.js"
+      }
+    }
+  },
+  {
     "id": 3020,
     "title": "Find the Maximum Number of Elements in Subset",
     "slug": "find-the-maximum-number-of-elements-in-subset",

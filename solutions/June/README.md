@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **16** | June Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **17** | June Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **4** | Problems #3838, #2574, #3633, #2144 |
 | 🟡 **Medium Problems** | **9** | Problems #3612, #2095, #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
-| 🔴 **Hard Problems** | **3** | Problems #3559, #3691, #3753 |
+| 🔴 **Hard Problems** | **4** | Problems #3614, #3559, #3691, #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **16 / 16** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **17 / 17** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3614** | [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | <span style="color:#ef4444">**Hard**</span> | 17 Jun 2026 | [Java](./17-June/3614-Process-String-with-Special-Operations-II/Solution.java) | [Python](./17-June/3614-Process-String-with-Special-Operations-II/solution.py) | [C++](./17-June/3614-Process-String-with-Special-Operations-II/solution.cpp) | [JS](./17-June/3614-Process-String-with-Special-Operations-II/solution.js) | [Watch Video](https://youtu.be/TleL2gNlTAo?si=-TyNaAkuPteJLONx) | [📁 17-June](./17-June/3614-Process-String-with-Special-Operations-II/) |
 | **3612** | [Process String with Special Operations I](https://leetcode.com/problems/process-string-with-special-operations-i/) | <span style="color:#ffc400">**Medium**</span> | 16 Jun 2026 | [Java](./16-June/3612-Process-String-with-Special-Operations-I/Solution.java) | [Python](./16-June/3612-Process-String-with-Special-Operations-I/solution.py) | [C++](./16-June/3612-Process-String-with-Special-Operations-I/solution.cpp) | [JS](./16-June/3612-Process-String-with-Special-Operations-I/solution.js) | [Watch Video](https://youtu.be/cRZmZxVi3nc?si=KhMsd3PN_s4vmJFK) | [📁 16-June](./16-June/3612-Process-String-with-Special-Operations-I/) |
 | **2095** | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | <span style="color:#ffc400">**Medium**</span> | 15 Jun 2026 | [Java](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/Solution.java) | [Python](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/solution.py) | [C++](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/solution.cpp) | [JS](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/solution.js) | [Watch Video](https://youtu.be/b688RLBzCN4?si=DTTRzKGA5awZy8gQ) | [📁 15-June](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/) |
 | **2130** | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | <span style="color:#ffc400">**Medium**</span> | 14 Jun 2026 | [Java](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/Solution.java) | [Python](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.py) | [C++](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.cpp) | [JS](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.js) | [Watch Video](https://youtu.be/an7c2jBXsF0?si=SBXUlKSEHdvE-dco) | [📁 14-June](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/) |
@@ -57,6 +58,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[17 June 2026](./17-June/)**: [#3614 Process String with Special Operations II](./17-June/3614-Process-String-with-Special-Operations-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[16 June 2026](./16-June/)**: [#3612 Process String with Special Operations I](./16-June/3612-Process-String-with-Special-Operations-I/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[15 June 2026](./15-June/)**: [#2095 Delete the Middle Node of a Linked List](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[14 June 2026](./14-June/)**: [#2130 Maximum Twin Sum of a Linked List](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/) — <span style="color:#ffc400">Medium</span>
@@ -93,10 +95,10 @@
 - **Math**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Prefix Sum**: [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
-- **Simulation**: [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
+- **Simulation**: [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 - **Sorting**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Stack**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
-- **String**: [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
+- **String**: [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Tree**: [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
 - **Two Pointers**: [#2095](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/), [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 

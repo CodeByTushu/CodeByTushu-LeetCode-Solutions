@@ -5460,6 +5460,54 @@
     }
   },
   {
+    "id": 3614,
+    "title": "Process String with Special Operations II",
+    "slug": "process-string-with-special-operations-ii",
+    "date": "17 June 2026",
+    "dateIso": "2026-06-17",
+    "formattedDate": "17 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "17-June",
+    "problemFolder": "3614-Process-String-with-Special-Operations-II",
+    "folderPath": "solutions/June/17-June/3614-Process-String-with-Special-Operations-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/process-string-with-special-operations-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/process-string-with-special-operations-ii/",
+    "youtubeUrl": "https://youtu.be/TleL2gNlTAo?si=-TyNaAkuPteJLONx",
+    "tags": [
+      "Simulation",
+      "String"
+    ],
+    "summary": "Find the k-th character of the string after processing append, delete, duplicate, and reverse operations.",
+    "approach": "Precompute the string lengths after every operation with a forward pass capped at 10^15 + 5, then trace index k backwards to identify the generating operation and character.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/17-June/3614-Process-String-with-Special-Operations-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/17-June/3614-Process-String-with-Special-Operations-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/17-June/3614-Process-String-with-Special-Operations-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/17-June/3614-Process-String-with-Special-Operations-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3612,
     "title": "Process String with Special Operations I",
     "slug": "process-string-with-special-operations-i",

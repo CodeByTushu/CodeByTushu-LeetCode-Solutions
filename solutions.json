@@ -5460,6 +5460,56 @@
     }
   },
   {
+    "id": 3635,
+    "title": "Earliest Finish Time for Land and Water Rides II",
+    "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+    "date": "03 June 2026",
+    "dateIso": "2026-06-03",
+    "formattedDate": "03 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "3-June",
+    "problemFolder": "3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II",
+    "folderPath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/",
+    "youtubeUrl": "https://youtu.be/syRdhF0DdvI?si=2KpngkVoZ_3yoBAS",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Sorting",
+      "Prefix / Suffix Precomputation"
+    ],
+    "summary": "Find the minimum completion time to experience one land ride and one water ride under large constraints.",
+    "approach": "Sort the second category of rides and use binary search combined with prefix minimum durations and suffix minimum opening finish times to find the optimal second ride in O(log M) time.",
+    "timeComplexity": "O((N + M) log(max(N, M)))",
+    "auxiliarySpaceComplexity": "O(N + M)",
+    "spaceComplexity": "O(N + M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3633,
     "title": "Earliest Finish Time for Land and Water Rides I",
     "slug": "earliest-finish-time-for-land-and-water-rides-i",

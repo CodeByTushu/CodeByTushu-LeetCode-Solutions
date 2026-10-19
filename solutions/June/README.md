@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **2** | June Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **3** | June Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **2** | Problems #3633, #2144 |
-| 🟡 **Medium Problems** | **0** | — |
+| 🟡 **Medium Problems** | **1** | Problem #3635 |
 | 🔴 **Hard Problems** | **0** | — |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **2 / 2** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **3 / 3** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3635** | [Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | <span style="color:#ffc400">**Medium**</span> | 03 Jun 2026 | [Java](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/Solution.java) | [Python](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.py) | [C++](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.cpp) | [JS](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.js) | [Watch Video](https://youtu.be/syRdhF0DdvI?si=2KpngkVoZ_3yoBAS) | [📁 3-June](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/) |
 | **3633** | [Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | <span style="color:#10b981">**Easy**</span> | 02 Jun 2026 | [Java](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/Solution.java) | [Python](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.py) | [C++](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.cpp) | [JS](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.js) | [Watch Video](https://youtu.be/AV8AV8ZijLQ?si=rO517E_kh05jDVvk) | [📁 2-June](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/) |
 | **2144** | [Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/) | <span style="color:#10b981">**Easy**</span> | 01 Jun 2026 | [Java](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/Solution.java) | [Python](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.py) | [C++](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.cpp) | [JS](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.js) | [Watch Video](https://youtu.be/N7CyU4tE96g?si=dF31v_3u982-EJ_D) | [📁 1-June](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/) |
 
@@ -43,6 +44,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[03 June 2026](./3-June/)**: [#3635 Earliest Finish Time for Land and Water Rides II](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[02 June 2026](./2-June/)**: [#3633 Earliest Finish Time for Land and Water Rides I](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/) — <span style="color:#10b981">Easy</span>
 - 📍 **[01 June 2026](./1-June/)**: [#2144 Minimum Cost of Buying Candies With Discount](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/) — <span style="color:#10b981">Easy</span>
 
@@ -50,10 +52,12 @@
 
 ## 🏷️ Problem Categories & Tags in June
 
-- **Array**: [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
+- **Array**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
+- **Binary Search**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Enumeration**: [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/)
 - **Greedy**: [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
-- **Sorting**: [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
+- **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
+- **Sorting**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 
 ---
 

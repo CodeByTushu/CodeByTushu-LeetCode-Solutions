@@ -28,7 +28,7 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌷 **March** | Q1 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse March](./March/) |
 | 🌿 **April** | Q2 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse April](./April/) |
 | ☀️ **May** | Q2 (Early Summer) | — | 📁 Planned / Ingesting | [📂 Browse May](./May/) |
-| 🌊 **June** | Q2 (Summer) | **10 Solved** | 🟢 **Active Series** | [👉 **Browse June Solutions (10 Days)**](./June/) |
+| 🌊 **June** | Q2 (Summer) | **11 Solved** | 🟢 **Active Series** | [👉 **Browse June Solutions (11 Days)**](./June/) |
 | 🍉 **July** | Q3 (Mid Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse July Solutions (31 Days)**](./July/) |
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |
 | 🍂 **September** | Q3 (Autumn) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse September Solutions (30 Days)**](./September/) |
@@ -75,7 +75,7 @@ solutions/
 <p align="center">
   <a href="../README.md"><strong>⬅️ Return to Main Repository</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="./October/"><strong>🎃 Browse October Solutions (17 Solved)</strong></a>
+  <a href="./October/"><strong>🎃 Browse October Solutions (19 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

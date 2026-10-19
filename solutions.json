@@ -5460,6 +5460,56 @@
     }
   },
   {
+    "id": 3558,
+    "title": "Number of Ways to Assign Edge Weights I",
+    "slug": "number-of-ways-to-assign-edge-weights-i",
+    "date": "11 June 2026",
+    "dateIso": "2026-06-11",
+    "formattedDate": "11 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "11-June",
+    "problemFolder": "3558-Number-of-Ways-to-Assign-Edge-Weights-I",
+    "folderPath": "solutions/June/11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/",
+    "youtubeUrl": "https://youtu.be/7RiQJUbG1Kc?si=8h_nBxHlAQxRMdmN",
+    "tags": [
+      "Tree",
+      "Breadth-First Search / Depth-First Search",
+      "Math",
+      "Combinatorics"
+    ],
+    "summary": "Find the maximum depth D from root node 1 to any node x in an undirected tree, then compute the number of edge weight assignments on that path yielding an odd total cost.",
+    "approach": "Run BFS from root node 1 to find the maximum depth D. On any path of length D, each of the first D - 1 edges can be assigned weight 1 or 2 arbitrarily (2^(D - 1) ways), while the final edge has exactly one choice that guarantees an odd sum. Hence, return 2^(D - 1) % (10^9 + 7).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 3691,
     "title": "Maximum Total Subarray Value II",
     "slug": "maximum-total-subarray-value-ii",

@@ -28,11 +28,11 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌷 **March** | Q1 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse March](./March/) |
 | 🌿 **April** | Q2 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse April](./April/) |
 | ☀️ **May** | Q2 (Early Summer) | — | 📁 Planned / Ingesting | [📂 Browse May](./May/) |
-| 🌊 **June** | Q2 (Summer) | **5 Solved** | 🟢 **Active Series** | [👉 **Browse June Solutions (5 Days)**](./June/) |
+| 🌊 **June** | Q2 (Summer) | **6 Solved** | 🟢 **Active Series** | [👉 **Browse June Solutions (6 Days)**](./June/) |
 | 🍉 **July** | Q3 (Mid Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse July Solutions (31 Days)**](./July/) |
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |
 | 🍂 **September** | Q3 (Autumn) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse September Solutions (30 Days)**](./September/) |
-| 🎃 **October** | **Q4 (Autumn)** | **18 Solved** | 🟢 **Active Series** | [👉 **Browse October Solutions (18 Days)**](./October/) |
+| 🎃 **October** | **Q4 (Autumn)** | **19 Solved** | 🟢 **Active Series** | [👉 **Browse October Solutions (19 Days)**](./October/) |
 | 🍁 **November** | Q4 (Late Autumn) | — | 📁 Upcoming Series | [📂 Browse November](./November/) |
 | 🎄 **December** | Q4 (Winter Finale) | — | 📁 Upcoming Series | [📂 Browse December](./December/) |
 
@@ -40,16 +40,16 @@ Select any month below to jump straight to that month's folder and view its date
 
 ## ⚡ Current Active Series: October 2026
 
-The **October 2026 Daily Series** is actively running! All solutions for Days 01 through 18 are fully solved and verified across all four languages with dedicated video explanations.
+The **October 2026 Daily Series** is actively running! All solutions for Days 01 through 19 are fully solved and verified across all four languages with dedicated video explanations.
 
 👉 **[Click here to view the complete October 2026 Archive](./October/)**
 
 ### October Quick Highlights:
-- 🟢 **Easy Problems (4):** #20, #1021, #2778, #2913
+- 🟢 **Easy Problems (5):** #20, #1021, #2778, #2913, #2089
 - 🟡 **Medium Problems (9):** #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551
 - 🔴 **Hard Problems (5):** #32, #301, #2897, #2916, #1569
 - 💻 **Language Coverage:** Java, Python, C++, JavaScript (100%)
-- 🎥 **Video Solutions:** 18 YouTube walkthroughs attached
+- 🎥 **Video Solutions:** 19 YouTube walkthroughs attached
 
 ---
 

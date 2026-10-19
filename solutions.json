@@ -1,5 +1,56 @@
 [
   {
+    "id": "2089",
+    "title": "Find Target Indices After Sorting Array",
+    "slug": "find-target-indices-after-sorting-array",
+    "date": "19 October 2026",
+    "dateIso": "2026-10-19",
+    "formattedDate": "19 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "19-October",
+    "problemFolder": "2089-Find-Target-Indices-After-Sorting-Array",
+    "folderPath": "solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+    "youtubeUrl": "https://www.youtube.com/@codebytushu",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Binary Search",
+      "Counting",
+      "Frequency Counting"
+    ],
+    "summary": "Find all target indices after sorting the array in non-decreasing order.",
+    "approach": "Count elements strictly smaller than target (less) and elements equal to target (equal). Target indices in the sorted array are precisely less to less + equal - 1.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": "1569",
     "title": "Number of Ways to Reorder Array to Get Same BST",
     "slug": "number-of-ways-to-reorder-array-to-get-same-bst",

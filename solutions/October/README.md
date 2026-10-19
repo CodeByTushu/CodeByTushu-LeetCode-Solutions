@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **18** | Days 01 through 18 October completed |
-| 🟢 **Easy Problems** | **4** | Problems #20, #1021, #2778, #2913 |
+| **Total Solved Problems** | **19** | Days 01 through 19 October completed |
+| 🟢 **Easy Problems** | **5** | Problems #20, #1021, #2778, #2913, #2089 |
 | 🟡 **Medium Problems** | **9** | Problems #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551 |
 | 🔴 **Hard Problems** | **5** | Problems #32, #301, #2897, #2916, #1569 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **18 / 18** | Step-by-step logic explained on YouTube |
+| 🎥 **Video Walkthroughs** | **18 / 19** | 18 published, 1 coming soon |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2089** | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | <span style="color:#10b981">**Easy**</span> | 19 Oct 2026 | [Java](./19-October/2089-Find-Target-Indices-After-Sorting-Array/Solution.java) | [Python](./19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.py) | [C++](./19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.cpp) | [JS](./19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.js) | [Coming Soon](https://www.youtube.com/@codebytushu) | [📁 19-October](./19-October/2089-Find-Target-Indices-After-Sorting-Array/) |
 | **1569** | [Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/) | <span style="color:#ef4444">**Hard**</span> | 18 Oct 2026 | [Java](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/Solution.java) | [Python](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/solution.py) | [C++](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/solution.cpp) | [JS](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/solution.js) | [Watch Video](https://youtu.be/ivpejwbyliY?si=Dk7VL6VZPP0j9mHQ) | [📁 18-October](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/) |
 | **3551** | [Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | <span style="color:#ffc400">**Medium**</span> | 17 Oct 2026 | [Java](./17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/Solution.java) | [Python](./17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/solution.py) | [C++](./17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/solution.cpp) | [JS](./17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/solution.js) | [Watch Video](https://youtu.be/jjMwisPTHhE?si=880_8v7Hdqx7VLOv) | [📁 17-October](./17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/) |
 | **2916** | [Subarrays Distinct Element Sum of Squares II](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/) | <span style="color:#ef4444">**Hard**</span> | 16 Oct 2026 | [Java](./16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/Solution.java) | [Python](./16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/solution.py) | [C++](./16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/solution.cpp) | [JS](./16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/solution.js) | [Watch Video](https://youtu.be/fCsrMnIoxUU?si=HHZbINBY9Qff_bip) | [📁 16-October](./16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/) |
@@ -57,6 +58,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[19 October 2026](./19-October/)**: [#2089 Find Target Indices After Sorting Array](./19-October/2089-Find-Target-Indices-After-Sorting-Array/) — <span style="color:#10b981">Easy</span>
 - 📍 **[18 October 2026](./18-October/)**: [#1569 Number of Ways to Reorder Array to Get Same BST](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[17 October 2026](./17-October/)**: [#3551 Minimum Swaps to Sort by Digit Sum](./17-October/3551-Minimum-Swaps-to-Sort-by-Digit-Sum/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[16 October 2026](./16-October/)**: [#2916 Subarrays Distinct Element Sum of Squares II](./16-October/2916-Subarrays-Distinct-Element-Sum-of-Squares-II/) — <span style="color:#ef4444">Hard</span>
@@ -80,12 +82,14 @@
 
 ## 🏷️ Problem Categories & Tags in October
 
-- **Array**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
+- **Array**: [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Backtracking**: [#301](./7-October/301-Remove-Invalid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/)
+- **Binary Search**: [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/)
 - **Bit Manipulation**: [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#856](./5-October/856-Score-of-Parentheses/)
 - **Breadth-First Search / Depth-First Search**: [#301](./7-October/301-Remove-Invalid-Parentheses/)
 - **Bucket Sort / Frequency Array**: [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Combinatorics**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/)
+- **Counting / Frequency Counting**: [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/)
 - **Divide and Conquer**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/)
 - **Dynamic Programming**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/)
 - **Enumeration**: [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
@@ -93,7 +97,7 @@
 - **Hash Table**: [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
 - **Math**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/), [#856](./5-October/856-Score-of-Parentheses/)
 - **Simulation**: [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
-- **Sorting**: [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
+- **Sorting**: [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Stack**: [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)
 - **String**: [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#301](./7-October/301-Remove-Invalid-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)
 - **Tree / Binary Tree / Binary Search Tree**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/)

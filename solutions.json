@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 3020,
+    "title": "Find the Maximum Number of Elements in Subset",
+    "slug": "find-the-maximum-number-of-elements-in-subset",
+    "date": "27 June 2026",
+    "dateIso": "2026-06-27",
+    "formattedDate": "27 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "27-June",
+    "problemFolder": "3020-Find-the-Maximum-Number-of-Elements-in-Subset",
+    "folderPath": "solutions/June/27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/",
+    "youtubeUrl": "https://youtu.be/m5DVJ6ZEbDk?si=Kt-sW7k2HPW1bm6U",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math"
+    ],
+    "summary": "Find the maximum number of elements in a subset that can be arranged in a symmetric pattern of repeated squarings [x, x^2, ..., x^k, ..., x^2, x].",
+    "approach": "Count number frequencies with a hash map. For 1, take the largest odd count. For x > 1, repeatedly square while counts are at least 2, and append a center peak if available.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/27-June/3020-Find-the-Maximum-Number-of-Elements-in-Subset/solution.js"
+      }
+    }
+  },
+  {
     "id": 3739,
     "title": "Count Subarrays With Majority Element II",
     "slug": "count-subarrays-with-majority-element-ii",

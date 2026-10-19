@@ -5460,6 +5460,54 @@
     }
   },
   {
+    "id": 3699,
+    "title": "Number of ZigZag Arrays I",
+    "slug": "number-of-zigzag-arrays-i",
+    "date": "23 June 2026",
+    "dateIso": "2026-06-23",
+    "formattedDate": "23 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "23-June",
+    "problemFolder": "3699-Number-of-ZigZag-Arrays-I",
+    "folderPath": "solutions/June/23-June/3699-Number-of-ZigZag-Arrays-I",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/number-of-zigzag-arrays-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-zigzag-arrays-i/",
+    "youtubeUrl": "https://youtu.be/UH8fnw74zOM?si=byz9K09Mzx3g8L8F",
+    "tags": [
+      "Dynamic Programming",
+      "Prefix Sum"
+    ],
+    "summary": "Return the total number of valid ZigZag arrays of length n where each element lies in [l, r], no two adjacent elements are equal, and no three consecutive elements form a strictly monotonic sequence, modulo 10^9 + 7.",
+    "approach": "Maintain DP states up[i] and down[i] for arrays ending at value index i where the last step was increasing or decreasing. Optimize transitions using running prefix and suffix sums in O(m) time per length.",
+    "timeComplexity": "O(N * M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/23-June/3699-Number-of-ZigZag-Arrays-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/23-June/3699-Number-of-ZigZag-Arrays-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/23-June/3699-Number-of-ZigZag-Arrays-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/23-June/3699-Number-of-ZigZag-Arrays-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 1189,
     "title": "Maximum Number of Balloons",
     "slug": "maximum-number-of-balloons",

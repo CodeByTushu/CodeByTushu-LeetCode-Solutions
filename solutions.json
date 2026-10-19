@@ -5460,6 +5460,57 @@
     }
   },
   {
+    "id": 3838,
+    "title": "Weighted Word Mapping",
+    "slug": "weighted-word-mapping",
+    "date": "13 June 2026",
+    "dateIso": "2026-06-13",
+    "formattedDate": "13 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "13-June",
+    "problemFolder": "3838-Weighted-Word-Mapping",
+    "folderPath": "solutions/June/13-June/3838-Weighted-Word-Mapping",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/weighted-word-mapping/",
+    "leetcodeUrl": "https://leetcode.com/problems/weighted-word-mapping/",
+    "youtubeUrl": "https://youtu.be/Sv0sgqKjSqk?si=mdSMVKp_x6Ryi1W10",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Simulation",
+      "String"
+    ],
+    "summary": "Calculate the sum of character weights for each word modulo 26, map the remainder to a character in reverse alphabetical order, and concatenate the results.",
+    "approach": "For each word, sum the weights of each character using the weights array, compute remainder modulo 26, map to 'z' - rem, and append to the output string.",
+    "timeComplexity": "O(L)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/13-June/3838-Weighted-Word-Mapping/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/13-June/3838-Weighted-Word-Mapping/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/13-June/3838-Weighted-Word-Mapping/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/13-June/3838-Weighted-Word-Mapping/solution.js"
+      }
+    }
+  },
+  {
     "id": 3559,
     "title": "Number of Ways to Assign Edge Weights II",
     "slug": "number-of-ways-to-assign-edge-weights-ii",

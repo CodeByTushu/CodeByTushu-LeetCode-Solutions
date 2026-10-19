@@ -5460,6 +5460,54 @@
     }
   },
   {
+    "id": 3612,
+    "title": "Process String with Special Operations I",
+    "slug": "process-string-with-special-operations-i",
+    "date": "16 June 2026",
+    "dateIso": "2026-06-16",
+    "formattedDate": "16 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "16-June",
+    "problemFolder": "3612-Process-String-with-Special-Operations-I",
+    "folderPath": "solutions/June/16-June/3612-Process-String-with-Special-Operations-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/process-string-with-special-operations-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/process-string-with-special-operations-i/",
+    "youtubeUrl": "https://youtu.be/cRZmZxVi3nc?si=KhMsd3PN_s4vmJFK",
+    "tags": [
+      "Simulation",
+      "String"
+    ],
+    "summary": "Process a string by appending lowercase letters, removing the last character on '*', duplicating on '#', and reversing on '%'.",
+    "approach": "Simulate the operations step by step using a dynamic string or character array, handling append, delete, duplicate, and reverse operations directly.",
+    "timeComplexity": "O(N * L)",
+    "auxiliarySpaceComplexity": "O(L)",
+    "spaceComplexity": "O(L)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/16-June/3612-Process-String-with-Special-Operations-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/16-June/3612-Process-String-with-Special-Operations-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/16-June/3612-Process-String-with-Special-Operations-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/16-June/3612-Process-String-with-Special-Operations-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 2095,
     "title": "Delete the Middle Node of a Linked List",
     "slug": "delete-the-middle-node-of-a-linked-list",

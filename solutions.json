@@ -5460,6 +5460,56 @@
     }
   },
   {
+    "id": 2196,
+    "title": "Create Binary Tree From Descriptions",
+    "slug": "create-binary-tree-from-descriptions",
+    "date": "07 June 2026",
+    "dateIso": "2026-06-07",
+    "formattedDate": "07 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "7-June",
+    "problemFolder": "2196-Create-Binary-Tree-From-Descriptions",
+    "folderPath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
+    "leetcodeUrl": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
+    "youtubeUrl": "https://youtu.be/UaDBQ6OUJIA?si=szg_mC4SdhJGXRDi",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Tree",
+      "Binary Tree"
+    ],
+    "summary": "Construct a binary tree from parent-child-isLeft descriptions and return its root.",
+    "approach": "Use a hash map to instantiate and look up tree nodes by value, establishing parent-child links. Concurrently record all child node values in a hash set. The tree root is the unique parent that never appears in the children set.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/solution.js"
+      }
+    }
+  },
+  {
     "id": 2574,
     "title": "Left and Right Sum Differences",
     "slug": "left-and-right-sum-differences",

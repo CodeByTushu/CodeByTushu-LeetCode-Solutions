@@ -182,7 +182,7 @@ Daily LeetCode solutions are organized into dedicated monthly archives. Click on
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **2089** | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | <span style="color:#10b981">**Easy**</span> | 19 Oct 2026 | [Java](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/Solution.java) | [Python](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.py) | [C++](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.cpp) | [JS](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.js) | [Coming Soon](https://www.youtube.com/@codebytushu) | [README](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/README.md) |
+| **2089** | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | <span style="color:#10b981">**Easy**</span> | 19 Oct 2026 | [Java](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/Solution.java) | [Python](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.py) | [C++](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.cpp) | [JS](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.js) | [Watch Video](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq) | [README](./solutions/October/19-October/2089-Find-Target-Indices-After-Sorting-Array/README.md) |
 
 <p align="center">
   <a href="./solutions/October/">

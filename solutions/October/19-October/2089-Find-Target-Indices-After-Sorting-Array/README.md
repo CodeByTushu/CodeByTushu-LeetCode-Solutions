@@ -3,7 +3,7 @@
 - **Publication Date:** 19 October 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/find-target-indices-after-sorting-array/](https://leetcode.com/problems/find-target-indices-after-sorting-array/)
-- **YouTube Solution:** [Coming Soon](https://www.youtube.com/@codebytushu)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq)
 
 ---
 
@@ -104,7 +104,7 @@ However, we can do much better in linear $\mathcal{O}(N)$ time without actually 
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [Coming Soon](https://www.youtube.com/@codebytushu)
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq)
 
 ---
 

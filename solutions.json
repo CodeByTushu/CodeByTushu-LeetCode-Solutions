@@ -5460,6 +5460,54 @@
     }
   },
   {
+    "id": 1344,
+    "title": "Angle Between Hands of a Clock",
+    "slug": "angle-between-hands-of-a-clock",
+    "date": "18 June 2026",
+    "dateIso": "2026-06-18",
+    "formattedDate": "18 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "18-June",
+    "problemFolder": "1344-Angle-Between-Hands-of-a-Clock",
+    "folderPath": "solutions/June/18-June/1344-Angle-Between-Hands-of-a-Clock",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/angle-between-hands-of-a-clock/",
+    "leetcodeUrl": "https://leetcode.com/problems/angle-between-hands-of-a-clock/",
+    "youtubeUrl": "https://youtu.be/lU5YQ5kKC_E?si=XSubHKr0YodMPPXm",
+    "tags": [
+      "Math",
+      "Geometry"
+    ],
+    "summary": "Calculate the smaller angle in degrees formed between the hour and minute hands of an analog clock.",
+    "approach": "Compute the continuous angle of the hour hand (30 degrees per hour plus 0.5 degrees per minute) and minute hand (6 degrees per minute) relative to 12:00, then find the minimum of their absolute difference and 360 minus that difference.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/18-June/1344-Angle-Between-Hands-of-a-Clock/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/18-June/1344-Angle-Between-Hands-of-a-Clock/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/18-June/1344-Angle-Between-Hands-of-a-Clock/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/18-June/1344-Angle-Between-Hands-of-a-Clock/solution.js"
+      }
+    }
+  },
+  {
     "id": 3614,
     "title": "Process String with Special Operations II",
     "slug": "process-string-with-special-operations-ii",

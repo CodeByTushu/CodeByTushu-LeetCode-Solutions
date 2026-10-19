@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **13** | June Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **14** | June Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **4** | Problems #3838, #2574, #3633, #2144 |
-| 🟡 **Medium Problems** | **6** | Problems #3558, #3689, #2161, #2196, #3751, #3635 |
+| 🟡 **Medium Problems** | **7** | Problems #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
 | 🔴 **Hard Problems** | **3** | Problems #3559, #3691, #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **13 / 13** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **14 / 14** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2130** | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | <span style="color:#ffc400">**Medium**</span> | 14 Jun 2026 | [Java](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/Solution.java) | [Python](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.py) | [C++](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.cpp) | [JS](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.js) | [Watch Video](https://youtu.be/an7c2jBXsF0?si=SBXUlKSEHdvE-dco) | [📁 14-June](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/) |
 | **3838** | [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | <span style="color:#10b981">**Easy**</span> | 13 Jun 2026 | [Java](./13-June/3838-Weighted-Word-Mapping/Solution.java) | [Python](./13-June/3838-Weighted-Word-Mapping/solution.py) | [C++](./13-June/3838-Weighted-Word-Mapping/solution.cpp) | [JS](./13-June/3838-Weighted-Word-Mapping/solution.js) | [Watch Video](https://youtu.be/Sv0sgqKjSqk?si=mdSMVKp_x6Ryi1W10) | [📁 13-June](./13-June/3838-Weighted-Word-Mapping/) |
 | **3559** | [Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/) | <span style="color:#ef4444">**Hard**</span> | 12 Jun 2026 | [Java](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/Solution.java) | [Python](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.py) | [C++](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.cpp) | [JS](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/solution.js) | [Watch Video](https://youtu.be/7RiQJUbG1Kc?si=8h_nBxHlAQxRMdmN) | [📁 12-June](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/) |
 | **3558** | [Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/) | <span style="color:#ffc400">**Medium**</span> | 11 Jun 2026 | [Java](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/Solution.java) | [Python](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/solution.py) | [C++](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/solution.cpp) | [JS](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/solution.js) | [Watch Video](https://youtu.be/7RiQJUbG1Kc?si=8h_nBxHlAQxRMdmN) | [📁 11-June](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/) |
@@ -47,13 +48,14 @@
 | **3753** | [Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) | <span style="color:#ef4444">**Hard**</span> | 05 Jun 2026 | [Java](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/Solution.java) | [Python](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.py) | [C++](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.cpp) | [JS](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.js) | [Watch Video](https://youtu.be/vvz487n8tqo?si=wOGmhlM-zyUvZrHB) | [📁 5-June](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/) |
 | **3751** | [Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/) | <span style="color:#ffc400">**Medium**</span> | 04 Jun 2026 | [Java](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/Solution.java) | [Python](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.py) | [C++](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.cpp) | [JS](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.js) | [Watch Video](https://youtu.be/wPTp66qc6W8?si=hZwaQwoPsGt7DPlY) | [📁 4-June](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/) |
 | **3635** | [Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | <span style="color:#ffc400">**Medium**</span> | 03 Jun 2026 | [Java](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/Solution.java) | [Python](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.py) | [C++](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.cpp) | [JS](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.js) | [Watch Video](https://youtu.be/syRdhF0DdvI?si=2KpngkVoZ_3yoBAS) | [📁 3-June](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/) |
-| **3633** | [Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | <span style="color:#10b981">**Easy**</span> | 02 Jun 2026 | [Java](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/Solution.java) | [Python](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.py) | [C++](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.cpp) | [JS](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.js) | [Watch Video](https://youtu.be/AV8AV8ZijLQ?si=rO517E_kh05jDVvk) | [📁 2-June](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/) |
+| **3633** | [Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-Time-for-Land-and-Water-Rides-I/) | <span style="color:#10b981">**Easy**</span> | 02 Jun 2026 | [Java](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/Solution.java) | [Python](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.py) | [C++](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.cpp) | [JS](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.js) | [Watch Video](https://youtu.be/AV8AV8ZijLQ?si=rO517E_kh05jDVvk) | [📁 2-June](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/) |
 | **2144** | [Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/) | <span style="color:#10b981">**Easy**</span> | 01 Jun 2026 | [Java](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/Solution.java) | [Python](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.py) | [C++](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.cpp) | [JS](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.js) | [Watch Video](https://youtu.be/N7CyU4tE96g?si=dF31v_3u982-EJ_D) | [📁 1-June](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/) |
 
 ---
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[14 June 2026](./14-June/)**: [#2130 Maximum Twin Sum of a Linked List](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[13 June 2026](./13-June/)**: [#3838 Weighted Word Mapping](./13-June/3838-Weighted-Word-Mapping/) — <span style="color:#10b981">Easy</span>
 - 📍 **[12 June 2026](./12-June/)**: [#3559 Number of Ways to Assign Edge Weights II](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[11 June 2026](./11-June/)**: [#3558 Number of Ways to Assign Edge Weights I](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/) — <span style="color:#ffc400">Medium</span>
@@ -83,14 +85,16 @@
 - **Greedy**: [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Hash Table**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
 - **Heap (Priority Queue)**: [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/)
+- **Linked List**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
 - **Math**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Prefix Sum**: [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
 - **Simulation**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 - **Sorting**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
+- **Stack**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
 - **String**: [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Tree**: [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
-- **Two Pointers**: [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
+- **Two Pointers**: [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 
 ---
 

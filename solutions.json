@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 2130,
+    "title": "Maximum Twin Sum of a Linked List",
+    "slug": "maximum-twin-sum-of-a-linked-list",
+    "date": "14 June 2026",
+    "dateIso": "2026-06-14",
+    "formattedDate": "14 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "14-June",
+    "problemFolder": "2130-Maximum-Twin-Sum-of-a-Linked-List",
+    "folderPath": "solutions/June/14-June/2130-Maximum-Twin-Sum-of-a-Linked-List",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+    "youtubeUrl": "https://youtu.be/an7c2jBXsF0?si=SBXUlKSEHdvE-dco",
+    "tags": [
+      "Linked List",
+      "Stack",
+      "Two Pointers"
+    ],
+    "summary": "Find the maximum twin sum of an even-length linked list by pairing node i with node n - 1 - i.",
+    "approach": "Find the middle using fast and slow pointers, reverse the second half in-place, and traverse both halves simultaneously with two pointers to find the maximum twin sum in O(N) time and O(1) space.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/solution.js"
+      }
+    }
+  },
+  {
     "id": 3838,
     "title": "Weighted Word Mapping",
     "slug": "weighted-word-mapping",

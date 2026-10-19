@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 3739,
+    "title": "Count Subarrays With Majority Element II",
+    "slug": "count-subarrays-with-majority-element-ii",
+    "date": "26 June 2026",
+    "dateIso": "2026-06-26",
+    "formattedDate": "26 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "26-June",
+    "problemFolder": "3739-Count-Subarrays-With-Majority-Element-II",
+    "folderPath": "solutions/June/26-June/3739-Count-Subarrays-With-Majority-Element-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
+    "youtubeUrl": "https://youtu.be/6sFE5_T_DsE?si=9Utt09w88az4aWMM",
+    "tags": [
+      "Array",
+      "Binary Indexed Tree",
+      "Prefix Sum"
+    ],
+    "summary": "Return the number of subarrays in nums where target is the majority element, scaling up to 10^5 elements using a Binary Indexed Tree.",
+    "approach": "Transform nums to +1 for target and -1 for other values. Map prefix sums into a 1-indexed BIT using an offset of n + 1 and count prior smaller prefix sums in O(log n) time per element.",
+    "timeComplexity": "O(N * log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/26-June/3739-Count-Subarrays-With-Majority-Element-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/26-June/3739-Count-Subarrays-With-Majority-Element-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/26-June/3739-Count-Subarrays-With-Majority-Element-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/26-June/3739-Count-Subarrays-With-Majority-Element-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3737,
     "title": "Count Subarrays With Majority Element I",
     "slug": "count-subarrays-with-majority-element-i",

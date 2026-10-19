@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 3700,
+    "title": "Number of ZigZag Arrays II",
+    "slug": "number-of-zigzag-arrays-ii",
+    "date": "24 June 2026",
+    "dateIso": "2026-06-24",
+    "formattedDate": "24 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "24-June",
+    "problemFolder": "3700-Number-of-ZigZag-Arrays-II",
+    "folderPath": "solutions/June/24-June/3700-Number-of-ZigZag-Arrays-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/number-of-zigzag-arrays-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-zigzag-arrays-ii/",
+    "youtubeUrl": "https://youtu.be/snHC-fwsqoU?si=AAkqoXiSH-2H5sXc",
+    "tags": [
+      "Dynamic Programming",
+      "Math",
+      "Matrix Exponentiation"
+    ],
+    "summary": "Return the total number of valid ZigZag arrays of length n where each element lies in [l, r], no two adjacent elements are equal, and no three consecutive elements form a strictly monotonic sequence, modulo 10^9 + 7.",
+    "approach": "Model the transitions of ending values and previous directions as a linear state recurrence on a 2m-dimensional vector. Compute the final state after n - 1 steps using binary matrix exponentiation in O((2m)^3 log n) time.",
+    "timeComplexity": "O((2M)^3 * log N)",
+    "auxiliarySpaceComplexity": "O(M^2)",
+    "spaceComplexity": "O(M^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/24-June/3700-Number-of-ZigZag-Arrays-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/24-June/3700-Number-of-ZigZag-Arrays-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/24-June/3700-Number-of-ZigZag-Arrays-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/24-June/3700-Number-of-ZigZag-Arrays-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3699,
     "title": "Number of ZigZag Arrays I",
     "slug": "number-of-zigzag-arrays-i",

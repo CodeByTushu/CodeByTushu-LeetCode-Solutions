@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **23** | June Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **24** | June Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **6** | Problems #1189, #1732, #3838, #2574, #3633, #2144 |
 | 🟡 **Medium Problems** | **11** | Problems #1833, #1344, #3612, #2095, #2130, #3558, #3689, #2161, #2196, #3751, #3635 |
-| 🔴 **Hard Problems** | **6** | Problems #3699, #1840, #3614, #3559, #3691, #3753 |
+| 🔴 **Hard Problems** | **7** | Problems #3700, #3699, #1840, #3614, #3559, #3691, #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **23 / 23** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **24 / 24** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3700** | [Number of ZigZag Arrays II](https://leetcode.com/problems/number-of-zigzag-arrays-ii/) | <span style="color:#ef4444">**Hard**</span> | 24 Jun 2026 | [Java](./24-June/3700-Number-of-ZigZag-Arrays-II/Solution.java) | [Python](./24-June/3700-Number-of-ZigZag-Arrays-II/solution.py) | [C++](./24-June/3700-Number-of-ZigZag-Arrays-II/solution.cpp) | [JS](./24-June/3700-Number-of-ZigZag-Arrays-II/solution.js) | [Watch Video](https://youtu.be/snHC-fwsqoU?si=AAkqoXiSH-2H5sXc) | [📁 24-June](./24-June/3700-Number-of-ZigZag-Arrays-II/) |
 | **3699** | [Number of ZigZag Arrays I](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | <span style="color:#ef4444">**Hard**</span> | 23 Jun 2026 | [Java](./23-June/3699-Number-of-ZigZag-Arrays-I/Solution.java) | [Python](./23-June/3699-Number-of-ZigZag-Arrays-I/solution.py) | [C++](./23-June/3699-Number-of-ZigZag-Arrays-I/solution.cpp) | [JS](./23-June/3699-Number-of-ZigZag-Arrays-I/solution.js) | [Watch Video](https://youtu.be/UH8fnw74zOM?si=byz9K09Mzx3g8L8F) | [📁 23-June](./23-June/3699-Number-of-ZigZag-Arrays-I/) |
 | **1189** | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | <span style="color:#10b981">**Easy**</span> | 22 Jun 2026 | [Java](./22-June/1189-Maximum-Number-of-Balloons/Solution.java) | [Python](./22-June/1189-Maximum-Number-of-Balloons/solution.py) | [C++](./22-June/1189-Maximum-Number-of-Balloons/solution.cpp) | [JS](./22-June/1189-Maximum-Number-of-Balloons/solution.js) | [Watch Video](https://youtu.be/sTxKOFHh_TU?si=LpG6fYcoAY3GpPq_) | [📁 22-June](./22-June/1189-Maximum-Number-of-Balloons/) |
 | **1833** | [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | <span style="color:#ffc400">**Medium**</span> | 21 Jun 2026 | [Java](./21-June/1833-Maximum-Ice-Cream-Bars/Solution.java) | [Python](./21-June/1833-Maximum-Ice-Cream-Bars/solution.py) | [C++](./21-June/1833-Maximum-Ice-Cream-Bars/solution.cpp) | [JS](./21-June/1833-Maximum-Ice-Cream-Bars/solution.js) | [Watch Video](https://youtu.be/mK7FyiIyorc?si=TTU5VOqfpzDGI5pI) | [📁 21-June](./21-June/1833-Maximum-Ice-Cream-Bars/) |
@@ -64,6 +65,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[24 June 2026](./24-June/)**: [#3700 Number of ZigZag Arrays II](./24-June/3700-Number-of-ZigZag-Arrays-II/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[23 June 2026](./23-June/)**: [#3699 Number of ZigZag Arrays I](./23-June/3699-Number-of-ZigZag-Arrays-I/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[22 June 2026](./22-June/)**: [#1189 Maximum Number of Balloons](./22-June/1189-Maximum-Number-of-Balloons/) — <span style="color:#10b981">Easy</span>
 - 📍 **[21 June 2026](./21-June/)**: [#1833 Maximum Ice Cream Bars](./21-June/1833-Maximum-Ice-Cream-Bars/) — <span style="color:#ffc400">Medium</span>
@@ -100,14 +102,15 @@
 - **Combinatorics**: [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/)
 - **Counting**: [#1189](./22-June/1189-Maximum-Number-of-Balloons/)
 - **Counting Sort**: [#1833](./21-June/1833-Maximum-Ice-Cream-Bars/)
-- **Dynamic Programming**: [#3699](./23-June/3699-Number-of-ZigZag-Arrays-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/)
+- **Dynamic Programming**: [#3700](./24-June/3700-Number-of-ZigZag-Arrays-II/), [#3699](./23-June/3699-Number-of-ZigZag-Arrays-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/)
 - **Enumeration**: [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/)
 - **Geometry**: [#1344](./18-June/1344-Angle-Between-Hands-of-a-Clock/)
 - **Greedy**: [#1833](./21-June/1833-Maximum-Ice-Cream-Bars/), [#1840](./20-June/1840-Maximum-Building-Height/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Hash Table**: [#1189](./22-June/1189-Maximum-Number-of-Balloons/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
 - **Heap (Priority Queue)**: [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/)
 - **Linked List**: [#2095](./15-June/2095-Delete-the-Middle-Node-of-a-Linked-List/), [#2130](./14-June/2130-Maximum-Twin-Sum-of-a-Linked-List/)
-- **Math**: [#1840](./20-June/1840-Maximum-Building-Height/), [#1344](./18-June/1344-Angle-Between-Hands-of-a-Clock/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
+- **Math**: [#3700](./24-June/3700-Number-of-ZigZag-Arrays-II/), [#1840](./20-June/1840-Maximum-Building-Height/), [#1344](./18-June/1344-Angle-Between-Hands-of-a-Clock/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#3559](./12-June/3559-Number-of-Ways-to-Assign-Edge-Weights-II/), [#3558](./11-June/3558-Number-of-Ways-to-Assign-Edge-Weights-I/), [#3691](./10-June/3691-Maximum-Total-Subarray-Value-II/), [#3689](./9-June/3689-Maximum-Total-Subarray-Value-I/), [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
+- **Matrix Exponentiation**: [#3700](./24-June/3700-Number-of-ZigZag-Arrays-II/)
 - **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Prefix Sum**: [#3699](./23-June/3699-Number-of-ZigZag-Arrays-I/), [#1732](./19-June/1732-Find-the-Highest-Altitude/), [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
 - **Simulation**: [#3614](./17-June/3614-Process-String-with-Special-Operations-II/), [#3612](./16-June/3612-Process-String-with-Special-Operations-I/), [#3838](./13-June/3838-Weighted-Word-Mapping/), [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)

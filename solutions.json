@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 3633,
+    "title": "Earliest Finish Time for Land and Water Rides I",
+    "slug": "earliest-finish-time-for-land-and-water-rides-i",
+    "date": "02 June 2026",
+    "dateIso": "2026-06-02",
+    "formattedDate": "02 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "2-June",
+    "problemFolder": "3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I",
+    "folderPath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/",
+    "youtubeUrl": "https://youtu.be/AV8AV8ZijLQ?si=rO517E_kh05jDVvk",
+    "tags": [
+      "Array",
+      "Enumeration",
+      "Greedy"
+    ],
+    "summary": "Find the minimum completion time to experience one land ride and one water ride in either order.",
+    "approach": "Enumerate all pairs of land and water rides across both orderings (land then water, and water then land), computing the earliest valid finish time.",
+    "timeComplexity": "O(N * M)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 2144,
     "title": "Minimum Cost of Buying Candies With Discount",
     "slug": "minimum-cost-of-buying-candies-with-discount",

@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 1358,
+    "title": "Number of Substrings Containing All Three Characters",
+    "slug": "number-of-substrings-containing-all-three-characters",
+    "date": "30 June 2026",
+    "dateIso": "2026-06-30",
+    "formattedDate": "30 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "30-June",
+    "problemFolder": "1358-Number-of-Substrings-Containing-All-Three-Characters",
+    "folderPath": "solutions/June/30-June/1358-Number-of-Substrings-Containing-All-Three-Characters",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+    "youtubeUrl": "https://youtu.be/e0_8x22SCec?si=3QlIwBqS3z5o1faO",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "summary": "Calculate the number of substrings containing at least one occurrence of characters a, b, and c.",
+    "approach": "Maintain a sliding window frequency counter of characters a, b, and c. Whenever the window contains all three characters, add (s.length - right) to ans and shrink the window from the left.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/30-June/1358-Number-of-Substrings-Containing-All-Three-Characters/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/30-June/1358-Number-of-Substrings-Containing-All-Three-Characters/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/30-June/1358-Number-of-Substrings-Containing-All-Three-Characters/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/30-June/1358-Number-of-Substrings-Containing-All-Three-Characters/solution.js"
+      }
+    }
+  },
+  {
     "id": 1967,
     "title": "Number of Strings That Appear as Substrings in Word",
     "slug": "number-of-strings-that-appear-as-substrings-in-word",

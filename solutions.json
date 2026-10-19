@@ -5460,6 +5460,56 @@
     }
   },
   {
+    "id": 1833,
+    "title": "Maximum Ice Cream Bars",
+    "slug": "maximum-ice-cream-bars",
+    "date": "21 June 2026",
+    "dateIso": "2026-06-21",
+    "formattedDate": "21 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "21-June",
+    "problemFolder": "1833-Maximum-Ice-Cream-Bars",
+    "folderPath": "solutions/June/21-June/1833-Maximum-Ice-Cream-Bars",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-ice-cream-bars/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-ice-cream-bars/",
+    "youtubeUrl": "https://youtu.be/mK7FyiIyorc?si=TTU5VOqfpzDGI5pI",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Counting Sort"
+    ],
+    "summary": "Find the maximum number of ice cream bars that can be bought with coins coins using counting sort.",
+    "approach": "Count the frequency of each cost up to 100000 in linear time, then greedily buy the cheapest ice cream bars first until coins are exhausted.",
+    "timeComplexity": "O(N + M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/21-June/1833-Maximum-Ice-Cream-Bars/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/21-June/1833-Maximum-Ice-Cream-Bars/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/21-June/1833-Maximum-Ice-Cream-Bars/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/21-June/1833-Maximum-Ice-Cream-Bars/solution.js"
+      }
+    }
+  },
+  {
     "id": 1840,
     "title": "Maximum Building Height",
     "slug": "maximum-building-height",

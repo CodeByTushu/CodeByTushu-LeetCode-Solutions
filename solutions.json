@@ -5460,6 +5460,55 @@
     }
   },
   {
+    "id": 2161,
+    "title": "Partition Array According to Given Pivot",
+    "slug": "partition-array-according-to-given-pivot",
+    "date": "08 June 2026",
+    "dateIso": "2026-06-08",
+    "formattedDate": "08 Jun 2026",
+    "year": "2026",
+    "month": "June",
+    "dayFolder": "8-June",
+    "problemFolder": "2161-Partition-Array-According-to-Given-Pivot",
+    "folderPath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
+    "leetcodeUrl": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
+    "youtubeUrl": "https://youtu.be/xpnVidFrzaY?si=-BFnmFjiuyfWHy61",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Simulation"
+    ],
+    "summary": "Rearrange array such that elements less than pivot come first, followed by pivot elements, then elements greater than pivot, maintaining relative ordering.",
+    "approach": "Perform three linear passes over nums to preserve stability: first append elements less than pivot, second append elements equal to pivot, and third append elements greater than pivot.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/solution.js"
+      }
+    }
+  },
+  {
     "id": 2196,
     "title": "Create Binary Tree From Descriptions",
     "slug": "create-binary-tree-from-descriptions",

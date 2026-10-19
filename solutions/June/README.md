@@ -23,12 +23,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **7** | June Daily Series In Progress 🚀 |
+| **Total Solved Problems** | **8** | June Daily Series In Progress 🚀 |
 | 🟢 **Easy Problems** | **3** | Problems #2574, #3633, #2144 |
-| 🟡 **Medium Problems** | **3** | Problems #2196, #3751, #3635 |
+| 🟡 **Medium Problems** | **4** | Problems #2161, #2196, #3751, #3635 |
 | 🔴 **Hard Problems** | **1** | Problem #3753 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **7 / 7** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **8 / 8** | Available on YouTube |
 
 ---
 
@@ -36,6 +36,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2161** | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | <span style="color:#ffc400">**Medium**</span> | 08 Jun 2026 | [Java](./8-June/2161-Partition-Array-According-to-Given-Pivot/Solution.java) | [Python](./8-June/2161-Partition-Array-According-to-Given-Pivot/solution.py) | [C++](./8-June/2161-Partition-Array-According-to-Given-Pivot/solution.cpp) | [JS](./8-June/2161-Partition-Array-According-to-Given-Pivot/solution.js) | [Watch Video](https://youtu.be/xpnVidFrzaY?si=-BFnmFjiuyfWHy61) | [📁 8-June](./8-June/2161-Partition-Array-According-to-Given-Pivot/) |
 | **2196** | [Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/) | <span style="color:#ffc400">**Medium**</span> | 07 Jun 2026 | [Java](./7-June/2196-Create-Binary-Tree-From-Descriptions/Solution.java) | [Python](./7-June/2196-Create-Binary-Tree-From-Descriptions/solution.py) | [C++](./7-June/2196-Create-Binary-Tree-From-Descriptions/solution.cpp) | [JS](./7-June/2196-Create-Binary-Tree-From-Descriptions/solution.js) | [Watch Video](https://youtu.be/UaDBQ6OUJIA?si=szg_mC4SdhJGXRDi) | [📁 7-June](./7-June/2196-Create-Binary-Tree-From-Descriptions/) |
 | **2574** | [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/) | <span style="color:#10b981">**Easy**</span> | 06 Jun 2026 | [Java](./6-June/2574-Left-and-Right-Sum-Differences/Solution.java) | [Python](./6-June/2574-Left-and-Right-Sum-Differences/solution.py) | [C++](./6-June/2574-Left-and-Right-Sum-Differences/solution.cpp) | [JS](./6-June/2574-Left-and-Right-Sum-Differences/solution.js) | [Watch Video](https://youtu.be/c1cZbTBoEWQ?si=8H9Ps8MCA_GGQ6dO) | [📁 6-June](./6-June/2574-Left-and-Right-Sum-Differences/) |
 | **3753** | [Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) | <span style="color:#ef4444">**Hard**</span> | 05 Jun 2026 | [Java](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/Solution.java) | [Python](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.py) | [C++](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.cpp) | [JS](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.js) | [Watch Video](https://youtu.be/vvz487n8tqo?si=wOGmhlM-zyUvZrHB) | [📁 5-June](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/) |
@@ -48,6 +49,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[08 June 2026](./8-June/)**: [#2161 Partition Array According to Given Pivot](./8-June/2161-Partition-Array-According-to-Given-Pivot/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[07 June 2026](./7-June/)**: [#2196 Create Binary Tree From Descriptions](./7-June/2196-Create-Binary-Tree-From-Descriptions/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[06 June 2026](./6-June/)**: [#2574 Left and Right Sum Differences](./6-June/2574-Left-and-Right-Sum-Differences/) — <span style="color:#10b981">Easy</span>
 - 📍 **[05 June 2026](./5-June/)**: [#3753 Total Waviness of Numbers in Range II](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/) — <span style="color:#ef4444">Hard</span>
@@ -60,7 +62,7 @@
 
 ## 🏷️ Problem Categories & Tags in June
 
-- **Array**: [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/), [#2574](./6-June/2574-Left-and-Right-Sum-Differences/), [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
+- **Array**: [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/), [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/), [#2574](./6-June/2574-Left-and-Right-Sum-Differences/), [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#3633](./2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **Binary Search**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Binary Tree**: [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
 - **Dynamic Programming**: [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/)
@@ -70,9 +72,11 @@
 - **Math**: [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Prefix / Suffix Precomputation**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/)
 - **Prefix Sum**: [#2574](./6-June/2574-Left-and-Right-Sum-Differences/)
+- **Simulation**: [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 - **Sorting**: [#3635](./3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/), [#2144](./1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/)
 - **String**: [#3753](./5-June/3753-Total-Waviness-of-Numbers-in-Range-II/), [#3751](./4-June/3751-Total-Waviness-of-Numbers-in-Range-I/)
 - **Tree**: [#2196](./7-June/2196-Create-Binary-Tree-From-Descriptions/)
+- **Two Pointers**: [#2161](./8-June/2161-Partition-Array-According-to-Given-Pivot/)
 
 ---
 

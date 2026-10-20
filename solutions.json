@@ -1,5 +1,56 @@
 [
   {
+    "id": "3886",
+    "title": "Sum of Sortable Integers",
+    "slug": "sum-of-sortable-integers",
+    "date": "20 October 2026",
+    "dateIso": "2026-10-20",
+    "formattedDate": "20 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "20-October",
+    "problemFolder": "3886-Sum-of-Sortable-Integers",
+    "folderPath": "solutions/October/20-October/3886-Sum-of-Sortable-Integers",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/sum-of-sortable-integers/",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-of-sortable-integers/",
+    "youtubeUrl": "https://youtu.be/uAyI0xNQDNE?si=0AIImqPPWw3-AeD4",
+    "tags": [
+      "Array",
+      "Math",
+      "Number Theory",
+      "Sorting",
+      "Simulation"
+    ],
+    "summary": "Find the sum of all possible sortable integers k where k divides n and each subarray of length k can be cyclically rotated into non-decreasing order.",
+    "approach": "Iterate through all divisors k of n. For each block of length k, verify it has at most 1 circular descent and its minimum is greater than or equal to the previous block's maximum.",
+    "timeComplexity": "O(d(n) * n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/20-October/3886-Sum-of-Sortable-Integers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/20-October/3886-Sum-of-Sortable-Integers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/20-October/3886-Sum-of-Sortable-Integers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/20-October/3886-Sum-of-Sortable-Integers/solution.js"
+      }
+    }
+  },
+  {
     "id": "2089",
     "title": "Find Target Indices After Sorting Array",
     "slug": "find-target-indices-after-sorting-array",

@@ -1,5 +1,54 @@
 [
   {
+    "id": "3863",
+    "title": "Minimum Operations to Sort a String",
+    "slug": "minimum-operations-to-sort-a-string",
+    "date": "21 October 2026",
+    "dateIso": "2026-10-21",
+    "formattedDate": "21 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "21-October",
+    "problemFolder": "3863-Minimum-Operations-to-Sort-a-String",
+    "folderPath": "solutions/October/21-October/3863-Minimum-Operations-to-Sort-a-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
+    "youtubeUrl": "https://youtu.be/Jb65LCRArCE?si=HA5QTCnreZbcywcZ",
+    "tags": [
+      "String",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Find the minimum number of substring sorting operations (excluding the whole string) required to make a string sorted.",
+    "approach": "Greedy classification: 0 if sorted, -1 if n == 2 and unsorted, 1 if boundary holds global min/max, 3 if first is strict max and last is strict min, else 2.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/21-October/3863-Minimum-Operations-to-Sort-a-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/21-October/3863-Minimum-Operations-to-Sort-a-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/21-October/3863-Minimum-Operations-to-Sort-a-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/21-October/3863-Minimum-Operations-to-Sort-a-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "3886",
     "title": "Sum of Sortable Integers",
     "slug": "sum-of-sortable-integers",

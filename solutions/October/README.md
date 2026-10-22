@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **21** | Days 01 through 21 October completed |
+| **Total Solved Problems** | **22** | Days 01 through 22 October completed |
 | 🟢 **Easy Problems** | **5** | Problems #20, #1021, #2778, #2913, #2089 |
-| 🟡 **Medium Problems** | **10** | Problems #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551, #3863 |
+| 🟡 **Medium Problems** | **11** | Problems #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551, #3863, #3942 |
 | 🔴 **Hard Problems** | **6** | Problems #32, #301, #2897, #2916, #1569, #3886 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **21 / 21** | 100% video solution coverage |
+| 🎥 **Video Walkthroughs** | **22 / 22** | 100% video solution coverage |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3942** | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | <span style="color:#ffc400">**Medium**</span> | 22 Oct 2026 | [Java](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/Solution.java) | [Python](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/solution.py) | [C++](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/solution.cpp) | [JS](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/solution.js) | [Watch Video](https://youtu.be/1EZuD1aWSl8?si=t_rXtTI-pWbyXkAL) | [📁 22-October](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/) |
 | **3863** | [Minimum Operations to Sort a String](https://leetcode.com/problems/minimum-operations-to-sort-a-string/) | <span style="color:#ffc400">**Medium**</span> | 21 Oct 2026 | [Java](./21-October/3863-Minimum-Operations-to-Sort-a-String/Solution.java) | [Python](./21-October/3863-Minimum-Operations-to-Sort-a-String/solution.py) | [C++](./21-October/3863-Minimum-Operations-to-Sort-a-String/solution.cpp) | [JS](./21-October/3863-Minimum-Operations-to-Sort-a-String/solution.js) | [Watch Video](https://youtu.be/Jb65LCRArCE?si=HA5QTCnreZbcywcZ) | [📁 21-October](./21-October/3863-Minimum-Operations-to-Sort-a-String/) |
 | **3886** | [Sum of Sortable Integers](https://leetcode.com/problems/sum-of-sortable-integers/) | <span style="color:#ef4444">**Hard**</span> | 20 Oct 2026 | [Java](./20-October/3886-Sum-of-Sortable-Integers/Solution.java) | [Python](./20-October/3886-Sum-of-Sortable-Integers/solution.py) | [C++](./20-October/3886-Sum-of-Sortable-Integers/solution.cpp) | [JS](./20-October/3886-Sum-of-Sortable-Integers/solution.js) | [Watch Video](https://youtu.be/uAyI0xNQDNE?si=0AIImqPPWw3-AeD4) | [📁 20-October](./20-October/3886-Sum-of-Sortable-Integers/) |
 | **2089** | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | <span style="color:#10b981">**Easy**</span> | 19 Oct 2026 | [Java](./19-October/2089-Find-Target-Indices-After-Sorting-Array/Solution.java) | [Python](./19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.py) | [C++](./19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.cpp) | [JS](./19-October/2089-Find-Target-Indices-After-Sorting-Array/solution.js) | [Watch Video](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq) | [📁 19-October](./19-October/2089-Find-Target-Indices-After-Sorting-Array/) |
@@ -60,6 +61,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[22 October 2026](./22-October/)**: [#3942 Minimum Operations to Sort a Permutation](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[21 October 2026](./21-October/)**: [#3863 Minimum Operations to Sort a String](./21-October/3863-Minimum-Operations-to-Sort-a-String/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[20 October 2026](./20-October/)**: [#3886 Sum of Sortable Integers](./20-October/3886-Sum-of-Sortable-Integers/) — <span style="color:#ef4444">Hard</span>
 - 📍 **[19 October 2026](./19-October/)**: [#2089 Find Target Indices After Sorting Array](./19-October/2089-Find-Target-Indices-After-Sorting-Array/) — <span style="color:#10b981">Easy</span>
@@ -86,7 +88,7 @@
 
 ## 🏷️ Problem Categories & Tags in October
 
-- **Array**: [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
+- **Array**: [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Backtracking**: [#301](./7-October/301-Remove-Invalid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/)
 - **Binary Search**: [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/)
 - **Bit Manipulation**: [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#856](./5-October/856-Score-of-Parentheses/)
@@ -99,9 +101,9 @@
 - **Enumeration**: [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
 - **Greedy**: [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/), [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#678](./4-October/678-Valid-Parenthesis-String/)
 - **Hash Table**: [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
-- **Math**: [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/), [#856](./5-October/856-Score-of-Parentheses/)
+- **Math**: [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/), [#856](./5-October/856-Score-of-Parentheses/)
 - **Number Theory**: [#3886](./20-October/3886-Sum-of-Sortable-Integers/)
-- **Simulation**: [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
+- **Simulation**: [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Stack**: [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)
 - **String**: [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#301](./7-October/301-Remove-Invalid-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)

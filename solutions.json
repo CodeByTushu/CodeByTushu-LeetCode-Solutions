@@ -1,5 +1,54 @@
 [
   {
+    "id": "3942",
+    "title": "Minimum Operations to Sort a Permutation",
+    "slug": "minimum-operations-to-sort-a-permutation",
+    "date": "22 October 2026",
+    "dateIso": "2026-10-22",
+    "formattedDate": "22 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "22-October",
+    "problemFolder": "3942-Minimum-Operations-to-Sort-a-Permutation",
+    "folderPath": "solutions/October/22-October/3942-Minimum-Operations-to-Sort-a-Permutation",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
+    "youtubeUrl": "https://youtu.be/1EZuD1aWSl8?si=t_rXtTI-pWbyXkAL",
+    "tags": [
+      "Array",
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Find the minimum operations using whole array reversal and left rotation by one to sort a permutation of 0 to n - 1.",
+    "approach": "Validate whether permutation is cyclically ascending or cyclically descending using modular indexing. Compute optimal rotation and reversal combinations.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/22-October/3942-Minimum-Operations-to-Sort-a-Permutation/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/22-October/3942-Minimum-Operations-to-Sort-a-Permutation/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/22-October/3942-Minimum-Operations-to-Sort-a-Permutation/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/22-October/3942-Minimum-Operations-to-Sort-a-Permutation/solution.js"
+      }
+    }
+  },
+  {
     "id": "3863",
     "title": "Minimum Operations to Sort a String",
     "slug": "minimum-operations-to-sort-a-string",

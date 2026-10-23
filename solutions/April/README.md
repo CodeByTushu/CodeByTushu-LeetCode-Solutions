@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | April 2026 (Q2 — Spring) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **14 Problems (Ongoing)** |
+| **Total Solved** | **15 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/April/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2033** | [Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/) | <span style="color:#ffc400">**Medium**</span> | 28 April 2026 | [Java](./28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/Solution.java) | [Python](./28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/solution.py) | [C++](./28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/solution.cpp) | [JS](./28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/solution.js) | [Watch Video](https://youtu.be/Exlk_P5QMB0) | [📁 28-April](./28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/) |
 | **1391** | [Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 27 April 2026 | [Java](./27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/Solution.java) | [Python](./27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/solution.py) | [C++](./27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/solution.cpp) | [JS](./27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/solution.js) | [Watch Video](https://youtu.be/ZfNnXv1mH4o) | [📁 27-April](./27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/) |
 | **1559** | [Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | <span style="color:#ffc400">**Medium**</span> | 26 April 2026 | [Java](./26-April/1559-Detect-Cycles-in-2D-Grid/Solution.java) | [Python](./26-April/1559-Detect-Cycles-in-2D-Grid/solution.py) | [C++](./26-April/1559-Detect-Cycles-in-2D-Grid/solution.cpp) | [JS](./26-April/1559-Detect-Cycles-in-2D-Grid/solution.js) | [Watch Video](https://youtu.be/ludY7iumbDI) | [📁 26-April](./26-April/1559-Detect-Cycles-in-2D-Grid/) |
 | **3464** | [Maximize the Distance Between Points on a Square](https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/) | <span style="color:#ef4444">**Hard**</span> | 25 April 2026 | [Java](./25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/Solution.java) | [Python](./25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/solution.py) | [C++](./25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/solution.cpp) | [JS](./25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/solution.js) | [Watch Video](https://youtu.be/r3W_ocFnzxw) | [📁 25-April](./25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/) |

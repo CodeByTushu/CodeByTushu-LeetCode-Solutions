@@ -8645,6 +8645,56 @@
     }
   },
   {
+    "id": 2033,
+    "title": "Minimum Operations to Make a Uni-Value Grid",
+    "slug": "minimum-operations-to-make-a-uni-value-grid",
+    "date": "28 April 2026",
+    "dateIso": "2026-04-28",
+    "formattedDate": "28 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "28-April",
+    "problemFolder": "2033-Minimum-Operations-to-Make-a-Uni-Value-Grid",
+    "folderPath": "solutions/April/28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/",
+    "youtubeUrl": "https://youtu.be/Exlk_P5QMB0",
+    "tags": [
+      "Array",
+      "Math",
+      "Sorting",
+      "Matrix"
+    ],
+    "summary": "Find the minimum operations to make all grid elements equal by adding or subtracting x, or return -1 if impossible.",
+    "approach": "Validate modulo remainder consistency across all elements modulo x; sort flattened values and set target to median to minimize sum of absolute deviations.",
+    "timeComplexity": "O(m * n * log(m * n))",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/28-April/2033-Minimum-Operations-to-Make-a-Uni-Value-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": 1391,
     "title": "Check if There is a Valid Path in a Grid",
     "slug": "check-if-there-is-a-valid-path-in-a-grid",

@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **6 Problems (Ongoing)** |
+| **Total Solved** | **7 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3660** | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | <span style="color:#ffc400">**Medium**</span> | 07 May 2026 | [Java](./7-May/3660-Jump-Game-IX/Solution.java) | [Python](./7-May/3660-Jump-Game-IX/solution.py) | [C++](./7-May/3660-Jump-Game-IX/solution.cpp) | [JS](./7-May/3660-Jump-Game-IX/solution.js) | [Watch Video](https://youtu.be/nDq2l17fBCo) | [📁 7-May](./7-May/3660-Jump-Game-IX/) |
 | **1861** | [Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | <span style="color:#ffc400">**Medium**</span> | 06 May 2026 | [Java](./6-May/1861-Rotating-the-Box/Solution.java) | [Python](./6-May/1861-Rotating-the-Box/solution.py) | [C++](./6-May/1861-Rotating-the-Box/solution.cpp) | [JS](./6-May/1861-Rotating-the-Box/solution.js) | [Watch Video](https://youtu.be/wPgQkJgUYIo) | [📁 6-May](./6-May/1861-Rotating-the-Box/) |
 | **61** | [Rotate List](https://leetcode.com/problems/rotate-list/) | <span style="color:#ffc400">**Medium**</span> | 05 May 2026 | [Java](./5-May/61-Rotate-List/Solution.java) | [Python](./5-May/61-Rotate-List/solution.py) | [C++](./5-May/61-Rotate-List/solution.cpp) | [JS](./5-May/61-Rotate-List/solution.js) | [Watch Video](https://youtu.be/gjZTwxOHhUY) | [📁 5-May](./5-May/61-Rotate-List/) |
 | **48** | [Rotate Image](https://leetcode.com/problems/rotate-image/) | <span style="color:#ffc400">**Medium**</span> | 04 May 2026 | [Java](./4-May/48-Rotate-Image/Solution.java) | [Python](./4-May/48-Rotate-Image/solution.py) | [C++](./4-May/48-Rotate-Image/solution.cpp) | [JS](./4-May/48-Rotate-Image/solution.js) | [Watch Video](https://youtu.be/sWA5qAcFvZ8) | [📁 4-May](./4-May/48-Rotate-Image/) |

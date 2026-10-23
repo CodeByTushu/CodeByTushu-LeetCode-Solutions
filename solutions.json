@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 2126,
+    "title": "Destroying Asteroids",
+    "slug": "destroying-asteroids",
+    "date": "31 May 2026",
+    "dateIso": "2026-05-31",
+    "formattedDate": "31 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "31-May",
+    "problemFolder": "2126-Destroying-Asteroids",
+    "folderPath": "solutions/May/31-May/2126-Destroying-Asteroids",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/destroying-asteroids/",
+    "leetcodeUrl": "https://leetcode.com/problems/destroying-asteroids/",
+    "youtubeUrl": "https://youtu.be/7i8gMq4Pneo",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Determine if a planet can destroy all asteroids by colliding with them in an optimal order and gaining their mass.",
+    "approach": "Sort the asteroids in ascending order and greedily destroy each asteroid while accumulating mass using a 64-bit integer to prevent overflow.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/31-May/2126-Destroying-Asteroids/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/31-May/2126-Destroying-Asteroids/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/31-May/2126-Destroying-Asteroids/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/31-May/2126-Destroying-Asteroids/solution.js"
+      }
+    }
+  },
+  {
     "id": 3161,
     "title": "Block Placement Queries",
     "slug": "block-placement-queries",

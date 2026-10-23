@@ -22,8 +22,8 @@
 | Attribute | Details |
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
-| **Status** | `Archive / Ingesting` |
-| **Total Solved** | **30 Problems (Ongoing)** |
+| **Status** | 🟢 **Complete Series** |
+| **Total Solved** | **31 Problems (Complete Series)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2126** | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | <span style="color:#ffc400">**Medium**</span> | 31 May 2026 | [Java](./31-May/2126-Destroying-Asteroids/Solution.java) | [Python](./31-May/2126-Destroying-Asteroids/solution.py) | [C++](./31-May/2126-Destroying-Asteroids/solution.cpp) | [JS](./31-May/2126-Destroying-Asteroids/solution.js) | [Watch Video](https://youtu.be/7i8gMq4Pneo) | [📁 31-May](./31-May/2126-Destroying-Asteroids/) |
 | **3161** | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | <span style="color:#ef4444">**Hard**</span> | 30 May 2026 | [Java](./30-May/3161-Block-Placement-Queries/Solution.java) | [Python](./30-May/3161-Block-Placement-Queries/solution.py) | [C++](./30-May/3161-Block-Placement-Queries/solution.cpp) | [JS](./30-May/3161-Block-Placement-Queries/solution.js) | [Watch Video](https://youtu.be/VDU2vUoHUzE) | [📁 30-May](./30-May/3161-Block-Placement-Queries/) |
 | **3300** | [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) | <span style="color:#10b981">**Easy**</span> | 29 May 2026 | [Java](./29-May/3300-Minimum-Element-After-Replacement-With-Digit-Sum/Solution.java) | [Python](./29-May/3300-Minimum-Element-After-Replacement-With-Digit-Sum/solution.py) | [C++](./29-May/3300-Minimum-Element-After-Replacement-With-Digit-Sum/solution.cpp) | [JS](./29-May/3300-Minimum-Element-After-Replacement-With-Digit-Sum/solution.js) | [Watch Video](https://youtu.be/yquk5zDu8gM) | [📁 29-May](./29-May/3300-Minimum-Element-After-Replacement-With-Digit-Sum/) |
 | **3093** | [Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/) | <span style="color:#ef4444">**Hard**</span> | 28 May 2026 | [Java](./28-May/3093-Longest-Common-Suffix-Queries/Solution.java) | [Python](./28-May/3093-Longest-Common-Suffix-Queries/solution.py) | [C++](./28-May/3093-Longest-Common-Suffix-Queries/solution.cpp) | [JS](./28-May/3093-Longest-Common-Suffix-Queries/solution.js) | [Watch Video](https://youtu.be/nc0rpFK962Q) | [📁 28-May](./28-May/3093-Longest-Common-Suffix-Queries/) |

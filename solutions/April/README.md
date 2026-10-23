@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | April 2026 (Q2 — Spring) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **10 Problems (Ongoing)** |
+| **Total Solved** | **11 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/April/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2833** | [Furthest Point From Origin](https://leetcode.com/problems/furthest-point-from-origin/) | <span style="color:#10b981">**Easy**</span> | 24 April 2026 | [Java](./24-April/2833-Furthest-Point-From-Origin/Solution.java) | [Python](./24-April/2833-Furthest-Point-From-Origin/solution.py) | [C++](./24-April/2833-Furthest-Point-From-Origin/solution.cpp) | [JS](./24-April/2833-Furthest-Point-From-Origin/solution.js) | [Watch Video](https://youtu.be/PO0y5ruMki8) | [📁 24-April](./24-April/2833-Furthest-Point-From-Origin/) |
 | **2615** | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/) | <span style="color:#ffc400">**Medium**</span> | 23 April 2026 | [Java](./23-April/2615-Sum-of-Distances/Solution.java) | [Python](./23-April/2615-Sum-of-Distances/solution.py) | [C++](./23-April/2615-Sum-of-Distances/solution.cpp) | [JS](./23-April/2615-Sum-of-Distances/solution.js) | [Watch Video](https://youtu.be/-qxO82UPJH4) | [📁 23-April](./23-April/2615-Sum-of-Distances/) |
 | **2452** | [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/) | <span style="color:#ffc400">**Medium**</span> | 22 April 2026 | [Java](./22-April/2452-Words-Within-Two-Edits-of-Dictionary/Solution.java) | [Python](./22-April/2452-Words-Within-Two-Edits-of-Dictionary/solution.py) | [C++](./22-April/2452-Words-Within-Two-Edits-of-Dictionary/solution.cpp) | [JS](./22-April/2452-Words-Within-Two-Edits-of-Dictionary/solution.js) | [Watch Video](https://youtu.be/KlqGwazW-xE) | [📁 22-April](./22-April/2452-Words-Within-Two-Edits-of-Dictionary/) |
 | **1722** | [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | <span style="color:#ffc400">**Medium**</span> | 21 April 2026 | [Java](./21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/Solution.java) | [Python](./21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/solution.py) | [C++](./21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/solution.cpp) | [JS](./21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/solution.js) | [Watch Video](https://youtu.be/ETnUAa-Gm8o) | [📁 21-April](./21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/) |

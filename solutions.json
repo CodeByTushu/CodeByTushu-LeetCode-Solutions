@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 2833,
+    "title": "Furthest Point From Origin",
+    "slug": "furthest-point-from-origin",
+    "date": "24 April 2026",
+    "dateIso": "2026-04-24",
+    "formattedDate": "24 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "24-April",
+    "problemFolder": "2833-Furthest-Point-From-Origin",
+    "folderPath": "solutions/April/24-April/2833-Furthest-Point-From-Origin",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/furthest-point-from-origin/",
+    "leetcodeUrl": "https://leetcode.com/problems/furthest-point-from-origin/",
+    "youtubeUrl": "https://youtu.be/PO0y5ruMki8",
+    "tags": [
+      "String",
+      "Counting",
+      "Greedy"
+    ],
+    "summary": "Find the maximum distance from the origin on a number line after making directional and wildcard moves.",
+    "approach": "Count occurrences of 'L', 'R', and '_' and greedily assign all blanks in the dominant direction via |countL - countR| + countBlank.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/24-April/2833-Furthest-Point-From-Origin/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/24-April/2833-Furthest-Point-From-Origin/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/24-April/2833-Furthest-Point-From-Origin/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/24-April/2833-Furthest-Point-From-Origin/solution.js"
+      }
+    }
+  },
+  {
     "id": 2615,
     "title": "Sum of Distances",
     "slug": "sum-of-distances",

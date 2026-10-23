@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 1340,
+    "title": "Jump Game V",
+    "slug": "jump-game-v",
+    "date": "24 May 2026",
+    "dateIso": "2026-05-24",
+    "formattedDate": "24 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "24-May",
+    "problemFolder": "1340-Jump-Game-V",
+    "folderPath": "solutions/May/24-May/1340-Jump-Game-V",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/jump-game-v/",
+    "leetcodeUrl": "https://leetcode.com/problems/jump-game-v/",
+    "youtubeUrl": "https://youtu.be/iBW5mDteOPE",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Sorting"
+    ],
+    "summary": "Find the maximum number of indices visitable by jumping up to d steps to strictly smaller elements without passing over taller or equal bars.",
+    "approach": "Model transitions as a directed acyclic graph (DAG) and apply memoized DFS (top-down dynamic programming) exploring valid left and right jumps.",
+    "timeComplexity": "O(N * d)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/24-May/1340-Jump-Game-V/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/24-May/1340-Jump-Game-V/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/24-May/1340-Jump-Game-V/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/24-May/1340-Jump-Game-V/solution.js"
+      }
+    }
+  },
+  {
     "id": 1752,
     "title": "Check if Array Is Sorted and Rotated",
     "slug": "check-if-array-is-sorted-and-rotated",

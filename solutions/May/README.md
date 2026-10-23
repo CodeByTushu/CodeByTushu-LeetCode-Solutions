@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **23 Problems (Ongoing)** |
+| **Total Solved** | **24 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1340** | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | <span style="color:#ef4444">**Hard**</span> | 24 May 2026 | [Java](./24-May/1340-Jump-Game-V/Solution.java) | [Python](./24-May/1340-Jump-Game-V/solution.py) | [C++](./24-May/1340-Jump-Game-V/solution.cpp) | [JS](./24-May/1340-Jump-Game-V/solution.js) | [Watch Video](https://youtu.be/iBW5mDteOPE) | [📁 24-May](./24-May/1340-Jump-Game-V/) |
 | **1752** | [Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | <span style="color:#10b981">**Easy**</span> | 23 May 2026 | [Java](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/Solution.java) | [Python](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.py) | [C++](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.cpp) | [JS](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.js) | [Watch Video](https://youtu.be/H33FXQOpM7w) | [📁 23-May](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/) |
 | **33** | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | <span style="color:#ffc400">**Medium**</span> | 22 May 2026 | [Java](./22-May/33-Search-in-Rotated-Sorted-Array/Solution.java) | [Python](./22-May/33-Search-in-Rotated-Sorted-Array/solution.py) | [C++](./22-May/33-Search-in-Rotated-Sorted-Array/solution.cpp) | [JS](./22-May/33-Search-in-Rotated-Sorted-Array/solution.js) | [Watch Video](https://youtu.be/tOzKgWlmqTA) | [📁 22-May](./22-May/33-Search-in-Rotated-Sorted-Array/) |
 | **3043** | [Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/) | <span style="color:#ffc400">**Medium**</span> | 21 May 2026 | [Java](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/Solution.java) | [Python](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/solution.py) | [C++](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/solution.cpp) | [JS](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/solution.js) | [Watch Video](https://youtu.be/PYKXRx2E_fQ) | [📁 21-May](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/) |

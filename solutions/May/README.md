@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **17 Problems (Ongoing)** |
+| **Total Solved** | **18 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1345** | [Jump Game IV](https://leetcode.com/problems/jump-game-iv/) | <span style="color:#ef4444">**Hard**</span> | 18 May 2026 | [Java](./18-May/1345-Jump-Game-IV/Solution.java) | [Python](./18-May/1345-Jump-Game-IV/solution.py) | [C++](./18-May/1345-Jump-Game-IV/solution.cpp) | [JS](./18-May/1345-Jump-Game-IV/solution.js) | [Watch Video](https://youtu.be/95lkFqqXfQg) | [📁 18-May](./18-May/1345-Jump-Game-IV/) |
 | **1306** | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | <span style="color:#ffc400">**Medium**</span> | 17 May 2026 | [Java](./17-May/1306-Jump-Game-III/Solution.java) | [Python](./17-May/1306-Jump-Game-III/solution.py) | [C++](./17-May/1306-Jump-Game-III/solution.cpp) | [JS](./17-May/1306-Jump-Game-III/solution.js) | [Watch Video](https://youtu.be/JnySdp-1ExE) | [📁 17-May](./17-May/1306-Jump-Game-III/) |
 | **154** | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 16 May 2026 | [Java](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/Solution.java) | [Python](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.py) | [C++](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.cpp) | [JS](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.js) | [Watch Video](https://youtu.be/kL9Dr5e7P4k) | [📁 16-May](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/) |
 | **153** | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | <span style="color:#ffc400">**Medium**</span> | 15 May 2026 | [Java](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/Solution.java) | [Python](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/solution.py) | [C++](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/solution.cpp) | [JS](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/solution.js) | [Watch Video](https://youtu.be/kFmMM4LOyjc) | [📁 15-May](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/) |

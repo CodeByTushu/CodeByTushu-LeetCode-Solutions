@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 1345,
+    "title": "Jump Game IV",
+    "slug": "jump-game-iv",
+    "date": "18 May 2026",
+    "dateIso": "2026-05-18",
+    "formattedDate": "18 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "18-May",
+    "problemFolder": "1345-Jump-Game-IV",
+    "folderPath": "solutions/May/18-May/1345-Jump-Game-IV",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/jump-game-iv/",
+    "leetcodeUrl": "https://leetcode.com/problems/jump-game-iv/",
+    "youtubeUrl": "https://youtu.be/95lkFqqXfQg",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Breadth-First Search"
+    ],
+    "summary": "Find the minimum number of jumps to reach the last index where you can jump backward, forward, or to any other index sharing the same array value.",
+    "approach": "Model the transitions as an unweighted graph and apply level-order BFS, clearing the same-value index list from the hash map once visited to avoid quadratic edge explorations.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/18-May/1345-Jump-Game-IV/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/18-May/1345-Jump-Game-IV/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/18-May/1345-Jump-Game-IV/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/18-May/1345-Jump-Game-IV/solution.js"
+      }
+    }
+  },
+  {
     "id": 1306,
     "title": "Jump Game III",
     "slug": "jump-game-iii",

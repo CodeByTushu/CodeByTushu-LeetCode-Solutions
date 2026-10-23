@@ -8645,6 +8645,57 @@
     }
   },
   {
+    "id": 1391,
+    "title": "Check if There is a Valid Path in a Grid",
+    "slug": "check-if-there-is-a-valid-path-in-a-grid",
+    "date": "27 April 2026",
+    "dateIso": "2026-04-27",
+    "formattedDate": "27 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "27-April",
+    "problemFolder": "1391-Check-if-There-is-a-Valid-Path-in-a-Grid",
+    "folderPath": "solutions/April/27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/",
+    "youtubeUrl": "https://youtu.be/ZfNnXv1mH4o",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Matrix"
+    ],
+    "summary": "Check if there is a valid path connecting streets from the top-left cell to the bottom-right cell in a grid.",
+    "approach": "Connect mutually matching ports of adjacent street cells into bidirectional edges and verify connectivity of (0,0) and (m-1,n-1) using Disjoint Set Union (DSU).",
+    "timeComplexity": "O(m * n * alpha(m * n))",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/27-April/1391-Check-if-There-is-a-Valid-Path-in-a-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": 1559,
     "title": "Detect Cycles in 2D Grid",
     "slug": "detect-cycles-in-2d-grid",

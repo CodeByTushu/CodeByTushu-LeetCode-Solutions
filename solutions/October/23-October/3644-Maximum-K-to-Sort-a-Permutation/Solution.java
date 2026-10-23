@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3644 - Maximum K to Sort a Permutation
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int sortPermutation(int[] nums) {
         int n = nums.length;

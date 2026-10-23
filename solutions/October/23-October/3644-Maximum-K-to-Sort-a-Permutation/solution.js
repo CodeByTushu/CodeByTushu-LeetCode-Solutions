@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3644 - Maximum K to Sort a Permutation
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

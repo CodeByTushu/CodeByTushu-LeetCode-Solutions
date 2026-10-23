@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3644 - Maximum K to Sort a Permutation
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

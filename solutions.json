@@ -8645,6 +8645,57 @@
     }
   },
   {
+    "id": 1559,
+    "title": "Detect Cycles in 2D Grid",
+    "slug": "detect-cycles-in-2d-grid",
+    "date": "26 April 2026",
+    "dateIso": "2026-04-26",
+    "formattedDate": "26 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "26-April",
+    "problemFolder": "1559-Detect-Cycles-in-2D-Grid",
+    "folderPath": "solutions/April/26-April/1559-Detect-Cycles-in-2D-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/detect-cycles-in-2d-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/detect-cycles-in-2d-grid/",
+    "youtubeUrl": "https://youtu.be/ludY7iumbDI",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Matrix"
+    ],
+    "summary": "Detect whether there exists any cycle of length 4 or more consisting of the same character in a 2D grid.",
+    "approach": "Iterate through right and down neighbors of identical characters using Disjoint Set Union (DSU) to detect cycles without recursion stack limits.",
+    "timeComplexity": "O(m * n * alpha(m * n))",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/26-April/1559-Detect-Cycles-in-2D-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/26-April/1559-Detect-Cycles-in-2D-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/26-April/1559-Detect-Cycles-in-2D-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/26-April/1559-Detect-Cycles-in-2D-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": 3464,
     "title": "Maximize the Distance Between Points on a Square",
     "slug": "maximize-the-distance-between-points-on-a-square",

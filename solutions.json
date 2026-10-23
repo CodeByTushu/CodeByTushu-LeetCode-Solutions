@@ -8645,6 +8645,54 @@
     }
   },
   {
+    "id": 3783,
+    "title": "Mirror Distance of an Integer",
+    "slug": "mirror-distance-of-an-integer",
+    "date": "18 April 2026",
+    "dateIso": "2026-04-18",
+    "formattedDate": "18 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "18-April",
+    "problemFolder": "3783-Mirror-Distance-of-an-Integer",
+    "folderPath": "solutions/April/18-April/3783-Mirror-Distance-of-an-Integer",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/mirror-distance-of-an-integer/",
+    "leetcodeUrl": "https://leetcode.com/problems/mirror-distance-of-an-integer/",
+    "youtubeUrl": "https://youtu.be/aAbY96Dc3G4",
+    "tags": [
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Compute the mirror distance of an integer n, defined as abs(n - reverse(n)).",
+    "approach": "Reverse the digits of n mathematically via modulo and division, then return the absolute difference abs(n - reverse(n)).",
+    "timeComplexity": "O(log10(N))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/18-April/3783-Mirror-Distance-of-an-Integer/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/18-April/3783-Mirror-Distance-of-an-Integer/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/18-April/3783-Mirror-Distance-of-an-Integer/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/18-April/3783-Mirror-Distance-of-an-Integer/solution.js"
+      }
+    }
+  },
+  {
     "id": 3761,
     "title": "Minimum Absolute Distance Between Mirror Pairs",
     "slug": "minimum-absolute-distance-between-mirror-pairs",

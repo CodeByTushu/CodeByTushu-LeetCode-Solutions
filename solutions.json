@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 2515,
+    "title": "Shortest Distance to Target String in a Circular Array",
+    "slug": "shortest-distance-to-target-string-in-a-circular-array",
+    "date": "15 April 2026",
+    "dateIso": "2026-04-15",
+    "formattedDate": "15 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "15-April",
+    "problemFolder": "2515-Shortest-Distance-to-Target-String-in-a-Circular-Array",
+    "folderPath": "solutions/April/15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
+    "youtubeUrl": "https://youtu.be/dBau2j8rHQ4",
+    "tags": [
+      "Array",
+      "String",
+      "Simulation"
+    ],
+    "summary": "Find the shortest distance to reach the target string in a circular string array starting from a given index.",
+    "approach": "Iterate through the array, and for each occurrence of target, compute min(abs(i - startIndex), n - abs(i - startIndex)).",
+    "timeComplexity": "O(N * L)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": 2463,
     "title": "Minimum Total Distance Traveled",
     "slug": "minimum-total-distance-traveled",

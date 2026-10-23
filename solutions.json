@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 1674,
+    "title": "Minimum Moves to Make Array Complementary",
+    "slug": "minimum-moves-to-make-array-complementary",
+    "date": "13 May 2026",
+    "dateIso": "2026-05-13",
+    "formattedDate": "13 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "13-May",
+    "problemFolder": "1674-Minimum-Moves-to-Make-Array-Complementary",
+    "folderPath": "solutions/May/13-May/1674-Minimum-Moves-to-Make-Array-Complementary",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-moves-to-make-array-complementary/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-make-array-complementary/",
+    "youtubeUrl": "https://youtu.be/iqqCz8AaulU",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Prefix Sum"
+    ],
+    "summary": "Determine the minimum number of single-element replacements in an even-length array to make the sum of every complementary pair equal to the same value.",
+    "approach": "Model the move costs for each possible target sum in [2, 2 * limit] using a difference array (line sweep) across 0-move, 1-move, and 2-move intervals, then find the prefix sum minimum.",
+    "timeComplexity": "O(N + limit)",
+    "auxiliarySpaceComplexity": "O(limit)",
+    "spaceComplexity": "O(limit)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/13-May/1674-Minimum-Moves-to-Make-Array-Complementary/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.js"
+      }
+    }
+  },
+  {
     "id": 1665,
     "title": "Minimum Initial Energy to Finish Tasks",
     "slug": "minimum-initial-energy-to-finish-tasks",

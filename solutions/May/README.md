@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **10 Problems (Ongoing)** |
+| **Total Solved** | **11 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2553** | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | <span style="color:#10b981">**Easy**</span> | 11 May 2026 | [Java](./11-May/2553-Separate-the-Digits-in-an-Array/Solution.java) | [Python](./11-May/2553-Separate-the-Digits-in-an-Array/solution.py) | [C++](./11-May/2553-Separate-the-Digits-in-an-Array/solution.cpp) | [JS](./11-May/2553-Separate-the-Digits-in-an-Array/solution.js) | [Watch Video](https://youtu.be/AqO7kwZyiA0) | [📁 11-May](./11-May/2553-Separate-the-Digits-in-an-Array/) |
 | **2770** | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | <span style="color:#ffc400">**Medium**</span> | 10 May 2026 | [Java](./10-May/2770-Maximum-Number-of-Jumps-to-Reach-the-Last-Index/Solution.java) | [Python](./10-May/2770-Maximum-Number-of-Jumps-to-Reach-the-Last-Index/solution.py) | [C++](./10-May/2770-Maximum-Number-of-Jumps-to-Reach-the-Last-Index/solution.cpp) | [JS](./10-May/2770-Maximum-Number-of-Jumps-to-Reach-the-Last-Index/solution.js) | [Watch Video](https://youtu.be/_yso5k7bkTs) | [📁 10-May](./10-May/2770-Maximum-Number-of-Jumps-to-Reach-the-Last-Index/) |
 | **1914** | [Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | <span style="color:#ffc400">**Medium**</span> | 09 May 2026 | [Java](./9-May/1914-Cyclically-Rotating-a-Grid/Solution.java) | [Python](./9-May/1914-Cyclically-Rotating-a-Grid/solution.py) | [C++](./9-May/1914-Cyclically-Rotating-a-Grid/solution.cpp) | [JS](./9-May/1914-Cyclically-Rotating-a-Grid/solution.js) | [Watch Video](https://youtu.be/BRch78xZcf0) | [📁 9-May](./9-May/1914-Cyclically-Rotating-a-Grid/) |
 | **3629** | [Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | <span style="color:#ffc400">**Medium**</span> | 08 May 2026 | [Java](./8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/Solution.java) | [Python](./8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.py) | [C++](./8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.cpp) | [JS](./8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.js) | [Watch Video](https://youtu.be/Ft-ucSTwGWI) | [📁 8-May](./8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/) |

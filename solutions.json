@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 2553,
+    "title": "Separate the Digits in an Array",
+    "slug": "separate-the-digits-in-an-array",
+    "date": "11 May 2026",
+    "dateIso": "2026-05-11",
+    "formattedDate": "11 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "11-May",
+    "problemFolder": "2553-Separate-the-Digits-in-an-Array",
+    "folderPath": "solutions/May/11-May/2553-Separate-the-Digits-in-an-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
+    "youtubeUrl": "https://youtu.be/AqO7kwZyiA0",
+    "tags": [
+      "Array",
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Extract and concatenate all individual digits from an array of positive integers while preserving their sequential order.",
+    "approach": "Extract digits mathematically using modulo 10 and division by 10, reverse them to restore original order, and append to the result array.",
+    "timeComplexity": "O(N * log10(max(nums)))",
+    "auxiliarySpaceComplexity": "O(log10(max(nums)))",
+    "spaceComplexity": "O(N * log10(max(nums)))",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/11-May/2553-Separate-the-Digits-in-an-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/11-May/2553-Separate-the-Digits-in-an-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/11-May/2553-Separate-the-Digits-in-an-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/11-May/2553-Separate-the-Digits-in-an-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": 2770,
     "title": "Maximum Number of Jumps to Reach the Last Index",
     "slug": "maximum-number-of-jumps-to-reach-the-last-index",

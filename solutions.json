@@ -8645,6 +8645,56 @@
     }
   },
   {
+    "id": 3225,
+    "title": "Maximum Score From Grid Operations",
+    "slug": "maximum-score-from-grid-operations",
+    "date": "29 April 2026",
+    "dateIso": "2026-04-29",
+    "formattedDate": "29 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "29-April",
+    "problemFolder": "3225-Maximum-Score-From-Grid-Operations",
+    "folderPath": "solutions/April/29-April/3225-Maximum-Score-From-Grid-Operations",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximum-score-from-grid-operations/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-score-from-grid-operations/",
+    "youtubeUrl": "https://youtu.be/3FrjmpNSm34",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Maximize the total score of white cells adjacent to black cells after coloring black prefixes in grid columns.",
+    "approach": "Dynamic programming tracking column prefix heights and skip states, transitioning across column pairs with prefix sums in O(n^3) time.",
+    "timeComplexity": "O(n^3)",
+    "auxiliarySpaceComplexity": "O(n^2)",
+    "spaceComplexity": "O(n^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/29-April/3225-Maximum-Score-From-Grid-Operations/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/29-April/3225-Maximum-Score-From-Grid-Operations/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/29-April/3225-Maximum-Score-From-Grid-Operations/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/29-April/3225-Maximum-Score-From-Grid-Operations/solution.js"
+      }
+    }
+  },
+  {
     "id": 2033,
     "title": "Minimum Operations to Make a Uni-Value Grid",
     "slug": "minimum-operations-to-make-a-uni-value-grid",

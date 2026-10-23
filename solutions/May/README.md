@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **2 Problems (Ongoing)** |
+| **Total Solved** | **3 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **796** | [Rotate String](https://leetcode.com/problems/rotate-string/) | <span style="color:#10b981">**Easy**</span> | 03 May 2026 | [Java](./3-May/796-Rotate-String/Solution.java) | [Python](./3-May/796-Rotate-String/solution.py) | [C++](./3-May/796-Rotate-String/solution.cpp) | [JS](./3-May/796-Rotate-String/solution.js) | [Watch Video](https://youtu.be/ppNAV1CisvI) | [📁 3-May](./3-May/796-Rotate-String/) |
 | **788** | [Rotated Digits](https://leetcode.com/problems/rotated-digits/) | <span style="color:#ffc400">**Medium**</span> | 02 May 2026 | [Java](./2-May/788-Rotated-Digits/Solution.java) | [Python](./2-May/788-Rotated-Digits/solution.py) | [C++](./2-May/788-Rotated-Digits/solution.cpp) | [JS](./2-May/788-Rotated-Digits/solution.js) | [Watch Video](https://youtu.be/SRcawCxl-V8) | [📁 2-May](./2-May/788-Rotated-Digits/) |
 | **396** | [Rotate Function](https://leetcode.com/problems/rotate-function/) | <span style="color:#ffc400">**Medium**</span> | 01 May 2026 | [Java](./1-May/396-Rotate-Function/Solution.java) | [Python](./1-May/396-Rotate-Function/solution.py) | [C++](./1-May/396-Rotate-Function/solution.cpp) | [JS](./1-May/396-Rotate-Function/solution.js) | [Watch Video](https://youtu.be/NMoBBr39jtI) | [📁 1-May](./1-May/396-Rotate-Function/) |
 

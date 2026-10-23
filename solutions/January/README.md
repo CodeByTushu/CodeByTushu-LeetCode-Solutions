@@ -13,42 +13,36 @@
   <a href="../README.md"><img src="https://img.shields.io/badge/🗂️_Browse-All_Months_Hub-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="All Months"/></a>
   <a href="../October/"><img src="https://img.shields.io/badge/🎃_Active_Month-October_2026-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Active October"/></a>
   <a href="https://codebytushu.com/Leetcode/"><img src="https://img.shields.io/badge/Live_Platform-codebytushu.com%2FLeetcode-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
+  <a href="https://www.youtube.com/@codebytushu"><img src="https://img.shields.io/badge/YouTube-@codebytushu-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Channel"/></a>
 </p>
 
 ---
 
-## 📊 Month Overview: January 2026
+## 📊 January 2026 Statistics
 
-| Attribute | Details |
-| :--- | :--- |
-| **Month / Quarter** | January 2026 (Q1 — Winter) |
-| **Status** | `Archive / Ingesting` |
-| **Total Days** | 31 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
-
----
-
-## 📂 Folder & Solution Structure
-
-When new daily problems are added for January, each problem is organized as:
-
-```text
-solutions/January/
-├── DD-January/
-│   └── <Problem-ID>-<Problem-Title>/
-│       ├── README.md        # Comprehensive problem statement, approach & complexity
-│       ├── Solution.java    # Optimal Java implementation
-│       ├── solution.py      # Pythonic solution with type annotations
-│       ├── solution.cpp     # High-performance C++ solution
-│       └── solution.js      # Modern ECMAScript (ES6+) implementation
-```
+| Metric | Count | Details |
+| :--- | :---: | :--- |
+| **Total Solved Problems** | **1** | January Daily Solutions Series Active 🟢 |
+| 🟢 **Easy Problems** | **1** | Problem #66 |
+| 🟡 **Medium Problems** | **0** | — |
+| 🔴 **Hard Problems** | **0** | — |
+| 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
+| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ January Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for January. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **66** | [Plus One](https://leetcode.com/problems/plus-one/) | <span style="color:#10b981">**Easy**</span> | 01 Jan 2026 | [Java](./1-January/66-Plus-One/Solution.java) | [Python](./1-January/66-Plus-One/solution.py) | [C++](./1-January/66-Plus-One/solution.cpp) | [JS](./1-January/66-Plus-One/solution.js) | [Watch Video](https://youtu.be/QaqpaMoCl3c) | [📁 1-January](./1-January/66-Plus-One/) |
+
+---
+
+## 🏷️ Category & Pattern Index (January 2026)
+
+- **Array:** [#66 Plus One](./1-January/66-Plus-One/)
+- **Math:** [#66 Plus One](./1-January/66-Plus-One/)
 
 ---
 
@@ -57,7 +51,7 @@ solutions/January/
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md"><strong>🗂️ View All Months Hub</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="../October/"><strong>🎃 Browse October Solutions (15 Solved)</strong></a>
+  <a href="../October/"><strong>🎃 Browse October Solutions (23 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

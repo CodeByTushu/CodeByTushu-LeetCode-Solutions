@@ -7131,6 +7131,56 @@
     }
   },
   {
+    "id": 2540,
+    "title": "Minimum Common Value",
+    "slug": "minimum-common-value",
+    "date": "19 May 2026",
+    "dateIso": "2026-05-19",
+    "formattedDate": "19 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "19-May",
+    "problemFolder": "2540-Minimum-Common-Value",
+    "folderPath": "solutions/May/19-May/2540-Minimum-Common-Value",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-common-value/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-common-value/",
+    "youtubeUrl": "https://youtu.be/-GQ6yHMBlfc",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Binary Search"
+    ],
+    "summary": "Return the minimum common integer between two sorted arrays, or -1 if no common integer exists.",
+    "approach": "Traverse both sorted arrays using two pointers, advancing the pointer with the smaller value until a matching element is found.",
+    "timeComplexity": "O(N + M)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/19-May/2540-Minimum-Common-Value/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/19-May/2540-Minimum-Common-Value/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/19-May/2540-Minimum-Common-Value/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/19-May/2540-Minimum-Common-Value/solution.js"
+      }
+    }
+  },
+  {
     "id": 1345,
     "title": "Jump Game IV",
     "slug": "jump-game-iv",

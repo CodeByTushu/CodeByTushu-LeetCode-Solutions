@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **18 Problems (Ongoing)** |
+| **Total Solved** | **19 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2540** | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | <span style="color:#10b981">**Easy**</span> | 19 May 2026 | [Java](./19-May/2540-Minimum-Common-Value/Solution.java) | [Python](./19-May/2540-Minimum-Common-Value/solution.py) | [C++](./19-May/2540-Minimum-Common-Value/solution.cpp) | [JS](./19-May/2540-Minimum-Common-Value/solution.js) | [Watch Video](https://youtu.be/-GQ6yHMBlfc) | [📁 19-May](./19-May/2540-Minimum-Common-Value/) |
 | **1345** | [Jump Game IV](https://leetcode.com/problems/jump-game-iv/) | <span style="color:#ef4444">**Hard**</span> | 18 May 2026 | [Java](./18-May/1345-Jump-Game-IV/Solution.java) | [Python](./18-May/1345-Jump-Game-IV/solution.py) | [C++](./18-May/1345-Jump-Game-IV/solution.cpp) | [JS](./18-May/1345-Jump-Game-IV/solution.js) | [Watch Video](https://youtu.be/95lkFqqXfQg) | [📁 18-May](./18-May/1345-Jump-Game-IV/) |
 | **1306** | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | <span style="color:#ffc400">**Medium**</span> | 17 May 2026 | [Java](./17-May/1306-Jump-Game-III/Solution.java) | [Python](./17-May/1306-Jump-Game-III/solution.py) | [C++](./17-May/1306-Jump-Game-III/solution.cpp) | [JS](./17-May/1306-Jump-Game-III/solution.js) | [Watch Video](https://youtu.be/JnySdp-1ExE) | [📁 17-May](./17-May/1306-Jump-Game-III/) |
 | **154** | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 16 May 2026 | [Java](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/Solution.java) | [Python](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.py) | [C++](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.cpp) | [JS](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.js) | [Watch Video](https://youtu.be/kL9Dr5e7P4k) | [📁 16-May](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/) |

@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 2615,
+    "title": "Sum of Distances",
+    "slug": "sum-of-distances",
+    "date": "23 April 2026",
+    "dateIso": "2026-04-23",
+    "formattedDate": "23 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "23-April",
+    "problemFolder": "2615-Sum-of-Distances",
+    "folderPath": "solutions/April/23-April/2615-Sum-of-Distances",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/sum-of-distances/",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-of-distances/",
+    "youtubeUrl": "https://youtu.be/-qxO82UPJH4",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Prefix Sum"
+    ],
+    "summary": "Calculate the sum of absolute distances to all other occurrences of the same value for every index in the array.",
+    "approach": "Group occurrence indices by value and compute distances in O(1) per occurrence using prefix and suffix sums.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/23-April/2615-Sum-of-Distances/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/23-April/2615-Sum-of-Distances/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/23-April/2615-Sum-of-Distances/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/23-April/2615-Sum-of-Distances/solution.js"
+      }
+    }
+  },
+  {
     "id": 2452,
     "title": "Words Within Two Edits of Dictionary",
     "slug": "words-within-two-edits-of-dictionary",

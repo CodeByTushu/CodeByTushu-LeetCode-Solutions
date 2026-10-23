@@ -7131,6 +7131,53 @@
     }
   },
   {
+    "id": 1752,
+    "title": "Check if Array Is Sorted and Rotated",
+    "slug": "check-if-array-is-sorted-and-rotated",
+    "date": "23 May 2026",
+    "dateIso": "2026-05-23",
+    "formattedDate": "23 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "23-May",
+    "problemFolder": "1752-Check-if-Array-Is-Sorted-and-Rotated",
+    "folderPath": "solutions/May/23-May/1752-Check-if-Array-Is-Sorted-and-Rotated",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/",
+    "youtubeUrl": "https://youtu.be/H33FXQOpM7w",
+    "tags": [
+      "Array"
+    ],
+    "summary": "Determine if an array was originally sorted in non-decreasing order and then rotated some number of positions.",
+    "approach": "Count the number of drop points where nums[i] > nums[(i + 1) % n]; a valid sorted rotated array has at most one drop point.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.js"
+      }
+    }
+  },
+  {
     "id": 33,
     "title": "Search in Rotated Sorted Array",
     "slug": "search-in-rotated-sorted-array",

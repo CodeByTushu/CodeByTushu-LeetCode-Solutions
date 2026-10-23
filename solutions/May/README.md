@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **25 Problems (Ongoing)** |
+| **Total Solved** | **26 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3120** | [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | <span style="color:#10b981">**Easy**</span> | 26 May 2026 | [Java](./26-May/3120-Count-the-Number-of-Special-Characters-I/Solution.java) | [Python](./26-May/3120-Count-the-Number-of-Special-Characters-I/solution.py) | [C++](./26-May/3120-Count-the-Number-of-Special-Characters-I/solution.cpp) | [JS](./26-May/3120-Count-the-Number-of-Special-Characters-I/solution.js) | [Watch Video](https://youtu.be/h7jRTqBlfA4) | [📁 26-May](./26-May/3120-Count-the-Number-of-Special-Characters-I/) |
 | **1871** | [Jump Game VII](https://leetcode.com/problems/jump-game-vii/) | <span style="color:#ffc400">**Medium**</span> | 25 May 2026 | [Java](./25-May/1871-Jump-Game-VII/Solution.java) | [Python](./25-May/1871-Jump-Game-VII/solution.py) | [C++](./25-May/1871-Jump-Game-VII/solution.cpp) | [JS](./25-May/1871-Jump-Game-VII/solution.js) | [Watch Video](https://youtu.be/0yW-QLH0Lhs) | [📁 25-May](./25-May/1871-Jump-Game-VII/) |
 | **1340** | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | <span style="color:#ef4444">**Hard**</span> | 24 May 2026 | [Java](./24-May/1340-Jump-Game-V/Solution.java) | [Python](./24-May/1340-Jump-Game-V/solution.py) | [C++](./24-May/1340-Jump-Game-V/solution.cpp) | [JS](./24-May/1340-Jump-Game-V/solution.js) | [Watch Video](https://youtu.be/iBW5mDteOPE) | [📁 24-May](./24-May/1340-Jump-Game-V/) |
 | **1752** | [Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | <span style="color:#10b981">**Easy**</span> | 23 May 2026 | [Java](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/Solution.java) | [Python](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.py) | [C++](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.cpp) | [JS](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/solution.js) | [Watch Video](https://youtu.be/H33FXQOpM7w) | [📁 23-May](./23-May/1752-Check-if-Array-Is-Sorted-and-Rotated/) |

@@ -9484,6 +9484,54 @@
     }
   },
   {
+    "id": "961",
+    "title": "N-Repeated Element in Size 2N Array",
+    "slug": "n-repeated-element-in-size-2n-array",
+    "date": "02 January 2026",
+    "dateIso": "2026-01-02",
+    "formattedDate": "02 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "2-January",
+    "problemFolder": "961-N-Repeated-Element-in-Size-2N-Array",
+    "folderPath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "summary": "Return the element that is repeated n times in an integer array of size 2n containing n + 1 unique elements.",
+    "approach": "Traverse the array while tracking visited elements in a hash set. Because all other elements occur strictly once, the very first duplicate encountered is guaranteed to be the n-repeated answer.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": "66",
     "title": "Plus One",
     "slug": "plus-one",

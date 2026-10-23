@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **1** | January Daily Solutions Series Active 🟢 |
-| 🟢 **Easy Problems** | **1** | Problem #66 |
+| **Total Solved Problems** | **2** | January Daily Solutions Series Active 🟢 |
+| 🟢 **Easy Problems** | **2** | Problems #66, #961 |
 | 🟡 **Medium Problems** | **0** | — |
 | 🔴 **Hard Problems** | **0** | — |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 / 1** | Available on YouTube |
+| 🎥 **Video Walkthroughs** | **1 Available / 1 Scheduled** | 1 on YouTube, 1 Coming Soon |
 
 ---
 
@@ -35,13 +35,15 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **961** | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | <span style="color:#10b981">**Easy**</span> | 02 Jan 2026 | [Java](./2-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java) | [Python](./2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py) | [C++](./2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp) | [JS](./2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js) | *Coming Soon* | [📁 2-January](./2-January/961-N-Repeated-Element-in-Size-2N-Array/) |
 | **66** | [Plus One](https://leetcode.com/problems/plus-one/) | <span style="color:#10b981">**Easy**</span> | 01 Jan 2026 | [Java](./1-January/66-Plus-One/Solution.java) | [Python](./1-January/66-Plus-One/solution.py) | [C++](./1-January/66-Plus-One/solution.cpp) | [JS](./1-January/66-Plus-One/solution.js) | [Watch Video](https://youtu.be/QaqpaMoCl3c) | [📁 1-January](./1-January/66-Plus-One/) |
 
 ---
 
 ## 🏷️ Category & Pattern Index (January 2026)
 
-- **Array:** [#66 Plus One](./1-January/66-Plus-One/)
+- **Array:** [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/)
+- **Hash Table:** [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/)
 - **Math:** [#66 Plus One](./1-January/66-Plus-One/)
 
 ---

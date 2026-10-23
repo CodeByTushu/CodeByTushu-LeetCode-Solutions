@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 3488,
+    "title": "Closest Equal Element Queries",
+    "slug": "closest-equal-element-queries",
+    "date": "16 April 2026",
+    "dateIso": "2026-04-16",
+    "formattedDate": "16 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "16-April",
+    "problemFolder": "3488-Closest-Equal-Element-Queries",
+    "folderPath": "solutions/April/16-April/3488-Closest-Equal-Element-Queries",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/closest-equal-element-queries/",
+    "leetcodeUrl": "https://leetcode.com/problems/closest-equal-element-queries/",
+    "youtubeUrl": "https://youtu.be/V2zmsfz4oGc",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Binary Search"
+    ],
+    "summary": "Find the minimum distance between the element at each query index and any other index with the same value in a circular array.",
+    "approach": "Traverse the circular array twice (2N iterations) tracking the last seen index for each value in a hash map to compute circular minimum distances, then answer each query in O(1).",
+    "timeComplexity": "O(N + Q)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/16-April/3488-Closest-Equal-Element-Queries/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/16-April/3488-Closest-Equal-Element-Queries/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/16-April/3488-Closest-Equal-Element-Queries/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/16-April/3488-Closest-Equal-Element-Queries/solution.js"
+      }
+    }
+  },
+  {
     "id": 2515,
     "title": "Shortest Distance to Target String in a Circular Array",
     "slug": "shortest-distance-to-target-string-in-a-circular-array",

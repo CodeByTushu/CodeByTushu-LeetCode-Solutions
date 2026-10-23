@@ -8643,5 +8643,54 @@
         "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.js"
       }
     }
+  },
+  {
+    "id": 2463,
+    "title": "Minimum Total Distance Traveled",
+    "slug": "minimum-total-distance-traveled",
+    "date": "14 April 2026",
+    "dateIso": "2026-04-14",
+    "formattedDate": "14 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "14-April",
+    "problemFolder": "2463-Minimum-Total-Distance-Traveled",
+    "folderPath": "solutions/April/14-April/2463-Minimum-Total-Distance-Traveled",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-total-distance-traveled/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-total-distance-traveled/",
+    "youtubeUrl": "https://youtu.be/9sSTzYIWQ50",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Sorting"
+    ],
+    "summary": "Find the minimum total distance traveled by all robots to be repaired at factories with given capacities.",
+    "approach": "Sort robots and factories by coordinate, then use dynamic programming where each factory repairs an optimal contiguous range of robots.",
+    "timeComplexity": "O(N * M * min(N, L))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/14-April/2463-Minimum-Total-Distance-Traveled/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/14-April/2463-Minimum-Total-Distance-Traveled/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/14-April/2463-Minimum-Total-Distance-Traveled/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/14-April/2463-Minimum-Total-Distance-Traveled/solution.js"
+      }
+    }
   }
 ]

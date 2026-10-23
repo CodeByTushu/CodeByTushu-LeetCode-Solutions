@@ -23,9 +23,9 @@
 | :--- | :--- |
 | **Month / Quarter** | April 2026 (Q2 — Spring) |
 | **Status** | `Archive / Ingesting` |
-| **Total Days** | 30 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
+| **Total Solved** | **1 Problem (Ongoing)** |
+| **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
+| **Video Walkthroughs** | Available on YouTube |
 
 ---
 
@@ -46,9 +46,11 @@ solutions/April/
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ April Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for April. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2463** | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/) | <span style="color:#ef4444">**Hard**</span> | 14 April 2026 | [Java](./14-April/2463-Minimum-Total-Distance-Traveled/Solution.java) | [Python](./14-April/2463-Minimum-Total-Distance-Traveled/solution.py) | [C++](./14-April/2463-Minimum-Total-Distance-Traveled/solution.cpp) | [JS](./14-April/2463-Minimum-Total-Distance-Traveled/solution.js) | [Watch Video](https://youtu.be/9sSTzYIWQ50) | [📁 14-April](./14-April/2463-Minimum-Total-Distance-Traveled/) |
 
 ---
 
@@ -57,7 +59,7 @@ solutions/April/
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md"><strong>🗂️ View All Months Hub</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="../October/"><strong>🎃 Browse October Solutions (15 Solved)</strong></a>
+  <a href="../October/"><strong>🎃 Browse October Solutions (23 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

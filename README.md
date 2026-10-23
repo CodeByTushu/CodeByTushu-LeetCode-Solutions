@@ -18,89 +18,17 @@
 
 ---
 
-## 🎯 Executive Overview
+## ⚡ Today's Daily Problem (Featured: 23 October 2026)
 
-Welcome to the **CodeByTushu Daily LeetCode Solutions Publishing Platform**. All daily LeetCode solutions, deep-dive algorithmic approaches, and video walkthroughs are publicly accessible on our official platform:
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3644** | [Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | <span style="color:#ffc400">**Medium**</span> | 23 Oct 2026 | [Java](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/Solution.java) | [Python](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/solution.py) | [C++](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/solution.cpp) | [JS](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/solution.js) | [Watch Video](https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x) | [README](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/README.md) |
 
-👉 **[CodeByTushu LeetCode Portal (https://codebytushu.com/Leetcode/)](https://codebytushu.com/Leetcode/)**
-
-This GitHub repository serves as the official, structured open-source code archive providing complete, optimal implementations across **four major programming languages**:
-
-- ☕ **Java** (`Solution.java`) — Enterprise OOP, standard collections, optimal primitive logic.
-- 🐍 **Python** (`solution.py`) — Clean Pythonic code with type annotations and standard data structures.
-- ⚡ **C++** (`solution.cpp`) — High-performance STL algorithms, cache-friendly vectors, and fast I/O.
-- 🌐 **JavaScript** (`solution.js`) — Modern ES6+, typed arrays, and performance-tuned JS.
-
----
-
-## 🌐 Official LeetCode Live Platform
-
-Explore the full interactive LeetCode experience on our official platform:
-
-👉 **[https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)**
-
-### 🌟 Key Highlights:
-- 🚀 **Daily DSA Series:** Curated daily algorithmic challenges solved step-by-step.
-- ⏱️ **Optimal Memory & Speed:** Strict $\mathcal{O}(1)$ or minimal auxiliary memory benchmarks.
-- 💡 **Detailed Approaches & Invariants:** Comprehensive explanations and dry runs.
-- 🎥 **Video Solutions:** Embedded walkthroughs directly integrated from our YouTube channel.
-
----
-
-## 💻 Supported Programming Languages & Implementation Philosophy
-
-Every problem in this repository is solved across **four industry-standard languages**. Each language serves a unique educational and practical purpose:
-
-### ☕ 1. Java (`Solution.java`)
-- **Why We Use It:** Java is the backbone of enterprise software engineering and technical interview rounds at top-tier tech companies (FAANG, Fortune 500). Its strong typing and predictable memory model enforce rigorous object-oriented problem-solving.
-- **What You Will Learn:**
-  - Standard Java Collections Framework (`ArrayList`, `HashMap`, `TreeMap`, `PriorityQueue`).
-  - High-performance primitive optimizations (`char[]`, bitwise manipulation, avoiding boxed types like `Integer`).
-  - Idiomatic class structures and clean, maintainable modular code.
-- **How Solutions Are Implemented:** Designed with zero unnecessary heap allocations for optimal runtime performance, adhering to clean coding standards expected in senior engineering interviews.
-
----
-
-### 🐍 2. Python (`solution.py`)
-- **Why We Use It:** Python is the premier language for rapid algorithmic prototyping, machine learning, and clean algorithmic expression. Its expressive syntax allows developers to grasp core logic without verbosity.
-- **What You Will Learn:**
-  - Modern Pythonic idioms, list comprehensions, and generator expressions.
-  - Standard library mastery: `collections` (`deque`, `defaultdict`, `Counter`), `heapq`, and `itertools`.
-  - Type annotations (`typing.List`, `typing.Optional`) and recursion optimization (`functools.lru_cache`).
-- **How Solutions Are Implemented:** Highly readable, concise, and mathematically elegant implementations that follow PEP 8 standards with full type annotations.
-
----
-
-### ⚡ 3. C++ (`solution.cpp`)
-- **Why We Use It:** C++ represents the gold standard in competitive programming and high-frequency, low-latency computing. It gives direct control over system memory and cache locality.
-- **What You Will Learn:**
-  - High-performance Standard Template Library (STL) algorithms and containers (`std::vector`, `std::unordered_map`, `std::string_view`).
-  - Pass-by-reference (`const string&`), pointer arithmetic, and cache-friendly contiguous memory allocations.
-  - I/O fast synchronization (`ios_base::sync_with_stdio(false); cin.tie(NULL);`).
-- **How Solutions Are Implemented:** Tuned for blazing fast execution ($0\text{ ms}$ LeetCode runs), minimal memory footprint, and competitive programming paradigms.
-
----
-
-### 🌐 4. JavaScript (`solution.js`)
-- **Why We Use It:** JavaScript powers the entire web ecosystem and full-stack engineering landscape. Frontend and full-stack technical interviews heavily emphasize JavaScript DSA.
-- **What You Will Learn:**
-  - Modern ECMAScript (ES6+) patterns (`const`/`let`, arrow functions, spread operator, object destructuring).
-  - Built-in data structures: `Map`, `Set`, `Array.prototype` higher-order methods, and typed arrays (`Uint32Array`).
-  - Engine-level optimization under V8 (Chrome / Node.js JIT execution characteristics).
-- **How Solutions Are Implemented:** Clean function-scoped implementations compatible with LeetCode's Node.js runtime, emphasizing clarity and asymptotic optimality.
-
----
-
-## 📊 Repository Statistics (Live & Verified)
-
-- **Total Published Problems:** `193`
-- **Supported Languages:** `4` (Java, Python, C++, JavaScript)
-- **Difficulty Breakdown:**
-  - 🟢 **Easy:** `48`
-  - 🟡 **Medium:** `99`
-  - 🔴 **Hard:** `46`
-- **Active Year:** `2026`
-- **Active Months:** `October 2026`, `September 2026`, `August 2026`, `July 2026`, `June 2026`, `May 2026`, `April 2026`
+<p align="center">
+  <a href="./solutions/October/">
+    <img src="https://img.shields.io/badge/🎃_Open_Complete_October_Folder_(23_Days_Archive)-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Open October Archive"/>
+  </a>
+</p>
 
 ---
 
@@ -159,6 +87,92 @@ CodeByTushu-LeetCode-Solutions/
 
 ---
 
+## 📊 Repository Statistics (Live & Verified)
+
+- **Total Published Problems:** `193`
+- **Supported Languages:** `4` (Java, Python, C++, JavaScript)
+- **Difficulty Breakdown:**
+  - 🟢 **Easy:** `48`
+  - 🟡 **Medium:** `99`
+  - 🔴 **Hard:** `46`
+- **Active Year:** `2026`
+- **Active Months:** `October 2026`, `September 2026`, `August 2026`, `July 2026`, `June 2026`, `May 2026`, `April 2026`
+
+
+---
+## 🎯 Executive Overview
+
+Welcome to the **CodeByTushu Daily LeetCode Solutions Publishing Platform**. All daily LeetCode solutions, deep-dive algorithmic approaches, and video walkthroughs are publicly accessible on our official platform:
+
+👉 **[CodeByTushu LeetCode Portal (https://codebytushu.com/Leetcode/)](https://codebytushu.com/Leetcode/)**
+
+This GitHub repository serves as the official, structured open-source code archive providing complete, optimal implementations across **four major programming languages**:
+
+- ☕ **Java** (`Solution.java`) — Enterprise OOP, standard collections, optimal primitive logic.
+- 🐍 **Python** (`solution.py`) — Clean Pythonic code with type annotations and standard data structures.
+- ⚡ **C++** (`solution.cpp`) — High-performance STL algorithms, cache-friendly vectors, and fast I/O.
+- 🌐 **JavaScript** (`solution.js`) — Modern ES6+, typed arrays, and performance-tuned JS.
+
+
+---
+## 🌐 Official LeetCode Live Platform
+
+Explore the full interactive LeetCode experience on our official platform:
+
+👉 **[https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)**
+
+### 🌟 Key Highlights:
+- 🚀 **Daily DSA Series:** Curated daily algorithmic challenges solved step-by-step.
+- ⏱️ **Optimal Memory & Speed:** Strict $\mathcal{O}(1)$ or minimal auxiliary memory benchmarks.
+- 💡 **Detailed Approaches & Invariants:** Comprehensive explanations and dry runs.
+- 🎥 **Video Solutions:** Embedded walkthroughs directly integrated from our YouTube channel.
+
+
+---
+## 💻 Supported Programming Languages & Implementation Philosophy
+
+Every problem in this repository is solved across **four industry-standard languages**. Each language serves a unique educational and practical purpose:
+
+### ☕ 1. Java (`Solution.java`)
+- **Why We Use It:** Java is the backbone of enterprise software engineering and technical interview rounds at top-tier tech companies (FAANG, Fortune 500). Its strong typing and predictable memory model enforce rigorous object-oriented problem-solving.
+- **What You Will Learn:**
+  - Standard Java Collections Framework (`ArrayList`, `HashMap`, `TreeMap`, `PriorityQueue`).
+  - High-performance primitive optimizations (`char[]`, bitwise manipulation, avoiding boxed types like `Integer`).
+  - Idiomatic class structures and clean, maintainable modular code.
+- **How Solutions Are Implemented:** Designed with zero unnecessary heap allocations for optimal runtime performance, adhering to clean coding standards expected in senior engineering interviews.
+
+---
+
+### 🐍 2. Python (`solution.py`)
+- **Why We Use It:** Python is the premier language for rapid algorithmic prototyping, machine learning, and clean algorithmic expression. Its expressive syntax allows developers to grasp core logic without verbosity.
+- **What You Will Learn:**
+  - Modern Pythonic idioms, list comprehensions, and generator expressions.
+  - Standard library mastery: `collections` (`deque`, `defaultdict`, `Counter`), `heapq`, and `itertools`.
+  - Type annotations (`typing.List`, `typing.Optional`) and recursion optimization (`functools.lru_cache`).
+- **How Solutions Are Implemented:** Highly readable, concise, and mathematically elegant implementations that follow PEP 8 standards with full type annotations.
+
+---
+
+### ⚡ 3. C++ (`solution.cpp`)
+- **Why We Use It:** C++ represents the gold standard in competitive programming and high-frequency, low-latency computing. It gives direct control over system memory and cache locality.
+- **What You Will Learn:**
+  - High-performance Standard Template Library (STL) algorithms and containers (`std::vector`, `std::unordered_map`, `std::string_view`).
+  - Pass-by-reference (`const string&`), pointer arithmetic, and cache-friendly contiguous memory allocations.
+  - I/O fast synchronization (`ios_base::sync_with_stdio(false); cin.tie(NULL);`).
+- **How Solutions Are Implemented:** Tuned for blazing fast execution ($0\text{ ms}$ LeetCode runs), minimal memory footprint, and competitive programming paradigms.
+
+---
+
+### 🌐 4. JavaScript (`solution.js`)
+- **Why We Use It:** JavaScript powers the entire web ecosystem and full-stack engineering landscape. Frontend and full-stack technical interviews heavily emphasize JavaScript DSA.
+- **What You Will Learn:**
+  - Modern ECMAScript (ES6+) patterns (`const`/`let`, arrow functions, spread operator, object destructuring).
+  - Built-in data structures: `Map`, `Set`, `Array.prototype` higher-order methods, and typed arrays (`Uint32Array`).
+  - Engine-level optimization under V8 (Chrome / Node.js JIT execution characteristics).
+- **How Solutions Are Implemented:** Clean function-scoped implementations compatible with LeetCode's Node.js runtime, emphasizing clarity and asymptotic optimality.
+
+
+---
 ## 📚 Solutions Archive — Monthly Folders System
 
 Daily LeetCode solutions are organized into dedicated monthly archives. Click on any month below to view that month's complete date-wise problem index, direct solution code (**Java**, **Python**, **C++**, **JavaScript**), video walkthroughs, and editorial notes:
@@ -183,22 +197,8 @@ Daily LeetCode solutions are organized into dedicated monthly archives. Click on
 > [!TIP]
 > **Clicking any month above directly opens that month's dedicated folder**, displaying its interactive date-wise problem table, direct Java, Python, C++, and JavaScript code links, video walkthroughs, and comprehensive READMEs!
 
----
-
-### ⚡ Today's Daily Problem (Featured: 23 October 2026)
-
-| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
-|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **3644** | [Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | <span style="color:#ffc400">**Medium**</span> | 23 Oct 2026 | [Java](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/Solution.java) | [Python](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/solution.py) | [C++](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/solution.cpp) | [JS](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/solution.js) | [Watch Video](https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x) | [README](./solutions/October/23-October/3644-Maximum-K-to-Sort-a-Permutation/README.md) |
-
-<p align="center">
-  <a href="./solutions/October/">
-    <img src="https://img.shields.io/badge/🎃_Open_Complete_October_Folder_(23_Days_Archive)-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Open October Archive"/>
-  </a>
-</p>
 
 ---
-
 ## 📅 Monthly Archive Index
 
 Explore daily solutions organized by month:

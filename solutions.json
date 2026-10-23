@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 1855,
+    "title": "Maximum Distance Between a Pair of Values",
+    "slug": "maximum-distance-between-a-pair-of-values",
+    "date": "19 April 2026",
+    "dateIso": "2026-04-19",
+    "formattedDate": "19 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "19-April",
+    "problemFolder": "1855-Maximum-Distance-Between-a-Pair-of-Values",
+    "folderPath": "solutions/April/19-April/1855-Maximum-Distance-Between-a-Pair-of-Values",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/",
+    "youtubeUrl": "https://youtu.be/oNOsHV3pif4",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search"
+    ],
+    "summary": "Find the maximum distance j - i between valid pairs in two non-increasing arrays such that i <= j and nums1[i] <= nums2[j].",
+    "approach": "Use a two-pointer technique on the non-increasing arrays, greedily advancing j when nums1[i] <= nums2[j] and advancing i otherwise.",
+    "timeComplexity": "O(N + M)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/solution.js"
+      }
+    }
+  },
+  {
     "id": 3783,
     "title": "Mirror Distance of an Integer",
     "slug": "mirror-distance-of-an-integer",

@@ -7131,6 +7131,54 @@
     }
   },
   {
+    "id": 33,
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array",
+    "date": "22 May 2026",
+    "dateIso": "2026-05-22",
+    "formattedDate": "22 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "22-May",
+    "problemFolder": "33-Search-in-Rotated-Sorted-Array",
+    "folderPath": "solutions/May/22-May/33-Search-in-Rotated-Sorted-Array",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "youtubeUrl": "https://youtu.be/tOzKgWlmqTA",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "summary": "Find the index of target in an ascending array of distinct integers that has been rotated at an unknown pivot, or return -1.",
+    "approach": "Apply modified binary search by identifying which half is sorted and determining if the target lies within the boundaries of that sorted half.",
+    "timeComplexity": "O(log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/22-May/33-Search-in-Rotated-Sorted-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/22-May/33-Search-in-Rotated-Sorted-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/22-May/33-Search-in-Rotated-Sorted-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/22-May/33-Search-in-Rotated-Sorted-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": 3043,
     "title": "Find the Length of the Longest Common Prefix",
     "slug": "find-the-length-of-the-longest-common-prefix",

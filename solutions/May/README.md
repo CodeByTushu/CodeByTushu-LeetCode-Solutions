@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **21 Problems (Ongoing)** |
+| **Total Solved** | **22 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **33** | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | <span style="color:#ffc400">**Medium**</span> | 22 May 2026 | [Java](./22-May/33-Search-in-Rotated-Sorted-Array/Solution.java) | [Python](./22-May/33-Search-in-Rotated-Sorted-Array/solution.py) | [C++](./22-May/33-Search-in-Rotated-Sorted-Array/solution.cpp) | [JS](./22-May/33-Search-in-Rotated-Sorted-Array/solution.js) | [Watch Video](https://youtu.be/tOzKgWlmqTA) | [📁 22-May](./22-May/33-Search-in-Rotated-Sorted-Array/) |
 | **3043** | [Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/) | <span style="color:#ffc400">**Medium**</span> | 21 May 2026 | [Java](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/Solution.java) | [Python](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/solution.py) | [C++](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/solution.cpp) | [JS](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/solution.js) | [Watch Video](https://youtu.be/PYKXRx2E_fQ) | [📁 21-May](./21-May/3043-Find-the-Length-of-the-Longest-Common-Prefix/) |
 | **2657** | [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | <span style="color:#ffc400">**Medium**</span> | 20 May 2026 | [Java](./20-May/2657-Find-the-Prefix-Common-Array-of-Two-Arrays/Solution.java) | [Python](./20-May/2657-Find-the-Prefix-Common-Array-of-Two-Arrays/solution.py) | [C++](./20-May/2657-Find-the-Prefix-Common-Array-of-Two-Arrays/solution.cpp) | [JS](./20-May/2657-Find-the-Prefix-Common-Array-of-Two-Arrays/solution.js) | [Watch Video](https://youtu.be/W91IYzHUi4k) | [📁 20-May](./20-May/2657-Find-the-Prefix-Common-Array-of-Two-Arrays/) |
 | **2540** | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) | <span style="color:#10b981">**Easy**</span> | 19 May 2026 | [Java](./19-May/2540-Minimum-Common-Value/Solution.java) | [Python](./19-May/2540-Minimum-Common-Value/solution.py) | [C++](./19-May/2540-Minimum-Common-Value/solution.cpp) | [JS](./19-May/2540-Minimum-Common-Value/solution.js) | [Watch Video](https://youtu.be/-GQ6yHMBlfc) | [📁 19-May](./19-May/2540-Minimum-Common-Value/) |

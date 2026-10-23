@@ -8645,6 +8645,56 @@
     }
   },
   {
+    "id": 3464,
+    "title": "Maximize the Distance Between Points on a Square",
+    "slug": "maximize-the-distance-between-points-on-a-square",
+    "date": "25 April 2026",
+    "dateIso": "2026-04-25",
+    "formattedDate": "25 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "25-April",
+    "problemFolder": "3464-Maximize-the-Distance-Between-Points-on-a-Square",
+    "folderPath": "solutions/April/25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/",
+    "youtubeUrl": "https://youtu.be/r3W_ocFnzxw",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Geometry",
+      "Greedy"
+    ],
+    "summary": "Maximize the minimum Manhattan distance among k selected points lying on the boundary of a square.",
+    "approach": "Unroll the square perimeter into 1D coordinates, then binary search on the minimum distance combined with a greedy circular feasibility check.",
+    "timeComplexity": "O(N log N + N * k log N * log(side))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/25-April/3464-Maximize-the-Distance-Between-Points-on-a-Square/solution.js"
+      }
+    }
+  },
+  {
     "id": 2833,
     "title": "Furthest Point From Origin",
     "slug": "furthest-point-from-origin",

@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 3093,
+    "title": "Longest Common Suffix Queries",
+    "slug": "longest-common-suffix-queries",
+    "date": "28 May 2026",
+    "dateIso": "2026-05-28",
+    "formattedDate": "28 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "28-May",
+    "problemFolder": "3093-Longest-Common-Suffix-Queries",
+    "folderPath": "solutions/May/28-May/3093-Longest-Common-Suffix-Queries",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/longest-common-suffix-queries/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-common-suffix-queries/",
+    "youtubeUrl": "https://youtu.be/nc0rpFK962Q",
+    "tags": [
+      "Array",
+      "String",
+      "Trie"
+    ],
+    "summary": "Find the index of the string in wordsContainer that shares the longest common suffix with each query string, breaking ties by shortest length then smallest index.",
+    "approach": "Insert all container strings reversed into a Trie storing the optimal index at each node, then traverse reversed query strings to find the deepest matching node.",
+    "timeComplexity": "O(N + Q)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/28-May/3093-Longest-Common-Suffix-Queries/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/28-May/3093-Longest-Common-Suffix-Queries/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/28-May/3093-Longest-Common-Suffix-Queries/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/28-May/3093-Longest-Common-Suffix-Queries/solution.js"
+      }
+    }
+  },
+  {
     "id": 3121,
     "title": "Count the Number of Special Characters II",
     "slug": "count-the-number-of-special-characters-ii",

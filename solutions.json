@@ -7131,6 +7131,56 @@
     }
   },
   {
+    "id": 3161,
+    "title": "Block Placement Queries",
+    "slug": "block-placement-queries",
+    "date": "30 May 2026",
+    "dateIso": "2026-05-30",
+    "formattedDate": "30 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "30-May",
+    "problemFolder": "3161-Block-Placement-Queries",
+    "folderPath": "solutions/May/30-May/3161-Block-Placement-Queries",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/block-placement-queries/",
+    "leetcodeUrl": "https://leetcode.com/problems/block-placement-queries/",
+    "youtubeUrl": "https://youtu.be/VDU2vUoHUzE",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Segment Tree",
+      "Binary Indexed Tree"
+    ],
+    "summary": "Process obstacle additions and query if a block of size sz can fit within range [0, x] without intersecting any obstacles.",
+    "approach": "Maintain gap lengths between consecutive obstacles in a Segment Tree supporting range maximum and predecessor/successor searches over coordinate range [0, M].",
+    "timeComplexity": "O(Q log M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/30-May/3161-Block-Placement-Queries/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/30-May/3161-Block-Placement-Queries/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/30-May/3161-Block-Placement-Queries/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/30-May/3161-Block-Placement-Queries/solution.js"
+      }
+    }
+  },
+  {
     "id": 3300,
     "title": "Minimum Element After Replacement With Digit Sum",
     "slug": "minimum-element-after-replacement-with-digit-sum",

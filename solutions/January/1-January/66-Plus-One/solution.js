@@ -1,9 +1,11 @@
 /**
  * Problem: LeetCode 66 - Plus One
  * Difficulty: Easy
- * Language: JavaScript (ES6+ / Node.js)
+ * Language: JavaScript
  * Author: CodeByTushu
- *
+ */
+
+/**
  * @param {number[]} digits
  * @return {number[]}
  */

@@ -1,7 +1,7 @@
 """
 Problem: LeetCode 66 - Plus One
 Difficulty: Easy
-Language: Python 3
+Language: Python
 Author: CodeByTushu
 """
 

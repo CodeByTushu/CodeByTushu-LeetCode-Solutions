@@ -9484,6 +9484,55 @@
     }
   },
   {
+    "id": "1339",
+    "title": "Maximum Product of Splitted Binary Tree",
+    "slug": "maximum-product-of-splitted-binary-tree",
+    "date": "07 January 2026",
+    "dateIso": "2026-01-07",
+    "formattedDate": "07 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "7-January",
+    "problemFolder": "1339-Maximum-Product-of-Splitted-Binary-Tree",
+    "folderPath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "summary": "Split a binary tree into two subtrees by removing one edge such that the product of the sums of the two subtrees is maximized modulo 10^9 + 7.",
+    "approach": "Compute all subtree sums via post-order DFS traversal. For each subtree sum S, the split yields products S * (totalSum - S). Find the maximal product using 64-bit integers before taking the modulo 10^9 + 7.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js"
+      }
+    }
+  },
+  {
     "id": "1161",
     "title": "Maximum Level Sum of a Binary Tree",
     "slug": "maximum-level-sum-of-a-binary-tree",

@@ -9484,6 +9484,54 @@
     }
   },
   {
+    "id": "1411",
+    "title": "Number of Ways to Paint N × 3 Grid",
+    "slug": "number-of-ways-to-paint-n-3-grid",
+    "date": "03 January 2026",
+    "dateIso": "2026-01-03",
+    "formattedDate": "03 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "3-January",
+    "problemFolder": "1411-Number-of-Ways-to-Paint-N-3-Grid",
+    "folderPath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "summary": "Given an n x 3 grid, compute the number of valid colorings using Red, Yellow, and Green such that no two adjacent cells share the same color modulo 10^9 + 7.",
+    "approach": "Classify single-row configurations into two symmetric classes: 2-color patterns (ABA, 6 ways) and 3-color patterns (ABC, 6 ways). Formulate transition counts between adjacent rows and apply dynamic programming with O(1) space.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": "961",
     "title": "N-Repeated Element in Size 2N Array",
     "slug": "n-repeated-element-in-size-2n-array",

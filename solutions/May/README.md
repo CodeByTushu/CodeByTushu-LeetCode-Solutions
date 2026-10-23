@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **13 Problems (Ongoing)** |
+| **Total Solved** | **14 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2784** | [Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good/) | <span style="color:#10b981">**Easy**</span> | 14 May 2026 | [Java](./14-May/2784-Check-if-Array-is-Good/Solution.java) | [Python](./14-May/2784-Check-if-Array-is-Good/solution.py) | [C++](./14-May/2784-Check-if-Array-is-Good/solution.cpp) | [JS](./14-May/2784-Check-if-Array-is-Good/solution.js) | [Watch Video](https://youtu.be/Mmm__v0Gc74) | [📁 14-May](./14-May/2784-Check-if-Array-is-Good/) |
 | **1674** | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | <span style="color:#ffc400">**Medium**</span> | 13 May 2026 | [Java](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/Solution.java) | [Python](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.py) | [C++](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.cpp) | [JS](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.js) | [Watch Video](https://youtu.be/iqqCz8AaulU) | [📁 13-May](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/) |
 | **1665** | [Minimum Initial Energy to Finish Tasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | <span style="color:#ef4444">**Hard**</span> | 12 May 2026 | [Java](./12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/Solution.java) | [Python](./12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/solution.py) | [C++](./12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/solution.cpp) | [JS](./12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/solution.js) | [Watch Video](https://youtu.be/h46nijPwoQQ) | [📁 12-May](./12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/) |
 | **2553** | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | <span style="color:#10b981">**Easy**</span> | 11 May 2026 | [Java](./11-May/2553-Separate-the-Digits-in-an-Array/Solution.java) | [Python](./11-May/2553-Separate-the-Digits-in-an-Array/solution.py) | [C++](./11-May/2553-Separate-the-Digits-in-an-Array/solution.cpp) | [JS](./11-May/2553-Separate-the-Digits-in-an-Array/solution.js) | [Watch Video](https://youtu.be/AqO7kwZyiA0) | [📁 11-May](./11-May/2553-Separate-the-Digits-in-an-Array/) |

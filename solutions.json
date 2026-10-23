@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 2784,
+    "title": "Check if Array is Good",
+    "slug": "check-if-array-is-good",
+    "date": "14 May 2026",
+    "dateIso": "2026-05-14",
+    "formattedDate": "14 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "14-May",
+    "problemFolder": "2784-Check-if-Array-is-Good",
+    "folderPath": "solutions/May/14-May/2784-Check-if-Array-is-Good",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/check-if-array-is-good/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-array-is-good/",
+    "youtubeUrl": "https://youtu.be/Mmm__v0Gc74",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "summary": "Verify if an integer array of length n + 1 is a valid permutation of base[n], which contains integers 1 through n - 1 once and integer n twice.",
+    "approach": "Determine candidate n as length - 1, then verify frequencies using a counting array ensuring numbers 1 to n - 1 appear once and n appears twice.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/14-May/2784-Check-if-Array-is-Good/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/14-May/2784-Check-if-Array-is-Good/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/14-May/2784-Check-if-Array-is-Good/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/14-May/2784-Check-if-Array-is-Good/solution.js"
+      }
+    }
+  },
+  {
     "id": 1674,
     "title": "Minimum Moves to Make Array Complementary",
     "slug": "minimum-moves-to-make-array-complementary",

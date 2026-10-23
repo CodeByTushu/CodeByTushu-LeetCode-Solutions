@@ -9484,6 +9484,54 @@
     }
   },
   {
+    "id": "1390",
+    "title": "Four Divisors",
+    "slug": "four-divisors",
+    "date": "04 January 2026",
+    "dateIso": "2026-01-04",
+    "formattedDate": "04 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "4-January",
+    "problemFolder": "1390-Four-Divisors",
+    "folderPath": "solutions/January/4-January/1390-Four-Divisors",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/four-divisors/",
+    "leetcodeUrl": "https://leetcode.com/problems/four-divisors/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Math"
+    ],
+    "summary": "Given an integer array nums, return the sum of divisors of the integers that have exactly four divisors.",
+    "approach": "For each number, iterate divisors up to its square root. Pair each divisor with its quotient, pruning early if divisor count exceeds 4. Accumulate the sum for numbers with exactly 4 divisors.",
+    "timeComplexity": "O(N * sqrt(M))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/4-January/1390-Four-Divisors/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/4-January/1390-Four-Divisors/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/4-January/1390-Four-Divisors/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/4-January/1390-Four-Divisors/solution.js"
+      }
+    }
+  },
+  {
     "id": "1411",
     "title": "Number of Ways to Paint N × 3 Grid",
     "slug": "number-of-ways-to-paint-n-3-grid",

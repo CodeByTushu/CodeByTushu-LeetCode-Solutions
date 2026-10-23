@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **3** | January Daily Solutions Series Active 🟢 |
+| **Total Solved Problems** | **4** | January Daily Solutions Series Active 🟢 |
 | 🟢 **Easy Problems** | **2** | Problems #66, #961 |
-| 🟡 **Medium Problems** | **0** | — |
+| 🟡 **Medium Problems** | **1** | Problem #1390 |
 | 🔴 **Hard Problems** | **1** | Problem #1411 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 Available / 2 Scheduled** | 1 on YouTube, 2 Coming Soon |
+| 🎥 **Video Walkthroughs** | **1 Available / 3 Scheduled** | 1 on YouTube, 3 Coming Soon |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1390** | [Four Divisors](https://leetcode.com/problems/four-divisors/) | <span style="color:#ffc400">**Medium**</span> | 04 Jan 2026 | [Java](./4-January/1390-Four-Divisors/Solution.java) | [Python](./4-January/1390-Four-Divisors/solution.py) | [C++](./4-January/1390-Four-Divisors/solution.cpp) | [JS](./4-January/1390-Four-Divisors/solution.js) | *Coming Soon* | [📁 4-January](./4-January/1390-Four-Divisors/) |
 | **1411** | [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | <span style="color:#ef4444">**Hard**</span> | 03 Jan 2026 | [Java](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java) | [Python](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py) | [C++](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp) | [JS](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js) | *Coming Soon* | [📁 3-January](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/) |
 | **961** | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | <span style="color:#10b981">**Easy**</span> | 02 Jan 2026 | [Java](./2-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java) | [Python](./2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py) | [C++](./2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp) | [JS](./2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js) | *Coming Soon* | [📁 2-January](./2-January/961-N-Repeated-Element-in-Size-2N-Array/) |
 | **66** | [Plus One](https://leetcode.com/problems/plus-one/) | <span style="color:#10b981">**Easy**</span> | 01 Jan 2026 | [Java](./1-January/66-Plus-One/Solution.java) | [Python](./1-January/66-Plus-One/solution.py) | [C++](./1-January/66-Plus-One/solution.cpp) | [JS](./1-January/66-Plus-One/solution.js) | [Watch Video](https://youtu.be/QaqpaMoCl3c) | [📁 1-January](./1-January/66-Plus-One/) |
@@ -43,10 +44,10 @@
 
 ## 🏷️ Category & Pattern Index (January 2026)
 
-- **Array:** [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/)
+- **Array:** [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)
 - **Dynamic Programming:** [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/)
 - **Hash Table:** [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/)
-- **Math:** [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/)
+- **Math:** [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)
 
 ---
 

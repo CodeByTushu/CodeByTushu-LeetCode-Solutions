@@ -27,7 +27,7 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌸 **February** | Q1 (Late Winter) | — | 📁 Planned / Ingesting | [📂 Browse February](./February/) |
 | 🌷 **March** | Q1 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse March](./March/) |
 | 🌿 **April** | Q2 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse April](./April/) |
-| ☀️ **May** | Q2 (Early Summer) | **11 Solved** | 🟢 **Active Series** | [👉 **Browse May Solutions (11 Days)**](./May/) |
+| ☀️ **May** | Q2 (Early Summer) | **12 Solved** | 🟢 **Active Series** | [👉 **Browse May Solutions (12 Days)**](./May/) |
 | 🌊 **June** | Q2 (Summer) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse June Solutions (30 Days)**](./June/) |
 | 🍉 **July** | Q3 (Mid Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse July Solutions (31 Days)**](./July/) |
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |

@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 1665,
+    "title": "Minimum Initial Energy to Finish Tasks",
+    "slug": "minimum-initial-energy-to-finish-tasks",
+    "date": "12 May 2026",
+    "dateIso": "2026-05-12",
+    "formattedDate": "12 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "12-May",
+    "problemFolder": "1665-Minimum-Initial-Energy-to-Finish-Tasks",
+    "folderPath": "solutions/May/12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/",
+    "youtubeUrl": "https://youtu.be/h46nijPwoQQ",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Determine the minimum initial amount of energy needed to finish all tasks given each task's actual energy cost and minimum required energy to start.",
+    "approach": "Sort tasks descending by (minimum - actual) so tasks with largest surplus energy are processed first, then greedily simulate and accumulate initial energy deficit.",
+    "timeComplexity": "O(N * log(N))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/12-May/1665-Minimum-Initial-Energy-to-Finish-Tasks/solution.js"
+      }
+    }
+  },
+  {
     "id": 2553,
     "title": "Separate the Digits in an Array",
     "slug": "separate-the-digits-in-an-array",

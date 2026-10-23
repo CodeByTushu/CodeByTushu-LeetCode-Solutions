@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **15 Problems (Ongoing)** |
+| **Total Solved** | **16 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **154** | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 16 May 2026 | [Java](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/Solution.java) | [Python](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.py) | [C++](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.cpp) | [JS](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/solution.js) | [Watch Video](https://youtu.be/kL9Dr5e7P4k) | [📁 16-May](./16-May/154-Find-Minimum-in-Rotated-Sorted-Array-II/) |
 | **153** | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | <span style="color:#ffc400">**Medium**</span> | 15 May 2026 | [Java](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/Solution.java) | [Python](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/solution.py) | [C++](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/solution.cpp) | [JS](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/solution.js) | [Watch Video](https://youtu.be/kFmMM4LOyjc) | [📁 15-May](./15-May/153-Find-Minimum-in-Rotated-Sorted-Array/) |
 | **2784** | [Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good/) | <span style="color:#10b981">**Easy**</span> | 14 May 2026 | [Java](./14-May/2784-Check-if-Array-is-Good/Solution.java) | [Python](./14-May/2784-Check-if-Array-is-Good/solution.py) | [C++](./14-May/2784-Check-if-Array-is-Good/solution.cpp) | [JS](./14-May/2784-Check-if-Array-is-Good/solution.js) | [Watch Video](https://youtu.be/Mmm__v0Gc74) | [📁 14-May](./14-May/2784-Check-if-Array-is-Good/) |
 | **1674** | [Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | <span style="color:#ffc400">**Medium**</span> | 13 May 2026 | [Java](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/Solution.java) | [Python](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.py) | [C++](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.cpp) | [JS](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/solution.js) | [Watch Video](https://youtu.be/iqqCz8AaulU) | [📁 13-May](./13-May/1674-Minimum-Moves-to-Make-Array-Complementary/) |

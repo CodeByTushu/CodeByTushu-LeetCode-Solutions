@@ -23,9 +23,9 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Days** | 31 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
+| **Total Solved** | **1 Problem (Ongoing)** |
+| **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
+| **Video Walkthroughs** | Available on YouTube |
 
 ---
 
@@ -46,9 +46,11 @@ solutions/May/
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ May Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for May. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **396** | [Rotate Function](https://leetcode.com/problems/rotate-function/) | <span style="color:#ffc400">**Medium**</span> | 01 May 2026 | [Java](./1-May/396-Rotate-Function/Solution.java) | [Python](./1-May/396-Rotate-Function/solution.py) | [C++](./1-May/396-Rotate-Function/solution.cpp) | [JS](./1-May/396-Rotate-Function/solution.js) | [Watch Video](https://youtu.be/NMoBBr39jtI) | [📁 1-May](./1-May/396-Rotate-Function/) |
 
 ---
 
@@ -57,7 +59,7 @@ solutions/May/
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md"><strong>🗂️ View All Months Hub</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="../October/"><strong>🎃 Browse October Solutions (15 Solved)</strong></a>
+  <a href="../October/"><strong>🎃 Browse October Solutions (23 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

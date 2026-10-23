@@ -7129,5 +7129,54 @@
         "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.js"
       }
     }
+  },
+  {
+    "id": 396,
+    "title": "Rotate Function",
+    "slug": "rotate-function",
+    "date": "01 May 2026",
+    "dateIso": "2026-05-01",
+    "formattedDate": "01 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "1-May",
+    "problemFolder": "396-Rotate-Function",
+    "folderPath": "solutions/May/1-May/396-Rotate-Function",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/rotate-function/",
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-function/",
+    "youtubeUrl": "https://youtu.be/NMoBBr39jtI",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming"
+    ],
+    "summary": "Calculate the maximum rotation function value F(k) for an array by rotating it clockwise.",
+    "approach": "Derive the mathematical recurrence relation F(k) = F(k-1) + sum - n * nums[n-k] to calculate each subsequent rotation value in O(1) time after computing F(0) and the total sum in O(N).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/1-May/396-Rotate-Function/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.js"
+      }
+    }
   }
 ]

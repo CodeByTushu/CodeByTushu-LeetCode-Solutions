@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 1722,
+    "title": "Minimize Hamming Distance After Swap Operations",
+    "slug": "minimize-hamming-distance-after-swap-operations",
+    "date": "21 April 2026",
+    "dateIso": "2026-04-21",
+    "formattedDate": "21 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "21-April",
+    "problemFolder": "1722-Minimize-Hamming-Distance-After-Swap-Operations",
+    "folderPath": "solutions/April/21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/",
+    "youtubeUrl": "https://youtu.be/ETnUAa-Gm8o",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Union Find"
+    ],
+    "summary": "Find the minimum Hamming distance between source and target after applying allowed swaps any number of times.",
+    "approach": "Group connected swap indices using Disjoint Set Union (DSU) and greedily match available target elements against the multiset of source values in each component.",
+    "timeComplexity": "O(N + M * alpha(N))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/21-April/1722-Minimize-Hamming-Distance-After-Swap-Operations/solution.js"
+      }
+    }
+  },
+  {
     "id": 2078,
     "title": "Two Furthest Houses With Different Colors",
     "slug": "two-furthest-houses-with-different-colors",

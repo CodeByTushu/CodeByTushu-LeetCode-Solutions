@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 3761,
+    "title": "Minimum Absolute Distance Between Mirror Pairs",
+    "slug": "minimum-absolute-distance-between-mirror-pairs",
+    "date": "17 April 2026",
+    "dateIso": "2026-04-17",
+    "formattedDate": "17 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "17-April",
+    "problemFolder": "3761-Minimum-Absolute-Distance-Between-Mirror-Pairs",
+    "folderPath": "solutions/April/17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/",
+    "youtubeUrl": "https://youtu.be/Hh0u2qOIgQE",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math"
+    ],
+    "summary": "Find the minimum absolute distance between indices i and j (i < j) such that reverse(nums[i]) equals nums[j].",
+    "approach": "Iterate through nums while maintaining a hash map of last seen indices for reversed numbers, checking for matches and updating the minimum distance in O(N).",
+    "timeComplexity": "O(N * log10(C))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/solution.js"
+      }
+    }
+  },
+  {
     "id": 3488,
     "title": "Closest Equal Element Queries",
     "slug": "closest-equal-element-queries",

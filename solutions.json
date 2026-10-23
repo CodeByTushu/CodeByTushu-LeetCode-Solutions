@@ -9484,6 +9484,56 @@
     }
   },
   {
+    "id": "1161",
+    "title": "Maximum Level Sum of a Binary Tree",
+    "slug": "maximum-level-sum-of-a-binary-tree",
+    "date": "06 January 2026",
+    "dateIso": "2026-01-06",
+    "formattedDate": "06 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "6-January",
+    "problemFolder": "1161-Maximum-Level-Sum-of-a-Binary-Tree",
+    "folderPath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "summary": "Given the root of a binary tree, return the smallest level index x such that the sum of all node values at level x is maximal.",
+    "approach": "Perform a Breadth-First Search (level-order traversal) using a queue. Sum node values level by level and update the answer level only upon discovering a strictly greater sum to naturally favor the smaller level on ties.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(W)",
+    "spaceComplexity": "O(W)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js"
+      }
+    }
+  },
+  {
     "id": "1975",
     "title": "Maximum Matrix Sum",
     "slug": "maximum-matrix-sum",

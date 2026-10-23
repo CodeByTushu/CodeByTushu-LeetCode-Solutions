@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | April 2026 (Q2 — Spring) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **6 Problems (Ongoing)** |
+| **Total Solved** | **7 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/April/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2078** | [Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/) | <span style="color:#10b981">**Easy**</span> | 20 April 2026 | [Java](./20-April/2078-Two-Furthest-Houses-With-Different-Colors/Solution.java) | [Python](./20-April/2078-Two-Furthest-Houses-With-Different-Colors/solution.py) | [C++](./20-April/2078-Two-Furthest-Houses-With-Different-Colors/solution.cpp) | [JS](./20-April/2078-Two-Furthest-Houses-With-Different-Colors/solution.js) | [Watch Video](https://youtu.be/7-NOE1zaS0M) | [📁 20-April](./20-April/2078-Two-Furthest-Houses-With-Different-Colors/) |
 | **1855** | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | <span style="color:#ffc400">**Medium**</span> | 19 April 2026 | [Java](./19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/Solution.java) | [Python](./19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/solution.py) | [C++](./19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/solution.cpp) | [JS](./19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/solution.js) | [Watch Video](https://youtu.be/oNOsHV3pif4) | [📁 19-April](./19-April/1855-Maximum-Distance-Between-a-Pair-of-Values/) |
 | **3783** | [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/) | <span style="color:#10b981">**Easy**</span> | 18 April 2026 | [Java](./18-April/3783-Mirror-Distance-of-an-Integer/Solution.java) | [Python](./18-April/3783-Mirror-Distance-of-an-Integer/solution.py) | [C++](./18-April/3783-Mirror-Distance-of-an-Integer/solution.cpp) | [JS](./18-April/3783-Mirror-Distance-of-an-Integer/solution.js) | [Watch Video](https://youtu.be/aAbY96Dc3G4) | [📁 18-April](./18-April/3783-Mirror-Distance-of-an-Integer/) |
 | **3761** | [Minimum Absolute Distance Between Mirror Pairs](https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/) | <span style="color:#ffc400">**Medium**</span> | 17 April 2026 | [Java](./17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/Solution.java) | [Python](./17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/solution.py) | [C++](./17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/solution.cpp) | [JS](./17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/solution.js) | [Watch Video](https://youtu.be/Hh0u2qOIgQE) | [📁 17-April](./17-April/3761-Minimum-Absolute-Distance-Between-Mirror-Pairs/) |

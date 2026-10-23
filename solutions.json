@@ -8645,6 +8645,55 @@
     }
   },
   {
+    "id": 2078,
+    "title": "Two Furthest Houses With Different Colors",
+    "slug": "two-furthest-houses-with-different-colors",
+    "date": "20 April 2026",
+    "dateIso": "2026-04-20",
+    "formattedDate": "20 Apr 2026",
+    "year": "2026",
+    "month": "April",
+    "dayFolder": "20-April",
+    "problemFolder": "2078-Two-Furthest-Houses-With-Different-Colors",
+    "folderPath": "solutions/April/20-April/2078-Two-Furthest-Houses-With-Different-Colors",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/two-furthest-houses-with-different-colors/",
+    "leetcodeUrl": "https://leetcode.com/problems/two-furthest-houses-with-different-colors/",
+    "youtubeUrl": "https://youtu.be/7-NOE1zaS0M",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Greedy"
+    ],
+    "summary": "Find the maximum distance between any two houses with different colors in an array.",
+    "approach": "Greedily compare every house with the first and last house, computing max distance in a single pass of O(N).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/20-April/2078-Two-Furthest-Houses-With-Different-Colors/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/20-April/2078-Two-Furthest-Houses-With-Different-Colors/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/20-April/2078-Two-Furthest-Houses-With-Different-Colors/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/20-April/2078-Two-Furthest-Houses-With-Different-Colors/solution.js"
+      }
+    }
+  },
+  {
     "id": 1855,
     "title": "Maximum Distance Between a Pair of Values",
     "slug": "maximum-distance-between-a-pair-of-values",

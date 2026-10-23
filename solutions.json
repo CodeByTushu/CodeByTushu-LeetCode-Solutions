@@ -9484,6 +9484,55 @@
     }
   },
   {
+    "id": "1975",
+    "title": "Maximum Matrix Sum",
+    "slug": "maximum-matrix-sum",
+    "date": "05 January 2026",
+    "dateIso": "2026-01-05",
+    "formattedDate": "05 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "5-January",
+    "problemFolder": "1975-Maximum-Matrix-Sum",
+    "folderPath": "solutions/January/5-January/1975-Maximum-Matrix-Sum",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-matrix-sum/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-matrix-sum/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Matrix"
+    ],
+    "summary": "Maximize the sum of an n x n matrix where adjacent pairs of elements can be multiplied by -1 any number of times.",
+    "approach": "Flipping adjacent signs preserves the parity of negative counts and allows negative signs to travel across the grid. If the count of negative numbers is even, all values become positive; if odd, leave the negative sign on the cell with minimum absolute value.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.js"
+      }
+    }
+  },
+  {
     "id": "1390",
     "title": "Four Divisors",
     "slug": "four-divisors",

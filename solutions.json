@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 48,
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "date": "04 May 2026",
+    "dateIso": "2026-05-04",
+    "formattedDate": "04 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "4-May",
+    "problemFolder": "48-Rotate-Image",
+    "folderPath": "solutions/May/4-May/48-Rotate-Image",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/rotate-image/",
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
+    "youtubeUrl": "https://youtu.be/sWA5qAcFvZ8",
+    "tags": [
+      "Array",
+      "Math",
+      "Matrix"
+    ],
+    "summary": "Rotate an n x n 2D image matrix 90 degrees clockwise in-place.",
+    "approach": "Decompose the 90 degree clockwise rotation into two in-place steps: first transpose the matrix across its main diagonal, then reverse each row horizontally.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/4-May/48-Rotate-Image/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/4-May/48-Rotate-Image/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/4-May/48-Rotate-Image/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/4-May/48-Rotate-Image/solution.js"
+      }
+    }
+  },
+  {
     "id": 796,
     "title": "Rotate String",
     "slug": "rotate-string",

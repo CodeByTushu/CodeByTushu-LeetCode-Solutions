@@ -7131,6 +7131,55 @@
     }
   },
   {
+    "id": 1306,
+    "title": "Jump Game III",
+    "slug": "jump-game-iii",
+    "date": "17 May 2026",
+    "dateIso": "2026-05-17",
+    "formattedDate": "17 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "17-May",
+    "problemFolder": "1306-Jump-Game-III",
+    "folderPath": "solutions/May/17-May/1306-Jump-Game-III",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/jump-game-iii/",
+    "leetcodeUrl": "https://leetcode.com/problems/jump-game-iii/",
+    "youtubeUrl": "https://youtu.be/JnySdp-1ExE",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "summary": "Determine if any index with value 0 can be reached from a starting index where each step allows jumping forward or backward by the value at the current index.",
+    "approach": "Model the possible jumps as an unweighted directed graph and use Breadth-First Search (BFS) with a visited array to explore reachable states.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/17-May/1306-Jump-Game-III/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/17-May/1306-Jump-Game-III/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/17-May/1306-Jump-Game-III/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/17-May/1306-Jump-Game-III/solution.js"
+      }
+    }
+  },
+  {
     "id": 154,
     "title": "Find Minimum in Rotated Sorted Array II",
     "slug": "find-minimum-in-rotated-sorted-array-ii",

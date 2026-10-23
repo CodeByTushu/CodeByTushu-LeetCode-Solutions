@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3336 - Find the Number of Subsequences With Equal GCD
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 private:
     static constexpr int MOD = 1'000'000'007;

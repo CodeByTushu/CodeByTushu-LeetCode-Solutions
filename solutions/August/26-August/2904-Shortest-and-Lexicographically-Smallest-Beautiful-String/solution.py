@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2904 - Shortest and Lexicographically Smallest Beautiful String
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def shortestBeautifulSubstring(self, s: str, k: int) -> str:
         n = len(s)

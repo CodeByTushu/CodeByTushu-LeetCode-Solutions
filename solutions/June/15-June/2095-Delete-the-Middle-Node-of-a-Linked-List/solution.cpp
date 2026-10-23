@@ -12,6 +12,12 @@ using namespace std;
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+/**
+ * Problem: LeetCode 2095 - Delete the Middle Node of a Linked List
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {

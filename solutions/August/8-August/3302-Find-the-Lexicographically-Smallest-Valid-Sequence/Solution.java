@@ -1,5 +1,11 @@
 import java.util.Arrays;
 
+/**
+ * Problem: LeetCode 3302 - Find the Lexicographically Smallest Valid Sequence
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
   public int[] validSequence(String word1, String word2) {
     int[] ans = new int[word2.length()];

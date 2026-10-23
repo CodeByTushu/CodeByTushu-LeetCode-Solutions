@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2574 - Left and Right Sum Differences
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] leftRightDifference(int[] nums) {
 

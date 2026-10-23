@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int longestSubsequence(int[] nums) {
         int totalXor = 0;

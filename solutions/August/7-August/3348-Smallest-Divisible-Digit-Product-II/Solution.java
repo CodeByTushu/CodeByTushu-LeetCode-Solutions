@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3348 - Smallest Divisible Digit Product II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
   static class Pair<K, V> {
     private final K key;

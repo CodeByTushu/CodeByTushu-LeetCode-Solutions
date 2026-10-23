@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3336 - Find the Number of Subsequences With Equal GCD
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import math
 
 class Solution:

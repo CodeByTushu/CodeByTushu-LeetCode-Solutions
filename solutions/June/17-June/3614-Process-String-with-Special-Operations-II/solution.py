@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3614 - Process String with Special Operations II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def processStr(self, s: str, k: int) -> str:
         n = len(s)

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2213 - Longest Substring of One Repeating Character
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {string} queryCharacters
  * @param {number[]} queryIndices

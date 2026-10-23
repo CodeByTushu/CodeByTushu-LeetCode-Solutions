@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3753 - Total Waviness of Numbers in Range II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def totalWaviness(self, num1: int, num2: int) -> int:
         def solve(x: int) -> int:

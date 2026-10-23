@@ -11,6 +11,12 @@
  */
 #include <utility>
 
+/**
+ * Problem: LeetCode 2265 - Count Nodes Equal to Average of Subtree
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     int count = 0;
 

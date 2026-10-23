@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3513 - Number of Unique XOR Triplets I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

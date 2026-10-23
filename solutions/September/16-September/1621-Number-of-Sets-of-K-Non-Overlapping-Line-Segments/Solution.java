@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1621 - Number of Sets of K Non-Overlapping Line Segments
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int numberOfSets(int n, int k) {
         long MOD = 1_000_000_007;

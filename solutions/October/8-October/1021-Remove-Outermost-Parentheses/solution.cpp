@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 1021 - Remove Outermost Parentheses
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string removeOuterParentheses(string s) {

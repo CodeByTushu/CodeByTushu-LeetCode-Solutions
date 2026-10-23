@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 835 - Image Overlap
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} img1
  * @param {number[][]} img2
  * @return {number}

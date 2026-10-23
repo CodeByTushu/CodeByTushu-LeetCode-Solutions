@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3518 - Smallest Palindromic Rearrangement II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     private static final long CAP = 2_000_000L;
 

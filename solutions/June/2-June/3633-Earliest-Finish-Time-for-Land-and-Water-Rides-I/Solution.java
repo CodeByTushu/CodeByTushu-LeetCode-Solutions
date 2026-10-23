@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3633 - Earliest Finish Time for Land and Water Rides I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int earliestFinishTime(int[] landStartTime, int[] landDuration,int[] waterStartTime, int[] waterDuration) {
 

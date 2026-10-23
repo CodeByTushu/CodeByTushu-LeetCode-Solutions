@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3312 - Sorted GCD Pair Queries
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     vector<int> gcdValues(vector<int>& nums, vector<long long>& queries) {

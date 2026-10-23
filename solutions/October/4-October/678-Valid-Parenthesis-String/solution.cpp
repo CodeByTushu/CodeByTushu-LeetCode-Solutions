@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 678 - Valid Parenthesis String
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool checkValidString(string s) {

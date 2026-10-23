@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def smallestSubsequence(self, s: str) -> str:
         last = {c: i for i, c in enumerate(s)}

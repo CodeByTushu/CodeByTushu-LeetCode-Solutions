@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1807 - Evaluate the Bracket Pairs of a String
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

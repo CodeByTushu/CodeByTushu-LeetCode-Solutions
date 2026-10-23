@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 115 - Distinct Subsequences
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def numDistinct(self, s: str, t: str) -> int:
         m, n = len(s), len(t)

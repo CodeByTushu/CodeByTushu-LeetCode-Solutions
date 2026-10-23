@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3720 - Lexicographically Smallest Permutation Greater Than Target
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def lexGreaterPermutation(self, s: str, target: str) -> str:
         n = len(s)

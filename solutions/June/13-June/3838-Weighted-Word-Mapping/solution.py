@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3838 - Weighted Word Mapping
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

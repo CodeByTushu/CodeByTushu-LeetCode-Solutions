@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def reverseParentheses(self, s: str) -> str:
         stack = []

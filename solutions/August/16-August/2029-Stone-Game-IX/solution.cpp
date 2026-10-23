@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2029 - Stone Game IX
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool stoneGameIX(vector<int>& stones) {

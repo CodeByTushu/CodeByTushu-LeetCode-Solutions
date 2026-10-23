@@ -8,10 +8,9 @@ using namespace std;
 
 /**
  * Problem: LeetCode 3568 - Minimum Moves to Clean the Classroom
- * Language: C++ (C++17 / C++20)
- * Approach: Breadth-First Search (BFS) with Bitmask State Tracking
- * Time Complexity: O(M * N * Energy * 2^L)
- * Space Complexity: O(M * N * Energy * 2^L)
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
  */
 class Solution {
 public:

@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     long long gcdSum(vector<int>& nums) {

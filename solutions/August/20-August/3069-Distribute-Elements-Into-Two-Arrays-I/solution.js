@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number[]}
  */

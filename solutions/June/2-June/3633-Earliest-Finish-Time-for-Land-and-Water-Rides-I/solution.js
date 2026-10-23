@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3633 - Earliest Finish Time for Land and Water Rides I
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} landStartTime
  * @param {number[]} landDuration
  * @param {number[]} waterStartTime

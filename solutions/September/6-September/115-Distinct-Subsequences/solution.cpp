@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 115 - Distinct Subsequences
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int numDistinct(string s, string t) {

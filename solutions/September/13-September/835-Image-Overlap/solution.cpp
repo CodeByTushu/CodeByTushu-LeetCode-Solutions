@@ -1,6 +1,12 @@
 #include <vector>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 835 - Image Overlap
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     int countOverlap(const std::vector<std::vector<int>>& img1, 
                      const std::vector<std::vector<int>>& img2, 

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3345 - Smallest Divisible Digit Product I
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def smallestNumber(self, n: int, t: int) -> int:
         def digit_product(num: int) -> int:

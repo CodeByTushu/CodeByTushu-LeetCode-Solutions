@@ -1,6 +1,12 @@
 #include <vector>
 #include <unordered_set>
 
+/**
+ * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int totalNumbers(std::vector<int>& digits) {

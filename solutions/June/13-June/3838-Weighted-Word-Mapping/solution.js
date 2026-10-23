@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3838 - Weighted Word Mapping
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string[]} words
  * @param {number[]} weights
  * @return {string}

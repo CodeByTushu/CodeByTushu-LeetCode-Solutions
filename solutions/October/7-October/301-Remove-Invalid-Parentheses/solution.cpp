@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 301 - Remove Invalid Parentheses
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     vector<string> removeInvalidParentheses(string s) {

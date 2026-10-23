@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3498 - Reverse Degree of a String
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int reverseDegree(String s) {
         int result = 0;

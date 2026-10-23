@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2948 - Make Lexicographically Smallest Array by Swapping Elements
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def lexicographicallySmallestArray(self, nums: list[int], limit: int) -> list[int]:
         n = len(nums)

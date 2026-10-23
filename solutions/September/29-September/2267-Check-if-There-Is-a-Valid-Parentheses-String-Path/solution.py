@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2267 - Check if There Is a Valid Parentheses String Path
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def hasValidPath(self, grid: list[list[str]]) -> bool:
         m, n = len(grid), len(grid[0])

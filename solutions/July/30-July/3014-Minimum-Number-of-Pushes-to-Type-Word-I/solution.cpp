@@ -1,5 +1,11 @@
 #include <string>
 
+/**
+ * Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int minimumPushes(std::string word) {

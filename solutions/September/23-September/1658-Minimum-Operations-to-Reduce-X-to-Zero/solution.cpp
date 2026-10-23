@@ -2,6 +2,12 @@
 #include <numeric>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 1658 - Minimum Operations to Reduce X to Zero
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int minOperations(std::vector<int>& nums, int x) {

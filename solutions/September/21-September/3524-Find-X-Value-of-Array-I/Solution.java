@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3524 - Find X Value of Array I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public long[] resultArray(int[] nums, int k) {
         int n = nums.length;

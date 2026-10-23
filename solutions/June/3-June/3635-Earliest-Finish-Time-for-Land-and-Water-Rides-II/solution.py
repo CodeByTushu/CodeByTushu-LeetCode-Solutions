@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3635 - Earliest Finish Time for Land and Water Rides II
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import bisect
 
 class Solution:

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public long sumAndMultiply(int n) {
         long x = 0;

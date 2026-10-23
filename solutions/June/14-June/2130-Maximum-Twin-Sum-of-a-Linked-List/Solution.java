@@ -8,6 +8,12 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+/**
+ * Problem: LeetCode 2130 - Maximum Twin Sum of a Linked List
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int pairSum(ListNode head) {
         // Find middle

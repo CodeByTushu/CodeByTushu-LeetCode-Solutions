@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 486 - Predict the Winner
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean predictTheWinner(int[] nums) {
         int n = nums.length;

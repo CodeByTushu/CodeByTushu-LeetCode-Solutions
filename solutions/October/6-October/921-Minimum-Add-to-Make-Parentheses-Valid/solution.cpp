@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int minAddToMakeValid(string s) {

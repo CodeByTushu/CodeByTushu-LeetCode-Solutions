@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {string}
  */

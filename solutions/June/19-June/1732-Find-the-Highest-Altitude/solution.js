@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1732 - Find the Highest Altitude
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} gain
  * @return {number}
  */

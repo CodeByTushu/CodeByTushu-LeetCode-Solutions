@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 1732 - Find the Highest Altitude
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int largestAltitude(vector<int>& gain) {

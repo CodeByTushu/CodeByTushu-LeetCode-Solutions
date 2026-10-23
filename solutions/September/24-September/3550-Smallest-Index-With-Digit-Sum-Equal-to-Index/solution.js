@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

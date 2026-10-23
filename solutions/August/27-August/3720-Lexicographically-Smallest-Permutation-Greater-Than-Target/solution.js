@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3720 - Lexicographically Smallest Permutation Greater Than Target
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {string} target
  * @return {string}

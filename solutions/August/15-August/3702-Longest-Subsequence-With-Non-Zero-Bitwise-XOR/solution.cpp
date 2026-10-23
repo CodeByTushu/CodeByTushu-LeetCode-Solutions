@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int longestSubsequence(vector<int>& nums) {

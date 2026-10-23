@@ -1,6 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxSubarrayLength(int[] nums, int k) {
         Map<Integer, Integer> freq = new HashMap<>();

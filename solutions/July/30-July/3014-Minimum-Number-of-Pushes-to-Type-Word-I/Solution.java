@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minimumPushes(String word) {
         int n = word.length();

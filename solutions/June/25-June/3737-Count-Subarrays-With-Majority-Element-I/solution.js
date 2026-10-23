@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3737 - Count Subarrays With Majority Element I
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} target
  * @return {number}

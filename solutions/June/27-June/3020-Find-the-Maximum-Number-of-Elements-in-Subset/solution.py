@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3020 - Find the Maximum Number of Elements in Subset
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import Counter
 from typing import List
 

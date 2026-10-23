@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 20 - Valid Parentheses
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {boolean}
  */

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

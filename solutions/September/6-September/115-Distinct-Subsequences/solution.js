@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 115 - Distinct Subsequences
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {string} t
  * @return {number}

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

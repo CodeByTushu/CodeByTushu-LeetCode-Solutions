@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 940 - Distinct Subsequences II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int distinctSubseqII(String s) {
         long MOD = 1_000_000_007;

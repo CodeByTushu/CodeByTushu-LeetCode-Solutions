@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3020 - Find the Maximum Number of Elements in Subset
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int maximumLength(vector<int>& nums) {

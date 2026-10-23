@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 678 - Valid Parenthesis String
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {boolean}
  */

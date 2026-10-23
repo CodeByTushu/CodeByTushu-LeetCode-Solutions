@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3116 - Kth Smallest Amount With Single Denomination Combination
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import math
 from typing import List
 

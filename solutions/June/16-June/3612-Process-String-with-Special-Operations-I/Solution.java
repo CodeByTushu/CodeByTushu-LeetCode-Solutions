@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3612 - Process String with Special Operations I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String processStr(String s) {
         StringBuilder result = new StringBuilder();

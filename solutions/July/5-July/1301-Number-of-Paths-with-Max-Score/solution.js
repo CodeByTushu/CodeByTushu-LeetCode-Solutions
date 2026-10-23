@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1301 - Number of Paths with Max Score
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string[]} board
  * @return {number[]}
  */

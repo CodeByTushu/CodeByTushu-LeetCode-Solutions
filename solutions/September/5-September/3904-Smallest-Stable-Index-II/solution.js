@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3904 - Smallest Stable Index II
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} k
  * @return {number}

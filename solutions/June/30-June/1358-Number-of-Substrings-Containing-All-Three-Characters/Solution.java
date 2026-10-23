@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1358 - Number of Substrings Containing All Three Characters
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int numberOfSubstrings(String s) {
         int[] count = new int[3];

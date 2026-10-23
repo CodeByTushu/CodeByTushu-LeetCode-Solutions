@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3870 - Count Commas in Range
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def countCommas(self, n: int) -> int:
         result = 0

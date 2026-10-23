@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3414 - Maximum Score of Non-overlapping Intervals
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 import bisect
 

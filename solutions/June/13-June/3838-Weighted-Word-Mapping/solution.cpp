@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3838 - Weighted Word Mapping
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string mapWordWeights(vector<string>& words, vector<int>& weights) {

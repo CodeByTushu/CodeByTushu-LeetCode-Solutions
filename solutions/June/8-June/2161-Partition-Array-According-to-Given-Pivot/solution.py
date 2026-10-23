@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2161 - Partition Array According to Given Pivot
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

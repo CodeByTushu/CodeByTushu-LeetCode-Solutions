@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} k
  * @return {number}

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2196 - Create Binary Tree From Descriptions
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List, Optional
 
 

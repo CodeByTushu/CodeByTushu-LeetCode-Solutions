@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3310 - Remove Methods From Project
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @param {number} k
  * @param {number[][]} invocations

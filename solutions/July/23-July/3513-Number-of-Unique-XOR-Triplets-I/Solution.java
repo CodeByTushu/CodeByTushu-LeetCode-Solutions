@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3513 - Number of Unique XOR Triplets I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int uniqueXorTriplets(int[] nums) {
         int n = nums.length;

@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2161 - Partition Array According to Given Pivot
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     vector<int> pivotArray(vector<int>& nums, int pivot) {

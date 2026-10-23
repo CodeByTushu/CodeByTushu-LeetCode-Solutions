@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1301 - Number of Paths with Max Score
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

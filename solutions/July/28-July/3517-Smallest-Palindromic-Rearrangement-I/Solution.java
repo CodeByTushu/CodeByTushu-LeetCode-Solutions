@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String smallestPalindrome(String s) {
         int[] freq = new int[26];

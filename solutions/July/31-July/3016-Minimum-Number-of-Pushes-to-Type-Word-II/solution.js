@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3016 - Minimum Number of Pushes to Type Word II
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} word
  * @return {number}
  */

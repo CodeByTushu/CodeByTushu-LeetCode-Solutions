@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2685 - Count the Number of Complete Components
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int countCompleteComponents(int n, vector<vector<int>>& edges) {

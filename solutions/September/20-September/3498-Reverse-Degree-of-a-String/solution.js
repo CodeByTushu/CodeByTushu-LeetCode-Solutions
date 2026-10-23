@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3498 - Reverse Degree of a String
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

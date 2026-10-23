@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1979 - Find Greatest Common Divisor of Array
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

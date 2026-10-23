@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1927 - Sum Game
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} num
  * @return {boolean}
  */

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2095 - Delete the Middle Node of a Linked List
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import Optional
 
 

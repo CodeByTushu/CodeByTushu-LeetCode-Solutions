@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def smallestPalindrome(self, s: str) -> str:
         freq = [0] * 26

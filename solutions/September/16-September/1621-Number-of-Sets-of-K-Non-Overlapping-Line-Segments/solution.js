@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1621 - Number of Sets of K Non-Overlapping Line Segments
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @param {number} k
  * @return {number}

@@ -1,10 +1,9 @@
 /**
  * Problem: LeetCode 3336 - Find the Number of Subsequences With Equal GCD
  * Difficulty: Hard
- * Language: JavaScript (Node.js)
- */
-
-/**
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * Computes the Greatest Common Divisor using the Euclidean algorithm
  * @param {number} a
  * @param {number} b

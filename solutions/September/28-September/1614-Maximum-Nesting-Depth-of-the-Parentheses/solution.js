@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

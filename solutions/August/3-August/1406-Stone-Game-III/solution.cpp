@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 1406 - Stone Game III
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string stoneGameIII(vector<int>& stoneValue) {

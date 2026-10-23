@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2029 - Stone Game IX
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} stones
  * @return {boolean}
  */

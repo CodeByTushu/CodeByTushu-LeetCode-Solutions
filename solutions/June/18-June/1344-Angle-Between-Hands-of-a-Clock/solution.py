@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1344 - Angle Between Hands of a Clock
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def angleClock(self, hour: int, minutes: int) -> float:
         # Convert 12 to 0 for calculation

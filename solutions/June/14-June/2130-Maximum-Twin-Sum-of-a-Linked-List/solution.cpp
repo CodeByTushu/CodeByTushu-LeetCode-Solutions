@@ -11,6 +11,12 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+/**
+ * Problem: LeetCode 2130 - Maximum Twin Sum of a Linked List
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int pairSum(ListNode* head) {

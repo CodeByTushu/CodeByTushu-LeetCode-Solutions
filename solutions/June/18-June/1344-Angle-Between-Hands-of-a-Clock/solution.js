@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1344 - Angle Between Hands of a Clock
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} hour
  * @param {number} minutes
  * @return {number}

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3020 - Find the Maximum Number of Elements in Subset
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     long long sumAndMultiply(int n) {

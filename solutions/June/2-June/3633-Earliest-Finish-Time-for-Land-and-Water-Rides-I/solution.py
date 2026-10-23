@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3633 - Earliest Finish Time for Land and Water Rides I
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def earliestFinishTime(
         self,

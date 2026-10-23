@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2472 - Maximum Number of Non-overlapping Palindrome Substrings
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {number} k
  * @return {number}

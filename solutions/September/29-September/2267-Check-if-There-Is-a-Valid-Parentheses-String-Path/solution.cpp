@@ -1,5 +1,11 @@
 #include <vector>
 
+/**
+ * Problem: LeetCode 2267 - Check if There Is a Valid Parentheses String Path
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool hasValidPath(std::vector<std::vector<char>>& grid) {

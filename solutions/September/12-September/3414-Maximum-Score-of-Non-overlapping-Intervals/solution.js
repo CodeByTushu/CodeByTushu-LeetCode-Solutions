@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3414 - Maximum Score of Non-overlapping Intervals
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} intervals
  * @return {number[]}
  */

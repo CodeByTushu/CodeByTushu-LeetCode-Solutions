@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2144 - Minimum Cost of Buying Candies With Discount
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} cost
  * @return {number}
  */

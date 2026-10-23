@@ -1,9 +1,8 @@
 /**
  * Problem: LeetCode 3875 - Construct Uniform Parity Array I
- * Language: Java (OpenJDK 17)
- * Approach: Parity Counting & Arithmetic Analysis
- * Time Complexity: O(N)
- * Space Complexity: O(1)
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
  */
 class Solution {
     public boolean uniformArray(int[] nums1) {

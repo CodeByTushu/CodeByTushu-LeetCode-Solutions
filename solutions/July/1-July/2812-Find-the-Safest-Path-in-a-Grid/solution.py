@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2812 - Find the Safest Path in a Grid
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

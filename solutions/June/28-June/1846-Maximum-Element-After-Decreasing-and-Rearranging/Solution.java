@@ -1,5 +1,11 @@
 import java.util.Arrays;
 
+/**
+ * Problem: LeetCode 1846 - Maximum Element After Decreasing and Rearranging
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maximumElementAfterDecrementingAndRearranging(int[] arr) {
         Arrays.sort(arr);

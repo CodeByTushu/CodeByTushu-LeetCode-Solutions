@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2574 - Left and Right Sum Differences
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3720 - Lexicographically Smallest Permutation Greater Than Target
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String lexGreaterPermutation(String s, String target) {
         int n = s.length();

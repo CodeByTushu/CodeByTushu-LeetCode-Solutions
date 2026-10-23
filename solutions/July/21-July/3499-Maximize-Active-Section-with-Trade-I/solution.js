@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3499 - Maximize Active Section with Trade I
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

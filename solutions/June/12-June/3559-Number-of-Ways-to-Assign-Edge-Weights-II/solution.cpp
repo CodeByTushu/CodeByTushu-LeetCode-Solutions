@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3559 - Number of Ways to Assign Edge Weights II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     static const int MOD = 1000000007;
     static const int LOG = 17;

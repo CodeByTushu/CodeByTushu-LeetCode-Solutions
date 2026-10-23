@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def maximumLengthSubstring(self, s: str) -> int:
         freq = [0] * 26

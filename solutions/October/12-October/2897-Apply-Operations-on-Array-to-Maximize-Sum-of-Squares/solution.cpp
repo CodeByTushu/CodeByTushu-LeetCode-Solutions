@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int maxSum(vector<int>& nums, int k) {

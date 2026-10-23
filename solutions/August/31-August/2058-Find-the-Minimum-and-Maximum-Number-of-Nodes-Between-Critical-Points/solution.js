@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2058 - Find the Minimum and Maximum Number of Nodes Between Critical Points
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * Definition for singly-linked list.
  * function ListNode(val, next) {
  *     this.val = (val===undefined ? 0 : val)

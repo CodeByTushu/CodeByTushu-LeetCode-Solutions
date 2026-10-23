@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 486 - Predict the Winner
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def predictTheWinner(self, nums: list[int]) -> bool:
         n = len(nums)

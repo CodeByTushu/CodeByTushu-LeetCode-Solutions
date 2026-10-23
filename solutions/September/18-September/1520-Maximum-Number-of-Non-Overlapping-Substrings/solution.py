@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1520 - Maximum Number of Non-Overlapping Substrings
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

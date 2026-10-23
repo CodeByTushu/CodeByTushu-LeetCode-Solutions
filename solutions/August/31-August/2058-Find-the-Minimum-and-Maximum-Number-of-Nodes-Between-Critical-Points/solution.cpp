@@ -14,6 +14,12 @@ using namespace std;
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+/**
+ * Problem: LeetCode 2058 - Find the Minimum and Maximum Number of Nodes Between Critical Points
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {

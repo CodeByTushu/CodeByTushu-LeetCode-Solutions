@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxDepth(String s) {
         int depth = 0;

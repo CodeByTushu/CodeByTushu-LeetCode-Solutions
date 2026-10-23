@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2213 - Longest Substring of One Repeating Character
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     private char[] leftCh, rightCh;
     private int[] pre, suf, best;

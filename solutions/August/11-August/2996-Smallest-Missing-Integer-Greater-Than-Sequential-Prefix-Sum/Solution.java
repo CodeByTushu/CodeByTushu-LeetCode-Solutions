@@ -1,6 +1,12 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int missingInteger(int[] nums) {
         int n = nums.length;

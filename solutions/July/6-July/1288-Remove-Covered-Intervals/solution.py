@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1288 - Remove Covered Intervals
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

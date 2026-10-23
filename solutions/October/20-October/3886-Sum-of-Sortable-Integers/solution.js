@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3886 - Sum of Sortable Integers
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

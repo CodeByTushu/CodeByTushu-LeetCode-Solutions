@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3016 - Minimum Number of Pushes to Type Word II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minimumPushes(String word) {
         int[] freq = new int[26];

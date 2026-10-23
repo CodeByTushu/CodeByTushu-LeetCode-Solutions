@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2130 - Maximum Twin Sum of a Linked List
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import Optional
 
 # Definition for singly-linked list.

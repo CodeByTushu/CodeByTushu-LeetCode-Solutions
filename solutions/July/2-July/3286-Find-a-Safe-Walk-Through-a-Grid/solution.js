@@ -1,3 +1,10 @@
+/**
+ * Problem: LeetCode 3286 - Find a Safe Walk Through a Grid
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ */
+
 class MaxHeap {
     constructor() {
         this.heap = [];

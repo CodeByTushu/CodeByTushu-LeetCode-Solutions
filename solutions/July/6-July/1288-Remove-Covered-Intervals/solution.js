@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1288 - Remove Covered Intervals
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} intervals
  * @return {number}
  */

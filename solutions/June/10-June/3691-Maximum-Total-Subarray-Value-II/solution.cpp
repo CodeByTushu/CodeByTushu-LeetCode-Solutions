@@ -54,6 +54,12 @@ public:
     }
 };
 
+/**
+ * Problem: LeetCode 3691 - Maximum Total Subarray Value II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     long long maxTotalValue(vector<int>& nums, int k) {

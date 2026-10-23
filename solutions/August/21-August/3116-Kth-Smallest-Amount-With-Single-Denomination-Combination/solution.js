@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3116 - Kth Smallest Amount With Single Denomination Combination
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} coins
  * @param {number} k
  * @return {number}

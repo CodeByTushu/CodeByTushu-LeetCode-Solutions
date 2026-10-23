@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3731 - Find Missing Elements
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def findMissingElements(self, nums: list[int]) -> list[int]:
         min_val = min(nums)

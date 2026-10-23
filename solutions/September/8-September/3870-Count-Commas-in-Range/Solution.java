@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3870 - Count Commas in Range
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int countCommas(int n) {
         int result = 0;

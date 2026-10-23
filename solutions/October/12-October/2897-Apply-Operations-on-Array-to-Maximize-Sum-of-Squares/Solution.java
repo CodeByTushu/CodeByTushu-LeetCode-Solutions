@@ -1,5 +1,11 @@
 import java.util.List;
 
+/**
+ * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxSum(List<Integer> nums, int k) {
         final int MOD = 1_000_000_007;

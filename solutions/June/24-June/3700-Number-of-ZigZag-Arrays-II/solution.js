@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3700 - Number of ZigZag Arrays II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @param {number} l
  * @param {number} r

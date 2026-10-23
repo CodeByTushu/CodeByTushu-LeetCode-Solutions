@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 2492 - Minimum Score of a Path Between Two Cities
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minScore(int n, int[][] roads) {
         List<int[]>[] graph = new ArrayList[n + 1];

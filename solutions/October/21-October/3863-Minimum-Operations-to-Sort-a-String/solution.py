@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3863 - Minimum Operations to Sort a String
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def minOperations(self, s: str) -> int:
         n = len(s)

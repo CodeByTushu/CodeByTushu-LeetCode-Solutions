@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String smallestSubsequence(String s) {
         int[] last = new int[26];

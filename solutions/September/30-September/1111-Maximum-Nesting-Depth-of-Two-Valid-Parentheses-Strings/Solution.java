@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] maxDepthAfterSplit(String seq) {
         int n = seq.length();

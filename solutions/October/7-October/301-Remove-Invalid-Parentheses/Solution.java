@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Problem: LeetCode 301 - Remove Invalid Parentheses
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public List<String> removeInvalidParentheses(String s) {
         int leftRem = 0, rightRem = 0;

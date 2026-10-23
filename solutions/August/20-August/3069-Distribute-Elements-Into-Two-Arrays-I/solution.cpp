@@ -1,5 +1,11 @@
 #include <vector>
 
+/**
+ * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     std::vector<int> resultArray(std::vector<int>& nums) {

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2948 - Make Lexicographically Smallest Array by Swapping Elements
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} limit
  * @return {number[]}

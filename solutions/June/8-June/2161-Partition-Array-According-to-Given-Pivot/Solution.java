@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2161 - Partition Array According to Given Pivot
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] pivotArray(int[] nums, int pivot) {
         int n = nums.length;

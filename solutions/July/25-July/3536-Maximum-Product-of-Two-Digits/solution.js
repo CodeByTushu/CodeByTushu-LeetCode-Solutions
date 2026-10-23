@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3536 - Maximum Product of Two Digits
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @return {number}
  */

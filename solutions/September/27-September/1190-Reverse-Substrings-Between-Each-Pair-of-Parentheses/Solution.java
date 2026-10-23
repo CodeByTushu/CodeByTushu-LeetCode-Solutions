@@ -1,6 +1,12 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String reverseParentheses(String s) {
         Deque<StringBuilder> stack = new ArrayDeque<>();

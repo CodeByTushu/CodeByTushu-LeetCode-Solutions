@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 877 - Stone Game
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def stoneGame(self, piles: list[int]) -> bool:
         n = len(piles)

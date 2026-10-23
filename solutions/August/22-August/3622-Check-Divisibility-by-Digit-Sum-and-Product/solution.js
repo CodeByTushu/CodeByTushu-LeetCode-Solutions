@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3622 - Check Divisibility by Digit Sum and Product
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @return {boolean}
  */

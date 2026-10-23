@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1833 - Maximum Ice Cream Bars
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxIceCream(int[] costs, int coins) {
 

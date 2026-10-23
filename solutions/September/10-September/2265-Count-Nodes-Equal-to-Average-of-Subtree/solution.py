@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2265 - Count Nodes Equal to Average of Subtree
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import Optional, Tuple
 
 # Definition for a binary tree node.

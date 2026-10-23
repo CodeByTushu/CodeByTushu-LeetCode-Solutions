@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3863 - Minimum Operations to Sort a String
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

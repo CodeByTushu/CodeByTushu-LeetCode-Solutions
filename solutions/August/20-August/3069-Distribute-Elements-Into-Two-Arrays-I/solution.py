@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

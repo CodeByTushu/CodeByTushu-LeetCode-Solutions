@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3689 - Maximum Total Subarray Value I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3614 - Process String with Special Operations II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {number} k
  * @return {character}

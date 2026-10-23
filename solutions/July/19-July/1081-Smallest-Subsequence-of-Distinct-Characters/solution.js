@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {string}
  */

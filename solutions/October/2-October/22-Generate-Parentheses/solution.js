@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 22 - Generate Parentheses
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @return {string[]}
  */

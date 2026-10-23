@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 2948 - Make Lexicographically Smallest Array by Swapping Elements
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] lexicographicallySmallestArray(int[] nums, int limit) {
         int n = nums.length;

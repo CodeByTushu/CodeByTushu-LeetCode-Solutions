@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3532 - Path Existence Queries in a Graph I
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @param {number[]} nums
  * @param {number} maxDiff

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 20 - Valid Parentheses
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean isValid(String s) {
         if ((s.length() & 1) == 1) return false;

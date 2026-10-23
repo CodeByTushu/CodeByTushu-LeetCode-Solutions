@@ -1,5 +1,11 @@
 import java.util.Arrays;
 
+/**
+ * Problem: LeetCode 3525 - Find X Value of Array II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     // Segment Tree Node definition
     static class Node {

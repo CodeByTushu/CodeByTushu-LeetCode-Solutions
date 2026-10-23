@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1658 - Minimum Operations to Reduce X to Zero
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minOperations(int[] nums, int x) {
         int total = 0;

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 836 - Rectangle Overlap
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

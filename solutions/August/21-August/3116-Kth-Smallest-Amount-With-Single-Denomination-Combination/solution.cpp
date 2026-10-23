@@ -2,6 +2,12 @@
 #include <numeric>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 3116 - Kth Smallest Amount With Single Denomination Combination
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     long long findKthSmallest(std::vector<int>& coins, int k) {

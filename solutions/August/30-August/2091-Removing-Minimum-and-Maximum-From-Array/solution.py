@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2091 - Removing Minimum and Maximum From Array
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

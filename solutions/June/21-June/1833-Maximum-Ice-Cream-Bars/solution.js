@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1833 - Maximum Ice Cream Bars
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} costs
  * @param {number} coins
  * @return {number}

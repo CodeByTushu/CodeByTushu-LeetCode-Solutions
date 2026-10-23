@@ -1,3 +1,10 @@
+/**
+ * Problem: LeetCode 3691 - Maximum Total Subarray Value II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ */
+
 class MaxHeap {
     constructor() {
         this.heap = [];

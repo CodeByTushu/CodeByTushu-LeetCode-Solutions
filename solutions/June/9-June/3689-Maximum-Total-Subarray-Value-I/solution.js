@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3689 - Maximum Total Subarray Value I
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} k
  * @return {number}

@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 1096 - Brace Expansion II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 private:
     string s;

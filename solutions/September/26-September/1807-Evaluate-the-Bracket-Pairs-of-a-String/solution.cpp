@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 1807 - Evaluate the Bracket Pairs of a String
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string evaluate(string s, vector<vector<string>>& knowledge) {

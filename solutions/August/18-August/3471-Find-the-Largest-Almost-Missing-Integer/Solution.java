@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3471 - Find the Largest Almost Missing Integer
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int largestInteger(int[] nums, int k) {
         int n = nums.length;

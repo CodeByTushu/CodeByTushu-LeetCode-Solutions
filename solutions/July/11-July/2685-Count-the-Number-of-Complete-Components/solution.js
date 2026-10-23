@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2685 - Count the Number of Complete Components
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @param {number[][]} edges
  * @return {number}

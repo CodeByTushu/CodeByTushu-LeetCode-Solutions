@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1331 - Rank Transform of an Array
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

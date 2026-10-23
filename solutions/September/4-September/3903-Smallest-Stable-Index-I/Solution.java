@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3903 - Smallest Stable Index I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int firstStableIndex(int[] nums, int k) {
         int n = nums.length;

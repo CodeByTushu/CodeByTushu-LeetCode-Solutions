@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3620 - Network Recovery Pathways
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 private:
     bool canReach(const vector<vector<pair<int, int>>>& graph, const vector<bool>& online, long long k, int limit, int n) {

@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 1477 - Find Two Non-overlapping Sub-arrays Each With Target Sum
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int minSumOfLengths(vector<int>& arr, int target) {

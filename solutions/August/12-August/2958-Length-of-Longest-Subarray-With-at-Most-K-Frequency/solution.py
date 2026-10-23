@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import defaultdict
 
 

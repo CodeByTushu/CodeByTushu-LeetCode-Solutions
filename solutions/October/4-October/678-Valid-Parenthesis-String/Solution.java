@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 678 - Valid Parenthesis String
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean checkValidString(String s) {
         int lo = 0, hi = 0;

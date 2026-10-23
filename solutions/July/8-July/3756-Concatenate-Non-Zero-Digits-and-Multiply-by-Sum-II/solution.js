@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3756 - Concatenate Non-Zero Digits and Multiply by Sum II
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {number[][]} queries
  * @return {number[]}

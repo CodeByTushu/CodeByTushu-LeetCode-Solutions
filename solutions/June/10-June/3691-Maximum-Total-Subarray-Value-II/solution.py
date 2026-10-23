@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3691 - Maximum Total Subarray Value II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import heapq
 from typing import List
 

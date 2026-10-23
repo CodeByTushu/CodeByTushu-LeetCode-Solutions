@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1140 - Stone Game II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int stoneGameII(int[] piles) {
         int n = piles.length;

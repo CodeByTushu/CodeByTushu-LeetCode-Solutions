@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1477 - Find Two Non-overlapping Sub-arrays Each With Target Sum
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

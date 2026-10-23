@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1979 - Find Greatest Common Divisor of Array
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import math
 from typing import List
 

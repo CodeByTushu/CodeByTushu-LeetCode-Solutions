@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3286 - Find a Safe Walk Through a Grid
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool findSafeWalk(vector<vector<int>>& grid, int health) {

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1510 - Stone Game IV
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @return {boolean}
  */

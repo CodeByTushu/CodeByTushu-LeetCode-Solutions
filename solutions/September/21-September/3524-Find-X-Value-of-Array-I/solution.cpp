@@ -1,5 +1,11 @@
 #include <vector>
 
+/**
+ * Problem: LeetCode 3524 - Find X Value of Array I
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     std::vector<long long> resultArray(std::vector<int>& nums, int k) {

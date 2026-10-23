@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3658 - GCD of Odd and Even Sums
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int gcdOfOddEvenSums(int n) {

@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3620 - Network Recovery Pathways
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int findMaxPathScore(int[][] edges, boolean[] online, long k) {
         int n = online.length;

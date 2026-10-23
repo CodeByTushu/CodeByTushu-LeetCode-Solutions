@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3534 - Path Existence Queries in a Graph II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
 

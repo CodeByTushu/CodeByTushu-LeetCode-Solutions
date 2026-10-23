@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3020 - Find the Maximum Number of Elements in Subset
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maximumLength(int[] nums) {
         Map<Long, Integer> freq = new HashMap<>();

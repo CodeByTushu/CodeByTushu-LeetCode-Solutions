@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 628 - Maximum Product of Three Numbers
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maximumProduct(int[] nums) {
         int max1 = Integer.MIN_VALUE;

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1406 - Stone Game III
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def stoneGameIII(self, stoneValue: list[int]) -> str:
         n = len(stoneValue)

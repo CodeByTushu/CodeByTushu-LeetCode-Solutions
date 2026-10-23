@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1510 - Stone Game IV
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean winnerSquareGame(int n) {
         boolean[] dp = new boolean[n + 1];

@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3700 - Number of ZigZag Arrays II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 private:
     static constexpr long long MOD = 1'000'000'007LL;

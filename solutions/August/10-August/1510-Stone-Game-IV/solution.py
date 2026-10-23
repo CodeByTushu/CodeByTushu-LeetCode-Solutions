@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1510 - Stone Game IV
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def winnerSquareGame(self, n: int) -> bool:
         dp = [False] * (n + 1)

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3838 - Weighted Word Mapping
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String mapWordWeights(String[] words, int[] weights) {
 

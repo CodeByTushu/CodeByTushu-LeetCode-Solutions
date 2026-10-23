@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int smallestIndex(int[] nums) {
         for (int i = 0; i < nums.length; i++) {

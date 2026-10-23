@@ -2,6 +2,12 @@
 #include <vector>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 3518 - Smallest Palindromic Rearrangement II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 private:
     static constexpr long long CAP = 2000000LL;

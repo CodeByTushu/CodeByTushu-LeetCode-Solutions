@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1732 - Find the Highest Altitude
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

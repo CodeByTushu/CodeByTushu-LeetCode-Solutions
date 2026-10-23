@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3756 - Concatenate Non-Zero Digits and Multiply by Sum II
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

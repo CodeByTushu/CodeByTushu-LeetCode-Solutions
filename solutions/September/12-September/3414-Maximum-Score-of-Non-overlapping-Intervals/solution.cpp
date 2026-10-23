@@ -1,6 +1,12 @@
 #include <vector>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 3414 - Maximum Score of Non-overlapping Intervals
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     struct Interval {
         int l, r, w, id;

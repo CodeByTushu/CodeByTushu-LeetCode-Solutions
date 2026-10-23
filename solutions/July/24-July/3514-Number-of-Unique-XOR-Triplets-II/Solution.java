@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3514 - Number of Unique XOR Triplets II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int uniqueXorTriplets(int[] nums) {
         final int MAX = 2048;

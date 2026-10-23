@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1477 - Find Two Non-overlapping Sub-arrays Each With Target Sum
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} arr
  * @param {number} target
  * @return {number}

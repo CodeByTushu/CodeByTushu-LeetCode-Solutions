@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3345 - Smallest Divisible Digit Product I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int smallestNumber(int n, int t) {
         while (true) {

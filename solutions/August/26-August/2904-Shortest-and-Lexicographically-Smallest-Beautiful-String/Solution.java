@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2904 - Shortest and Lexicographically Smallest Beautiful String
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String shortestBeautifulSubstring(String s, int k) {
         int n = s.length();

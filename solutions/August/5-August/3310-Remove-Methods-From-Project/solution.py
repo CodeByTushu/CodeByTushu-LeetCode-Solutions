@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3310 - Remove Methods From Project
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 
 class Solution:

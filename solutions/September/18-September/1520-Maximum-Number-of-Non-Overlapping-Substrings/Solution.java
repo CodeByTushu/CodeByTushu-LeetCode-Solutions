@@ -2,6 +2,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Problem: LeetCode 1520 - Maximum Number of Non-Overlapping Substrings
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public List<String> maxNumOfSubstrings(String s) {
         int n = s.length();

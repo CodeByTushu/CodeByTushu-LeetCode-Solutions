@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2812 - Find the Safest Path in a Grid
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} grid
  * @return {number}
  */

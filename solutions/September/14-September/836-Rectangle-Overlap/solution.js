@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 836 - Rectangle Overlap
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} rec1
  * @param {number[]} rec2
  * @return {boolean}

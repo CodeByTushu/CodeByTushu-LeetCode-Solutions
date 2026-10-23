@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

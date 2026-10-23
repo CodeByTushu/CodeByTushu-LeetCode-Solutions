@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1406 - Stone Game III
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String stoneGameIII(int[] stoneValue) {
         int n = stoneValue.length;

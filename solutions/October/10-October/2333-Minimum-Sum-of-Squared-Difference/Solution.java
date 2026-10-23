@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2333 - Minimum Sum of Squared Difference
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {
         int n = nums1.length;

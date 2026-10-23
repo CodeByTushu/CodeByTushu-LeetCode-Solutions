@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3312 - Sorted GCD Pair Queries
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import bisect
 from typing import List
 

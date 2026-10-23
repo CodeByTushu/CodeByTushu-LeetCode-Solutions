@@ -1,5 +1,11 @@
 #include <string>
 
+/**
+ * Problem: LeetCode 1927 - Sum Game
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool sumGame(std::string num) {

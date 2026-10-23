@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3886 - Sum of Sortable Integers
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int sortableIntegers(int[] nums) {
         int n = nums.length;

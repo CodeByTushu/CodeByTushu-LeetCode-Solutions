@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3751 - Total Waviness of Numbers in Range I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def totalWaviness(self, num1: int, num2: int) -> int:
         def getWaviness(num: int) -> int:

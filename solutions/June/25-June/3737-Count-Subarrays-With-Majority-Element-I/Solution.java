@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3737 - Count Subarrays With Majority Element I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;

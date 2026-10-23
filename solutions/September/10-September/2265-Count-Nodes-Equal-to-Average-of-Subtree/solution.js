@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2265 - Count Nodes Equal to Average of Subtree
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
  *     this.val = (val===undefined ? 0 : val)

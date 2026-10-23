@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def minimumPushes(self, word: str) -> int:
         n = len(word)

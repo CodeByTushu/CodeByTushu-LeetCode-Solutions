@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3016 - Minimum Number of Pushes to Type Word II
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import Counter
 
 

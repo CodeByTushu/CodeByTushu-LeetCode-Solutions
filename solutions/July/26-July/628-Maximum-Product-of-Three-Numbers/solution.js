@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 628 - Maximum Product of Three Numbers
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

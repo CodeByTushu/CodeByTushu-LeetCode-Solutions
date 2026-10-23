@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2333 - Minimum Sum of Squared Difference
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def minSumSquareDiff(self, nums1, nums2, k1, k2):
         max_diff = 100000

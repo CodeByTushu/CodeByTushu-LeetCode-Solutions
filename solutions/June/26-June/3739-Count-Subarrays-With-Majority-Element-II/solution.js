@@ -1,3 +1,10 @@
+/**
+ * Problem: LeetCode 3739 - Count Subarrays With Majority Element II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ */
+
 class BinaryIndexedTree {
     /**
      * @param {number} n

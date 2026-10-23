@@ -1,6 +1,12 @@
 #include <vector>
 #include <unordered_set>
 
+/**
+ * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int missingInteger(std::vector<int>& nums) {

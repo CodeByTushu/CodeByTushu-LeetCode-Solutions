@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3559 - Number of Ways to Assign Edge Weights II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} edges
  * @param {number[][]} queries
  * @return {number[]}

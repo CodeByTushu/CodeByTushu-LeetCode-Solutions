@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1291 - Sequential Digits
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

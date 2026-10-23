@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 32 - Longest Valid Parentheses
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int longestValidParentheses(String s) {
         int n = s.length();

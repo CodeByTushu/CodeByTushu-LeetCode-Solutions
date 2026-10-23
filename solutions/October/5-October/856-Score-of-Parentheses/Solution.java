@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 856 - Score of Parentheses
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int scoreOfParentheses(String s) {
         int score = 0;

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minInsertions(String s) {
         int open = 0; // unmatched '('

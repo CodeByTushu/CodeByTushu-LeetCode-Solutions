@@ -1,5 +1,11 @@
 import java.util.Arrays;
 
+/**
+ * Problem: LeetCode 3753 - Total Waviness of Numbers in Range II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
 
     private String num;

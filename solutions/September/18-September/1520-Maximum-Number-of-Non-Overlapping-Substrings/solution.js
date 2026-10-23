@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1520 - Maximum Number of Non-Overlapping Substrings
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {string[]}
  */

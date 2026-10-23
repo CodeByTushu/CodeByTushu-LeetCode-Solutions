@@ -1,3 +1,10 @@
+/**
+ * Problem: LeetCode 3525 - Find X Value of Array II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ */
+
 class Node {
     constructor(k) {
         this.prod = 1;

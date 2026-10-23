@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3734 - Lexicographically Smallest Palindromic Permutation Greater Than Target
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def lexPalindromicPermutation(self, s: str, target: str) -> str:
         n = len(s)

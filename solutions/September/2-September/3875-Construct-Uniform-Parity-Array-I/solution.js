@@ -1,13 +1,10 @@
 /**
  * Problem: LeetCode 3875 - Construct Uniform Parity Array I
- * Language: JavaScript (Node.js)
- * Approach: Parity Counting & Arithmetic Analysis
- * Time Complexity: O(N)
- * Space Complexity: O(1)
- * 
- * @param {number[]} nums1
- * @return {boolean}
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
  */
+
 var uniformArray = function(nums1) {
     let oddCount = 0;
     let evenCount = 0;

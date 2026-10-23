@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3116 - Kth Smallest Amount With Single Denomination Combination
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public long findKthSmallest(int[] coins, int k) {
         int minCoin = coins[0];

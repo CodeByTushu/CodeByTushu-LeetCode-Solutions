@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2492 - Minimum Score of a Path Between Two Cities
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @param {number[][]} roads
  * @return {number}

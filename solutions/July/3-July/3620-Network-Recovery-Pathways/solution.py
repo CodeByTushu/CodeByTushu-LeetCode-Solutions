@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3620 - Network Recovery Pathways
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

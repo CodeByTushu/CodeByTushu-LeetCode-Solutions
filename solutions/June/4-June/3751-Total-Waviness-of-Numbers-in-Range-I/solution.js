@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3751 - Total Waviness of Numbers in Range I
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} num1
  * @param {number} num2
  * @return {number}

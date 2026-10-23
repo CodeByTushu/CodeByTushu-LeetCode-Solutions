@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3871 - Count Commas in Range II
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} n
  * @return {number}
  */

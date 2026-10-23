@@ -1,5 +1,11 @@
 #include <string>
 
+/**
+ * Problem: LeetCode 3498 - Reverse Degree of a String
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int reverseDegree(std::string s) {

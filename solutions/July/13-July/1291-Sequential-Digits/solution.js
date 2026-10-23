@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1291 - Sequential Digits
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} low
  * @param {number} high
  * @return {number[]}

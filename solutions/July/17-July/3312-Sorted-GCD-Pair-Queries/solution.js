@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3312 - Sorted GCD Pair Queries
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number[]} queries
  * @return {number[]}

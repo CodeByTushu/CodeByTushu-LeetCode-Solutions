@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3699 - Number of ZigZag Arrays I
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def zigZagArrays(self, n: int, l: int, r: int) -> int:
         MOD = 1_000_000_007

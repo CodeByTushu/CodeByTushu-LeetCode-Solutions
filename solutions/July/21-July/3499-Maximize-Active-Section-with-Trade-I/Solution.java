@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3499 - Maximize Active Section with Trade I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxActiveSectionsAfterTrade(String s) {
         int n = s.length();

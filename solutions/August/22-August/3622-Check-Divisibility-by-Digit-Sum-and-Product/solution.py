@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3622 - Check Divisibility by Digit Sum and Product
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def checkDivisibility(self, n: int) -> bool:
         digit_sum = 0

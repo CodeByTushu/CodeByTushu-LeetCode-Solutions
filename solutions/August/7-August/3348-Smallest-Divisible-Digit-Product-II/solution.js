@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3348 - Smallest Divisible Digit Product II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} num
  * @param {number} t
  * @return {string}

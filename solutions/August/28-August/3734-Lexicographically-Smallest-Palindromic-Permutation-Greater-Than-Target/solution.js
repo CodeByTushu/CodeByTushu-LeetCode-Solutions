@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3734 - Lexicographically Smallest Palindromic Permutation Greater Than Target
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {string} target
  * @return {string}

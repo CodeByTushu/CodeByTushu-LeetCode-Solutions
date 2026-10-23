@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2778 - Sum of Squares of Special Elements
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

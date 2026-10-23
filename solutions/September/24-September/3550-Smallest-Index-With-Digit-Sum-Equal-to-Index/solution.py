@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1260 - Shift 2D Grid
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} grid
  * @param {number} k
  * @return {number[][]}

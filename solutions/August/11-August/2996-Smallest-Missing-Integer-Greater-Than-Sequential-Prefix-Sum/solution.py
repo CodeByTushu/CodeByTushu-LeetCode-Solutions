@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def missingInteger(self, nums: list[int]) -> int:
         n = len(nums)

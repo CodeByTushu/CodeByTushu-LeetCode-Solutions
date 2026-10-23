@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3886 - Sum of Sortable Integers
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public long gcdSum(int[] nums) {
         int n = nums.length;

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2492 - Minimum Score of a Path Between Two Cities
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1189 - Maximum Number of Balloons
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} text
  * @return {number}
  */

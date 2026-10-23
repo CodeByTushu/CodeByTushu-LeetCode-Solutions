@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1872 - Stone Game VIII
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int stoneGameVIII(int[] stones) {
         int n = stones.length;

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1732 - Find the Highest Altitude
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int largestAltitude(int[] gain) {
         int altitude = 0;

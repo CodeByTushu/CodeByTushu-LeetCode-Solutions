@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1189 - Maximum Number of Balloons
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:
         freq = [0] * 26

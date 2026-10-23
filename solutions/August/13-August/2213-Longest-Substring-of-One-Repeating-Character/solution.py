@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2213 - Longest Substring of One Repeating Character
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

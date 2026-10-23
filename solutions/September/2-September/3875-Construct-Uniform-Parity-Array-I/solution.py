@@ -1,12 +1,11 @@
-from typing import List
-
 """
 Problem: LeetCode 3875 - Construct Uniform Parity Array I
+Difficulty: Easy
 Language: Python 3
-Approach: Parity Counting & Arithmetic Analysis
-Time Complexity: O(N)
-Space Complexity: O(1)
+Author: CodeByTushu
 """
+
+from typing import List
 
 class Solution:
     def uniformArray(self, nums1: List[int]) -> bool:

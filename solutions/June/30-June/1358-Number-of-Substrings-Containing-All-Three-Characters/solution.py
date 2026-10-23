@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1358 - Number of Substrings Containing All Three Characters
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def numberOfSubstrings(self, s: str) -> int:
         count = [0] * 3

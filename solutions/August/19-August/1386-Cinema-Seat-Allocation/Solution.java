@@ -1,6 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Problem: LeetCode 1386 - Cinema Seat Allocation
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {
         Map<Integer, Integer> rowMask = new HashMap<>();

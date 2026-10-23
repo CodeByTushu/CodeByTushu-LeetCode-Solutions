@@ -6,10 +6,9 @@ using namespace std;
 
 /**
  * Problem: LeetCode 3876 - Construct Uniform Parity Array II
- * Language: C++ (C++17 / C++20)
- * Approach: Greedy Parity Inversion with Minimum Value Tracking
- * Time Complexity: O(N)
- * Space Complexity: O(1)
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
  */
 class Solution {
 public:

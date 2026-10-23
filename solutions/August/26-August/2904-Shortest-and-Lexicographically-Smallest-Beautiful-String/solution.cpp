@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2904 - Shortest and Lexicographically Smallest Beautiful String
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string shortestBeautifulSubstring(string s, int k) {

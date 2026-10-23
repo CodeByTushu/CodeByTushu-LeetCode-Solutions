@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1096 - Brace Expansion II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} expression
  * @return {string[]}
  */

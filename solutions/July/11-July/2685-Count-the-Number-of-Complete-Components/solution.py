@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2685 - Count the Number of Complete Components
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

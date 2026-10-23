@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3534 - Path Existence Queries in a Graph II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

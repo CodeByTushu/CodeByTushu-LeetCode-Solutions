@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3312 - Sorted GCD Pair Queries
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] gcdValues(int[] nums, long[] queries) {
         int max = 0;

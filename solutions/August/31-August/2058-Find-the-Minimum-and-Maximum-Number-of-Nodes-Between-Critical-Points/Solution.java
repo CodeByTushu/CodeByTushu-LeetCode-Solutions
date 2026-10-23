@@ -11,6 +11,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Problem: LeetCode 2058 - Find the Minimum and Maximum Number of Nodes Between Critical Points
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
         List<Integer> criticalPoints = new ArrayList<>();

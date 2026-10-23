@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2144 - Minimum Cost of Buying Candies With Discount
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

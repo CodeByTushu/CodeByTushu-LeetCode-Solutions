@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2267 - Check if There Is a Valid Parentheses String Path
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean hasValidPath(char[][] grid) {
         int m = grid.length, n = grid[0].length;

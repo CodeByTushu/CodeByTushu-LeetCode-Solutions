@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3734 - Lexicographically Smallest Palindromic Permutation Greater Than Target
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String lexPalindromicPermutation(String s, String target) {
         int n = s.length();

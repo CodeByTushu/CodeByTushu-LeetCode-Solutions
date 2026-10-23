@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1807 - Evaluate the Bracket Pairs of a String
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {string[][]} knowledge
  * @return {string}

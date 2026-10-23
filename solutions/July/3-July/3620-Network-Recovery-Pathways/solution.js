@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3620 - Network Recovery Pathways
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[][]} edges
  * @param {boolean[]} online
  * @param {number} k

@@ -4,10 +4,9 @@ using namespace std;
 
 /**
  * Problem: LeetCode 3875 - Construct Uniform Parity Array I
- * Language: C++ (C++17 / C++20)
- * Approach: Parity Counting & Arithmetic Analysis
- * Time Complexity: O(N)
- * Space Complexity: O(1)
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
  */
 class Solution {
 public:

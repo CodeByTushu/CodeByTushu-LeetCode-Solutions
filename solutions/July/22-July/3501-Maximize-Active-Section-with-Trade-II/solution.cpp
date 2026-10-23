@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3501 - Maximize Active Section with Trade II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     vector<int> maxActiveSectionsAfterTrade(string s, vector<vector<int>>& queries) {

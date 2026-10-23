@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1927 - Sum Game
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def sumGame(self, num: str) -> bool:
         n = len(num)

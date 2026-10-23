@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2029 - Stone Game IX
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean stoneGameIX(int[] stones) {
         int[] cnt = new int[3];

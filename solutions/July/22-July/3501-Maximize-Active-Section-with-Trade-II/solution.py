@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3501 - Maximize Active Section with Trade II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import bisect
 from typing import List
 

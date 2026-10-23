@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3622 - Check Divisibility by Digit Sum and Product
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool checkDivisibility(int n) {

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3514 - Number of Unique XOR Triplets II
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

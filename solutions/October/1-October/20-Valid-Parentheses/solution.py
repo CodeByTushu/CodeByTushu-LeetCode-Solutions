@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 20 - Valid Parentheses
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def isValid(self, s: str) -> bool:
         if len(s) % 2 != 0:

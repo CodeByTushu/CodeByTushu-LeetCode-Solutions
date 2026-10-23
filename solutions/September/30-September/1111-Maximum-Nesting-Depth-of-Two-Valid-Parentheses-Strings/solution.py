@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def maxDepthAfterSplit(self, seq: str) -> list[int]:
         n = len(seq)

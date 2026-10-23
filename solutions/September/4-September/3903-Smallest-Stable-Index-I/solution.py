@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3903 - Smallest Stable Index I
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def firstStableIndex(self, nums: list[int], k: int) -> int:
         n = len(nums)

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1927 - Sum Game
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean sumGame(String num) {
         int n = num.length();

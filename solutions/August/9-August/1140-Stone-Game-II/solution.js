@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1140 - Stone Game II
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} piles
  * @return {number}
  */

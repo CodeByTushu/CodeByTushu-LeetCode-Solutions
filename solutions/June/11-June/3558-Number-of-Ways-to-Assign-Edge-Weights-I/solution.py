@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3558 - Number of Ways to Assign Edge Weights I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

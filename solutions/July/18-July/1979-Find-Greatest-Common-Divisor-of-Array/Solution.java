@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1979 - Find Greatest Common Divisor of Array
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int findGCD(int[] nums) {
         int min = Integer.MAX_VALUE;

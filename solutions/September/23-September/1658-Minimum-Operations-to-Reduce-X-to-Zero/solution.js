@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1658 - Minimum Operations to Reduce X to Zero
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} x
  * @return {number}

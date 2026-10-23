@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3718 - Smallest Missing Multiple of K
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

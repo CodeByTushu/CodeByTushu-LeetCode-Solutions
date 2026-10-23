@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3536 - Maximum Product of Two Digits
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxProduct(int n) {
         int first = 0;

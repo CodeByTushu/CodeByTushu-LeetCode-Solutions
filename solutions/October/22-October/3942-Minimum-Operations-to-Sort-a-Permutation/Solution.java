@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3942 - Minimum Operations to Sort a Permutation
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minOperations(int[] nums) {
         int n = nums.length;

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3348 - Smallest Divisible Digit Product II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import Dict
 
 class Solution:

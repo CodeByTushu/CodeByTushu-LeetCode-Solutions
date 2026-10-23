@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] resultArray(int[] nums) {
         List<Integer> arr1 = new ArrayList<>();

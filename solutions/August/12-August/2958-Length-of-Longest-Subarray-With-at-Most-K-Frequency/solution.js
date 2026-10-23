@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} k
  * @return {number}

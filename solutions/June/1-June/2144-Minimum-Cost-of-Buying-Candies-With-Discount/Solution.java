@@ -1,5 +1,11 @@
 import java.util.Arrays;
 
+/**
+ * Problem: LeetCode 2144 - Minimum Cost of Buying Candies With Discount
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minimumCost(int[] cost) {
         Arrays.sort(cost);

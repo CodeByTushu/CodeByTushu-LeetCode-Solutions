@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def minInsertions(self, s: str) -> int:
         open_count = 0  # unmatched '('

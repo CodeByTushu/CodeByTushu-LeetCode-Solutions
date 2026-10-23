@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3302 - Find the Lexicographically Smallest Valid Sequence
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

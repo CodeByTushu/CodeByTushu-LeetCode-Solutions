@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1401 - Circle and Rectangle Overlapping
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean checkOverlap(int radius, int xCenter, int yCenter, int x1, int y1, int x2, int y2) {
         int closestX = clamp(xCenter, x1, x2);

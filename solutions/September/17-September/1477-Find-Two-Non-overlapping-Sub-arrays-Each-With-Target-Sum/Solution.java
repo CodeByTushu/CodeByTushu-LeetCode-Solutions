@@ -2,6 +2,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Problem: LeetCode 1477 - Find Two Non-overlapping Sub-arrays Each With Target Sum
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minSumOfLengths(int[] arr, int target) {
         int n = arr.length;

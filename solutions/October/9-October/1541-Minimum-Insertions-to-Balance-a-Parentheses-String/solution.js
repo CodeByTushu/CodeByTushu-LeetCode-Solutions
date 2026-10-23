@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

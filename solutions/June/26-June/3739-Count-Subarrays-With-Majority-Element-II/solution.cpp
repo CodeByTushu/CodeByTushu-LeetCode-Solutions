@@ -27,6 +27,12 @@ public:
     }
 };
 
+/**
+ * Problem: LeetCode 3739 - Count Subarrays With Majority Element II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     long long countMajoritySubarrays(vector<int>& nums, int target) {

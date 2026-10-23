@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1021 - Remove Outermost Parentheses
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {string}
  */

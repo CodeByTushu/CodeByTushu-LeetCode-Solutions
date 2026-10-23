@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2492 - Minimum Score of a Path Between Two Cities
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int minScore(int n, vector<vector<int>>& roads) {

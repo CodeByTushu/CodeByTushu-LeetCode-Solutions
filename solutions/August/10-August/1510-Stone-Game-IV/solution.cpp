@@ -1,5 +1,11 @@
 #include <vector>
 
+/**
+ * Problem: LeetCode 1510 - Stone Game IV
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool winnerSquareGame(int n) {

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3499 - Maximize Active Section with Trade I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def maxActiveSectionsAfterTrade(self, s: str) -> int:
         n = len(s)

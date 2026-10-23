@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def maxDepth(self, s: str) -> int:
         depth = 0

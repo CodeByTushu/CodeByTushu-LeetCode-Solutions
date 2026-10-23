@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1406 - Stone Game III
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} stoneValue
  * @return {string}
  */

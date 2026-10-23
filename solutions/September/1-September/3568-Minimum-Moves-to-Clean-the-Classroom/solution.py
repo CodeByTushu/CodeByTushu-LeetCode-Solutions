@@ -1,13 +1,12 @@
-from typing import List
-from collections import deque
-
 """
 Problem: LeetCode 3568 - Minimum Moves to Clean the Classroom
+Difficulty: Medium
 Language: Python 3
-Approach: Breadth-First Search (BFS) with Bitmask State Tracking
-Time Complexity: O(M * N * Energy * 2^L)
-Space Complexity: O(M * N * Energy * 2^L)
+Author: CodeByTushu
 """
+
+from typing import List
+from collections import deque
 
 class Solution:
     def minMoves(self, classroom: List[str], energy: int) -> int:

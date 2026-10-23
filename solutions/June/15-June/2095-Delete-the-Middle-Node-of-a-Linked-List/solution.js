@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2095 - Delete the Middle Node of a Linked List
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * Definition for singly-linked list.
  * function ListNode(val, next) {
  *     this.val = (val===undefined ? 0 : val)

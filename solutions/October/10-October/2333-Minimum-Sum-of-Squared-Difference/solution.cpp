@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 2333 - Minimum Sum of Squared Difference
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     long long minSumSquareDiff(vector<int>& nums1, vector<int>& nums2,

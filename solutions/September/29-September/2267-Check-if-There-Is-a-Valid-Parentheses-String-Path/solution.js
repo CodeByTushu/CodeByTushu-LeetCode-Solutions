@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2267 - Check if There Is a Valid Parentheses String Path
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {character[][]} grid
  * @return {boolean}
  */

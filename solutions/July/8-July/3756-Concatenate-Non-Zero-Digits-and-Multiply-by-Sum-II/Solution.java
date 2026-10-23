@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3756 - Concatenate Non-Zero Digits and Multiply by Sum II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     static final int MOD = 1_000_000_007;
 

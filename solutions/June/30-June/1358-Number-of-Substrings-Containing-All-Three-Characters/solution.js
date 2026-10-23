@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1358 - Number of Substrings Containing All Three Characters
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

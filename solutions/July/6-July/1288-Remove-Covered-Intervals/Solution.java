@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 1288 - Remove Covered Intervals
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> {

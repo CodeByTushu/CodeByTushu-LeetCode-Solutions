@@ -1,6 +1,12 @@
 #include <vector>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 486 - Predict the Winner
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     bool predictTheWinner(std::vector<int>& nums) {

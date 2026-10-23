@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3739 - Count Subarrays With Majority Element II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class BinaryIndexedTree:

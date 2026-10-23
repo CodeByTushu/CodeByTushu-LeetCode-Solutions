@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3731 - Find Missing Elements
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public List<Integer> findMissingElements(int[] nums) {
         int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;

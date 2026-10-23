@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 678 - Valid Parenthesis String
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def checkValidString(self, s: str) -> bool:
         lo = 0

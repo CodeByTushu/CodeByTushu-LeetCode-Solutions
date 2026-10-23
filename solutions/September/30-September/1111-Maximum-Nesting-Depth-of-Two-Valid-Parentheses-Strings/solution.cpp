@@ -1,6 +1,12 @@
 #include <vector>
 #include <string>
 
+/**
+ * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     std::vector<int> maxDepthAfterSplit(std::string seq) {

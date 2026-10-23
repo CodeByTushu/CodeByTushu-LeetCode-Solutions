@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1658 - Minimum Operations to Reduce X to Zero
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

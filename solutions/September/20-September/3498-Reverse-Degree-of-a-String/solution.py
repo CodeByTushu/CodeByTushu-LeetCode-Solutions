@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3498 - Reverse Degree of a String
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def reverseDegree(self, s: str) -> int:
         result = 0

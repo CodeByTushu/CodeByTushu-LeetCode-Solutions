@@ -1,10 +1,9 @@
 /**
  * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs
  * Difficulty: Medium
- * Language: JavaScript (Node.js)
- */
-
-/**
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * Computes the Greatest Common Divisor using the Euclidean algorithm
  * @param {number} a
  * @param {number} b

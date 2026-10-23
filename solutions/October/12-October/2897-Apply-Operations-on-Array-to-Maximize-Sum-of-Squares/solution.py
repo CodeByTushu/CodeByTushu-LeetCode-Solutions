@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

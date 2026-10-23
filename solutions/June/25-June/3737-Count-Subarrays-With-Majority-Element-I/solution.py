@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3737 - Count Subarrays With Majority Element I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

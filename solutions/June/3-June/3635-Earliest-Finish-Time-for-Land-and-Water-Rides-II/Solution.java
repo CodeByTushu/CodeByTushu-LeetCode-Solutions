@@ -1,5 +1,11 @@
 import java.util.Arrays;
 
+/**
+ * Problem: LeetCode 3635 - Earliest Finish Time for Land and Water Rides II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
 
     public int earliestFinishTime(int[] landStartTime, int[] landDuration,

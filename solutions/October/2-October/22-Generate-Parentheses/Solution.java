@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Problem: LeetCode 22 - Generate Parentheses
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();

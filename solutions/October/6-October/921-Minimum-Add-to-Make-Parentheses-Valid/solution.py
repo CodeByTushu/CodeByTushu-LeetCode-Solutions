@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def minAddToMakeValid(self, s: str) -> int:
         open_count = 0  # unmatched '('

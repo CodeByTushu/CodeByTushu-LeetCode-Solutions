@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2904 - Shortest and Lexicographically Smallest Beautiful String
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {number} k
  * @return {string}

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3612 - Process String with Special Operations I
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def processStr(self, s: str) -> str:
         result = []

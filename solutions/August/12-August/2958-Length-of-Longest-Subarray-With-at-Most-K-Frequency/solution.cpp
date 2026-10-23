@@ -2,6 +2,12 @@
 #include <unordered_map>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int maxSubarrayLength(std::vector<int>& nums, int k) {

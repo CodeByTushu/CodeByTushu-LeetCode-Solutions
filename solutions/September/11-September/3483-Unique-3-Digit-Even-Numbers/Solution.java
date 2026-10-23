@@ -1,6 +1,12 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int totalNumbers(int[] digits) {
         Set<Integer> result = new HashSet<>();

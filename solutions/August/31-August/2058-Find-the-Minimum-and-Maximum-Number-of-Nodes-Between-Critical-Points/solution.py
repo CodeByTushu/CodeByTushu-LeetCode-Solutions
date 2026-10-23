@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2058 - Find the Minimum and Maximum Number of Nodes Between Critical Points
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import Optional, List
 
 # Definition for singly-linked list.

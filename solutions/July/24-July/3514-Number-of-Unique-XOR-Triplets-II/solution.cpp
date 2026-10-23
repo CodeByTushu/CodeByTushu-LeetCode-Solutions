@@ -1,6 +1,12 @@
 #include <vector>
 #include <cstring>
 
+/**
+ * Problem: LeetCode 3514 - Number of Unique XOR Triplets II
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     int uniqueXorTriplets(std::vector<int>& nums) {

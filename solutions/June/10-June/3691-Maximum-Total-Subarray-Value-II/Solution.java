@@ -52,6 +52,12 @@ class SparseTableRMQ {
     }
 }
 
+/**
+ * Problem: LeetCode 3691 - Maximum Total Subarray Value II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
 
     public long maxTotalValue(int[] nums, int k) {

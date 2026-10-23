@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3532 - Path Existence Queries in a Graph I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
         int[] component = new int[n];

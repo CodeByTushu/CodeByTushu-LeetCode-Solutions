@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 836 - Rectangle Overlap
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
         return !(rec2[0] >= rec1[2] ||   // rec2 right of rec1

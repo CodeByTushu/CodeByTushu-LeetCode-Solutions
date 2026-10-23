@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1189 - Maximum Number of Balloons
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxNumberOfBalloons(String text) {
         int[] freq = new int[26];

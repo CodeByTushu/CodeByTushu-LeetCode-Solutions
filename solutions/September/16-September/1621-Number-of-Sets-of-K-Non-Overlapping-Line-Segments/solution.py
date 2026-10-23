@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1621 - Number of Sets of K Non-Overlapping Line Segments
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def numberOfSets(self, n: int, k: int) -> int:
         MOD = 1_000_000_007

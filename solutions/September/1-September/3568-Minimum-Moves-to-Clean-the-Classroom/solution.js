@@ -1,14 +1,10 @@
 /**
  * Problem: LeetCode 3568 - Minimum Moves to Clean the Classroom
- * Language: JavaScript (Node.js)
- * Approach: Breadth-First Search (BFS) with Bitmask State Tracking
- * Time Complexity: O(M * N * Energy * 2^L)
- * Space Complexity: O(M * N * Energy * 2^L)
- * 
- * @param {string[]} classroom
- * @param {number} energy
- * @return {number}
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
  */
+
 var minMoves = function(classroom, energy) {
     const m = classroom.length;
     const n = classroom[0].length;

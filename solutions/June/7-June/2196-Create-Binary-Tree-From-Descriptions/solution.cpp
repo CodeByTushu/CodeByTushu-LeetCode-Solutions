@@ -15,6 +15,12 @@ using namespace std;
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+/**
+ * Problem: LeetCode 2196 - Create Binary Tree From Descriptions
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     TreeNode* createBinaryTree(vector<vector<int>>& descriptions) {

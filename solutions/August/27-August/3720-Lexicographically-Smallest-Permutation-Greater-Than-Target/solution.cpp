@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3720 - Lexicographically Smallest Permutation Greater Than Target
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string lexGreaterPermutation(string s, string target) {

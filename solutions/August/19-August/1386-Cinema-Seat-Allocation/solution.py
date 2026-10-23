@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1386 - Cinema Seat Allocation
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 from collections import defaultdict
 

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxProduct(int[] nums) {
         int max1 = 0;

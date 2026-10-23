@@ -24,6 +24,12 @@ class BinaryIndexedTree {
     }
 }
 
+/**
+ * Problem: LeetCode 3739 - Count Subarrays With Majority Element II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;

@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3286 - Find a Safe Walk Through a Grid
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean findSafeWalk(List<List<Integer>> grid, int health) {
         int m = grid.size(), n = grid.get(0).size();

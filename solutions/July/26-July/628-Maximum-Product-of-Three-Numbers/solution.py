@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 628 - Maximum Product of Three Numbers
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

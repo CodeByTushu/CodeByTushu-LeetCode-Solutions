@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3756 - Concatenate Non-Zero Digits and Multiply by Sum II
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     static constexpr int MOD = 1'000'000'007;
 

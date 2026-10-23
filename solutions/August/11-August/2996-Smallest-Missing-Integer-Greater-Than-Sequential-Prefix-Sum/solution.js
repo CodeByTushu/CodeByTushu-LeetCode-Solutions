@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

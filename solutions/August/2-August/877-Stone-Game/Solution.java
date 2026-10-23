@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 877 - Stone Game
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean stoneGame(int[] piles) {
         int n = piles.length;

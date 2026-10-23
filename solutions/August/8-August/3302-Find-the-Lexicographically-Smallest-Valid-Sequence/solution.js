@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3302 - Find the Lexicographically Smallest Valid Sequence
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} word1
  * @param {string} word2
  * @return {number[]}

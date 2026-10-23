@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 1331 - Rank Transform of an Array
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] arrayRankTransform(int[] arr) {
         int[] sorted = arr.clone();

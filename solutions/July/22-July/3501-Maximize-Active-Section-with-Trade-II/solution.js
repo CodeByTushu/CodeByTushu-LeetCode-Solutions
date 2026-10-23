@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3501 - Maximize Active Section with Trade II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {number[][]} queries
  * @return {number[]}

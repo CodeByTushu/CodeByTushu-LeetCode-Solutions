@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3471 - Find the Largest Almost Missing Integer
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} k
  * @return {number}

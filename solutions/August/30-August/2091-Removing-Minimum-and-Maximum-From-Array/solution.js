@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2091 - Removing Minimum and Maximum From Array
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

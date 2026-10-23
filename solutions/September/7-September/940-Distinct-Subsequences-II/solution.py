@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 940 - Distinct Subsequences II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def distinctSubseqII(self, s: str) -> int:
         MOD = 1_000_000_007

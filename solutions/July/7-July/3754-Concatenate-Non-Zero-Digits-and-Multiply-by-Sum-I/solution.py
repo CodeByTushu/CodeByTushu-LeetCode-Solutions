@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def sumAndMultiply(self, n: int) -> int:
         if n == 0:

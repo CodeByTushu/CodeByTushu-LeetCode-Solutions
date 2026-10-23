@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3518 - Smallest Palindromic Rearrangement II
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @param {number} k
  * @return {string}

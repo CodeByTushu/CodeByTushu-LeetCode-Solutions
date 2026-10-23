@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2778 - Sum of Squares of Special Elements
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int sumOfSquares(int[] nums) {
         int n = nums.length;

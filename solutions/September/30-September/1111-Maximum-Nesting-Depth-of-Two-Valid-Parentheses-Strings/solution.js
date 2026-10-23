@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} seq
  * @return {number[]}
  */

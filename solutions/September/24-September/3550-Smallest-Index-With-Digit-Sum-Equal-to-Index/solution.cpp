@@ -1,5 +1,11 @@
 #include <vector>
 
+/**
+ * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     int digitSum(int n) {
         int sum = 0;

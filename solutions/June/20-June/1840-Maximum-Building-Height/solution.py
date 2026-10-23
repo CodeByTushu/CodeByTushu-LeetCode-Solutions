@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1840 - Maximum Building Height
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

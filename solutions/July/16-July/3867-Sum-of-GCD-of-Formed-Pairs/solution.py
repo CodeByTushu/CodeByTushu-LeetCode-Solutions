@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3867 - Sum of GCD of Formed Pairs
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 import math
 
 class Solution:

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1260 - Shift 2D Grid
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 

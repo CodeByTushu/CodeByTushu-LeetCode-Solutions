@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3518 - Smallest Palindromic Rearrangement II
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def smallestPalindrome(self, s: str, k: int) -> str:
         CAP = 2_000_000

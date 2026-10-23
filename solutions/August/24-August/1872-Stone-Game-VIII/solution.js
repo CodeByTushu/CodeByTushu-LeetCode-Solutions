@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1872 - Stone Game VIII
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} stones
  * @return {number}
  */

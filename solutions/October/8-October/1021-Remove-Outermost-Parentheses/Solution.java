@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1021 - Remove Outermost Parentheses
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String removeOuterParentheses(String s) {
         StringBuilder sb = new StringBuilder();

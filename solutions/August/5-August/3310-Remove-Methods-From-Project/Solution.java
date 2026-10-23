@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3310 - Remove Methods From Project
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public List<Integer> remainingMethods(int n, int k, int[][] invocations) {
         List<List<Integer>> graph = new ArrayList<>();

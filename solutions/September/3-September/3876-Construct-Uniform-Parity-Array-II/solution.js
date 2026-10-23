@@ -1,13 +1,10 @@
 /**
  * Problem: LeetCode 3876 - Construct Uniform Parity Array II
- * Language: JavaScript (Node.js)
- * Approach: Greedy Parity Inversion with Minimum Value Tracking
- * Time Complexity: O(N)
- * Space Complexity: O(1)
- * 
- * @param {number[]} nums1
- * @return {boolean}
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
  */
+
 var uniformArray = function(nums1) {
     function canMakeAll(targetParity) {
         const globalMin = [Infinity, Infinity];

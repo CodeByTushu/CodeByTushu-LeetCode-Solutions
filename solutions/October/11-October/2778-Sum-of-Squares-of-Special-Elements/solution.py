@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2778 - Sum of Squares of Special Elements
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def sumOfSquares(self, nums: list[int]) -> int:
         n = len(nums)

@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 1840 - Maximum Building Height
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxBuilding(int n, int[][] restrictions) {
         List<int[]> list = new ArrayList<>();

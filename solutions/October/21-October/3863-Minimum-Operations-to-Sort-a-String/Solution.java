@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3863 - Minimum Operations to Sort a String
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minOperations(String s) {
         int n = s.length();

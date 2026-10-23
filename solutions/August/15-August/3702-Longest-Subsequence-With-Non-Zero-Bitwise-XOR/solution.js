@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @return {number}
  */

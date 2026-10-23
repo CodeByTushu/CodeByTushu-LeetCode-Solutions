@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 115 - Distinct Subsequences
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int numDistinct(String s, String t) {
         int m = s.length(), n = t.length();

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3614 - Process String with Special Operations II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public char processStr(String s, long k) {
 

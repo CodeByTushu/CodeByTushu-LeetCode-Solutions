@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1833 - Maximum Ice Cream Bars
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

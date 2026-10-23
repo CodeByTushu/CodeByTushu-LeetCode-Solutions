@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2472 - Maximum Number of Non-overlapping Palindrome Substrings
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def maxPalindromes(self, s: str, k: int) -> int:
         n = len(s)

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minAddToMakeValid(String s) {
         int open = 0; // unmatched '('

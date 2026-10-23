@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

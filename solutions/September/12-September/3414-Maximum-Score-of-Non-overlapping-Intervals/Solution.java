@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 3414 - Maximum Score of Non-overlapping Intervals
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int[] maximumWeight(List<List<Integer>> intervals) {
         int n = intervals.size();

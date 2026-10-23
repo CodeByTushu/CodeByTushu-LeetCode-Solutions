@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maximumLengthSubstring(String s) {
         int n = s.length();

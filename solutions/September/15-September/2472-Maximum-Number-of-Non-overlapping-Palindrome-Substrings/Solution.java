@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2472 - Maximum Number of Non-overlapping Palindrome Substrings
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int maxPalindromes(String s, int k) {
         int n = s.length();

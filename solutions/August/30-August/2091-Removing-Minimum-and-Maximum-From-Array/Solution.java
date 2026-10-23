@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 2091 - Removing Minimum and Maximum From Array
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int minimumDeletions(int[] nums) {
         int n = nums.length;

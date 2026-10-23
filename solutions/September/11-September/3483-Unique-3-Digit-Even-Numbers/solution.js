@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} digits
  * @return {number}
  */

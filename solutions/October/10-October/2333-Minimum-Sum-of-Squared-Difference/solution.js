@@ -1,3 +1,10 @@
+/**
+ * Problem: LeetCode 2333 - Minimum Sum of Squared Difference
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ */
+
 class Solution {
     minSumSquareDiff(nums1, nums2, k1, k2) {
         const maxDiff = 100000;

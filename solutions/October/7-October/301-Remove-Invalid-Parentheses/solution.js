@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 301 - Remove Invalid Parentheses
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {string[]}
  */

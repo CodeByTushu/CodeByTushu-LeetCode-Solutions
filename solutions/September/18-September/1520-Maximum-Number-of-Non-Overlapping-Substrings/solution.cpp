@@ -3,6 +3,12 @@
 #include <algorithm>
 #include <climits>
 
+/**
+ * Problem: LeetCode 1520 - Maximum Number of Non-Overlapping Substrings
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     std::vector<std::string> maxNumOfSubstrings(std::string s) {

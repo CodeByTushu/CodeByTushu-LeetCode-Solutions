@@ -8,6 +8,12 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+/**
+ * Problem: LeetCode 2095 - Delete the Middle Node of a Linked List
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public ListNode deleteMiddle(ListNode head) {
        // If there is only one node

@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 1846 - Maximum Element After Decreasing and Rearranging
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

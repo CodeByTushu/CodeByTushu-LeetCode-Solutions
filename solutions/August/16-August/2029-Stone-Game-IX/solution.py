@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 2029 - Stone Game IX
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

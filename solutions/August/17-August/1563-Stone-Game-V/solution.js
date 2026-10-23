@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1563 - Stone Game V
+ * Difficulty: Hard
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} stoneValue
  * @return {number}
  */

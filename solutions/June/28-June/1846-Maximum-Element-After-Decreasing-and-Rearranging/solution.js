@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1846 - Maximum Element After Decreasing and Rearranging
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} arr
  * @return {number}
  */

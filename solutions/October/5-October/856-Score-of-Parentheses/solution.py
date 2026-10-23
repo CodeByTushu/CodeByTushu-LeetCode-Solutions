@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 856 - Score of Parentheses
+Difficulty: Medium
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def scoreOfParentheses(self, s: str) -> int:
         score = 0

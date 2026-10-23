@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3483 - Unique 3-Digit Even Numbers
+Difficulty: Easy
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from typing import List
 
 class Solution:

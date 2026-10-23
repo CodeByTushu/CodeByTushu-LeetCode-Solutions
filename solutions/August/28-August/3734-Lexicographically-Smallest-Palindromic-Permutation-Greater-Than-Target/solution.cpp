@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Problem: LeetCode 3734 - Lexicographically Smallest Palindromic Permutation Greater Than Target
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     string lexPalindromicPermutation(string s, string target) {

@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 1401 - Circle and Rectangle Overlapping
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number} radius
  * @param {number} xCenter
  * @param {number} yCenter

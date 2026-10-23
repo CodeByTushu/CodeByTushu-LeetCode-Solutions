@@ -1,6 +1,12 @@
 #include <vector>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 3525 - Find X Value of Array II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
     struct Node {
         long long prod;

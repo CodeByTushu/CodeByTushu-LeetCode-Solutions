@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 32 - Longest Valid Parentheses
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
         stack = [-1]

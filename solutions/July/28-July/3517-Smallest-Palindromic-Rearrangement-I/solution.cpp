@@ -2,6 +2,12 @@
 #include <vector>
 #include <algorithm>
 
+/**
+ * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 class Solution {
 public:
     std::string smallestPalindrome(std::string s) {

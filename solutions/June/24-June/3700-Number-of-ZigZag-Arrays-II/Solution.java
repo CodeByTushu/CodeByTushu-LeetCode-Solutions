@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3700 - Number of ZigZag Arrays II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
 
     private static final long MOD = 1_000_000_007L;

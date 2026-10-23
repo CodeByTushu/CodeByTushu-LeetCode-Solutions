@@ -15,6 +15,12 @@ import java.util.*;
  *     }
  * }
  */
+/**
+ * Problem: LeetCode 2196 - Create Binary Tree From Descriptions
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
         Map<Integer, TreeNode> map = new HashMap<>();

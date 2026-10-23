@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Problem: LeetCode 1260 - Shift 2D Grid
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
         int m = grid.length;

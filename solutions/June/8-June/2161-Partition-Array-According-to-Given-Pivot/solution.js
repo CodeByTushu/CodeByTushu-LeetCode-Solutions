@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 2161 - Partition Array According to Given Pivot
+ * Difficulty: Medium
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {number[]} nums
  * @param {number} pivot
  * @return {number[]}

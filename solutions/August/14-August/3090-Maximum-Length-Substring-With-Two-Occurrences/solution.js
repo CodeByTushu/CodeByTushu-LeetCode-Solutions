@@ -1,4 +1,9 @@
 /**
+ * Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences
+ * Difficulty: Easy
+ * Language: JavaScript (ES6+ / Node.js)
+ * Author: CodeByTushu
+ *
  * @param {string} s
  * @return {number}
  */

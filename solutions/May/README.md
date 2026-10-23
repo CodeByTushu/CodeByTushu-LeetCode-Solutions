@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | May 2026 (Q2 — Early Summer) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **26 Problems (Ongoing)** |
+| **Total Solved** | **27 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -50,6 +50,7 @@ solutions/May/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3121** | [Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | <span style="color:#ffc400">**Medium**</span> | 27 May 2026 | [Java](./27-May/3121-Count-the-Number-of-Special-Characters-II/Solution.java) | [Python](./27-May/3121-Count-the-Number-of-Special-Characters-II/solution.py) | [C++](./27-May/3121-Count-the-Number-of-Special-Characters-II/solution.cpp) | [JS](./27-May/3121-Count-the-Number-of-Special-Characters-II/solution.js) | [Watch Video](https://youtu.be/1ubiAfa1yU0) | [📁 27-May](./27-May/3121-Count-the-Number-of-Special-Characters-II/) |
 | **3120** | [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | <span style="color:#10b981">**Easy**</span> | 26 May 2026 | [Java](./26-May/3120-Count-the-Number-of-Special-Characters-I/Solution.java) | [Python](./26-May/3120-Count-the-Number-of-Special-Characters-I/solution.py) | [C++](./26-May/3120-Count-the-Number-of-Special-Characters-I/solution.cpp) | [JS](./26-May/3120-Count-the-Number-of-Special-Characters-I/solution.js) | [Watch Video](https://youtu.be/h7jRTqBlfA4) | [📁 26-May](./26-May/3120-Count-the-Number-of-Special-Characters-I/) |
 | **1871** | [Jump Game VII](https://leetcode.com/problems/jump-game-vii/) | <span style="color:#ffc400">**Medium**</span> | 25 May 2026 | [Java](./25-May/1871-Jump-Game-VII/Solution.java) | [Python](./25-May/1871-Jump-Game-VII/solution.py) | [C++](./25-May/1871-Jump-Game-VII/solution.cpp) | [JS](./25-May/1871-Jump-Game-VII/solution.js) | [Watch Video](https://youtu.be/0yW-QLH0Lhs) | [📁 25-May](./25-May/1871-Jump-Game-VII/) |
 | **1340** | [Jump Game V](https://leetcode.com/problems/jump-game-v/) | <span style="color:#ef4444">**Hard**</span> | 24 May 2026 | [Java](./24-May/1340-Jump-Game-V/Solution.java) | [Python](./24-May/1340-Jump-Game-V/solution.py) | [C++](./24-May/1340-Jump-Game-V/solution.cpp) | [JS](./24-May/1340-Jump-Game-V/solution.js) | [Watch Video](https://youtu.be/iBW5mDteOPE) | [📁 24-May](./24-May/1340-Jump-Game-V/) |

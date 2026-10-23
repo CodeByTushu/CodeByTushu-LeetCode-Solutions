@@ -7131,6 +7131,54 @@
     }
   },
   {
+    "id": 3121,
+    "title": "Count the Number of Special Characters II",
+    "slug": "count-the-number-of-special-characters-ii",
+    "date": "27 May 2026",
+    "dateIso": "2026-05-27",
+    "formattedDate": "27 May 2026",
+    "year": "2026",
+    "month": "May",
+    "dayFolder": "27-May",
+    "problemFolder": "3121-Count-the-Number-of-Special-Characters-II",
+    "folderPath": "solutions/May/27-May/3121-Count-the-Number-of-Special-Characters-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-the-number-of-special-characters-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-the-number-of-special-characters-ii/",
+    "youtubeUrl": "https://youtu.be/1ubiAfa1yU0",
+    "tags": [
+      "Hash Table",
+      "String"
+    ],
+    "summary": "Return the number of letters that appear both in lowercase and uppercase such that all lowercase occurrences precede the first uppercase occurrence.",
+    "approach": "Record the last occurrence of each lowercase letter and the first occurrence of each uppercase letter, then count letters where the last lowercase index is strictly less than the first uppercase index.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/May/27-May/3121-Count-the-Number-of-Special-Characters-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/May/27-May/3121-Count-the-Number-of-Special-Characters-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/May/27-May/3121-Count-the-Number-of-Special-Characters-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/May/27-May/3121-Count-the-Number-of-Special-Characters-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3120,
     "title": "Count the Number of Special Characters I",
     "slug": "count-the-number-of-special-characters-i",

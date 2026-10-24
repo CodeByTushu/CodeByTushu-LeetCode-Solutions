@@ -9533,6 +9533,55 @@
     }
   },
   {
+    "id": "1895",
+    "title": "Largest Magic Square",
+    "slug": "largest-magic-square",
+    "date": "18 January 2026",
+    "dateIso": "2026-01-18",
+    "formattedDate": "18 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "18-January",
+    "problemFolder": "1895-Largest-Magic-Square",
+    "folderPath": "solutions/January/18-January/1895-Largest-Magic-Square",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/largest-magic-square/",
+    "leetcodeUrl": "https://leetcode.com/problems/largest-magic-square/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Find the maximum side length k of a magic square subgrid within an m x n integer grid where all row, column, and diagonal sums are equal.",
+    "approach": "Precompute 1D prefix sums for rows and columns. Iterate side length k from min(m, n) down to 2, validating each k x k candidate in O(k) time using prefix sums and diagonal checks. Return the first valid k found, or 1 if none exist.",
+    "timeComplexity": "O(min(m, n) * m * n)",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/18-January/1895-Largest-Magic-Square/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/18-January/1895-Largest-Magic-Square/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/18-January/1895-Largest-Magic-Square/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/18-January/1895-Largest-Magic-Square/solution.js"
+      }
+    }
+  },
+  {
     "id": "3047",
     "title": "Find the Largest Area of Square Inside Two Rectangles",
     "slug": "find-the-largest-area-of-square-inside-two-rectangles",

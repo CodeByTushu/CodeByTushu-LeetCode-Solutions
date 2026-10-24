@@ -9533,6 +9533,54 @@
     }
   },
   {
+    "id": "712",
+    "title": "Minimum ASCII Delete Sum for Two Strings",
+    "slug": "minimum-ascii-delete-sum-for-two-strings",
+    "date": "10 January 2026",
+    "dateIso": "2026-01-10",
+    "formattedDate": "10 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "10-January",
+    "problemFolder": "712-Minimum-ASCII-Delete-Sum-for-Two-Strings",
+    "folderPath": "solutions/January/10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Dynamic Programming"
+    ],
+    "summary": "Given two strings s1 and s2, return the lowest ASCII sum of deleted characters to make the two strings equal.",
+    "approach": "Apply 2D dynamic programming where dp[i][j] represents the minimum ASCII deletion cost to equalize prefixes s1[0..i-1] and s2[0..j-1]. If s1[i-1] equals s2[j-1], transition directly from dp[i-1][j-1]; otherwise choose the minimum cost between deleting s1[i-1] or s2[j-1].",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/solution.js"
+      }
+    }
+  },
+  {
     "id": "865",
     "title": "Smallest Subtree with all the Deepest Nodes",
     "slug": "smallest-subtree-with-all-the-deepest-nodes",

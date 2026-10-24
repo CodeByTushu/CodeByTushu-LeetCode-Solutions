@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **15** | January Daily Solutions Series Active 🟢 |
+| **Total Solved Problems** | **16** | January Daily Solutions Series Active 🟢 |
 | 🟢 **Easy Problems** | **3** | Problems #66, #961, #1266 |
-| 🟡 **Medium Problems** | **8** | Problems #1390, #1975, #1161, #1339, #865, #712, #3453, #2943 |
+| 🟡 **Medium Problems** | **9** | Problems #1390, #1975, #1161, #1339, #865, #712, #3453, #2943, #2975 |
 | 🔴 **Hard Problems** | **4** | Problems #1411, #1458, #85, #3454 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 Available / 14 Scheduled** | 1 on YouTube, 14 Coming Soon |
+| 🎥 **Video Walkthroughs** | **1 Available / 15 Scheduled** | 1 on YouTube, 15 Coming Soon |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2975** | [Maximum Square Area by Removing Fences From a Field](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | <span style="color:#ffc400">**Medium**</span> | 16 Jan 2026 | [Java](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/Solution.java) | [Python](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.py) | [C++](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.cpp) | [JS](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.js) | *Coming Soon* | [📁 16-January](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/) |
 | **2943** | [Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/) | <span style="color:#ffc400">**Medium**</span> | 15 Jan 2026 | [Java](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/Solution.java) | [Python](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.py) | [C++](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.cpp) | [JS](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.js) | *Coming Soon* | [📁 15-January](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/) |
 | **3454** | [Separate Squares II](https://leetcode.com/problems/separate-squares-ii/) | <span style="color:#ef4444">**Hard**</span> | 14 Jan 2026 | [Java](./14-January/3454-Separate-Squares-II/Solution.java) | [Python](./14-January/3454-Separate-Squares-II/solution.py) | [C++](./14-January/3454-Separate-Squares-II/solution.cpp) | [JS](./14-January/3454-Separate-Squares-II/solution.js) | *Coming Soon* | [📁 14-January](./14-January/3454-Separate-Squares-II/) |
 | **3453** | [Separate Squares I](https://leetcode.com/problems/separate-squares-i/) | <span style="color:#ffc400">**Medium**</span> | 13 Jan 2026 | [Java](./13-January/3453-Separate-Squares-I/Solution.java) | [Python](./13-January/3453-Separate-Squares-I/solution.py) | [C++](./13-January/3453-Separate-Squares-I/solution.cpp) | [JS](./13-January/3453-Separate-Squares-I/solution.js) | *Coming Soon* | [📁 13-January](./13-January/3453-Separate-Squares-I/) |
@@ -55,17 +56,18 @@
 
 ## 🏷️ Category & Pattern Index (January 2026)
 
-- **Array:** [#2943 Maximize Area of Square Hole in Grid](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/), [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/), [#3453 Separate Squares I](./13-January/3453-Separate-Squares-I/), [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/), [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
+- **Array:** [#2975 Maximum Square Area by Removing Fences From a Field](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/), [#2943 Maximize Area of Square Hole in Grid](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/), [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/), [#3453 Separate Squares I](./13-January/3453-Separate-Squares-I/), [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/), [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
 - **Binary Search:** [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/), [#3453 Separate Squares I](./13-January/3453-Separate-Squares-I/)
 - **Binary Tree:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#1339 Maximum Product of Splitted Binary Tree](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Breadth-First Search:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Depth-First Search:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#1339 Maximum Product of Splitted Binary Tree](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Dynamic Programming:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#712 Minimum ASCII Delete Sum for Two Strings](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
-- **Geometry:** [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/), [#3453 Separate Squares I](./13-January/3453-Separate-Squares-I/), [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/)
+- **Enumeration:** [#2975 Maximum Square Area by Removing Fences From a Field](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/)
+- **Geometry:** [#2975 Maximum Square Area by Removing Fences From a Field](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/), [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/), [#3453 Separate Squares I](./13-January/3453-Separate-Squares-I/), [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/)
 - **Greedy:** [#2943 Maximize Area of Square Hole in Grid](./15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/)
-- **Hash Table:** [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
+- **Hash Table:** [#2975 Maximum Square Area by Removing Fences From a Field](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Line Sweep:** [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/)
-- **Math:** [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/), [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)
+- **Math:** [#2975 Maximum Square Area by Removing Fences From a Field](./16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/), [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/), [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)
 - **Matrix:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/)
 - **Monotonic Stack:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/)
 - **Segment Tree:** [#3454 Separate Squares II](./14-January/3454-Separate-Squares-II/)

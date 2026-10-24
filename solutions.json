@@ -9533,6 +9533,57 @@
     }
   },
   {
+    "id": "2975",
+    "title": "Maximum Square Area by Removing Fences From a Field",
+    "slug": "maximum-square-area-by-removing-fences-from-a-field",
+    "date": "16 January 2026",
+    "dateIso": "2026-01-16",
+    "formattedDate": "16 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "16-January",
+    "problemFolder": "2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field",
+    "folderPath": "solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Enumeration",
+      "Geometry"
+    ],
+    "summary": "Find the maximum area of a square field formed by keeping two horizontal and two vertical fences and removing all fences in between, modulo 10^9 + 7.",
+    "approach": "Include the boundary fences 1 and m (or n). Any pair of fences creates a valid side length. Store all pairwise horizontal fence differences in a hash set, then iterate through all vertical fence differences to find the maximum common side length.",
+    "timeComplexity": "O(H^2 + V^2)",
+    "auxiliarySpaceComplexity": "O(H^2)",
+    "spaceComplexity": "O(H^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.js"
+      }
+    }
+  },
+  {
     "id": "2943",
     "title": "Maximize Area of Square Hole in Grid",
     "slug": "maximize-area-of-square-hole-in-grid",

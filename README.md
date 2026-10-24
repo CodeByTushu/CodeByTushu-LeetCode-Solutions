@@ -22,7 +22,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **2409** | [Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together/) | <span style="color:#10b981">**Easy**</span> | 24 Oct 2026 | [Java](./solutions/October/24-October/2409-Count-Days-Spent-Together/Solution.java) | [Python](./solutions/October/24-October/2409-Count-Days-Spent-Together/solution.py) | [C++](./solutions/October/24-October/2409-Count-Days-Spent-Together/solution.cpp) | [JS](./solutions/October/24-October/2409-Count-Days-Spent-Together/solution.js) | *Coming Soon* | [README](./solutions/October/24-October/2409-Count-Days-Spent-Together/README.md) |
+| **2409** | [Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together/) | <span style="color:#10b981">**Easy**</span> | 24 Oct 2026 | [Java](./solutions/October/24-October/2409-Count-Days-Spent-Together/Solution.java) | [Python](./solutions/October/24-October/2409-Count-Days-Spent-Together/solution.py) | [C++](./solutions/October/24-October/2409-Count-Days-Spent-Together/solution.cpp) | [JS](./solutions/October/24-October/2409-Count-Days-Spent-Together/solution.js) | [Watch Video](https://youtu.be/iLP0XmtB4ME?si=UoWpyLs0fnk01p1S) | [README](./solutions/October/24-October/2409-Count-Days-Spent-Together/README.md) |
 
 <p align="center">
   <a href="./solutions/October/">

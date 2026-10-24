@@ -3,7 +3,7 @@
 - **Publication Date:** 24 October 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/count-days-spent-together/](https://leetcode.com/problems/count-days-spent-together/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/iLP0XmtB4ME?si=UoWpyLs0fnk01p1S)
 
 ---
 
@@ -93,4 +93,4 @@ You can assume that all dates occur in the same calendar year, which is not a le
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** *Coming Soon* ⏳
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/iLP0XmtB4ME?si=UoWpyLs0fnk01p1S](https://youtu.be/iLP0XmtB4ME?si=UoWpyLs0fnk01p1S)

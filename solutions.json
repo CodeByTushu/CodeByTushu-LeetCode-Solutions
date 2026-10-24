@@ -9533,6 +9533,55 @@
     }
   },
   {
+    "id": "2943",
+    "title": "Maximize Area of Square Hole in Grid",
+    "slug": "maximize-area-of-square-hole-in-grid",
+    "date": "15 January 2026",
+    "dateIso": "2026-01-15",
+    "formattedDate": "15 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "15-January",
+    "problemFolder": "2943-Maximize-Area-of-Square-Hole-in-Grid",
+    "folderPath": "solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Greedy"
+    ],
+    "summary": "Find the maximum area of a square-shaped hole formed in a grid of unit cells by removing a subset of allowed horizontal and vertical bars.",
+    "approach": "Sort the removable horizontal and vertical bars to find the longest contiguous consecutive run in each dimension. The maximum continuous gap created is (longestConsecutive + 1). The maximum square hole side is min(maxHGap, maxVGap), yielding an area of side^2.",
+    "timeComplexity": "O(H * log H + V * log V)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": "3454",
     "title": "Separate Squares II",
     "slug": "separate-squares-ii",

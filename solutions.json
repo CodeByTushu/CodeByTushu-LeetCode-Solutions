@@ -9533,6 +9533,57 @@
     }
   },
   {
+    "id": "865",
+    "title": "Smallest Subtree with all the Deepest Nodes",
+    "slug": "smallest-subtree-with-all-the-deepest-nodes",
+    "date": "09 January 2026",
+    "dateIso": "2026-01-09",
+    "formattedDate": "09 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "9-January",
+    "problemFolder": "865-Smallest-Subtree-with-all-the-Deepest-Nodes",
+    "folderPath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Hash Table",
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "summary": "Given the root of a binary tree, return the smallest subtree that contains all the deepest nodes.",
+    "approach": "Use a single post-order DFS returning the maximum depth and the lowest common ancestor (LCA) node. If left and right child depths match, the current node is the LCA; otherwise, propagate the deeper subtree result.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(H)",
+    "spaceComplexity": "O(H)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js"
+      }
+    }
+  },
+  {
     "id": "1458",
     "title": "Max Dot Product of Two Subsequences",
     "slug": "max-dot-product-of-two-subsequences",

@@ -9533,6 +9533,55 @@
     }
   },
   {
+    "id": "3453",
+    "title": "Separate Squares I",
+    "slug": "separate-squares-i",
+    "date": "13 January 2026",
+    "dateIso": "2026-01-13",
+    "formattedDate": "13 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "13-January",
+    "problemFolder": "3453-Separate-Squares-I",
+    "folderPath": "solutions/January/13-January/3453-Separate-Squares-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/separate-squares-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/separate-squares-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Geometry"
+    ],
+    "summary": "Find the minimum y-coordinate of a horizontal line such that the total area of squares above the line equals the total area of squares below the line.",
+    "approach": "The area below any horizontal line is a monotonic function of y. Calculate half of the total square area and apply binary search over y in [0, max(y + l)] for 80 iterations to achieve optimal precision.",
+    "timeComplexity": "O(N * log((maxY - minY) / eps))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/13-January/3453-Separate-Squares-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/13-January/3453-Separate-Squares-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/13-January/3453-Separate-Squares-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/13-January/3453-Separate-Squares-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "1266",
     "title": "Minimum Time Visiting All Points",
     "slug": "minimum-time-visiting-all-points",

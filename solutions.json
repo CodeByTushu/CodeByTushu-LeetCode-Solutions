@@ -9533,6 +9533,55 @@
     }
   },
   {
+    "id": "3047",
+    "title": "Find the Largest Area of Square Inside Two Rectangles",
+    "slug": "find-the-largest-area-of-square-inside-two-rectangles",
+    "date": "17 January 2026",
+    "dateIso": "2026-01-17",
+    "formattedDate": "17 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "17-January",
+    "problemFolder": "3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles",
+    "folderPath": "solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Math",
+      "Geometry"
+    ],
+    "summary": "Find the maximum area of a square that can fit inside the intersecting region of at least two rectangles.",
+    "approach": "Iterate through all pairs of rectangles (i, j) to compute their overlapping width and height. For each intersecting pair, the maximum square side is min(width, height). Track the global maximum side and return maxSide^2.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.js"
+      }
+    }
+  },
+  {
     "id": "2975",
     "title": "Maximum Square Area by Removing Fences From a Field",
     "slug": "maximum-square-area-by-removing-fences-from-a-field",

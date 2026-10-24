@@ -9533,6 +9533,57 @@
     }
   },
   {
+    "id": "3454",
+    "title": "Separate Squares II",
+    "slug": "separate-squares-ii",
+    "date": "14 January 2026",
+    "dateIso": "2026-01-14",
+    "formattedDate": "14 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "14-January",
+    "problemFolder": "3454-Separate-Squares-II",
+    "folderPath": "solutions/January/14-January/3454-Separate-Squares-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/separate-squares-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/separate-squares-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Geometry",
+      "Line Sweep",
+      "Segment Tree"
+    ],
+    "summary": "Find the minimum y-coordinate of a horizontal line such that the total area of the union of squares above the line equals the total area of the union of squares below the line.",
+    "approach": "Model square boundaries as horizontal sweep-line events along the y-axis and use coordinate compression with a Segment Tree over x-intervals to compute the union width of each horizontal strip. Calculate the total union area and find the exact splitting line via linear interpolation within the target strip.",
+    "timeComplexity": "O(N * log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/14-January/3454-Separate-Squares-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/14-January/3454-Separate-Squares-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/14-January/3454-Separate-Squares-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/14-January/3454-Separate-Squares-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3453",
     "title": "Separate Squares I",
     "slug": "separate-squares-i",

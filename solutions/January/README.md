@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **11** | January Daily Solutions Series Active 🟢 |
-| 🟢 **Easy Problems** | **2** | Problems #66, #961 |
+| **Total Solved Problems** | **12** | January Daily Solutions Series Active 🟢 |
+| 🟢 **Easy Problems** | **3** | Problems #66, #961, #1266 |
 | 🟡 **Medium Problems** | **6** | Problems #1390, #1975, #1161, #1339, #865, #712 |
 | 🔴 **Hard Problems** | **3** | Problems #1411, #1458, #85 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 Available / 10 Scheduled** | 1 on YouTube, 10 Coming Soon |
+| 🎥 **Video Walkthroughs** | **1 Available / 11 Scheduled** | 1 on YouTube, 11 Coming Soon |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1266** | [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) | <span style="color:#10b981">**Easy**</span> | 12 Jan 2026 | [Java](./12-January/1266-Minimum-Time-Visiting-All-Points/Solution.java) | [Python](./12-January/1266-Minimum-Time-Visiting-All-Points/solution.py) | [C++](./12-January/1266-Minimum-Time-Visiting-All-Points/solution.cpp) | [JS](./12-January/1266-Minimum-Time-Visiting-All-Points/solution.js) | *Coming Soon* | [📁 12-January](./12-January/1266-Minimum-Time-Visiting-All-Points/) |
 | **85** | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | <span style="color:#ef4444">**Hard**</span> | 11 Jan 2026 | [Java](./11-January/85-Maximal-Rectangle/Solution.java) | [Python](./11-January/85-Maximal-Rectangle/solution.py) | [C++](./11-January/85-Maximal-Rectangle/solution.cpp) | [JS](./11-January/85-Maximal-Rectangle/solution.js) | *Coming Soon* | [📁 11-January](./11-January/85-Maximal-Rectangle/) |
 | **712** | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) | <span style="color:#ffc400">**Medium**</span> | 10 Jan 2026 | [Java](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/Solution.java) | [Python](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/solution.py) | [C++](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/solution.cpp) | [JS](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/solution.js) | *Coming Soon* | [📁 10-January](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/) |
 | **865** | [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) | <span style="color:#ffc400">**Medium**</span> | 09 Jan 2026 | [Java](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java) | [Python](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py) | [C++](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp) | [JS](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js) | *Coming Soon* | [📁 9-January](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/) |
@@ -51,14 +52,15 @@
 
 ## 🏷️ Category & Pattern Index (January 2026)
 
-- **Array:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
+- **Array:** [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/), [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
 - **Binary Tree:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#1339 Maximum Product of Splitted Binary Tree](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Breadth-First Search:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Depth-First Search:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#1339 Maximum Product of Splitted Binary Tree](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
 - **Dynamic Programming:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#712 Minimum ASCII Delete Sum for Two Strings](./10-January/712-Minimum-ASCII-Delete-Sum-for-Two-Strings/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
+- **Geometry:** [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/)
 - **Greedy:** [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/)
 - **Hash Table:** [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#865 Smallest Subtree with all the Deepest Nodes](./9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/)
-- **Math:** [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)
+- **Math:** [#1266 Minimum Time Visiting All Points](./12-January/1266-Minimum-Time-Visiting-All-Points/), [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)
 - **Matrix:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/)
 - **Monotonic Stack:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/)
 - **Stack:** [#85 Maximal Rectangle](./11-January/85-Maximal-Rectangle/)

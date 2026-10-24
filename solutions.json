@@ -9533,6 +9533,55 @@
     }
   },
   {
+    "id": "1266",
+    "title": "Minimum Time Visiting All Points",
+    "slug": "minimum-time-visiting-all-points",
+    "date": "12 January 2026",
+    "dateIso": "2026-01-12",
+    "formattedDate": "12 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "12-January",
+    "problemFolder": "1266-Minimum-Time-Visiting-All-Points",
+    "folderPath": "solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-time-visiting-all-points/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-time-visiting-all-points/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Math",
+      "Geometry"
+    ],
+    "summary": "Given a sequence of points on a 2D plane, calculate the minimum time in seconds required to visit all points in order when moving horizontally, vertically, or diagonally.",
+    "approach": "The minimum time to travel between any two consecutive points is their Chebyshev distance, which equals max(|x2 - x1|, |y2 - y1|). Iterate through adjacent point pairs and accumulate these distances.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.js"
+      }
+    }
+  },
+  {
     "id": "85",
     "title": "Maximal Rectangle",
     "slug": "maximal-rectangle",

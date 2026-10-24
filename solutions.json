@@ -9484,6 +9484,54 @@
     }
   },
   {
+    "id": "1458",
+    "title": "Max Dot Product of Two Subsequences",
+    "slug": "max-dot-product-of-two-subsequences",
+    "date": "08 January 2026",
+    "dateIso": "2026-01-08",
+    "formattedDate": "08 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "8-January",
+    "problemFolder": "1458-Max-Dot-Product-of-Two-Subsequences",
+    "folderPath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/max-dot-product-of-two-subsequences/",
+    "leetcodeUrl": "https://leetcode.com/problems/max-dot-product-of-two-subsequences/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "summary": "Return the maximum dot product between non-empty subsequences of nums1 and nums2 with the same length.",
+    "approach": "Apply 2D dynamic programming similar to LCS. At each state (i, j), transition by taking both elements (optionally extending previous positive subsequence), skipping from nums1, or skipping from nums2.",
+    "timeComplexity": "O(N * M)",
+    "auxiliarySpaceComplexity": "O(N * M)",
+    "spaceComplexity": "O(N * M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js"
+      }
+    }
+  },
+  {
     "id": "1339",
     "title": "Maximum Product of Splitted Binary Tree",
     "slug": "maximum-product-of-splitted-binary-tree",

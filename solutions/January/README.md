@@ -22,12 +22,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **7** | January Daily Solutions Series Active 🟢 |
+| **Total Solved Problems** | **8** | January Daily Solutions Series Active 🟢 |
 | 🟢 **Easy Problems** | **2** | Problems #66, #961 |
 | 🟡 **Medium Problems** | **4** | Problems #1390, #1975, #1161, #1339 |
-| 🔴 **Hard Problems** | **1** | Problem #1411 |
+| 🔴 **Hard Problems** | **2** | Problems #1411, #1458 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every problem |
-| 🎥 **Video Walkthroughs** | **1 Available / 6 Scheduled** | 1 on YouTube, 6 Coming Soon |
+| 🎥 **Video Walkthroughs** | **1 Available / 7 Scheduled** | 1 on YouTube, 7 Coming Soon |
 
 ---
 
@@ -35,6 +35,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1458** | [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | <span style="color:#ef4444">**Hard**</span> | 08 Jan 2026 | [Java](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java) | [Python](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py) | [C++](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp) | [JS](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js) | *Coming Soon* | [📁 8-January](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/) |
 | **1339** | [Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/) | <span style="color:#ffc400">**Medium**</span> | 07 Jan 2026 | [Java](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java) | [Python](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py) | [C++](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp) | [JS](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js) | *Coming Soon* | [📁 7-January](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/) |
 | **1161** | [Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) | <span style="color:#ffc400">**Medium**</span> | 06 Jan 2026 | [Java](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java) | [Python](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py) | [C++](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp) | [JS](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js) | *Coming Soon* | [📁 6-January](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/) |
 | **1975** | [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | <span style="color:#ffc400">**Medium**</span> | 05 Jan 2026 | [Java](./5-January/1975-Maximum-Matrix-Sum/Solution.java) | [Python](./5-January/1975-Maximum-Matrix-Sum/solution.py) | [C++](./5-January/1975-Maximum-Matrix-Sum/solution.cpp) | [JS](./5-January/1975-Maximum-Matrix-Sum/solution.js) | *Coming Soon* | [📁 5-January](./5-January/1975-Maximum-Matrix-Sum/) |
@@ -47,11 +48,11 @@
 
 ## 🏷️ Category & Pattern Index (January 2026)
 
-- **Array:** [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/)
+- **Array:** [#66 Plus One](./1-January/66-Plus-One/), [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/), [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
 - **Binary Tree:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#1339 Maximum Product of Splitted Binary Tree](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/)
 - **Breadth-First Search:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/)
 - **Depth-First Search:** [#1161 Maximum Level Sum of a Binary Tree](./6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/), [#1339 Maximum Product of Splitted Binary Tree](./7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/)
-- **Dynamic Programming:** [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/)
+- **Dynamic Programming:** [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1458 Max Dot Product of Two Subsequences](./8-January/1458-Max-Dot-Product-of-Two-Subsequences/)
 - **Greedy:** [#1975 Maximum Matrix Sum](./5-January/1975-Maximum-Matrix-Sum/)
 - **Hash Table:** [#961 N-Repeated Element in Size 2N Array](./2-January/961-N-Repeated-Element-in-Size-2N-Array/)
 - **Math:** [#66 Plus One](./1-January/66-Plus-One/), [#1411 Number of Ways to Paint N × 3 Grid](./3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/), [#1390 Four Divisors](./4-January/1390-Four-Divisors/)

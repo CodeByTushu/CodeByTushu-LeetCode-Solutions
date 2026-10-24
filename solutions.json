@@ -1,5 +1,54 @@
 [
   {
+    "id": "2409",
+    "title": "Count Days Spent Together",
+    "slug": "count-days-spent-together",
+    "date": "24 October 2026",
+    "dateIso": "2026-10-24",
+    "formattedDate": "24 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "24-October",
+    "problemFolder": "2409-Count-Days-Spent-Together",
+    "folderPath": "solutions/October/24-October/2409-Count-Days-Spent-Together",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/count-days-spent-together/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-days-spent-together/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Math",
+      "String",
+      "Prefix Sum"
+    ],
+    "summary": "Calculate the total number of days Alice and Bob spend together in Rome given their arrival and departure dates within the same non-leap year.",
+    "approach": "Convert each 'MM-DD' date string into the day of the year (1-indexed, 1 to 365) using a prefix sum array of month day counts. The overlapping interval between [arriveAlice, leaveAlice] and [arriveBob, leaveBob] starts at max(arriveAlice, arriveBob) and ends at min(leaveAlice, leaveBob). If start <= end, the number of overlapping days is end - start + 1; otherwise, return 0.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/24-October/2409-Count-Days-Spent-Together/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/24-October/2409-Count-Days-Spent-Together/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/24-October/2409-Count-Days-Spent-Together/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/24-October/2409-Count-Days-Spent-Together/solution.js"
+      }
+    }
+  },
+  {
     "id": "3644",
     "title": "Maximum K to Sort a Permutation",
     "slug": "maximum-k-to-sort-a-permutation",

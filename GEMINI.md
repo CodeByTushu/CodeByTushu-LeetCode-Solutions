@@ -123,3 +123,8 @@ Problem Solving
 
 👇 Comment the answer below! 🔥
 ```
+
+### 4️⃣ Relevant Tags (CodeByTushu Admin Platform)
+List the exact relevant tags to select in the CodeByTushu portal, divided into:
+- **Primary Tags** (Core algorithms/patterns)
+- **Secondary / Supporting Tags** (Auxiliary concepts)

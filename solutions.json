@@ -9533,6 +9533,57 @@
     }
   },
   {
+    "id": "85",
+    "title": "Maximal Rectangle",
+    "slug": "maximal-rectangle",
+    "date": "11 January 2026",
+    "dateIso": "2026-01-11",
+    "formattedDate": "11 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "11-January",
+    "problemFolder": "85-Maximal-Rectangle",
+    "folderPath": "solutions/January/11-January/85-Maximal-Rectangle",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximal-rectangle/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximal-rectangle/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Stack",
+      "Matrix",
+      "Monotonic Stack"
+    ],
+    "summary": "Given a binary matrix filled with 0s and 1s, find the largest rectangle containing only 1s and return its area.",
+    "approach": "Reduce each row to a Largest Rectangle in Histogram problem by maintaining running heights of contiguous 1s for each column. Process each histogram using a monotonic increasing stack in linear time.",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/11-January/85-Maximal-Rectangle/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/11-January/85-Maximal-Rectangle/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/11-January/85-Maximal-Rectangle/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/11-January/85-Maximal-Rectangle/solution.js"
+      }
+    }
+  },
+  {
     "id": "712",
     "title": "Minimum ASCII Delete Sum for Two Strings",
     "slug": "minimum-ascii-delete-sum-for-two-strings",

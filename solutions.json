@@ -9584,6 +9584,54 @@
     }
   },
   {
+    "id": "1200",
+    "title": "Minimum Absolute Difference",
+    "slug": "minimum-absolute-difference",
+    "date": "26 January 2026",
+    "dateIso": "2026-01-26",
+    "formattedDate": "26 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "26-January",
+    "problemFolder": "1200-Minimum-Absolute-Difference",
+    "folderPath": "solutions/January/26-January/1200-Minimum-Absolute-Difference",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-absolute-difference/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-absolute-difference/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Sorting"
+    ],
+    "summary": "Find all pairs of distinct integers in an array that achieve the minimum absolute difference, returned in ascending order.",
+    "approach": "Sort the array in ascending order and scan adjacent elements to determine the minimum difference, then collect all adjacent pairs matching this minimum difference.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/26-January/1200-Minimum-Absolute-Difference/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.js"
+      }
+    }
+  },
+  {
     "id": "1984",
     "title": "Minimum Difference Between Highest and Lowest of K Scores",
     "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",

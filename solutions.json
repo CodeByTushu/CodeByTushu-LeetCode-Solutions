@@ -9584,6 +9584,56 @@
     }
   },
   {
+    "id": "1292",
+    "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
+    "slug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
+    "date": "19 January 2026",
+    "dateIso": "2026-01-19",
+    "formattedDate": "19 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "19-January",
+    "problemFolder": "1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold",
+    "folderPath": "solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Find the maximum side-length of a square subgrid in an m x n matrix with a sum less than or equal to a given threshold, or return 0 if none exists.",
+    "approach": "Precompute 2D prefix sums to evaluate any square sum in O(1). Greedily scan the matrix maintaining the maximum side length found so far, checking if a square of side maxLen + 1 ending at each cell satisfies the threshold constraint.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.js"
+      }
+    }
+  },
+  {
     "id": "1895",
     "title": "Largest Magic Square",
     "slug": "largest-magic-square",

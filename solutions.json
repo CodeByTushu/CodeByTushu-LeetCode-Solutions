@@ -9584,6 +9584,55 @@
     }
   },
   {
+    "id": "1984",
+    "title": "Minimum Difference Between Highest and Lowest of K Scores",
+    "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+    "date": "25 January 2026",
+    "dateIso": "2026-01-25",
+    "formattedDate": "25 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "25-January",
+    "problemFolder": "1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores",
+    "folderPath": "solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Sliding Window"
+    ],
+    "summary": "Pick any k student scores to minimize the difference between the highest and lowest scores.",
+    "approach": "Sort the array and slide a fixed window of size k across all elements, computing nums[i + k - 1] - nums[i] and tracking the minimum difference.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.js"
+      }
+    }
+  },
+  {
     "id": "1877",
     "title": "Minimize Maximum Pair Sum in Array",
     "slug": "minimize-maximum-pair-sum-in-array",

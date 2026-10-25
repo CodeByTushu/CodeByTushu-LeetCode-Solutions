@@ -9584,6 +9584,54 @@
     }
   },
   {
+    "id": "3315",
+    "title": "Construct the Minimum Bitwise Array II",
+    "slug": "construct-the-minimum-bitwise-array-ii",
+    "date": "21 January 2026",
+    "dateIso": "2026-01-21",
+    "formattedDate": "21 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "21-January",
+    "problemFolder": "3315-Construct-the-Minimum-Bitwise-Array-II",
+    "folderPath": "solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ],
+    "summary": "Construct an array ans such that ans[i] OR (ans[i] + 1) == nums[i] with minimized values for numbers up to 10^9, or -1 if impossible.",
+    "approach": "For even prime 2, return -1 as x OR (x + 1) is always odd. For odd primes, isolate the lowest set bit of (p + 1) and clear the highest bit of the trailing 1s in p in O(1): p - (((p + 1) & -(p + 1)) >> 1).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3314",
     "title": "Construct the Minimum Bitwise Array I",
     "slug": "construct-the-minimum-bitwise-array-i",

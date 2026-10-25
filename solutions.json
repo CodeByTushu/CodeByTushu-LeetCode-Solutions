@@ -9584,6 +9584,56 @@
     }
   },
   {
+    "id": "1877",
+    "title": "Minimize Maximum Pair Sum in Array",
+    "slug": "minimize-maximum-pair-sum-in-array",
+    "date": "24 January 2026",
+    "dateIso": "2026-01-24",
+    "formattedDate": "24 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "24-January",
+    "problemFolder": "1877-Minimize-Maximum-Pair-Sum-in-Array",
+    "folderPath": "solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Pair up even-length array elements such that each element is in exactly one pair and the maximum pair sum is minimized.",
+    "approach": "Sort the array in non-decreasing order and greedily pair the i-th smallest element with the i-th largest element (nums[i] + nums[n - 1 - i]) using two pointers, keeping track of the maximum pair sum.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": "3510",
     "title": "Minimum Pair Removal to Sort Array II",
     "slug": "minimum-pair-removal-to-sort-array-ii",

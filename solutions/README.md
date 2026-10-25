@@ -23,7 +23,7 @@ Select any month below to jump straight to that month's folder and view its date
 
 | Month | Quarter / Season | Solved Problems | Status | Direct Folder Link |
 | :--- | :---: | :---: | :---: | :--- |
-| ❄️ **January** | Q1 (Winter) | **23 Solved** | 🟢 **Active Series** | [👉 **Browse January Solutions (23 Days)**](./January/) |
+| ❄️ **January** | Q1 (Winter) | **24 Solved** | 🟢 **Active Series** | [👉 **Browse January Solutions (24 Days)**](./January/) |
 | 🌸 **February** | Q1 (Late Winter) | — | 📁 Planned / Ingesting | [📂 Browse February](./February/) |
 | 🌷 **March** | Q1 (Spring) | — | 📁 Planned / Ingesting | [📂 Browse March](./March/) |
 | 🌿 **April** | Q2 (Spring) | **17 Solved** | 🟢 **Active Series** | [👉 **Browse April Solutions (17 Days)**](./April/) |

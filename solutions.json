@@ -1,5 +1,56 @@
 [
   {
+    "id": "1254",
+    "title": "Number of Closed Islands",
+    "slug": "number-of-closed-islands",
+    "date": "25 October 2026",
+    "dateIso": "2026-10-25",
+    "formattedDate": "25 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "25-October",
+    "problemFolder": "1254-Number-of-Closed-Islands",
+    "folderPath": "solutions/October/25-October/1254-Number-of-Closed-Islands",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-closed-islands/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-closed-islands/",
+    "youtubeUrl": "https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Matrix"
+    ],
+    "summary": "Find the number of 4-directionally connected land components (0s) that are completely enclosed by water (1s) without touching the grid boundaries.",
+    "approach": "First flood-fill all boundary-connected land cells by initiating DFS from all perimeter cells (row 0, row m-1, col 0, col n-1) and converting them to water (1). Then, traverse the inner grid cells; each remaining unvisited land cell (0) is a valid closed island, increment the count and flood-fill it.",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/25-October/1254-Number-of-Closed-Islands/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/25-October/1254-Number-of-Closed-Islands/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/25-October/1254-Number-of-Closed-Islands/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/25-October/1254-Number-of-Closed-Islands/solution.js"
+      }
+    }
+  },
+  {
     "id": "2409",
     "title": "Count Days Spent Together",
     "slug": "count-days-spent-together",

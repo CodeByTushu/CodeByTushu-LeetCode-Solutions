@@ -9584,6 +9584,56 @@
     }
   },
   {
+    "id": "3510",
+    "title": "Minimum Pair Removal to Sort Array II",
+    "slug": "minimum-pair-removal-to-sort-array-ii",
+    "date": "23 January 2026",
+    "dateIso": "2026-01-23",
+    "formattedDate": "23 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "23-January",
+    "problemFolder": "3510-Minimum-Pair-Removal-to-Sort-Array-II",
+    "folderPath": "solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Linked List",
+      "Heap (Priority Queue)",
+      "Simulation"
+    ],
+    "summary": "Repeatedly collapse the minimum sum adjacent pair until the array is non-decreasing for arrays up to 10^5 elements, returning the operation count.",
+    "approach": "Maintain elements in a doubly linked list, adjacent pair sums in a Min-Heap with lazy version invalidation, and track adjacent inversions in O(1) to terminate immediately when sorted.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3507",
     "title": "Minimum Pair Removal to Sort Array I",
     "slug": "minimum-pair-removal-to-sort-array-i",

@@ -9584,6 +9584,55 @@
     }
   },
   {
+    "id": "3651",
+    "title": "Minimum Cost Path with Teleportations",
+    "slug": "minimum-cost-path-with-teleportations",
+    "date": "28 January 2026",
+    "dateIso": "2026-01-28",
+    "formattedDate": "28 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "28-January",
+    "problemFolder": "3651-Minimum-Cost-Path-with-Teleportations",
+    "folderPath": "solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-cost-path-with-teleportations/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-path-with-teleportations/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "summary": "Find the minimum total cost to reach the bottom-right cell from the top-left cell in a grid with right/down moves and up to k free teleportations to cells of less than or equal value.",
+    "approach": "Layered dynamic programming over the number of teleportations t in [0, k], optimizing teleport transitions via suffix minimums across grid cell values and normal moves via 2D DAG relaxation.",
+    "timeComplexity": "O(k * (m * n + maxVal))",
+    "auxiliarySpaceComplexity": "O(m * n + maxVal)",
+    "spaceComplexity": "O(m * n + maxVal)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.js"
+      }
+    }
+  },
+  {
     "id": "3650",
     "title": "Minimum Cost Path with Edge Reversals",
     "slug": "minimum-cost-path-with-edge-reversals",

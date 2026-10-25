@@ -9584,6 +9584,55 @@
     }
   },
   {
+    "id": "3650",
+    "title": "Minimum Cost Path with Edge Reversals",
+    "slug": "minimum-cost-path-with-edge-reversals",
+    "date": "27 January 2026",
+    "dateIso": "2026-01-27",
+    "formattedDate": "27 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "27-January",
+    "problemFolder": "3650-Minimum-Cost-Path-with-Edge-Reversals",
+    "folderPath": "solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Graph",
+      "Shortest Path",
+      "Heap (Priority Queue)"
+    ],
+    "summary": "Find the minimum total cost to travel from node 0 to node n - 1 where each node's switch can reverse an incoming edge at double cost.",
+    "approach": "Model as an augmented directed graph adding reverse edges with doubled cost, then execute Dijkstra's algorithm to compute the shortest path.",
+    "timeComplexity": "O((V + E) log V)",
+    "auxiliarySpaceComplexity": "O(V + E)",
+    "spaceComplexity": "O(V + E)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.js"
+      }
+    }
+  },
+  {
     "id": "1200",
     "title": "Minimum Absolute Difference",
     "slug": "minimum-absolute-difference",

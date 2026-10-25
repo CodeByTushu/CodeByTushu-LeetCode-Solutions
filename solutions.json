@@ -9584,6 +9584,55 @@
     }
   },
   {
+    "id": "3507",
+    "title": "Minimum Pair Removal to Sort Array I",
+    "slug": "minimum-pair-removal-to-sort-array-i",
+    "date": "22 January 2026",
+    "dateIso": "2026-01-22",
+    "formattedDate": "22 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "22-January",
+    "problemFolder": "3507-Minimum-Pair-Removal-to-Sort-Array-I",
+    "folderPath": "solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Simulation",
+      "Greedy"
+    ],
+    "summary": "Repeatedly replace the adjacent pair with the minimum sum with their sum until the array becomes non-decreasing, returning the number of operations performed.",
+    "approach": "Simulate the process directly: while the array is not non-decreasing, locate the leftmost adjacent pair with minimum sum, replace both elements with their sum, and increment the operation count.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3315",
     "title": "Construct the Minimum Bitwise Array II",
     "slug": "construct-the-minimum-bitwise-array-ii",

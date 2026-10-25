@@ -9584,6 +9584,54 @@
     }
   },
   {
+    "id": "3314",
+    "title": "Construct the Minimum Bitwise Array I",
+    "slug": "construct-the-minimum-bitwise-array-i",
+    "date": "20 January 2026",
+    "dateIso": "2026-01-20",
+    "formattedDate": "20 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "20-January",
+    "problemFolder": "3314-Construct-the-Minimum-Bitwise-Array-I",
+    "folderPath": "solutions/January/20-January/3314-Construct-the-Minimum-Bitwise-Array-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ],
+    "summary": "Construct an array ans such that ans[i] OR (ans[i] + 1) == nums[i] with minimized values, or -1 if no such value exists.",
+    "approach": "For even prime 2, return -1 as x OR (x + 1) is always odd. For odd primes, clear the highest bit in the block of trailing 1s of nums[i] using the O(1) lowbit trick: p - (((p + 1) & -(p + 1)) >> 1).",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/20-January/3314-Construct-the-Minimum-Bitwise-Array-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/20-January/3314-Construct-the-Minimum-Bitwise-Array-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/20-January/3314-Construct-the-Minimum-Bitwise-Array-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/20-January/3314-Construct-the-Minimum-Bitwise-Array-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "1292",
     "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
     "slug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",

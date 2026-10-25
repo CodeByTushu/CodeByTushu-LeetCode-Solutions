@@ -9584,6 +9584,56 @@
     }
   },
   {
+    "id": "2976",
+    "title": "Minimum Cost to Convert String I",
+    "slug": "minimum-cost-to-convert-string-i",
+    "date": "29 January 2026",
+    "dateIso": "2026-01-29",
+    "formattedDate": "29 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "29-January",
+    "problemFolder": "2976-Minimum-Cost-to-Convert-String-I",
+    "folderPath": "solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-cost-to-convert-string-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-to-convert-string-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "String",
+      "Graph",
+      "Shortest Path"
+    ],
+    "summary": "Find the minimum cost to convert string source to target using character transformation rules with given individual replacement costs.",
+    "approach": "Model character transformations as a directed weighted graph on 26 lowercase English letters, compute all-pairs shortest paths using the Floyd-Warshall algorithm, and sum optimal character replacement costs.",
+    "timeComplexity": "O(|Σ|^3 + |E| + N)",
+    "auxiliarySpaceComplexity": "O(|Σ|^2) = O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3651",
     "title": "Minimum Cost Path with Teleportations",
     "slug": "minimum-cost-path-with-teleportations",

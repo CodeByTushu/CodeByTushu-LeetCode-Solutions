@@ -9634,6 +9634,57 @@
     }
   },
   {
+    "id": "1382",
+    "title": "Balance a Binary Search Tree",
+    "slug": "balance-a-binary-search-tree",
+    "date": "09 February 2026",
+    "dateIso": "2026-02-09",
+    "formattedDate": "09 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "9-February",
+    "problemFolder": "1382-Balance-a-Binary-Search-Tree",
+    "folderPath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/balance-a-binary-search-tree/",
+    "leetcodeUrl": "https://leetcode.com/problems/balance-a-binary-search-tree/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Tree",
+      "Binary Tree",
+      "Depth-First Search",
+      "Recursion",
+      "Array"
+    ],
+    "summary": "Convert an arbitrary binary search tree into a height-balanced binary search tree with minimal depth using the same node values.",
+    "approach": "Extract nodes into a sorted array using in-order traversal, then recursively construct a height-balanced BST using divide and conquer by picking the middle element at each step.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/solution.js"
+      }
+    }
+  },
+  {
     "id": "110",
     "title": "Balanced Binary Tree",
     "slug": "balanced-binary-tree",

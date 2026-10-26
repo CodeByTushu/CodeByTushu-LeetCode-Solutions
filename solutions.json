@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "1461",
+    "title": "Check If a String Contains All Binary Codes of Size K",
+    "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+    "date": "23 February 2026",
+    "dateIso": "2026-02-23",
+    "formattedDate": "23 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "23-February",
+    "problemFolder": "1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K",
+    "folderPath": "solutions/February/23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Bit Manipulation"
+    ],
+    "summary": "Determine whether a binary string contains all 2^k binary codes of length k as substrings.",
+    "approach": "Prune using the Pigeonhole Principle if s is too short, then slide a rolling bitmask window of size k and record seen codes in a boolean array of size 2^k in O(n) time and O(2^k) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(2^k)",
+    "spaceComplexity": "O(2^k)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.js"
+      }
+    }
+  },
+  {
     "id": "868",
     "title": "Binary Gap",
     "slug": "binary-gap",

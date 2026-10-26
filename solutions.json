@@ -9634,6 +9634,53 @@
     }
   },
   {
+    "id": "693",
+    "title": "Binary Number with Alternating Bits",
+    "slug": "binary-number-with-alternating-bits",
+    "date": "18 February 2026",
+    "dateIso": "2026-02-18",
+    "formattedDate": "18 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "18-February",
+    "problemFolder": "693-Binary-Number-with-Alternating-Bits",
+    "folderPath": "solutions/February/18-February/693-Binary-Number-with-Alternating-Bits",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation"
+    ],
+    "summary": "Check whether a given positive integer has strictly alternating bits in its binary representation.",
+    "approach": "XOR n with n >> 1 to obtain a bitmask x. If n has alternating bits, x is a contiguous sequence of 1s satisfying (x & (x + 1)) == 0 in O(1) time.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/18-February/693-Binary-Number-with-Alternating-Bits/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/18-February/693-Binary-Number-with-Alternating-Bits/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/18-February/693-Binary-Number-with-Alternating-Bits/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/18-February/693-Binary-Number-with-Alternating-Bits/solution.js"
+      }
+    }
+  },
+  {
     "id": "401",
     "title": "Binary Watch",
     "slug": "binary-watch",

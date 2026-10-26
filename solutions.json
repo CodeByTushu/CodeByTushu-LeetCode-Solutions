@@ -1,5 +1,55 @@
 [
   {
+    "id": "3619",
+    "title": "Count Islands With Total Value Divisible by K",
+    "slug": "count-islands-with-total-value-divisible-by-k",
+    "date": "26 October 2026",
+    "dateIso": "2026-10-26",
+    "formattedDate": "26 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "26-October",
+    "problemFolder": "3619-Count-Islands-With-Total-Value-Divisible-by-K",
+    "folderPath": "solutions/October/26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
+    "youtubeUrl": "https://youtu.be/KE5jOvt9ZLo?si=AOiRfurGqjv4F1pi",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Matrix"
+    ],
+    "summary": "Count the number of 4-directionally connected islands in an m x n grid whose total sum of cell values is divisible by k.",
+    "approach": "Iterate across every cell in the grid. Upon discovering an unvisited land cell (> 0), initiate an iterative DFS using an explicit flat array stack. Explore all 4-directionally connected positive cells, accumulating their values into a 64-bit sum and marking them visited in-place by setting their value to 0. After exhausting the island component, increment count if the total sum is divisible by k.",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/solution.js"
+      }
+    }
+  },
+  {
     "id": "1254",
     "title": "Number of Closed Islands",
     "slug": "number-of-closed-islands",

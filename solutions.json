@@ -9634,6 +9634,57 @@
     }
   },
   {
+    "id": "3721",
+    "title": "Longest Balanced Subarray II",
+    "slug": "longest-balanced-subarray-ii",
+    "date": "11 February 2026",
+    "dateIso": "2026-02-11",
+    "formattedDate": "11 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "11-February",
+    "problemFolder": "3721-Longest-Balanced-Subarray-II",
+    "folderPath": "solutions/February/11-February/3721-Longest-Balanced-Subarray-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/longest-balanced-subarray-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-balanced-subarray-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Segment Tree",
+      "Array",
+      "Hash Table",
+      "Counting",
+      "Parity"
+    ],
+    "summary": "Find the length of the longest subarray in nums that contains an equal number of distinct even integers and distinct odd integers.",
+    "approach": "Maintain balance scores across all left endpoints using a lazy Segment Tree. When extending to right endpoint r, perform range addition on [prev + 1, r] with parity weight, and query the smallest left endpoint with balance 0 in O(log n) using the discrete intermediate value theorem.",
+    "timeComplexity": "O(n log n)",
+    "auxiliarySpaceComplexity": "O(n + U)",
+    "spaceComplexity": "O(n + U)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/11-February/3721-Longest-Balanced-Subarray-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/11-February/3721-Longest-Balanced-Subarray-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/11-February/3721-Longest-Balanced-Subarray-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/11-February/3721-Longest-Balanced-Subarray-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3719",
     "title": "Longest Balanced Subarray I",
     "slug": "longest-balanced-subarray-i",

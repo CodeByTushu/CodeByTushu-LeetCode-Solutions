@@ -22,7 +22,7 @@
 | Attribute | Details |
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
-| **Status** | `Archive / Ingesting` |
+| **Status** | 🟢 **Active Series** |
 | **Total Days** | 31 Days |
 | **Language Standards** | Java, Python, C++, JavaScript |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |

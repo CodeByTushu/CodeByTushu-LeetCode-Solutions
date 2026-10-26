@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "3666",
+    "title": "Minimum Operations to Equalize Binary String",
+    "slug": "minimum-operations-to-equalize-binary-string",
+    "date": "27 February 2026",
+    "dateIso": "2026-02-27",
+    "formattedDate": "27 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "27-February",
+    "problemFolder": "3666-Minimum-Operations-to-Equalize-Binary-String",
+    "folderPath": "solutions/February/27-February/3666-Minimum-Operations-to-Equalize-Binary-String",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Math",
+      "String",
+      "Greedy"
+    ],
+    "summary": "Find the minimum number of k-bit flips required to transform all characters in a binary string into 1s.",
+    "approach": "Analyze flip parity and total capacity bounds via Gale-Ryser realizability, calculating minimal odd and even operation counts in O(1) arithmetic after an initial O(n) count of zeros.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/27-February/3666-Minimum-Operations-to-Equalize-Binary-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/27-February/3666-Minimum-Operations-to-Equalize-Binary-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/27-February/3666-Minimum-Operations-to-Equalize-Binary-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/27-February/3666-Minimum-Operations-to-Equalize-Binary-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1404",
     "title": "Number of Steps to Reduce a Number in Binary Representation to One",
     "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",

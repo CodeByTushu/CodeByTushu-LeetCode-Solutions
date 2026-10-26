@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "1680",
+    "title": "Concatenation of Consecutive Binary Numbers",
+    "slug": "concatenation-of-consecutive-binary-numbers",
+    "date": "28 February 2026",
+    "dateIso": "2026-02-28",
+    "formattedDate": "28 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "28-February",
+    "problemFolder": "1680-Concatenation-of-Consecutive-Binary-Numbers",
+    "folderPath": "solutions/February/28-February/1680-Concatenation-of-Consecutive-Binary-Numbers",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/",
+    "leetcodeUrl": "https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation",
+      "Math",
+      "Simulation"
+    ],
+    "summary": "Concatenate the binary representations of numbers from 1 to n into a single binary number and compute its decimal value modulo 10^9 + 7.",
+    "approach": "Iterate from 1 to n while tracking current bit length which increments whenever i is a power of 2 using (i & (i - 1)) == 0. In each step, shift the accumulated answer left by bit length, bitwise OR with i, and take modulo 10^9 + 7.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/28-February/1680-Concatenation-of-Consecutive-Binary-Numbers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/28-February/1680-Concatenation-of-Consecutive-Binary-Numbers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/28-February/1680-Concatenation-of-Consecutive-Binary-Numbers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/28-February/1680-Concatenation-of-Consecutive-Binary-Numbers/solution.js"
+      }
+    }
+  },
+  {
     "id": "3666",
     "title": "Minimum Operations to Equalize Binary String",
     "slug": "minimum-operations-to-equalize-binary-string",

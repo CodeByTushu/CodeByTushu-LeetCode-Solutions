@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **16 Solved** |
+| **Total Solved Problems** | **17 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **401** | [Binary Watch](https://leetcode.com/problems/binary-watch/) | <span style="color:#10b981">**Easy**</span> | 17 Feb 2026 | [Java](./17-February/401-Binary-Watch/Solution.java) | [Python](./17-February/401-Binary-Watch/solution.py) | [C++](./17-February/401-Binary-Watch/solution.cpp) | [JS](./17-February/401-Binary-Watch/solution.js) | *Coming Soon* | [📁 17-February](./17-February/401-Binary-Watch/) |
 | **190** | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | <span style="color:#10b981">**Easy**</span> | 16 Feb 2026 | [Java](./16-February/190-Reverse-Bits/Solution.java) | [Python](./16-February/190-Reverse-Bits/solution.py) | [C++](./16-February/190-Reverse-Bits/solution.cpp) | [JS](./16-February/190-Reverse-Bits/solution.js) | *Coming Soon* | [📁 16-February](./16-February/190-Reverse-Bits/) |
 | **67** | [Add Binary](https://leetcode.com/problems/add-binary/) | <span style="color:#10b981">**Easy**</span> | 15 Feb 2026 | [Java](./15-February/67-Add-Binary/Solution.java) | [Python](./15-February/67-Add-Binary/solution.py) | [C++](./15-February/67-Add-Binary/solution.cpp) | [JS](./15-February/67-Add-Binary/solution.js) | *Coming Soon* | [📁 15-February](./15-February/67-Add-Binary/) |
 | **799** | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | <span style="color:#f59e0b">**Medium**</span> | 14 Feb 2026 | [Java](./14-February/799-Champagne-Tower/Solution.java) | [Python](./14-February/799-Champagne-Tower/solution.py) | [C++](./14-February/799-Champagne-Tower/solution.cpp) | [JS](./14-February/799-Champagne-Tower/solution.js) | *Coming Soon* | [📁 14-February](./14-February/799-Champagne-Tower/) |

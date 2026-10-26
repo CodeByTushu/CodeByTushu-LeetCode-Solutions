@@ -9634,6 +9634,54 @@
     }
   },
   {
+    "id": "401",
+    "title": "Binary Watch",
+    "slug": "binary-watch",
+    "date": "17 February 2026",
+    "dateIso": "2026-02-17",
+    "formattedDate": "17 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "17-February",
+    "problemFolder": "401-Binary-Watch",
+    "folderPath": "solutions/February/17-February/401-Binary-Watch",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/binary-watch/",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-watch/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Backtracking",
+      "Bit Manipulation"
+    ],
+    "summary": "Return all possible valid clock times represented by a binary watch when exactly turnedOn LEDs are lit.",
+    "approach": "Enumerate all 720 valid clock pairs (12 hours x 60 minutes) in O(1) time. For each pair, check if bitCount(h) + bitCount(m) == turnedOn and format the time with proper zero padding.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/17-February/401-Binary-Watch/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/17-February/401-Binary-Watch/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/17-February/401-Binary-Watch/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/17-February/401-Binary-Watch/solution.js"
+      }
+    }
+  },
+  {
     "id": "190",
     "title": "Reverse Bits",
     "slug": "reverse-bits",

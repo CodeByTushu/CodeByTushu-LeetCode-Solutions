@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **13 Solved** |
+| **Total Solved Problems** | **14 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **799** | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | <span style="color:#f59e0b">**Medium**</span> | 14 Feb 2026 | [Java](./14-February/799-Champagne-Tower/Solution.java) | [Python](./14-February/799-Champagne-Tower/solution.py) | [C++](./14-February/799-Champagne-Tower/solution.cpp) | [JS](./14-February/799-Champagne-Tower/solution.js) | *Coming Soon* | [📁 14-February](./14-February/799-Champagne-Tower/) |
 | **3714** | [Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii/) | <span style="color:#f59e0b">**Medium**</span> | 13 Feb 2026 | [Java](./13-February/3714-Longest-Balanced-Substring-II/Solution.java) | [Python](./13-February/3714-Longest-Balanced-Substring-II/solution.py) | [C++](./13-February/3714-Longest-Balanced-Substring-II/solution.cpp) | [JS](./13-February/3714-Longest-Balanced-Substring-II/solution.js) | *Coming Soon* | [📁 13-February](./13-February/3714-Longest-Balanced-Substring-II/) |
 | **3713** | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | <span style="color:#f59e0b">**Medium**</span> | 12 Feb 2026 | [Java](./12-February/3713-Longest-Balanced-Substring-I/Solution.java) | [Python](./12-February/3713-Longest-Balanced-Substring-I/solution.py) | [C++](./12-February/3713-Longest-Balanced-Substring-I/solution.cpp) | [JS](./12-February/3713-Longest-Balanced-Substring-I/solution.js) | *Coming Soon* | [📁 12-February](./12-February/3713-Longest-Balanced-Substring-I/) |
 | **3721** | [Longest Balanced Subarray II](https://leetcode.com/problems/longest-balanced-subarray-ii/) | <span style="color:#ef4444">**Hard**</span> | 11 Feb 2026 | [Java](./11-February/3721-Longest-Balanced-Subarray-II/Solution.java) | [Python](./11-February/3721-Longest-Balanced-Subarray-II/solution.py) | [C++](./11-February/3721-Longest-Balanced-Subarray-II/solution.cpp) | [JS](./11-February/3721-Longest-Balanced-Subarray-II/solution.js) | *Coming Soon* | [📁 11-February](./11-February/3721-Longest-Balanced-Subarray-II/) |

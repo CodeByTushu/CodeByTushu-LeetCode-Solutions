@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "799",
+    "title": "Champagne Tower",
+    "slug": "champagne-tower",
+    "date": "14 February 2026",
+    "dateIso": "2026-02-14",
+    "formattedDate": "14 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "14-February",
+    "problemFolder": "799-Champagne-Tower",
+    "folderPath": "solutions/February/14-February/799-Champagne-Tower",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/champagne-tower/",
+    "leetcodeUrl": "https://leetcode.com/problems/champagne-tower/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "Simulation",
+      "Math"
+    ],
+    "summary": "Simulate pouring champagne into a stacked glass pyramid and return how full a specific glass at (query_row, query_glass) is.",
+    "approach": "Simulate cascading liquid overflow row by row with a 2D dynamic programming array. Liquid beyond 1 cup splits equally into (r+1, c) and (r+1, c+1), clamping the requested glass value to 1.0 at the end.",
+    "timeComplexity": "O(R^2)",
+    "auxiliarySpaceComplexity": "O(R^2)",
+    "spaceComplexity": "O(R^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/14-February/799-Champagne-Tower/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/14-February/799-Champagne-Tower/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/14-February/799-Champagne-Tower/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/14-February/799-Champagne-Tower/solution.js"
+      }
+    }
+  },
+  {
     "id": "3714",
     "title": "Longest Balanced Substring II",
     "slug": "longest-balanced-substring-ii",

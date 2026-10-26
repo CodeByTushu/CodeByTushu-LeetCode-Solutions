@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **19 Solved** |
+| **Total Solved Problems** | **20 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **761** | [Special Binary String](https://leetcode.com/problems/special-binary-string/) | <span style="color:#ef4444">**Hard**</span> | 20 Feb 2026 | [Java](./20-February/761-Special-Binary-String/Solution.java) | [Python](./20-February/761-Special-Binary-String/solution.py) | [C++](./20-February/761-Special-Binary-String/solution.cpp) | [JS](./20-February/761-Special-Binary-String/solution.js) | *Coming Soon* | [📁 20-February](./20-February/761-Special-Binary-String/) |
 | **696** | [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | <span style="color:#10b981">**Easy**</span> | 19 Feb 2026 | [Java](./19-February/696-Count-Binary-Substrings/Solution.java) | [Python](./19-February/696-Count-Binary-Substrings/solution.py) | [C++](./19-February/696-Count-Binary-Substrings/solution.cpp) | [JS](./19-February/696-Count-Binary-Substrings/solution.js) | *Coming Soon* | [📁 19-February](./19-February/696-Count-Binary-Substrings/) |
 | **693** | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | <span style="color:#10b981">**Easy**</span> | 18 Feb 2026 | [Java](./18-February/693-Binary-Number-with-Alternating-Bits/Solution.java) | [Python](./18-February/693-Binary-Number-with-Alternating-Bits/solution.py) | [C++](./18-February/693-Binary-Number-with-Alternating-Bits/solution.cpp) | [JS](./18-February/693-Binary-Number-with-Alternating-Bits/solution.js) | *Coming Soon* | [📁 18-February](./18-February/693-Binary-Number-with-Alternating-Bits/) |
 | **401** | [Binary Watch](https://leetcode.com/problems/binary-watch/) | <span style="color:#10b981">**Easy**</span> | 17 Feb 2026 | [Java](./17-February/401-Binary-Watch/Solution.java) | [Python](./17-February/401-Binary-Watch/solution.py) | [C++](./17-February/401-Binary-Watch/solution.cpp) | [JS](./17-February/401-Binary-Watch/solution.js) | *Coming Soon* | [📁 17-February](./17-February/401-Binary-Watch/) |

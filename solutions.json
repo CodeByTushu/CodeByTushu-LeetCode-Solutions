@@ -9634,6 +9634,54 @@
     }
   },
   {
+    "id": "744",
+    "title": "Find Smallest Letter Greater Than Target",
+    "slug": "find-smallest-letter-greater-than-target",
+    "date": "31 January 2026",
+    "dateIso": "2026-01-31",
+    "formattedDate": "31 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "31-January",
+    "problemFolder": "744-Find-Smallest-Letter-Greater-Than-Target",
+    "folderPath": "solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "summary": "Find the smallest character in a sorted character array that is lexicographically greater than target, wrapping around to the first element if none exists.",
+    "approach": "Apply upper bound binary search to locate the first character strictly greater than target in logarithmic time, using modulo arithmetic for wrap-around.",
+    "timeComplexity": "O(log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.js"
+      }
+    }
+  },
+  {
     "id": "2977",
     "title": "Minimum Cost to Convert String II",
     "slug": "minimum-cost-to-convert-string-ii",

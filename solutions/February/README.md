@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **9 Solved** |
+| **Total Solved Problems** | **10 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3719** | [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/) | <span style="color:#f59e0b">**Medium**</span> | 10 Feb 2026 | [Java](./10-February/3719-Longest-Balanced-Subarray-I/Solution.java) | [Python](./10-February/3719-Longest-Balanced-Subarray-I/solution.py) | [C++](./10-February/3719-Longest-Balanced-Subarray-I/solution.cpp) | [JS](./10-February/3719-Longest-Balanced-Subarray-I/solution.js) | *Coming Soon* | [📁 10-February](./10-February/3719-Longest-Balanced-Subarray-I/) |
 | **1382** | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | <span style="color:#f59e0b">**Medium**</span> | 09 Feb 2026 | [Java](./9-February/1382-Balance-a-Binary-Search-Tree/Solution.java) | [Python](./9-February/1382-Balance-a-Binary-Search-Tree/solution.py) | [C++](./9-February/1382-Balance-a-Binary-Search-Tree/solution.cpp) | [JS](./9-February/1382-Balance-a-Binary-Search-Tree/solution.js) | *Coming Soon* | [📁 9-February](./9-February/1382-Balance-a-Binary-Search-Tree/) |
 | **110** | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | <span style="color:#10b981">**Easy**</span> | 08 Feb 2026 | [Java](./8-February/110-Balanced-Binary-Tree/Solution.java) | [Python](./8-February/110-Balanced-Binary-Tree/solution.py) | [C++](./8-February/110-Balanced-Binary-Tree/solution.cpp) | [JS](./8-February/110-Balanced-Binary-Tree/solution.js) | *Coming Soon* | [📁 8-February](./8-February/110-Balanced-Binary-Tree/) |
 | **1653** | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | <span style="color:#f59e0b">**Medium**</span> | 07 Feb 2026 | [Java](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/Solution.java) | [Python](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.py) | [C++](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.cpp) | [JS](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.js) | *Coming Soon* | [📁 7-February](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/) |

@@ -9634,6 +9634,57 @@
     }
   },
   {
+    "id": "3719",
+    "title": "Longest Balanced Subarray I",
+    "slug": "longest-balanced-subarray-i",
+    "date": "10 February 2026",
+    "dateIso": "2026-02-10",
+    "formattedDate": "10 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "10-February",
+    "problemFolder": "3719-Longest-Balanced-Subarray-I",
+    "folderPath": "solutions/February/10-February/3719-Longest-Balanced-Subarray-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/longest-balanced-subarray-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-balanced-subarray-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Counting",
+      "Parity",
+      "Enumeration"
+    ],
+    "summary": "Find the length of the longest subarray in nums that contains an equal number of distinct even integers and distinct odd integers.",
+    "approach": "Enumerate all candidate subarrays starting at index i using a global timestamp array lastSeen to track distinct even and distinct odd frequencies in O(1) time without reallocations, tracking the maximum length where distinctEven == distinctOdd.",
+    "timeComplexity": "O(n^2)",
+    "auxiliarySpaceComplexity": "O(U)",
+    "spaceComplexity": "O(U)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/10-February/3719-Longest-Balanced-Subarray-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/10-February/3719-Longest-Balanced-Subarray-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/10-February/3719-Longest-Balanced-Subarray-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/10-February/3719-Longest-Balanced-Subarray-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "1382",
     "title": "Balance a Binary Search Tree",
     "slug": "balance-a-binary-search-tree",

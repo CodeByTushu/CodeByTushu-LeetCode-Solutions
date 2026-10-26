@@ -9634,6 +9634,56 @@
     }
   },
   {
+    "id": "110",
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree",
+    "date": "08 February 2026",
+    "dateIso": "2026-02-08",
+    "formattedDate": "08 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "8-February",
+    "problemFolder": "110-Balanced-Binary-Tree",
+    "folderPath": "solutions/February/8-February/110-Balanced-Binary-Tree",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/balanced-binary-tree/",
+    "leetcodeUrl": "https://leetcode.com/problems/balanced-binary-tree/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Tree",
+      "Binary Tree",
+      "Depth-First Search",
+      "Recursion"
+    ],
+    "summary": "Determine whether a binary tree is height-balanced, meaning the height difference between the left and right subtrees of every node never exceeds one.",
+    "approach": "Perform a bottom-up post-order DFS traversal. Return the subtree height if height-balanced or -1 sentinel upon detecting an imbalance (|left - right| > 1), avoiding redundant recalculations in O(n) linear time.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(h)",
+    "spaceComplexity": "O(h)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/solution.js"
+      }
+    }
+  },
+  {
     "id": "1653",
     "title": "Minimum Deletions to Make String Balanced",
     "slug": "minimum-deletions-to-make-string-balanced",

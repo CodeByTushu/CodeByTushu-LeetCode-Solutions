@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **7 Solved** |
+| **Total Solved Problems** | **8 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **110** | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | <span style="color:#10b981">**Easy**</span> | 08 Feb 2026 | [Java](./8-February/110-Balanced-Binary-Tree/Solution.java) | [Python](./8-February/110-Balanced-Binary-Tree/solution.py) | [C++](./8-February/110-Balanced-Binary-Tree/solution.cpp) | [JS](./8-February/110-Balanced-Binary-Tree/solution.js) | *Coming Soon* | [📁 8-February](./8-February/110-Balanced-Binary-Tree/) |
 | **1653** | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | <span style="color:#f59e0b">**Medium**</span> | 07 Feb 2026 | [Java](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/Solution.java) | [Python](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.py) | [C++](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.cpp) | [JS](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.js) | *Coming Soon* | [📁 7-February](./7-February/1653-Minimum-Deletions-to-Make-String-Balanced/) |
 | **3634** | [Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/) | <span style="color:#f59e0b">**Medium**</span> | 06 Feb 2026 | [Java](./6-February/3634-Minimum-Removals-to-Balance-Array/Solution.java) | [Python](./6-February/3634-Minimum-Removals-to-Balance-Array/solution.py) | [C++](./6-February/3634-Minimum-Removals-to-Balance-Array/solution.cpp) | [JS](./6-February/3634-Minimum-Removals-to-Balance-Array/solution.js) | *Coming Soon* | [📁 6-February](./6-February/3634-Minimum-Removals-to-Balance-Array/) |
 | **3379** | [Transformed Array](https://leetcode.com/problems/transformed-array/) | <span style="color:#10b981">**Easy**</span> | 05 Feb 2026 | [Java](./5-February/3379-Transformed-Array/Solution.java) | [Python](./5-February/3379-Transformed-Array/solution.py) | [C++](./5-February/3379-Transformed-Array/solution.cpp) | [JS](./5-February/3379-Transformed-Array/solution.js) | *Coming Soon* | [📁 5-February](./5-February/3379-Transformed-Array/) |

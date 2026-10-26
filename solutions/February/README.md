@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **23 Solved** |
+| **Total Solved Problems** | **24 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1022** | [Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | <span style="color:#10b981">**Easy**</span> | 24 Feb 2026 | [Java](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/Solution.java) | [Python](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/solution.py) | [C++](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/solution.cpp) | [JS](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/solution.js) | *Coming Soon* | [📁 24-February](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/) |
 | **1461** | [Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | <span style="color:#f59e0b">**Medium**</span> | 23 Feb 2026 | [Java](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/Solution.java) | [Python](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.py) | [C++](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.cpp) | [JS](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.js) | *Coming Soon* | [📁 23-February](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/) |
 | **868** | [Binary Gap](https://leetcode.com/problems/binary-gap/) | <span style="color:#10b981">**Easy**</span> | 22 Feb 2026 | [Java](./22-February/868-Binary-Gap/Solution.java) | [Python](./22-February/868-Binary-Gap/solution.py) | [C++](./22-February/868-Binary-Gap/solution.cpp) | [JS](./22-February/868-Binary-Gap/solution.js) | *Coming Soon* | [📁 22-February](./22-February/868-Binary-Gap/) |
 | **762** | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) | <span style="color:#10b981">**Easy**</span> | 21 Feb 2026 | [Java](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/Solution.java) | [Python](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.py) | [C++](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.cpp) | [JS](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.js) | *Coming Soon* | [📁 21-February](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/) |

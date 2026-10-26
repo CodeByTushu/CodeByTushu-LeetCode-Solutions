@@ -9634,6 +9634,57 @@
     }
   },
   {
+    "id": "1653",
+    "title": "Minimum Deletions to Make String Balanced",
+    "slug": "minimum-deletions-to-make-string-balanced",
+    "date": "07 February 2026",
+    "dateIso": "2026-02-07",
+    "formattedDate": "07 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "7-February",
+    "problemFolder": "1653-Minimum-Deletions-to-Make-String-Balanced",
+    "folderPath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack",
+      "Greedy",
+      "Prefix Sum"
+    ],
+    "summary": "Find the minimum number of deletions needed to make a string consisting of a and b balanced such that no b appears before any a.",
+    "approach": "Maintain running counts in a single pass: count b occurrences so far, and upon encountering a, choose greedily/dynamically between deleting this a (deletions + 1) or keeping this a by deleting all previous b characters (bCount).",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.js"
+      }
+    }
+  },
+  {
     "id": "3634",
     "title": "Minimum Removals to Balance Array",
     "slug": "minimum-removals-to-balance-array",

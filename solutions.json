@@ -9634,6 +9634,54 @@
     }
   },
   {
+    "id": "762",
+    "title": "Prime Number of Set Bits in Binary Representation",
+    "slug": "prime-number-of-set-bits-in-binary-representation",
+    "date": "21 February 2026",
+    "dateIso": "2026-02-21",
+    "formattedDate": "21 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "21-February",
+    "problemFolder": "762-Prime-Number-of-Set-Bits-in-Binary-Representation",
+    "folderPath": "solutions/February/21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/",
+    "leetcodeUrl": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation",
+      "Math"
+    ],
+    "summary": "Count numbers in a range having a prime number of set bits in their binary representation.",
+    "approach": "Encode prime bit counts up to 19 as a bitmask (665772) and check each integer's population count against the mask in O(1) time and O(1) space.",
+    "timeComplexity": "O(right - left)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.js"
+      }
+    }
+  },
+  {
     "id": "761",
     "title": "Special Binary String",
     "slug": "special-binary-string",

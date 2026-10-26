@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "3010",
+    "title": "Divide an Array Into Subarrays With Minimum Cost I",
+    "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
+    "date": "01 February 2026",
+    "dateIso": "2026-02-01",
+    "formattedDate": "01 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "1-February",
+    "problemFolder": "3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I",
+    "folderPath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/",
+    "youtubeUrl": "",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Divide an array into 3 disjoint contiguous non-empty subarrays to minimize the sum of their first elements.",
+    "approach": "The first subarray always starts at index 0, contributing nums[0] to the cost. The remaining two subarrays must start at two distinct indices in nums[1 ... n - 1]. To minimize the sum, identify the two smallest elements in nums[1 ... n - 1] in a single linear pass and add them to nums[0].",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "744",
     "title": "Find Smallest Letter Greater Than Target",
     "slug": "find-smallest-letter-greater-than-target",

@@ -1,4 +1,4 @@
-# CodeByTushu — February 2026 LeetCode Solutions Archive 🌸
+# CodeByTushu — February 2026 LeetCode Solutions Archive ❄️🚀
 
 <p align="center">
   <img src="../../assets/logo.png" alt="CodeByTushu Logo" width="85" height="85" style="border-radius: 50%; object-fit: cover;"/>
@@ -13,6 +13,7 @@
   <a href="../README.md"><img src="https://img.shields.io/badge/🗂️_Browse-All_Months_Hub-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="All Months"/></a>
   <a href="../October/"><img src="https://img.shields.io/badge/🎃_Active_Month-October_2026-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Active October"/></a>
   <a href="https://codebytushu.com/Leetcode/"><img src="https://img.shields.io/badge/Live_Platform-codebytushu.com%2FLeetcode-ffc400?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Live Platform"/></a>
+  <a href="https://www.youtube.com/@codebytushu"><img src="https://img.shields.io/badge/YouTube-@codebytushu-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Channel"/></a>
 </p>
 
 ---
@@ -22,16 +23,15 @@
 | Attribute | Details |
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
-| **Status** | `Archive / Ingesting` |
-| **Total Days** | 28 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
-| **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
+| **Status** | `Active / Ingesting` |
+| **Total Solved Problems** | **1 Solved** |
+| **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
 
 ## 📂 Folder & Solution Structure
 
-When new daily problems are added for February, each problem is organized as:
+Each daily problem is organized as:
 
 ```text
 solutions/February/
@@ -46,9 +46,11 @@ solutions/February/
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ February Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for February. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3010** | [Divide an Array Into Subarrays With Minimum Cost I](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | <span style="color:#10b981">**Easy**</span> | 01 Feb 2026 | [Java](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/Solution.java) | [Python](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.py) | [C++](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.cpp) | [JS](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.js) | *Coming Soon* | [📁 1-February](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/) |
 
 ---
 

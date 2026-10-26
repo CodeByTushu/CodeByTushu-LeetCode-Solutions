@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "1404",
+    "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+    "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+    "date": "26 February 2026",
+    "dateIso": "2026-02-26",
+    "formattedDate": "26 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "26-February",
+    "problemFolder": "1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One",
+    "folderPath": "solutions/February/26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation",
+      "String",
+      "Simulation"
+    ],
+    "summary": "Count the number of steps to reduce a binary number to 1 by dividing by 2 if even or adding 1 if odd.",
+    "approach": "Simulate arithmetic right-to-left tracking carry: an odd bit requires 2 steps (add 1 + divide by 2) setting carry to 1, while an even bit requires 1 step (divide by 2) in O(n) time and O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/solution.js"
+      }
+    }
+  },
+  {
     "id": "1356",
     "title": "Sort Integers by The Number of 1 Bits",
     "slug": "sort-integers-by-the-number-of-1-bits",

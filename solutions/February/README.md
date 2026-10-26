@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **25 Solved** |
+| **Total Solved Problems** | **26 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1404** | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | <span style="color:#f59e0b">**Medium**</span> | 26 Feb 2026 | [Java](./26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/Solution.java) | [Python](./26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/solution.py) | [C++](./26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/solution.cpp) | [JS](./26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/solution.js) | *Coming Soon* | [📁 26-February](./26-February/1404-Number-of-Steps-to-Reduce-a-Number-in-Binary-Representation-to-One/) |
 | **1356** | [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | <span style="color:#10b981">**Easy**</span> | 25 Feb 2026 | [Java](./25-February/1356-Sort-Integers-by-The-Number-of-1-Bits/Solution.java) | [Python](./25-February/1356-Sort-Integers-by-The-Number-of-1-Bits/solution.py) | [C++](./25-February/1356-Sort-Integers-by-The-Number-of-1-Bits/solution.cpp) | [JS](./25-February/1356-Sort-Integers-by-The-Number-of-1-Bits/solution.js) | *Coming Soon* | [📁 25-February](./25-February/1356-Sort-Integers-by-The-Number-of-1-Bits/) |
 | **1022** | [Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | <span style="color:#10b981">**Easy**</span> | 24 Feb 2026 | [Java](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/Solution.java) | [Python](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/solution.py) | [C++](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/solution.cpp) | [JS](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/solution.js) | *Coming Soon* | [📁 24-February](./24-February/1022-Sum-of-Root-To-Leaf-Binary-Numbers/) |
 | **1461** | [Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | <span style="color:#f59e0b">**Medium**</span> | 23 Feb 2026 | [Java](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/Solution.java) | [Python](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.py) | [C++](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.cpp) | [JS](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/solution.js) | *Coming Soon* | [📁 23-February](./23-February/1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/) |

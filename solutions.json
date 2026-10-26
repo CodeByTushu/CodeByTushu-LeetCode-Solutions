@@ -9634,6 +9634,56 @@
     }
   },
   {
+    "id": "3013",
+    "title": "Divide an Array Into Subarrays With Minimum Cost II",
+    "slug": "divide-an-array-into-subarrays-with-minimum-cost-ii",
+    "date": "02 February 2026",
+    "dateIso": "2026-02-02",
+    "formattedDate": "02 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "2-February",
+    "problemFolder": "3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II",
+    "folderPath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/",
+    "youtubeUrl": "",
+    "tags": [
+      "Array",
+      "Sliding Window",
+      "Heap / Priority Queue",
+      "Data Structure"
+    ],
+    "summary": "Divide an array into k contiguous subarrays minimizing the sum of their starting elements, where the starting index difference between the 2nd and kth subarray is at most dist.",
+    "approach": "Since nums[0] is fixed, the problem reduces to finding a sliding window of size at most dist + 1 across nums[1 ... n - 1] that minimizes the sum of its k - 1 smallest elements. We dynamically maintain the k - 1 smallest elements using two balanced sets (or a Fenwick Tree) in O(N log(dist)) time.",
+    "timeComplexity": "O(N log(dist))",
+    "auxiliarySpaceComplexity": "O(dist)",
+    "spaceComplexity": "O(dist)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3010",
     "title": "Divide an Array Into Subarrays With Minimum Cost I",
     "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",

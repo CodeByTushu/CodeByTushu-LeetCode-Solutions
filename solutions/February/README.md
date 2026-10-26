@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **3 Solved** |
+| **Total Solved Problems** | **4 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3640** | [Trionic Array II](https://leetcode.com/problems/trionic-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 04 Feb 2026 | [Java](./4-February/3640-Trionic-Array-II/Solution.java) | [Python](./4-February/3640-Trionic-Array-II/solution.py) | [C++](./4-February/3640-Trionic-Array-II/solution.cpp) | [JS](./4-February/3640-Trionic-Array-II/solution.js) | *Coming Soon* | [📁 4-February](./4-February/3640-Trionic-Array-II/) |
 | **3637** | [Trionic Array I](https://leetcode.com/problems/trionic-array-i/) | <span style="color:#10b981">**Easy**</span> | 03 Feb 2026 | [Java](./3-February/3637-Trionic-Array-I/Solution.java) | [Python](./3-February/3637-Trionic-Array-I/solution.py) | [C++](./3-February/3637-Trionic-Array-I/solution.cpp) | [JS](./3-February/3637-Trionic-Array-I/solution.js) | *Coming Soon* | [📁 3-February](./3-February/3637-Trionic-Array-I/) |
 | **3013** | [Divide an Array Into Subarrays With Minimum Cost II](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/) | <span style="color:#ef4444">**Hard**</span> | 02 Feb 2026 | [Java](./2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/Solution.java) | [Python](./2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.py) | [C++](./2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.cpp) | [JS](./2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.js) | *Coming Soon* | [📁 2-February](./2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/) |
 | **3010** | [Divide an Array Into Subarrays With Minimum Cost I](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | <span style="color:#10b981">**Easy**</span> | 01 Feb 2026 | [Java](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/Solution.java) | [Python](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.py) | [C++](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.cpp) | [JS](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.js) | *Coming Soon* | [📁 1-February](./1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/) |

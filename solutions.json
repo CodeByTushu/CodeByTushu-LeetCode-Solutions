@@ -9634,6 +9634,57 @@
     }
   },
   {
+    "id": "3640",
+    "title": "Trionic Array II",
+    "slug": "trionic-array-ii",
+    "date": "04 February 2026",
+    "dateIso": "2026-02-04",
+    "formattedDate": "04 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "4-February",
+    "problemFolder": "3640-Trionic-Array-II",
+    "folderPath": "solutions/February/4-February/3640-Trionic-Array-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/trionic-array-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/trionic-array-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "Array",
+      "Two Pointers",
+      "Greedy",
+      "Prefix Sum"
+    ],
+    "summary": "Find the maximum sum of any trionic subarray in nums satisfying l < p < q < r such that nums[l...p] is strictly increasing, nums[p...q] is strictly decreasing, and nums[q...r] is strictly increasing.",
+    "approach": "Identify all maximal strictly decreasing segments [p...q] with peak condition nums[p-1] < nums[p] and valley condition nums[q] < nums[q+1]. Maximize the adjacent strictly increasing runs using Kadane-style DP arrays (leftInc for suffix ending at p-1 and rightInc for prefix starting at q+1), computing the maximum total sum in O(n) linear time.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3637",
     "title": "Trionic Array I",
     "slug": "trionic-array-i",

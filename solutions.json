@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "3379",
+    "title": "Transformed Array",
+    "slug": "transformed-array",
+    "date": "05 February 2026",
+    "dateIso": "2026-02-05",
+    "formattedDate": "05 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "5-February",
+    "problemFolder": "3379-Transformed-Array",
+    "folderPath": "solutions/February/5-February/3379-Transformed-Array",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/transformed-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/transformed-array/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Simulation",
+      "Math"
+    ],
+    "summary": "Construct a transformed array by moving nums[i] steps right if positive, abs(nums[i]) steps left if negative, or staying at index i if zero in a circular array.",
+    "approach": "Unify circular array transitions using modular arithmetic: for each index i, compute targetIndex = ((i + nums[i]) % n + n) % n and set result[i] = nums[targetIndex] in a single O(n) pass.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/5-February/3379-Transformed-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/5-February/3379-Transformed-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/5-February/3379-Transformed-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/5-February/3379-Transformed-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": "3640",
     "title": "Trionic Array II",
     "slug": "trionic-array-ii",

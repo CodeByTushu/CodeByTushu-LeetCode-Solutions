@@ -9634,6 +9634,54 @@
     }
   },
   {
+    "id": "868",
+    "title": "Binary Gap",
+    "slug": "binary-gap",
+    "date": "22 February 2026",
+    "dateIso": "2026-02-22",
+    "formattedDate": "22 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "22-February",
+    "problemFolder": "868-Binary-Gap",
+    "folderPath": "solutions/February/22-February/868-Binary-Gap",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/binary-gap/",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-gap/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation",
+      "Simulation"
+    ],
+    "summary": "Find the maximum distance between any two adjacent 1s in the binary representation of an integer.",
+    "approach": "Scan the binary representation of n using bitwise shifts, record the indices of set bits, and compute the maximum distance between consecutively observed 1-bits in O(log n) time and O(1) space.",
+    "timeComplexity": "O(log n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/22-February/868-Binary-Gap/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/22-February/868-Binary-Gap/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/22-February/868-Binary-Gap/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/22-February/868-Binary-Gap/solution.js"
+      }
+    }
+  },
+  {
     "id": "762",
     "title": "Prime Number of Set Bits in Binary Representation",
     "slug": "prime-number-of-set-bits-in-binary-representation",

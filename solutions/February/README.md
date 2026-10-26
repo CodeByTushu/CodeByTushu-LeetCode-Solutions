@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **21 Solved** |
+| **Total Solved Problems** | **22 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **868** | [Binary Gap](https://leetcode.com/problems/binary-gap/) | <span style="color:#10b981">**Easy**</span> | 22 Feb 2026 | [Java](./22-February/868-Binary-Gap/Solution.java) | [Python](./22-February/868-Binary-Gap/solution.py) | [C++](./22-February/868-Binary-Gap/solution.cpp) | [JS](./22-February/868-Binary-Gap/solution.js) | *Coming Soon* | [📁 22-February](./22-February/868-Binary-Gap/) |
 | **762** | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) | <span style="color:#10b981">**Easy**</span> | 21 Feb 2026 | [Java](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/Solution.java) | [Python](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.py) | [C++](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.cpp) | [JS](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/solution.js) | *Coming Soon* | [📁 21-February](./21-February/762-Prime-Number-of-Set-Bits-in-Binary-Representation/) |
 | **761** | [Special Binary String](https://leetcode.com/problems/special-binary-string/) | <span style="color:#ef4444">**Hard**</span> | 20 Feb 2026 | [Java](./20-February/761-Special-Binary-String/Solution.java) | [Python](./20-February/761-Special-Binary-String/solution.py) | [C++](./20-February/761-Special-Binary-String/solution.cpp) | [JS](./20-February/761-Special-Binary-String/solution.js) | *Coming Soon* | [📁 20-February](./20-February/761-Special-Binary-String/) |
 | **696** | [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | <span style="color:#10b981">**Easy**</span> | 19 Feb 2026 | [Java](./19-February/696-Count-Binary-Substrings/Solution.java) | [Python](./19-February/696-Count-Binary-Substrings/solution.py) | [C++](./19-February/696-Count-Binary-Substrings/solution.cpp) | [JS](./19-February/696-Count-Binary-Substrings/solution.js) | *Coming Soon* | [📁 19-February](./19-February/696-Count-Binary-Substrings/) |

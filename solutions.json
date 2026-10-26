@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "3713",
+    "title": "Longest Balanced Substring I",
+    "slug": "longest-balanced-substring-i",
+    "date": "12 February 2026",
+    "dateIso": "2026-02-12",
+    "formattedDate": "12 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "12-February",
+    "problemFolder": "3713-Longest-Balanced-Substring-I",
+    "folderPath": "solutions/February/12-February/3713-Longest-Balanced-Substring-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/longest-balanced-substring-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-balanced-substring-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Hash Table",
+      "Counting"
+    ],
+    "summary": "Find the length of the longest substring in s where all distinct characters appear the same number of times.",
+    "approach": "Enumerate candidate substring windows starting at index i with a size-26 frequency table. Validate balance in O(1) time using the invariant len == distinct * maxFreq and break early if remaining characters cannot exceed maxLen.",
+    "timeComplexity": "O(n^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/12-February/3713-Longest-Balanced-Substring-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/12-February/3713-Longest-Balanced-Substring-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/12-February/3713-Longest-Balanced-Substring-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/12-February/3713-Longest-Balanced-Substring-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3721",
     "title": "Longest Balanced Subarray II",
     "slug": "longest-balanced-subarray-ii",

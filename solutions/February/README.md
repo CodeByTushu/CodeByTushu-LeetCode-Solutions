@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **11 Solved** |
+| **Total Solved Problems** | **12 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3713** | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | <span style="color:#f59e0b">**Medium**</span> | 12 Feb 2026 | [Java](./12-February/3713-Longest-Balanced-Substring-I/Solution.java) | [Python](./12-February/3713-Longest-Balanced-Substring-I/solution.py) | [C++](./12-February/3713-Longest-Balanced-Substring-I/solution.cpp) | [JS](./12-February/3713-Longest-Balanced-Substring-I/solution.js) | *Coming Soon* | [📁 12-February](./12-February/3713-Longest-Balanced-Substring-I/) |
 | **3721** | [Longest Balanced Subarray II](https://leetcode.com/problems/longest-balanced-subarray-ii/) | <span style="color:#ef4444">**Hard**</span> | 11 Feb 2026 | [Java](./11-February/3721-Longest-Balanced-Subarray-II/Solution.java) | [Python](./11-February/3721-Longest-Balanced-Subarray-II/solution.py) | [C++](./11-February/3721-Longest-Balanced-Subarray-II/solution.cpp) | [JS](./11-February/3721-Longest-Balanced-Subarray-II/solution.js) | *Coming Soon* | [📁 11-February](./11-February/3721-Longest-Balanced-Subarray-II/) |
 | **3719** | [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/) | <span style="color:#f59e0b">**Medium**</span> | 10 Feb 2026 | [Java](./10-February/3719-Longest-Balanced-Subarray-I/Solution.java) | [Python](./10-February/3719-Longest-Balanced-Subarray-I/solution.py) | [C++](./10-February/3719-Longest-Balanced-Subarray-I/solution.cpp) | [JS](./10-February/3719-Longest-Balanced-Subarray-I/solution.js) | *Coming Soon* | [📁 10-February](./10-February/3719-Longest-Balanced-Subarray-I/) |
 | **1382** | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | <span style="color:#f59e0b">**Medium**</span> | 09 Feb 2026 | [Java](./9-February/1382-Balance-a-Binary-Search-Tree/Solution.java) | [Python](./9-February/1382-Balance-a-Binary-Search-Tree/solution.py) | [C++](./9-February/1382-Balance-a-Binary-Search-Tree/solution.cpp) | [JS](./9-February/1382-Balance-a-Binary-Search-Tree/solution.js) | *Coming Soon* | [📁 9-February](./9-February/1382-Balance-a-Binary-Search-Tree/) |

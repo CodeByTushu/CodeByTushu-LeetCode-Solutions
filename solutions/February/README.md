@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **14 Solved** |
+| **Total Solved Problems** | **15 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **67** | [Add Binary](https://leetcode.com/problems/add-binary/) | <span style="color:#10b981">**Easy**</span> | 15 Feb 2026 | [Java](./15-February/67-Add-Binary/Solution.java) | [Python](./15-February/67-Add-Binary/solution.py) | [C++](./15-February/67-Add-Binary/solution.cpp) | [JS](./15-February/67-Add-Binary/solution.js) | *Coming Soon* | [📁 15-February](./15-February/67-Add-Binary/) |
 | **799** | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | <span style="color:#f59e0b">**Medium**</span> | 14 Feb 2026 | [Java](./14-February/799-Champagne-Tower/Solution.java) | [Python](./14-February/799-Champagne-Tower/solution.py) | [C++](./14-February/799-Champagne-Tower/solution.cpp) | [JS](./14-February/799-Champagne-Tower/solution.js) | *Coming Soon* | [📁 14-February](./14-February/799-Champagne-Tower/) |
 | **3714** | [Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii/) | <span style="color:#f59e0b">**Medium**</span> | 13 Feb 2026 | [Java](./13-February/3714-Longest-Balanced-Substring-II/Solution.java) | [Python](./13-February/3714-Longest-Balanced-Substring-II/solution.py) | [C++](./13-February/3714-Longest-Balanced-Substring-II/solution.cpp) | [JS](./13-February/3714-Longest-Balanced-Substring-II/solution.js) | *Coming Soon* | [📁 13-February](./13-February/3714-Longest-Balanced-Substring-II/) |
 | **3713** | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | <span style="color:#f59e0b">**Medium**</span> | 12 Feb 2026 | [Java](./12-February/3713-Longest-Balanced-Substring-I/Solution.java) | [Python](./12-February/3713-Longest-Balanced-Substring-I/solution.py) | [C++](./12-February/3713-Longest-Balanced-Substring-I/solution.cpp) | [JS](./12-February/3713-Longest-Balanced-Substring-I/solution.js) | *Coming Soon* | [📁 12-February](./12-February/3713-Longest-Balanced-Substring-I/) |

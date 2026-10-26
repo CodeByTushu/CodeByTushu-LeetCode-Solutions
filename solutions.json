@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "67",
+    "title": "Add Binary",
+    "slug": "add-binary",
+    "date": "15 February 2026",
+    "dateIso": "2026-02-15",
+    "formattedDate": "15 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "15-February",
+    "problemFolder": "67-Add-Binary",
+    "folderPath": "solutions/February/15-February/67-Add-Binary",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/add-binary/",
+    "leetcodeUrl": "https://leetcode.com/problems/add-binary/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Math",
+      "String",
+      "Bit Manipulation"
+    ],
+    "summary": "Given two binary strings a and b, return their sum as a binary string.",
+    "approach": "Perform base-2 column addition from right to left using two pointers and a carry variable. Append sum % 2 and propagate carry = sum / 2 until all bits and carry are exhausted, reversing the buffer at the end.",
+    "timeComplexity": "O(max(N, M))",
+    "auxiliarySpaceComplexity": "O(max(N, M))",
+    "spaceComplexity": "O(max(N, M))",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/15-February/67-Add-Binary/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/15-February/67-Add-Binary/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/15-February/67-Add-Binary/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/15-February/67-Add-Binary/solution.js"
+      }
+    }
+  },
+  {
     "id": "799",
     "title": "Champagne Tower",
     "slug": "champagne-tower",

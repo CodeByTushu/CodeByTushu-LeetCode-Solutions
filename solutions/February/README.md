@@ -24,7 +24,7 @@
 | :--- | :--- |
 | **Month / Quarter** | February 2026 (Q1 — Late Winter) |
 | **Status** | `Active / Ingesting` |
-| **Total Solved Problems** | **5 Solved** |
+| **Total Solved Problems** | **6 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 
 ---
@@ -50,6 +50,7 @@ solutions/February/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3634** | [Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/) | <span style="color:#f59e0b">**Medium**</span> | 06 Feb 2026 | [Java](./6-February/3634-Minimum-Removals-to-Balance-Array/Solution.java) | [Python](./6-February/3634-Minimum-Removals-to-Balance-Array/solution.py) | [C++](./6-February/3634-Minimum-Removals-to-Balance-Array/solution.cpp) | [JS](./6-February/3634-Minimum-Removals-to-Balance-Array/solution.js) | *Coming Soon* | [📁 6-February](./6-February/3634-Minimum-Removals-to-Balance-Array/) |
 | **3379** | [Transformed Array](https://leetcode.com/problems/transformed-array/) | <span style="color:#10b981">**Easy**</span> | 05 Feb 2026 | [Java](./5-February/3379-Transformed-Array/Solution.java) | [Python](./5-February/3379-Transformed-Array/solution.py) | [C++](./5-February/3379-Transformed-Array/solution.cpp) | [JS](./5-February/3379-Transformed-Array/solution.js) | *Coming Soon* | [📁 5-February](./5-February/3379-Transformed-Array/) |
 | **3640** | [Trionic Array II](https://leetcode.com/problems/trionic-array-ii/) | <span style="color:#ef4444">**Hard**</span> | 04 Feb 2026 | [Java](./4-February/3640-Trionic-Array-II/Solution.java) | [Python](./4-February/3640-Trionic-Array-II/solution.py) | [C++](./4-February/3640-Trionic-Array-II/solution.cpp) | [JS](./4-February/3640-Trionic-Array-II/solution.js) | *Coming Soon* | [📁 4-February](./4-February/3640-Trionic-Array-II/) |
 | **3637** | [Trionic Array I](https://leetcode.com/problems/trionic-array-i/) | <span style="color:#10b981">**Easy**</span> | 03 Feb 2026 | [Java](./3-February/3637-Trionic-Array-I/Solution.java) | [Python](./3-February/3637-Trionic-Array-I/solution.py) | [C++](./3-February/3637-Trionic-Array-I/solution.cpp) | [JS](./3-February/3637-Trionic-Array-I/solution.js) | *Coming Soon* | [📁 3-February](./3-February/3637-Trionic-Array-I/) |

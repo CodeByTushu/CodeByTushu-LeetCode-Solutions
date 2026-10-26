@@ -9634,6 +9634,57 @@
     }
   },
   {
+    "id": "3634",
+    "title": "Minimum Removals to Balance Array",
+    "slug": "minimum-removals-to-balance-array",
+    "date": "06 February 2026",
+    "dateIso": "2026-02-06",
+    "formattedDate": "06 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "6-February",
+    "problemFolder": "3634-Minimum-Removals-to-Balance-Array",
+    "folderPath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-removals-to-balance-array/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-removals-to-balance-array/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Sorting",
+      "Two Pointers",
+      "Sliding Window",
+      "Binary Search"
+    ],
+    "summary": "Find the minimum number of elements to remove from nums so that the maximum element of the remaining non-empty array is at most k times the minimum element.",
+    "approach": "Sort the array and maximize the number of kept elements using two pointers / sliding window. For each minimum element at nums[left], expand the right pointer while nums[right] <= (long) nums[left] * k, returning n - maxKept.",
+    "timeComplexity": "O(n log n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/solution.js"
+      }
+    }
+  },
+  {
     "id": "3379",
     "title": "Transformed Array",
     "slug": "transformed-array",

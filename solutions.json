@@ -9634,6 +9634,54 @@
     }
   },
   {
+    "id": "696",
+    "title": "Count Binary Substrings",
+    "slug": "count-binary-substrings",
+    "date": "19 February 2026",
+    "dateIso": "2026-02-19",
+    "formattedDate": "19 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "19-February",
+    "problemFolder": "696-Count-Binary-Substrings",
+    "folderPath": "solutions/February/19-February/696-Count-Binary-Substrings",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/count-binary-substrings/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-binary-substrings/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ],
+    "summary": "Count the number of non-empty substrings with equal numbers of consecutive 0s and 1s grouped together.",
+    "approach": "Count contiguous blocks of identical characters on the fly using prevRun and currRun. Accumulate min(prevRun, currRun) for each transition in O(n) time and O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/19-February/696-Count-Binary-Substrings/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/19-February/696-Count-Binary-Substrings/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/19-February/696-Count-Binary-Substrings/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/19-February/696-Count-Binary-Substrings/solution.js"
+      }
+    }
+  },
+  {
     "id": "693",
     "title": "Binary Number with Alternating Bits",
     "slug": "binary-number-with-alternating-bits",

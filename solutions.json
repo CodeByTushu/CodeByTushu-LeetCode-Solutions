@@ -9634,6 +9634,56 @@
     }
   },
   {
+    "id": "2977",
+    "title": "Minimum Cost to Convert String II",
+    "slug": "minimum-cost-to-convert-string-ii",
+    "date": "30 January 2026",
+    "dateIso": "2026-01-30",
+    "formattedDate": "30 Jan 2026",
+    "year": "2026",
+    "month": "January",
+    "dayFolder": "30-January",
+    "problemFolder": "2977-Minimum-Cost-to-Convert-String-II",
+    "folderPath": "solutions/January/30-January/2977-Minimum-Cost-to-Convert-String-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-cost-to-convert-string-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-to-convert-string-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Graph",
+      "Shortest Path",
+      "Dynamic Programming",
+      "String"
+    ],
+    "summary": "Find the minimum cost to convert string source to target using substring conversion operations where chosen substrings must be either disjoint or identical.",
+    "approach": "Model substring conversion rules as a directed weighted graph over unique substring tokens, compute all-pairs shortest paths using the Floyd-Warshall algorithm, and partition the string with 1D dynamic programming.",
+    "timeComplexity": "O(V^3 + N * |lengths| * L_max)",
+    "auxiliarySpaceComplexity": "O(V^2 + N)",
+    "spaceComplexity": "O(V^2 + N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/January/30-January/2977-Minimum-Cost-to-Convert-String-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/January/30-January/2977-Minimum-Cost-to-Convert-String-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/January/30-January/2977-Minimum-Cost-to-Convert-String-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/January/30-January/2977-Minimum-Cost-to-Convert-String-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "2976",
     "title": "Minimum Cost to Convert String I",
     "slug": "minimum-cost-to-convert-string-i",

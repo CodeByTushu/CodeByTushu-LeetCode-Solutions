@@ -9634,6 +9634,54 @@
     }
   },
   {
+    "id": "190",
+    "title": "Reverse Bits",
+    "slug": "reverse-bits",
+    "date": "16 February 2026",
+    "dateIso": "2026-02-16",
+    "formattedDate": "16 Feb 2026",
+    "year": "2026",
+    "month": "February",
+    "dayFolder": "16-February",
+    "problemFolder": "190-Reverse-Bits",
+    "folderPath": "solutions/February/16-February/190-Reverse-Bits",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/reverse-bits/",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-bits/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation",
+      "Divide and Conquer"
+    ],
+    "summary": "Reverse the binary bits of a given 32-bit unsigned/signed integer.",
+    "approach": "Iterate across 32 bit positions, extracting the least significant bit with n & 1, shifting it into the result with result = (result << 1) | bit, and shifting n logically to the right with n >>>= 1 in O(1) time.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/February/16-February/190-Reverse-Bits/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/February/16-February/190-Reverse-Bits/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/February/16-February/190-Reverse-Bits/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/February/16-February/190-Reverse-Bits/solution.js"
+      }
+    }
+  },
+  {
     "id": "67",
     "title": "Add Binary",
     "slug": "add-binary",

@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **26** | Days 01 through 26 October completed |
-| 🟢 **Easy Problems** | **6** | Problems #20, #1021, #2778, #2913, #2089, #2409 |
+| **Total Solved Problems** | **27** | Days 01 through 27 October completed |
+| 🟢 **Easy Problems** | **7** | Problems #20, #1021, #2778, #2913, #2089, #2409, #3963 |
 | 🟡 **Medium Problems** | **14** | Problems #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551, #3863, #3942, #3644, #1254, #3619 |
 | 🔴 **Hard Problems** | **6** | Problems #32, #301, #2897, #2916, #1569, #3886 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **26 / 26** | 100% video solution coverage |
+| 🎥 **Video Walkthroughs** | **27 / 27** | 100% video solution coverage |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3963** | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | <span style="color:#10b981">**Easy**</span> | 27 Oct 2026 | [Java](./27-October/3963-Create-Grid-With-Exactly-One-Path/Solution.java) | [Python](./27-October/3963-Create-Grid-With-Exactly-One-Path/solution.py) | [C++](./27-October/3963-Create-Grid-With-Exactly-One-Path/solution.cpp) | [JS](./27-October/3963-Create-Grid-With-Exactly-One-Path/solution.js) | [Watch Video](https://youtu.be/J4p5P8kF-ew?si=sUChr_JXe0VqNVUB) | [📁 27-October](./27-October/3963-Create-Grid-With-Exactly-One-Path/) |
 | **3619** | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/) | <span style="color:#ffc400">**Medium**</span> | 26 Oct 2026 | [Java](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/Solution.java) | [Python](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/solution.py) | [C++](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/solution.cpp) | [JS](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/solution.js) | [Watch Video](https://youtu.be/KE5jOvt9ZLo?si=AOiRfurGqjv4F1pi) | [📁 26-October](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/) |
 | **1254** | [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | <span style="color:#ffc400">**Medium**</span> | 25 Oct 2026 | [Java](./25-October/1254-Number-of-Closed-Islands/Solution.java) | [Python](./25-October/1254-Number-of-Closed-Islands/solution.py) | [C++](./25-October/1254-Number-of-Closed-Islands/solution.cpp) | [JS](./25-October/1254-Number-of-Closed-Islands/solution.js) | [Watch Video](https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI) | [📁 25-October](./25-October/1254-Number-of-Closed-Islands/) |
 | **2409** | [Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together/) | <span style="color:#10b981">**Easy**</span> | 24 Oct 2026 | [Java](./24-October/2409-Count-Days-Spent-Together/Solution.java) | [Python](./24-October/2409-Count-Days-Spent-Together/solution.py) | [C++](./24-October/2409-Count-Days-Spent-Together/solution.cpp) | [JS](./24-October/2409-Count-Days-Spent-Together/solution.js) | [Watch Video](https://youtu.be/iLP0XmtB4ME?si=UoWpyLs0fnk01p1S) | [📁 24-October](./24-October/2409-Count-Days-Spent-Together/) |
@@ -65,6 +66,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[27 October 2026](./27-October/)**: [#3963 Create Grid With Exactly One Path](./27-October/3963-Create-Grid-With-Exactly-One-Path/) — <span style="color:#10b981">Easy</span>
 - 📍 **[26 October 2026](./26-October/)**: [#3619 Count Islands With Total Value Divisible by K](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[25 October 2026](./25-October/)**: [#1254 Number of Closed Islands](./25-October/1254-Number-of-Closed-Islands/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[24 October 2026](./24-October/)**: [#2409 Count Days Spent Together](./24-October/2409-Count-Days-Spent-Together/) — <span style="color:#10b981">Easy</span>
@@ -96,7 +98,7 @@
 
 ## 🏷️ Problem Categories & Tags in October
 
-- **Array**: [#3619](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/), [#1254](./25-October/1254-Number-of-Closed-Islands/), [#3644](./23-October/3644-Maximum-K-to-Sort-a-Permutation/), [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
+- **Array**: [#3963](./27-October/3963-Create-Grid-With-Exactly-One-Path/), [#3619](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/), [#1254](./25-October/1254-Number-of-Closed-Islands/), [#3644](./23-October/3644-Maximum-K-to-Sort-a-Permutation/), [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Backtracking**: [#301](./7-October/301-Remove-Invalid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/)
 - **Binary Search**: [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/)
 - **Bit Manipulation**: [#3644](./23-October/3644-Maximum-K-to-Sort-a-Permutation/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#856](./5-October/856-Score-of-Parentheses/)
@@ -110,13 +112,13 @@
 - **Greedy**: [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/), [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#678](./4-October/678-Valid-Parenthesis-String/)
 - **Hash Table**: [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/)
 - **Math**: [#3619](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/), [#2409](./24-October/2409-Count-Days-Spent-Together/), [#3644](./23-October/3644-Maximum-K-to-Sort-a-Permutation/), [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2897](./12-October/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/), [#856](./5-October/856-Score-of-Parentheses/)
-- **Matrix**: [#3619](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/), [#1254](./25-October/1254-Number-of-Closed-Islands/)
+- **Matrix**: [#3963](./27-October/3963-Create-Grid-With-Exactly-One-Path/), [#3619](./26-October/3619-Count-Islands-With-Total-Value-Divisible-by-K/), [#1254](./25-October/1254-Number-of-Closed-Islands/)
 - **Number Theory**: [#3886](./20-October/3886-Sum-of-Sortable-Integers/)
 - **Prefix Sum**: [#2409](./24-October/2409-Count-Days-Spent-Together/)
-- **Simulation**: [#2409](./24-October/2409-Count-Days-Spent-Together/), [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
+- **Simulation**: [#3963](./27-October/3963-Create-Grid-With-Exactly-One-Path/), [#2409](./24-October/2409-Count-Days-Spent-Together/), [#3942](./22-October/3942-Minimum-Operations-to-Sort-a-Permutation/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2913](./15-October/2913-Subarrays-Distinct-Element-Sum-of-Squares-I/), [#2778](./11-October/2778-Sum-of-Squares-of-Special-Elements/)
 - **Sorting**: [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3886](./20-October/3886-Sum-of-Sortable-Integers/), [#2089](./19-October/2089-Find-Target-Indices-After-Sorting-Array/), [#3727](./13-October/3727-Maximum-Alternating-Sum-of-Squares/), [#2333](./10-October/2333-Minimum-Sum-of-Squared-Difference/)
 - **Stack**: [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)
-- **String**: [#2409](./24-October/2409-Count-Days-Spent-Together/), [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#301](./7-October/301-Remove-Invalid-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)
+- **String**: [#3963](./27-October/3963-Create-Grid-With-Exactly-One-Path/), [#2409](./24-October/2409-Count-Days-Spent-Together/), [#3863](./21-October/3863-Minimum-Operations-to-Sort-a-String/), [#3723](./14-October/3723-Maximize-Sum-of-Squares-of-Digits/), [#1541](./9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/), [#1021](./8-October/1021-Remove-Outermost-Parentheses/), [#301](./7-October/301-Remove-Invalid-Parentheses/), [#921](./6-October/921-Minimum-Add-to-Make-Parentheses-Valid/), [#856](./5-October/856-Score-of-Parentheses/), [#678](./4-October/678-Valid-Parenthesis-String/), [#32](./3-October/32-Longest-Valid-Parentheses/), [#22](./2-October/22-Generate-Parentheses/), [#20](./1-October/20-Valid-Parentheses/)
 - **Tree / Binary Tree / Binary Search Tree**: [#1569](./18-October/1569-Number-of-Ways-to-Reorder-Array-to-Get-Same-BST/)
 - **Union Find**: [#1254](./25-October/1254-Number-of-Closed-Islands/)
 

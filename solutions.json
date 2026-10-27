@@ -1,5 +1,55 @@
 [
   {
+    "id": "3963",
+    "title": "Create Grid With Exactly One Path",
+    "slug": "create-grid-with-exactly-one-path",
+    "date": "27 October 2026",
+    "dateIso": "2026-10-27",
+    "formattedDate": "27 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "27-October",
+    "problemFolder": "3963-Create-Grid-With-Exactly-One-Path",
+    "folderPath": "solutions/October/27-October/3963-Create-Grid-With-Exactly-One-Path",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/create-grid-with-exactly-one-path/",
+    "leetcodeUrl": "https://leetcode.com/problems/create-grid-with-exactly-one-path/",
+    "youtubeUrl": "https://youtu.be/J4p5P8kF-ew?si=sUChr_JXe0VqNVUB",
+    "tags": [
+      "Array",
+      "String",
+      "Matrix",
+      "Simulation"
+    ],
+    "summary": "Construct an m x n grid consisting of free cells ('.') and obstacle cells ('#') such that there is exactly one valid path moving only right and down from (0, 0) to (m - 1, n - 1).",
+    "approach": "Construct a canonical single path without any branches: make all cells in row 0 free ('.') and all cells in column n - 1 free ('.'), while setting all other cells (where i > 0 and j < n - 1) to obstacles ('#'). This forces the unique path to travel entirely right along row 0 to (0, n - 1), then down column n - 1 to (m - 1, n - 1).",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/27-October/3963-Create-Grid-With-Exactly-One-Path/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/27-October/3963-Create-Grid-With-Exactly-One-Path/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/27-October/3963-Create-Grid-With-Exactly-One-Path/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/27-October/3963-Create-Grid-With-Exactly-One-Path/solution.js"
+      }
+    }
+  },
+  {
     "id": "3619",
     "title": "Count Islands With Total Value Divisible by K",
     "slug": "count-islands-with-total-value-divisible-by-k",

@@ -3,7 +3,7 @@
 - **Publication Date:** 04 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/four-divisors/](https://leetcode.com/problems/four-divisors/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/8kry8fdUNc8?si=THaUM7YQeAOp7yGS)
 
 ---
 

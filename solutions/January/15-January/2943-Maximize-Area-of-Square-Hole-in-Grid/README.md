@@ -3,7 +3,7 @@
 - **Publication Date:** 15 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/iHOr80LJ1zM?si=hC-lb2QD-Z39iXfu)
 
 ---
 

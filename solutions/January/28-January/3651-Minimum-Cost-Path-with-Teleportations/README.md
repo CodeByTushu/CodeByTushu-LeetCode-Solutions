@@ -3,7 +3,7 @@
 - **Publication Date:** 28 January 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/minimum-cost-path-with-teleportations/](https://leetcode.com/problems/minimum-cost-path-with-teleportations/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/D12eRxYPy34?si=sCN3PniLe7ztQshW)
 
 ---
 

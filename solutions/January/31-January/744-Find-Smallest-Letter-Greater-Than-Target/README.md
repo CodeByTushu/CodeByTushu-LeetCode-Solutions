@@ -3,7 +3,7 @@
 - **Publication Date:** 31 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/find-smallest-letter-greater-than-target/](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Pt4_8nhkxfk?si=0EU4e6m0PpcshgCZ)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 27 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IGVu4FlcbyE?si=29Br63-X2QtUdYiJ)
 
 ---
 

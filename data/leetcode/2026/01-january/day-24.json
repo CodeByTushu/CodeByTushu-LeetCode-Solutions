@@ -1,0 +1,42 @@
+{
+  "day_number": 24,
+  "solution_date": "2026-01-24",
+  "year": 2026,
+  "month": "January",
+  "month_num": 1,
+  "problem_number": 1877,
+  "problem_title": "Minimize Maximum Pair Sum in Array",
+  "slug": "minimize-maximum-pair-sum-in-array",
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(n log n)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "",
+  "youtube_url": "https://youtu.be/07Xamddl_kY?si=ddHCazOFbrHn1Gwp",
+  "approach_summary": "Sort the array in non-decreasing order and greedily pair the i-th smallest element with the i-th largest element (nums[i] + nums[n - 1 - i]) using two pointers, keeping track of the maximum pair sum.",
+  "explanation": "## Problem Summary\n\nThe **pair sum** of a pair $(a, b)$ is equal to $a + b$. The **maximum pair sum** is the largest pair sum in a list of pairs.\n\nFor example, if we have pairs $(1, 5)$, $(2, 3)$, and $(4, 4)$, the maximum pair sum would be:\n$$\\max(1 + 5, 2 + 3, 4 + 4) = \\max(6, 5, 8) = 8$$\n\nGiven an array `nums` of **even** length $n$, pair up the elements of `nums` into $n / 2$ pairs such that:\n- Each element of `nums` is in **exactly one** pair, and\n- The **maximum pair sum** is **minimized**.\n\nReturn the minimized **maximum pair sum** after optimally pairing up the elements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [3, 5, 2, 3]`\n- **Output:** `7`\n- **Explanation:**\n  - The elements can be paired up into pairs $(3, 3)$ and $(5, 2)$.\n  - The pair sums are $3 + 3 = 6$ and $5 + 2 = 7$.\n  - The maximum pair sum is $\\max(6, 7) = 7$.\n\n#### Example 2:\n- **Input:** `nums = [3, 5, 4, 2, 4, 6]`\n- **Output:** `8`\n- **Explanation:**\n  - The elements can be paired up into pairs $(3, 5)$, $(4, 4)$, and $(6, 2)$.\n  - The pair sums are $3 + 5 = 8$, $4 + 4 = 8$, and $6 + 2 = 8$.\n  - The maximum pair sum is $\\max(8, 8, 8) = 8$.\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $2 \\le n \\le 10^5$\n- $n$ is **even**.\n- $1 \\le \\text{nums}[i] \\le 10^5$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Two Pointers**\n- **Greedy**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### Greedy Choice & Rearrangement Inequality:\n\n1. **Intuition:**\n   - To minimize the maximum sum among all formed pairs, we want the pair sums to be as balanced as possible.\n   - If we pair the largest element with another large element, their sum will be excessively large.\n   - To counteract the largest element, we should pair it with the smallest available element.\n   - Similarly, the second largest element should be paired with the second smallest available element, and so forth.\n\n2. **Mathematical Justification:**\n   - Suppose the sorted array is $x_1 \\le x_2 \\le \\dots \\le x_n$.\n   - Any pairing where $x_n$ is paired with $x_k$ (where $k > 1$) leaves $x_1$ to be paired with some other element $x_j$.\n   - If we swap partners so that $(x_1, x_n)$ and $(x_j, x_k)$ are paired instead, the maximum of the two pair sums $\\max(x_1 + x_n, x_j + x_k)$ is strictly less than or equal to $\\max(x_k + x_n, x_1 + x_j)$.\n   - By induction, the optimal pairing that minimizes the maximum pair sum always pairs the $i$-th smallest element with the $i$-th largest element:\n     $$\\text{Pair}_i = (x_i, x_{n - 1 - i}) \\quad \\text{for } 0 \\le i < n / 2$$\n\n3. **Step-by-Step Algorithm:**\n   - **Step 1:** Sort `nums` in ascending order.\n   - **Step 2:** Initialize two pointers: `left = 0` and `right = n - 1`. Maintain a variable `maxPairSum = 0`.\n   - **Step 3:** While `left < right`:\n     - Calculate $\\text{currentSum} = \\text{nums}[left] + \\text{nums}[right]$.\n     - Update $\\text{maxPairSum} = \\max(\\text{maxPairSum}, \\text{currentSum})$.\n     - Increment `left` and decrement `right`.\n   - **Step 4:** Return `maxPairSum`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n \\log n)$\n  - Sorting the array of size $n$ takes $\\mathcal{O}(n \\log n)$ time.\n  - The two-pointer scan computes $n / 2$ pair sums in linear time $\\mathcal{O}(n)$.\n  - Total time: $\\mathcal{O}(n \\log n) + \\mathcal{O}(n) = \\mathcal{O}(n \\log n)$. With $n = 10^5$, this comfortably runs in under $30\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ or $\\mathcal{O}(\\log n)$\n  - In-place sorting requires $\\mathcal{O}(\\log n)$ auxiliary space for the quicksort/timsort recursion call stack.\n  - No auxiliary data structures are allocated.",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "codes": {
+    "Java": {
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1877 - Minimize Maximum Pair Sum in Array\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n * \n * Greedy + Two Pointers Approach (Sorting)\n * Time Complexity: O(n log n)\n * Space Complexity: O(1) (or O(log n) for sorting recursion stack)\n */\n\nimport java.util.Arrays;\n\nclass Solution {\n    public int minPairSum(int[] nums) {\n        Arrays.sort(nums);\n        int maxPairSum = 0;\n        int left = 0;\n        int right = nums.length - 1;\n\n        while (left < right) {\n            int currentSum = nums[left] + nums[right];\n            maxPairSum = Math.max(maxPairSum, currentSum);\n            left++;\n            right--;\n        }\n\n        return maxPairSum;\n    }\n}\n"
+    },
+    "Python": {
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1877 - Minimize Maximum Pair Sum in Array\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\nGreedy + Two Pointers Approach (Sorting)\nTime Complexity: O(n log n)\nSpace Complexity: O(1) (or O(n) depending on Timsort implementation)\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def minPairSum(self, nums: List[int]) -> int:\n        nums.sort()\n        max_pair_sum = 0\n        left, right = 0, len(nums) - 1\n\n        while left < right:\n            pair_sum = nums[left] + nums[right]\n            if pair_sum > max_pair_sum:\n                max_pair_sum = pair_sum\n            left += 1\n            right -= 1\n\n        return max_pair_sum\n"
+    },
+    "C++": {
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1877 - Minimize Maximum Pair Sum in Array\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n * \n * Greedy + Two Pointers Approach (Sorting)\n * Time Complexity: O(n log n)\n * Space Complexity: O(1)\n */\n\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minPairSum(vector<int>& nums) {\n        sort(nums.begin(), nums.end());\n        int maxPairSum = 0;\n        int left = 0;\n        int right = static_cast<int>(nums.size()) - 1;\n\n        while (left < right) {\n            int currentSum = nums[left] + nums[right];\n            maxPairSum = max(maxPairSum, currentSum);\n            left++;\n            right--;\n        }\n\n        return maxPairSum;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1877 - Minimize Maximum Pair Sum in Array\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n * \n * Greedy + Two Pointers Approach (Sorting)\n * Time Complexity: O(n log n)\n * Space Complexity: O(1) (or O(log n) for sorting)\n */\n\n/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minPairSum = function(nums) {\n    nums.sort((a, b) => a - b);\n    let maxPairSum = 0;\n    let left = 0;\n    let right = nums.length - 1;\n\n    while (left < right) {\n        const currentSum = nums[left] + nums[right];\n        if (currentSum > maxPairSum) {\n            maxPairSum = currentSum;\n        }\n        left++;\n        right--;\n    }\n\n    return maxPairSum;\n};\n"
+    }
+  }
+}

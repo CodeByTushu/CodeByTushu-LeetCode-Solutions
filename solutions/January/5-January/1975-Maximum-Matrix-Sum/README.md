@@ -3,7 +3,7 @@
 - **Publication Date:** 05 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-matrix-sum/](https://leetcode.com/problems/maximum-matrix-sum/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sXQ2WR5C410?si=mpfrTzesZQ8j90r7)
 
 ---
 

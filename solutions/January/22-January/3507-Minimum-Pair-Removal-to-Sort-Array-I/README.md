@@ -3,7 +3,7 @@
 - **Publication Date:** 22 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3n4dbmCk_HA?si=_hT5GxjKerGMDwun)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 10 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/STApi2wCyiA?si=1zZa_F3bHBtby3mr)
 
 ---
 

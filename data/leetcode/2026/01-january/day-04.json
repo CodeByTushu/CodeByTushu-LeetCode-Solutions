@@ -1,0 +1,42 @@
+{
+  "day_number": 4,
+  "solution_date": "2026-01-04",
+  "year": 2026,
+  "month": "January",
+  "month_num": 1,
+  "problem_number": 1390,
+  "problem_title": "Four Divisors",
+  "slug": "four-divisors",
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(n * sqrt(m))",
+  "space_complexity": "O(1)",
+  "leetcode_url": "",
+  "youtube_url": "https://youtu.be/8kry8fdUNc8?si=THaUM7YQeAOp7yGS",
+  "approach_summary": "For each number, iterate divisors up to its square root. Pair each divisor with its quotient, pruning early if divisor count exceeds 4. Accumulate the sum for numbers with exactly 4 divisors.",
+  "explanation": "## Problem Summary\n\nGiven an integer array `nums`, return the sum of divisors of the integers in that array that have exactly four divisors. If there is no such integer in the array, return `0`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [21, 4, 7]`\n- **Output:** `32`\n- **Explanation:**\n  - 21 has 4 divisors: 1, 3, 7, 21 (sum = $1 + 3 + 7 + 21 = 32$)\n  - 4 has 3 divisors: 1, 2, 4\n  - 7 has 2 divisors: 1, 7\n  The answer is the sum of divisors of 21 only ($32$).\n\n#### Example 2:\n- **Input:** `nums = [21, 21]`\n- **Output:** `64`\n\n#### Example 3:\n- **Input:** `nums = [1, 2, 3, 4, 5]`\n- **Output:** `0`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^4$\n- $1 \\le \\text{nums}[i] \\le 10^5$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n### 1. Factorization up to Square Root ($\\mathcal{O}(\\sqrt{n})$)\n\n- Divisors of an integer $n$ always appear in reciprocal pairs $(d, n / d)$.\n- Therefore, we only need to iterate $d$ from $1$ up to $\\lfloor\\sqrt{n}\\rfloor$:\n  - If $d \\mid n$:\n    - If $d^2 = n$, $d$ is a single square root divisor (add $1$ to count, add $d$ to sum).\n    - If $d^2 \\neq n$, both $d$ and $n / d$ are distinct divisors (add $2$ to count, add $d + n / d$ to sum).\n- **Early Pruning Optimization:**\n  If the divisor count exceeds $4$ at any point during iteration, $n$ cannot have exactly four divisors. We immediately break out of the loop and skip adding its sum.\n- **Valid 4-Divisor Patterns:**\n  Mathematically, an integer has exactly four divisors if and only if it is of the form:\n  1. $p \\times q$ where $p$ and $q$ are distinct prime numbers (divisors: $1, p, q, pq$).\n  2. $p^3$ where $p$ is a prime number (divisors: $1, p, p^2, p^3$).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\sqrt{M})$, where $N$ is the number of elements in `nums` ($N \\le 10^4$) and $M$ is the maximum value in `nums` ($M \\le 10^5$). Since $\\sqrt{10^5} \\approx 316$, the maximum number of operations is bounded by $\\approx 3.16 \\times 10^6$, running well within standard time limits.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$, as only a few scalar variables are maintained.",
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Enumeration"
+  ],
+  "codes": {
+    "Java": {
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1390 - Four Divisors\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\n\nclass Solution {\n    public int sumFourDivisors(int[] nums) {\n        int totalSum = 0;\n\n        for (int num : nums) {\n            int count = 0;\n            int sum = 0;\n\n            for (int d = 1; d * d <= num; d++) {\n                if (num % d == 0) {\n                    if (d * d == num) {\n                        count += 1;\n                        sum += d;\n                    } else {\n                        count += 2;\n                        sum += d + (num / d);\n                    }\n                    if (count > 4) {\n                        break;\n                    }\n                }\n            }\n\n            if (count == 4) {\n                totalSum += sum;\n            }\n        }\n\n        return totalSum;\n    }\n}\n"
+    },
+    "Python": {
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1390 - Four Divisors\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def sumFourDivisors(self, nums: List[int]) -> int:\n        total_sum = 0\n\n        for num in nums:\n            count = 0\n            curr_sum = 0\n            d = 1\n            while d * d <= num:\n                if num % d == 0:\n                    if d * d == num:\n                        count += 1\n                        curr_sum += d\n                    else:\n                        count += 2\n                        curr_sum += d + (num // d)\n                    if count > 4:\n                        break\n                d += 1\n\n            if count == 4:\n                total_sum += curr_sum\n\n        return total_sum\n"
+    },
+    "C++": {
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1390 - Four Divisors\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int sumFourDivisors(vector<int>& nums) {\n        int totalSum = 0;\n\n        for (int num : nums) {\n            int count = 0;\n            int sum = 0;\n\n            for (int d = 1; d * d <= num; ++d) {\n                if (num % d == 0) {\n                    if (d * d == num) {\n                        count += 1;\n                        sum += d;\n                    } else {\n                        count += 2;\n                        sum += d + (num / d);\n                    }\n                    if (count > 4) {\n                        break;\n                    }\n                }\n            }\n\n            if (count == 4) {\n                totalSum += sum;\n            }\n        }\n\n        return totalSum;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1390 - Four Divisors\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sumFourDivisors = function(nums) {\n    let totalSum = 0;\n\n    for (const num of nums) {\n        let count = 0;\n        let sum = 0;\n\n        for (let d = 1; d * d <= num; d++) {\n            if (num % d === 0) {\n                if (d * d === num) {\n                    count += 1;\n                    sum += d;\n                } else {\n                    count += 2;\n                    sum += d + (num / d);\n                }\n                if (count > 4) {\n                    break;\n                }\n            }\n        }\n\n        if (count === 4) {\n            totalSum += sum;\n        }\n    }\n\n    return totalSum;\n};\n"
+    }
+  }
+}

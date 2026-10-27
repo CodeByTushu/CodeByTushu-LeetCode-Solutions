@@ -1,0 +1,41 @@
+{
+  "day_number": 31,
+  "solution_date": "2026-01-31",
+  "year": 2026,
+  "month": "January",
+  "month_num": 1,
+  "problem_number": 744,
+  "problem_title": "Find Smallest Letter Greater Than Target",
+  "slug": "find-smallest-letter-greater-than-target",
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(log n)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "",
+  "youtube_url": "https://youtu.be/Pt4_8nhkxfk?si=0EU4e6m0PpcshgCZ",
+  "approach_summary": "Apply upper bound binary search to locate the first character strictly greater than target in logarithmic time, using modulo arithmetic for wrap-around.",
+  "explanation": "## Problem Summary\n\nYou are given an array of characters `letters` that is sorted in **non-decreasing** order, and a character `target`. There are **at least two different characters** in `letters`.\n\nReturn the smallest character in `letters` that is lexicographically greater than `target`. If such a character does not exist, return the first character in `letters` (wrap-around behavior).\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `letters = [\"c\",\"f\",\"j\"], target = \"a\"`\n- **Output:** `\"c\"`\n- **Explanation:** The smallest character that is lexicographically greater than `'a'` in `letters` is `'c'`.\n\n#### Example 2:\n- **Input:** `letters = [\"c\",\"f\",\"j\"], target = \"c\"`\n- **Output:** `\"f\"`\n- **Explanation:** The smallest character that is lexicographically greater than `'c'` in `letters` is `'f'`.\n\n#### Example 3:\n- **Input:** `letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"`\n- **Output:** `\"x\"`\n- **Explanation:** There are no characters in `letters` that are lexicographically greater than `'z'`, so we wrap around and return `letters[0]`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{letters.length} \\le 10^4$\n- `letters[i]` is a lowercase English letter.\n- `letters` is sorted in **non-decreasing** order.\n- `letters` contains at least two different characters.\n- `target` is a lowercase English letter.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### Key Observations\n\n1. **Sorted Array Structure:**\n   - Because `letters` is sorted in non-decreasing order, the task directly corresponds to finding the **upper bound** of `target` — i.e., the first character strictly greater than `target`.\n   \n2. **Binary Search (Upper Bound):**\n   - Initialize search range $[0, n)$ where $n = \\text{letters.length}$.\n   - For each midpoint $\\text{mid}$:\n     - If $\\text{letters}[\\text{mid}] \\le \\text{target}$, the desired character must lie to the right: $\\text{left} = \\text{mid} + 1$.\n     - If $\\text{letters}[\\text{mid}] > \\text{target}$, $\\text{mid}$ could be our answer, but there might be an earlier candidate: $\\text{right} = \\text{mid}$.\n   - Upon termination, `left` points to the index of the smallest character greater than `target`.\n\n3. **Wrap-Around Logic:**\n   - If no character is strictly greater than `target`, `left` will equal $n$.\n   - Using modulo arithmetic, `letters[left % n]` cleanly returns `letters[0]` when `left == n`, eliminating the need for a separate conditional branch.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log N)$\n  - Binary search halves the search space at each iteration over $N \\le 10^4$ elements ($\\le 14$ operations).\n- **Space Complexity:** $\\mathcal{O}(1)$ auxiliary space\n  - Only a few scalar index pointers are maintained.\n\n---\n\n## Solutions\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "String"
+  ],
+  "codes": {
+    "Java": {
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 744 - Find Smallest Letter Greater Than Target\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n * \n * Binary Search (Upper Bound)\n * Time Complexity: O(log N)\n * Space Complexity: O(1)\n */\n\nclass Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        int left = 0;\n        int right = letters.length;\n\n        // Perform upper bound binary search\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n            if (letters[mid] <= target) {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n\n        // Wrap around to letters[0] if no character is strictly greater than target\n        return letters[left % letters.length];\n    }\n}\n"
+    },
+    "Python": {
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 744 - Find Smallest Letter Greater Than Target\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\nBinary Search (Upper Bound)\nTime Complexity: O(log N)\nSpace Complexity: O(1)\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def nextGreatestLetter(self, letters: List[str], target: str) -> str:\n        left, right = 0, len(letters)\n\n        while left < right:\n            mid = left + (right - left) // 2\n            if letters[mid] <= target:\n                left = mid + 1\n            else:\n                right = mid\n\n        return letters[left % len(letters)]\n"
+    },
+    "C++": {
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 744 - Find Smallest Letter Greater Than Target\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n * \n * Binary Search (Upper Bound)\n * Time Complexity: O(log N)\n * Space Complexity: O(1)\n */\n\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    char nextGreatestLetter(vector<char>& letters, char target) {\n        int left = 0;\n        int right = letters.size();\n\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n            if (letters[mid] <= target) {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n\n        return letters[left % letters.size()];\n    }\n};\n"
+    },
+    "JavaScript": {
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 744 - Find Smallest Letter Greater Than Target\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n * \n * Binary Search (Upper Bound)\n * Time Complexity: O(log N)\n * Space Complexity: O(1)\n */\n\n/**\n * @param {character[]} letters\n * @param {character} target\n * @return {character}\n */\nvar nextGreatestLetter = function(letters, target) {\n    let left = 0;\n    let right = letters.length;\n\n    while (left < right) {\n        const mid = (left + right) >> 1;\n        if (letters[mid] <= target) {\n            left = mid + 1;\n        } else {\n            right = mid;\n        }\n    }\n\n    return letters[left % letters.length];\n};\n"
+    }
+  }
+}

@@ -3,7 +3,7 @@
 - **Publication Date:** 11 January 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/maximal-rectangle/](https://leetcode.com/problems/maximal-rectangle/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/OfV_jfrkgXQ?si=BbO1eLgvjoMJA5oD)
 
 ---
 

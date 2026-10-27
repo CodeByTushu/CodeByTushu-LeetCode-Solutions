@@ -3,7 +3,7 @@
 - **Publication Date:** 03 January 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IZyi08lZqrE?si=laJUkP2Ylz9ulm-6)
 
 ---
 

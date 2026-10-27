@@ -3,7 +3,7 @@
 - **Publication Date:** 12 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-time-visiting-all-points/](https://leetcode.com/problems/minimum-time-visiting-all-points/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/2pr1wasCBKU?si=WBBUmkjgZVNdeb-3)
 
 ---
 

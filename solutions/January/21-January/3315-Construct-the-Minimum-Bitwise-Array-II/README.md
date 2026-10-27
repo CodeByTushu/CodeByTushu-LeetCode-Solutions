@@ -3,7 +3,7 @@
 - **Publication Date:** 21 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/KY2m8zRKHuI?si=2FjvhfJHJsK8n_qt)
 
 ---
 

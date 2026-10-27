@@ -3,7 +3,7 @@
 - **Publication Date:** 13 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/separate-squares-I/](https://leetcode.com/problems/separate-squares-i/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/uiJ_aJ69BRA?si=v3rV8M3djrbh6cvy)
 
 ---
 

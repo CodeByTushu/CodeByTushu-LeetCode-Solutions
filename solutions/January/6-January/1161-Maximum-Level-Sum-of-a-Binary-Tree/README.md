@@ -3,7 +3,7 @@
 - **Publication Date:** 06 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/MmEnnQirL64?si=OIa-ISB0zyEcU5Fj)
 
 ---
 

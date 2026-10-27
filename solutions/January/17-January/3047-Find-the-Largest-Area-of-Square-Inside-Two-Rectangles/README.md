@@ -3,7 +3,7 @@
 - **Publication Date:** 17 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ODb0RDLIXw0?si=4eDmo187T_GNkpzb)
 
 ---
 

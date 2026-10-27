@@ -3,7 +3,7 @@
 - **Publication Date:** 16 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IruczMQ2iAA?si=fpOyEtIdFgo8CY6o)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 26 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-absolute-difference/](https://leetcode.com/problems/minimum-absolute-difference/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/BHP_g-AKiR8?si=hf19OGGwl7REebjY)
 
 ---
 

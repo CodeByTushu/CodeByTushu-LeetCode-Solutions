@@ -3,7 +3,7 @@
 - **Publication Date:** 18 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/largest-magic-square/](https://leetcode.com/problems/largest-magic-square/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/mv6alnby34M?si=JoeO3HeyrBbBrMKy)
 
 ---
 

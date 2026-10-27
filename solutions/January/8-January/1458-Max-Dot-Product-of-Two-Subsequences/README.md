@@ -3,7 +3,7 @@
 - **Publication Date:** 08 January 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/max-dot-product-of-two-subsequences/](https://leetcode.com/problems/max-dot-product-of-two-subsequences/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/r0EZlLp-6Ng?si=0OtvbzQzn_tfY2xT)
 
 ---
 

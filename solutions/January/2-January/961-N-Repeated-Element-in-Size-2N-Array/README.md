@@ -3,7 +3,7 @@
 - **Publication Date:** 02 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/n-repeated-element-in-size-2n-array/](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/11vqhm5_GNs?si=EqL279K43kh_O5lD)
 
 ---
 

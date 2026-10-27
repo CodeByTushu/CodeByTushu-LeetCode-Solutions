@@ -3,7 +3,7 @@
 - **Publication Date:** 19 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ylxpqm7G0iU?si=QF1mbW_AqDp2tDaA)
 
 ---
 

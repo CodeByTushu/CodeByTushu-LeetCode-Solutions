@@ -3,7 +3,7 @@
 - **Publication Date:** 24 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/07Xamddl_kY?si=ddHCazOFbrHn1Gwp)
 
 ---
 

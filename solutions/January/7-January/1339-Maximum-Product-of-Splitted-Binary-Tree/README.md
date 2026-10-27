@@ -3,7 +3,7 @@
 - **Publication Date:** 07 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/81PROWs6D9g?si=7r-SJLpvHeRyk--I)
 
 ---
 

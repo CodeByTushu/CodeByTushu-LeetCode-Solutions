@@ -3,7 +3,7 @@
 - **Publication Date:** 30 January 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/minimum-cost-to-convert-string-ii/](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/7otHCCy-CWY?si=pmS_lWwePqxklBER)
 
 ---
 

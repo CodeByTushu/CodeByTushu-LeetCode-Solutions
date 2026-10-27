@@ -3,7 +3,7 @@
 - **Publication Date:** 09 January 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/8VJ7Lkl7FhA?si=TgQW3733d4rinTUq)
 
 ---
 

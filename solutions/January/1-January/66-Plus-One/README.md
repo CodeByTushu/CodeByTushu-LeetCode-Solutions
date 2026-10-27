@@ -3,7 +3,7 @@
 - **Publication Date:** 01 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/plus-one/](https://leetcode.com/problems/plus-one/)
-- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c?si=6zqZGMP5GpbmVLD3)
 
 ---
 

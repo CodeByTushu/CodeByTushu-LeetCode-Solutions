@@ -3,7 +3,7 @@
 - **Publication Date:** 25 January 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)
-- **YouTube Solution:** *Coming Soon* ⏳
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/FOuRF43wBtE?si=_vKkaqcH23f8F8KE)
 
 ---
 

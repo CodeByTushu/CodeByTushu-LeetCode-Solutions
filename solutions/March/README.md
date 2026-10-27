@@ -23,8 +23,8 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Days** | 31 Days |
-| **Language Standards** | Java, Python, C++, JavaScript |
+| **Total Solved Problems** | **1 Solved** |
+| **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
 ---
@@ -46,9 +46,12 @@ solutions/March/
 
 ---
 
-## 🗓️ Daily Solutions Index
+## 🗓️ March Solutions Table (Date-Wise)
 
-*No daily solutions are currently queued for March. Browse our active **[October 2026 Solutions Archive](../October/)** for complete daily code implementations.*
+| # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1689** | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | <span style="color:#f59e0b">**Medium**</span> | 01 Mar 2026 | [Java](./1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/Solution.java) | [Python](./1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.py) | [C++](./1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.cpp) | [JS](./1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.js) | *Coming Soon* | [📁 1-March](./1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/) |
+
 
 ---
 

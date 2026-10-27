@@ -9634,6 +9634,55 @@
     }
   },
   {
+    "id": "1689",
+    "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+    "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+    "date": "01 March 2026",
+    "dateIso": "2026-03-01",
+    "formattedDate": "01 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "1-March",
+    "problemFolder": "1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers",
+    "folderPath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
+    "leetcodeUrl": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Greedy",
+      "Math"
+    ],
+    "summary": "Find the minimum number of positive deci-binary numbers needed to sum up to a given decimal number string n.",
+    "approach": "Since each deci-binary number contributes at most 1 at each column with 0 carries, the minimum number of deci-binary numbers needed is simply the maximum digit in n. Iterate through n and return the maximum digit, exiting immediately if 9 is found.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.js"
+      }
+    }
+  },
+  {
     "id": "1680",
     "title": "Concatenation of Consecutive Binary Numbers",
     "slug": "concatenation-of-consecutive-binary-numbers",

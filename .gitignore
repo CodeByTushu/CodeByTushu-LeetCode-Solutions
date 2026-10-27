@@ -22,3 +22,11 @@ __pycache__/
 *.log
 .tmp/
 scratch/
+
+# Private assistant configuration & instructions
+GEMINI.md
+.gemini/
+
+# Raw brand assets
+Black Logo.PNG
+

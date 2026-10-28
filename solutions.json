@@ -9734,6 +9734,55 @@
     }
   },
   {
+    "id": "1582",
+    "title": "Special Positions in a Binary Matrix",
+    "slug": "special-positions-in-a-binary-matrix",
+    "date": "04 March 2026",
+    "dateIso": "2026-03-04",
+    "formattedDate": "04 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "4-March",
+    "problemFolder": "1582-Special-Positions-in-a-Binary-Matrix",
+    "folderPath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
+    "leetcodeUrl": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "summary": "Return the count of special positions in a binary matrix where a position (i, j) is special if mat[i][j] == 1 and all other elements in row i and column j are 0.",
+    "approach": "Precompute row sums and column sums in O(m * n) time. A position (i, j) is special if mat[i][j] == 1, rowSum[i] == 1, and colSum[j] == 1.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m + n)",
+    "spaceComplexity": "O(m + n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.js"
+      }
+    }
+  },
+  {
     "id": "1545",
     "title": "Find Kth Bit in Nth Binary String",
     "slug": "find-kth-bit-in-nth-binary-string",

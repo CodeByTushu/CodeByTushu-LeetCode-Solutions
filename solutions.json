@@ -9734,6 +9734,56 @@
     }
   },
   {
+    "id": "1536",
+    "title": "Minimum Swaps to Arrange a Binary Grid",
+    "slug": "minimum-swaps-to-arrange-a-binary-grid",
+    "date": "02 March 2026",
+    "dateIso": "2026-03-02",
+    "formattedDate": "02 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "2-March",
+    "problemFolder": "1536-Minimum-Swaps-to-Arrange-a-Binary-Grid",
+    "folderPath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Matrix",
+      "Simulation"
+    ],
+    "summary": "Find the minimum number of adjacent row swaps needed to make all cells above the main diagonal zeros, or return -1 if impossible.",
+    "approach": "Count trailing zeros for each row. For each row position i, greedily find the first available row with at least (n - 1 - i) trailing zeros, add the swap distance, and bubble it up to position i.",
+    "timeComplexity": "O(n^2)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": "1689",
     "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
     "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",

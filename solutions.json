@@ -1,5 +1,55 @@
 [
   {
+    "id": "3882",
+    "title": "Minimum XOR Path in a Grid",
+    "slug": "minimum-xor-path-in-a-grid",
+    "date": "28 October 2026",
+    "dateIso": "2026-10-28",
+    "formattedDate": "28 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "28-October",
+    "problemFolder": "3882-Minimum-XOR-Path-in-a-Grid",
+    "folderPath": "solutions/October/28-October/3882-Minimum-XOR-Path-in-a-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+    "youtubeUrl": "https://youtu.be/NrkY7VcxGE0?si=RBVHzfCjAHrfQfs-",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Bit Manipulation",
+      "Matrix"
+    ],
+    "summary": "Find the minimum XOR sum along any path from (0, 0) to (m - 1, n - 1) in an m x n grid moving only right or down, where all cell values are between 0 and 1023.",
+    "approach": "Use 3D Dynamic Programming where dp[i][j][x] tracks whether an XOR path sum x (0 <= x < 1024) is reachable at cell (i, j). For each cell, transition from the reachable XOR values of the top neighbor (i - 1, j) and left neighbor (i, j - 1), setting dp[i][j][x ^ grid[i][j]] = true. The answer is the smallest x such that dp[m - 1][n - 1][x] is true.",
+    "timeComplexity": "O(m * n * 1024)",
+    "auxiliarySpaceComplexity": "O(m * n * 1024)",
+    "spaceComplexity": "O(m * n * 1024)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/28-October/3882-Minimum-XOR-Path-in-a-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/28-October/3882-Minimum-XOR-Path-in-a-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/28-October/3882-Minimum-XOR-Path-in-a-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/28-October/3882-Minimum-XOR-Path-in-a-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": "3963",
     "title": "Create Grid With Exactly One Path",
     "slug": "create-grid-with-exactly-one-path",

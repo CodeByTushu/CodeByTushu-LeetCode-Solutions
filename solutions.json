@@ -9734,6 +9734,56 @@
     }
   },
   {
+    "id": "1545",
+    "title": "Find Kth Bit in Nth Binary String",
+    "slug": "find-kth-bit-in-nth-binary-string",
+    "date": "03 March 2026",
+    "dateIso": "2026-03-03",
+    "formattedDate": "03 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "3-March",
+    "problemFolder": "1545-Find-Kth-Bit-in-Nth-Binary-String",
+    "folderPath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Divide and Conquer",
+      "Simulation",
+      "Recursion"
+    ],
+    "summary": "Return the k-th bit in the n-th generated binary string formed recursively via concatenation, reversal, and inversion.",
+    "approach": "Exploit the recursive symmetry of the sequence: center bit is '1', left half is identical to S_{n-1}, and right half is reversed and inverted, solving iteratively in O(n) time and O(1) auxiliary space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1536",
     "title": "Minimum Swaps to Arrange a Binary Grid",
     "slug": "minimum-swaps-to-arrange-a-binary-grid",

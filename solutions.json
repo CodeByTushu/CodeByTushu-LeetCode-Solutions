@@ -1,5 +1,56 @@
 [
   {
+    "id": "3841",
+    "title": "Palindromic Path Queries in a Tree",
+    "slug": "palindromic-path-queries-in-a-tree",
+    "date": "29 October 2026",
+    "dateIso": "2026-10-29",
+    "formattedDate": "29 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "29-October",
+    "problemFolder": "3841-Palindromic-Path-Queries-in-a-Tree",
+    "folderPath": "solutions/October/29-October/3841-Palindromic-Path-Queries-in-a-Tree",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
+    "leetcodeUrl": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
+    "youtubeUrl": "https://youtu.be/bF5CQVRkXqA?si=klJQNDXfh3rcFwh-",
+    "tags": [
+      "Tree",
+      "Binary Lifting",
+      "Binary Indexed Tree",
+      "Bit Manipulation",
+      "String"
+    ],
+    "summary": "Process dynamic character updates and path queries on a tree to check if characters on the path between u and v can form a palindrome.",
+    "approach": "Represent character parity using a 26-bit bitmask. Flatten the tree with an iterative Euler tour DFS. Subtree updates correspond to range XOR operations maintained by a Binary Indexed Tree (Fenwick tree). For each query, compute the Lowest Common Ancestor (LCA) using Binary Lifting, extract path parity mask via cumulative prefix XORs, and check if at most one bit is set using (mask & (mask - 1)) == 0.",
+    "timeComplexity": "O((n + q) * log n)",
+    "auxiliarySpaceComplexity": "O(n * log n)",
+    "spaceComplexity": "O(n * log n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/29-October/3841-Palindromic-Path-Queries-in-a-Tree/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/29-October/3841-Palindromic-Path-Queries-in-a-Tree/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/29-October/3841-Palindromic-Path-Queries-in-a-Tree/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/29-October/3841-Palindromic-Path-Queries-in-a-Tree/solution.js"
+      }
+    }
+  },
+  {
     "id": "3882",
     "title": "Minimum XOR Path in a Grid",
     "slug": "minimum-xor-path-in-a-grid",

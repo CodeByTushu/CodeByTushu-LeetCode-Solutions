@@ -9734,6 +9734,54 @@
     }
   },
   {
+    "id": "1758",
+    "title": "Minimum Changes To Make Alternating Binary String",
+    "slug": "minimum-changes-to-make-alternating-binary-string",
+    "date": "05 March 2026",
+    "dateIso": "2026-03-05",
+    "formattedDate": "05 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "5-March",
+    "problemFolder": "1758-Minimum-Changes-To-Make-Alternating-Binary-String",
+    "folderPath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Simulation"
+    ],
+    "summary": "Return the minimum number of operations needed to make a binary string alternating.",
+    "approach": "There are only two valid alternating binary strings of length n: starting with '0' (0101...) or starting with '1' (1010...). Count the mismatches with the pattern starting with '0' as diff0. Since the two patterns are complementary, the mismatches with the second pattern is n - diff0. The answer is min(diff0, n - diff0) in O(n) time and O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1582",
     "title": "Special Positions in a Binary Matrix",
     "slug": "special-positions-in-a-binary-matrix",

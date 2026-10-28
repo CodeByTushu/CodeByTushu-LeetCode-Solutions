@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **4 Solved** |
+| **Total Solved Problems** | **5 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1758** | [Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | <span style="color:#10b981">**Easy**</span> | 05 Mar 2026 | [Java](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/Solution.java) | [Python](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.py) | [C++](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.cpp) | [JS](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.js) | *Coming Soon* | [📁 5-March](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/) |
 | **1582** | [Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/) | <span style="color:#10b981">**Easy**</span> | 04 Mar 2026 | [Java](./4-March/1582-Special-Positions-in-a-Binary-Matrix/Solution.java) | [Python](./4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.py) | [C++](./4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.cpp) | [JS](./4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.js) | *Coming Soon* | [📁 4-March](./4-March/1582-Special-Positions-in-a-Binary-Matrix/) |
 | **1545** | [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | <span style="color:#f59e0b">**Medium**</span> | 03 Mar 2026 | [Java](./3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/Solution.java) | [Python](./3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.py) | [C++](./3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.cpp) | [JS](./3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.js) | *Coming Soon* | [📁 3-March](./3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/) |
 | **1536** | [Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/) | <span style="color:#f59e0b">**Medium**</span> | 02 Mar 2026 | [Java](./2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/Solution.java) | [Python](./2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.py) | [C++](./2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.cpp) | [JS](./2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.js) | *Coming Soon* | [📁 2-March](./2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/) |

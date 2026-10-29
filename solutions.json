@@ -9785,6 +9785,54 @@
     }
   },
   {
+    "id": "1784",
+    "title": "Check if Binary String Has at Most One Segment of Ones",
+    "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+    "date": "06 March 2026",
+    "dateIso": "2026-03-06",
+    "formattedDate": "06 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "6-March",
+    "problemFolder": "1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones",
+    "folderPath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Simulation"
+    ],
+    "summary": "Check if a binary string without leading zeros contains at most one contiguous segment of ones.",
+    "approach": "Since s has no leading zeros (s[0] == 1), all ones in the first segment start at index 0. A second segment of ones can only exist if a 1 occurs after at least one 0, which corresponds to the substring \"01\". Return true if \"01\" is not present, otherwise false in O(n) time and O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.js"
+      }
+    }
+  },
+  {
     "id": "1758",
     "title": "Minimum Changes To Make Alternating Binary String",
     "slug": "minimum-changes-to-make-alternating-binary-string",

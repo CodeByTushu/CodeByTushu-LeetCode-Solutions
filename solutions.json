@@ -9785,6 +9785,54 @@
     }
   },
   {
+    "id": "1009",
+    "title": "Complement of Base 10 Integer",
+    "slug": "complement-of-base-10-integer",
+    "date": "11 March 2026",
+    "dateIso": "2026-03-11",
+    "formattedDate": "11 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "11-March",
+    "problemFolder": "1009-Complement-of-Base-10-Integer",
+    "folderPath": "solutions/March/11-March/1009-Complement-of-Base-10-Integer",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/complement-of-base-10-integer/",
+    "leetcodeUrl": "https://leetcode.com/problems/complement-of-base-10-integer/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Bit Manipulation",
+      "Math"
+    ],
+    "summary": "Flip only the significant bits of n without leading zeros to produce its binary complement in O(1) time.",
+    "approach": "Flip only the significant bits of n by constructing an all-ones bitmask of length L via bit smearing (mask |= mask >> k) and returning mask ^ n in O(1) time and O(1) auxiliary space, with n = 0 handled as an early return of 1.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/11-March/1009-Complement-of-Base-10-Integer/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/11-March/1009-Complement-of-Base-10-Integer/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/11-March/1009-Complement-of-Base-10-Integer/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/11-March/1009-Complement-of-Base-10-Integer/solution.js"
+      }
+    }
+  },
+  {
     "id": "3130",
     "title": "Find All Possible Stable Binary Arrays II",
     "slug": "find-all-possible-stable-binary-arrays-ii",

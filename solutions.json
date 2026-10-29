@@ -9785,6 +9785,55 @@
     }
   },
   {
+    "id": "1888",
+    "title": "Minimum Number of Flips to Make the Binary String Alternating",
+    "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
+    "date": "07 March 2026",
+    "dateIso": "2026-03-07",
+    "formattedDate": "07 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "7-March",
+    "problemFolder": "1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating",
+    "folderPath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Sliding Window",
+      "Greedy"
+    ],
+    "summary": "Return the minimum number of type-2 operations (flips) to make a binary string alternating, given that type-1 operations allow any cyclic rotation of the string.",
+    "approach": "All cyclic shifts of s correspond to length-n windows in the doubled string s + s. Use a sliding window of size n to track mismatches against alternating patterns \"0101...\" and \"1010...\", finding the minimum flips in O(n) time and O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.js"
+      }
+    }
+  },
+  {
     "id": "1784",
     "title": "Check if Binary String Has at Most One Segment of Ones",
     "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",

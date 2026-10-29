@@ -9785,6 +9785,56 @@
     }
   },
   {
+    "id": "1980",
+    "title": "Find Unique Binary String",
+    "slug": "find-unique-binary-string",
+    "date": "08 March 2026",
+    "dateIso": "2026-03-08",
+    "formattedDate": "08 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "8-March",
+    "problemFolder": "1980-Find-Unique-Binary-String",
+    "folderPath": "solutions/March/8-March/1980-Find-Unique-Binary-String",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-unique-binary-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-unique-binary-string/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "String",
+      "Backtracking",
+      "Math"
+    ],
+    "summary": "Given an array of n unique binary strings each of length n, find and return a binary string of length n that does not appear in the array.",
+    "approach": "Apply Cantor's Diagonal Argument: construct a string of length n whose i-th bit is inverted from nums[i][i]. This ensures the resulting string differs from each given string at least at position i, solving the problem in optimal O(n) time.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1888",
     "title": "Minimum Number of Flips to Make the Binary String Alternating",
     "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",

@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **7 Solved** |
+| **Total Solved Problems** | **8 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1980** | [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | <span style="color:#f59e0b">**Medium**</span> | 08 Mar 2026 | [Java](./8-March/1980-Find-Unique-Binary-String/Solution.java) | [Python](./8-March/1980-Find-Unique-Binary-String/solution.py) | [C++](./8-March/1980-Find-Unique-Binary-String/solution.cpp) | [JS](./8-March/1980-Find-Unique-Binary-String/solution.js) | *Coming Soon* | [📁 8-March](./8-March/1980-Find-Unique-Binary-String/) |
 | **1888** | [Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | <span style="color:#f59e0b">**Medium**</span> | 07 Mar 2026 | [Java](./7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/Solution.java) | [Python](./7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.py) | [C++](./7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.cpp) | [JS](./7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.js) | *Coming Soon* | [📁 7-March](./7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/) |
 | **1784** | [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | <span style="color:#10b981">**Easy**</span> | 06 Mar 2026 | [Java](./6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/Solution.java) | [Python](./6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.py) | [C++](./6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.cpp) | [JS](./6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.js) | *Coming Soon* | [📁 6-March](./6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/) |
 | **1758** | [Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | <span style="color:#10b981">**Easy**</span> | 05 Mar 2026 | [Java](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/Solution.java) | [Python](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.py) | [C++](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.cpp) | [JS](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.js) | *Coming Soon* | [📁 5-March](./5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/) |

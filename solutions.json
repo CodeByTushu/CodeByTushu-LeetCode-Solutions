@@ -9785,6 +9785,54 @@
     }
   },
   {
+    "id": "3130",
+    "title": "Find All Possible Stable Binary Arrays II",
+    "slug": "find-all-possible-stable-binary-arrays-ii",
+    "date": "10 March 2026",
+    "dateIso": "2026-03-10",
+    "formattedDate": "10 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "10-March",
+    "problemFolder": "3130-Find-All-Possible-Stable-Binary-Arrays-II",
+    "folderPath": "solutions/March/10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "Prefix Sum"
+    ],
+    "summary": "Count the total number of binary arrays containing exactly zero 0s and one 1s where no contiguous run of identical elements exceeds limit, with constraints up to 1000.",
+    "approach": "Maintain 2D DP arrays dp0 and dp1 where dp0[i][j] and dp1[i][j] denote valid arrays with i zeros and j ones ending in 0 and 1 respectively. Transition by appending 0 or 1, and subtract overflown runs of length limit + 1 in O(zero * one) time and O(zero * one) space.",
+    "timeComplexity": "O(zero * one)",
+    "auxiliarySpaceComplexity": "O(zero * one)",
+    "spaceComplexity": "O(zero * one)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3129",
     "title": "Find All Possible Stable Binary Arrays I",
     "slug": "find-all-possible-stable-binary-arrays-i",

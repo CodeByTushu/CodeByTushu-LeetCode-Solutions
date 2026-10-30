@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "3548",
+    "title": "Equal Sum Grid Partition II",
+    "slug": "equal-sum-grid-partition-ii",
+    "date": "26 March 2026",
+    "dateIso": "2026-03-26",
+    "formattedDate": "26 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "26-March",
+    "problemFolder": "3548-Equal-Sum-Grid-Partition-II",
+    "folderPath": "solutions/March/26-March/3548-Equal-Sum-Grid-Partition-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/equal-sum-grid-partition-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/equal-sum-grid-partition-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Determine if a horizontal or vertical cut can split the grid into two non-empty sections of equal sum directly or by discounting at most one cell such that the discounted section remains connected.",
+    "approach": "Check horizontal cuts across 4 grid transformations (normal, reversed rows, transposed, reversed transposed). For each cut, evaluate if the difference can be eliminated by discounting at most one cell while preserving section connectivity.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/26-March/3548-Equal-Sum-Grid-Partition-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/26-March/3548-Equal-Sum-Grid-Partition-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/26-March/3548-Equal-Sum-Grid-Partition-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/26-March/3548-Equal-Sum-Grid-Partition-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3546",
     "title": "Equal Sum Grid Partition I",
     "slug": "equal-sum-grid-partition-i",

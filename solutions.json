@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "2906",
+    "title": "Construct Product Matrix",
+    "slug": "construct-product-matrix",
+    "date": "24 March 2026",
+    "dateIso": "2026-03-24",
+    "formattedDate": "24 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "24-March",
+    "problemFolder": "2906-Construct-Product-Matrix",
+    "folderPath": "solutions/March/24-March/2906-Construct-Product-Matrix",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/construct-product-matrix/",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-product-matrix/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Construct product matrix where each element is product of all elements except itself modulo 12345.",
+    "approach": "Two-pass prefix and suffix product traversal in row-major order to avoid invalid modular division since 12345 is not prime.",
+    "timeComplexity": "O(n * m)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/24-March/2906-Construct-Product-Matrix/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/24-March/2906-Construct-Product-Matrix/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/24-March/2906-Construct-Product-Matrix/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/24-March/2906-Construct-Product-Matrix/solution.js"
+      }
+    }
+  },
+  {
     "id": "1594",
     "title": "Maximum Non Negative Product in a Matrix",
     "slug": "maximum-non-negative-product-in-a-matrix",

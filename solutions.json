@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "3546",
+    "title": "Equal Sum Grid Partition I",
+    "slug": "equal-sum-grid-partition-i",
+    "date": "25 March 2026",
+    "dateIso": "2026-03-25",
+    "formattedDate": "25 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "25-March",
+    "problemFolder": "3546-Equal-Sum-Grid-Partition-I",
+    "folderPath": "solutions/March/25-March/3546-Equal-Sum-Grid-Partition-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/equal-sum-grid-partition-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/equal-sum-grid-partition-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Determine whether a single horizontal or vertical cut can partition the grid into two non-empty sections of equal sum.",
+    "approach": "Verify if total sum is even, then check if any prefix row sum (up to m - 2) or prefix column sum (up to n - 2) equals totalSum / 2.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m + n)",
+    "spaceComplexity": "O(m + n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/25-March/3546-Equal-Sum-Grid-Partition-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/25-March/3546-Equal-Sum-Grid-Partition-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/25-March/3546-Equal-Sum-Grid-Partition-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/25-March/3546-Equal-Sum-Grid-Partition-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "2906",
     "title": "Construct Product Matrix",
     "slug": "construct-product-matrix",

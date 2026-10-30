@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **26 Solved** |
+| **Total Solved Problems** | **27 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2946** | [Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/) | <span style="color:#10b981">**Easy**</span> | 27 Mar 2026 | [Java](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/Solution.java) | [Python](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.py) | [C++](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.cpp) | [JS](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.js) | *Coming Soon* | [📁 27-March](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/) |
 | **3548** | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | <span style="color:#ef4444">**Hard**</span> | 26 Mar 2026 | [Java](./26-March/3548-Equal-Sum-Grid-Partition-II/Solution.java) | [Python](./26-March/3548-Equal-Sum-Grid-Partition-II/solution.py) | [C++](./26-March/3548-Equal-Sum-Grid-Partition-II/solution.cpp) | [JS](./26-March/3548-Equal-Sum-Grid-Partition-II/solution.js) | *Coming Soon* | [📁 26-March](./26-March/3548-Equal-Sum-Grid-Partition-II/) |
 | **3546** | [Equal Sum Grid Partition I](https://leetcode.com/problems/equal-sum-grid-partition-i/) | <span style="color:#f59e0b">**Medium**</span> | 25 Mar 2026 | [Java](./25-March/3546-Equal-Sum-Grid-Partition-I/Solution.java) | [Python](./25-March/3546-Equal-Sum-Grid-Partition-I/solution.py) | [C++](./25-March/3546-Equal-Sum-Grid-Partition-I/solution.cpp) | [JS](./25-March/3546-Equal-Sum-Grid-Partition-I/solution.js) | *Coming Soon* | [📁 25-March](./25-March/3546-Equal-Sum-Grid-Partition-I/) |
 | **2906** | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/) | <span style="color:#f59e0b">**Medium**</span> | 24 Mar 2026 | [Java](./24-March/2906-Construct-Product-Matrix/Solution.java) | [Python](./24-March/2906-Construct-Product-Matrix/solution.py) | [C++](./24-March/2906-Construct-Product-Matrix/solution.cpp) | [JS](./24-March/2906-Construct-Product-Matrix/solution.js) | *Coming Soon* | [📁 24-March](./24-March/2906-Construct-Product-Matrix/) |

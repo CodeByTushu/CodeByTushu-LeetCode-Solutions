@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "2946",
+    "title": "Matrix Similarity After Cyclic Shifts",
+    "slug": "matrix-similarity-after-cyclic-shifts",
+    "date": "27 March 2026",
+    "dateIso": "2026-03-27",
+    "formattedDate": "27 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "27-March",
+    "problemFolder": "2946-Matrix-Similarity-After-Cyclic-Shifts",
+    "folderPath": "solutions/March/27-March/2946-Matrix-Similarity-After-Cyclic-Shifts",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/",
+    "leetcodeUrl": "https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "summary": "Determine whether cyclically shifting even rows left and odd rows right by k positions leaves the matrix identical to its initial state.",
+    "approach": "Reduce k modulo n and check whether mat[i][j] equals mat[i][(j + k) % n] for all cells in the matrix.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.js"
+      }
+    }
+  },
+  {
     "id": "3548",
     "title": "Equal Sum Grid Partition II",
     "slug": "equal-sum-grid-partition-ii",

@@ -9854,6 +9854,57 @@
     }
   },
   {
+    "id": "1878",
+    "title": "Get Biggest Three Rhombus Sums in a Grid",
+    "slug": "get-biggest-three-rhombus-sums-in-a-grid",
+    "date": "16 March 2026",
+    "dateIso": "2026-03-16",
+    "formattedDate": "16 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "16-March",
+    "problemFolder": "1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid",
+    "folderPath": "solutions/March/16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/",
+    "leetcodeUrl": "https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Math",
+      "Matrix",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "summary": "Return the three biggest distinct rhombus border sums in an m x n grid in descending order.",
+    "approach": "Iterate over every cell as center (r, c) and all valid radii L >= 0. Sum perimeter cells along four symmetric edges, store in a balanced tree / set for automatic deduplication, and return up to the top 3 distinct sums in descending order.",
+    "timeComplexity": "O(m * n * min(m, n)^2)",
+    "auxiliarySpaceComplexity": "O(m * n * min(m, n))",
+    "spaceComplexity": "O(m * n * min(m, n))",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/solution.js"
+      }
+    }
+  },
+  {
     "id": "1622",
     "title": "Fancy Sequence",
     "slug": "fancy-sequence",

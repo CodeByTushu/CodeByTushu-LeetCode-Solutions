@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **28 Solved** |
+| **Total Solved Problems** | **29 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2839** | [Check if Strings Can be Made Equal With Operations I](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/) | <span style="color:#10b981">**Easy**</span> | 29 Mar 2026 | [Java](./29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/Solution.java) | [Python](./29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/solution.py) | [C++](./29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/solution.cpp) | [JS](./29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/solution.js) | *Coming Soon* | [📁 29-March](./29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/) |
 | **2573** | [Find the String with LCP](https://leetcode.com/problems/find-the-string-with-lcp/) | <span style="color:#ef4444">**Hard**</span> | 28 Mar 2026 | [Java](./28-March/2573-Find-the-String-with-LCP/Solution.java) | [Python](./28-March/2573-Find-the-String-with-LCP/solution.py) | [C++](./28-March/2573-Find-the-String-with-LCP/solution.cpp) | [JS](./28-March/2573-Find-the-String-with-LCP/solution.js) | *Coming Soon* | [📁 28-March](./28-March/2573-Find-the-String-with-LCP/) |
 | **2946** | [Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/) | <span style="color:#10b981">**Easy**</span> | 27 Mar 2026 | [Java](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/Solution.java) | [Python](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.py) | [C++](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.cpp) | [JS](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/solution.js) | *Coming Soon* | [📁 27-March](./27-March/2946-Matrix-Similarity-After-Cyclic-Shifts/) |
 | **3548** | [Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | <span style="color:#ef4444">**Hard**</span> | 26 Mar 2026 | [Java](./26-March/3548-Equal-Sum-Grid-Partition-II/Solution.java) | [Python](./26-March/3548-Equal-Sum-Grid-Partition-II/solution.py) | [C++](./26-March/3548-Equal-Sum-Grid-Partition-II/solution.cpp) | [JS](./26-March/3548-Equal-Sum-Grid-Partition-II/solution.js) | *Coming Soon* | [📁 26-March](./26-March/3548-Equal-Sum-Grid-Partition-II/) |

@@ -9854,6 +9854,53 @@
     }
   },
   {
+    "id": "2839",
+    "title": "Check if Strings Can be Made Equal With Operations I",
+    "slug": "check-if-strings-can-be-made-equal-with-operations-i",
+    "date": "29 March 2026",
+    "dateIso": "2026-03-29",
+    "formattedDate": "29 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "29-March",
+    "problemFolder": "2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I",
+    "folderPath": "solutions/March/29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String"
+    ],
+    "summary": "Determine whether two length-4 strings can be made equal by swapping characters at indices differing by 2.",
+    "approach": "Since distance-2 swaps only exchange characters within the same parity, verify if the multiset of even-indexed characters and odd-indexed characters match between s1 and s2.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/29-March/2839-Check-if-Strings-Can-be-Made-Equal-With-Operations-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "2573",
     "title": "Find the String with LCP",
     "slug": "find-the-string-with-lcp",

@@ -5278,7 +5278,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/16-July/3867-Sum-of-GCD-of-Formed-Pairs/solution.js"
       }
-    }
+    },
+    "date": "16 July 2026"
   },
   {
     "id": 3658,
@@ -5325,7 +5326,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/15-July/3658-GCD-of-Odd-and-Even-Sums/solution.js"
       }
-    }
+    },
+    "date": "15 July 2026"
   },
   {
     "id": 3336,
@@ -5374,7 +5376,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/14-July/3336-Find-the-Number-of-Subsequences-With-Equal-GCD/solution.js"
       }
-    }
+    },
+    "date": "14 July 2026"
   },
   {
     "id": 1291,
@@ -5422,7 +5425,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/13-July/1291-Sequential-Digits/solution.js"
       }
-    }
+    },
+    "date": "13 July 2026"
   },
   {
     "id": 1331,
@@ -5470,7 +5474,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/12-July/1331-Rank-Transform-of-an-Array/solution.js"
       }
-    }
+    },
+    "date": "12 July 2026"
   },
   {
     "id": 2685,
@@ -5519,7 +5524,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/11-July/2685-Count-the-Number-of-Complete-Components/solution.js"
       }
-    }
+    },
+    "date": "11 July 2026"
   },
   {
     "id": 3534,
@@ -5571,7 +5577,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/10-July/3534-Path-Existence-Queries-in-a-Graph-II/solution.js"
       }
-    }
+    },
+    "date": "10 July 2026"
   },
   {
     "id": 3532,
@@ -5619,7 +5626,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.js"
       }
-    }
+    },
+    "date": "09 July 2026"
   },
   {
     "id": 3756,
@@ -5668,7 +5676,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.js"
       }
-    }
+    },
+    "date": "08 July 2026"
   },
   {
     "id": 3754,
@@ -5715,7 +5724,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.js"
       }
-    }
+    },
+    "date": "07 July 2026"
   },
   {
     "id": 1288,
@@ -5762,7 +5772,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.js"
       }
-    }
+    },
+    "date": "06 July 2026"
   },
   {
     "id": 1301,
@@ -5810,7 +5821,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.js"
       }
-    }
+    },
+    "date": "05 July 2026"
   },
   {
     "id": 2492,
@@ -5859,7 +5871,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.js"
       }
-    }
+    },
+    "date": "04 July 2026"
   },
   {
     "id": 3620,
@@ -5909,7 +5922,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.js"
       }
-    }
+    },
+    "date": "03 July 2026"
   },
   {
     "id": 3286,
@@ -5960,7 +5974,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.js"
       }
-    }
+    },
+    "date": "02 July 2026"
   },
   {
     "id": 2812,
@@ -6009,7 +6024,8 @@
         "file": "solution.js",
         "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js"
       }
-    }
+    },
+    "date": "01 July 2026"
   },
   {
     "id": 1358,
@@ -9834,6 +9850,56 @@
         "name": "JavaScript",
         "file": "solution.js",
         "relativePath": "solutions/April/14-April/2463-Minimum-Total-Distance-Traveled/solution.js"
+      }
+    }
+  },
+  {
+    "id": "3600",
+    "title": "Maximize Spanning Tree Stability with Upgrades",
+    "slug": "maximize-spanning-tree-stability-with-upgrades",
+    "date": "12 March 2026",
+    "dateIso": "2026-03-12",
+    "formattedDate": "12 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "12-March",
+    "problemFolder": "3600-Maximize-Spanning-Tree-Stability-with-Upgrades",
+    "folderPath": "solutions/March/12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Graph",
+      "Minimum Spanning Tree",
+      "Binary Search",
+      "Union Find"
+    ],
+    "summary": "Maximize the minimum edge strength in a valid spanning tree containing all mandatory edges using at most k edge doubling upgrades.",
+    "approach": "Binary search on the minimum edge stability X, validating mandatory acyclicity and global connectivity with DSU, and greedily connecting remaining components using cost 0 edges before cost 1 upgraded edges up to k upgrades.",
+    "timeComplexity": "O((N + M) * alpha(N) * log(max S))",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.js"
       }
     }
   },

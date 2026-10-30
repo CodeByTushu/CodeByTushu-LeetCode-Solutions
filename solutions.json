@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "3567",
+    "title": "Minimum Absolute Difference in Sliding Submatrix",
+    "slug": "minimum-absolute-difference-in-sliding-submatrix",
+    "date": "20 March 2026",
+    "dateIso": "2026-03-20",
+    "formattedDate": "20 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "20-March",
+    "problemFolder": "3567-Minimum-Absolute-Difference-in-Sliding-Submatrix",
+    "folderPath": "solutions/March/20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Sliding Window",
+      "Sorting"
+    ],
+    "summary": "For every contiguous k x k submatrix, compute the minimum absolute difference between any two distinct values. Return 0 if all elements are identical.",
+    "approach": "For each k x k sliding window, collect all k^2 elements into an array, sort them, and compute differences between adjacent distinct values. If no two distinct values exist, store 0.",
+    "timeComplexity": "O((m - k + 1) * (n - k + 1) * k^2 * log(k))",
+    "auxiliarySpaceComplexity": "O(k^2)",
+    "spaceComplexity": "O(k^2)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.js"
+      }
+    }
+  },
+  {
     "id": "3212",
     "title": "Count Submatrices With Equal Frequency of X and Y",
     "slug": "count-submatrices-with-equal-frequency-of-x-and-y",

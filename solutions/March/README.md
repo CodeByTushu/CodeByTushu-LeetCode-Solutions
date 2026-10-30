@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **19 Solved** |
+| **Total Solved Problems** | **20 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3567** | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | <span style="color:#f59e0b">**Medium**</span> | 20 Mar 2026 | [Java](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/Solution.java) | [Python](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.py) | [C++](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.cpp) | [JS](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.js) | *Coming Soon* | [📁 20-March](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/) |
 | **3212** | [Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | <span style="color:#f59e0b">**Medium**</span> | 19 Mar 2026 | [Java](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/Solution.java) | [Python](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.py) | [C++](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.cpp) | [JS](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.js) | *Coming Soon* | [📁 19-March](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/) |
 | **3070** | [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | <span style="color:#f59e0b">**Medium**</span> | 18 Mar 2026 | [Java](./18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/Solution.java) | [Python](./18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/solution.py) | [C++](./18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/solution.cpp) | [JS](./18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/solution.js) | *Coming Soon* | [📁 18-March](./18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/) |
 | **1727** | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | <span style="color:#f59e0b">**Medium**</span> | 17 Mar 2026 | [Java](./17-March/1727-Largest-Submatrix-With-Rearrangements/Solution.java) | [Python](./17-March/1727-Largest-Submatrix-With-Rearrangements/solution.py) | [C++](./17-March/1727-Largest-Submatrix-With-Rearrangements/solution.cpp) | [JS](./17-March/1727-Largest-Submatrix-With-Rearrangements/solution.js) | *Coming Soon* | [📁 17-March](./17-March/1727-Largest-Submatrix-With-Rearrangements/) |

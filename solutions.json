@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "3212",
+    "title": "Count Submatrices With Equal Frequency of X and Y",
+    "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+    "date": "19 March 2026",
+    "dateIso": "2026-03-19",
+    "formattedDate": "19 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "19-March",
+    "problemFolder": "3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y",
+    "folderPath": "solutions/March/19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Return the number of submatrices starting at the top-left cell (0, 0) that contain an equal frequency of 'X' and 'Y', and at least one 'X'.",
+    "approach": "Maintain running column prefix counts of 'X' and 'Y'. For each cell (i, j), aggregate column prefix sums along the current row to find the total 'X' and 'Y' counts in submatrix (0, 0) to (i, j). Check if countX == countY and countX > 0.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.js"
+      }
+    }
+  },
+  {
     "id": "3070",
     "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
     "slug": "count-submatrices-with-top-left-element-and-sum-less-than-k",

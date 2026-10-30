@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **22 Solved** |
+| **Total Solved Problems** | **23 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1594** | [Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/) | <span style="color:#f59e0b">**Medium**</span> | 23 Mar 2026 | [Java](./23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/Solution.java) | [Python](./23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/solution.py) | [C++](./23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/solution.cpp) | [JS](./23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/solution.js) | *Coming Soon* | [📁 23-March](./23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/) |
 | **1886** | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | <span style="color:#10b981">**Easy**</span> | 22 Mar 2026 | [Java](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/Solution.java) | [Python](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/solution.py) | [C++](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/solution.cpp) | [JS](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/solution.js) | *Coming Soon* | [📁 22-March](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/) |
 | **3643** | [Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/) | <span style="color:#10b981">**Easy**</span> | 21 Mar 2026 | [Java](./21-March/3643-Flip-Square-Submatrix-Vertically/Solution.java) | [Python](./21-March/3643-Flip-Square-Submatrix-Vertically/solution.py) | [C++](./21-March/3643-Flip-Square-Submatrix-Vertically/solution.cpp) | [JS](./21-March/3643-Flip-Square-Submatrix-Vertically/solution.js) | *Coming Soon* | [📁 21-March](./21-March/3643-Flip-Square-Submatrix-Vertically/) |
 | **3567** | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | <span style="color:#f59e0b">**Medium**</span> | 20 Mar 2026 | [Java](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/Solution.java) | [Python](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.py) | [C++](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.cpp) | [JS](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.js) | *Coming Soon* | [📁 20-March](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/) |

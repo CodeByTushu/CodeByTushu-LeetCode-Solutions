@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "1594",
+    "title": "Maximum Non Negative Product in a Matrix",
+    "slug": "maximum-non-negative-product-in-a-matrix",
+    "date": "23 March 2026",
+    "dateIso": "2026-03-23",
+    "formattedDate": "23 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "23-March",
+    "problemFolder": "1594-Maximum-Non-Negative-Product-in-a-Matrix",
+    "folderPath": "solutions/March/23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "summary": "Find the path from top-left to bottom-right with the maximum non-negative product modulo 10^9 + 7, or return -1 if negative.",
+    "approach": "Track both maximum and minimum path products at each cell using 2D Dynamic Programming to properly account for sign inversions caused by negative numbers.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/23-March/1594-Maximum-Non-Negative-Product-in-a-Matrix/solution.js"
+      }
+    }
+  },
+  {
     "id": "1886",
     "title": "Determine Whether Matrix Can Be Obtained By Rotation",
     "slug": "determine-whether-matrix-can-be-obtained-by-rotation",

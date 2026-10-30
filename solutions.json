@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "3070",
+    "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
+    "slug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
+    "date": "18 March 2026",
+    "dateIso": "2026-03-18",
+    "formattedDate": "18 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "18-March",
+    "problemFolder": "3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k",
+    "folderPath": "solutions/March/18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "summary": "Return the number of submatrices starting at the top-left cell (0, 0) that have a sum less than or equal to k.",
+    "approach": "Every submatrix containing (0,0) is defined by its bottom-right cell (i, j). Compute 2D prefix sums in-place using inclusion-exclusion and count cells where prefix sum <= k.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/18-March/3070-Count-Submatrices-with-Top-Left-Element-and-Sum-Less-Than-k/solution.js"
+      }
+    }
+  },
+  {
     "id": "1727",
     "title": "Largest Submatrix With Rearrangements",
     "slug": "largest-submatrix-with-rearrangements",

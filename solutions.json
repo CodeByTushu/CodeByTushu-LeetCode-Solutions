@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "3474",
+    "title": "Lexicographically Smallest Generated String",
+    "slug": "lexicographically-smallest-generated-string",
+    "date": "31 March 2026",
+    "dateIso": "2026-03-31",
+    "formattedDate": "31 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "31-March",
+    "problemFolder": "3474-Lexicographically-Smallest-Generated-String",
+    "folderPath": "solutions/March/31-March/3474-Lexicographically-Smallest-Generated-String",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/lexicographically-smallest-generated-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/lexicographically-smallest-generated-string/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Greedy",
+      "String Matching"
+    ],
+    "summary": "Construct the lexicographically smallest string of length n + m - 1 that equals str2 at all 'T' indices and differs at all 'F' indices.",
+    "approach": "Enforce all 'T' constraints first, populate remaining slots with 'a' for minimality, break accidental 'F' matches at the rightmost modifiable position with 'b', and verify.",
+    "timeComplexity": "O(n * m)",
+    "auxiliarySpaceComplexity": "O(n + m)",
+    "spaceComplexity": "O(n + m)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/31-March/3474-Lexicographically-Smallest-Generated-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/31-March/3474-Lexicographically-Smallest-Generated-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/31-March/3474-Lexicographically-Smallest-Generated-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/31-March/3474-Lexicographically-Smallest-Generated-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "2840",
     "title": "Check if Strings Can be Made Equal With Operations II",
     "slug": "check-if-strings-can-be-made-equal-with-operations-ii",

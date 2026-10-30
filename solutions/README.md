@@ -25,7 +25,7 @@ Select any month below to jump straight to that month's folder and view its date
 | :--- | :---: | :---: | :---: | :--- |
 | ❄️ **January** | Q1 (Winter) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse January Solutions (31 Days)**](./January/) |
 | 🌸 **February** | Q1 (Late Winter) | **28 Solved** | 🟢 **Complete Series** | [👉 **Browse February Solutions (28 Days)**](./February/) |
-| 🌷 **March** | Q1 (Spring) | **30 Solved** | 🟢 **Active Series** | [👉 **Browse March Solutions (30 Days)**](./March/) |
+| 🌷 **March** | Q1 (Spring) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse March Solutions (31 Days)**](./March/) |
 | 🌿 **April** | Q2 (Spring) | **17 Solved** | 🟢 **Active Series** | [👉 **Browse April Solutions (17 Days)**](./April/) |
 | ☀️ **May** | Q2 (Early Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse May Solutions (31 Days)**](./May/) |
 | 🌊 **June** | Q2 (Summer) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse June Solutions (30 Days)**](./June/) |

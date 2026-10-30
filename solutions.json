@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "2573",
+    "title": "Find the String with LCP",
+    "slug": "find-the-string-with-lcp",
+    "date": "28 March 2026",
+    "dateIso": "2026-03-28",
+    "formattedDate": "28 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "28-March",
+    "problemFolder": "2573-Find-the-String-with-LCP",
+    "folderPath": "solutions/March/28-March/2573-Find-the-String-with-LCP",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/find-the-string-with-lcp/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-string-with-lcp/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Greedy",
+      "Matrix"
+    ],
+    "summary": "Reconstruct the lexicographically smallest string that corresponds to a given n x n LCP matrix, or return an empty string if no valid string exists.",
+    "approach": "Greedily assign lowercase letters ('a' through 'z') to unassigned positions based on lcp[i][j] > 0. Then verify that the candidate string exactly matches the LCP matrix using bottom-up dynamic programming.",
+    "timeComplexity": "O(n^2)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/28-March/2573-Find-the-String-with-LCP/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/28-March/2573-Find-the-String-with-LCP/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/28-March/2573-Find-the-String-with-LCP/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/28-March/2573-Find-the-String-with-LCP/solution.js"
+      }
+    }
+  },
+  {
     "id": "2946",
     "title": "Matrix Similarity After Cyclic Shifts",
     "slug": "matrix-similarity-after-cyclic-shifts",

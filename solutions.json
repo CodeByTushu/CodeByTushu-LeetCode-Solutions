@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "3643",
+    "title": "Flip Square Submatrix Vertically",
+    "slug": "flip-square-submatrix-vertically",
+    "date": "21 March 2026",
+    "dateIso": "2026-03-21",
+    "formattedDate": "21 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "21-March",
+    "problemFolder": "3643-Flip-Square-Submatrix-Vertically",
+    "folderPath": "solutions/March/21-March/3643-Flip-Square-Submatrix-Vertically",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/flip-square-submatrix-vertically/",
+    "leetcodeUrl": "https://leetcode.com/problems/flip-square-submatrix-vertically/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation",
+      "Two Pointers"
+    ],
+    "summary": "Flip the square submatrix of size k x k starting at top-left corner (x, y) vertically in-place and return the updated matrix.",
+    "approach": "Simulate vertical row reversal within the submatrix using two row pointers (top = x, bottom = x + k - 1), swapping corresponding row elements across columns y to y + k - 1 in-place.",
+    "timeComplexity": "O(k^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/21-March/3643-Flip-Square-Submatrix-Vertically/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/21-March/3643-Flip-Square-Submatrix-Vertically/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/21-March/3643-Flip-Square-Submatrix-Vertically/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/21-March/3643-Flip-Square-Submatrix-Vertically/solution.js"
+      }
+    }
+  },
+  {
     "id": "3567",
     "title": "Minimum Absolute Difference in Sliding Submatrix",
     "slug": "minimum-absolute-difference-in-sliding-submatrix",

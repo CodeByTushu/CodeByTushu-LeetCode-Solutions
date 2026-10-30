@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **21 Solved** |
+| **Total Solved Problems** | **22 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1886** | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | <span style="color:#10b981">**Easy**</span> | 22 Mar 2026 | [Java](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/Solution.java) | [Python](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/solution.py) | [C++](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/solution.cpp) | [JS](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/solution.js) | *Coming Soon* | [📁 22-March](./22-March/1886-Determine-Whether-Matrix-Can-Be-Obtained-By-Rotation/) |
 | **3643** | [Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/) | <span style="color:#10b981">**Easy**</span> | 21 Mar 2026 | [Java](./21-March/3643-Flip-Square-Submatrix-Vertically/Solution.java) | [Python](./21-March/3643-Flip-Square-Submatrix-Vertically/solution.py) | [C++](./21-March/3643-Flip-Square-Submatrix-Vertically/solution.cpp) | [JS](./21-March/3643-Flip-Square-Submatrix-Vertically/solution.js) | *Coming Soon* | [📁 21-March](./21-March/3643-Flip-Square-Submatrix-Vertically/) |
 | **3567** | [Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | <span style="color:#f59e0b">**Medium**</span> | 20 Mar 2026 | [Java](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/Solution.java) | [Python](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.py) | [C++](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.cpp) | [JS](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/solution.js) | *Coming Soon* | [📁 20-March](./20-March/3567-Minimum-Absolute-Difference-in-Sliding-Submatrix/) |
 | **3212** | [Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | <span style="color:#f59e0b">**Medium**</span> | 19 Mar 2026 | [Java](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/Solution.java) | [Python](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.py) | [C++](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.cpp) | [JS](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/solution.js) | *Coming Soon* | [📁 19-March](./19-March/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y/) |

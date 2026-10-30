@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "2840",
+    "title": "Check if Strings Can be Made Equal With Operations II",
+    "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
+    "date": "30 March 2026",
+    "dateIso": "2026-03-30",
+    "formattedDate": "30 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "30-March",
+    "problemFolder": "2840-Check-if-Strings-Can-be-Made-Equal-With-Operations-II",
+    "folderPath": "solutions/March/30-March/2840-Check-if-Strings-Can-be-Made-Equal-With-Operations-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "summary": "Determine whether two length-n strings can be made equal by swapping any two characters whose index difference is even.",
+    "approach": "Even-distance swaps allow arbitrary rearrangement within each parity group. We verify that character frequencies at even indices and odd indices match between s1 and s2 using two 26-element arrays.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/30-March/2840-Check-if-Strings-Can-be-Made-Equal-With-Operations-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/30-March/2840-Check-if-Strings-Can-be-Made-Equal-With-Operations-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/30-March/2840-Check-if-Strings-Can-be-Made-Equal-With-Operations-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/30-March/2840-Check-if-Strings-Can-be-Made-Equal-With-Operations-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "2839",
     "title": "Check if Strings Can be Made Equal With Operations I",
     "slug": "check-if-strings-can-be-made-equal-with-operations-i",

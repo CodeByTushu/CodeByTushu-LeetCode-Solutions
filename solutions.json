@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "1415",
+    "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+    "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+    "date": "14 March 2026",
+    "dateIso": "2026-03-14",
+    "formattedDate": "14 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "14-March",
+    "problemFolder": "1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n",
+    "folderPath": "solutions/March/14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/",
+    "leetcodeUrl": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Backtracking",
+      "Combinatorics",
+      "Math"
+    ],
+    "summary": "Construct the k-th lexicographical happy string of length n or return an empty string if k exceeds the total count.",
+    "approach": "Calculate total possible happy strings as 3 * 2^(n - 1). If k exceeds total, return empty string. Otherwise, convert k to 0-indexed and determine each character directly in O(n) time using binary block subdivision and branch selection.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.js"
+      }
+    }
+  },
+  {
     "id": "3296",
     "title": "Minimum Number of Seconds to Make Mountain Height Zero",
     "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",

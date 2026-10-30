@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **13 Solved** |
+| **Total Solved Problems** | **14 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1415** | [The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | <span style="color:#f59e0b">**Medium**</span> | 14 Mar 2026 | [Java](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/Solution.java) | [Python](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.py) | [C++](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.cpp) | [JS](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.js) | *Coming Soon* | [📁 14-March](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/) |
 | **3296** | [Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | <span style="color:#f59e0b">**Medium**</span> | 13 Mar 2026 | [Java](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/Solution.java) | [Python](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.py) | [C++](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.cpp) | [JS](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.js) | *Coming Soon* | [📁 13-March](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/) |
 | **3600** | [Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | <span style="color:#ef4444">**Hard**</span> | 12 Mar 2026 | [Java](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/Solution.java) | [Python](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.py) | [C++](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.cpp) | [JS](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.js) | *Coming Soon* | [📁 12-March](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/) |
 | **1009** | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | <span style="color:#10b981">**Easy**</span> | 11 Mar 2026 | [Java](./11-March/1009-Complement-of-Base-10-Integer/Solution.java) | [Python](./11-March/1009-Complement-of-Base-10-Integer/solution.py) | [C++](./11-March/1009-Complement-of-Base-10-Integer/solution.cpp) | [JS](./11-March/1009-Complement-of-Base-10-Integer/solution.js) | *Coming Soon* | [📁 11-March](./11-March/1009-Complement-of-Base-10-Integer/) |

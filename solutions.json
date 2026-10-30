@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "3296",
+    "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+    "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+    "date": "13 March 2026",
+    "dateIso": "2026-03-13",
+    "formattedDate": "13 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "13-March",
+    "problemFolder": "3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero",
+    "folderPath": "solutions/March/13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Binary Search",
+      "Math",
+      "Greedy",
+      "Heap (Priority Queue)"
+    ],
+    "summary": "Find the minimum number of seconds for all workers to reduce the mountain height to zero simultaneously.",
+    "approach": "Binary search on the minimum time T required. For each worker with time w, solve the triangular equation w * x * (x + 1) / 2 <= T in O(1) time using the quadratic formula x = floor((sqrt(1 + 8 * floor(T / w)) - 1) / 2) to check if the sum of reduced heights reaches mountainHeight.",
+    "timeComplexity": "O(N * log(high))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.js"
+      }
+    }
+  },
+  {
     "id": "3600",
     "title": "Maximize Spanning Tree Stability with Upgrades",
     "slug": "maximize-spanning-tree-stability-with-upgrades",

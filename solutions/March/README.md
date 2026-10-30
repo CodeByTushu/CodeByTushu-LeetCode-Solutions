@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **12 Solved** |
+| **Total Solved Problems** | **13 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3296** | [Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | <span style="color:#f59e0b">**Medium**</span> | 13 Mar 2026 | [Java](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/Solution.java) | [Python](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.py) | [C++](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.cpp) | [JS](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/solution.js) | *Coming Soon* | [📁 13-March](./13-March/3296-Minimum-Number-of-Seconds-to-Make-Mountain-Height-Zero/) |
 | **3600** | [Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | <span style="color:#ef4444">**Hard**</span> | 12 Mar 2026 | [Java](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/Solution.java) | [Python](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.py) | [C++](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.cpp) | [JS](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/solution.js) | *Coming Soon* | [📁 12-March](./12-March/3600-Maximize-Spanning-Tree-Stability-with-Upgrades/) |
 | **1009** | [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | <span style="color:#10b981">**Easy**</span> | 11 Mar 2026 | [Java](./11-March/1009-Complement-of-Base-10-Integer/Solution.java) | [Python](./11-March/1009-Complement-of-Base-10-Integer/solution.py) | [C++](./11-March/1009-Complement-of-Base-10-Integer/solution.cpp) | [JS](./11-March/1009-Complement-of-Base-10-Integer/solution.js) | *Coming Soon* | [📁 11-March](./11-March/1009-Complement-of-Base-10-Integer/) |
 | **3130** | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | <span style="color:#ef4444">**Hard**</span> | 10 Mar 2026 | [Java](./10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/Solution.java) | [Python](./10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/solution.py) | [C++](./10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/solution.cpp) | [JS](./10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/solution.js) | *Coming Soon* | [📁 10-March](./10-March/3130-Find-All-Possible-Stable-Binary-Arrays-II/) |

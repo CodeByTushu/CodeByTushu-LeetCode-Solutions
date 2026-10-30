@@ -3,7 +3,7 @@
 - **Publication Date:** 30 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Full Walkthrough on YouTube](https://youtu.be/tdosqRxqDLw?si=Ubsg-S8RMVIR7wmE)
 
 ---
 

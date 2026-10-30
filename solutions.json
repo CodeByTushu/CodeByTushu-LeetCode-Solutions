@@ -9854,6 +9854,55 @@
     }
   },
   {
+    "id": "1622",
+    "title": "Fancy Sequence",
+    "slug": "fancy-sequence",
+    "date": "15 March 2026",
+    "dateIso": "2026-03-15",
+    "formattedDate": "15 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "15-March",
+    "problemFolder": "1622-Fancy-Sequence",
+    "folderPath": "solutions/March/15-March/1622-Fancy-Sequence",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/fancy-sequence/",
+    "leetcodeUrl": "https://leetcode.com/problems/fancy-sequence/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Math",
+      "Design",
+      "Segment Tree"
+    ],
+    "summary": "Design a data structure that appends integers, applies global increment and multiplication operations modulo 10^9 + 7, and queries values at any index in O(1) time.",
+    "approach": "Maintain global affine transformation coefficients (a, b) representing x -> (a * x + b) mod MOD. For each append(val), store the normalized base value (val - b) * a^(-1) mod MOD using Fermat's Little Theorem. On getIndex(idx), evaluate (a * base[idx] + b) mod MOD in O(1) time.",
+    "timeComplexity": "O(log MOD) append, O(1) others",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/15-March/1622-Fancy-Sequence/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/15-March/1622-Fancy-Sequence/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/15-March/1622-Fancy-Sequence/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/15-March/1622-Fancy-Sequence/solution.js"
+      }
+    }
+  },
+  {
     "id": "1415",
     "title": "The k-th Lexicographical String of All Happy Strings of Length n",
     "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",

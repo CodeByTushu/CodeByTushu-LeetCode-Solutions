@@ -9854,6 +9854,56 @@
     }
   },
   {
+    "id": "1727",
+    "title": "Largest Submatrix With Rearrangements",
+    "slug": "largest-submatrix-with-rearrangements",
+    "date": "17 March 2026",
+    "dateIso": "2026-03-17",
+    "formattedDate": "17 Mar 2026",
+    "year": "2026",
+    "month": "March",
+    "dayFolder": "17-March",
+    "problemFolder": "1727-Largest-Submatrix-With-Rearrangements",
+    "folderPath": "solutions/March/17-March/1727-Largest-Submatrix-With-Rearrangements",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/largest-submatrix-with-rearrangements/",
+    "leetcodeUrl": "https://leetcode.com/problems/largest-submatrix-with-rearrangements/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Matrix",
+      "Sorting"
+    ],
+    "summary": "Return the area of the largest submatrix of 1s in a binary matrix after arbitrarily rearranging its columns.",
+    "approach": "Accumulate consecutive 1s along each column in-place. For each row, sort heights and compute candidate rectangle areas height * width, tracking the global maximum.",
+    "timeComplexity": "O(m * n log n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/March/17-March/1727-Largest-Submatrix-With-Rearrangements/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/March/17-March/1727-Largest-Submatrix-With-Rearrangements/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/March/17-March/1727-Largest-Submatrix-With-Rearrangements/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/March/17-March/1727-Largest-Submatrix-With-Rearrangements/solution.js"
+      }
+    }
+  },
+  {
     "id": "1878",
     "title": "Get Biggest Three Rhombus Sums in a Grid",
     "slug": "get-biggest-three-rhombus-sums-in-a-grid",

@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | March 2026 (Q1 — Spring) |
 | **Status** | 🟢 **Active Series** |
-| **Total Solved Problems** | **16 Solved** |
+| **Total Solved Problems** | **17 Solved** |
 | **Language Standards** | Java, Python, C++, JavaScript (100% Coverage) |
 | **Current Active Month** | 👉 **[October 2026 (15 Solved Solutions)](../October/)** |
 
@@ -50,6 +50,7 @@ solutions/March/
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1727** | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | <span style="color:#f59e0b">**Medium**</span> | 17 Mar 2026 | [Java](./17-March/1727-Largest-Submatrix-With-Rearrangements/Solution.java) | [Python](./17-March/1727-Largest-Submatrix-With-Rearrangements/solution.py) | [C++](./17-March/1727-Largest-Submatrix-With-Rearrangements/solution.cpp) | [JS](./17-March/1727-Largest-Submatrix-With-Rearrangements/solution.js) | *Coming Soon* | [📁 17-March](./17-March/1727-Largest-Submatrix-With-Rearrangements/) |
 | **1878** | [Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | <span style="color:#f59e0b">**Medium**</span> | 16 Mar 2026 | [Java](./16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/Solution.java) | [Python](./16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/solution.py) | [C++](./16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/solution.cpp) | [JS](./16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/solution.js) | *Coming Soon* | [📁 16-March](./16-March/1878-Get-Biggest-Three-Rhombus-Sums-in-a-Grid/) |
 | **1622** | [Fancy Sequence](https://leetcode.com/problems/fancy-sequence/) | <span style="color:#ef4444">**Hard**</span> | 15 Mar 2026 | [Java](./15-March/1622-Fancy-Sequence/Solution.java) | [Python](./15-March/1622-Fancy-Sequence/solution.py) | [C++](./15-March/1622-Fancy-Sequence/solution.cpp) | [JS](./15-March/1622-Fancy-Sequence/solution.js) | *Coming Soon* | [📁 15-March](./15-March/1622-Fancy-Sequence/) |
 | **1415** | [The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | <span style="color:#f59e0b">**Medium**</span> | 14 Mar 2026 | [Java](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/Solution.java) | [Python](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.py) | [C++](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.cpp) | [JS](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/solution.js) | *Coming Soon* | [📁 14-March](./14-March/1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n/) |

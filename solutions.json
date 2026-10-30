@@ -1,5 +1,58 @@
 [
   {
+    "id": "3970",
+    "title": "Shortest Path With At Most K Consecutive Identical Characters",
+    "slug": "shortest-path-with-at-most-k-consecutive-identical-characters",
+    "date": "30 October 2026",
+    "dateIso": "2026-10-30",
+    "formattedDate": "30 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "30-October",
+    "problemFolder": "3970-Shortest-Path-With-At-Most-K-Consecutive-Identical-Characters",
+    "folderPath": "solutions/October/30-October/3970-Shortest-Path-With-At-Most-K-Consecutive-Identical-Characters",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
+    "leetcodeUrl": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
+    "youtubeUrl": "",
+    "tags": [
+      "Graph",
+      "Dijkstra's Algorithm",
+      "Shortest Path",
+      "State-Space Search",
+      "Heap (PriorityQueue)",
+      "Bit Manipulation",
+      "Array"
+    ],
+    "summary": "Find the minimum edge weight path from node 0 to node n - 1 such that no more than k consecutive identical characters appear in the labels concatenation.",
+    "approach": "Augment graph vertices into state (u, r) where u is the node and r is the consecutive identical character run length. Execute Dijkstra algorithm using primitive 64-bit packed longs in a min-heap and flat adjacency arrays, terminating early when reaching destination node n - 1.",
+    "timeComplexity": "O((N * K + M * K) log(N * K))",
+    "auxiliarySpaceComplexity": "O(N * K + M)",
+    "spaceComplexity": "O(N * K + M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/30-October/3970-Shortest-Path-With-At-Most-K-Consecutive-Identical-Characters/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/30-October/3970-Shortest-Path-With-At-Most-K-Consecutive-Identical-Characters/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/30-October/3970-Shortest-Path-With-At-Most-K-Consecutive-Identical-Characters/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/30-October/3970-Shortest-Path-With-At-Most-K-Consecutive-Identical-Characters/solution.js"
+      }
+    }
+  },
+  {
     "id": "3841",
     "title": "Palindromic Path Queries in a Tree",
     "slug": "palindromic-path-queries-in-a-tree",

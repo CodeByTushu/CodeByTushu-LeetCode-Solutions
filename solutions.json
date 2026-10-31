@@ -9905,6 +9905,56 @@
     }
   },
   {
+    "id": 3661,
+    "title": "Maximum Walls Destroyed by Robots",
+    "slug": "maximum-walls-destroyed-by-robots",
+    "date": "03 April 2026",
+    "dateIso": "2026-04-03",
+    "formattedDate": "03 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "03-April",
+    "problemFolder": "3661-Maximum-Walls-Destroyed-by-Robots",
+    "folderPath": "solutions/April/03-April/3661-Maximum-Walls-Destroyed-by-Robots",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "Binary Search",
+      "Sorting",
+      "Array"
+    ],
+    "summary": "Determine the maximum number of unique walls destroyed along a 1D line by choosing whether each robot fires left or right, subject to bullet range limits and adjacent robot obstacles.",
+    "approach": "Sort robots and walls. Truncate bullet ranges based on neighboring robots. Dynamic programming tracks max walls destroyed when robot i fires Left or Right, using binary search to count walls in intervals and resolving adjacent overlapping coverage between Right and Left shots.",
+    "timeComplexity": "O(N log N + M log M + N log M)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/03-April/3661-Maximum-Walls-Destroyed-by-Robots/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/03-April/3661-Maximum-Walls-Destroyed-by-Robots/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/03-April/3661-Maximum-Walls-Destroyed-by-Robots/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/03-April/3661-Maximum-Walls-Destroyed-by-Robots/solution.js"
+      }
+    }
+  },
+  {
     "id": 3418,
     "title": "Maximum Amount of Money Robot Can Earn",
     "slug": "maximum-amount-of-money-robot-can-earn",

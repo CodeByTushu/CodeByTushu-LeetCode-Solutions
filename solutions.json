@@ -9905,6 +9905,55 @@
     }
   },
   {
+    "id": 3418,
+    "title": "Maximum Amount of Money Robot Can Earn",
+    "slug": "maximum-amount-of-money-robot-can-earn",
+    "date": "02 April 2026",
+    "dateIso": "2026-04-02",
+    "formattedDate": "02 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "02-April",
+    "problemFolder": "3418-Maximum-Amount-of-Money-Robot-Can-Earn",
+    "folderPath": "solutions/April/02-April/3418-Maximum-Amount-of-Money-Robot-Can-Earn",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "Matrix",
+      "Array"
+    ],
+    "summary": "Calculate the maximum profit a robot can earn moving right and down across a grid, with the ability to neutralize up to 2 robbers stealing coins.",
+    "approach": "Utilize 3D dynamic programming tracking cell coordinates (i, j) and remaining neutralization powers k in {0, 1, 2}. Compute maximum transition from the top or left while deciding whether to absorb or neutralize negative cell costs.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m * n)",
+    "spaceComplexity": "O(m * n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/02-April/3418-Maximum-Amount-of-Money-Robot-Can-Earn/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/02-April/3418-Maximum-Amount-of-Money-Robot-Can-Earn/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/02-April/3418-Maximum-Amount-of-Money-Robot-Can-Earn/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/02-April/3418-Maximum-Amount-of-Money-Robot-Can-Earn/solution.js"
+      }
+    }
+  },
+  {
     "id": 2751,
     "title": "Robot Collisions",
     "slug": "robot-collisions",

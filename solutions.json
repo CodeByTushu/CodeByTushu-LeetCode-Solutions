@@ -9905,6 +9905,55 @@
     }
   },
   {
+    "id": 2075,
+    "title": "Decode the Slanted Ciphertext",
+    "slug": "decode-the-slanted-ciphertext",
+    "date": "04 April 2026",
+    "dateIso": "2026-04-04",
+    "formattedDate": "04 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "04-April",
+    "problemFolder": "2075-Decode-the-Slanted-Ciphertext",
+    "folderPath": "solutions/April/04-April/2075-Decode-the-Slanted-Ciphertext",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/decode-the-slanted-ciphertext/",
+    "leetcodeUrl": "https://leetcode.com/problems/decode-the-slanted-ciphertext/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Matrix",
+      "Simulation"
+    ],
+    "summary": "Reconstruct the original text from a slanted transposition cipher by reading diagonal paths across the matrix and removing trailing padding spaces.",
+    "approach": "Calculate matrix dimensions cols = N / rows. Traverse each diagonal starting at row 0 and column c, moving down-right (r, c + r) while within matrix bounds, and appending characters from the encoded string. Finally, strip any trailing spaces from padding.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/04-April/2075-Decode-the-Slanted-Ciphertext/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/04-April/2075-Decode-the-Slanted-Ciphertext/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/04-April/2075-Decode-the-Slanted-Ciphertext/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/04-April/2075-Decode-the-Slanted-Ciphertext/solution.js"
+      }
+    }
+  },
+  {
     "id": 3661,
     "title": "Maximum Walls Destroyed by Robots",
     "slug": "maximum-walls-destroyed-by-robots",

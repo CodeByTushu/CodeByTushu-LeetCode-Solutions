@@ -1,5 +1,56 @@
 [
   {
+    "id": "3665",
+    "title": "Twisted Mirror Path Count",
+    "slug": "twisted-mirror-path-count",
+    "date": "31 October 2026",
+    "dateIso": "2026-10-31",
+    "formattedDate": "31 Oct 2026",
+    "year": "2026",
+    "month": "October",
+    "dayFolder": "31-October",
+    "problemFolder": "3665-Twisted-Mirror-Path-Count",
+    "folderPath": "solutions/October/31-October/3665-Twisted-Mirror-Path-Count",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/twisted-mirror-path-count/",
+    "leetcodeUrl": "https://leetcode.com/problems/twisted-mirror-path-count/",
+    "youtubeUrl": "",
+    "tags": [
+      "Dynamic Programming",
+      "Matrix",
+      "Simulation",
+      "Grid Path Counting",
+      "Array"
+    ],
+    "summary": "Calculate the number of unique paths from the top-left to bottom-right in a grid where mirror cells deflect horizontal movement downwards and vertical movement rightwards, modulo 10^9 + 7.",
+    "approach": "Use directional push dynamic programming with state f[i][j][dir] tracking incoming horizontal and vertical entries. In empty cells, paths branch right and down; in mirror cells, incoming directions are deflected 90 degrees.",
+    "timeComplexity": "O(M * N)",
+    "auxiliarySpaceComplexity": "O(M * N)",
+    "spaceComplexity": "O(M * N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/October/31-October/3665-Twisted-Mirror-Path-Count/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.js"
+      }
+    }
+  },
+  {
     "id": "3970",
     "title": "Shortest Path With At Most K Consecutive Identical Characters",
     "slug": "shortest-path-with-at-most-k-consecutive-identical-characters",

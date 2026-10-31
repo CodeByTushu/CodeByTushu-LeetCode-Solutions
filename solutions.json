@@ -9905,6 +9905,55 @@
     }
   },
   {
+    "id": 3741,
+    "title": "Minimum Distance Between Three Equal Elements II",
+    "slug": "minimum-distance-between-three-equal-elements-ii",
+    "date": "11 April 2026",
+    "dateIso": "2026-04-11",
+    "formattedDate": "11 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "11-April",
+    "problemFolder": "3741-Minimum-Distance-Between-Three-Equal-Elements-II",
+    "folderPath": "solutions/April/11-April/3741-Minimum-Distance-Between-Three-Equal-Elements-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math"
+    ],
+    "summary": "Find the minimum distance among good triplets of three identical elements in an array scaled up to 10^5 elements using previous index tracking.",
+    "approach": "Simplify |i - j| + |j - k| + |k - i| for sorted indices i < j < k to 2 * (k - i). Track the two most recent occurrences of each value in direct primitive arrays of size N + 1 and update the minimum distance across consecutive triplets in a single O(N) pass.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/11-April/3741-Minimum-Distance-Between-Three-Equal-Elements-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/11-April/3741-Minimum-Distance-Between-Three-Equal-Elements-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/11-April/3741-Minimum-Distance-Between-Three-Equal-Elements-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/11-April/3741-Minimum-Distance-Between-Three-Equal-Elements-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3740,
     "title": "Minimum Distance Between Three Equal Elements I",
     "slug": "minimum-distance-between-three-equal-elements-i",

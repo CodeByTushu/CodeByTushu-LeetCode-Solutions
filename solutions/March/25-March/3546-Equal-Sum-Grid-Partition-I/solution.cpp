@@ -1,18 +1,9 @@
 /**
- * Problem: 3546. Equal Sum Grid Partition I
+ * Problem: LeetCode 3546 - Equal Sum Grid Partition I
  * Difficulty: Medium
  * Language: C++
- * 
- * Approach:
- * Compute total sum, row sums, and column sums using 64-bit integers.
- * If total sum is odd, equal partition is impossible.
- * Iterate through row boundaries (0 to m - 2) and column boundaries (0 to n - 2)
- * to verify if any running prefix sum equals totalSum / 2.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m + n) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <vector>
 
 using namespace std;

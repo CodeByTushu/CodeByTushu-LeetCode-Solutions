@@ -1,18 +1,9 @@
 /**
- * Problem: 1594. Maximum Non Negative Product in a Matrix
+ * Problem: LeetCode 1594 - Maximum Non Negative Product in a Matrix
  * Difficulty: Medium
  * Language: C++
- * 
- * Approach:
- * Track both maximum and minimum path products to each cell (i, j) using Dynamic Programming.
- * Because grid elements can be negative, multiplying by a negative number can turn the smallest
- * negative product into the largest positive product.
- * Using 64-bit signed integers (long long) prevents overflow since max product <= 4^29 < 2^63 - 1.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <vector>
 #include <algorithm>
 

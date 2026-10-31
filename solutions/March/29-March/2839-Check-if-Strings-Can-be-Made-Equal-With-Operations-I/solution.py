@@ -1,17 +1,9 @@
 """
-Problem: 2839. Check if Strings Can be Made Equal With Operations I
+Problem: LeetCode 2839 - Check if Strings Can be Made Equal With Operations I
 Difficulty: Easy
-Language: Python 3
-
-Approach:
-Even-indexed characters (0, 2) can only swap with each other.
-Odd-indexed characters (1, 3) can only swap with each other.
-Both pairs must have matching multisets of characters between s1 and s2.
-
-Time Complexity: O(1)
-Space Complexity: O(1)
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def canBeEqual(self, s1: str, s2: str) -> bool:
         even_match = (

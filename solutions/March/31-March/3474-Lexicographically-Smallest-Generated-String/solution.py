@@ -1,19 +1,9 @@
 """
-Problem: 3474. Lexicographically Smallest Generated String
+Problem: LeetCode 3474 - Lexicographically Smallest Generated String
 Difficulty: Hard
-Language: Python 3
-
-Approach:
-1. Enforce 'T' constraints by fixing corresponding characters of str2.
-2. Fill unassigned positions with 'a' for lexicographical minimality.
-3. For each 'F' index where the window equals str2, change the rightmost
-   modifiable position in that window to 'b'.
-4. Perform final verification to ensure all constraints are satisfied.
-
-Time Complexity: O(n * m)
-Space Complexity: O(n + m) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def generateString(self, str1: str, str2: str) -> str:
         n = len(str1)

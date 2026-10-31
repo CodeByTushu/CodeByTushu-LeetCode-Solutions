@@ -1,17 +1,9 @@
 /**
- * Problem: 2840. Check if Strings Can be Made Equal With Operations II
+ * Problem: LeetCode 2840 - Check if Strings Can be Made Equal With Operations II
  * Difficulty: Medium
  * Language: C++
- * 
- * Approach:
- * Any two indices with even difference (j - i % 2 == 0) can be swapped.
- * This partitions characters into independent even-index and odd-index multisets.
- * We count frequencies across both parities in a single pass.
- * 
- * Time Complexity: O(n)
- * Space Complexity: O(1) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <string>
 #include <vector>
 

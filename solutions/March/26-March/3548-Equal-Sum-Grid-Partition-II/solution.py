@@ -1,22 +1,9 @@
 """
-Problem: 3548. Equal Sum Grid Partition II
+Problem: LeetCode 3548 - Equal Sum Grid Partition II
 Difficulty: Hard
-Language: Python 3
-
-Approach:
-Determine if a horizontal or vertical cut can partition the grid into two non-empty
-sections of equal sum directly or by discounting at most one cell such that the discounted
-section remains connected.
-
-We test horizontal cuts across 4 transformations (original, reverse rows, transpose, reverse transposed).
-For any section with dimensions >= 2 x 2, removing any cell preserves connectivity.
-For a 1 x C row (C > 1), only the 2 endpoints can be removed.
-For an R x 1 column (R > 1), only the 2 endpoints can be removed.
-
-Time Complexity: O(m * n)
-Space Complexity: O(m * n)
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def canPartitionGrid(self, grid: list[list[int]]) -> bool:
         total_sum = sum(sum(row) for row in grid)

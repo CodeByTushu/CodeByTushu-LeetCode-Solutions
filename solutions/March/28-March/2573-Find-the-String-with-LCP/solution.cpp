@@ -1,19 +1,9 @@
 /**
- * Problem: 2573. Find the String with LCP
+ * Problem: LeetCode 2573 - Find the String with LCP
  * Difficulty: Hard
  * Language: C++
- * 
- * Approach:
- * 1. Greedily build the lexicographically smallest candidate string by scanning
- *    from 0 to n - 1 and assigning available letters ('a' through 'z') to positions
- *    where lcp[i][j] > 0.
- * 2. Check DP recurrence in reverse order to ensure the candidate string actually
- *    produces the given LCP matrix.
- * 
- * Time Complexity: O(n^2)
- * Space Complexity: O(n) auxiliary space (excluding returned string)
+ * Author: CodeByTushu
  */
-
 #include <vector>
 #include <string>
 

@@ -1,16 +1,9 @@
 """
-Problem: 3546. Equal Sum Grid Partition I
+Problem: LeetCode 3546 - Equal Sum Grid Partition I
 Difficulty: Medium
-Language: Python 3
-
-Approach:
-Check if a horizontal or vertical cut can split the grid into two non-empty sections with equal sums.
-Total sum must be even. Check running row sums and column sums against totalSum // 2.
-
-Time Complexity: O(m * n)
-Space Complexity: O(m + n) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def canPartitionGrid(self, grid: list[list[int]]) -> bool:
         m, n = len(grid), len(grid[0])

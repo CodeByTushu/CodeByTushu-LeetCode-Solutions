@@ -1,17 +1,9 @@
 /**
- * Problem: 2906. Construct Product Matrix
+ * Problem: LeetCode 2906 - Construct Product Matrix
  * Difficulty: Medium
  * Language: C++
- * 
- * Approach:
- * Two-pass prefix and suffix product accumulation in row-major order.
- * In the first pass, p[i][j] stores the prefix product of all preceding elements modulo 12345.
- * In the second pass, p[i][j] is multiplied by the suffix product of all succeeding elements modulo 12345.
- * 
- * Time Complexity: O(n * m)
- * Space Complexity: O(1) auxiliary space (excluding output matrix)
+ * Author: CodeByTushu
  */
-
 #include <vector>
 
 using namespace std;

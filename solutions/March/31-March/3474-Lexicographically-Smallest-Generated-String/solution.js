@@ -1,19 +1,8 @@
 /**
- * Problem: 3474. Lexicographically Smallest Generated String
+ * Problem: LeetCode 3474 - Lexicographically Smallest Generated String
  * Difficulty: Hard
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Greedily satisfy 'T' constraints, fill gaps with 'a', break any accidental
- * 'F' matches by flipping the rightmost unfixed character in that window to 'b',
- * and verify the result.
- * 
- * Time Complexity: O(n * m)
- * Space Complexity: O(n + m) auxiliary space
- * 
- * @param {string} str1
- * @param {string} str2
- * @return {string}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var generateString = function(str1, str2) {
     const n = str1.length;

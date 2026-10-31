@@ -1,17 +1,9 @@
 """
-Problem: 2840. Check if Strings Can be Made Equal With Operations II
+Problem: LeetCode 2840 - Check if Strings Can be Made Equal With Operations II
 Difficulty: Medium
-Language: Python 3
-
-Approach:
-Even-indexed positions and odd-indexed positions can be permuted arbitrarily within
-their own parity groups via even-distance swaps.
-Compare sorted slices or character frequencies of s1 and s2 for both parities.
-
-Time Complexity: O(n)
-Space Complexity: O(1) auxiliary space (26 characters)
+Language: Python
+Author: CodeByTushu
 """
-
 from collections import Counter
 
 class Solution:

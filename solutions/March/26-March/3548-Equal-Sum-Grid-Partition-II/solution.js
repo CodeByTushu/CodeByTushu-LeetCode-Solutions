@@ -1,25 +1,8 @@
 /**
- * Problem: 3548. Equal Sum Grid Partition II
+ * Problem: LeetCode 3548 - Equal Sum Grid Partition II
  * Difficulty: Hard
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Evaluate horizontal cuts across four transformations of the grid:
- * 1. Original (horizontal cut, discount top)
- * 2. Reversed rows (horizontal cut, discount bottom)
- * 3. Transposed (vertical cut, discount left)
- * 4. Reversed transposed (vertical cut, discount right)
- * 
- * A discounted section remains connected if:
- * - Dimensions >= 2 x 2: any cell can be discounted.
- * - Single row (1 x C, C > 1): only endpoints grid[0][0] and grid[0][C - 1] can be discounted.
- * - Single column (R x 1, R > 1): only endpoints grid[0][0] and grid[R - 1][0] can be discounted.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n)
- * 
- * @param {number[][]} grid
- * @return {boolean}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var canPartitionGrid = function(grid) {
     const m = grid.length;

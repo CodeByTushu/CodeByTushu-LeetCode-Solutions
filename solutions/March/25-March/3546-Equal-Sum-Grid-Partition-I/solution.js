@@ -1,18 +1,8 @@
 /**
- * Problem: 3546. Equal Sum Grid Partition I
+ * Problem: LeetCode 3546 - Equal Sum Grid Partition I
  * Difficulty: Medium
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Accumulate total sum, row sums, and column sums.
- * Check whether any prefix row sum (up to m - 2) or prefix column sum (up to n - 2)
- * equals totalSum / 2.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m + n) auxiliary space
- * 
- * @param {number[][]} grid
- * @return {boolean}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var canPartitionGrid = function(grid) {
     const m = grid.length;

@@ -1,18 +1,8 @@
 /**
- * Problem: 3567. Minimum Absolute Difference in Sliding Submatrix
+ * Problem: LeetCode 3567 - Minimum Absolute Difference in Sliding Submatrix
  * Difficulty: Medium
  * Language: Java
- * 
- * Approach:
- * For each contiguous k x k submatrix starting at top-left corner (i, j),
- * we extract all k * k elements into an array.
- * We sort the array in ascending order to bring values with minimal differences adjacent to each other.
- * We then iterate through adjacent elements: whenever two adjacent values are distinct,
- * we compute their difference and update the minimum difference.
- * If all elements in the submatrix are identical (or no two distinct values exist), the result is 0.
- * 
- * Time Complexity: O((m - k + 1) * (n - k + 1) * k^2 * log(k))
- * Space Complexity: O(k^2) auxiliary space for collecting window elements
+ * Author: CodeByTushu
  */
 import java.util.Arrays;
 

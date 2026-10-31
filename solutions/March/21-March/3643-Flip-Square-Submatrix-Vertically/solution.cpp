@@ -1,18 +1,9 @@
 /**
- * Problem: 3643. Flip Square Submatrix Vertically
+ * Problem: LeetCode 3643 - Flip Square Submatrix Vertically
  * Difficulty: Easy
  * Language: C++
- * 
- * Approach:
- * The square submatrix spans rows [x, x + k - 1] and columns [y, y + k - 1].
- * We use two row pointers initialized at top = x and bottom = x + k - 1.
- * For each pair of rows, we swap elements column-by-column across the submatrix width.
- * Then move top downward and bottom upward until they meet.
- * 
- * Time Complexity: O(k^2)
- * Space Complexity: O(1) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <vector>
 #include <algorithm>
 

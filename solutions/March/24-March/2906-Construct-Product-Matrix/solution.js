@@ -1,16 +1,8 @@
 /**
- * Problem: 2906. Construct Product Matrix
+ * Problem: LeetCode 2906 - Construct Product Matrix
  * Difficulty: Medium
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * 2D Prefix and Suffix Product accumulation in row-major order modulo 12345.
- * 
- * Time Complexity: O(n * m)
- * Space Complexity: O(1) auxiliary space
- * 
- * @param {number[][]} grid
- * @return {number[][]}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var constructProductMatrix = function(grid) {
     const n = grid.length;

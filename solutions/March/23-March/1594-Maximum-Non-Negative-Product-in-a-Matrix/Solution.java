@@ -1,21 +1,8 @@
 /**
- * Problem: 1594. Maximum Non Negative Product in a Matrix
+ * Problem: LeetCode 1594 - Maximum Non Negative Product in a Matrix
  * Difficulty: Medium
  * Language: Java
- * 
- * Approach:
- * At any cell (i, j), multiplying by a negative number can flip a minimum product
- * to a maximum product and vice-versa. Therefore, we use Dynamic Programming to track
- * both the maximum and minimum products to reach cell (i, j) from (0, 0).
- * 
- * For each cell (i, j), we consider transitions from (i - 1, j) and (i, j - 1),
- * computing all 4 possible products with grid[i][j], and taking the maximum and minimum.
- * Products can reach up to 4^29, which comfortably fits in a 64-bit signed long.
- * Finally, if the maximum product at (m - 1, n - 1) is negative, we return -1;
- * otherwise, we return maxProd[m - 1][n - 1] % (10^9 + 7).
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n) auxiliary space
+ * Author: CodeByTushu
  */
 class Solution {
     public int maxProductPath(int[][] grid) {

@@ -1,18 +1,9 @@
 """
-Problem: 2946. Matrix Similarity After Cyclic Shifts
+Problem: LeetCode 2946 - Matrix Similarity After Cyclic Shifts
 Difficulty: Easy
-Language: Python 3
-
-Approach:
-Even rows shift left by k, odd rows shift right by k.
-An array of length n is invariant under cyclic shifts of k if and only if
-mat[i][j] == mat[i][(j + k) % n] for all j.
-We take k %= n and verify this equivalence directly for all cells.
-
-Time Complexity: O(m * n)
-Space Complexity: O(1) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def areSimilar(self, mat: list[list[int]], k: int) -> bool:
         m = len(mat)

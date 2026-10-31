@@ -1,32 +1,9 @@
 /**
- * Problem: 3548. Equal Sum Grid Partition II
+ * Problem: LeetCode 3548 - Equal Sum Grid Partition II
  * Difficulty: Hard
  * Language: Java
- * 
- * Approach:
- * We need to determine if a single horizontal or vertical cut can partition the grid
- * into two non-empty sections whose sums are equal or can be made equal by discounting
- * at most one single cell, such that the discounted section remains connected.
- * 
- * Key Observations:
- * 1. An R x C section with R >= 2 and C >= 2 is 2-connected (biconnected). Removing ANY
- *    single cell from such a section leaves it connected.
- * 2. If R == 1 and C > 1, the section is a single row. Removing an interior cell disconnects it;
- *    only the endpoints (first or last cell) can be discounted.
- * 3. If C == 1 and R > 1, the section is a single column. Only the endpoints (first or last cell)
- *    can be discounted.
- * 4. We can check horizontal cuts where the discount (if any) is taken from the top section.
- *    By transforming the grid (original, reversed rows, transposed, and reversed transposed),
- *    we cover all 4 possibilities:
- *    - Horizontal cut, discount from top
- *    - Horizontal cut, discount from bottom (reversed rows)
- *    - Vertical cut, discount from left (transposed)
- *    - Vertical cut, discount from right (reversed transposed)
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n)
+ * Author: CodeByTushu
  */
-
 import java.util.HashSet;
 
 class Solution {

@@ -1,19 +1,9 @@
 /**
- * Problem: 3567. Minimum Absolute Difference in Sliding Submatrix
+ * Problem: LeetCode 3567 - Minimum Absolute Difference in Sliding Submatrix
  * Difficulty: Medium
  * Language: C++
- * 
- * Approach:
- * For each valid submatrix of size k x k starting at (i, j),
- * collect all k * k elements into a vector and sort them.
- * Iterate through the sorted elements to compute the difference between
- * adjacent distinct elements. The minimum of these differences is stored in ans[i][j].
- * If all elements are equal or k == 1, ans[i][j] is 0.
- * 
- * Time Complexity: O((m - k + 1) * (n - k + 1) * k^2 * log(k))
- * Space Complexity: O(k^2) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <vector>
 #include <algorithm>
 #include <climits>

@@ -1,20 +1,8 @@
 /**
- * Problem: 2946. Matrix Similarity After Cyclic Shifts
+ * Problem: LeetCode 2946 - Matrix Similarity After Cyclic Shifts
  * Difficulty: Easy
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Cyclic shift left (even rows) or right (odd rows) preserves row equality
- * if and only if mat[i][j] === mat[i][(j + k) % n] for all j.
- * 
- * Reduce k modulo n and perform an early-exit comparison across all cells.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(1) auxiliary space
- * 
- * @param {number[][]} mat
- * @param {number} k
- * @return {boolean}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var areSimilar = function(mat, k) {
     const m = mat.length;

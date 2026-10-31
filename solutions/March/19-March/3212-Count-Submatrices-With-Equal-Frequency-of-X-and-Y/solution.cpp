@@ -1,19 +1,9 @@
 /**
- * Problem: 3212. Count Submatrices With Equal Frequency of X and Y
+ * Problem: LeetCode 3212 - Count Submatrices With Equal Frequency of X and Y
  * Difficulty: Medium
  * Language: C++
- * 
- * Approach:
- * Every submatrix containing grid[0][0] is uniquely defined by its bottom-right cell (i, j).
- * We maintain running column prefix counts colX and colY of sizes n.
- * For each cell (i, j), we accumulate column frequencies across the row,
- * giving the exact count of 'X' and 'Y' in the submatrix from (0, 0) to (i, j).
- * If countX == countY and countX > 0, increment the answer.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(n) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <vector>
 
 using namespace std;

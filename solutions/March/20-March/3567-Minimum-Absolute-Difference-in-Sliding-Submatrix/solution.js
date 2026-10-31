@@ -1,20 +1,8 @@
 /**
- * Problem: 3567. Minimum Absolute Difference in Sliding Submatrix
+ * Problem: LeetCode 3567 - Minimum Absolute Difference in Sliding Submatrix
  * Difficulty: Medium
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * For each k x k sliding window with top-left corner (i, j),
- * extract all k^2 values into an array, sort in ascending order,
- * and find the minimum positive difference between consecutive unequal values.
- * If all values are identical or k = 1, the result is 0.
- * 
- * Time Complexity: O((m - k + 1) * (n - k + 1) * k^2 * log(k))
- * Space Complexity: O(k^2) auxiliary space
- * 
- * @param {number[][]} grid
- * @param {number} k
- * @return {number[][]}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var minAbsDiff = function(grid, k) {
     const m = grid.length;

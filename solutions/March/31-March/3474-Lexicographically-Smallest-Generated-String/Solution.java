@@ -1,36 +1,9 @@
 /**
- * Problem: 3474. Lexicographically Smallest Generated String
+ * Problem: LeetCode 3474 - Lexicographically Smallest Generated String
  * Difficulty: Hard
  * Language: Java
- * 
- * Approach:
- * We need to construct the lexicographically smallest string of length n + m - 1
- * that matches str2 at all indices i where str1[i] == 'T', and does not match str2
- * at all indices i where str1[i] == 'F'.
- * 
- * 1. Enforce 'T' Constraints:
- *    - For each i where str1[i] == 'T', write str2[j] to word[i + j].
- *    - If any cell is assigned two conflicting characters, return "" immediately.
- *    - Mark all indices covered by 'T' constraints as non-modifiable.
- * 
- * 2. Fill Unconstrained Positions with 'a':
- *    - To make the string lexicographically minimal, fill all remaining unassigned
- *      positions with 'a'.
- * 
- * 3. Satisfy 'F' Constraints:
- *    - For each i where str1[i] == 'F', check if word[i .. i + m - 1] equals str2.
- *    - If an accidental match occurs, break it by changing the rightmost modifiable
- *      index in [i, i + m - 1] to 'b'.
- *    - If no modifiable index exists in that window, return "" immediately.
- *    - Lock that modified index so it is not altered later.
- * 
- * 4. Final Verification:
- *    - Verify all 'T' and 'F' conditions across the completed string.
- * 
- * Time Complexity: O(n * m)
- * Space Complexity: O(n + m) auxiliary space
+ * Author: CodeByTushu
  */
-
 class Solution {
     public String generateString(String str1, String str2) {
         int n = str1.length();

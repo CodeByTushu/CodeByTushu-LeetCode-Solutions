@@ -1,20 +1,9 @@
 /**
- * Problem: 1886. Determine Whether Matrix Can Be Obtained By Rotation
+ * Problem: LeetCode 1886 - Determine Whether Matrix Can Be Obtained By Rotation
  * Difficulty: Easy
  * Language: C++
- * 
- * Approach:
- * Verify if target matches mat under any of the 4 clockwise rotations (0, 90, 180, 270 degrees).
- * We maintain 4 boolean flags corresponding to each rotation and evaluate them in a single pass:
- * - 0 deg:   mat[i][j] == target[i][j]
- * - 90 deg:  mat[i][j] == target[j][n - 1 - i]
- * - 180 deg: mat[i][j] == target[n - 1 - i][n - 1 - j]
- * - 270 deg: mat[i][j] == target[n - 1 - j][i]
- * 
- * Time Complexity: O(n^2)
- * Space Complexity: O(1) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <vector>
 
 using namespace std;

@@ -1,16 +1,9 @@
 """
-Problem: 2906. Construct Product Matrix
+Problem: LeetCode 2906 - Construct Product Matrix
 Difficulty: Medium
-Language: Python 3
-
-Approach:
-Compute prefix and suffix products in row-major order modulo 12345.
-Avoids division since 12345 is not prime and elements may share factors with 12345.
-
-Time Complexity: O(n * m)
-Space Complexity: O(1) auxiliary space (excluding output matrix)
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def constructProductMatrix(self, grid: list[list[int]]) -> list[list[int]]:
         n, m = len(grid), len(grid[0])

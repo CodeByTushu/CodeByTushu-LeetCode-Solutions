@@ -1,17 +1,8 @@
 /**
- * Problem: 2573. Find the String with LCP
+ * Problem: LeetCode 2573 - Find the String with LCP
  * Difficulty: Hard
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Greedily assign letters 'a' to 'z' to unassigned positions based on lcp[i][j] > 0.
- * Verify using DP recurrence lcp[i][j] === (word[i] === word[j] ? 1 + lcp[i+1][j+1] : 0).
- * 
- * Time Complexity: O(n^2)
- * Space Complexity: O(n) auxiliary space
- * 
- * @param {number[][]} lcp
- * @return {string}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var findTheString = function(lcp) {
     const n = lcp.length;

@@ -1,18 +1,9 @@
 /**
- * Problem: 3474. Lexicographically Smallest Generated String
+ * Problem: LeetCode 3474 - Lexicographically Smallest Generated String
  * Difficulty: Hard
  * Language: C++
- * 
- * Approach:
- * 1. Lock all characters dictated by 'T' constraints.
- * 2. Fill all unassigned slots with 'a' for lexicographical minimality.
- * 3. Break accidental 'F' matches by changing the rightmost modifiable position to 'b'.
- * 4. Run full verification pass.
- * 
- * Time Complexity: O(n * m)
- * Space Complexity: O(n + m) auxiliary space
+ * Author: CodeByTushu
  */
-
 #include <string>
 #include <vector>
 

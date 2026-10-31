@@ -1,21 +1,9 @@
 """
-Problem: 1886. Determine Whether Matrix Can Be Obtained By Rotation
+Problem: LeetCode 1886 - Determine Whether Matrix Can Be Obtained By Rotation
 Difficulty: Easy
-Language: Python 3
-
-Approach:
-Test all 4 rotation states (0, 90, 180, and 270 degrees clockwise) in a single pass
-using coordinate transformations:
-- 0 deg:   mat[i][j] == target[i][j]
-- 90 deg:  mat[i][j] == target[j][n - 1 - i]
-- 180 deg: mat[i][j] == target[n - 1 - i][n - 1 - j]
-- 270 deg: mat[i][j] == target[n - 1 - j][i]
-Return True if any orientation matches.
-
-Time Complexity: O(n^2)
-Space Complexity: O(1) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def findRotation(self, mat: list[list[int]], target: list[list[int]]) -> bool:
         n = len(mat)

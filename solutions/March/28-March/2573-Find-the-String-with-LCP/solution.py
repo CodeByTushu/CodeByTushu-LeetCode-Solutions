@@ -1,19 +1,9 @@
 """
-Problem: 2573. Find the String with LCP
+Problem: LeetCode 2573 - Find the String with LCP
 Difficulty: Hard
-Language: Python 3
-
-Approach:
-Greedily assign the earliest available lowercase letter to each unassigned position i
-and every j >= i where lcp[i][j] > 0.
-Then, verify that the constructed string generates the exact given lcp matrix
-using bottom-up dynamic programming:
-expected = (word[i] == word[j]) * (1 + (lcp[i + 1][j + 1] if i + 1 < n and j + 1 < n else 0))
-
-Time Complexity: O(n^2)
-Space Complexity: O(n) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def findTheString(self, lcp: list[list[int]]) -> str:
         n = len(lcp)

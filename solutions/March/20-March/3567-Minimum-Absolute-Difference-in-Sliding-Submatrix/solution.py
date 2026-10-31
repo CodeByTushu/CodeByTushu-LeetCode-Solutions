@@ -1,18 +1,9 @@
 """
-Problem: 3567. Minimum Absolute Difference in Sliding Submatrix
+Problem: LeetCode 3567 - Minimum Absolute Difference in Sliding Submatrix
 Difficulty: Medium
-Language: Python 3
-
-Approach:
-For every valid top-left corner (i, j) of a k x k submatrix, extract all k^2 elements.
-Sort the distinct values or sort all elements and check adjacent unequal elements.
-The minimum difference between any two distinct values will always occur between
-consecutive distinct elements in the sorted array. If no two distinct values exist, return 0.
-
-Time Complexity: O((m - k + 1) * (n - k + 1) * k^2 * log(k))
-Space Complexity: O(k^2) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def minAbsDiff(self, grid: list[list[int]], k: int) -> list[list[int]]:
         m, n = len(grid), len(grid[0])

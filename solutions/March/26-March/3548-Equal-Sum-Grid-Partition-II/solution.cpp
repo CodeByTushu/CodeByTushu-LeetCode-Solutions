@@ -1,21 +1,9 @@
 /**
- * Problem: 3548. Equal Sum Grid Partition II
+ * Problem: LeetCode 3548 - Equal Sum Grid Partition II
  * Difficulty: Hard
  * Language: C++
- * 
- * Approach:
- * Partitioning requires checking if a horizontal or vertical cut can split the grid into
- * two non-empty sections of equal sum, potentially discounting at most one cell from the
- * larger section while preserving its connectivity.
- * 
- * - An R x C block with R >= 2 and C >= 2 has no articulation points; any cell can be removed.
- * - An R x 1 column or 1 x C row can only have its 2 extreme endpoint cells discounted.
- * - We check 4 configurations by rotating/transposing the grid and evaluating horizontal cuts.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n)
+ * Author: CodeByTushu
  */
-
 #include <vector>
 #include <unordered_set>
 

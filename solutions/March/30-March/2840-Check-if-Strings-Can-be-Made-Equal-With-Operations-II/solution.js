@@ -1,18 +1,8 @@
 /**
- * Problem: 2840. Check if Strings Can be Made Equal With Operations II
+ * Problem: LeetCode 2840 - Check if Strings Can be Made Equal With Operations II
  * Difficulty: Medium
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Swap operations preserve parity. Count character occurrences at even and odd
- * indices using two 26-element typed frequency arrays.
- * 
- * Time Complexity: O(n)
- * Space Complexity: O(1) auxiliary space
- * 
- * @param {string} s1
- * @param {string} s2
- * @return {boolean}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var checkStrings = function(s1, s2) {
     const n = s1.length;

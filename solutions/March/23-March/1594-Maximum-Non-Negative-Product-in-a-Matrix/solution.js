@@ -1,17 +1,8 @@
 /**
- * Problem: 1594. Maximum Non Negative Product in a Matrix
+ * Problem: LeetCode 1594 - Maximum Non Negative Product in a Matrix
  * Difficulty: Medium
- * Language: JavaScript (ES6+)
- * 
- * Approach:
- * Track both maximum and minimum path products to each cell (i, j) using BigInt
- * to prevent floating-point precision loss beyond Number.MAX_SAFE_INTEGER.
- * 
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n) auxiliary space
- * 
- * @param {number[][]} grid
- * @return {number}
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var maxProductPath = function(grid) {
     const m = grid.length;

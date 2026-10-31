@@ -1,17 +1,9 @@
 """
-Problem: 1594. Maximum Non Negative Product in a Matrix
+Problem: LeetCode 1594 - Maximum Non Negative Product in a Matrix
 Difficulty: Medium
-Language: Python 3
-
-Approach:
-Dynamic Programming maintaining both maximum and minimum path products at each cell (i, j).
-Since values can be negative, a negative multiplier can turn a minimal product into the maximum.
-Path products fit in standard 64-bit integers and Python handles arbitrary-precision arithmetic.
-
-Time Complexity: O(m * n)
-Space Complexity: O(m * n) auxiliary space
+Language: Python
+Author: CodeByTushu
 """
-
 class Solution:
     def maxProductPath(self, grid: list[list[int]]) -> int:
         m, n = len(grid), len(grid[0])

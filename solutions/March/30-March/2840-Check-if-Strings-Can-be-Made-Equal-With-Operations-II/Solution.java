@@ -1,25 +1,9 @@
 /**
- * Problem: 2840. Check if Strings Can be Made Equal With Operations II
+ * Problem: LeetCode 2840 - Check if Strings Can be Made Equal With Operations II
  * Difficulty: Medium
  * Language: Java
- * 
- * Approach:
- * We can swap any two characters whose index difference j - i is even.
- * This implies:
- * 1. Characters at even indices can be permuted arbitrarily among themselves.
- * 2. Characters at odd indices can be permuted arbitrarily among themselves.
- * 3. Parity is strictly conserved: characters cannot move between even and odd positions.
- * 
- * Thus, s1 can be transformed into s2 if and only if:
- * - The character frequency counts at even indices match between s1 and s2.
- * - The character frequency counts at odd indices match between s1 and s2.
- * 
- * We track frequency differences using two fixed-size frequency arrays of length 26.
- * 
- * Time Complexity: O(n)
- * Space Complexity: O(1) auxiliary space (fixed-size array of 26 integers)
+ * Author: CodeByTushu
  */
-
 class Solution {
     public boolean checkStrings(String s1, String s2) {
         int n = s1.length();

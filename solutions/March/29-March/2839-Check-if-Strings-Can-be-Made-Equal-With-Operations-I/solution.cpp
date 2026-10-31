@@ -1,16 +1,9 @@
 /**
- * Problem: 2839. Check if Strings Can be Made Equal With Operations I
+ * Problem: LeetCode 2839 - Check if Strings Can be Made Equal With Operations I
  * Difficulty: Easy
  * Language: C++
- * 
- * Approach:
- * Swap operations with distance 2 partition the string into independent even (0, 2)
- * and odd (1, 3) positions. We check whether both character sets match.
- * 
- * Time Complexity: O(1)
- * Space Complexity: O(1)
+ * Author: CodeByTushu
  */
-
 #include <string>
 
 using namespace std;

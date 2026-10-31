@@ -9905,6 +9905,56 @@
     }
   },
   {
+    "id": 3655,
+    "title": "XOR After Range Multiplication Queries II",
+    "slug": "xor-after-range-multiplication-queries-ii",
+    "date": "09 April 2026",
+    "dateIso": "2026-04-09",
+    "formattedDate": "09 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "09-April",
+    "problemFolder": "3655-XOR-After-Range-Multiplication-Queries-II",
+    "folderPath": "solutions/April/09-April/3655-XOR-After-Range-Multiplication-Queries-II",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Math",
+      "Divide and Conquer",
+      "Bit Manipulation"
+    ],
+    "summary": "Process range step multiplication queries modulo 10^9 + 7 with large constraints using Square Root Decomposition and Multiplicative Difference Arrays.",
+    "approach": "Partition queries based on step size k against threshold sqrt(N). For k >= sqrt(N), directly simulate steps (at most sqrt(N) iterations). For k < sqrt(N), group queries by k and use multiplicative difference arrays with Fermat's Little Theorem modular inverses, followed by prefix products along stride k. Finally, XOR all array values.",
+    "timeComplexity": "O((N + Q) * sqrt(N) + Q * log(MOD))",
+    "auxiliarySpaceComplexity": "O(N + Q)",
+    "spaceComplexity": "O(N + Q)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/09-April/3655-XOR-After-Range-Multiplication-Queries-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/09-April/3655-XOR-After-Range-Multiplication-Queries-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/09-April/3655-XOR-After-Range-Multiplication-Queries-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/09-April/3655-XOR-After-Range-Multiplication-Queries-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 3653,
     "title": "XOR After Range Multiplication Queries I",
     "slug": "xor-after-range-multiplication-queries-i",

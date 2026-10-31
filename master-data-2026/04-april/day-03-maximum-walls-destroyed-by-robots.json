@@ -13,7 +13,7 @@
   "time_complexity": "O(N log N + M log M + N log M)",
   "space_complexity": "O(N)",
   "leetcode_url": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/why-zcaBWGw?si=oDYqGZw2hQT25krx",
   "notes": "Optimal O(N log N + M log M + N log M) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

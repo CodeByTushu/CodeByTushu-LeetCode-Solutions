@@ -3,7 +3,7 @@
 - **Publication Date:** 03 April 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/maximum-walls-destroyed-by-robots/](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/why-zcaBWGw?si=oDYqGZw2hQT25krx)
 
 ---
 

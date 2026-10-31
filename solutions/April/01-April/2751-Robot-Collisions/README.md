@@ -3,7 +3,7 @@
 - **Publication Date:** 01 April 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/robot-collisions/](https://leetcode.com/problems/robot-collisions/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/izg-mC86OVo?si=yNJ3z3vsvuor6dMm)
 
 ---
 

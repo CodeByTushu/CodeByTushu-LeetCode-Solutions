@@ -13,7 +13,7 @@
   "time_complexity": "O(N)",
   "space_complexity": "O(1)",
   "leetcode_url": "https://leetcode.com/problems/robot-return-to-origin/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/jzaEaozLhvY?si=dvjK--I5pGrUXl4G",
   "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

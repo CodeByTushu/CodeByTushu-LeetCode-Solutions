@@ -13,7 +13,7 @@
   "time_complexity": "O((N + Q) * sqrt(N) + Q * log(MOD))",
   "space_complexity": "O(N + Q)",
   "leetcode_url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/PtujIlIgN3Q?si=ggKTOhVYl80tTi7g",
   "notes": "Optimal O((N + Q) * sqrt(N) + Q * log(MOD)) time complexity with O(N + Q) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

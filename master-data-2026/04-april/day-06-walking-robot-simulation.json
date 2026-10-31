@@ -13,7 +13,7 @@
   "time_complexity": "O(C * K + M)",
   "space_complexity": "O(M)",
   "leetcode_url": "https://leetcode.com/problems/walking-robot-simulation/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/eqOE9d1cpqc?si=-5lgm7qX_jWFDLzc",
   "notes": "Optimal O(C * K + M) time complexity with O(M) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

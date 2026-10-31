@@ -13,7 +13,7 @@
   "time_complexity": "O(m * n)",
   "space_complexity": "O(m * n)",
   "leetcode_url": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/c-0TMvIo7xY?si=87sRqd3MmxWGrggJ",
   "notes": "Optimal O(m * n) time complexity with O(m * n) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

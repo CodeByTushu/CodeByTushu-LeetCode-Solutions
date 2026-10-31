@@ -3,7 +3,7 @@
 - **Publication Date:** 08 April 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/xor-after-range-multiplication-queries-i/](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/tvbkbHCh5dY?si=JuTN3NHl7YrlsUb9)
 
 ---
 

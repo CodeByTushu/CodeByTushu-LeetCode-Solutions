@@ -13,7 +13,7 @@
   "time_complexity": "O(N log N)",
   "space_complexity": "O(N)",
   "leetcode_url": "https://leetcode.com/problems/robot-collisions/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/izg-mC86OVo?si=yNJ3z3vsvuor6dMm",
   "notes": "Optimal O(N log N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

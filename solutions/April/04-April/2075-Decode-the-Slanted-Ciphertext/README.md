@@ -3,7 +3,7 @@
 - **Publication Date:** 04 April 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/decode-the-slanted-ciphertext/](https://leetcode.com/problems/decode-the-slanted-ciphertext/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/TZMO7VPnFhU?si=kmJFpe3iz2FIr7b_)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 02 April 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/c-0TMvIo7xY?si=87sRqd3MmxWGrggJ)
 
 ---
 

@@ -13,7 +13,7 @@
   "time_complexity": "O(N)",
   "space_complexity": "O(1)",
   "leetcode_url": "https://leetcode.com/problems/minimum-distance-to-the-target-element/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/6MTGLJ7kADs?si=yLXfn9WVoNEgHZ9i",
   "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

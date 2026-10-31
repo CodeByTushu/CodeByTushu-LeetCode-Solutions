@@ -3,7 +3,7 @@
 - **Publication Date:** 12 April 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/Pxa4J1MbV5o?si=8cJDOKFqPGj7y34i)
 
 ---
 

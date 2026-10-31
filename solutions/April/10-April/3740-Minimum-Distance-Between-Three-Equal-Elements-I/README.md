@@ -3,7 +3,7 @@
 - **Publication Date:** 10 April 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/_9V4GI6nSog?si=rb8xbdlPfObTOzTf)
 
 ---
 

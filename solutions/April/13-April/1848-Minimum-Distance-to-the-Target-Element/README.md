@@ -3,7 +3,7 @@
 - **Publication Date:** 13 April 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-distance-to-the-target-element/](https://leetcode.com/problems/minimum-distance-to-the-target-element/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/6MTGLJ7kADs?si=yLXfn9WVoNEgHZ9i)
 
 ---
 

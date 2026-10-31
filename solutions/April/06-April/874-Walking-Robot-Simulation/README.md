@@ -3,7 +3,7 @@
 - **Publication Date:** 06 April 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/walking-robot-simulation/](https://leetcode.com/problems/walking-robot-simulation/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/eqOE9d1cpqc?si=-5lgm7qX_jWFDLzc)
 
 ---
 

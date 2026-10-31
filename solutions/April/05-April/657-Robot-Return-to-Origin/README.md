@@ -3,7 +3,7 @@
 - **Publication Date:** 05 April 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/robot-return-to-origin/](https://leetcode.com/problems/robot-return-to-origin/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Video](https://youtu.be/jzaEaozLhvY?si=dvjK--I5pGrUXl4G)
 
 ---
 

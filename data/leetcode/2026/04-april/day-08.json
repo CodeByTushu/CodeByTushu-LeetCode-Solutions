@@ -13,7 +13,7 @@
   "time_complexity": "O(N + Q * (N / K))",
   "space_complexity": "O(1)",
   "leetcode_url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-i/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/tvbkbHCh5dY?si=JuTN3NHl7YrlsUb9",
   "notes": "Optimal O(N + Q * (N / K)) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

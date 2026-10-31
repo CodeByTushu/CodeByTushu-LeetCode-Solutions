@@ -13,7 +13,7 @@
   "time_complexity": "O(N)",
   "space_complexity": "O(N)",
   "leetcode_url": "https://leetcode.com/problems/decode-the-slanted-ciphertext/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/TZMO7VPnFhU?si=kmJFpe3iz2FIr7b_",
   "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

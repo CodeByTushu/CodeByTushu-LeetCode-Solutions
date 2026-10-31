@@ -13,7 +13,7 @@
   "time_complexity": "Constructor O(W + H), step/getPos/getDir O(1)",
   "space_complexity": "O(W + H)",
   "leetcode_url": "https://leetcode.com/problems/walking-robot-simulation-ii/",
-  "youtube_url": "",
+  "youtube_url": "https://youtu.be/W097D04inDE?si=x2uTIJAsY2_JzHKB",
   "notes": "Optimal Constructor O(W + H), step/getPos/getDir O(1) time complexity with O(W + H) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
   "publish": {
     "status": "Published",

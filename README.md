@@ -22,7 +22,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **3665** | [Twisted Mirror Path Count](https://leetcode.com/problems/twisted-mirror-path-count/) | <span style="color:#ffc400">**Medium**</span> | 31 Oct 2026 | [Java](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/Solution.java) | [Python](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.py) | [C++](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.cpp) | [JS](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.js) | Coming Soon | [README](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/README.md) |
+| **3665** | [Twisted Mirror Path Count](https://leetcode.com/problems/twisted-mirror-path-count/) | <span style="color:#ffc400">**Medium**</span> | 31 Oct 2026 | [Java](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/Solution.java) | [Python](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.py) | [C++](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.cpp) | [JS](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/solution.js) | [Watch Video](https://youtu.be/ForKZ-1fuRA?si=SdFMaL58qGeTZNgB) | [README](./solutions/October/31-October/3665-Twisted-Mirror-Path-Count/README.md) |
 
 <p align="center">
   <a href="./solutions/October/">

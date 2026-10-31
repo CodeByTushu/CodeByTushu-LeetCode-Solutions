@@ -3,7 +3,7 @@
 - **Publication Date:** 31 October 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/twisted-mirror-path-count/](https://leetcode.com/problems/twisted-mirror-path-count/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Full Walkthrough on YouTube](https://youtu.be/ForKZ-1fuRA?si=SdFMaL58qGeTZNgB)
 
 ---
 

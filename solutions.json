@@ -9905,6 +9905,55 @@
     }
   },
   {
+    "id": 2069,
+    "title": "Walking Robot Simulation II",
+    "slug": "walking-robot-simulation-ii",
+    "date": "07 April 2026",
+    "dateIso": "2026-04-07",
+    "formattedDate": "07 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "07-April",
+    "problemFolder": "2069-Walking-Robot-Simulation-II",
+    "folderPath": "solutions/April/07-April/2069-Walking-Robot-Simulation-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/walking-robot-simulation-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/walking-robot-simulation-ii/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Design",
+      "Simulation",
+      "Math"
+    ],
+    "summary": "Simulate a robot moving strictly along the outer perimeter of a 2D grid with constant-time position and orientation queries.",
+    "approach": "Precompute the cycle of perimeter coordinates and directions in O(W + H) time. Advance the position index using modulo arithmetic on perimeter length for O(1) step execution. Correctly return 'East' at the initial state and 'South' upon completing full loops back to the origin.",
+    "timeComplexity": "Constructor O(W + H), step/getPos/getDir O(1)",
+    "auxiliarySpaceComplexity": "O(W + H)",
+    "spaceComplexity": "O(W + H)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/07-April/2069-Walking-Robot-Simulation-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/07-April/2069-Walking-Robot-Simulation-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/07-April/2069-Walking-Robot-Simulation-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/07-April/2069-Walking-Robot-Simulation-II/solution.js"
+      }
+    }
+  },
+  {
     "id": 874,
     "title": "Walking Robot Simulation",
     "slug": "walking-robot-simulation",

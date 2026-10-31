@@ -9905,6 +9905,56 @@
     }
   },
   {
+    "id": 3653,
+    "title": "XOR After Range Multiplication Queries I",
+    "slug": "xor-after-range-multiplication-queries-i",
+    "date": "08 April 2026",
+    "dateIso": "2026-04-08",
+    "formattedDate": "08 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "08-April",
+    "problemFolder": "3653-XOR-After-Range-Multiplication-Queries-I",
+    "folderPath": "solutions/April/08-April/3653-XOR-After-Range-Multiplication-Queries-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/xor-after-range-multiplication-queries-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/xor-after-range-multiplication-queries-i/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Math",
+      "Simulation",
+      "Bit Manipulation"
+    ],
+    "summary": "Process range-based step multiplication queries with modulo 10^9 + 7 on an array, then calculate the bitwise XOR sum of all elements.",
+    "approach": "Iterate through each query [l, r, k, v] and perform step-based multiplications directly in-place using 64-bit integers with modulo 10^9 + 7. After processing all queries, traverse the mutated array to compute and return the bitwise XOR sum.",
+    "timeComplexity": "O(N + Q * (N / K))",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/08-April/3653-XOR-After-Range-Multiplication-Queries-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/08-April/3653-XOR-After-Range-Multiplication-Queries-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/08-April/3653-XOR-After-Range-Multiplication-Queries-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/08-April/3653-XOR-After-Range-Multiplication-Queries-I/solution.js"
+      }
+    }
+  },
+  {
     "id": 2069,
     "title": "Walking Robot Simulation II",
     "slug": "walking-robot-simulation-ii",

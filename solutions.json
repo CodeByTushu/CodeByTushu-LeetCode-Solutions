@@ -9905,6 +9905,55 @@
     }
   },
   {
+    "id": 874,
+    "title": "Walking Robot Simulation",
+    "slug": "walking-robot-simulation",
+    "date": "06 April 2026",
+    "dateIso": "2026-04-06",
+    "formattedDate": "06 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "06-April",
+    "problemFolder": "874-Walking-Robot-Simulation",
+    "folderPath": "solutions/April/06-April/874-Walking-Robot-Simulation",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/walking-robot-simulation/",
+    "leetcodeUrl": "https://leetcode.com/problems/walking-robot-simulation/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Simulation"
+    ],
+    "summary": "Simulate a robot moving on an infinite 2D plane with turning commands and obstacles, calculating the maximum squared Euclidean distance reached.",
+    "approach": "Maintain robot orientation via cyclic direction vectors. Store obstacle coordinates in a hash set for constant-time collision lookup. Process movements step-by-step up to the command magnitude, stopping immediately upon hitting an obstacle, and updating the maximum squared Euclidean distance.",
+    "timeComplexity": "O(C * K + M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/06-April/874-Walking-Robot-Simulation/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/06-April/874-Walking-Robot-Simulation/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/06-April/874-Walking-Robot-Simulation/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/06-April/874-Walking-Robot-Simulation/solution.js"
+      }
+    }
+  },
+  {
     "id": 657,
     "title": "Robot Return to Origin",
     "slug": "robot-return-to-origin",

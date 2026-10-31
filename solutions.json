@@ -9905,6 +9905,54 @@
     }
   },
   {
+    "id": 657,
+    "title": "Robot Return to Origin",
+    "slug": "robot-return-to-origin",
+    "date": "05 April 2026",
+    "dateIso": "2026-04-05",
+    "formattedDate": "05 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "05-April",
+    "problemFolder": "657-Robot-Return-to-Origin",
+    "folderPath": "solutions/April/05-April/657-Robot-Return-to-Origin",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/robot-return-to-origin/",
+    "leetcodeUrl": "https://leetcode.com/problems/robot-return-to-origin/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "String",
+      "Simulation"
+    ],
+    "summary": "Judge whether a robot returning to origin (0, 0) on a 2D plane after executing a string sequence of directional moves ('U', 'D', 'L', 'R').",
+    "approach": "Maintain horizontal and vertical displacement variables x and y initialized to 0. Process each move character in the sequence, incrementing or decrementing coordinates accordingly. Return true if and only if both coordinates equal 0.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/05-April/657-Robot-Return-to-Origin/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/05-April/657-Robot-Return-to-Origin/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/05-April/657-Robot-Return-to-Origin/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/05-April/657-Robot-Return-to-Origin/solution.js"
+      }
+    }
+  },
+  {
     "id": 2075,
     "title": "Decode the Slanted Ciphertext",
     "slug": "decode-the-slanted-ciphertext",

@@ -1,0 +1,81 @@
+{
+  "problem_number": 2089,
+  "problem_title": "Find Target Indices After Sorting Array",
+  "slug": "find-target-indices-after-sorting-array",
+  "solution_date": "2026-10-19",
+  "formatted_date": "19-10-2026",
+  "day_number": 19,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+  "youtube_url": "https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a 0-indexed integer array `nums` and a target element `target`.\n\nA **target index** is an index `i` such that `nums[i] == target`.\n\nReturn a list of the target indices of `nums` after sorting `nums` in **non-decreasing order**. If there are no target indices, return an empty list. The returned list must be sorted in **increasing order**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1,2,5,2,3], target = 2`\n- **Output:** `[1, 2]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The indices where `nums[i] == 2` are `1` and `2`.\n\n#### Example 2:\n- **Input:** `nums = [1,2,5,2,3], target = 3`\n- **Output:** `[3]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The index where `nums[i] == 3` is `3`.\n\n#### Example 3:\n- **Input:** `nums = [1,2,5,2,3], target = 5`\n- **Output:** `[4]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The index where `nums[i] == 5` is `4`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i], \\text{target} \\le 100$\n\n---",
+    "approach_summary": "Count elements strictly smaller than target (less) and elements equal to target (equal). Target indices in the sorted array are precisely less to less + equal - 1.",
+    "full_explanation": "# LeetCode 2089: Find Target Indices After Sorting Array\n\n- **Publication Date:** 19 October 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-target-indices-after-sorting-array/](https://leetcode.com/problems/find-target-indices-after-sorting-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq)\n\n---\n\n## Problem Summary\n\nYou are given a 0-indexed integer array `nums` and a target element `target`.\n\nA **target index** is an index `i` such that `nums[i] == target`.\n\nReturn a list of the target indices of `nums` after sorting `nums` in **non-decreasing order**. If there are no target indices, return an empty list. The returned list must be sorted in **increasing order**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1,2,5,2,3], target = 2`\n- **Output:** `[1, 2]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The indices where `nums[i] == 2` are `1` and `2`.\n\n#### Example 2:\n- **Input:** `nums = [1,2,5,2,3], target = 3`\n- **Output:** `[3]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The index where `nums[i] == 3` is `3`.\n\n#### Example 3:\n- **Input:** `nums = [1,2,5,2,3], target = 5`\n- **Output:** `[4]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The index where `nums[i] == 5` is `4`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i], \\text{target} \\le 100$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n- **Counting**\n- **Frequency Counting**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Optimal Linear Counting Approach — $\\mathcal{O}(N)$ Time, $\\mathcal{O}(1)$ Space\n\nA standard brute-force approach would sort `nums` in $\\mathcal{O}(N \\log N)$ time and then find all occurrences of `target` (using linear scan or binary search).\n\nHowever, we can do much better in linear $\\mathcal{O}(N)$ time without actually sorting the array:\n\n1. **Key Insight**:\n   - In any sorted array, all elements strictly smaller than `target` must appear before `target`.\n   - If there are `less` elements strictly smaller than `target`, then after sorting, the first occurrence of `target` will begin precisely at index `less`.\n   - If there are `equal` elements equal to `target`, they will occupy contiguous indices from `less` up to `less + equal - 1`.\n\n2. **Algorithm**:\n   - Initialize two counters: `less = 0` and `equal = 0`.\n   - Iterate through `nums`:\n     - If `x < target`, increment `less`.\n     - Else if `x == target`, increment `equal`.\n   - Construct the result list by adding all indices from `less` to `less + equal - 1`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single pass over the array of size $N$ counts elements smaller than and equal to `target`.\n  - Constructing the output takes $\\mathcal{O}(\\text{equal})$ time, which is at most $\\mathcal{O}(N)$.\n  - Total time: $\\mathcal{O}(N)$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two scalar counters (`less`, `equal`) are used beyond the returned result list.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Count elements strictly smaller than target (less) and elements equal to target (equal). Target indices in the sorted array are precisely less to less + equal - 1.",
+  "explanation": "# LeetCode 2089: Find Target Indices After Sorting Array\n\n- **Publication Date:** 19 October 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-target-indices-after-sorting-array/](https://leetcode.com/problems/find-target-indices-after-sorting-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq)\n\n---\n\n## Problem Summary\n\nYou are given a 0-indexed integer array `nums` and a target element `target`.\n\nA **target index** is an index `i` such that `nums[i] == target`.\n\nReturn a list of the target indices of `nums` after sorting `nums` in **non-decreasing order**. If there are no target indices, return an empty list. The returned list must be sorted in **increasing order**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1,2,5,2,3], target = 2`\n- **Output:** `[1, 2]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The indices where `nums[i] == 2` are `1` and `2`.\n\n#### Example 2:\n- **Input:** `nums = [1,2,5,2,3], target = 3`\n- **Output:** `[3]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The index where `nums[i] == 3` is `3`.\n\n#### Example 3:\n- **Input:** `nums = [1,2,5,2,3], target = 5`\n- **Output:** `[4]`\n- **Explanation:**\n  - After sorting, `nums` becomes `[1, 2, 2, 3, 5]`.\n  - The index where `nums[i] == 5` is `4`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i], \\text{target} \\le 100$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n- **Counting**\n- **Frequency Counting**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Optimal Linear Counting Approach — $\\mathcal{O}(N)$ Time, $\\mathcal{O}(1)$ Space\n\nA standard brute-force approach would sort `nums` in $\\mathcal{O}(N \\log N)$ time and then find all occurrences of `target` (using linear scan or binary search).\n\nHowever, we can do much better in linear $\\mathcal{O}(N)$ time without actually sorting the array:\n\n1. **Key Insight**:\n   - In any sorted array, all elements strictly smaller than `target` must appear before `target`.\n   - If there are `less` elements strictly smaller than `target`, then after sorting, the first occurrence of `target` will begin precisely at index `less`.\n   - If there are `equal` elements equal to `target`, they will occupy contiguous indices from `less` up to `less + equal - 1`.\n\n2. **Algorithm**:\n   - Initialize two counters: `less = 0` and `equal = 0`.\n   - Iterate through `nums`:\n     - If `x < target`, increment `less`.\n     - Else if `x == target`, increment `equal`.\n   - Construct the result list by adding all indices from `less` to `less + equal - 1`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single pass over the array of size $N$ counts elements smaller than and equal to `target`.\n  - Constructing the output takes $\\mathcal{O}(\\text{equal})$ time, which is at most $\\mathcal{O}(N)$.\n  - Total time: $\\mathcal{O}(N)$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two scalar counters (`less`, `equal`) are used beyond the returned result list.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq](https://youtu.be/_EIlWG05Ux4?si=PUFlkvcyBVo6sVBq)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2089 - Find Target Indices After Sorting Array\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.ArrayList;\nimport java.util.List;\n\n/**\n * Problem: LeetCode 2089 - Find Target Indices After Sorting Array\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public List<Integer> targetIndices(int[] nums, int target) {\n        int less = 0, equal = 0;\n        for (int x : nums) {\n            if (x < target) less++;\n            else if (x == target) equal++;\n        }\n        List<Integer> result = new ArrayList<>();\n        for (int i = 0; i < equal; i++) {\n            result.add(less + i);\n        }\n        return result;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2089 - Find Target Indices After Sorting Array\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def targetIndices(self, nums: List[int], target: int) -> List[int]:\n        less = 0\n        equal = 0\n        for x in nums:\n            if x < target:\n                less += 1\n            elif x == target:\n                equal += 1\n        return list(range(less, less + equal))\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2089 - Find Target Indices After Sorting Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 2089 - Find Target Indices After Sorting Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    vector<int> targetIndices(vector<int>& nums, int target) {\n        int less = 0, equal = 0;\n        for (int x : nums) {\n            if (x < target) less++;\n            else if (x == target) equal++;\n        }\n        vector<int> result;\n        result.reserve(equal);\n        for (int i = 0; i < equal; i++) {\n            result.push_back(less + i);\n        }\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2089 - Find Target Indices After Sorting Array\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar targetIndices = function(nums, target) {\n    let less = 0;\n    let equal = 0;\n    for (const x of nums) {\n        if (x < target) {\n            less++;\n        } else if (x === target) {\n            equal++;\n        }\n    }\n    const result = [];\n    for (let i = 0; i < equal; i++) {\n        result.push(less + i);\n    }\n    return result;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Sorting",
+    "Binary Search",
+    "Counting",
+    "Frequency Counting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2089-find-target-indices-after-sorting-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2089-find-target-indices-after-sorting-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2089: Find Target Indices After Sorting Array Solution | C...",
+    "meta_description": "Master LeetCode 2089 (Find Target Indices After Sorting Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2089-find-target-indices-after-sorting-array.jpg",
+    "keywords": [
+      "LeetCode 2089",
+      "Find Target Indices After Sorting Array",
+      "LeetCode 2089 Solution",
+      "LeetCode Find Target Indices After Sorting Array",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

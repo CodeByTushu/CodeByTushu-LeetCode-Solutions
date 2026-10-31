@@ -1,0 +1,81 @@
+{
+  "problem_number": 3867,
+  "problem_title": "Sum of GCD of Formed Pairs",
+  "slug": "sum-of-gcd-of-formed-pairs",
+  "solution_date": "2026-07-16",
+  "formatted_date": "16-07-2026",
+  "day_number": 16,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N log N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/",
+  "youtube_url": "https://youtu.be/ssruc2PL15k?si=OIgm_0ia1aabagPM",
+  "notes": "Optimal O(N log N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` of length $n$.\n\nConstruct an array `prefixGcd` where for each index $i$:\n- Let $mx_i = \\max(\\text{nums}[0], \\text{nums}[1], \\dots, \\text{nums}[i])$.\n- $\\text{prefixGcd}[i] = \\gcd(\\text{nums}[i], mx_i)$.\n\nAfter constructing `prefixGcd`:\n1. Sort `prefixGcd` in non-decreasing order.\n2. Form pairs by taking the smallest unpaired element and the largest unpaired element.\n3. Repeat this process until no more pairs can be formed.\n4. For each formed pair, compute the GCD of the two elements.\n5. If $n$ is odd, the middle element in the `prefixGcd` array remains unpaired and should be ignored.\n\nReturn an integer denoting the **sum of the GCD values** of all formed pairs.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2, 6, 4]`\n- **Output:** `2`\n- **Explanation:**\n  - $i = 0$: $\\text{nums}[0] = 2, mx_0 = 2 \\implies \\text{prefixGcd}[0] = \\gcd(2, 2) = 2$\n  - $i = 1$: $\\text{nums}[1] = 6, mx_1 = 6 \\implies \\text{prefixGcd}[1] = \\gcd(6, 6) = 6$\n  - $i = 2$: $\\text{nums}[2] = 4, mx_2 = 6 \\implies \\text{prefixGcd}[2] = \\gcd(4, 6) = 2$\n  - $\\text{prefixGcd} = [2, 6, 2]$. After sorting: $[2, 2, 6]$.\n  - Pair the smallest and largest elements: $\\gcd(2, 6) = 2$.\n  - The middle element $2$ remains unpaired and is ignored.\n  - Total sum $= 2$.\n\n#### Example 2:\n\n- **Input:** `nums = [3, 6, 2, 8]`\n- **Output:** `5`\n- **Explanation:**\n  - $\\text{prefixGcd} = [3, 6, 2, 8]$. After sorting: $[2, 3, 6, 8]$.\n  - Form pairs:\n    - $\\gcd(2, 8) = 2$\n    - $\\gcd(3, 6) = 3$\n  - Total sum $= 2 + 3 = 5$.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n\n---",
+    "approach_summary": "Iterate through nums maintaining running maximum mx and compute prefixGcd[i] = gcd(nums[i], mx). Sort prefixGcd in non-decreasing order and pair the l-th and r-th elements inward using two pointers, accumulating their GCD.",
+    "full_explanation": "# LeetCode 3867: Sum of GCD of Formed Pairs\n\n- **Publication Date:** 16 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ssruc2PL15k?si=OIgm_0ia1aabagPM)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length $n$.\n\nConstruct an array `prefixGcd` where for each index $i$:\n- Let $mx_i = \\max(\\text{nums}[0], \\text{nums}[1], \\dots, \\text{nums}[i])$.\n- $\\text{prefixGcd}[i] = \\gcd(\\text{nums}[i], mx_i)$.\n\nAfter constructing `prefixGcd`:\n1. Sort `prefixGcd` in non-decreasing order.\n2. Form pairs by taking the smallest unpaired element and the largest unpaired element.\n3. Repeat this process until no more pairs can be formed.\n4. For each formed pair, compute the GCD of the two elements.\n5. If $n$ is odd, the middle element in the `prefixGcd` array remains unpaired and should be ignored.\n\nReturn an integer denoting the **sum of the GCD values** of all formed pairs.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2, 6, 4]`\n- **Output:** `2`\n- **Explanation:**\n  - $i = 0$: $\\text{nums}[0] = 2, mx_0 = 2 \\implies \\text{prefixGcd}[0] = \\gcd(2, 2) = 2$\n  - $i = 1$: $\\text{nums}[1] = 6, mx_1 = 6 \\implies \\text{prefixGcd}[1] = \\gcd(6, 6) = 6$\n  - $i = 2$: $\\text{nums}[2] = 4, mx_2 = 6 \\implies \\text{prefixGcd}[2] = \\gcd(4, 6) = 2$\n  - $\\text{prefixGcd} = [2, 6, 2]$. After sorting: $[2, 2, 6]$.\n  - Pair the smallest and largest elements: $\\gcd(2, 6) = 2$.\n  - The middle element $2$ remains unpaired and is ignored.\n  - Total sum $= 2$.\n\n#### Example 2:\n\n- **Input:** `nums = [3, 6, 2, 8]`\n- **Output:** `5`\n- **Explanation:**\n  - $\\text{prefixGcd} = [3, 6, 2, 8]$. After sorting: $[2, 3, 6, 8]$.\n  - Form pairs:\n    - $\\gcd(2, 8) = 2$\n    - $\\gcd(3, 6) = 3$\n  - Total sum $= 2 + 3 = 5$.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n\n---\n\n## Algorithmic Approach\n\n### 1. Prefix Maximum and Running GCD Generation\n- Maintain a running maximum variable `mx = 0`.\n- In a single linear scan from $i = 0$ to $n - 1$:\n  - Update $mx = \\max(mx, \\text{nums}[i])$.\n  - Compute $\\text{prefixGcd}[i] = \\gcd(\\text{nums}[i], mx)$ using the Euclidean algorithm.\n\n### 2. Sorting\n- Sort `prefixGcd` in non-decreasing order using an efficient comparison sort ($\\mathcal{O}(n \\log n)$).\n\n### 3. Symmetric Two Pointers Pairing\n- Initialize two pointers: $l = 0$ at the start and $r = n - 1$ at the end.\n- While $l < r$:\n  - Pair $\\text{prefixGcd}[l]$ and $\\text{prefixGcd}[r]$.\n  - Add $\\gcd(\\text{prefixGcd}[l], \\text{prefixGcd}[r])$ to a 64-bit sum accumulator (`ans`).\n  - Advance the pointers: $l \\leftarrow l + 1$ and $r \\leftarrow r - 1$.\n- If $n$ is odd, the middle element at index $n // 2$ is naturally excluded when $l = r$ breaks the loop.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n \\log n + n \\log(\\max A))$ | Generating prefix GCD values takes $\\mathcal{O}(n \\log(\\max A))$. Sorting takes $\\mathcal{O}(n \\log n)$. Two-pointer pairing takes $\\mathcal{O}(n \\log(\\max A))$. The overall time complexity is $\\mathcal{O}(n \\log n)$. |\n| **Auxiliary Space** | $\\mathcal{O}(n)$ | An auxiliary array of length $n$ is allocated to store `prefixGcd`. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Iterate through nums maintaining running maximum mx and compute prefixGcd[i] = gcd(nums[i], mx). Sort prefixGcd in non-decreasing order and pair the l-th and r-th elements inward using two pointers, accumulating their GCD.",
+  "explanation": "# LeetCode 3867: Sum of GCD of Formed Pairs\n\n- **Publication Date:** 16 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ssruc2PL15k?si=OIgm_0ia1aabagPM)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length $n$.\n\nConstruct an array `prefixGcd` where for each index $i$:\n- Let $mx_i = \\max(\\text{nums}[0], \\text{nums}[1], \\dots, \\text{nums}[i])$.\n- $\\text{prefixGcd}[i] = \\gcd(\\text{nums}[i], mx_i)$.\n\nAfter constructing `prefixGcd`:\n1. Sort `prefixGcd` in non-decreasing order.\n2. Form pairs by taking the smallest unpaired element and the largest unpaired element.\n3. Repeat this process until no more pairs can be formed.\n4. For each formed pair, compute the GCD of the two elements.\n5. If $n$ is odd, the middle element in the `prefixGcd` array remains unpaired and should be ignored.\n\nReturn an integer denoting the **sum of the GCD values** of all formed pairs.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2, 6, 4]`\n- **Output:** `2`\n- **Explanation:**\n  - $i = 0$: $\\text{nums}[0] = 2, mx_0 = 2 \\implies \\text{prefixGcd}[0] = \\gcd(2, 2) = 2$\n  - $i = 1$: $\\text{nums}[1] = 6, mx_1 = 6 \\implies \\text{prefixGcd}[1] = \\gcd(6, 6) = 6$\n  - $i = 2$: $\\text{nums}[2] = 4, mx_2 = 6 \\implies \\text{prefixGcd}[2] = \\gcd(4, 6) = 2$\n  - $\\text{prefixGcd} = [2, 6, 2]$. After sorting: $[2, 2, 6]$.\n  - Pair the smallest and largest elements: $\\gcd(2, 6) = 2$.\n  - The middle element $2$ remains unpaired and is ignored.\n  - Total sum $= 2$.\n\n#### Example 2:\n\n- **Input:** `nums = [3, 6, 2, 8]`\n- **Output:** `5`\n- **Explanation:**\n  - $\\text{prefixGcd} = [3, 6, 2, 8]$. After sorting: $[2, 3, 6, 8]$.\n  - Form pairs:\n    - $\\gcd(2, 8) = 2$\n    - $\\gcd(3, 6) = 3$\n  - Total sum $= 2 + 3 = 5$.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n\n---\n\n## Algorithmic Approach\n\n### 1. Prefix Maximum and Running GCD Generation\n- Maintain a running maximum variable `mx = 0`.\n- In a single linear scan from $i = 0$ to $n - 1$:\n  - Update $mx = \\max(mx, \\text{nums}[i])$.\n  - Compute $\\text{prefixGcd}[i] = \\gcd(\\text{nums}[i], mx)$ using the Euclidean algorithm.\n\n### 2. Sorting\n- Sort `prefixGcd` in non-decreasing order using an efficient comparison sort ($\\mathcal{O}(n \\log n)$).\n\n### 3. Symmetric Two Pointers Pairing\n- Initialize two pointers: $l = 0$ at the start and $r = n - 1$ at the end.\n- While $l < r$:\n  - Pair $\\text{prefixGcd}[l]$ and $\\text{prefixGcd}[r]$.\n  - Add $\\gcd(\\text{prefixGcd}[l], \\text{prefixGcd}[r])$ to a 64-bit sum accumulator (`ans`).\n  - Advance the pointers: $l \\leftarrow l + 1$ and $r \\leftarrow r - 1$.\n- If $n$ is odd, the middle element at index $n // 2$ is naturally excluded when $l = r$ breaks the loop.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n \\log n + n \\log(\\max A))$ | Generating prefix GCD values takes $\\mathcal{O}(n \\log(\\max A))$. Sorting takes $\\mathcal{O}(n \\log n)$. Two-pointer pairing takes $\\mathcal{O}(n \\log(\\max A))$. The overall time complexity is $\\mathcal{O}(n \\log n)$. |\n| **Auxiliary Space** | $\\mathcal{O}(n)$ | An auxiliary array of length $n$ is allocated to store `prefixGcd`. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.*;\n\n/**\n * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public long gcdSum(int[] nums) {\n        int n = nums.length;\n        int[] prefixGcd = new int[n];\n        int mx = 0;\n        for (int i = 0; i < n; i++) {\n            mx = Math.max(mx, nums[i]);\n            prefixGcd[i] = gcd(nums[i], mx);\n        }\n        Arrays.sort(prefixGcd);\n        long ans = 0;\n        int l = 0, r = n - 1;\n        while (l < r) {\n            ans += gcd(prefixGcd[l], prefixGcd[r]);\n            l++;\n            r--;\n        }\n        return ans;\n    }\n\n    private int gcd(int a, int b) {\n        while (b != 0) {\n            int t = a % b;\n            a = b;\n            b = t;\n        }\n        return a;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3867 - Sum of GCD of Formed Pairs\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nimport math\n\nclass Solution:\n    def gcdSum(self, nums: list[int]) -> int:\n        n = len(nums)\n        prefix_gcd = [0] * n\n        mx = 0\n        \n        for i in range(n):\n            if nums[i] > mx:\n                mx = nums[i]\n            prefix_gcd[i] = math.gcd(nums[i], mx)\n            \n        prefix_gcd.sort()\n        \n        ans = 0\n        l, r = 0, n - 1\n        while l < r:\n            ans += math.gcd(prefix_gcd[l], prefix_gcd[r])\n            l += 1\n            r -= 1\n            \n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <numeric>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    long long gcdSum(vector<int>& nums) {\n        int n = nums.size();\n        vector<int> prefixGcd(n);\n        int mx = 0;\n        \n        for (int i = 0; i < n; i++) {\n            mx = max(mx, nums[i]);\n            prefixGcd[i] = std::gcd(nums[i], mx);\n        }\n        \n        sort(prefixGcd.begin(), prefixGcd.end());\n        \n        long long ans = 0;\n        int l = 0, r = n - 1;\n        while (l < r) {\n            ans += std::gcd(prefixGcd[l], prefixGcd[r]);\n            l++;\n            r--;\n        }\n        \n        return ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3867 - Sum of GCD of Formed Pairs\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nfunction gcd(a, b) {\n    while (b !== 0) {\n        const t = a % b;\n        a = b;\n        b = t;\n    }\n    return a;\n}\n\n/**\n * @param {number[]} nums\n * @return {number}\n */\nvar gcdSum = function(nums) {\n    const n = nums.length;\n    const prefixGcd = new Int32Array(n);\n    let mx = 0;\n    \n    for (let i = 0; i < n; i++) {\n        if (nums[i] > mx) {\n            mx = nums[i];\n        }\n        prefixGcd[i] = gcd(nums[i], mx);\n    }\n    \n    prefixGcd.sort();\n    \n    let ans = 0;\n    let l = 0, r = n - 1;\n    while (l < r) {\n        ans += gcd(prefixGcd[l], prefixGcd[r]);\n        l++;\n        r--;\n    }\n    \n    return ans;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Sorting",
+    "Two Pointers"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3867-sum-of-gcd-of-formed-pairs.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3867-sum-of-gcd-of-formed-pairs.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3867: Sum of GCD of Formed Pairs Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3867 (Sum of GCD of Formed Pairs) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N log N) approach and detaile...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3867-sum-of-gcd-of-formed-pairs.jpg",
+    "keywords": [
+      "LeetCode 3867",
+      "Sum of GCD of Formed Pairs",
+      "LeetCode 3867 Solution",
+      "LeetCode Sum of GCD of Formed Pairs",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

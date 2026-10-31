@@ -1,0 +1,80 @@
+{
+  "problem_number": 1871,
+  "problem_title": "Jump Game VII",
+  "slug": "jump-game-vii",
+  "solution_date": "2026-05-25",
+  "formatted_date": "25-05-2026",
+  "day_number": 25,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-vii/",
+  "youtube_url": "https://youtu.be/0yW-QLH0Lhs",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a 0-indexed binary string `s` and two integers `minJump` and `maxJump`. In the beginning, you are standing at index `0`, which is equal to `'0'`. You can move from index `i` to index `j` if the following conditions are fulfilled:\n- $i + \\text{minJump} \\le j \\le \\min(i + \\text{maxJump}, s.\\text{length} - 1)$, and\n- $s[j] == \\text{'0'}$.\n\nReturn `true` if you can reach index $s.\\text{length} - 1$ in `s`, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"011010\"`, `minJump = 2`, `maxJump = 3`\n- **Output:** `true`\n- **Explanation:**\n  - In the first step, move from index 0 to index 3 ($0 + 3 = 3$).\n  - In the second step, move from index 3 to index 5 ($3 + 2 = 5$).\n\n#### Example 2:\n- **Input:** `s = \"01101110\"`, `minJump = 2`, `maxJump = 3`\n- **Output:** `false`\n- **Explanation:**\n  - All reachable indices in subsequent steps contain `'1'` or are blocked from landing on the last index.\n\n---\n\n### Constraints\n\n- $2 \\le s.\\text{length} \\le 10^5$\n- $s[i]$ is either `'0'` or `'1'`\n- $s[0] == \\text{'0'}$\n- $1 \\le \\text{minJump} \\le \\text{maxJump} < s.\\text{length}$\n\n---",
+    "approach_summary": "Use dynamic programming optimized with a sliding window counter that tracks the number of reachable source indices in the valid jump interval.",
+    "full_explanation": "# LeetCode 1871: Jump Game VII\n\n- **Publication Date:** 25 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/jump-game-vii/](https://leetcode.com/problems/jump-game-vii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0yW-QLH0Lhs)\n\n---\n\n## Problem Summary\n\nYou are given a 0-indexed binary string `s` and two integers `minJump` and `maxJump`. In the beginning, you are standing at index `0`, which is equal to `'0'`. You can move from index `i` to index `j` if the following conditions are fulfilled:\n- $i + \\text{minJump} \\le j \\le \\min(i + \\text{maxJump}, s.\\text{length} - 1)$, and\n- $s[j] == \\text{'0'}$.\n\nReturn `true` if you can reach index $s.\\text{length} - 1$ in `s`, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"011010\"`, `minJump = 2`, `maxJump = 3`\n- **Output:** `true`\n- **Explanation:**\n  - In the first step, move from index 0 to index 3 ($0 + 3 = 3$).\n  - In the second step, move from index 3 to index 5 ($3 + 2 = 5$).\n\n#### Example 2:\n- **Input:** `s = \"01101110\"`, `minJump = 2`, `maxJump = 3`\n- **Output:** `false`\n- **Explanation:**\n  - All reachable indices in subsequent steps contain `'1'` or are blocked from landing on the last index.\n\n---\n\n### Constraints\n\n- $2 \\le s.\\text{length} \\le 10^5$\n- $s[i]$ is either `'0'` or `'1'`\n- $s[0] == \\text{'0'}$\n- $1 \\le \\text{minJump} \\le \\text{maxJump} < s.\\text{length}$\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Sliding Window**\n- **Prefix Sum**\n\n---\n\n## Approach & Intuition\n\n### 1. Dynamic Programming Formulation\n\nLet $\\text{dp}[i]$ be `true` if index $i$ is reachable from $0$, and `false` otherwise:\n- Base case: $\\text{dp}[0] = \\text{true}$.\n- For any index $i \\ge 1$ where $s[i] == \\text{'0'}$, index $i$ is reachable if and only if there exists some reachable index $j$ such that:\n  $$i - \\text{maxJump} \\le j \\le i - \\text{minJump} \\quad \\text{and} \\quad \\text{dp}[j] == \\text{true}$$\n\nA naive check of this range for every $i$ takes $\\mathcal{O}((\\text{maxJump} - \\text{minJump}) \\cdot N) = \\mathcal{O}(N^2)$ time, which will result in Time Limit Exceeded (TLE) for $N = 10^5$.\n\n### 2. Sliding Window / Prefix Count Optimization ($\\mathcal{O}(N)$)\n\nNotice that as $i$ increments by $1$, the valid source range $[i - \\text{maxJump}, i - \\text{minJump}]$ shifts to the right by $1$. This is a canonical **sliding window**:\n- Maintain `reachableInWindow`: the count of indices $j$ currently in $[i - \\text{maxJump}, i - \\text{minJump}]$ where $\\text{dp}[j] == \\text{true}$.\n- As $i$ increases:\n  - The new candidate index entering the right boundary of the window is $i - \\text{minJump}$. If $i - \\text{minJump} \\ge 0$ and $\\text{dp}[i - \\text{minJump}] == \\text{true}$, increment `reachableInWindow++`.\n  - The obsolete index exiting the left boundary is $i - \\text{maxJump} - 1$. If $i - \\text{maxJump} - 1 \\ge 0$ and $\\text{dp}[i - \\text{maxJump} - 1] == \\text{true}$, decrement `reachableInWindow--`.\n- If $s[i] == \\text{'0'}$ and `reachableInWindow > 0`, then $\\text{dp}[i] = \\text{true}$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We iterate through the string of length $N = 10^5$ exactly once.\n  - At each index $i$, window updates and checks run in $\\mathcal{O}(1)$ time.\n  - Overall time: $\\approx 10^5$ operations ($\\approx 4\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A boolean array `dp` of size $N$ to store reachability state.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/0yW-QLH0Lhs](https://youtu.be/0yW-QLH0Lhs)\n"
+  },
+  "approach_summary": "Use dynamic programming optimized with a sliding window counter that tracks the number of reachable source indices in the valid jump interval.",
+  "explanation": "# LeetCode 1871: Jump Game VII\n\n- **Publication Date:** 25 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/jump-game-vii/](https://leetcode.com/problems/jump-game-vii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0yW-QLH0Lhs)\n\n---\n\n## Problem Summary\n\nYou are given a 0-indexed binary string `s` and two integers `minJump` and `maxJump`. In the beginning, you are standing at index `0`, which is equal to `'0'`. You can move from index `i` to index `j` if the following conditions are fulfilled:\n- $i + \\text{minJump} \\le j \\le \\min(i + \\text{maxJump}, s.\\text{length} - 1)$, and\n- $s[j] == \\text{'0'}$.\n\nReturn `true` if you can reach index $s.\\text{length} - 1$ in `s`, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"011010\"`, `minJump = 2`, `maxJump = 3`\n- **Output:** `true`\n- **Explanation:**\n  - In the first step, move from index 0 to index 3 ($0 + 3 = 3$).\n  - In the second step, move from index 3 to index 5 ($3 + 2 = 5$).\n\n#### Example 2:\n- **Input:** `s = \"01101110\"`, `minJump = 2`, `maxJump = 3`\n- **Output:** `false`\n- **Explanation:**\n  - All reachable indices in subsequent steps contain `'1'` or are blocked from landing on the last index.\n\n---\n\n### Constraints\n\n- $2 \\le s.\\text{length} \\le 10^5$\n- $s[i]$ is either `'0'` or `'1'`\n- $s[0] == \\text{'0'}$\n- $1 \\le \\text{minJump} \\le \\text{maxJump} < s.\\text{length}$\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Sliding Window**\n- **Prefix Sum**\n\n---\n\n## Approach & Intuition\n\n### 1. Dynamic Programming Formulation\n\nLet $\\text{dp}[i]$ be `true` if index $i$ is reachable from $0$, and `false` otherwise:\n- Base case: $\\text{dp}[0] = \\text{true}$.\n- For any index $i \\ge 1$ where $s[i] == \\text{'0'}$, index $i$ is reachable if and only if there exists some reachable index $j$ such that:\n  $$i - \\text{maxJump} \\le j \\le i - \\text{minJump} \\quad \\text{and} \\quad \\text{dp}[j] == \\text{true}$$\n\nA naive check of this range for every $i$ takes $\\mathcal{O}((\\text{maxJump} - \\text{minJump}) \\cdot N) = \\mathcal{O}(N^2)$ time, which will result in Time Limit Exceeded (TLE) for $N = 10^5$.\n\n### 2. Sliding Window / Prefix Count Optimization ($\\mathcal{O}(N)$)\n\nNotice that as $i$ increments by $1$, the valid source range $[i - \\text{maxJump}, i - \\text{minJump}]$ shifts to the right by $1$. This is a canonical **sliding window**:\n- Maintain `reachableInWindow`: the count of indices $j$ currently in $[i - \\text{maxJump}, i - \\text{minJump}]$ where $\\text{dp}[j] == \\text{true}$.\n- As $i$ increases:\n  - The new candidate index entering the right boundary of the window is $i - \\text{minJump}$. If $i - \\text{minJump} \\ge 0$ and $\\text{dp}[i - \\text{minJump}] == \\text{true}$, increment `reachableInWindow++`.\n  - The obsolete index exiting the left boundary is $i - \\text{maxJump} - 1$. If $i - \\text{maxJump} - 1 \\ge 0$ and $\\text{dp}[i - \\text{maxJump} - 1] == \\text{true}$, decrement `reachableInWindow--`.\n- If $s[i] == \\text{'0'}$ and `reachableInWindow > 0`, then $\\text{dp}[i] = \\text{true}$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We iterate through the string of length $N = 10^5$ exactly once.\n  - At each index $i$, window updates and checks run in $\\mathcal{O}(1)$ time.\n  - Overall time: $\\approx 10^5$ operations ($\\approx 4\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A boolean array `dp` of size $N$ to store reachability state.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/0yW-QLH0Lhs](https://youtu.be/0yW-QLH0Lhs)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1871 - Jump Game VII\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean canReach(String s, int minJump, int maxJump) {\n        int n = s.length();\n        if (s.charAt(n - 1) == '1') {\n            return false;\n        }\n\n        boolean[] dp = new boolean[n];\n        dp[0] = true;\n        int reachableInWindow = 0;\n\n        for (int i = 1; i < n; i++) {\n            // Add (i - minJump) to sliding window\n            if (i >= minJump && dp[i - minJump]) {\n                reachableInWindow++;\n            }\n            // Remove (i - maxJump - 1) from sliding window\n            if (i > maxJump && dp[i - maxJump - 1]) {\n                reachableInWindow--;\n            }\n\n            // Current index is reachable if within valid jump range and character is '0'\n            if (s.charAt(i) == '0' && reachableInWindow > 0) {\n                dp[i] = true;\n            }\n        }\n\n        return dp[n - 1];\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1871 - Jump Game VII\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def canReach(self, s: str, minJump: int, maxJump: int) -> bool:\n        n = len(s)\n        if s[n - 1] == '1':\n            return False\n\n        dp = [False] * n\n        dp[0] = True\n        reachable_in_window = 0\n\n        for i in range(1, n):\n            # Element entering the sliding window: i - minJump\n            if i >= minJump and dp[i - minJump]:\n                reachable_in_window += 1\n            # Element leaving the sliding window: i - maxJump - 1\n            if i > maxJump and dp[i - maxJump - 1]:\n                reachable_in_window -= 1\n\n            if s[i] == '0' and reachable_in_window > 0:\n                dp[i] = True\n\n        return dp[n - 1]\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1871 - Jump Game VII\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool canReach(string s, int minJump, int maxJump) {\n        int n = s.length();\n        if (s[n - 1] == '1') {\n            return false;\n        }\n\n        vector<bool> dp(n, false);\n        dp[0] = true;\n        int reachableInWindow = 0;\n\n        for (int i = 1; i < n; ++i) {\n            if (i >= minJump && dp[i - minJump]) {\n                reachableInWindow++;\n            }\n            if (i > maxJump && dp[i - maxJump - 1]) {\n                reachableInWindow--;\n            }\n\n            if (s[i] == '0' && reachableInWindow > 0) {\n                dp[i] = true;\n            }\n        }\n\n        return dp[n - 1];\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1871 - Jump Game VII\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {string} s\n * @param {number} minJump\n * @param {number} maxJump\n * @return {boolean}\n */\nvar canReach = function(s, minJump, maxJump) {\n    const n = s.length;\n    if (s[n - 1] === '1') {\n        return false;\n    }\n\n    const dp = new Uint8Array(n);\n    dp[0] = 1;\n    let reachableInWindow = 0;\n\n    for (let i = 1; i < n; i++) {\n        if (i >= minJump && dp[i - minJump]) {\n            reachableInWindow++;\n        }\n        if (i > maxJump && dp[i - maxJump - 1]) {\n            reachableInWindow--;\n        }\n\n        if (s[i] === '0' && reachableInWindow > 0) {\n            dp[i] = 1;\n        }\n    }\n\n    return dp[n - 1] === 1;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1871-jump-game-vii.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1871-jump-game-vii.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1871: Jump Game VII Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1871 (Jump Game VII) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1871-jump-game-vii.jpg",
+    "keywords": [
+      "LeetCode 1871",
+      "Jump Game VII",
+      "LeetCode 1871 Solution",
+      "LeetCode Jump Game VII",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

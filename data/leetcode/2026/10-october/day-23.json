@@ -1,0 +1,79 @@
+{
+  "problem_number": 3644,
+  "problem_title": "Maximum K to Sort a Permutation",
+  "slug": "maximum-k-to-sort-a-permutation",
+  "solution_date": "2026-10-23",
+  "formatted_date": "23-10-2026",
+  "day_number": 23,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
+  "youtube_url": "https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` of length `n`, where `nums` is a permutation of the numbers in the range `[0..n - 1]`.\n\nYou may swap elements at indices `i` and `j` **only if** `nums[i] AND nums[j] == k`, where `AND` denotes the bitwise AND operation and `k` is a non-negative integer.\n\nReturn the **maximum value of** `k` such that the array can be sorted in **non-decreasing** order using any number of such swaps. If `nums` is already sorted, return `0`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [0, 3, 2, 1]`\n- **Output:** `1`\n- **Explanation:**\n  - Choose $k = 1$. Swapping `nums[1] = 3` and `nums[3] = 1` is allowed since `3 AND 1 == 1`, resulting in a sorted permutation: `[0, 1, 2, 3]`.\n\n#### Example 2:\n- **Input:** `nums = [0, 1, 3, 2]`\n- **Output:** `2`\n- **Explanation:**\n  - Choose $k = 2$. Swapping `nums[2] = 3` and `nums[3] = 2` is allowed since `3 AND 2 == 2`, resulting in a sorted permutation: `[0, 1, 2, 3]`.\n\n#### Example 3:\n- **Input:** `nums = [3, 2, 1, 0]`\n- **Output:** `0`\n- **Explanation:**\n  - Only $k = 0$ allows sorting since no greater $k$ allows the required swaps where `nums[i] AND nums[j] == k`.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $0 \\le \\text{nums}[i] \\le n - 1$\n- `nums` is a permutation of integers from $0$ to $n - 1$.\n\n---",
+    "approach_summary": "Every misplaced element where nums[i] != i must participate in a swap. Thus k must be a submask of all misplaced elements, so optimal k is their cumulative bitwise AND.",
+    "full_explanation": "# LeetCode 3644: Maximum K to Sort a Permutation\n\n- **Publication Date:** 23 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-k-to-sort-a-permutation/](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length `n`, where `nums` is a permutation of the numbers in the range `[0..n - 1]`.\n\nYou may swap elements at indices `i` and `j` **only if** `nums[i] AND nums[j] == k`, where `AND` denotes the bitwise AND operation and `k` is a non-negative integer.\n\nReturn the **maximum value of** `k` such that the array can be sorted in **non-decreasing** order using any number of such swaps. If `nums` is already sorted, return `0`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [0, 3, 2, 1]`\n- **Output:** `1`\n- **Explanation:**\n  - Choose $k = 1$. Swapping `nums[1] = 3` and `nums[3] = 1` is allowed since `3 AND 1 == 1`, resulting in a sorted permutation: `[0, 1, 2, 3]`.\n\n#### Example 2:\n- **Input:** `nums = [0, 1, 3, 2]`\n- **Output:** `2`\n- **Explanation:**\n  - Choose $k = 2$. Swapping `nums[2] = 3` and `nums[3] = 2` is allowed since `3 AND 2 == 2`, resulting in a sorted permutation: `[0, 1, 2, 3]`.\n\n#### Example 3:\n- **Input:** `nums = [3, 2, 1, 0]`\n- **Output:** `0`\n- **Explanation:**\n  - Only $k = 0$ allows sorting since no greater $k$ allows the required swaps where `nums[i] AND nums[j] == k`.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $0 \\le \\text{nums}[i] \\le n - 1$\n- `nums` is a permutation of integers from $0$ to $n - 1$.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Bit Manipulation**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n### 1. Bitwise Invariant of Swapping Elements\n\n1. **Swap Condition:**\n   - Swapping elements $u$ and $v$ requires $u \\text{ AND } v = k$.\n   - By the definition of the bitwise AND operation, any bit that is set in $k$ ($k$'s $b$-th bit is $1$) **must be set** in both $u$ and $v$.\n   - In other words, $k$ is a submask of every element involved in any swap.\n\n2. **Misplaced Elements Must Move:**\n   - In a sorted permutation of $[0, \\dots, n - 1]$, every element must reside at index $i = \\text{nums}[i]$.\n   - Any element currently satisfying $\\text{nums}[i] \\ne i$ is misplaced and must be swapped at least once to reach its correct position.\n   - Therefore, every misplaced element must participate in at least one swap, meaning all bits set in $k$ must be set in every misplaced element.\n\n3. **Maximizing $k$:**\n   - To make $k$ as large as possible while satisfying the condition for every misplaced number, $k$ must equal the cumulative bitwise AND of all elements for which $\\text{nums}[i] \\ne i$:\n     $$k = \\bigwedge_{\\text{nums}[i] \\ne i} \\text{nums}[i]$$\n   - If the permutation is already sorted, no swaps are needed, and the problem asks us to return `0`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the array computes the bitwise AND of all misplaced elements.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only a single integer accumulator `ans`.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x](https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Every misplaced element where nums[i] != i must participate in a swap. Thus k must be a submask of all misplaced elements, so optimal k is their cumulative bitwise AND.",
+  "explanation": "# LeetCode 3644: Maximum K to Sort a Permutation\n\n- **Publication Date:** 23 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-k-to-sort-a-permutation/](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length `n`, where `nums` is a permutation of the numbers in the range `[0..n - 1]`.\n\nYou may swap elements at indices `i` and `j` **only if** `nums[i] AND nums[j] == k`, where `AND` denotes the bitwise AND operation and `k` is a non-negative integer.\n\nReturn the **maximum value of** `k` such that the array can be sorted in **non-decreasing** order using any number of such swaps. If `nums` is already sorted, return `0`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [0, 3, 2, 1]`\n- **Output:** `1`\n- **Explanation:**\n  - Choose $k = 1$. Swapping `nums[1] = 3` and `nums[3] = 1` is allowed since `3 AND 1 == 1`, resulting in a sorted permutation: `[0, 1, 2, 3]`.\n\n#### Example 2:\n- **Input:** `nums = [0, 1, 3, 2]`\n- **Output:** `2`\n- **Explanation:**\n  - Choose $k = 2$. Swapping `nums[2] = 3` and `nums[3] = 2` is allowed since `3 AND 2 == 2`, resulting in a sorted permutation: `[0, 1, 2, 3]`.\n\n#### Example 3:\n- **Input:** `nums = [3, 2, 1, 0]`\n- **Output:** `0`\n- **Explanation:**\n  - Only $k = 0$ allows sorting since no greater $k$ allows the required swaps where `nums[i] AND nums[j] == k`.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $0 \\le \\text{nums}[i] \\le n - 1$\n- `nums` is a permutation of integers from $0$ to $n - 1$.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Bit Manipulation**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n### 1. Bitwise Invariant of Swapping Elements\n\n1. **Swap Condition:**\n   - Swapping elements $u$ and $v$ requires $u \\text{ AND } v = k$.\n   - By the definition of the bitwise AND operation, any bit that is set in $k$ ($k$'s $b$-th bit is $1$) **must be set** in both $u$ and $v$.\n   - In other words, $k$ is a submask of every element involved in any swap.\n\n2. **Misplaced Elements Must Move:**\n   - In a sorted permutation of $[0, \\dots, n - 1]$, every element must reside at index $i = \\text{nums}[i]$.\n   - Any element currently satisfying $\\text{nums}[i] \\ne i$ is misplaced and must be swapped at least once to reach its correct position.\n   - Therefore, every misplaced element must participate in at least one swap, meaning all bits set in $k$ must be set in every misplaced element.\n\n3. **Maximizing $k$:**\n   - To make $k$ as large as possible while satisfying the condition for every misplaced number, $k$ must equal the cumulative bitwise AND of all elements for which $\\text{nums}[i] \\ne i$:\n     $$k = \\bigwedge_{\\text{nums}[i] \\ne i} \\text{nums}[i]$$\n   - If the permutation is already sorted, no swaps are needed, and the problem asks us to return `0`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the array computes the bitwise AND of all misplaced elements.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only a single integer accumulator `ans`.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x](https://youtu.be/8qmQnPXusho?si=GfX8pbo2iogS5g8x)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3644 - Maximum K to Sort a Permutation\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int sortPermutation(int[] nums) {\n        int n = nums.length;\n        int ans = -1;\n        for (int i = 0; i < n; i++) {\n            if (nums[i] != i) {\n                ans &= nums[i];\n            }\n        }\n        return ans == -1 ? 0 : ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3644 - Maximum K to Sort a Permutation\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def sortPermutation(self, nums: List[int]) -> int:\n        ans = -1\n        for i, val in enumerate(nums):\n            if val != i:\n                ans &= val\n        return 0 if ans == -1 else ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3644 - Maximum K to Sort a Permutation\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3644 - Maximum K to Sort a Permutation\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int sortPermutation(vector<int>& nums) {\n        int n = nums.size();\n        int ans = -1;\n        for (int i = 0; i < n; i++) {\n            if (nums[i] != i) {\n                ans &= nums[i];\n            }\n        }\n        return ans == -1 ? 0 : ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3644 - Maximum K to Sort a Permutation\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar sortPermutation = function(nums) {\n    const n = nums.length;\n    let ans = -1;\n    for (let i = 0; i < n; i++) {\n        if (nums[i] !== i) {\n            ans &= nums[i];\n        }\n    }\n    return ans === -1 ? 0 : ans;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Math"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3644-maximum-k-to-sort-a-permutation.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3644-maximum-k-to-sort-a-permutation.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3644: Maximum K to Sort a Permutation Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3644 (Maximum K to Sort a Permutation) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3644-maximum-k-to-sort-a-permutation.jpg",
+    "keywords": [
+      "LeetCode 3644",
+      "Maximum K to Sort a Permutation",
+      "LeetCode 3644 Solution",
+      "LeetCode Maximum K to Sort a Permutation",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

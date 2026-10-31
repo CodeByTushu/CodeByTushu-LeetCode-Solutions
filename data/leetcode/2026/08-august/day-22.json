@@ -1,0 +1,78 @@
+{
+  "problem_number": 3622,
+  "problem_title": "Check Divisibility by Digit Sum and Product",
+  "slug": "check-divisibility-by-digit-sum-and-product",
+  "solution_date": "2026-08-22",
+  "formatted_date": "22-08-2026",
+  "day_number": 22,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(log10 N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/",
+  "youtube_url": "https://youtu.be/zRTF8a8pECM?si=RNyqWMulvcgGlk_z",
+  "notes": "Optimal O(log10 N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a positive integer `n`. Determine whether `n` is divisible by the sum of the following two values:\n- The **digit sum** of `n` (the sum of its digits).\n- The **digit product** of `n` (the product of its digits).\n\nReturn `true` if `n` is divisible by this combined sum; otherwise, return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 99`\n- **Output:** `true`\n- **Explanation:**\n  - Digit sum: $9 + 9 = 18$\n  - Digit product: $9 \\times 9 = 81$\n  - Combined total: $18 + 81 = 99$\n  - Since $99 \\pmod{99} = 0$, $99$ is divisible by $99$, so the output is `true`.\n\n#### Example 2:\n\n- **Input:** `n = 23`\n- **Output:** `false`\n- **Explanation:**\n  - Digit sum: $2 + 3 = 5$\n  - Digit product: $2 \\times 3 = 6$\n  - Combined total: $5 + 6 = 11$\n  - Since $23 \\pmod{11} = 1 \\ne 0$, $23$ is not divisible by $11$, so the output is `false`.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^6$\n\n---",
+    "approach_summary": "Extract digits of n sequentially to accumulate digit sum and digit product. Check if n is divisible by the combined sum.",
+    "full_explanation": "# LeetCode 3622: Check Divisibility by Digit Sum and Product\n\n- **Publication Date:** 22 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zRTF8a8pECM?si=RNyqWMulvcgGlk_z)\n\n---\n\n## Problem Summary\n\nYou are given a positive integer `n`. Determine whether `n` is divisible by the sum of the following two values:\n- The **digit sum** of `n` (the sum of its digits).\n- The **digit product** of `n` (the product of its digits).\n\nReturn `true` if `n` is divisible by this combined sum; otherwise, return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 99`\n- **Output:** `true`\n- **Explanation:**\n  - Digit sum: $9 + 9 = 18$\n  - Digit product: $9 \\times 9 = 81$\n  - Combined total: $18 + 81 = 99$\n  - Since $99 \\pmod{99} = 0$, $99$ is divisible by $99$, so the output is `true`.\n\n#### Example 2:\n\n- **Input:** `n = 23`\n- **Output:** `false`\n- **Explanation:**\n  - Digit sum: $2 + 3 = 5$\n  - Digit product: $2 \\times 3 = 6$\n  - Combined total: $5 + 6 = 11$\n  - Since $23 \\pmod{11} = 1 \\ne 0$, $23$ is not divisible by $11$, so the output is `false`.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^6$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### 1. Extracting Digits:\nTo compute both the digit sum and digit product:\n- Initialize `sum = 0` and `product = 1`.\n- While `n > 0`:\n  - Extract the last digit: `digit = n % 10`.\n  - Accumulate: `sum += digit` and `product *= digit`.\n  - Remove the last digit: `n /= 10`.\n\n### 2. Divisibility Check:\n- Compute the denominator `total = sum + product`.\n- Check if original $n \\pmod{\\text{total}} == 0$.\n- Since $n \\ge 1$ and all digits are non-negative, $\\text{sum} \\ge 1$, so division by zero is impossible.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{10} n)$\n  - Extracting digits takes proportional to the number of decimal digits in $n$.\n  - With $n \\le 10^6$, there are at most $7$ digits, executing in $\\mathcal{O}(1)$ time ($< 1\\text{ ms}$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only a few scalar integer variables are used.\n"
+  },
+  "approach_summary": "Extract digits of n sequentially to accumulate digit sum and digit product. Check if n is divisible by the combined sum.",
+  "explanation": "# LeetCode 3622: Check Divisibility by Digit Sum and Product\n\n- **Publication Date:** 22 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zRTF8a8pECM?si=RNyqWMulvcgGlk_z)\n\n---\n\n## Problem Summary\n\nYou are given a positive integer `n`. Determine whether `n` is divisible by the sum of the following two values:\n- The **digit sum** of `n` (the sum of its digits).\n- The **digit product** of `n` (the product of its digits).\n\nReturn `true` if `n` is divisible by this combined sum; otherwise, return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 99`\n- **Output:** `true`\n- **Explanation:**\n  - Digit sum: $9 + 9 = 18$\n  - Digit product: $9 \\times 9 = 81$\n  - Combined total: $18 + 81 = 99$\n  - Since $99 \\pmod{99} = 0$, $99$ is divisible by $99$, so the output is `true`.\n\n#### Example 2:\n\n- **Input:** `n = 23`\n- **Output:** `false`\n- **Explanation:**\n  - Digit sum: $2 + 3 = 5$\n  - Digit product: $2 \\times 3 = 6$\n  - Combined total: $5 + 6 = 11$\n  - Since $23 \\pmod{11} = 1 \\ne 0$, $23$ is not divisible by $11$, so the output is `false`.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^6$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### 1. Extracting Digits:\nTo compute both the digit sum and digit product:\n- Initialize `sum = 0` and `product = 1`.\n- While `n > 0`:\n  - Extract the last digit: `digit = n % 10`.\n  - Accumulate: `sum += digit` and `product *= digit`.\n  - Remove the last digit: `n /= 10`.\n\n### 2. Divisibility Check:\n- Compute the denominator `total = sum + product`.\n- Check if original $n \\pmod{\\text{total}} == 0$.\n- Since $n \\ge 1$ and all digits are non-negative, $\\text{sum} \\ge 1$, so division by zero is impossible.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{10} n)$\n  - Extracting digits takes proportional to the number of decimal digits in $n$.\n  - With $n \\le 10^6$, there are at most $7$ digits, executing in $\\mathcal{O}(1)$ time ($< 1\\text{ ms}$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only a few scalar integer variables are used.\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3622 - Check Divisibility by Digit Sum and Product\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean checkDivisibility(int n) {\n        int sum = 0, product = 1;\n        int temp = n;\n        while (temp > 0) {\n            int digit = temp % 10;\n            sum += digit;\n            product *= digit;\n            temp /= 10;\n        }\n        return n % (sum + product) == 0;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3622 - Check Divisibility by Digit Sum and Product\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def checkDivisibility(self, n: int) -> bool:\n        digit_sum = 0\n        digit_product = 1\n        temp = n\n\n        while temp > 0:\n            digit = temp % 10\n            digit_sum += digit\n            digit_product *= digit\n            temp //= 10\n\n        return n % (digit_sum + digit_product) == 0\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3622 - Check Divisibility by Digit Sum and Product\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool checkDivisibility(int n) {\n        int sum = 0;\n        int product = 1;\n        int temp = n;\n\n        while (temp > 0) {\n            int digit = temp % 10;\n            sum += digit;\n            product *= digit;\n            temp /= 10;\n        }\n\n        return n % (sum + product) == 0;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3622 - Check Divisibility by Digit Sum and Product\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar checkDivisibility = function(n) {\n    let sum = 0;\n    let product = 1;\n    let temp = n;\n\n    while (temp > 0) {\n        const digit = temp % 10;\n        sum += digit;\n        product *= digit;\n        temp = Math.floor(temp / 10);\n    }\n\n    return n % (sum + product) === 0;\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3622-check-divisibility-by-digit-sum-and-product.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3622-check-divisibility-by-digit-sum-and-product.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3622: Check Divisibility by Digit Sum and Product Solution...",
+    "meta_description": "Master LeetCode 3622 (Check Divisibility by Digit Sum and Product) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log10 N) app...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3622-check-divisibility-by-digit-sum-and-product.jpg",
+    "keywords": [
+      "LeetCode 3622",
+      "Check Divisibility by Digit Sum and Product",
+      "LeetCode 3622 Solution",
+      "LeetCode Check Divisibility by Digit Sum and Product",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

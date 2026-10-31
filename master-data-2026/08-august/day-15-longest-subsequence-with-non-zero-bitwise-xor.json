@@ -1,0 +1,79 @@
+{
+  "problem_number": 3702,
+  "problem_title": "Longest Subsequence With Non-Zero Bitwise XOR",
+  "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+  "solution_date": "2026-08-15",
+  "formatted_date": "15-08-2026",
+  "day_number": 15,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/",
+  "youtube_url": "https://youtu.be/p_DGMnYCGL0?si=YmC1yz2kaeD-qKe8",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`.\n\nReturn the length of the **longest subsequence** in `nums` whose bitwise XOR is **non-zero**. If no such subsequence exists, return `0`.\n\nA **subsequence** is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3]`\n- **Output:** `2`\n- **Explanation:** One longest subsequence is `[2, 3]`. The bitwise XOR is computed as $2 \\oplus 3 = 1$, which is non-zero.\n\n#### Example 2:\n\n- **Input:** `nums = [2,3,4]`\n- **Output:** `3`\n- **Explanation:** The longest subsequence is `[2, 3, 4]`. The bitwise XOR is computed as $2 \\oplus 3 \\oplus 4 = 5$, which is non-zero.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $0 \\le \\text{nums}[i] \\le 10^9$\n\n---",
+    "approach_summary": "Compute the total XOR sum. If non-zero, the entire array of length N is valid. If zero, removing any single non-zero element yields a non-zero XOR sum of length N - 1; otherwise, return 0 if all elements are zero.",
+    "full_explanation": "# LeetCode 3702: Longest Subsequence With Non-Zero Bitwise XOR\n\n- **Publication Date:** 15 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/p_DGMnYCGL0?si=YmC1yz2kaeD-qKe8)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nReturn the length of the **longest subsequence** in `nums` whose bitwise XOR is **non-zero**. If no such subsequence exists, return `0`.\n\nA **subsequence** is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3]`\n- **Output:** `2`\n- **Explanation:** One longest subsequence is `[2, 3]`. The bitwise XOR is computed as $2 \\oplus 3 = 1$, which is non-zero.\n\n#### Example 2:\n\n- **Input:** `nums = [2,3,4]`\n- **Output:** `3`\n- **Explanation:** The longest subsequence is `[2, 3, 4]`. The bitwise XOR is computed as $2 \\oplus 3 \\oplus 4 = 5$, which is non-zero.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $0 \\le \\text{nums}[i] \\le 10^9$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Bit Manipulation**\n\n---\n\n## Intuition and Approach\n\n### Bitwise XOR Parity Analysis:\nLet $N$ be the length of `nums` and let $X$ be the bitwise XOR sum of all elements in the entire array:\n$$X = \\bigoplus_{i=0}^{N-1} \\text{nums}[i]$$\n\nWe evaluate the possible outcomes:\n1. **Case 1: $X \\ne 0$**\n   - The entire array is already a subsequence of length $N$ whose XOR sum is non-zero.\n   - The maximum possible length is therefore $N$.\n\n2. **Case 2: $X = 0$**\n   - If every element in `nums` is $0$, any non-empty subsequence only contains zeros, so its XOR sum will always be $0$. In this case, no valid subsequence exists, so we return $0$.\n   - If there exists at least one element $x \\in \\text{nums}$ such that $x \\ne 0$:\n     - Removing $x$ from `nums` yields a subsequence of length $N - 1$.\n     - The XOR sum of this remaining subsequence is:\n       $$\\text{XOR}_{\\text{remaining}} = X \\oplus x = 0 \\oplus x = x \\ne 0$$\n     - Because $x \\ne 0$, the remaining subsequence of length $N - 1$ has a non-zero XOR sum.\n     - Since the maximum length $N$ was invalid ($X = 0$), the optimal answer must be $N - 1$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We traverse the array of length $N$ in a single pass to compute the total XOR sum and check for any non-zero element.\n  - Runs in $\\approx 1\\text{ ms}$ for $N = 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Requires only $\\mathcal{O}(1)$ scalar variables (`totalXor`, `hasNonZero`).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Compute the total XOR sum. If non-zero, the entire array of length N is valid. If zero, removing any single non-zero element yields a non-zero XOR sum of length N - 1; otherwise, return 0 if all elements are zero.",
+  "explanation": "# LeetCode 3702: Longest Subsequence With Non-Zero Bitwise XOR\n\n- **Publication Date:** 15 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/p_DGMnYCGL0?si=YmC1yz2kaeD-qKe8)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nReturn the length of the **longest subsequence** in `nums` whose bitwise XOR is **non-zero**. If no such subsequence exists, return `0`.\n\nA **subsequence** is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3]`\n- **Output:** `2`\n- **Explanation:** One longest subsequence is `[2, 3]`. The bitwise XOR is computed as $2 \\oplus 3 = 1$, which is non-zero.\n\n#### Example 2:\n\n- **Input:** `nums = [2,3,4]`\n- **Output:** `3`\n- **Explanation:** The longest subsequence is `[2, 3, 4]`. The bitwise XOR is computed as $2 \\oplus 3 \\oplus 4 = 5$, which is non-zero.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $0 \\le \\text{nums}[i] \\le 10^9$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Bit Manipulation**\n\n---\n\n## Intuition and Approach\n\n### Bitwise XOR Parity Analysis:\nLet $N$ be the length of `nums` and let $X$ be the bitwise XOR sum of all elements in the entire array:\n$$X = \\bigoplus_{i=0}^{N-1} \\text{nums}[i]$$\n\nWe evaluate the possible outcomes:\n1. **Case 1: $X \\ne 0$**\n   - The entire array is already a subsequence of length $N$ whose XOR sum is non-zero.\n   - The maximum possible length is therefore $N$.\n\n2. **Case 2: $X = 0$**\n   - If every element in `nums` is $0$, any non-empty subsequence only contains zeros, so its XOR sum will always be $0$. In this case, no valid subsequence exists, so we return $0$.\n   - If there exists at least one element $x \\in \\text{nums}$ such that $x \\ne 0$:\n     - Removing $x$ from `nums` yields a subsequence of length $N - 1$.\n     - The XOR sum of this remaining subsequence is:\n       $$\\text{XOR}_{\\text{remaining}} = X \\oplus x = 0 \\oplus x = x \\ne 0$$\n     - Because $x \\ne 0$, the remaining subsequence of length $N - 1$ has a non-zero XOR sum.\n     - Since the maximum length $N$ was invalid ($X = 0$), the optimal answer must be $N - 1$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We traverse the array of length $N$ in a single pass to compute the total XOR sum and check for any non-zero element.\n  - Runs in $\\approx 1\\text{ ms}$ for $N = 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Requires only $\\mathcal{O}(1)$ scalar variables (`totalXor`, `hasNonZero`).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int longestSubsequence(int[] nums) {\n        int totalXor = 0;\n        boolean hasNonZero = false;\n\n        for (int num : nums) {\n            totalXor ^= num;\n            if (num != 0) {\n                hasNonZero = true;\n            }\n        }\n\n        int n = nums.length;\n\n        if (totalXor != 0) {\n            return n;\n        }\n\n        return hasNonZero ? n - 1 : 0;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def longestSubsequence(self, nums: List[int]) -> int:\n        total_xor = 0\n        has_non_zero = False\n\n        for num in nums:\n            total_xor ^= num\n            if num != 0:\n                has_non_zero = True\n\n        n = len(nums)\n        if total_xor != 0:\n            return n\n\n        return n - 1 if has_non_zero else 0\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int longestSubsequence(vector<int>& nums) {\n        int totalXor = 0;\n        bool hasNonZero = false;\n\n        for (int num : nums) {\n            totalXor ^= num;\n            if (num != 0) {\n                hasNonZero = true;\n            }\n        }\n\n        int n = nums.size();\n        if (totalXor != 0) {\n            return n;\n        }\n\n        return hasNonZero ? n - 1 : 0;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3702 - Longest Subsequence With Non-Zero Bitwise XOR\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar longestSubsequence = function(nums) {\n    let totalXor = 0;\n    let hasNonZero = false;\n\n    for (const num of nums) {\n        totalXor ^= num;\n        if (num !== 0) {\n            hasNonZero = true;\n        }\n    }\n\n    const n = nums.length;\n    if (totalXor !== 0) {\n        return n;\n    }\n\n    return hasNonZero ? n - 1 : 0;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3702-longest-subsequence-with-non-zero-bitwise-xor.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3702-longest-subsequence-with-non-zero-bitwise-xor.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3702: Longest Subsequence With Non-Zero Bitwise XOR Soluti...",
+    "meta_description": "Master LeetCode 3702 (Longest Subsequence With Non-Zero Bitwise XOR) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approac...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3702-longest-subsequence-with-non-zero-bitwise-xor.jpg",
+    "keywords": [
+      "LeetCode 3702",
+      "Longest Subsequence With Non-Zero Bitwise XOR",
+      "LeetCode 3702 Solution",
+      "LeetCode Longest Subsequence With Non-Zero Bitwise XOR",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

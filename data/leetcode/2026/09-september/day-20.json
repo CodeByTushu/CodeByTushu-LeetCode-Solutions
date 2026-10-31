@@ -1,0 +1,79 @@
+{
+  "problem_number": 3498,
+  "problem_title": "Reverse Degree of a String",
+  "slug": "reverse-degree-of-a-string",
+  "solution_date": "2026-09-20",
+  "formatted_date": "20-09-2026",
+  "day_number": 20,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+  "youtube_url": "https://youtu.be/OVJ_v_ACBXk?si=RWGC1Gh-sJ4g5xWH",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a string `s`, calculate its **reverse degree**.\n\nThe **reverse degree** is calculated as follows:\n1. For each character, multiply its position in the *reversed alphabet* (`'a'` $\\to 26$, `'b'` $\\to 25$, ..., `'z'` $\\to 1$) with its position in the string (**1-indexed**).\n2. Sum these products for all characters in the string.\n\nReturn the **reverse degree** of `s`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abc\"`\n- **Output:** `148`\n- **Explanation:**\n\n  | Letter | Index in Reversed Alphabet | Index in String | Product |\n  | :---: | :---: | :---: | :---: |\n  | `'a'` | 26 | 1 | 26 |\n  | `'b'` | 25 | 2 | 50 |\n  | `'c'` | 24 | 3 | 72 |\n\n  The reversed degree is $26 + 50 + 72 = 148$.\n\n#### Example 2:\n- **Input:** `s = \"zaza\"`\n- **Output:** `160`\n- **Explanation:**\n\n  | Letter | Index in Reversed Alphabet | Index in String | Product |\n  | :---: | :---: | :---: | :---: |\n  | `'z'` | 1 | 1 | 1 |\n  | `'a'` | 26 | 2 | 52 |\n  | `'z'` | 1 | 3 | 3 |\n  | `'a'` | 26 | 4 | 104 |\n\n  The reversed degree is $1 + 52 + 3 + 104 = 160$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 1000$\n- `s` contains only lowercase English letters.\n\n---",
+    "approach_summary": "Iterate through each character, compute its reversed alphabet position (26 - (ch - 'a')), multiply by (index + 1), and sum the results.",
+    "full_explanation": "# LeetCode 3498: Reverse Degree of a String\n\n- **Publication Date:** 20 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/reverse-degree-of-a-string/](https://leetcode.com/problems/reverse-degree-of-a-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/OVJ_v_ACBXk?si=RWGC1Gh-sJ4g5xWH)\n\n---\n\n## Problem Summary\n\nGiven a string `s`, calculate its **reverse degree**.\n\nThe **reverse degree** is calculated as follows:\n1. For each character, multiply its position in the *reversed alphabet* (`'a'` $\\to 26$, `'b'` $\\to 25$, ..., `'z'` $\\to 1$) with its position in the string (**1-indexed**).\n2. Sum these products for all characters in the string.\n\nReturn the **reverse degree** of `s`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abc\"`\n- **Output:** `148`\n- **Explanation:**\n\n  | Letter | Index in Reversed Alphabet | Index in String | Product |\n  | :---: | :---: | :---: | :---: |\n  | `'a'` | 26 | 1 | 26 |\n  | `'b'` | 25 | 2 | 50 |\n  | `'c'` | 24 | 3 | 72 |\n\n  The reversed degree is $26 + 50 + 72 = 148$.\n\n#### Example 2:\n- **Input:** `s = \"zaza\"`\n- **Output:** `160`\n- **Explanation:**\n\n  | Letter | Index in Reversed Alphabet | Index in String | Product |\n  | :---: | :---: | :---: | :---: |\n  | `'z'` | 1 | 1 | 1 |\n  | `'a'` | 26 | 2 | 52 |\n  | `'z'` | 1 | 3 | 3 |\n  | `'a'` | 26 | 4 | 104 |\n\n  The reversed degree is $1 + 52 + 3 + 104 = 160$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 1000$\n- `s` contains only lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### Key Mathematical Formula:\n\n1. **Reversed Alphabet Position**:\n   - In standard 0-indexed alphabet positions:\n     $$\\text{alphaPos} = s[i] - \\text{'a'}$$\n     where `'a'` is $0$, `'b'` is $1$, ..., `'z'` is $25$.\n   - In the reversed alphabet where `'a'` is $26$ and `'z'` is $1$:\n     $$\\text{reversedAlphabetPos} = 26 - (s[i] - \\text{'a'})$$\n\n2. **1-Indexed String Position**:\n   - The character at index $i$ (0-indexed) has string position:\n     $$\\text{stringPos} = i + 1$$\n\n3. **Accumulation**:\n   - The product for the $i$-th character is:\n     $$\\text{product}_i = \\text{reversedAlphabetPos} \\times \\text{stringPos} = (26 - (s[i] - \\text{'a'})) \\times (i + 1)$$\n   - Summing $\\text{product}_i$ over all characters from $i = 0$ to $n - 1$ gives the final answer.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the string of length $N$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant auxiliary space used for loop variables and running sum.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Iterate through each character, compute its reversed alphabet position (26 - (ch - 'a')), multiply by (index + 1), and sum the results.",
+  "explanation": "# LeetCode 3498: Reverse Degree of a String\n\n- **Publication Date:** 20 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/reverse-degree-of-a-string/](https://leetcode.com/problems/reverse-degree-of-a-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/OVJ_v_ACBXk?si=RWGC1Gh-sJ4g5xWH)\n\n---\n\n## Problem Summary\n\nGiven a string `s`, calculate its **reverse degree**.\n\nThe **reverse degree** is calculated as follows:\n1. For each character, multiply its position in the *reversed alphabet* (`'a'` $\\to 26$, `'b'` $\\to 25$, ..., `'z'` $\\to 1$) with its position in the string (**1-indexed**).\n2. Sum these products for all characters in the string.\n\nReturn the **reverse degree** of `s`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abc\"`\n- **Output:** `148`\n- **Explanation:**\n\n  | Letter | Index in Reversed Alphabet | Index in String | Product |\n  | :---: | :---: | :---: | :---: |\n  | `'a'` | 26 | 1 | 26 |\n  | `'b'` | 25 | 2 | 50 |\n  | `'c'` | 24 | 3 | 72 |\n\n  The reversed degree is $26 + 50 + 72 = 148$.\n\n#### Example 2:\n- **Input:** `s = \"zaza\"`\n- **Output:** `160`\n- **Explanation:**\n\n  | Letter | Index in Reversed Alphabet | Index in String | Product |\n  | :---: | :---: | :---: | :---: |\n  | `'z'` | 1 | 1 | 1 |\n  | `'a'` | 26 | 2 | 52 |\n  | `'z'` | 1 | 3 | 3 |\n  | `'a'` | 26 | 4 | 104 |\n\n  The reversed degree is $1 + 52 + 3 + 104 = 160$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 1000$\n- `s` contains only lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### Key Mathematical Formula:\n\n1. **Reversed Alphabet Position**:\n   - In standard 0-indexed alphabet positions:\n     $$\\text{alphaPos} = s[i] - \\text{'a'}$$\n     where `'a'` is $0$, `'b'` is $1$, ..., `'z'` is $25$.\n   - In the reversed alphabet where `'a'` is $26$ and `'z'` is $1$:\n     $$\\text{reversedAlphabetPos} = 26 - (s[i] - \\text{'a'})$$\n\n2. **1-Indexed String Position**:\n   - The character at index $i$ (0-indexed) has string position:\n     $$\\text{stringPos} = i + 1$$\n\n3. **Accumulation**:\n   - The product for the $i$-th character is:\n     $$\\text{product}_i = \\text{reversedAlphabetPos} \\times \\text{stringPos} = (26 - (s[i] - \\text{'a'})) \\times (i + 1)$$\n   - Summing $\\text{product}_i$ over all characters from $i = 0$ to $n - 1$ gives the final answer.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the string of length $N$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant auxiliary space used for loop variables and running sum.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3498 - Reverse Degree of a String\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int reverseDegree(String s) {\n        int result = 0;\n        for (int i = 0; i < s.length(); i++) {\n            int reversedAlphabetPos = 26 - (s.charAt(i) - 'a');\n            int stringPos = i + 1;\n            result += reversedAlphabetPos * stringPos;\n        }\n        return result;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3498 - Reverse Degree of a String\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def reverseDegree(self, s: str) -> int:\n        result = 0\n        for i, ch in enumerate(s):\n            reversed_alphabet_pos = 26 - (ord(ch) - ord('a'))\n            string_pos = i + 1\n            result += reversed_alphabet_pos * string_pos\n        return result\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3498 - Reverse Degree of a String\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\n/**\n * Problem: LeetCode 3498 - Reverse Degree of a String\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int reverseDegree(std::string s) {\n        int result = 0;\n        for (int i = 0; i < (int)s.length(); i++) {\n            int reversedAlphabetPos = 26 - (s[i] - 'a');\n            int stringPos = i + 1;\n            result += reversedAlphabetPos * stringPos;\n        }\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3498 - Reverse Degree of a String\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar reverseDegree = function(s) {\n    let result = 0;\n    for (let i = 0; i < s.length; i++) {\n        const reversedAlphabetPos = 26 - (s.charCodeAt(i) - 97);\n        const stringPos = i + 1;\n        result += reversedAlphabetPos * stringPos;\n    }\n    return result;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3498-reverse-degree-of-a-string.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3498-reverse-degree-of-a-string.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3498: Reverse Degree of a String Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3498 (Reverse Degree of a String) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed expl...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3498-reverse-degree-of-a-string.jpg",
+    "keywords": [
+      "LeetCode 3498",
+      "Reverse Degree of a String",
+      "LeetCode 3498 Solution",
+      "LeetCode Reverse Degree of a String",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

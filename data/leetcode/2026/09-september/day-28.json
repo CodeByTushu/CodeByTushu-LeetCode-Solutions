@@ -1,0 +1,79 @@
+{
+  "problem_number": 1614,
+  "problem_title": "Maximum Nesting Depth of the Parentheses",
+  "slug": "maximum-nesting-depth-of-the-parentheses",
+  "solution_date": "2026-09-28",
+  "formatted_date": "28-09-2026",
+  "day_number": 28,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+  "youtube_url": "https://youtu.be/eBkkcXZRTbw?si=Ti1tucS3wUKj69dl",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a valid parentheses string `s`, return the **nesting depth** of `s`. The nesting depth is the maximum number of nested parentheses.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"(1+(2*3)+((8)/4))+1\"`\n- **Output:** `3`\n- **Explanation:** Digit 8 is inside of 3 nested parentheses in the string.\n\n#### Example 2:\n- **Input:** `s = \"(1)+((2))+(((3)))\"`\n- **Output:** `3`\n- **Explanation:** Digit 3 is inside of 3 nested parentheses in the string.\n\n#### Example 3:\n- **Input:** `s = \"()(())((()))\"`\n- **Output:** `3`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 100$\n- `s` consists of digits `0-9` and characters `'+'`, `'-'`, `'*'`, `'/'`, `'('`, and `')'`.\n- It is guaranteed that parentheses expression `s` is a **VPS** (valid parentheses string).\n\n---",
+    "approach_summary": "Scan through the string using a depth counter: increment on '(' updating maxDepth, and decrement on ')'.",
+    "full_explanation": "# LeetCode 1614: Maximum Nesting Depth of the Parentheses\n\n- **Publication Date:** 28 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/eBkkcXZRTbw?si=Ti1tucS3wUKj69dl)\n\n---\n\n## Problem Summary\n\nGiven a valid parentheses string `s`, return the **nesting depth** of `s`. The nesting depth is the maximum number of nested parentheses.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"(1+(2*3)+((8)/4))+1\"`\n- **Output:** `3`\n- **Explanation:** Digit 8 is inside of 3 nested parentheses in the string.\n\n#### Example 2:\n- **Input:** `s = \"(1)+((2))+(((3)))\"`\n- **Output:** `3`\n- **Explanation:** Digit 3 is inside of 3 nested parentheses in the string.\n\n#### Example 3:\n- **Input:** `s = \"()(())((()))\"`\n- **Output:** `3`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 100$\n- `s` consists of digits `0-9` and characters `'+'`, `'-'`, `'*'`, `'/'`, `'('`, and `')'`.\n- It is guaranteed that parentheses expression `s` is a **VPS** (valid parentheses string).\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\nThe problem asks for the maximum depth of balanced parentheses in a string. Since the input is guaranteed to be a valid parentheses string (VPS), we do not need to store the characters in an actual stack data structure. Instead, an integer counter simulating the stack height is sufficient.\n\n### Step-by-Step Algorithm:\n1. Initialize two counters:\n   - `depth = 0`: tracks current nesting depth level.\n   - `maxDepth = 0`: tracks the peak nesting depth encountered.\n2. Iterate through each character `c` in `s`:\n   - If `c == '('`:\n     - Increment `depth++`.\n     - Update `maxDepth = max(maxDepth, depth)`.\n   - If `c == ')'`:\n     - Decrement `depth--`.\n   - All other characters (digits and arithmetic operators) are ignored.\n3. Return `maxDepth`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through string `s` of length $N \\le 100$. Runs in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses two primitive integer variables (`depth` and `maxDepth`).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Scan through the string using a depth counter: increment on '(' updating maxDepth, and decrement on ')'.",
+  "explanation": "# LeetCode 1614: Maximum Nesting Depth of the Parentheses\n\n- **Publication Date:** 28 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/eBkkcXZRTbw?si=Ti1tucS3wUKj69dl)\n\n---\n\n## Problem Summary\n\nGiven a valid parentheses string `s`, return the **nesting depth** of `s`. The nesting depth is the maximum number of nested parentheses.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"(1+(2*3)+((8)/4))+1\"`\n- **Output:** `3`\n- **Explanation:** Digit 8 is inside of 3 nested parentheses in the string.\n\n#### Example 2:\n- **Input:** `s = \"(1)+((2))+(((3)))\"`\n- **Output:** `3`\n- **Explanation:** Digit 3 is inside of 3 nested parentheses in the string.\n\n#### Example 3:\n- **Input:** `s = \"()(())((()))\"`\n- **Output:** `3`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 100$\n- `s` consists of digits `0-9` and characters `'+'`, `'-'`, `'*'`, `'/'`, `'('`, and `')'`.\n- It is guaranteed that parentheses expression `s` is a **VPS** (valid parentheses string).\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\nThe problem asks for the maximum depth of balanced parentheses in a string. Since the input is guaranteed to be a valid parentheses string (VPS), we do not need to store the characters in an actual stack data structure. Instead, an integer counter simulating the stack height is sufficient.\n\n### Step-by-Step Algorithm:\n1. Initialize two counters:\n   - `depth = 0`: tracks current nesting depth level.\n   - `maxDepth = 0`: tracks the peak nesting depth encountered.\n2. Iterate through each character `c` in `s`:\n   - If `c == '('`:\n     - Increment `depth++`.\n     - Update `maxDepth = max(maxDepth, depth)`.\n   - If `c == ')'`:\n     - Decrement `depth--`.\n   - All other characters (digits and arithmetic operators) are ignored.\n3. Return `maxDepth`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through string `s` of length $N \\le 100$. Runs in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses two primitive integer variables (`depth` and `maxDepth`).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maxDepth(String s) {\n        int depth = 0;\n        int maxDepth = 0;\n\n        for (char c : s.toCharArray()) {\n            if (c == '(') {\n                depth++;\n                maxDepth = Math.max(maxDepth, depth);\n            } else if (c == ')') {\n                depth--;\n            }\n        }\n\n        return maxDepth;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def maxDepth(self, s: str) -> int:\n        depth = 0\n        max_depth = 0\n\n        for c in s:\n            if c == '(':\n                depth += 1\n                max_depth = max(max_depth, depth)\n            elif c == ')':\n                depth -= 1\n\n        return max_depth\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maxDepth(string s) {\n        int depth = 0;\n        int maxDepth = 0;\n\n        for (char c : s) {\n            if (c == '(') {\n                depth++;\n                maxDepth = max(maxDepth, depth);\n            } else if (c == ')') {\n                depth--;\n            }\n        }\n\n        return maxDepth;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1614 - Maximum Nesting Depth of the Parentheses\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxDepth = function(s) {\n    let depth = 0;\n    let maxDepth = 0;\n\n    for (const c of s) {\n        if (c === '(') {\n            depth++;\n            maxDepth = Math.max(maxDepth, depth);\n        } else if (c === ')') {\n            depth--;\n        }\n    }\n\n    return maxDepth;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1614-maximum-nesting-depth-of-the-parentheses.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1614-maximum-nesting-depth-of-the-parentheses.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1614: Maximum Nesting Depth of the Parentheses Solution |...",
+    "meta_description": "Master LeetCode 1614 (Maximum Nesting Depth of the Parentheses) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1614-maximum-nesting-depth-of-the-parentheses.jpg",
+    "keywords": [
+      "LeetCode 1614",
+      "Maximum Nesting Depth of the Parentheses",
+      "LeetCode 1614 Solution",
+      "LeetCode Maximum Nesting Depth of the Parentheses",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

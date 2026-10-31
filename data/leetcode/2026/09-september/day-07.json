@@ -1,0 +1,78 @@
+{
+  "problem_number": 940,
+  "problem_title": "Distinct Subsequences II",
+  "slug": "distinct-subsequences-ii",
+  "solution_date": "2026-09-07",
+  "formatted_date": "07-09-2026",
+  "day_number": 7,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Hard",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/distinct-subsequences-ii/",
+  "youtube_url": "https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a string `s`, return the number of **distinct non-empty subsequences** of `s`. Since the answer may be very large, return it modulo $10^9 + 7$.\n\nA **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abc\"`\n- **Output:** `7`\n- **Explanation:** The 7 distinct subsequences are `\"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", \"abc\"`.\n\n#### Example 2:\n- **Input:** `s = \"aba\"`\n- **Output:** `6`\n- **Explanation:** The 6 distinct subsequences are `\"a\", \"b\", \"ab\", \"aa\", \"ba\", \"aba\"`.\n\n#### Example 3:\n- **Input:** `s = \"aaa\"`\n- **Output:** `3`\n- **Explanation:** The 3 distinct subsequences are `\"a\", \"aa\", \"aaa\"`.\n\n---\n\n### Constraints\n\n- $1 \\le s.\\text{length} \\le 2000$\n- `s` consists of lowercase English letters.\n\n---",
+    "approach_summary": "Maintain dp[c] representing distinct subsequences ending with character c. For each character ch, compute total = 1 + sum(dp) modulo 10^9 + 7, then set dp[ch - 'a'] = total. The final answer is sum(dp) modulo 10^9 + 7.",
+    "full_explanation": "# LeetCode 940: Distinct Subsequences II\n\n- **Publication Date:** 07 September 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/distinct-subsequences-ii/](https://leetcode.com/problems/distinct-subsequences-ii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va)\n\n---\n\n## Problem Summary\n\nGiven a string `s`, return the number of **distinct non-empty subsequences** of `s`. Since the answer may be very large, return it modulo $10^9 + 7$.\n\nA **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abc\"`\n- **Output:** `7`\n- **Explanation:** The 7 distinct subsequences are `\"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", \"abc\"`.\n\n#### Example 2:\n- **Input:** `s = \"aba\"`\n- **Output:** `6`\n- **Explanation:** The 6 distinct subsequences are `\"a\", \"b\", \"ab\", \"aa\", \"ba\", \"aba\"`.\n\n#### Example 3:\n- **Input:** `s = \"aaa\"`\n- **Output:** `3`\n- **Explanation:** The 3 distinct subsequences are `\"a\", \"aa\", \"aaa\"`.\n\n---\n\n### Constraints\n\n- $1 \\le s.\\text{length} \\le 2000$\n- `s` consists of lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n\n---\n\n## Approach & Intuition\n\n1. **State Definition**:\n   - Let `dp[c]` represent the number of distinct non-empty subsequences ending with character `c` (where $0 \\le c < 26$).\n   - When we encounter character `ch` with index `c = ch - 'a'`:\n     - We can append `ch` to **any** previously formed non-empty subsequence.\n     - We can also form a brand new single-character subsequence consisting solely of `ch` (represented by $+1$).\n     - Therefore:\n       $$\\text{new\\_dp}[c] = \\left(1 + \\sum_{i=0}^{25} \\text{dp}[i]\\right) \\pmod{10^9 + 7}$$\n     - Overwriting `dp[c]` with `new_dp[c]` inherently eliminates duplicates, because any previous subsequence ending with character `c` is replaced by this latest extension.\n\n2. **Final Sum**:\n   - The total number of distinct non-empty subsequences is the sum of `dp[i]` across all 26 characters:\n     $$\\text{ans} = \\left(\\sum_{i=0}^{25} \\text{dp}[i]\\right) \\pmod{10^9 + 7}$$\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(26 \\times N) = \\mathcal{O}(N)$\n  - For each character in the string of length $N$, we iterate through the alphabet size ($26$ characters).\n  - Given $N \\le 2000$, total operations are around $5.2 \\times 10^4$, executing in under 2 ms.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ / $\\mathcal{O}(|\\Sigma|)$\n  - Uses only a constant-sized array `dp` of length 26.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Maintain dp[c] representing distinct subsequences ending with character c. For each character ch, compute total = 1 + sum(dp) modulo 10^9 + 7, then set dp[ch - 'a'] = total. The final answer is sum(dp) modulo 10^9 + 7.",
+  "explanation": "# LeetCode 940: Distinct Subsequences II\n\n- **Publication Date:** 07 September 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/distinct-subsequences-ii/](https://leetcode.com/problems/distinct-subsequences-ii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va)\n\n---\n\n## Problem Summary\n\nGiven a string `s`, return the number of **distinct non-empty subsequences** of `s`. Since the answer may be very large, return it modulo $10^9 + 7$.\n\nA **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abc\"`\n- **Output:** `7`\n- **Explanation:** The 7 distinct subsequences are `\"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", \"abc\"`.\n\n#### Example 2:\n- **Input:** `s = \"aba\"`\n- **Output:** `6`\n- **Explanation:** The 6 distinct subsequences are `\"a\", \"b\", \"ab\", \"aa\", \"ba\", \"aba\"`.\n\n#### Example 3:\n- **Input:** `s = \"aaa\"`\n- **Output:** `3`\n- **Explanation:** The 3 distinct subsequences are `\"a\", \"aa\", \"aaa\"`.\n\n---\n\n### Constraints\n\n- $1 \\le s.\\text{length} \\le 2000$\n- `s` consists of lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n\n---\n\n## Approach & Intuition\n\n1. **State Definition**:\n   - Let `dp[c]` represent the number of distinct non-empty subsequences ending with character `c` (where $0 \\le c < 26$).\n   - When we encounter character `ch` with index `c = ch - 'a'`:\n     - We can append `ch` to **any** previously formed non-empty subsequence.\n     - We can also form a brand new single-character subsequence consisting solely of `ch` (represented by $+1$).\n     - Therefore:\n       $$\\text{new\\_dp}[c] = \\left(1 + \\sum_{i=0}^{25} \\text{dp}[i]\\right) \\pmod{10^9 + 7}$$\n     - Overwriting `dp[c]` with `new_dp[c]` inherently eliminates duplicates, because any previous subsequence ending with character `c` is replaced by this latest extension.\n\n2. **Final Sum**:\n   - The total number of distinct non-empty subsequences is the sum of `dp[i]` across all 26 characters:\n     $$\\text{ans} = \\left(\\sum_{i=0}^{25} \\text{dp}[i]\\right) \\pmod{10^9 + 7}$$\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(26 \\times N) = \\mathcal{O}(N)$\n  - For each character in the string of length $N$, we iterate through the alphabet size ($26$ characters).\n  - Given $N \\le 2000$, total operations are around $5.2 \\times 10^4$, executing in under 2 ms.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ / $\\mathcal{O}(|\\Sigma|)$\n  - Uses only a constant-sized array `dp` of length 26.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va](https://youtu.be/rnUQe6R6vQ0?si=gUWPJ3r87lA3N-Va)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 940 - Distinct Subsequences II\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int distinctSubseqII(String s) {\n        long MOD = 1_000_000_007;\n        long[] dp = new long[26];\n        for (char ch : s.toCharArray()) {\n            int c = ch - 'a';\n            long total = 1;\n            for (int i = 0; i < 26; i++) {\n                total = (total + dp[i]) % MOD;\n            }\n            dp[c] = total;\n        }\n        long ans = 0;\n        for (int i = 0; i < 26; i++) {\n            ans = (ans + dp[i]) % MOD;\n        }\n        return (int) ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 940 - Distinct Subsequences II\nDifficulty: Hard\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def distinctSubseqII(self, s: str) -> int:\n        MOD = 1_000_000_007\n        dp = [0] * 26\n\n        for ch in s:\n            c = ord(ch) - ord('a')\n            total = 1\n            for count in dp:\n                total = (total + count) % MOD\n            dp[c] = total\n\n        ans = sum(dp) % MOD\n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 940 - Distinct Subsequences II\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 940 - Distinct Subsequences II\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int distinctSubseqII(string s) {\n        long long MOD = 1'000'000'007;\n        vector<long long> dp(26, 0);\n\n        for (char ch : s) {\n            int c = ch - 'a';\n            long long total = 1;\n            for (int i = 0; i < 26; i++) {\n                total = (total + dp[i]) % MOD;\n            }\n            dp[c] = total;\n        }\n\n        long long ans = 0;\n        for (int i = 0; i < 26; i++) {\n            ans = (ans + dp[i]) % MOD;\n        }\n\n        return static_cast<int>(ans);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 940 - Distinct Subsequences II\n * Difficulty: Hard\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar distinctSubseqII = function(s) {\n    const MOD = 1000000007n;\n    const dp = new Array(26).fill(0n);\n\n    for (let i = 0; i < s.length; i++) {\n        const c = s.charCodeAt(i) - 97;\n        let total = 1n;\n        for (let j = 0; j < 26; j++) {\n            total = (total + dp[j]) % MOD;\n        }\n        dp[c] = total;\n    }\n\n    let ans = 0n;\n    for (let i = 0; i < 26; i++) {\n        ans = (ans + dp[i]) % MOD;\n    }\n\n    return Number(ans);\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-940-distinct-subsequences-ii.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-940-distinct-subsequences-ii.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 940: Distinct Subsequences II Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 940 (Distinct Subsequences II) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explana...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-940-distinct-subsequences-ii.jpg",
+    "keywords": [
+      "LeetCode 940",
+      "Distinct Subsequences II",
+      "LeetCode 940 Solution",
+      "LeetCode Distinct Subsequences II",
+      "Hard LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

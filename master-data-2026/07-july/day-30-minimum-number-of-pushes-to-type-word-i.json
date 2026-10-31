@@ -1,0 +1,79 @@
+{
+  "problem_number": 3014,
+  "problem_title": "Minimum Number of Pushes to Type Word I",
+  "slug": "minimum-number-of-pushes-to-type-word-i",
+  "solution_date": "2026-07-30",
+  "formatted_date": "30-07-2026",
+  "day_number": 30,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/",
+  "youtube_url": "https://youtu.be/-JUGKx9yLtI?si=y5iKS10uDS3SP_oD",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a string `word` containing **distinct** lowercase English letters.\n\nTelephone keypads have keys numbered $2$ to $9$ mapped with collections of lowercase English letters. Keys $1$, $*$, $\\#$, and $0$ do not map to any letters.\n\nIt is allowed to remap the $8$ keys ($2$ to $9$) to distinct collections of letters. The keys can be remapped to any amount of letters, but each letter must be mapped to exactly one key.\n\nReturn the **minimum number of pushes** needed to type `word` after remapping the keys.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `word = \"abcde\"`\n- **Output:** `5`\n- **Explanation:**\n  - Map each of the 5 letters to the first position of keys $2, 3, 4, 5, 6$.\n  - Each letter takes 1 push.\n  - Total cost = $1 + 1 + 1 + 1 + 1 = 5$.\n\n#### Example 2:\n\n- **Input:** `word = \"xycdefghij\"`\n- **Output:** `12`\n- **Explanation:**\n  - The first 8 letters are placed in the 1st position of the 8 available keys (1 push each = 8 pushes).\n  - The remaining 2 letters are placed in the 2nd position of 2 keys (2 pushes each = 4 pushes).\n  - Total cost = $8 + 4 = 12$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{word.length} \\le 26$\n- `word` consists of lowercase English letters.\n- All letters in `word` are **distinct**.\n\n---",
+    "approach_summary": "Greedily distribute characters across the 8 keys so that each character is assigned the minimum available push depth. For character index i, pushes equal (i / 8) + 1.",
+    "full_explanation": "# LeetCode 3014: Minimum Number of Pushes to Type Word I\n\n- **Publication Date:** 30 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/-JUGKx9yLtI?si=y5iKS10uDS3SP_oD)\n\n---\n\n## Problem Summary\n\nYou are given a string `word` containing **distinct** lowercase English letters.\n\nTelephone keypads have keys numbered $2$ to $9$ mapped with collections of lowercase English letters. Keys $1$, $*$, $\\#$, and $0$ do not map to any letters.\n\nIt is allowed to remap the $8$ keys ($2$ to $9$) to distinct collections of letters. The keys can be remapped to any amount of letters, but each letter must be mapped to exactly one key.\n\nReturn the **minimum number of pushes** needed to type `word` after remapping the keys.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `word = \"abcde\"`\n- **Output:** `5`\n- **Explanation:**\n  - Map each of the 5 letters to the first position of keys $2, 3, 4, 5, 6$.\n  - Each letter takes 1 push.\n  - Total cost = $1 + 1 + 1 + 1 + 1 = 5$.\n\n#### Example 2:\n\n- **Input:** `word = \"xycdefghij\"`\n- **Output:** `12`\n- **Explanation:**\n  - The first 8 letters are placed in the 1st position of the 8 available keys (1 push each = 8 pushes).\n  - The remaining 2 letters are placed in the 2nd position of 2 keys (2 pushes each = 4 pushes).\n  - Total cost = $8 + 4 = 12$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{word.length} \\le 26$\n- `word` consists of lowercase English letters.\n- All letters in `word` are **distinct**.\n\n---\n\n## Algorithmic Approach\n\n### 1. Keypad Capacity & Greedy Mapping\n- There are exactly $8$ remappable keys available on a telephone keypad ($2, 3, 4, 5, 6, 7, 8, 9$).\n- To minimize pushes, we greedily place characters in the lowest press depth available across all $8$ keys:\n  - 1st press depth: Can hold up to $8$ letters ($1$ push each).\n  - 2nd press depth: Can hold up to $8$ letters ($2$ pushes each).\n  - 3rd press depth: Can hold up to $8$ letters ($3$ pushes each).\n  - 4th press depth: Can hold up to $8$ letters ($4$ pushes each).\n\n### 2. Uniform Frequency Property\n- Since all characters in `word` are guaranteed to be distinct, every letter appears with a frequency of exactly $1$.\n- Any assignment of letters to press depths will produce the exact same total cost.\n- For each letter at 0-indexed position $i$ ($0 \\le i < n$):\n  $$\\text{pushes}(i) = \\lfloor i / 8 \\rfloor + 1$$\n- Total pushes is simply:\n  $$\\text{Total Cost} = \\sum_{i=0}^{n-1} \\left(\\lfloor i / 8 \\rfloor + 1\\right)$$\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Single linear pass of length $n \\le 26$. Because $n$ is bounded by the alphabet size $26$, this is effectively $\\mathcal{O}(1)$ time. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only a few integer accumulators are maintained. Zero heap memory or dynamic data structures are allocated. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Greedily distribute characters across the 8 keys so that each character is assigned the minimum available push depth. For character index i, pushes equal (i / 8) + 1.",
+  "explanation": "# LeetCode 3014: Minimum Number of Pushes to Type Word I\n\n- **Publication Date:** 30 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/-JUGKx9yLtI?si=y5iKS10uDS3SP_oD)\n\n---\n\n## Problem Summary\n\nYou are given a string `word` containing **distinct** lowercase English letters.\n\nTelephone keypads have keys numbered $2$ to $9$ mapped with collections of lowercase English letters. Keys $1$, $*$, $\\#$, and $0$ do not map to any letters.\n\nIt is allowed to remap the $8$ keys ($2$ to $9$) to distinct collections of letters. The keys can be remapped to any amount of letters, but each letter must be mapped to exactly one key.\n\nReturn the **minimum number of pushes** needed to type `word` after remapping the keys.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `word = \"abcde\"`\n- **Output:** `5`\n- **Explanation:**\n  - Map each of the 5 letters to the first position of keys $2, 3, 4, 5, 6$.\n  - Each letter takes 1 push.\n  - Total cost = $1 + 1 + 1 + 1 + 1 = 5$.\n\n#### Example 2:\n\n- **Input:** `word = \"xycdefghij\"`\n- **Output:** `12`\n- **Explanation:**\n  - The first 8 letters are placed in the 1st position of the 8 available keys (1 push each = 8 pushes).\n  - The remaining 2 letters are placed in the 2nd position of 2 keys (2 pushes each = 4 pushes).\n  - Total cost = $8 + 4 = 12$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{word.length} \\le 26$\n- `word` consists of lowercase English letters.\n- All letters in `word` are **distinct**.\n\n---\n\n## Algorithmic Approach\n\n### 1. Keypad Capacity & Greedy Mapping\n- There are exactly $8$ remappable keys available on a telephone keypad ($2, 3, 4, 5, 6, 7, 8, 9$).\n- To minimize pushes, we greedily place characters in the lowest press depth available across all $8$ keys:\n  - 1st press depth: Can hold up to $8$ letters ($1$ push each).\n  - 2nd press depth: Can hold up to $8$ letters ($2$ pushes each).\n  - 3rd press depth: Can hold up to $8$ letters ($3$ pushes each).\n  - 4th press depth: Can hold up to $8$ letters ($4$ pushes each).\n\n### 2. Uniform Frequency Property\n- Since all characters in `word` are guaranteed to be distinct, every letter appears with a frequency of exactly $1$.\n- Any assignment of letters to press depths will produce the exact same total cost.\n- For each letter at 0-indexed position $i$ ($0 \\le i < n$):\n  $$\\text{pushes}(i) = \\lfloor i / 8 \\rfloor + 1$$\n- Total pushes is simply:\n  $$\\text{Total Cost} = \\sum_{i=0}^{n-1} \\left(\\lfloor i / 8 \\rfloor + 1\\right)$$\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Single linear pass of length $n \\le 26$. Because $n$ is bounded by the alphabet size $26$, this is effectively $\\mathcal{O}(1)$ time. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only a few integer accumulators are maintained. Zero heap memory or dynamic data structures are allocated. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int minimumPushes(String word) {\n        int n = word.length();\n        int totalCost = 0;\n        for (int i = 0; i < n; i++) {\n            totalCost += (i / 8) + 1;\n        }\n        return totalCost;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3014 - Minimum Number of Pushes to Type Word I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def minimumPushes(self, word: str) -> int:\n        n = len(word)\n        total_cost = 0\n        for i in range(n):\n            total_cost += (i // 8) + 1\n        return total_cost\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\n/**\n * Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int minimumPushes(std::string word) {\n        int n = word.length();\n        int totalCost = 0;\n        for (int i = 0; i < n; i++) {\n            totalCost += (i / 8) + 1;\n        }\n        return totalCost;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3014 - Minimum Number of Pushes to Type Word I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar minimumPushes = function(word) {\n    const n = word.length;\n    let totalCost = 0;\n    for (let i = 0; i < n; i++) {\n        totalCost += Math.floor(i / 8) + 1;\n    }\n    return totalCost;\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3014-minimum-number-of-pushes-to-type-word-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3014-minimum-number-of-pushes-to-type-word-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3014: Minimum Number of Pushes to Type Word I Solution | C...",
+    "meta_description": "Master LeetCode 3014 (Minimum Number of Pushes to Type Word I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3014-minimum-number-of-pushes-to-type-word-i.jpg",
+    "keywords": [
+      "LeetCode 3014",
+      "Minimum Number of Pushes to Type Word I",
+      "LeetCode 3014 Solution",
+      "LeetCode Minimum Number of Pushes to Type Word I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

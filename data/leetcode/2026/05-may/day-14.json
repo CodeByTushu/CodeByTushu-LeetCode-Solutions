@@ -1,0 +1,79 @@
+{
+  "problem_number": 2784,
+  "problem_title": "Check if Array is Good",
+  "slug": "check-if-array-is-good",
+  "solution_date": "2026-05-14",
+  "formatted_date": "14-05-2026",
+  "day_number": 14,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/check-if-array-is-good/",
+  "youtube_url": "https://youtu.be/Mmm__v0Gc74",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`. We consider an array **good** if it is a permutation of an array `base[n]`.\n\n$$\\text{base}[n] = [1, 2, \\dots, n - 1, n, n]$$\n\nIn other words, `base[n]` is an array of length $n + 1$ which contains $1$ through $n - 1$ exactly once, plus two occurrences of $n$.\n- For example, $\\text{base}[1] = [1, 1]$ and $\\text{base}[3] = [1, 2, 3, 3]$.\n\nReturn `true` if the given array is good, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [2, 1, 3]`\n- **Output:** `false`\n- **Explanation:** Since the maximum element of the array is 3, the only candidate $n$ for which this array could be a permutation of $\\text{base}[n]$ is $n = 3$. However, $\\text{base}[3]$ has 4 elements, but `nums` has only 3 elements. Therefore, it cannot be a permutation of $\\text{base}[3] = [1, 2, 3, 3]$, so the answer is `false`.\n\n#### Example 2:\n- **Input:** `nums = [1, 3, 3, 2]`\n- **Output:** `true`\n- **Explanation:** Since the maximum element is 3, candidate $n = 3$. `nums` contains $1, 2$ once and $3$ twice, which is a valid permutation of $\\text{base}[3] = [1, 2, 3, 3]$.\n\n#### Example 3:\n- **Input:** `nums = [1, 1]`\n- **Output:** `true`\n- **Explanation:** For $n = 1$, $\\text{base}[1] = [1, 1]$, which matches `nums`.\n\n#### Example 4:\n- **Input:** `nums = [3, 4, 4, 1, 2, 1]`\n- **Output:** `false`\n- **Explanation:** Array length is 6, so candidate $n = 5$. Element 1 appears twice and 5 is missing, so it is not a valid permutation.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 200$\n\n---",
+    "approach_summary": "Determine candidate n as length - 1, then verify frequencies using a counting array ensuring numbers 1 to n - 1 appear once and n appears twice.",
+    "full_explanation": "# LeetCode 2784: Check if Array is Good\n\n- **Publication Date:** 14 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/check-if-array-is-good/](https://leetcode.com/problems/check-if-array-is-good/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Mmm__v0Gc74)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`. We consider an array **good** if it is a permutation of an array `base[n]`.\n\n$$\\text{base}[n] = [1, 2, \\dots, n - 1, n, n]$$\n\nIn other words, `base[n]` is an array of length $n + 1$ which contains $1$ through $n - 1$ exactly once, plus two occurrences of $n$.\n- For example, $\\text{base}[1] = [1, 1]$ and $\\text{base}[3] = [1, 2, 3, 3]$.\n\nReturn `true` if the given array is good, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [2, 1, 3]`\n- **Output:** `false`\n- **Explanation:** Since the maximum element of the array is 3, the only candidate $n$ for which this array could be a permutation of $\\text{base}[n]$ is $n = 3$. However, $\\text{base}[3]$ has 4 elements, but `nums` has only 3 elements. Therefore, it cannot be a permutation of $\\text{base}[3] = [1, 2, 3, 3]$, so the answer is `false`.\n\n#### Example 2:\n- **Input:** `nums = [1, 3, 3, 2]`\n- **Output:** `true`\n- **Explanation:** Since the maximum element is 3, candidate $n = 3$. `nums` contains $1, 2$ once and $3$ twice, which is a valid permutation of $\\text{base}[3] = [1, 2, 3, 3]$.\n\n#### Example 3:\n- **Input:** `nums = [1, 1]`\n- **Output:** `true`\n- **Explanation:** For $n = 1$, $\\text{base}[1] = [1, 1]$, which matches `nums`.\n\n#### Example 4:\n- **Input:** `nums = [3, 4, 4, 1, 2, 1]`\n- **Output:** `false`\n- **Explanation:** Array length is 6, so candidate $n = 5$. Element 1 appears twice and 5 is missing, so it is not a valid permutation.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 200$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Determining Candidate $n$\n\nBy definition, $\\text{base}[n]$ has length $n + 1$. Therefore, for `nums` of length $L$:\n$$n = L - 1$$\nIf $L < 2 \\implies n < 1$, it is impossible for `nums` to be a valid `base[n]`, so return `false` immediately.\n\n### 2. Frequency Counting in $\\mathcal{O}(N)$\n\nTo verify if `nums` is a permutation of $\\text{base}[n]$:\n1. Every integer $x$ in `nums` must satisfy $1 \\le x \\le n$. If any element falls outside this range, return `false`.\n2. Count the occurrences of each integer:\n   - For every $1 \\le i \\le n - 1$: $\\text{count}[i]$ must be exactly $1$.\n   - For $i = n$: $\\text{count}[n]$ must be exactly $2$.\n3. If all frequency checks pass, return `true`.\n\nThis provides an optimal $\\mathcal{O}(N)$ time check without sorting.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single pass over `nums` of length $N$ to record frequencies.\n  - A second pass from $1$ to $n$ to check frequencies.\n  - Total time is linear: $\\mathcal{O}(N)$, executing in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A frequency buffer of size $n + 1 \\le 101$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/Mmm__v0Gc74](https://youtu.be/Mmm__v0Gc74)\n"
+  },
+  "approach_summary": "Determine candidate n as length - 1, then verify frequencies using a counting array ensuring numbers 1 to n - 1 appear once and n appears twice.",
+  "explanation": "# LeetCode 2784: Check if Array is Good\n\n- **Publication Date:** 14 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/check-if-array-is-good/](https://leetcode.com/problems/check-if-array-is-good/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Mmm__v0Gc74)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`. We consider an array **good** if it is a permutation of an array `base[n]`.\n\n$$\\text{base}[n] = [1, 2, \\dots, n - 1, n, n]$$\n\nIn other words, `base[n]` is an array of length $n + 1$ which contains $1$ through $n - 1$ exactly once, plus two occurrences of $n$.\n- For example, $\\text{base}[1] = [1, 1]$ and $\\text{base}[3] = [1, 2, 3, 3]$.\n\nReturn `true` if the given array is good, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [2, 1, 3]`\n- **Output:** `false`\n- **Explanation:** Since the maximum element of the array is 3, the only candidate $n$ for which this array could be a permutation of $\\text{base}[n]$ is $n = 3$. However, $\\text{base}[3]$ has 4 elements, but `nums` has only 3 elements. Therefore, it cannot be a permutation of $\\text{base}[3] = [1, 2, 3, 3]$, so the answer is `false`.\n\n#### Example 2:\n- **Input:** `nums = [1, 3, 3, 2]`\n- **Output:** `true`\n- **Explanation:** Since the maximum element is 3, candidate $n = 3$. `nums` contains $1, 2$ once and $3$ twice, which is a valid permutation of $\\text{base}[3] = [1, 2, 3, 3]$.\n\n#### Example 3:\n- **Input:** `nums = [1, 1]`\n- **Output:** `true`\n- **Explanation:** For $n = 1$, $\\text{base}[1] = [1, 1]$, which matches `nums`.\n\n#### Example 4:\n- **Input:** `nums = [3, 4, 4, 1, 2, 1]`\n- **Output:** `false`\n- **Explanation:** Array length is 6, so candidate $n = 5$. Element 1 appears twice and 5 is missing, so it is not a valid permutation.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 200$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Determining Candidate $n$\n\nBy definition, $\\text{base}[n]$ has length $n + 1$. Therefore, for `nums` of length $L$:\n$$n = L - 1$$\nIf $L < 2 \\implies n < 1$, it is impossible for `nums` to be a valid `base[n]`, so return `false` immediately.\n\n### 2. Frequency Counting in $\\mathcal{O}(N)$\n\nTo verify if `nums` is a permutation of $\\text{base}[n]$:\n1. Every integer $x$ in `nums` must satisfy $1 \\le x \\le n$. If any element falls outside this range, return `false`.\n2. Count the occurrences of each integer:\n   - For every $1 \\le i \\le n - 1$: $\\text{count}[i]$ must be exactly $1$.\n   - For $i = n$: $\\text{count}[n]$ must be exactly $2$.\n3. If all frequency checks pass, return `true`.\n\nThis provides an optimal $\\mathcal{O}(N)$ time check without sorting.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single pass over `nums` of length $N$ to record frequencies.\n  - A second pass from $1$ to $n$ to check frequencies.\n  - Total time is linear: $\\mathcal{O}(N)$, executing in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A frequency buffer of size $n + 1 \\le 101$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/Mmm__v0Gc74](https://youtu.be/Mmm__v0Gc74)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2784 - Check if Array is Good\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean isGood(int[] nums) {\n        int n = nums.length - 1;\n        if (n < 1) {\n            return false;\n        }\n\n        int[] count = new int[n + 1];\n        for (int num : nums) {\n            if (num < 1 || num > n) {\n                return false;\n            }\n            count[num]++;\n        }\n\n        // Each number from 1 to n - 1 must appear exactly once\n        for (int i = 1; i < n; i++) {\n            if (count[i] != 1) {\n                return false;\n            }\n        }\n\n        // The number n must appear exactly twice\n        return count[n] == 2;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2784 - Check if Array is Good\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def isGood(self, nums: List[int]) -> bool:\n        n = len(nums) - 1\n        if n < 1:\n            return False\n\n        count = [0] * (n + 1)\n        for num in nums:\n            if num < 1 or num > n:\n                return False\n            count[num] += 1\n\n        # Each number from 1 to n - 1 must appear exactly once\n        for i in range(1, n):\n            if count[i] != 1:\n                return False\n\n        # The number n must appear exactly twice\n        return count[n] == 2\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2784 - Check if Array is Good\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool isGood(vector<int>& nums) {\n        int n = nums.size() - 1;\n        if (n < 1) {\n            return false;\n        }\n\n        vector<int> count(n + 1, 0);\n        for (int num : nums) {\n            if (num < 1 || num > n) {\n                return false;\n            }\n            count[num]++;\n        }\n\n        // Each number from 1 to n - 1 must appear exactly once\n        for (int i = 1; i < n; i++) {\n            if (count[i] != 1) {\n                return false;\n            }\n        }\n\n        // The number n must appear exactly twice\n        return count[n] == 2;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2784 - Check if Array is Good\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar isGood = function(nums) {\n    const n = nums.length - 1;\n    if (n < 1) {\n        return false;\n    }\n\n    const count = new Int32Array(n + 1);\n    for (const num of nums) {\n        if (num < 1 || num > n) {\n            return false;\n        }\n        count[num]++;\n    }\n\n    // Each number from 1 to n - 1 must appear exactly once\n    for (let i = 1; i < n; i++) {\n        if (count[i] !== 1) {\n            return false;\n        }\n    }\n\n    // The number n must appear exactly twice\n    return count[n] === 2;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2784-check-if-array-is-good.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2784-check-if-array-is-good.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2784: Check if Array is Good Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 2784 (Check if Array is Good) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanat...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2784-check-if-array-is-good.jpg",
+    "keywords": [
+      "LeetCode 2784",
+      "Check if Array is Good",
+      "LeetCode 2784 Solution",
+      "LeetCode Check if Array is Good",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

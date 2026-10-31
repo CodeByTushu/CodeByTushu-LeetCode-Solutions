@@ -1,0 +1,78 @@
+{
+  "problem_number": 1190,
+  "problem_title": "Reverse Substrings Between Each Pair of Parentheses",
+  "slug": "reverse-substrings-between-each-pair-of-parentheses",
+  "solution_date": "2026-09-27",
+  "formatted_date": "27-09-2026",
+  "day_number": 27,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N²)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/",
+  "youtube_url": "https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-",
+  "notes": "Optimal O(N²) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a string `s` that consists of lower case English letters and brackets `()`.\n\nReverse the strings in each pair of matching parentheses, starting from the innermost one.\n\nYour result should **not** contain any brackets.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"(abcd)\"`\n- **Output:** `\"dcba\"`\n\n#### Example 2:\n- **Input:** `s = \"(u(love)i)\"`\n- **Output:** `\"iloveu\"`\n- **Explanation:**\n  - The innermost pair is `\"(love)\"`. Reversing it gives `\"evol\"`, transforming the expression to `\"(uevoli)\"`.\n  - Reversing the outer pair gives `\"iloveu\"`.\n\n#### Example 3:\n- **Input:** `s = \"(ed(et(oc))el)\"`\n- **Output:** `\"leetcode\"`\n- **Explanation:**\n  - First, reverse `\"(oc)\"` $\\rightarrow$ `\"co\"`, yielding `\"(ed(etco)el)\"`.\n  - Next, reverse `\"(etco)\"` $\\rightarrow$ `\"octe\"`, yielding `\"(edocteel)\"`.\n  - Finally, reverse the outermost string $\\rightarrow$ `\"leetcode\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 2000$\n- `s` only contains lowercase English characters and parentheses `'('` and `')'`.\n- It is guaranteed that all parentheses are balanced.\n\n---",
+    "approach_summary": "Maintain a stack of string buffers representing enclosing scopes. When encountering '(', push the current buffer and start anew. When encountering ')', reverse the current buffer, pop the outer buffer, and append to it.",
+    "full_explanation": "# LeetCode 1190: Reverse Substrings Between Each Pair of Parentheses\n\n- **Publication Date:** 27 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-)\n\n---\n\n## Problem Summary\n\nYou are given a string `s` that consists of lower case English letters and brackets `()`.\n\nReverse the strings in each pair of matching parentheses, starting from the innermost one.\n\nYour result should **not** contain any brackets.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"(abcd)\"`\n- **Output:** `\"dcba\"`\n\n#### Example 2:\n- **Input:** `s = \"(u(love)i)\"`\n- **Output:** `\"iloveu\"`\n- **Explanation:**\n  - The innermost pair is `\"(love)\"`. Reversing it gives `\"evol\"`, transforming the expression to `\"(uevoli)\"`.\n  - Reversing the outer pair gives `\"iloveu\"`.\n\n#### Example 3:\n- **Input:** `s = \"(ed(et(oc))el)\"`\n- **Output:** `\"leetcode\"`\n- **Explanation:**\n  - First, reverse `\"(oc)\"` $\\rightarrow$ `\"co\"`, yielding `\"(ed(etco)el)\"`.\n  - Next, reverse `\"(etco)\"` $\\rightarrow$ `\"octe\"`, yielding `\"(edocteel)\"`.\n  - Finally, reverse the outermost string $\\rightarrow$ `\"leetcode\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 2000$\n- `s` only contains lowercase English characters and parentheses `'('` and `')'`.\n- It is guaranteed that all parentheses are balanced.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n\n---\n\n## Intuition and Approach\n\nThe problem requires resolving nested parenthesized expressions from the inside out, which is a classic **Last-In, First-Out (LIFO)** parsing pattern suited for a **Stack**.\n\n### Stack-Based Scope Simulation:\n1. Maintain a stack of string buffers (`Deque<StringBuilder>` in Java, or a list of character lists) representing outer enclosing contexts.\n2. Maintain a `current` mutable buffer for the current nested level.\n3. Iterate through characters `c` in `s`:\n   - If `c == '('`:\n     - An inner scope begins.\n     - Push `current` onto the stack.\n     - Reinitialize `current = new StringBuilder()`.\n   - If `c == ')'`:\n     - The innermost scope completes.\n     - Reverse `current`.\n     - Pop the parent buffer from the stack and append `current` onto it: `current = stack.pop().append(current)`.\n   - Else (`c` is an English letter):\n     - Append `c` to `current`.\n4. When traversal finishes, `current.toString()` contains the final bracket-free string.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^2)$ worst-case\n  - Where $N = \\text{s.length} \\le 2000$.\n  - Reversing a substring of length $L$ takes $\\mathcal{O}(L)$. In the worst case of deeply nested parentheses (e.g. $(((\\dots)))$), characters may be reversed multiple times, leading to at most $\\mathcal{O}(N^2)$ operations.\n  - Given $N \\le 2000$, $\\frac{N^2}{2} \\le 2 \\times 10^6$ operations, executing comfortably in $< 3\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - The stack depth and cumulative string buffers store at most $N$ characters simultaneously.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Maintain a stack of string buffers representing enclosing scopes. When encountering '(', push the current buffer and start anew. When encountering ')', reverse the current buffer, pop the outer buffer, and append to it.",
+  "explanation": "# LeetCode 1190: Reverse Substrings Between Each Pair of Parentheses\n\n- **Publication Date:** 27 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/KRjmJgO5_rA?si=9doCqEIX_7yX5f0-)\n\n---\n\n## Problem Summary\n\nYou are given a string `s` that consists of lower case English letters and brackets `()`.\n\nReverse the strings in each pair of matching parentheses, starting from the innermost one.\n\nYour result should **not** contain any brackets.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"(abcd)\"`\n- **Output:** `\"dcba\"`\n\n#### Example 2:\n- **Input:** `s = \"(u(love)i)\"`\n- **Output:** `\"iloveu\"`\n- **Explanation:**\n  - The innermost pair is `\"(love)\"`. Reversing it gives `\"evol\"`, transforming the expression to `\"(uevoli)\"`.\n  - Reversing the outer pair gives `\"iloveu\"`.\n\n#### Example 3:\n- **Input:** `s = \"(ed(et(oc))el)\"`\n- **Output:** `\"leetcode\"`\n- **Explanation:**\n  - First, reverse `\"(oc)\"` $\\rightarrow$ `\"co\"`, yielding `\"(ed(etco)el)\"`.\n  - Next, reverse `\"(etco)\"` $\\rightarrow$ `\"octe\"`, yielding `\"(edocteel)\"`.\n  - Finally, reverse the outermost string $\\rightarrow$ `\"leetcode\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 2000$\n- `s` only contains lowercase English characters and parentheses `'('` and `')'`.\n- It is guaranteed that all parentheses are balanced.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n\n---\n\n## Intuition and Approach\n\nThe problem requires resolving nested parenthesized expressions from the inside out, which is a classic **Last-In, First-Out (LIFO)** parsing pattern suited for a **Stack**.\n\n### Stack-Based Scope Simulation:\n1. Maintain a stack of string buffers (`Deque<StringBuilder>` in Java, or a list of character lists) representing outer enclosing contexts.\n2. Maintain a `current` mutable buffer for the current nested level.\n3. Iterate through characters `c` in `s`:\n   - If `c == '('`:\n     - An inner scope begins.\n     - Push `current` onto the stack.\n     - Reinitialize `current = new StringBuilder()`.\n   - If `c == ')'`:\n     - The innermost scope completes.\n     - Reverse `current`.\n     - Pop the parent buffer from the stack and append `current` onto it: `current = stack.pop().append(current)`.\n   - Else (`c` is an English letter):\n     - Append `c` to `current`.\n4. When traversal finishes, `current.toString()` contains the final bracket-free string.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^2)$ worst-case\n  - Where $N = \\text{s.length} \\le 2000$.\n  - Reversing a substring of length $L$ takes $\\mathcal{O}(L)$. In the worst case of deeply nested parentheses (e.g. $(((\\dots)))$), characters may be reversed multiple times, leading to at most $\\mathcal{O}(N^2)$ operations.\n  - Given $N \\le 2000$, $\\frac{N^2}{2} \\le 2 \\times 10^6$ operations, executing comfortably in $< 3\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - The stack depth and cumulative string buffers store at most $N$ characters simultaneously.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.ArrayDeque;\nimport java.util.Deque;\n\n/**\n * Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String reverseParentheses(String s) {\n        Deque<StringBuilder> stack = new ArrayDeque<>();\n        StringBuilder current = new StringBuilder();\n\n        for (char c : s.toCharArray()) {\n            if (c == '(') {\n                stack.push(current);\n                current = new StringBuilder();\n            } else if (c == ')') {\n                current.reverse();\n                current = stack.pop().append(current);\n            } else {\n                current.append(c);\n            }\n        }\n\n        return current.toString();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def reverseParentheses(self, s: str) -> str:\n        stack = []\n        current = []\n\n        for c in s:\n            if c == '(':\n                stack.append(current)\n                current = []\n            elif c == ')':\n                current.reverse()\n                current = stack.pop() + current\n            else:\n                current.append(c)\n\n        return \"\".join(current)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    string reverseParentheses(string s) {\n        vector<string> stack;\n        string current = \"\";\n\n        for (char c : s) {\n            if (c == '(') {\n                stack.push_back(move(current));\n                current = \"\";\n            } else if (c == ')') {\n                reverse(current.begin(), current.end());\n                current = stack.back() + current;\n                stack.pop_back();\n            } else {\n                current += c;\n            }\n        }\n\n        return current;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1190 - Reverse Substrings Between Each Pair of Parentheses\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar reverseParentheses = function(s) {\n    const stack = [];\n    let current = [];\n\n    for (const c of s) {\n        if (c === '(') {\n            stack.push(current);\n            current = [];\n        } else if (c === ')') {\n            current.reverse();\n            current = stack.pop().concat(current);\n        } else {\n            current.push(c);\n        }\n    }\n\n    return current.join('');\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1190-reverse-substrings-between-each-pair-of-parentheses.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1190-reverse-substrings-between-each-pair-of-parentheses.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1190: Reverse Substrings Between Each Pair of Parentheses...",
+    "meta_description": "Master LeetCode 1190 (Reverse Substrings Between Each Pair of Parentheses) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N²)...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1190-reverse-substrings-between-each-pair-of-parentheses.jpg",
+    "keywords": [
+      "LeetCode 1190",
+      "Reverse Substrings Between Each Pair of Parentheses",
+      "LeetCode 1190 Solution",
+      "LeetCode Reverse Substrings Between Each Pair of Parentheses",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

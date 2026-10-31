@@ -1,0 +1,80 @@
+{
+  "problem_number": 1081,
+  "problem_title": "Smallest Subsequence of Distinct Characters",
+  "slug": "smallest-subsequence-of-distinct-characters",
+  "solution_date": "2026-07-19",
+  "formatted_date": "19-07-2026",
+  "day_number": 19,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(Σ)",
+  "leetcode_url": "https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/",
+  "youtube_url": "https://youtu.be/mIf0IhC4LQc?si=T1JVw42oyY5TyS56",
+  "notes": "Optimal O(N) time complexity with O(Σ) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a string `s`, return the **lexicographically smallest subsequence** of `s` that contains all the distinct characters of `s` **exactly once**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"bcabc\"`\n- **Output:** `\"abc\"`\n- **Explanation:**\n  - Distinct characters are `'a'`, `'b'`, `'c'`.\n  - Possible subsequences containing all distinct characters include `\"bca\"`, `\"bac\"`, `\"cab\"`, `\"abc\"`.\n  - Among these, `\"abc\"` is the lexicographically smallest.\n\n#### Example 2:\n\n- **Input:** `s = \"cbacdcbc\"`\n- **Output:** `\"acdb\"`\n- **Explanation:**\n  - The distinct characters are `'a'`, `'b'`, `'c'`, `'d'`.\n  - The lexicographically smallest valid subsequence is `\"acdb\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 1000$\n- `s` consists of lowercase English letters.\n\n---",
+    "approach_summary": "Precompute the last occurrence index of each character. Traverse the string while using a monotonic stack and a visited boolean array, greedily popping characters larger than the current character if they appear again later.",
+    "full_explanation": "# LeetCode 1081: Smallest Subsequence of Distinct Characters\n\n- **Publication Date:** 19 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/mIf0IhC4LQc?si=T1JVw42oyY5TyS56)\n\n> [!NOTE]\n> This problem is identical to [LeetCode 316: Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/).\n\n---\n\n## Problem Summary\n\nGiven a string `s`, return the **lexicographically smallest subsequence** of `s` that contains all the distinct characters of `s` **exactly once**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"bcabc\"`\n- **Output:** `\"abc\"`\n- **Explanation:**\n  - Distinct characters are `'a'`, `'b'`, `'c'`.\n  - Possible subsequences containing all distinct characters include `\"bca\"`, `\"bac\"`, `\"cab\"`, `\"abc\"`.\n  - Among these, `\"abc\"` is the lexicographically smallest.\n\n#### Example 2:\n\n- **Input:** `s = \"cbacdcbc\"`\n- **Output:** `\"acdb\"`\n- **Explanation:**\n  - The distinct characters are `'a'`, `'b'`, `'c'`, `'d'`.\n  - The lexicographically smallest valid subsequence is `\"acdb\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 1000$\n- `s` consists of lowercase English letters.\n\n---\n\n## Algorithmic Approach\n\nTo make the result lexicographically smallest, earlier positions in the string should contain smaller characters whenever possible. We achieve this greedily using a **monotonic stack**.\n\n### 1. Precomputing Last Occurrence Indices\n- Store the last index at which each character appears in `s`:\n  $$\\text{last}[c] = \\max \\{ i \\mid s[i] = c \\}$$\n- This lookup tells us in $\\mathcal{O}(1)$ time whether a character can safely be discarded from the top of the stack and picked up again later.\n\n### 2. Monotonic Stack with Greedy Pruning\n- Traverse `s` from left to right:\n  - If character $c = s[i]$ is already present in our result (`used[c] == true`), ignore it because duplicate characters are not allowed.\n  - While the stack is not empty, the top element is strictly greater than $c$ ($\\text{top} > c$), and the top element appears again later ($\\text{last}[\\text{top}] > i$):\n    - Pop $\\text{top}$ from the stack.\n    - Mark $\\text{used}[\\text{top}] = \\text{false}$ since it will be included later in a more favorable position.\n  - Push $c$ onto the stack and set $\\text{used}[c] = \\text{true}$.\n\n### 3. Assembling the Final Subsequence\n- Construct the final string by reading the stack from bottom to top.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Precomputing the last indices takes $\\mathcal{O}(n)$. In the main loop, each character is pushed and popped from the stack at most once, leading to amortized $\\mathcal{O}(1)$ work per character. |\n| **Auxiliary Space** | $\\mathcal{O}(\\Sigma)$ | The stack, frequency array, and boolean tracking arrays require $\\mathcal{O}(\\Sigma)$ space where $\\Sigma = 26$ is the fixed alphabet size ($\\mathcal{O}(1)$ extra space). |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Precompute the last occurrence index of each character. Traverse the string while using a monotonic stack and a visited boolean array, greedily popping characters larger than the current character if they appear again later.",
+  "explanation": "# LeetCode 1081: Smallest Subsequence of Distinct Characters\n\n- **Publication Date:** 19 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/mIf0IhC4LQc?si=T1JVw42oyY5TyS56)\n\n> [!NOTE]\n> This problem is identical to [LeetCode 316: Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/).\n\n---\n\n## Problem Summary\n\nGiven a string `s`, return the **lexicographically smallest subsequence** of `s` that contains all the distinct characters of `s` **exactly once**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"bcabc\"`\n- **Output:** `\"abc\"`\n- **Explanation:**\n  - Distinct characters are `'a'`, `'b'`, `'c'`.\n  - Possible subsequences containing all distinct characters include `\"bca\"`, `\"bac\"`, `\"cab\"`, `\"abc\"`.\n  - Among these, `\"abc\"` is the lexicographically smallest.\n\n#### Example 2:\n\n- **Input:** `s = \"cbacdcbc\"`\n- **Output:** `\"acdb\"`\n- **Explanation:**\n  - The distinct characters are `'a'`, `'b'`, `'c'`, `'d'`.\n  - The lexicographically smallest valid subsequence is `\"acdb\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 1000$\n- `s` consists of lowercase English letters.\n\n---\n\n## Algorithmic Approach\n\nTo make the result lexicographically smallest, earlier positions in the string should contain smaller characters whenever possible. We achieve this greedily using a **monotonic stack**.\n\n### 1. Precomputing Last Occurrence Indices\n- Store the last index at which each character appears in `s`:\n  $$\\text{last}[c] = \\max \\{ i \\mid s[i] = c \\}$$\n- This lookup tells us in $\\mathcal{O}(1)$ time whether a character can safely be discarded from the top of the stack and picked up again later.\n\n### 2. Monotonic Stack with Greedy Pruning\n- Traverse `s` from left to right:\n  - If character $c = s[i]$ is already present in our result (`used[c] == true`), ignore it because duplicate characters are not allowed.\n  - While the stack is not empty, the top element is strictly greater than $c$ ($\\text{top} > c$), and the top element appears again later ($\\text{last}[\\text{top}] > i$):\n    - Pop $\\text{top}$ from the stack.\n    - Mark $\\text{used}[\\text{top}] = \\text{false}$ since it will be included later in a more favorable position.\n  - Push $c$ onto the stack and set $\\text{used}[c] = \\text{true}$.\n\n### 3. Assembling the Final Subsequence\n- Construct the final string by reading the stack from bottom to top.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Precomputing the last indices takes $\\mathcal{O}(n)$. In the main loop, each character is pushed and popped from the stack at most once, leading to amortized $\\mathcal{O}(1)$ work per character. |\n| **Auxiliary Space** | $\\mathcal{O}(\\Sigma)$ | The stack, frequency array, and boolean tracking arrays require $\\mathcal{O}(\\Sigma)$ space where $\\Sigma = 26$ is the fixed alphabet size ($\\mathcal{O}(1)$ extra space). |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.*;\n\n/**\n * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String smallestSubsequence(String s) {\n        int[] last = new int[26];\n        boolean[] used = new boolean[26];\n        for (int i = 0; i < s.length(); i++) {\n            last[s.charAt(i) - 'a'] = i;\n        }\n\n        Deque<Character> stack = new ArrayDeque<>();\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (used[c - 'a']) continue;\n\n            while (!stack.isEmpty()\n                    && stack.peekLast() > c\n                    && last[stack.peekLast() - 'a'] > i) {\n                used[stack.pollLast() - 'a'] = false;\n            }\n            stack.offerLast(c);\n            used[c - 'a'] = true;\n        }\n\n        StringBuilder ans = new StringBuilder();\n        while (!stack.isEmpty()) {\n            ans.append(stack.pollFirst());\n        }\n        return ans.toString();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1081 - Smallest Subsequence of Distinct Characters\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def smallestSubsequence(self, s: str) -> str:\n        last = {c: i for i, c in enumerate(s)}\n        stack = []\n        seen = set()\n\n        for i, c in enumerate(s):\n            if c in seen:\n                continue\n\n            while stack and stack[-1] > c and last[stack[-1]] > i:\n                seen.remove(stack.pop())\n\n            stack.append(c)\n            seen.add(c)\n\n        return \"\".join(stack)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    string smallestSubsequence(string s) {\n        vector<int> last(26, 0);\n        vector<bool> used(26, false);\n\n        for (int i = 0; i < s.length(); ++i) {\n            last[s[i] - 'a'] = i;\n        }\n\n        string result = \"\";\n        for (int i = 0; i < s.length(); ++i) {\n            char c = s[i];\n            if (used[c - 'a']) continue;\n\n            while (!result.empty() && result.back() > c && last[result.back() - 'a'] > i) {\n                used[result.back() - 'a'] = false;\n                result.pop_back();\n            }\n\n            result.push_back(c);\n            used[c - 'a'] = true;\n        }\n\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1081 - Smallest Subsequence of Distinct Characters\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar smallestSubsequence = function(s) {\n    const last = new Int32Array(26);\n    const n = s.length;\n\n    for (let i = 0; i < n; i++) {\n        last[s.charCodeAt(i) - 97] = i;\n    }\n\n    const used = new Uint8Array(26);\n    const stack = [];\n\n    for (let i = 0; i < n; i++) {\n        const charCode = s.charCodeAt(i) - 97;\n        const char = s[i];\n\n        if (used[charCode]) continue;\n\n        while (\n            stack.length > 0 &&\n            stack[stack.length - 1] > char &&\n            last[stack[stack.length - 1].charCodeAt(0) - 97] > i\n        ) {\n            used[stack.pop().charCodeAt(0) - 97] = 0;\n        }\n\n        stack.push(char);\n        used[charCode] = 1;\n    }\n\n    return stack.join('');\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1081-smallest-subsequence-of-distinct-characters.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1081-smallest-subsequence-of-distinct-characters.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1081: Smallest Subsequence of Distinct Characters Solution...",
+    "meta_description": "Master LeetCode 1081 (Smallest Subsequence of Distinct Characters) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1081-smallest-subsequence-of-distinct-characters.jpg",
+    "keywords": [
+      "LeetCode 1081",
+      "Smallest Subsequence of Distinct Characters",
+      "LeetCode 1081 Solution",
+      "LeetCode Smallest Subsequence of Distinct Characters",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

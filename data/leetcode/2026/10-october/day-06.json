@@ -1,0 +1,79 @@
+{
+  "problem_number": 921,
+  "problem_title": "Minimum Add to Make Parentheses Valid",
+  "slug": "minimum-add-to-make-parentheses-valid",
+  "solution_date": "2026-10-06",
+  "formatted_date": "06-10-2026",
+  "day_number": 6,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N) where N = s.length",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+  "youtube_url": "https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6",
+  "notes": "Optimal O(N) where N = s.length time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "A parentheses string is valid if and only if:\n1. It is the empty string,\n2. It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are valid strings, or\n3. It can be written as `(A)`, where `A` is a valid string.\n\nYou are given a parentheses string `s`. In one move, you can insert a parenthesis at any position of the string.\n\nReturn the minimum number of moves required to make `s` valid.\n\n---",
+    "approach_summary": "Greedy linear scan counting unmatched open parentheses and insertions required for unmatched closing parentheses in O(N) time and O(1) space.",
+    "full_explanation": "﻿# LeetCode 921: Minimum Add to Make Parentheses Valid\n\n- **Publication Date:** 06 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)\n\n---\n\n## Problem Summary\n\nA parentheses string is valid if and only if:\n1. It is the empty string,\n2. It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are valid strings, or\n3. It can be written as `(A)`, where `A` is a valid string.\n\nYou are given a parentheses string `s`. In one move, you can insert a parenthesis at any position of the string.\n\nReturn the minimum number of moves required to make `s` valid.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Greedy**\n\n---\n\n## Approach\n\n1. **Unmatched Balance Tracking**:\n   - An opening parenthesis `'('` requires a subsequent matching closing parenthesis `')'`.\n   - A closing parenthesis `')'` requires a preceding unmatched opening parenthesis `'('`.\n   - If a closing parenthesis appears without an available opening parenthesis before it, it can never be matched by future characters, so we must insert an opening parenthesis before it.\n\n2. **Greedy Single-Pass Scan**:\n   - Maintain two counters:\n     - `open`: tracks currently unmatched `'('`.\n     - `add`: tracks unmatched `')'` that need an inserted `'('`.\n   - Iterate through each character `c` in `s`:\n     - If `c == '('`: increment `open++`.\n     - If `c == ')'`:\n       - If `open > 0`: pair it with the most recent unmatched `'('` by decrementing `open--`.\n       - If `open == 0`: no opening parenthesis exists to pair with this `')'`, so we must insert one: increment `add++`.\n   - At the end of the string, each remaining unmatched `'('` in `open` needs an inserted `')'`.\n   - Total insertions needed: `add + open`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through string `s` of length $N \\le 1000$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only two primitive integer variables (`open`, `add`), requiring zero extra memory.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)\n"
+  },
+  "approach_summary": "Greedy linear scan counting unmatched open parentheses and insertions required for unmatched closing parentheses in O(N) time and O(1) space.",
+  "explanation": "﻿# LeetCode 921: Minimum Add to Make Parentheses Valid\n\n- **Publication Date:** 06 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)\n\n---\n\n## Problem Summary\n\nA parentheses string is valid if and only if:\n1. It is the empty string,\n2. It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are valid strings, or\n3. It can be written as `(A)`, where `A` is a valid string.\n\nYou are given a parentheses string `s`. In one move, you can insert a parenthesis at any position of the string.\n\nReturn the minimum number of moves required to make `s` valid.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Greedy**\n\n---\n\n## Approach\n\n1. **Unmatched Balance Tracking**:\n   - An opening parenthesis `'('` requires a subsequent matching closing parenthesis `')'`.\n   - A closing parenthesis `')'` requires a preceding unmatched opening parenthesis `'('`.\n   - If a closing parenthesis appears without an available opening parenthesis before it, it can never be matched by future characters, so we must insert an opening parenthesis before it.\n\n2. **Greedy Single-Pass Scan**:\n   - Maintain two counters:\n     - `open`: tracks currently unmatched `'('`.\n     - `add`: tracks unmatched `')'` that need an inserted `'('`.\n   - Iterate through each character `c` in `s`:\n     - If `c == '('`: increment `open++`.\n     - If `c == ')'`:\n       - If `open > 0`: pair it with the most recent unmatched `'('` by decrementing `open--`.\n       - If `open == 0`: no opening parenthesis exists to pair with this `')'`, so we must insert one: increment `add++`.\n   - At the end of the string, each remaining unmatched `'('` in `open` needs an inserted `')'`.\n   - Total insertions needed: `add + open`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through string `s` of length $N \\le 1000$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only two primitive integer variables (`open`, `add`), requiring zero extra memory.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6](https://youtu.be/BZiljrRmbfE?si=4WTr8rXF-cxsNIf6)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int minAddToMakeValid(String s) {\n        int open = 0; // unmatched '('\n        int add = 0;  // unmatched ')'\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '(') {\n                open++;\n            } else {\n                if (open > 0) {\n                    open--;\n                } else {\n                    add++;\n                }\n            }\n        }\n        return add + open;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 921 - Minimum Add to Make Parentheses Valid\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def minAddToMakeValid(self, s: str) -> int:\n        open_count = 0  # unmatched '('\n        add = 0         # unmatched ')'\n        for c in s:\n            if c == '(':\n                open_count += 1\n            else:\n                if open_count > 0:\n                    open_count -= 1\n                else:\n                    add += 1\n        return add + open_count\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        int open = 0; // unmatched '('\n        int add = 0;  // unmatched ')'\n        for (char c : s) {\n            if (c == '(') {\n                open++;\n            } else {\n                if (open > 0) {\n                    open--;\n                } else {\n                    add++;\n                }\n            }\n        }\n        return add + open;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 921 - Minimum Add to Make Parentheses Valid\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar minAddToMakeValid = function(s) {\n    let open = 0; // unmatched '('\n    let add = 0;  // unmatched ')'\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            open++;\n        } else {\n            if (open > 0) {\n                open--;\n            } else {\n                add++;\n            }\n        }\n    }\n    return add + open;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-921-minimum-add-to-make-parentheses-valid.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-921-minimum-add-to-make-parentheses-valid.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 921: Minimum Add to Make Parentheses Valid Solution | Code...",
+    "meta_description": "Master LeetCode 921 (Minimum Add to Make Parentheses Valid) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) where N = s.leng...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-921-minimum-add-to-make-parentheses-valid.jpg",
+    "keywords": [
+      "LeetCode 921",
+      "Minimum Add to Make Parentheses Valid",
+      "LeetCode 921 Solution",
+      "LeetCode Minimum Add to Make Parentheses Valid",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

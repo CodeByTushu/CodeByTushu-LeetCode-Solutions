@@ -1,0 +1,80 @@
+{
+  "problem_number": 2033,
+  "problem_title": "Minimum Operations to Make a Uni-Value Grid",
+  "slug": "minimum-operations-to-make-a-uni-value-grid",
+  "solution_date": "2026-04-28",
+  "formatted_date": "28-04-2026",
+  "day_number": 28,
+  "month": "April",
+  "month_num": 4,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(m * n * log(m * n))",
+  "space_complexity": "O(m * n)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/",
+  "youtube_url": "https://youtu.be/Exlk_P5QMB0",
+  "notes": "Optimal O(m * n * log(m * n)) time complexity with O(m * n) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a 2D integer `grid` of size $m \\times n$ and an integer `x`. In one operation, you can add `x` to or subtract `x` from any element in the grid.\n\nA **uni-value grid** is a grid where all the elements of it are equal.\n\nReturn the *minimum number of operations* to make the grid uni-value. If it is not possible, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `grid = [[2,4],[6,8]], x = 2`\n- **Output:** `4`\n- **Explanation:** We can make every element equal to 4 by doing the following:\n  - Add $x$ to 2 once.\n  - Subtract $x$ from 6 once.\n  - Subtract $x$ from 8 twice.\n  A total of 4 operations were used.\n\n#### Example 2:\n- **Input:** `grid = [[1,5],[2,3]], x = 1`\n- **Output:** `5`\n- **Explanation:** We can make every element equal to 3.\n\n#### Example 3:\n- **Input:** `grid = [[1,2],[3,4]], x = 2`\n- **Output:** `-1`\n- **Explanation:** It is impossible to make every element equal because elements have differing remainders modulo $x$.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i].\\text{length}$\n- $1 \\le m, n \\le 10^5$\n- $m \\times n \\le 10^5$\n- $1 \\le x \\le 10^4$\n- $1 \\le \\text{grid}[i][j] \\le 10^4$\n\n---",
+    "approach_summary": "Validate modulo remainder consistency across all elements modulo x; sort flattened values and set target to median to minimize sum of absolute deviations.",
+    "full_explanation": "# LeetCode 2033: Minimum Operations to Make a Uni-Value Grid\n\n- **Publication Date:** 28 April 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Exlk_P5QMB0)\n\n---\n\n## Problem Summary\n\nYou are given a 2D integer `grid` of size $m \\times n$ and an integer `x`. In one operation, you can add `x` to or subtract `x` from any element in the grid.\n\nA **uni-value grid** is a grid where all the elements of it are equal.\n\nReturn the *minimum number of operations* to make the grid uni-value. If it is not possible, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `grid = [[2,4],[6,8]], x = 2`\n- **Output:** `4`\n- **Explanation:** We can make every element equal to 4 by doing the following:\n  - Add $x$ to 2 once.\n  - Subtract $x$ from 6 once.\n  - Subtract $x$ from 8 twice.\n  A total of 4 operations were used.\n\n#### Example 2:\n- **Input:** `grid = [[1,5],[2,3]], x = 1`\n- **Output:** `5`\n- **Explanation:** We can make every element equal to 3.\n\n#### Example 3:\n- **Input:** `grid = [[1,2],[3,4]], x = 2`\n- **Output:** `-1`\n- **Explanation:** It is impossible to make every element equal because elements have differing remainders modulo $x$.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i].\\text{length}$\n- $1 \\le m, n \\le 10^5$\n- $m \\times n \\le 10^5$\n- $1 \\le x \\le 10^4$\n- $1 \\le \\text{grid}[i][j] \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Sorting**\n- **Matrix**\n\n---\n\n## Approach & Intuition\n\n### 1. Parity / Modulo Feasibility Check\n\nEvery single operation adds or subtracts a multiple of $x$. Therefore, the remainder of any number modulo $x$ is invariant under all valid operations:\n$$\\text{grid}[i][j] \\pmod x = (\\text{grid}[i][j] \\pm k \\cdot x) \\pmod x$$\n\nIf there exist two cells in the grid with different remainders modulo $x$:\n$$\\text{grid}[i][j] \\pmod x \\ne \\text{grid}[0][0] \\pmod x$$\nit is mathematically impossible to transform them into the same target integer. In that case, we can immediately return `-1`.\n\n### 2. Median Optimization (L1 Distance Minimization)\n\nIf all numbers have identical remainders modulo $x$, any element can be transformed into any other element in the grid.\n\nSuppose we flatten the grid into a 1D array of values $a_1, a_2, \\dots, a_N$ (where $N = m \\times n$).\nTo make all elements equal to an integer $T$, the total number of operations required is:\n$$\\text{Cost}(T) = \\sum_{i=1}^{N} \\frac{|a_i - T|}{x} = \\frac{1}{x} \\sum_{i=1}^{N} |a_i - T|$$\n\nMinimizing the sum of absolute deviations $\\sum |a_i - T|$ is a classic mathematical problem whose minimum is uniquely achieved when $T$ is the **median** of the values:\n$$T = \\text{median}(a_1, a_2, \\dots, a_N)$$\n\n### 3. Algorithm Steps:\n1. Flatten all elements of `grid` into a 1D array `vals`.\n2. Check that every `val % x == grid[0][0] % x`. If not, return `-1`.\n3. Sort `vals` in ascending order.\n4. Pick the median value $M = \\text{vals}[\\lfloor N / 2 \\rfloor]$.\n5. Compute and return $\\sum_{i=0}^{N-1} \\frac{|vals[i] - M|}{x}$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$ where $N = m \\times n$\n  - Flattening and modulo check take $\\mathcal{O}(N)$ time.\n  - Sorting $N \\le 10^5$ integers takes $\\mathcal{O}(N \\log N)$ operations (sub-millisecond execution).\n  - Computing the final sum takes $\\mathcal{O}(N)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Storing the flattened array of $N$ integers.\n\n---\n"
+  },
+  "approach_summary": "Validate modulo remainder consistency across all elements modulo x; sort flattened values and set target to median to minimize sum of absolute deviations.",
+  "explanation": "# LeetCode 2033: Minimum Operations to Make a Uni-Value Grid\n\n- **Publication Date:** 28 April 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Exlk_P5QMB0)\n\n---\n\n## Problem Summary\n\nYou are given a 2D integer `grid` of size $m \\times n$ and an integer `x`. In one operation, you can add `x` to or subtract `x` from any element in the grid.\n\nA **uni-value grid** is a grid where all the elements of it are equal.\n\nReturn the *minimum number of operations* to make the grid uni-value. If it is not possible, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `grid = [[2,4],[6,8]], x = 2`\n- **Output:** `4`\n- **Explanation:** We can make every element equal to 4 by doing the following:\n  - Add $x$ to 2 once.\n  - Subtract $x$ from 6 once.\n  - Subtract $x$ from 8 twice.\n  A total of 4 operations were used.\n\n#### Example 2:\n- **Input:** `grid = [[1,5],[2,3]], x = 1`\n- **Output:** `5`\n- **Explanation:** We can make every element equal to 3.\n\n#### Example 3:\n- **Input:** `grid = [[1,2],[3,4]], x = 2`\n- **Output:** `-1`\n- **Explanation:** It is impossible to make every element equal because elements have differing remainders modulo $x$.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i].\\text{length}$\n- $1 \\le m, n \\le 10^5$\n- $m \\times n \\le 10^5$\n- $1 \\le x \\le 10^4$\n- $1 \\le \\text{grid}[i][j] \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Sorting**\n- **Matrix**\n\n---\n\n## Approach & Intuition\n\n### 1. Parity / Modulo Feasibility Check\n\nEvery single operation adds or subtracts a multiple of $x$. Therefore, the remainder of any number modulo $x$ is invariant under all valid operations:\n$$\\text{grid}[i][j] \\pmod x = (\\text{grid}[i][j] \\pm k \\cdot x) \\pmod x$$\n\nIf there exist two cells in the grid with different remainders modulo $x$:\n$$\\text{grid}[i][j] \\pmod x \\ne \\text{grid}[0][0] \\pmod x$$\nit is mathematically impossible to transform them into the same target integer. In that case, we can immediately return `-1`.\n\n### 2. Median Optimization (L1 Distance Minimization)\n\nIf all numbers have identical remainders modulo $x$, any element can be transformed into any other element in the grid.\n\nSuppose we flatten the grid into a 1D array of values $a_1, a_2, \\dots, a_N$ (where $N = m \\times n$).\nTo make all elements equal to an integer $T$, the total number of operations required is:\n$$\\text{Cost}(T) = \\sum_{i=1}^{N} \\frac{|a_i - T|}{x} = \\frac{1}{x} \\sum_{i=1}^{N} |a_i - T|$$\n\nMinimizing the sum of absolute deviations $\\sum |a_i - T|$ is a classic mathematical problem whose minimum is uniquely achieved when $T$ is the **median** of the values:\n$$T = \\text{median}(a_1, a_2, \\dots, a_N)$$\n\n### 3. Algorithm Steps:\n1. Flatten all elements of `grid` into a 1D array `vals`.\n2. Check that every `val % x == grid[0][0] % x`. If not, return `-1`.\n3. Sort `vals` in ascending order.\n4. Pick the median value $M = \\text{vals}[\\lfloor N / 2 \\rfloor]$.\n5. Compute and return $\\sum_{i=0}^{N-1} \\frac{|vals[i] - M|}{x}$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$ where $N = m \\times n$\n  - Flattening and modulo check take $\\mathcal{O}(N)$ time.\n  - Sorting $N \\le 10^5$ integers takes $\\mathcal{O}(N \\log N)$ operations (sub-millisecond execution).\n  - Computing the final sum takes $\\mathcal{O}(N)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Storing the flattened array of $N$ integers.\n\n---\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2033 - Minimum Operations to Make a Uni-Value Grid\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.Arrays;\n\nclass Solution {\n    public int minOperations(int[][] grid, int x) {\n        int m = grid.length;\n        int n = grid[0].length;\n        int[] vals = new int[m * n];\n        int idx = 0;\n        int rem = grid[0][0] % x;\n\n        for (int i = 0; i < m; i++) {\n            for (int j = 0; j < n; j++) {\n                if (grid[i][j] % x != rem) {\n                    return -1;\n                }\n                vals[idx++] = grid[i][j];\n            }\n        }\n\n        Arrays.sort(vals);\n        int median = vals[vals.length / 2];\n        int operations = 0;\n\n        for (int val : vals) {\n            operations += Math.abs(val - median) / x;\n        }\n\n        return operations;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2033 - Minimum Operations to Make a Uni-Value Grid\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def minOperations(self, grid: List[List[int]], x: int) -> int:\n        vals = [val for row in grid for val in row]\n        rem = vals[0] % x\n\n        for val in vals:\n            if val % x != rem:\n                return -1\n\n        vals.sort()\n        median = vals[len(vals) // 2]\n\n        return sum(abs(val - median) // x for val in vals)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2033 - Minimum Operations to Make a Uni-Value Grid\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n#include <cstdlib>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minOperations(vector<vector<int>>& grid, int x) {\n        int m = grid.size();\n        int n = grid[0].size();\n        vector<int> vals;\n        vals.reserve(m * n);\n        int rem = grid[0][0] % x;\n\n        for (int i = 0; i < m; i++) {\n            for (int j = 0; j < n; j++) {\n                if (grid[i][j] % x != rem) {\n                    return -1;\n                }\n                vals.push_back(grid[i][j]);\n            }\n        }\n\n        sort(vals.begin(), vals.end());\n        int median = vals[vals.size() / 2];\n        int operations = 0;\n\n        for (int val : vals) {\n            operations += abs(val - median) / x;\n        }\n\n        return operations;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2033 - Minimum Operations to Make a Uni-Value Grid\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[][]} grid\n * @param {number} x\n * @return {number}\n */\nvar minOperations = function(grid, x) {\n    const vals = [];\n    const rem = grid[0][0] % x;\n\n    for (let i = 0; i < grid.length; i++) {\n        for (let j = 0; j < grid[i].length; j++) {\n            if (grid[i][j] % x !== rem) {\n                return -1;\n            }\n            vals.push(grid[i][j]);\n        }\n    }\n\n    vals.sort((a, b) => a - b);\n    const median = vals[Math.floor(vals.length / 2)];\n    let operations = 0;\n\n    for (let i = 0; i < vals.length; i++) {\n        operations += Math.floor(Math.abs(vals[i] - median) / x);\n    }\n\n    return operations;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Matrix"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2033-minimum-operations-to-make-a-uni-value-grid.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2033-minimum-operations-to-make-a-uni-value-grid.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2033: Minimum Operations to Make a Uni-Value Grid Solution...",
+    "meta_description": "Master LeetCode 2033 (Minimum Operations to Make a Uni-Value Grid) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(m * n * log(...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2033-minimum-operations-to-make-a-uni-value-grid.jpg",
+    "keywords": [
+      "LeetCode 2033",
+      "Minimum Operations to Make a Uni-Value Grid",
+      "LeetCode 2033 Solution",
+      "LeetCode Minimum Operations to Make a Uni-Value Grid",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

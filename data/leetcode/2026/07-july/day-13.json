@@ -1,0 +1,79 @@
+{
+  "problem_number": 1291,
+  "problem_title": "Sequential Digits",
+  "slug": "sequential-digits",
+  "solution_date": "2026-07-13",
+  "formatted_date": "13-07-2026",
+  "day_number": 13,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/sequential-digits/",
+  "youtube_url": "https://youtu.be/sYN1lfIinxw?si=9nQ2oLjfLTM3VMpd",
+  "notes": "Optimal O(1) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "An integer has **sequential digits** if and only if each digit in the number is one more than the previous digit (e.g., $12$, $234$, $12345$).\n\nGiven two integers `low` and `high`, return a **sorted list** of all the integers in the range $[\\text{low}, \\text{high}]$ inclusive that have sequential digits.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `low = 100`, `high = 300`\n- **Output:** `[123, 234]`\n- **Explanation:** The sequential digit numbers within $[100, 300]$ are $123$ and $234$.\n\n#### Example 2:\n\n- **Input:** `low = 1000`, `high = 13000`\n- **Output:** `[1234, 2345, 3456, 4567, 5678, 6789, 12345]`\n- **Explanation:** All 4-digit sequential numbers and the only 5-digit sequential number $\\le 13000$ ($12345$) are included.\n\n---\n\n### Constraints\n\n- $10 \\le \\text{low} \\le \\text{high} \\le 10^9$\n\n---",
+    "approach_summary": "Use a queue seeded with digits 1 through 9. Incrementally append the next sequential digit (lastDigit + 1) while the number remains within range, then sort the results.",
+    "full_explanation": "# LeetCode 1291: Sequential Digits\n\n- **Publication Date:** 13 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/sequential-digits/](https://leetcode.com/problems/sequential-digits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sYN1lfIinxw?si=9nQ2oLjfLTM3VMpd)\n\n---\n\n## Problem Summary\n\nAn integer has **sequential digits** if and only if each digit in the number is one more than the previous digit (e.g., $12$, $234$, $12345$).\n\nGiven two integers `low` and `high`, return a **sorted list** of all the integers in the range $[\\text{low}, \\text{high}]$ inclusive that have sequential digits.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `low = 100`, `high = 300`\n- **Output:** `[123, 234]`\n- **Explanation:** The sequential digit numbers within $[100, 300]$ are $123$ and $234$.\n\n#### Example 2:\n\n- **Input:** `low = 1000`, `high = 13000`\n- **Output:** `[1234, 2345, 3456, 4567, 5678, 6789, 12345]`\n- **Explanation:** All 4-digit sequential numbers and the only 5-digit sequential number $\\le 13000$ ($12345$) are included.\n\n---\n\n### Constraints\n\n- $10 \\le \\text{low} \\le \\text{high} \\le 10^9$\n\n---\n\n## Algorithmic Approach\n\n### Breadth-First Search (BFS) / Queue-Based Generation\n\nInstead of scanning all integers between `low` and `high` (which could be up to $10^9$), we generate **only the valid sequential digit numbers**:\n\n1. **Seed Queue with Base Digits:**\n   - Enqueue the single digits $1, 2, 3, 4, 5, 6, 7, 8, 9$.\n2. **Iterative Digit Appending (BFS):**\n   - Dequeue the current number `num`.\n   - If $\\text{low} \\le \\text{num} \\le \\text{high}$, add `num` to the answer list.\n   - If $\\text{num} > \\text{high}$, continue without branching since any further appended digits will only produce larger numbers.\n   - Extract the trailing digit: $\\text{lastDigit} = \\text{num} \\pmod{10}$.\n   - If $\\text{lastDigit} < 9$, append the next consecutive digit $\\text{lastDigit} + 1$:\n     $$\\text{nextNum} = \\text{num} \\times 10 + (\\text{lastDigit} + 1)$$\n     Enqueue $\\text{nextNum}$.\n3. **Sort and Return:**\n   - Since BFS processes numbers by their magnitude and length, sorting the final list ensures elements are in strictly increasing order.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(1)$ | The maximum number of sequential digit numbers with lengths between $2$ and $9$ is strictly bounded by $\\sum_{k=2}^9 (10 - k) = 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 36$. Processing and sorting at most $36$ numbers executes in constant $\\mathcal{O}(1)$ time. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | The queue and output list hold at most $36$ integers, consuming constant extra memory. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Use a queue seeded with digits 1 through 9. Incrementally append the next sequential digit (lastDigit + 1) while the number remains within range, then sort the results.",
+  "explanation": "# LeetCode 1291: Sequential Digits\n\n- **Publication Date:** 13 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/sequential-digits/](https://leetcode.com/problems/sequential-digits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sYN1lfIinxw?si=9nQ2oLjfLTM3VMpd)\n\n---\n\n## Problem Summary\n\nAn integer has **sequential digits** if and only if each digit in the number is one more than the previous digit (e.g., $12$, $234$, $12345$).\n\nGiven two integers `low` and `high`, return a **sorted list** of all the integers in the range $[\\text{low}, \\text{high}]$ inclusive that have sequential digits.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `low = 100`, `high = 300`\n- **Output:** `[123, 234]`\n- **Explanation:** The sequential digit numbers within $[100, 300]$ are $123$ and $234$.\n\n#### Example 2:\n\n- **Input:** `low = 1000`, `high = 13000`\n- **Output:** `[1234, 2345, 3456, 4567, 5678, 6789, 12345]`\n- **Explanation:** All 4-digit sequential numbers and the only 5-digit sequential number $\\le 13000$ ($12345$) are included.\n\n---\n\n### Constraints\n\n- $10 \\le \\text{low} \\le \\text{high} \\le 10^9$\n\n---\n\n## Algorithmic Approach\n\n### Breadth-First Search (BFS) / Queue-Based Generation\n\nInstead of scanning all integers between `low` and `high` (which could be up to $10^9$), we generate **only the valid sequential digit numbers**:\n\n1. **Seed Queue with Base Digits:**\n   - Enqueue the single digits $1, 2, 3, 4, 5, 6, 7, 8, 9$.\n2. **Iterative Digit Appending (BFS):**\n   - Dequeue the current number `num`.\n   - If $\\text{low} \\le \\text{num} \\le \\text{high}$, add `num` to the answer list.\n   - If $\\text{num} > \\text{high}$, continue without branching since any further appended digits will only produce larger numbers.\n   - Extract the trailing digit: $\\text{lastDigit} = \\text{num} \\pmod{10}$.\n   - If $\\text{lastDigit} < 9$, append the next consecutive digit $\\text{lastDigit} + 1$:\n     $$\\text{nextNum} = \\text{num} \\times 10 + (\\text{lastDigit} + 1)$$\n     Enqueue $\\text{nextNum}$.\n3. **Sort and Return:**\n   - Since BFS processes numbers by their magnitude and length, sorting the final list ensures elements are in strictly increasing order.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(1)$ | The maximum number of sequential digit numbers with lengths between $2$ and $9$ is strictly bounded by $\\sum_{k=2}^9 (10 - k) = 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 36$. Processing and sorting at most $36$ numbers executes in constant $\\mathcal{O}(1)$ time. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | The queue and output list hold at most $36$ integers, consuming constant extra memory. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1291 - Sequential Digits\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.*;\n\n/**\n * Problem: LeetCode 1291 - Sequential Digits\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public List<Integer> sequentialDigits(int low, int high) {\n        List<Integer> ans = new ArrayList<>();\n        Queue<Integer> queue = new LinkedList<>();\n        for (int i = 1; i <= 9; i++) {\n            queue.offer(i);\n        }\n        while (!queue.isEmpty()) {\n            int num = queue.poll();\n            if (num >= low && num <= high) {\n                ans.add(num);\n            }\n            if (num > high) {\n                continue;\n            }\n            int lastDigit = num % 10;\n            if (lastDigit < 9) {\n                queue.offer(num * 10 + lastDigit + 1);\n            }\n        }\n        Collections.sort(ans);\n        return ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1291 - Sequential Digits\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom collections import deque\nfrom typing import List\n\nclass Solution:\n    def sequentialDigits(self, low: int, high: int) -> List[int]:\n        ans = []\n        queue = deque(range(1, 10))\n\n        while queue:\n            num = queue.popleft()\n            if low <= num <= high:\n                ans.append(num)\n            if num > high:\n                continue\n\n            last_digit = num % 10\n            if last_digit < 9:\n                queue.append(num * 10 + last_digit + 1)\n\n        ans.sort()\n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1291 - Sequential Digits\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <queue>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1291 - Sequential Digits\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    vector<int> sequentialDigits(int low, int high) {\n        vector<int> ans;\n        queue<int> q;\n        for (int i = 1; i <= 9; i++) {\n            q.push(i);\n        }\n\n        while (!q.empty()) {\n            int num = q.front();\n            q.pop();\n\n            if (num >= low && num <= high) {\n                ans.push_back(num);\n            }\n            if (num > high) {\n                continue;\n            }\n\n            int lastDigit = num % 10;\n            if (lastDigit < 9) {\n                q.push(num * 10 + lastDigit + 1);\n            }\n        }\n\n        sort(ans.begin(), ans.end());\n        return ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1291 - Sequential Digits\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar sequentialDigits = function(low, high) {\n    const ans = [];\n    const queue = [];\n    for (let i = 1; i <= 9; i++) {\n        queue.push(i);\n    }\n\n    while (queue.length > 0) {\n        const num = queue.shift();\n        if (num >= low && num <= high) {\n            ans.push(num);\n        }\n        if (num > high) {\n            continue;\n        }\n\n        const lastDigit = num % 10;\n        if (lastDigit < 9) {\n            queue.push(num * 10 + lastDigit + 1);\n        }\n    }\n\n    ans.sort((a, b) => a - b);\n    return ans;\n};\n"
+    }
+  },
+  "tags": [
+    "Enumeration",
+    "Breadth-First Search",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1291-sequential-digits.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1291-sequential-digits.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1291: Sequential Digits Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1291 (Sequential Digits) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(1) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1291-sequential-digits.jpg",
+    "keywords": [
+      "LeetCode 1291",
+      "Sequential Digits",
+      "LeetCode 1291 Solution",
+      "LeetCode Sequential Digits",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

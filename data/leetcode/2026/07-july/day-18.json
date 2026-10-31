@@ -1,0 +1,79 @@
+{
+  "problem_number": 1979,
+  "problem_title": "Find Greatest Common Divisor of Array",
+  "slug": "find-greatest-common-divisor-of-array",
+  "solution_date": "2026-07-18",
+  "formatted_date": "18-07-2026",
+  "day_number": 18,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N + log(min A))",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+  "youtube_url": "https://youtu.be/3OjdkRCfohM?si=AKPh09CWRMdBtd5e",
+  "notes": "Optimal O(N + log(min A)) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given an integer array `nums`, return the **greatest common divisor** of the smallest number and largest number in `nums`.\n\nThe **greatest common divisor** of two numbers is the largest positive integer that evenly divides both numbers.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2, 5, 6, 9, 10]`\n- **Output:** `2`\n- **Explanation:**\n  - The smallest number in `nums` is $2$.\n  - The largest number in `nums` is $10$.\n  - The greatest common divisor of $2$ and $10$ is $\\gcd(2, 10) = 2$.\n\n#### Example 2:\n\n- **Input:** `nums = [7, 5, 6, 8, 3]`\n- **Output:** `1`\n- **Explanation:**\n  - The smallest number in `nums` is $3$.\n  - The largest number in `nums` is $8$.\n  - The greatest common divisor of $3$ and $8$ is $\\gcd(3, 8) = 1$.\n\n#### Example 3:\n\n- **Input:** `nums = [3, 3]`\n- **Output:** `3`\n- **Explanation:**\n  - The smallest number in `nums` is $3$.\n  - The largest number in `nums` is $3$.\n  - The greatest common divisor of $3$ and $3$ is $\\gcd(3, 3) = 3$.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 1000$\n- $1 \\le \\text{nums}[i] \\le 1000$\n\n---",
+    "approach_summary": "Scan the array in a single pass to find the minimum and maximum elements, then compute and return their GCD using the Euclidean algorithm.",
+    "full_explanation": "# LeetCode 1979: Find Greatest Common Divisor of Array\n\n- **Publication Date:** 18 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-greatest-common-divisor-of-array/](https://leetcode.com/problems/find-greatest-common-divisor-of-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3OjdkRCfohM?si=AKPh09CWRMdBtd5e)\n\n---\n\n## Problem Summary\n\nGiven an integer array `nums`, return the **greatest common divisor** of the smallest number and largest number in `nums`.\n\nThe **greatest common divisor** of two numbers is the largest positive integer that evenly divides both numbers.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2, 5, 6, 9, 10]`\n- **Output:** `2`\n- **Explanation:**\n  - The smallest number in `nums` is $2$.\n  - The largest number in `nums` is $10$.\n  - The greatest common divisor of $2$ and $10$ is $\\gcd(2, 10) = 2$.\n\n#### Example 2:\n\n- **Input:** `nums = [7, 5, 6, 8, 3]`\n- **Output:** `1`\n- **Explanation:**\n  - The smallest number in `nums` is $3$.\n  - The largest number in `nums` is $8$.\n  - The greatest common divisor of $3$ and $8$ is $\\gcd(3, 8) = 1$.\n\n#### Example 3:\n\n- **Input:** `nums = [3, 3]`\n- **Output:** `3`\n- **Explanation:**\n  - The smallest number in `nums` is $3$.\n  - The largest number in `nums` is $3$.\n  - The greatest common divisor of $3$ and $3$ is $\\gcd(3, 3) = 3$.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 1000$\n- $1 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Algorithmic Approach\n\n### 1. Single-Pass Extremes Identification\n- Scan through `nums` once to find the minimum value (`min`) and maximum value (`max`).\n- This linear traversal operates in $\\mathcal{O}(n)$ time and $\\mathcal{O}(1)$ auxiliary space.\n\n### 2. Euclidean GCD Computation\n- Apply the classical Euclidean algorithm to find $\\gcd(\\text{min}, \\text{max})$:\n  - While $b \\ne 0$:\n    - $t = a \\pmod b$\n    - $a = b$\n    - $b = t$\n  - Return $a$.\n- Because $\\text{nums}[i] \\le 1000$, the Euclidean algorithm completes in at most $10$ iterations ($\\mathcal{O}(\\log(\\min A))$).\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n + \\log(\\min A))$ | Finding the minimum and maximum takes a single pass over $n$ elements ($\\mathcal{O}(n)$). The Euclidean algorithm on numbers $\\le 1000$ runs in $\\mathcal{O}(\\log(\\min A))$ steps. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only a few primitive scalar variables are allocated. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Scan the array in a single pass to find the minimum and maximum elements, then compute and return their GCD using the Euclidean algorithm.",
+  "explanation": "# LeetCode 1979: Find Greatest Common Divisor of Array\n\n- **Publication Date:** 18 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-greatest-common-divisor-of-array/](https://leetcode.com/problems/find-greatest-common-divisor-of-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3OjdkRCfohM?si=AKPh09CWRMdBtd5e)\n\n---\n\n## Problem Summary\n\nGiven an integer array `nums`, return the **greatest common divisor** of the smallest number and largest number in `nums`.\n\nThe **greatest common divisor** of two numbers is the largest positive integer that evenly divides both numbers.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2, 5, 6, 9, 10]`\n- **Output:** `2`\n- **Explanation:**\n  - The smallest number in `nums` is $2$.\n  - The largest number in `nums` is $10$.\n  - The greatest common divisor of $2$ and $10$ is $\\gcd(2, 10) = 2$.\n\n#### Example 2:\n\n- **Input:** `nums = [7, 5, 6, 8, 3]`\n- **Output:** `1`\n- **Explanation:**\n  - The smallest number in `nums` is $3$.\n  - The largest number in `nums` is $8$.\n  - The greatest common divisor of $3$ and $8$ is $\\gcd(3, 8) = 1$.\n\n#### Example 3:\n\n- **Input:** `nums = [3, 3]`\n- **Output:** `3`\n- **Explanation:**\n  - The smallest number in `nums` is $3$.\n  - The largest number in `nums` is $3$.\n  - The greatest common divisor of $3$ and $3$ is $\\gcd(3, 3) = 3$.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 1000$\n- $1 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Algorithmic Approach\n\n### 1. Single-Pass Extremes Identification\n- Scan through `nums` once to find the minimum value (`min`) and maximum value (`max`).\n- This linear traversal operates in $\\mathcal{O}(n)$ time and $\\mathcal{O}(1)$ auxiliary space.\n\n### 2. Euclidean GCD Computation\n- Apply the classical Euclidean algorithm to find $\\gcd(\\text{min}, \\text{max})$:\n  - While $b \\ne 0$:\n    - $t = a \\pmod b$\n    - $a = b$\n    - $b = t$\n  - Return $a$.\n- Because $\\text{nums}[i] \\le 1000$, the Euclidean algorithm completes in at most $10$ iterations ($\\mathcal{O}(\\log(\\min A))$).\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n + \\log(\\min A))$ | Finding the minimum and maximum takes a single pass over $n$ elements ($\\mathcal{O}(n)$). The Euclidean algorithm on numbers $\\le 1000$ runs in $\\mathcal{O}(\\log(\\min A))$ steps. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only a few primitive scalar variables are allocated. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1979 - Find Greatest Common Divisor of Array\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int findGCD(int[] nums) {\n        int min = Integer.MAX_VALUE;\n        int max = Integer.MIN_VALUE;\n        for (int num : nums) {\n            min = Math.min(min, num);\n            max = Math.max(max, num);\n        }\n\n        return gcd(min, max);\n    }\n\n    private int gcd(int a, int b) {\n        while (b != 0) {\n            int temp = a % b;\n            a = b;\n            b = temp;\n        }\n        return a;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1979 - Find Greatest Common Divisor of Array\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nimport math\nfrom typing import List\n\nclass Solution:\n    def findGCD(self, nums: List[int]) -> int:\n        min_val = min(nums)\n        max_val = max(nums)\n        return math.gcd(min_val, max_val)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1979 - Find Greatest Common Divisor of Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n#include <numeric>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1979 - Find Greatest Common Divisor of Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int findGCD(vector<int>& nums) {\n        auto [min_it, max_it] = minmax_element(nums.begin(), nums.end());\n        return std::gcd(*min_it, *max_it);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1979 - Find Greatest Common Divisor of Array\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar findGCD = function(nums) {\n    let minVal = Infinity;\n    let maxVal = -Infinity;\n\n    for (let i = 0; i < nums.length; i++) {\n        if (nums[i] < minVal) minVal = nums[i];\n        if (nums[i] > maxVal) maxVal = nums[i];\n    }\n\n    const gcd = (a, b) => {\n        while (b !== 0) {\n            const temp = a % b;\n            a = b;\n            b = temp;\n        }\n        return a;\n    };\n\n    return gcd(minVal, maxVal);\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1979-find-greatest-common-divisor-of-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1979-find-greatest-common-divisor-of-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1979: Find Greatest Common Divisor of Array Solution | Cod...",
+    "meta_description": "Master LeetCode 1979 (Find Greatest Common Divisor of Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N + log(min A)) ap...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1979-find-greatest-common-divisor-of-array.jpg",
+    "keywords": [
+      "LeetCode 1979",
+      "Find Greatest Common Divisor of Array",
+      "LeetCode 1979 Solution",
+      "LeetCode Find Greatest Common Divisor of Array",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "problem_number": 48,
+  "problem_title": "Rotate Image",
+  "slug": "rotate-image",
+  "solution_date": "2026-05-04",
+  "formatted_date": "04-05-2026",
+  "day_number": 4,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N^2)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/rotate-image/",
+  "youtube_url": "https://youtu.be/sWA5qAcFvZ8",
+  "notes": "Optimal O(N^2) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an $n \\times n$ 2D `matrix` representing an image. Rotate the image by **90 degrees (clockwise)**.\n\nYou have to rotate the image **in-place**, which means you have to modify the input 2D matrix directly. **DO NOT** allocate another 2D matrix and do the rotation.\n\n---\n\n### Examples\n\n#### Example 1:\n```text\n1  2  3       7  4  1\n4  5  6  ==>  8  5  2\n7  8  9       9  6  3\n```\n- **Input:** `matrix = [[1,2,3],[4,5,6],[7,8,9]]`\n- **Output:** `[[7,4,1],[8,5,2],[9,6,3]]`\n\n#### Example 2:\n```text\n 5  1  9 11       15 13  2  5\n 2  4  8 10  ==>  14  3  4  1\n13  3  6  7       12  6  8  9\n15 14 12 16       16  7 10 11\n```\n- **Input:** `matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`\n- **Output:** `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`\n\n---\n\n### Constraints\n\n- $n == \\text{matrix.length} == \\text{matrix}[i]\\text{.length}$\n- $1 \\le n \\le 20$\n- $-1000 \\le \\text{matrix}[i][j] \\le 1000$\n\n---",
+    "approach_summary": "Decompose the 90 degree clockwise rotation into two in-place steps: first transpose the matrix across its main diagonal, then reverse each row horizontally.",
+    "full_explanation": "# LeetCode 48: Rotate Image\n\n- **Publication Date:** 04 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/rotate-image/](https://leetcode.com/problems/rotate-image/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sWA5qAcFvZ8)\n\n---\n\n## Problem Summary\n\nYou are given an $n \\times n$ 2D `matrix` representing an image. Rotate the image by **90 degrees (clockwise)**.\n\nYou have to rotate the image **in-place**, which means you have to modify the input 2D matrix directly. **DO NOT** allocate another 2D matrix and do the rotation.\n\n---\n\n### Examples\n\n#### Example 1:\n```text\n1  2  3       7  4  1\n4  5  6  ==>  8  5  2\n7  8  9       9  6  3\n```\n- **Input:** `matrix = [[1,2,3],[4,5,6],[7,8,9]]`\n- **Output:** `[[7,4,1],[8,5,2],[9,6,3]]`\n\n#### Example 2:\n```text\n 5  1  9 11       15 13  2  5\n 2  4  8 10  ==>  14  3  4  1\n13  3  6  7       12  6  8  9\n15 14 12 16       16  7 10 11\n```\n- **Input:** `matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`\n- **Output:** `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`\n\n---\n\n### Constraints\n\n- $n == \\text{matrix.length} == \\text{matrix}[i]\\text{.length}$\n- $1 \\le n \\le 20$\n- $-1000 \\le \\text{matrix}[i][j] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Matrix**\n\n---\n\n## Approach & Intuition\n\n### 1. Matrix Decomposition of Clockwise Rotation\n\nA $90^\\circ$ clockwise rotation maps the cell at coordinate $(i, j)$ to $(j, n - 1 - i)$.\n\nThis transformation can be decomposed cleanly into two standard in-place geometric operations:\n\n1. **Transpose the Matrix (Reflection over the Main Diagonal):**\n   - Swap `matrix[i][j]` with `matrix[j][i]` for all $j > i$.\n   - Transforms $(i, j) \\to (j, i)$.\n\n2. **Reflect Horizontally (Reverse Each Row):**\n   - Reverse the elements of each row: swap `matrix[i][j]` with `matrix[i][n - 1 - j]` for $0 \\le j < n / 2$.\n   - Transforms $(j, i) \\to (j, n - 1 - i)$.\n\nCombining these two steps yields the exact target mapping $(i, j) \\to (j, n - 1 - i)$ entirely **in-place** without allocating any auxiliary matrix!\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^2)$\n  - Transposition iterates through $\\frac{n(n - 1)}{2}$ pairs of cells.\n  - Row reversal performs $\\frac{n}{2}$ swaps across each of the $n$ rows.\n  - Total cell swaps: $n^2$, which is strictly $\\mathcal{O}(N^2)$ optimal since every element must be visited.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - The rotation is performed purely in-place using temporary variables for swapping, satisfying the $\\mathcal{O}(1)$ extra space constraint.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/sWA5qAcFvZ8](https://youtu.be/sWA5qAcFvZ8)\n"
+  },
+  "approach_summary": "Decompose the 90 degree clockwise rotation into two in-place steps: first transpose the matrix across its main diagonal, then reverse each row horizontally.",
+  "explanation": "# LeetCode 48: Rotate Image\n\n- **Publication Date:** 04 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/rotate-image/](https://leetcode.com/problems/rotate-image/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sWA5qAcFvZ8)\n\n---\n\n## Problem Summary\n\nYou are given an $n \\times n$ 2D `matrix` representing an image. Rotate the image by **90 degrees (clockwise)**.\n\nYou have to rotate the image **in-place**, which means you have to modify the input 2D matrix directly. **DO NOT** allocate another 2D matrix and do the rotation.\n\n---\n\n### Examples\n\n#### Example 1:\n```text\n1  2  3       7  4  1\n4  5  6  ==>  8  5  2\n7  8  9       9  6  3\n```\n- **Input:** `matrix = [[1,2,3],[4,5,6],[7,8,9]]`\n- **Output:** `[[7,4,1],[8,5,2],[9,6,3]]`\n\n#### Example 2:\n```text\n 5  1  9 11       15 13  2  5\n 2  4  8 10  ==>  14  3  4  1\n13  3  6  7       12  6  8  9\n15 14 12 16       16  7 10 11\n```\n- **Input:** `matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`\n- **Output:** `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`\n\n---\n\n### Constraints\n\n- $n == \\text{matrix.length} == \\text{matrix}[i]\\text{.length}$\n- $1 \\le n \\le 20$\n- $-1000 \\le \\text{matrix}[i][j] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Matrix**\n\n---\n\n## Approach & Intuition\n\n### 1. Matrix Decomposition of Clockwise Rotation\n\nA $90^\\circ$ clockwise rotation maps the cell at coordinate $(i, j)$ to $(j, n - 1 - i)$.\n\nThis transformation can be decomposed cleanly into two standard in-place geometric operations:\n\n1. **Transpose the Matrix (Reflection over the Main Diagonal):**\n   - Swap `matrix[i][j]` with `matrix[j][i]` for all $j > i$.\n   - Transforms $(i, j) \\to (j, i)$.\n\n2. **Reflect Horizontally (Reverse Each Row):**\n   - Reverse the elements of each row: swap `matrix[i][j]` with `matrix[i][n - 1 - j]` for $0 \\le j < n / 2$.\n   - Transforms $(j, i) \\to (j, n - 1 - i)$.\n\nCombining these two steps yields the exact target mapping $(i, j) \\to (j, n - 1 - i)$ entirely **in-place** without allocating any auxiliary matrix!\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^2)$\n  - Transposition iterates through $\\frac{n(n - 1)}{2}$ pairs of cells.\n  - Row reversal performs $\\frac{n}{2}$ swaps across each of the $n$ rows.\n  - Total cell swaps: $n^2$, which is strictly $\\mathcal{O}(N^2)$ optimal since every element must be visited.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - The rotation is performed purely in-place using temporary variables for swapping, satisfying the $\\mathcal{O}(1)$ extra space constraint.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/sWA5qAcFvZ8](https://youtu.be/sWA5qAcFvZ8)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 48 - Rotate Image\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public void rotate(int[][] matrix) {\n        int n = matrix.length;\n\n        // Step 1: Transpose the matrix\n        for (int i = 0; i < n; i++) {\n            for (int j = i + 1; j < n; j++) {\n                int temp = matrix[i][j];\n                matrix[i][j] = matrix[j][i];\n                matrix[j][i] = temp;\n            }\n        }\n\n        // Step 2: Reverse each row\n        for (int i = 0; i < n; i++) {\n            int left = 0, right = n - 1;\n            while (left < right) {\n                int temp = matrix[i][left];\n                matrix[i][left] = matrix[i][right];\n                matrix[i][right] = temp;\n                left++;\n                right--;\n            }\n        }\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 48 - Rotate Image\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def rotate(self, matrix: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        n = len(matrix)\n\n        # Step 1: Transpose the matrix\n        for i in range(n):\n            for j in range(i + 1, n):\n                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]\n\n        # Step 2: Reverse each row\n        for row in matrix:\n            row.reverse()\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 48 - Rotate Image\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 48 - Rotate Image\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    void rotate(vector<vector<int>>& matrix) {\n        int n = matrix.size();\n\n        // Step 1: Transpose the matrix\n        for (int i = 0; i < n; i++) {\n            for (int j = i + 1; j < n; j++) {\n                swap(matrix[i][j], matrix[j][i]);\n            }\n        }\n\n        // Step 2: Reverse each row\n        for (int i = 0; i < n; i++) {\n            reverse(matrix[i].begin(), matrix[i].end());\n        }\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 48 - Rotate Image\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar rotate = function(matrix) {\n    const n = matrix.length;\n\n    // Step 1: Transpose the matrix\n    for (let i = 0; i < n; i++) {\n        for (let j = i + 1; j < n; j++) {\n            const temp = matrix[i][j];\n            matrix[i][j] = matrix[j][i];\n            matrix[j][i] = temp;\n        }\n    }\n\n    // Step 2: Reverse each row\n    for (let i = 0; i < n; i++) {\n        let left = 0;\n        let right = n - 1;\n        while (left < right) {\n            const temp = matrix[i][left];\n            matrix[i][left] = matrix[i][right];\n            matrix[i][right] = temp;\n            left++;\n            right--;\n        }\n    }\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Matrix"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-48-rotate-image.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-48-rotate-image.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 48: Rotate Image Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 48 (Rotate Image) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N^2) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-48-rotate-image.jpg",
+    "keywords": [
+      "LeetCode 48",
+      "Rotate Image",
+      "LeetCode 48 Solution",
+      "LeetCode Rotate Image",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "problem_number": 1886,
+  "problem_title": "Determine Whether Matrix Can Be Obtained By Rotation",
+  "slug": "determine-whether-matrix-can-be-obtained-by-rotation",
+  "solution_date": "2026-03-22",
+  "formatted_date": "22-03-2026",
+  "day_number": 22,
+  "month": "March",
+  "month_num": 3,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(n^2)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/",
+  "youtube_url": "https://youtu.be/KSfTlM9VgtQ?si=wbU6LVYQz06IWVom",
+  "notes": "Optimal O(n^2) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given two $n \\times n$ binary matrices `mat` and `target`, return `true` if it is possible to make `mat` equal to `target` by rotating `mat` in **90-degree increments**, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mat = [[0, 1], [1, 0]], target = [[1, 0], [0, 1]]`\n- **Output:** `true`\n- **Explanation:**\n  We can rotate `mat` 90 degrees clockwise to make `mat` equal `target`.\n\n#### Example 2:\n- **Input:** `mat = [[0, 1], [1, 1]], target = [[1, 0], [0, 1]]`\n- **Output:** `false`\n- **Explanation:**\n  It is impossible to make `mat` equal to `target` by rotating `mat`.\n\n#### Example 3:\n- **Input:** `mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]], target = [[1, 1, 1], [0, 1, 0], [0, 0, 0]]`\n- **Output:** `true`\n- **Explanation:**\n  We can rotate `mat` 90 degrees clockwise two times (180 degrees) to make `mat` equal `target`.\n\n---\n\n### Constraints\n\n- $n == \\text{mat.length} == \\text{target.length}$\n- $n == \\text{mat}[i]\\text{.length} == \\text{target}[i]\\text{.length}$\n- $1 \\le n \\le 10$\n- `mat[i][j]` and `target[i][j]` are either `0` or `1`.\n\n---",
+    "approach_summary": "Test all 4 rotation states (0, 90, 180, and 270 degrees clockwise) simultaneously in a single pass using coordinate transformations and four boolean flags.",
+    "full_explanation": "# LeetCode 1886: Determine Whether Matrix Can Be Obtained By Rotation\n\n- **Publication Date:** 22 March 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/KSfTlM9VgtQ?si=wbU6LVYQz06IWVom)\n\n---\n\n## Problem Summary\n\nGiven two $n \\times n$ binary matrices `mat` and `target`, return `true` if it is possible to make `mat` equal to `target` by rotating `mat` in **90-degree increments**, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mat = [[0, 1], [1, 0]], target = [[1, 0], [0, 1]]`\n- **Output:** `true`\n- **Explanation:**\n  We can rotate `mat` 90 degrees clockwise to make `mat` equal `target`.\n\n#### Example 2:\n- **Input:** `mat = [[0, 1], [1, 1]], target = [[1, 0], [0, 1]]`\n- **Output:** `false`\n- **Explanation:**\n  It is impossible to make `mat` equal to `target` by rotating `mat`.\n\n#### Example 3:\n- **Input:** `mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]], target = [[1, 1, 1], [0, 1, 0], [0, 0, 0]]`\n- **Output:** `true`\n- **Explanation:**\n  We can rotate `mat` 90 degrees clockwise two times (180 degrees) to make `mat` equal `target`.\n\n---\n\n### Constraints\n\n- $n == \\text{mat.length} == \\text{target.length}$\n- $n == \\text{mat}[i]\\text{.length} == \\text{target}[i]\\text{.length}$\n- $1 \\le n \\le 10$\n- `mat[i][j]` and `target[i][j]` are either `0` or `1`.\n\n---\n\n## Intuition & Algorithmic Approach\n\nA square matrix rotated in 90-degree increments can achieve at most 4 distinct orientations:\n1. **$0^\\circ$ (No rotation):** $(i, j) \\to (i, j)$\n2. **$90^\\circ$ (Clockwise):** $(i, j) \\to (j, n - 1 - i)$\n3. **$180^\\circ$ (Clockwise):** $(i, j) \\to (n - 1 - i, n - 1 - j)$\n4. **$270^\\circ$ (Clockwise):** $(i, j) \\to (n - 1 - j, i)$\n\n### Single-Pass 4-Flag Check:\nInstead of physically transforming and allocating intermediate matrices up to 4 times, we maintain four boolean flags (`r0`, `r90`, `r180`, `r270`), all initially `true`.\n\nWe iterate through each cell $(i, j)$ in the $n \\times n$ matrix:\n- If `mat[i][j] != target[i][j]`, invalidate `r0 = false`.\n- If `mat[i][j] != target[j][n - 1 - i]`, invalidate `r90 = false`.\n- If `mat[i][j] != target[n - 1 - i][n - 1 - j]`, invalidate `r180 = false`.\n- If `mat[i][j] != target[n - 1 - j][i]`, invalidate `r270 = false`.\n\nFinally, return `r0 || r90 || r180 || r270`. If any rotation matches every corresponding element in `target`, the answer is `true`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n^2)$\n  - We inspect each cell of the $n \\times n$ matrix exactly once, doing $\\mathcal{O}(1)$ comparisons per cell.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only four boolean variables are used; no additional matrix memory is allocated.\n"
+  },
+  "approach_summary": "Test all 4 rotation states (0, 90, 180, and 270 degrees clockwise) simultaneously in a single pass using coordinate transformations and four boolean flags.",
+  "explanation": "# LeetCode 1886: Determine Whether Matrix Can Be Obtained By Rotation\n\n- **Publication Date:** 22 March 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/KSfTlM9VgtQ?si=wbU6LVYQz06IWVom)\n\n---\n\n## Problem Summary\n\nGiven two $n \\times n$ binary matrices `mat` and `target`, return `true` if it is possible to make `mat` equal to `target` by rotating `mat` in **90-degree increments**, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mat = [[0, 1], [1, 0]], target = [[1, 0], [0, 1]]`\n- **Output:** `true`\n- **Explanation:**\n  We can rotate `mat` 90 degrees clockwise to make `mat` equal `target`.\n\n#### Example 2:\n- **Input:** `mat = [[0, 1], [1, 1]], target = [[1, 0], [0, 1]]`\n- **Output:** `false`\n- **Explanation:**\n  It is impossible to make `mat` equal to `target` by rotating `mat`.\n\n#### Example 3:\n- **Input:** `mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]], target = [[1, 1, 1], [0, 1, 0], [0, 0, 0]]`\n- **Output:** `true`\n- **Explanation:**\n  We can rotate `mat` 90 degrees clockwise two times (180 degrees) to make `mat` equal `target`.\n\n---\n\n### Constraints\n\n- $n == \\text{mat.length} == \\text{target.length}$\n- $n == \\text{mat}[i]\\text{.length} == \\text{target}[i]\\text{.length}$\n- $1 \\le n \\le 10$\n- `mat[i][j]` and `target[i][j]` are either `0` or `1`.\n\n---\n\n## Intuition & Algorithmic Approach\n\nA square matrix rotated in 90-degree increments can achieve at most 4 distinct orientations:\n1. **$0^\\circ$ (No rotation):** $(i, j) \\to (i, j)$\n2. **$90^\\circ$ (Clockwise):** $(i, j) \\to (j, n - 1 - i)$\n3. **$180^\\circ$ (Clockwise):** $(i, j) \\to (n - 1 - i, n - 1 - j)$\n4. **$270^\\circ$ (Clockwise):** $(i, j) \\to (n - 1 - j, i)$\n\n### Single-Pass 4-Flag Check:\nInstead of physically transforming and allocating intermediate matrices up to 4 times, we maintain four boolean flags (`r0`, `r90`, `r180`, `r270`), all initially `true`.\n\nWe iterate through each cell $(i, j)$ in the $n \\times n$ matrix:\n- If `mat[i][j] != target[i][j]`, invalidate `r0 = false`.\n- If `mat[i][j] != target[j][n - 1 - i]`, invalidate `r90 = false`.\n- If `mat[i][j] != target[n - 1 - i][n - 1 - j]`, invalidate `r180 = false`.\n- If `mat[i][j] != target[n - 1 - j][i]`, invalidate `r270 = false`.\n\nFinally, return `r0 || r90 || r180 || r270`. If any rotation matches every corresponding element in `target`, the answer is `true`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n^2)$\n  - We inspect each cell of the $n \\times n$ matrix exactly once, doing $\\mathcal{O}(1)$ comparisons per cell.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only four boolean variables are used; no additional matrix memory is allocated.\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1886 - Determine Whether Matrix Can Be Obtained By Rotation\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean findRotation(int[][] mat, int[][] target) {\n        int n = mat.length;\n        boolean r0 = true, r90 = true, r180 = true, r270 = true;\n\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                if (mat[i][j] != target[i][j]) {\n                    r0 = false;\n                }\n                if (mat[i][j] != target[j][n - 1 - i]) {\n                    r90 = false;\n                }\n                if (mat[i][j] != target[n - 1 - i][n - 1 - j]) {\n                    r180 = false;\n                }\n                if (mat[i][j] != target[n - 1 - j][i]) {\n                    r270 = false;\n                }\n            }\n        }\n\n        return r0 || r90 || r180 || r270;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1886 - Determine Whether Matrix Can Be Obtained By Rotation\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def findRotation(self, mat: list[list[int]], target: list[list[int]]) -> bool:\n        n = len(mat)\n        r0 = r90 = r180 = r270 = True\n\n        for i in range(n):\n            for j in range(n):\n                if mat[i][j] != target[i][j]:\n                    r0 = False\n                if mat[i][j] != target[j][n - 1 - i]:\n                    r90 = False\n                if mat[i][j] != target[n - 1 - i][n - 1 - j]:\n                    r180 = False\n                if mat[i][j] != target[n - 1 - j][i]:\n                    r270 = False\n\n        return r0 or r90 or r180 or r270\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1886 - Determine Whether Matrix Can Be Obtained By Rotation\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool findRotation(vector<vector<int>>& mat, vector<vector<int>>& target) {\n        int n = mat.size();\n        bool r0 = true, r90 = true, r180 = true, r270 = true;\n\n        for (int i = 0; i < n; ++i) {\n            for (int j = 0; j < n; ++j) {\n                if (mat[i][j] != target[i][j]) r0 = false;\n                if (mat[i][j] != target[j][n - 1 - i]) r90 = false;\n                if (mat[i][j] != target[n - 1 - i][n - 1 - j]) r180 = false;\n                if (mat[i][j] != target[n - 1 - j][i]) r270 = false;\n            }\n        }\n\n        return r0 || r90 || r180 || r270;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1886 - Determine Whether Matrix Can Be Obtained By Rotation\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar findRotation = function(mat, target) {\n    const n = mat.length;\n    let r0 = true, r90 = true, r180 = true, r270 = true;\n\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n; j++) {\n            if (mat[i][j] !== target[i][j]) r0 = false;\n            if (mat[i][j] !== target[j][n - 1 - i]) r90 = false;\n            if (mat[i][j] !== target[n - 1 - i][n - 1 - j]) r180 = false;\n            if (mat[i][j] !== target[n - 1 - j][i]) r270 = false;\n        }\n    }\n\n    return r0 || r90 || r180 || r270;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1886-determine-whether-matrix-can-be-obtained-by-rotation.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1886-determine-whether-matrix-can-be-obtained-by-rotation.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1886: Determine Whether Matrix Can Be Obtained By Rotation...",
+    "meta_description": "Master LeetCode 1886 (Determine Whether Matrix Can Be Obtained By Rotation) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(n^2...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1886-determine-whether-matrix-can-be-obtained-by-rotation.jpg",
+    "keywords": [
+      "LeetCode 1886",
+      "Determine Whether Matrix Can Be Obtained By Rotation",
+      "LeetCode 1886 Solution",
+      "LeetCode Determine Whether Matrix Can Be Obtained By Rotation",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

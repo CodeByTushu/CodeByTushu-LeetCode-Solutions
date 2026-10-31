@@ -1,0 +1,78 @@
+{
+  "problem_number": 836,
+  "problem_title": "Rectangle Overlap",
+  "slug": "rectangle-overlap",
+  "solution_date": "2026-09-14",
+  "formatted_date": "14-09-2026",
+  "day_number": 14,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/rectangle-overlap/",
+  "youtube_url": "https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF",
+  "notes": "Optimal O(1) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "An axis-aligned rectangle is represented as a list `[x1, y1, x2, y2]`, where `(x1, y1)` is the coordinate of its bottom-left corner, and `(x2, y2)` is the coordinate of its top-right corner. Its top and bottom edges are parallel to the X-axis, and its left and right edges are parallel to the Y-axis.\n\nTwo rectangles overlap if the area of their intersection is **positive**. To be clear, two rectangles that only touch at the corner or edges do not overlap.\n\nGiven two axis-aligned rectangles `rec1` and `rec2`, return `true` if they overlap, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `rec1 = [0,0,2,2], rec2 = [1,1,3,3]`\n- **Output:** `true`\n- **Explanation:**\n  The rectangles overlap in the region with corners at `(1,1)`, `(2,1)`, `(1,2)`, and `(2,2)`. This region has positive area, so the rectangles overlap.\n\n#### Example 2:\n- **Input:** `rec1 = [0,0,1,1], rec2 = [1,0,2,1]`\n- **Output:** `false`\n- **Explanation:**\n  The rectangles share the vertical edge where $x = 1$, but they do not have any common interior region. Since their intersection has zero area, the rectangles do not overlap.\n\n#### Example 3:\n- **Input:** `rec1 = [0,0,1,1], rec2 = [2,2,3,3]`\n- **Output:** `false`\n- **Explanation:**\n  The rectangles are completely separate. Rectangle `rec1` ends at $x = 1$ and $y = 1$, while `rec2` starts at $x = 2$ and $y = 2$. Therefore, they have no common points and do not overlap.\n\n---\n\n### Constraints\n\n- `rec1.length == 4`\n- `rec2.length == 4`\n- $-10^9 \\le \\text{rec1}[i], \\text{rec2}[i] \\le 10^9$\n- `rec1` and `rec2` represent a valid rectangle with a non-zero area.\n\n---",
+    "approach_summary": "Check the complementary condition where rec2 is entirely to the right, left, above, or below rec1. Return the negation of this disjunction.",
+    "full_explanation": "# LeetCode 836: Rectangle Overlap\n\n- **Publication Date:** 14 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/rectangle-overlap/](https://leetcode.com/problems/rectangle-overlap/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF)\n\n---\n\n## Problem Summary\n\nAn axis-aligned rectangle is represented as a list `[x1, y1, x2, y2]`, where `(x1, y1)` is the coordinate of its bottom-left corner, and `(x2, y2)` is the coordinate of its top-right corner. Its top and bottom edges are parallel to the X-axis, and its left and right edges are parallel to the Y-axis.\n\nTwo rectangles overlap if the area of their intersection is **positive**. To be clear, two rectangles that only touch at the corner or edges do not overlap.\n\nGiven two axis-aligned rectangles `rec1` and `rec2`, return `true` if they overlap, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `rec1 = [0,0,2,2], rec2 = [1,1,3,3]`\n- **Output:** `true`\n- **Explanation:**\n  The rectangles overlap in the region with corners at `(1,1)`, `(2,1)`, `(1,2)`, and `(2,2)`. This region has positive area, so the rectangles overlap.\n\n#### Example 2:\n- **Input:** `rec1 = [0,0,1,1], rec2 = [1,0,2,1]`\n- **Output:** `false`\n- **Explanation:**\n  The rectangles share the vertical edge where $x = 1$, but they do not have any common interior region. Since their intersection has zero area, the rectangles do not overlap.\n\n#### Example 3:\n- **Input:** `rec1 = [0,0,1,1], rec2 = [2,2,3,3]`\n- **Output:** `false`\n- **Explanation:**\n  The rectangles are completely separate. Rectangle `rec1` ends at $x = 1$ and $y = 1$, while `rec2` starts at $x = 2$ and $y = 2$. Therefore, they have no common points and do not overlap.\n\n---\n\n### Constraints\n\n- `rec1.length == 4`\n- `rec2.length == 4`\n- $-10^9 \\le \\text{rec1}[i], \\text{rec2}[i] \\le 10^9$\n- `rec1` and `rec2` represent a valid rectangle with a non-zero area.\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Geometry**\n\n---\n\n## Approach & Intuition\n\n### Intuition (Non-Overlapping Complement):\nTwo axis-aligned rectangles fail to overlap if and only if one rectangle is completely positioned to the side or above/below the other.\n\nSpecifically, `rec2` does **not** overlap with `rec1` if any of the following 4 conditions hold:\n1. **`rec2` is strictly to the right of `rec1`:** $\\text{rec2}[0] \\ge \\text{rec1}[2]$\n2. **`rec2` is strictly to the left of `rec1`:** $\\text{rec2}[2] \\le \\text{rec1}[0]$\n3. **`rec2` is strictly above `rec1`:** $\\text{rec2}[1] \\ge \\text{rec1}[3]$\n4. **`rec2` is strictly below `rec1`:** $\\text{rec2}[3] \\le \\text{rec1}[1]$\n\nBecause rectangles that touch along edges or corners have zero intersection area, the equality signs ($\\ge$ and $\\le$) correctly classify boundaries as non-overlapping.\n\n### Overlap Condition:\nThe rectangles overlap if and only if **none** of the above four conditions are true:\n$$\\text{overlap} = \\neg (\\text{rec2}[0] \\ge \\text{rec1}[2] \\lor \\text{rec2}[2] \\le \\text{rec1}[0] \\lor \\text{rec2}[1] \\ge \\text{rec1}[3] \\lor \\text{rec2}[3] \\le \\text{rec1}[1])$$\n\nThis direct comparison checks the overlap in constant time with clean boolean logic.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$\n  - Requires only 4 constant-time comparisons.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - No auxiliary data structures or dynamic memory allocations are used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF](https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Check the complementary condition where rec2 is entirely to the right, left, above, or below rec1. Return the negation of this disjunction.",
+  "explanation": "# LeetCode 836: Rectangle Overlap\n\n- **Publication Date:** 14 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/rectangle-overlap/](https://leetcode.com/problems/rectangle-overlap/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF)\n\n---\n\n## Problem Summary\n\nAn axis-aligned rectangle is represented as a list `[x1, y1, x2, y2]`, where `(x1, y1)` is the coordinate of its bottom-left corner, and `(x2, y2)` is the coordinate of its top-right corner. Its top and bottom edges are parallel to the X-axis, and its left and right edges are parallel to the Y-axis.\n\nTwo rectangles overlap if the area of their intersection is **positive**. To be clear, two rectangles that only touch at the corner or edges do not overlap.\n\nGiven two axis-aligned rectangles `rec1` and `rec2`, return `true` if they overlap, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `rec1 = [0,0,2,2], rec2 = [1,1,3,3]`\n- **Output:** `true`\n- **Explanation:**\n  The rectangles overlap in the region with corners at `(1,1)`, `(2,1)`, `(1,2)`, and `(2,2)`. This region has positive area, so the rectangles overlap.\n\n#### Example 2:\n- **Input:** `rec1 = [0,0,1,1], rec2 = [1,0,2,1]`\n- **Output:** `false`\n- **Explanation:**\n  The rectangles share the vertical edge where $x = 1$, but they do not have any common interior region. Since their intersection has zero area, the rectangles do not overlap.\n\n#### Example 3:\n- **Input:** `rec1 = [0,0,1,1], rec2 = [2,2,3,3]`\n- **Output:** `false`\n- **Explanation:**\n  The rectangles are completely separate. Rectangle `rec1` ends at $x = 1$ and $y = 1$, while `rec2` starts at $x = 2$ and $y = 2$. Therefore, they have no common points and do not overlap.\n\n---\n\n### Constraints\n\n- `rec1.length == 4`\n- `rec2.length == 4`\n- $-10^9 \\le \\text{rec1}[i], \\text{rec2}[i] \\le 10^9$\n- `rec1` and `rec2` represent a valid rectangle with a non-zero area.\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Geometry**\n\n---\n\n## Approach & Intuition\n\n### Intuition (Non-Overlapping Complement):\nTwo axis-aligned rectangles fail to overlap if and only if one rectangle is completely positioned to the side or above/below the other.\n\nSpecifically, `rec2` does **not** overlap with `rec1` if any of the following 4 conditions hold:\n1. **`rec2` is strictly to the right of `rec1`:** $\\text{rec2}[0] \\ge \\text{rec1}[2]$\n2. **`rec2` is strictly to the left of `rec1`:** $\\text{rec2}[2] \\le \\text{rec1}[0]$\n3. **`rec2` is strictly above `rec1`:** $\\text{rec2}[1] \\ge \\text{rec1}[3]$\n4. **`rec2` is strictly below `rec1`:** $\\text{rec2}[3] \\le \\text{rec1}[1]$\n\nBecause rectangles that touch along edges or corners have zero intersection area, the equality signs ($\\ge$ and $\\le$) correctly classify boundaries as non-overlapping.\n\n### Overlap Condition:\nThe rectangles overlap if and only if **none** of the above four conditions are true:\n$$\\text{overlap} = \\neg (\\text{rec2}[0] \\ge \\text{rec1}[2] \\lor \\text{rec2}[2] \\le \\text{rec1}[0] \\lor \\text{rec2}[1] \\ge \\text{rec1}[3] \\lor \\text{rec2}[3] \\le \\text{rec1}[1])$$\n\nThis direct comparison checks the overlap in constant time with clean boolean logic.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$\n  - Requires only 4 constant-time comparisons.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - No auxiliary data structures or dynamic memory allocations are used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF](https://youtu.be/Kuq9-R9aqFQ?si=bsQeTqs_FlWmnvCF)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 836 - Rectangle Overlap\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {\n        return !(rec2[0] >= rec1[2] ||   // rec2 right of rec1\n                 rec2[2] <= rec1[0] ||   // rec2 left of rec1\n                 rec2[1] >= rec1[3] ||   // rec2 above rec1\n                 rec2[3] <= rec1[1]);    // rec2 below rec1\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 836 - Rectangle Overlap\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def isRectangleOverlap(self, rec1: List[int], rec2: List[int]) -> bool:\n        return not (\n            rec2[0] >= rec1[2] or   # rec2 right of rec1\n            rec2[2] <= rec1[0] or   # rec2 left of rec1\n            rec2[1] >= rec1[3] or   # rec2 above rec1\n            rec2[3] <= rec1[1]      # rec2 below rec1\n        )\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 836 - Rectangle Overlap\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 836 - Rectangle Overlap\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool isRectangleOverlap(vector<int>& rec1, vector<int>& rec2) {\n        return !(rec2[0] >= rec1[2] ||   // rec2 right of rec1\n                 rec2[2] <= rec1[0] ||   // rec2 left of rec1\n                 rec2[1] >= rec1[3] ||   // rec2 above rec1\n                 rec2[3] <= rec1[1]);    // rec2 below rec1\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 836 - Rectangle Overlap\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar isRectangleOverlap = function(rec1, rec2) {\n    return !(rec2[0] >= rec1[2] ||   // rec2 right of rec1\n             rec2[2] <= rec1[0] ||   // rec2 left of rec1\n             rec2[1] >= rec1[3] ||   // rec2 above rec1\n             rec2[3] <= rec1[1]);    // rec2 below rec1\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-836-rectangle-overlap.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-836-rectangle-overlap.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 836: Rectangle Overlap Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 836 (Rectangle Overlap) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(1) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-836-rectangle-overlap.jpg",
+    "keywords": [
+      "LeetCode 836",
+      "Rectangle Overlap",
+      "LeetCode 836 Solution",
+      "LeetCode Rectangle Overlap",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

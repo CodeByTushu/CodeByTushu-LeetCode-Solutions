@@ -1,0 +1,79 @@
+{
+  "problem_number": 1266,
+  "problem_title": "Minimum Time Visiting All Points",
+  "slug": "minimum-time-visiting-all-points",
+  "solution_date": "2026-01-12",
+  "formatted_date": "12-01-2026",
+  "day_number": 12,
+  "month": "January",
+  "month_num": 1,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-time-visiting-all-points/",
+  "youtube_url": "https://youtu.be/2pr1wasCBKU?si=WBBUmkjgZVNdeb-3",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "On a 2D plane, there are $n$ points with integer coordinates `points[i] = [xi, yi]`. Return *the **minimum time** in seconds to visit all the points in the order given by `points`*.\n\nYou can move according to these rules:\n- In 1 second, you can either:\n  - move vertically by one unit,\n  - move horizontally by one unit, or\n  - move diagonally $\\sqrt{2}$ units (in other words, move one unit vertically then one unit horizontally in 1 second).\n- You have to visit the points in the same order as they appear in the array.\n- You are allowed to pass through points that appear later in the order, but these do not count as visits.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `points = [[1,1],[3,4],[-1,0]]`\n- **Output:** `7`\n- **Explanation:**\n  - One optimal path is: `[1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0]`\n  - Time from `[1,1]` to `[3,4]` = 3 seconds\n  - Time from `[3,4]` to `[-1,0]` = 4 seconds\n  - Total time = `3 + 4 = 7` seconds\n\n#### Example 2:\n- **Input:** `points = [[3,2],[-2,2]]`\n- **Output:** `5`\n\n---\n\n### Constraints\n\n- $\\text{points.length} == n$\n- $1 \\le n \\le 100$\n- $\\text{points}[i].\\text{length} == 2$\n- $-1000 \\le \\text{points}[i][0], \\text{points}[i][1] \\le 1000$\n\n---",
+    "approach_summary": "The minimum time to travel between any two consecutive points is their Chebyshev distance, which equals max(|x2 - x1|, |y2 - y1|). Iterate through adjacent point pairs and accumulate these distances.",
+    "full_explanation": "# LeetCode 1266: Minimum Time Visiting All Points\n\n- **Publication Date:** 12 January 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-time-visiting-all-points/](https://leetcode.com/problems/minimum-time-visiting-all-points/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/2pr1wasCBKU?si=WBBUmkjgZVNdeb-3)\n\n---\n\n## Problem Summary\n\nOn a 2D plane, there are $n$ points with integer coordinates `points[i] = [xi, yi]`. Return *the **minimum time** in seconds to visit all the points in the order given by `points`*.\n\nYou can move according to these rules:\n- In 1 second, you can either:\n  - move vertically by one unit,\n  - move horizontally by one unit, or\n  - move diagonally $\\sqrt{2}$ units (in other words, move one unit vertically then one unit horizontally in 1 second).\n- You have to visit the points in the same order as they appear in the array.\n- You are allowed to pass through points that appear later in the order, but these do not count as visits.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `points = [[1,1],[3,4],[-1,0]]`\n- **Output:** `7`\n- **Explanation:**\n  - One optimal path is: `[1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0]`\n  - Time from `[1,1]` to `[3,4]` = 3 seconds\n  - Time from `[3,4]` to `[-1,0]` = 4 seconds\n  - Total time = `3 + 4 = 7` seconds\n\n#### Example 2:\n- **Input:** `points = [[3,2],[-2,2]]`\n- **Output:** `5`\n\n---\n\n### Constraints\n\n- $\\text{points.length} == n$\n- $1 \\le n \\le 100$\n- $\\text{points}[i].\\text{length} == 2$\n- $-1000 \\le \\text{points}[i][0], \\text{points}[i][1] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Geometry**\n\n---\n\n## Approach & Intuition\n\n### 1. Chebyshev Distance ($L_\\infty$ Metric)\n\nTo move between any two consecutive points $(x_1, y_1)$ and $(x_2, y_2)$:\n- Let $\\Delta x = |x_2 - x_1|$ and $\\Delta y = |y_2 - y_1|$.\n- Since diagonal moves reduce both horizontal and vertical distances simultaneously by 1 in just 1 second, we should move diagonally as much as possible:\n  $$\\text{Diagonal moves} = \\min(\\Delta x, \\Delta y)$$\n- After matching the shorter component, the remaining distance along the longer component is:\n  $$\\max(\\Delta x, \\Delta y) - \\min(\\Delta x, \\Delta y)$$\n- Summing these moves together:\n  $$\\text{Time} = \\min(\\Delta x, \\Delta y) + (\\max(\\Delta x, \\Delta y) - \\min(\\Delta x, \\Delta y)) = \\max(\\Delta x, \\Delta y)$$\n\nThis metric is precisely the **Chebyshev distance** ($L_\\infty$ distance) between two 2D points.\n\nWe simply iterate through the array from $i = 1$ to $n - 1$ and accumulate $\\max(|x_i - x_{i-1}|, |y_i - y_{i-1}|)$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$, where $N$ is the number of points in the array. We make a single linear pass over the array of coordinates.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$, as only a few primitive variables are used for distance computation.\n\n---\n\n## Source Code Implementations\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "The minimum time to travel between any two consecutive points is their Chebyshev distance, which equals max(|x2 - x1|, |y2 - y1|). Iterate through adjacent point pairs and accumulate these distances.",
+  "explanation": "# LeetCode 1266: Minimum Time Visiting All Points\n\n- **Publication Date:** 12 January 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-time-visiting-all-points/](https://leetcode.com/problems/minimum-time-visiting-all-points/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/2pr1wasCBKU?si=WBBUmkjgZVNdeb-3)\n\n---\n\n## Problem Summary\n\nOn a 2D plane, there are $n$ points with integer coordinates `points[i] = [xi, yi]`. Return *the **minimum time** in seconds to visit all the points in the order given by `points`*.\n\nYou can move according to these rules:\n- In 1 second, you can either:\n  - move vertically by one unit,\n  - move horizontally by one unit, or\n  - move diagonally $\\sqrt{2}$ units (in other words, move one unit vertically then one unit horizontally in 1 second).\n- You have to visit the points in the same order as they appear in the array.\n- You are allowed to pass through points that appear later in the order, but these do not count as visits.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `points = [[1,1],[3,4],[-1,0]]`\n- **Output:** `7`\n- **Explanation:**\n  - One optimal path is: `[1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0]`\n  - Time from `[1,1]` to `[3,4]` = 3 seconds\n  - Time from `[3,4]` to `[-1,0]` = 4 seconds\n  - Total time = `3 + 4 = 7` seconds\n\n#### Example 2:\n- **Input:** `points = [[3,2],[-2,2]]`\n- **Output:** `5`\n\n---\n\n### Constraints\n\n- $\\text{points.length} == n$\n- $1 \\le n \\le 100$\n- $\\text{points}[i].\\text{length} == 2$\n- $-1000 \\le \\text{points}[i][0], \\text{points}[i][1] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Geometry**\n\n---\n\n## Approach & Intuition\n\n### 1. Chebyshev Distance ($L_\\infty$ Metric)\n\nTo move between any two consecutive points $(x_1, y_1)$ and $(x_2, y_2)$:\n- Let $\\Delta x = |x_2 - x_1|$ and $\\Delta y = |y_2 - y_1|$.\n- Since diagonal moves reduce both horizontal and vertical distances simultaneously by 1 in just 1 second, we should move diagonally as much as possible:\n  $$\\text{Diagonal moves} = \\min(\\Delta x, \\Delta y)$$\n- After matching the shorter component, the remaining distance along the longer component is:\n  $$\\max(\\Delta x, \\Delta y) - \\min(\\Delta x, \\Delta y)$$\n- Summing these moves together:\n  $$\\text{Time} = \\min(\\Delta x, \\Delta y) + (\\max(\\Delta x, \\Delta y) - \\min(\\Delta x, \\Delta y)) = \\max(\\Delta x, \\Delta y)$$\n\nThis metric is precisely the **Chebyshev distance** ($L_\\infty$ distance) between two 2D points.\n\nWe simply iterate through the array from $i = 1$ to $n - 1$ and accumulate $\\max(|x_i - x_{i-1}|, |y_i - y_{i-1}|)$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$, where $N$ is the number of points in the array. We make a single linear pass over the array of coordinates.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$, as only a few primitive variables are used for distance computation.\n\n---\n\n## Source Code Implementations\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1266 - Minimum Time Visiting All Points\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int minTimeToVisitAllPoints(int[][] points) {\n        int totalTime = 0;\n\n        for (int i = 1; i < points.length; i++) {\n            int dx = Math.abs(points[i][0] - points[i - 1][0]);\n            int dy = Math.abs(points[i][1] - points[i - 1][1]);\n            // Chebyshev distance: max(|dx|, |dy|)\n            totalTime += Math.max(dx, dy);\n        }\n\n        return totalTime;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1266 - Minimum Time Visiting All Points\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:\n        total_time = 0\n\n        for i in range(1, len(points)):\n            dx = abs(points[i][0] - points[i - 1][0])\n            dy = abs(points[i][1] - points[i - 1][1])\n            # Chebyshev distance: max(|dx|, |dy|)\n            total_time += max(dx, dy)\n\n        return total_time\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1266 - Minimum Time Visiting All Points\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <cmath>\n#include <algorithm>\n\nclass Solution {\npublic:\n    int minTimeToVisitAllPoints(std::vector<std::vector<int>>& points) {\n        int totalTime = 0;\n\n        for (size_t i = 1; i < points.size(); ++i) {\n            int dx = std::abs(points[i][0] - points[i - 1][0]);\n            int dy = std::abs(points[i][1] - points[i - 1][1]);\n            // Chebyshev distance: max(|dx|, |dy|)\n            totalTime += std::max(dx, dy);\n        }\n\n        return totalTime;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1266 - Minimum Time Visiting All Points\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[][]} points\n * @return {number}\n */\nvar minTimeToVisitAllPoints = function(points) {\n    let totalTime = 0;\n\n    for (let i = 1; i < points.length; i++) {\n        const dx = Math.abs(points[i][0] - points[i - 1][0]);\n        const dy = Math.abs(points[i][1] - points[i - 1][1]);\n        // Chebyshev distance: max(|dx|, |dy|)\n        totalTime += Math.max(dx, dy);\n    }\n\n    return totalTime;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1266-minimum-time-visiting-all-points.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1266-minimum-time-visiting-all-points.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1266: Minimum Time Visiting All Points Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1266 (Minimum Time Visiting All Points) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detaile...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1266-minimum-time-visiting-all-points.jpg",
+    "keywords": [
+      "LeetCode 1266",
+      "Minimum Time Visiting All Points",
+      "LeetCode 1266 Solution",
+      "LeetCode Minimum Time Visiting All Points",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

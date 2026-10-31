@@ -1,0 +1,79 @@
+{
+  "problem_number": 32,
+  "problem_title": "Longest Valid Parentheses",
+  "slug": "longest-valid-parentheses",
+  "solution_date": "2026-10-03",
+  "formatted_date": "03-10-2026",
+  "day_number": 3,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Hard",
+  "platform": "LeetCode",
+  "time_complexity": "O(N) where N = s.length",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/longest-valid-parentheses/",
+  "youtube_url": "https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ",
+  "notes": "Optimal O(N) where N = s.length time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a string containing just the characters `'('` and `')'`, return the length of the longest valid (well-formed) parentheses substring.\n\n---",
+    "approach_summary": "Index-based stack tracking with base boundary at -1. Pop on ')' and either update maximum substring length (i - stack[top]) or set new barrier index.",
+    "full_explanation": "﻿# LeetCode 32: Longest Valid Parentheses\n\n- **Publication Date:** 03 October 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/longest-valid-parentheses/](https://leetcode.com/problems/longest-valid-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)\n\n---\n\n## Problem Summary\n\nGiven a string containing just the characters `'('` and `')'`, return the length of the longest valid (well-formed) parentheses substring.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Stack**\n\n---\n\n## Approach\n\n1. **Stack Boundary Tracking**:\n   - The fundamental challenge is finding the boundary of valid contiguous parentheses substrings.\n   - We maintain a stack that stores indices of characters.\n   - We initially push `-1` onto the stack to act as a virtual base boundary before the start of the string.\n\n2. **Index-Based Linear Traversal**:\n   - For each character `s[i]`:\n     - If `s[i] == '('`:\n       - Push the index `i` onto the stack.\n     - If `s[i] == ')'`:\n       - Pop the top index from the stack (pairing it with the latest `'('`).\n       - If the stack is now empty:\n         - No matching `'('` was available for this `')'`. This `')'` now acts as a new barrier/boundary for future substrings. Push `i` onto the stack.\n       - If the stack is not empty:\n         - The substring between the current index `i` and the current top of the stack (`stack[top]`) is guaranteed to be a valid parentheses substring.\n         - The length is $i - \\text{stack}[\\text{top}]$.\n         - Update `max = Math.max(max, i - stack[top])`.\n\n3. **Array-Based Stack Optimization**:\n   - Using a fixed primitive integer array `stack[n + 1]` with a pointer `top` gives superior cache locality and zero heap-allocation overhead compared to standard container classes.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single linear pass through string `s` of length $N \\le 3 \\times 10^4$. Each index is pushed and popped at most once.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Array stack of size $N + 1$ integers.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)\n"
+  },
+  "approach_summary": "Index-based stack tracking with base boundary at -1. Pop on ')' and either update maximum substring length (i - stack[top]) or set new barrier index.",
+  "explanation": "﻿# LeetCode 32: Longest Valid Parentheses\n\n- **Publication Date:** 03 October 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/longest-valid-parentheses/](https://leetcode.com/problems/longest-valid-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)\n\n---\n\n## Problem Summary\n\nGiven a string containing just the characters `'('` and `')'`, return the length of the longest valid (well-formed) parentheses substring.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Stack**\n\n---\n\n## Approach\n\n1. **Stack Boundary Tracking**:\n   - The fundamental challenge is finding the boundary of valid contiguous parentheses substrings.\n   - We maintain a stack that stores indices of characters.\n   - We initially push `-1` onto the stack to act as a virtual base boundary before the start of the string.\n\n2. **Index-Based Linear Traversal**:\n   - For each character `s[i]`:\n     - If `s[i] == '('`:\n       - Push the index `i` onto the stack.\n     - If `s[i] == ')'`:\n       - Pop the top index from the stack (pairing it with the latest `'('`).\n       - If the stack is now empty:\n         - No matching `'('` was available for this `')'`. This `')'` now acts as a new barrier/boundary for future substrings. Push `i` onto the stack.\n       - If the stack is not empty:\n         - The substring between the current index `i` and the current top of the stack (`stack[top]`) is guaranteed to be a valid parentheses substring.\n         - The length is $i - \\text{stack}[\\text{top}]$.\n         - Update `max = Math.max(max, i - stack[top])`.\n\n3. **Array-Based Stack Optimization**:\n   - Using a fixed primitive integer array `stack[n + 1]` with a pointer `top` gives superior cache locality and zero heap-allocation overhead compared to standard container classes.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single linear pass through string `s` of length $N \\le 3 \\times 10^4$. Each index is pushed and popped at most once.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Array stack of size $N + 1$ integers.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ](https://youtu.be/XQtFaTGNjA4?si=m9ZC76Sf8T39UAdJ)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 32 - Longest Valid Parentheses\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int longestValidParentheses(String s) {\n        int n = s.length();\n        int[] stack = new int[n + 1];\n        int top = -1;\n        int max = 0;\n        stack[++top] = -1;\n        for (int i = 0; i < n; i++) {\n            if (s.charAt(i) == '(') {\n                stack[++top] = i;\n            } else {\n                top--;\n                if (top < 0) {\n                    stack[++top] = i;\n                } else {\n                    max = Math.max(max, i - stack[top]);\n                }\n            }\n        }\n        return max;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 32 - Longest Valid Parentheses\nDifficulty: Hard\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def longestValidParentheses(self, s: str) -> int:\n        stack = [-1]\n        max_len = 0\n\n        for i, c in enumerate(s):\n            if c == '(':\n                stack.append(i)\n            else:\n                stack.pop()\n                if not stack:\n                    stack.append(i)\n                else:\n                    max_len = max(max_len, i - stack[-1])\n\n        return max_len\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 32 - Longest Valid Parentheses\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 32 - Longest Valid Parentheses\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int longestValidParentheses(string s) {\n        int n = s.length();\n        vector<int> stack(n + 1);\n        int top = -1;\n        int maxLen = 0;\n        stack[++top] = -1;\n\n        for (int i = 0; i < n; i++) {\n            if (s[i] == '(') {\n                stack[++top] = i;\n            } else {\n                top--;\n                if (top < 0) {\n                    stack[++top] = i;\n                } else {\n                    maxLen = max(maxLen, i - stack[top]);\n                }\n            }\n        }\n\n        return maxLen;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 32 - Longest Valid Parentheses\n * Difficulty: Hard\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar longestValidParentheses = function(s) {\n    const n = s.length;\n    const stack = [-1];\n    let maxLen = 0;\n\n    for (let i = 0; i < n; i++) {\n        if (s[i] === '(') {\n            stack.push(i);\n        } else {\n            stack.pop();\n            if (stack.length === 0) {\n                stack.push(i);\n            } else {\n                maxLen = Math.max(maxLen, i - stack[stack.length - 1]);\n            }\n        }\n    }\n\n    return maxLen;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-32-longest-valid-parentheses.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-32-longest-valid-parentheses.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 32: Longest Valid Parentheses Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 32 (Longest Valid Parentheses) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) where N = s.length approach a...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-32-longest-valid-parentheses.jpg",
+    "keywords": [
+      "LeetCode 32",
+      "Longest Valid Parentheses",
+      "LeetCode 32 Solution",
+      "LeetCode Longest Valid Parentheses",
+      "Hard LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

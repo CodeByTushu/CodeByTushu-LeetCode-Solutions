@@ -1,0 +1,81 @@
+{
+  "problem_number": 486,
+  "problem_title": "Predict the Winner",
+  "slug": "predict-the-winner",
+  "solution_date": "2026-08-01",
+  "formatted_date": "01-08-2026",
+  "day_number": 1,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N^2)",
+  "space_complexity": "O(N^2)",
+  "leetcode_url": "https://leetcode.com/problems/predict-the-winner/",
+  "youtube_url": "https://youtu.be/NmFcU3huV5g?si=j-DWd_1nGuALGshK",
+  "notes": "Optimal O(N^2) time complexity with O(N^2) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`. Two players are playing a game with this array: Player 1 and Player 2.\n\nPlayer 1 and Player 2 take turns, with Player 1 starting first. Both players start the game with a score of `0`.\n\nAt each turn, the current player takes the number at either end of the array (i.e., `nums[0]` or `nums[nums.length - 1]`), removing it from the array and adding it to their own score. The game ends when there are no more elements in the array.\n\nReturn `true` if Player 1's final score is greater than or equal to Player 2's final score, and `false` otherwise.\n\nNote that a tie counts as a win for Player 1. You may assume that both players play optimally.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,5,2]`\n- **Output:** `false`\n- **Explanation:**\n  - Player 1 must open by taking either 1 or 2, and both choices lead to the same result.\n  - If Player 1 takes 1, the array becomes `[5,2]`. Player 2 takes 5, leaving 2 for Player 1.\n  - If Player 1 takes 2, the array becomes `[1,5]`. Player 2 takes 5, leaving 1 for Player 1.\n  - Either way, Player 1 finishes with `1 + 2 = 3` and Player 2 finishes with `5`. Player 1 can never win, so return `false`.\n\n#### Example 2:\n\n- **Input:** `nums = [1,5,233,7]`\n- **Output:** `true`\n- **Explanation:**\n  - Player 1 first takes 1, leaving `[5,233,7]`. Player 2 must then choose between 5 and 7, and no matter which number Player 2 chooses, Player 1 can take 233 on the next turn.\n  - Player 1 finishes with a higher score (234) than Player 2 (12), so return `true`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 20$\n- $0 \\le \\text{nums}[i] \\le 10^7$\n\n---",
+    "approach_summary": "Use interval Dynamic Programming dp[i][j] tracking the maximum relative score difference achievable by the current player from subarray nums[i..j].",
+    "full_explanation": "# LeetCode 486: Predict the Winner\n\n- **Publication Date:** 01 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/predict-the-winner/](https://leetcode.com/problems/predict-the-winner/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/NmFcU3huV5g?si=j-DWd_1nGuALGshK)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`. Two players are playing a game with this array: Player 1 and Player 2.\n\nPlayer 1 and Player 2 take turns, with Player 1 starting first. Both players start the game with a score of `0`.\n\nAt each turn, the current player takes the number at either end of the array (i.e., `nums[0]` or `nums[nums.length - 1]`), removing it from the array and adding it to their own score. The game ends when there are no more elements in the array.\n\nReturn `true` if Player 1's final score is greater than or equal to Player 2's final score, and `false` otherwise.\n\nNote that a tie counts as a win for Player 1. You may assume that both players play optimally.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,5,2]`\n- **Output:** `false`\n- **Explanation:**\n  - Player 1 must open by taking either 1 or 2, and both choices lead to the same result.\n  - If Player 1 takes 1, the array becomes `[5,2]`. Player 2 takes 5, leaving 2 for Player 1.\n  - If Player 1 takes 2, the array becomes `[1,5]`. Player 2 takes 5, leaving 1 for Player 1.\n  - Either way, Player 1 finishes with `1 + 2 = 3` and Player 2 finishes with `5`. Player 1 can never win, so return `false`.\n\n#### Example 2:\n\n- **Input:** `nums = [1,5,233,7]`\n- **Output:** `true`\n- **Explanation:**\n  - Player 1 first takes 1, leaving `[5,233,7]`. Player 2 must then choose between 5 and 7, and no matter which number Player 2 chooses, Player 1 can take 233 on the next turn.\n  - Player 1 finishes with a higher score (234) than Player 2 (12), so return `true`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 20$\n- $0 \\le \\text{nums}[i] \\le 10^7$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Dynamic Programming**\n- **Recursion**\n- **Game Theory**\n\n---\n\n## Intuition and Approach\n\n### Minimax & Relative Score Difference:\nIn a two-player zero-sum game with perfect information, instead of maintaining two separate cumulative scores, we can model the game using the **relative score difference**:\n$$\\text{Score Difference} = \\text{Score of Current Player} - \\text{Score of Opponent}$$\n\nIf Player 1's net relative score at the end from the entire array `nums[0..n-1]` is $\\ge 0$, then Player 1 wins (or ties).\n\n### Dynamic Programming Formulation:\nLet `dp[i][j]` represent the maximum score difference the current player can achieve from the subarray `nums[i..j]`.\n\n- **Base Cases (subarrays of length 1):**\n  When only one element `nums[i]` is left:\n  $$\\text{dp}[i][i] = nums[i]$$\n- **State Transition (subarrays of length $\\ge 2$):**\n  The current player has two choices:\n  1. Pick the left element `nums[i]`:\n     The opponent is left with subarray `nums[i + 1..j]`. By optimality, the opponent will gain a relative advantage of `dp[i + 1][j]`.\n     Thus, the net gain for the current player is:\n     $$nums[i] - \\text{dp}[i + 1][j]$$\n  2. Pick the right element `nums[j]`:\n     The opponent is left with subarray `nums[i..j - 1]`.\n     Thus, the net gain for the current player is:\n     $$nums[j] - \\text{dp}[i][j - 1]$$\n  The optimal player takes the maximum:\n  $$\\text{dp}[i][j] = \\max(nums[i] - \\text{dp}[i + 1][j],\\; nums[j] - \\text{dp}[i][j - 1])$$\n\n- **Final Answer:**\n  Player 1 wins if `dp[0][n - 1] >= 0`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^2)$\n  - There are $\\frac{N(N + 1)}{2}$ subproblems, and each transition takes $\\mathcal{O}(1)$ time. With $N \\le 20$, $\\approx 200$ operations run in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N^2)$\n  - An $N \\times N$ DP table.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Use interval Dynamic Programming dp[i][j] tracking the maximum relative score difference achievable by the current player from subarray nums[i..j].",
+  "explanation": "# LeetCode 486: Predict the Winner\n\n- **Publication Date:** 01 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/predict-the-winner/](https://leetcode.com/problems/predict-the-winner/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/NmFcU3huV5g?si=j-DWd_1nGuALGshK)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`. Two players are playing a game with this array: Player 1 and Player 2.\n\nPlayer 1 and Player 2 take turns, with Player 1 starting first. Both players start the game with a score of `0`.\n\nAt each turn, the current player takes the number at either end of the array (i.e., `nums[0]` or `nums[nums.length - 1]`), removing it from the array and adding it to their own score. The game ends when there are no more elements in the array.\n\nReturn `true` if Player 1's final score is greater than or equal to Player 2's final score, and `false` otherwise.\n\nNote that a tie counts as a win for Player 1. You may assume that both players play optimally.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,5,2]`\n- **Output:** `false`\n- **Explanation:**\n  - Player 1 must open by taking either 1 or 2, and both choices lead to the same result.\n  - If Player 1 takes 1, the array becomes `[5,2]`. Player 2 takes 5, leaving 2 for Player 1.\n  - If Player 1 takes 2, the array becomes `[1,5]`. Player 2 takes 5, leaving 1 for Player 1.\n  - Either way, Player 1 finishes with `1 + 2 = 3` and Player 2 finishes with `5`. Player 1 can never win, so return `false`.\n\n#### Example 2:\n\n- **Input:** `nums = [1,5,233,7]`\n- **Output:** `true`\n- **Explanation:**\n  - Player 1 first takes 1, leaving `[5,233,7]`. Player 2 must then choose between 5 and 7, and no matter which number Player 2 chooses, Player 1 can take 233 on the next turn.\n  - Player 1 finishes with a higher score (234) than Player 2 (12), so return `true`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 20$\n- $0 \\le \\text{nums}[i] \\le 10^7$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Dynamic Programming**\n- **Recursion**\n- **Game Theory**\n\n---\n\n## Intuition and Approach\n\n### Minimax & Relative Score Difference:\nIn a two-player zero-sum game with perfect information, instead of maintaining two separate cumulative scores, we can model the game using the **relative score difference**:\n$$\\text{Score Difference} = \\text{Score of Current Player} - \\text{Score of Opponent}$$\n\nIf Player 1's net relative score at the end from the entire array `nums[0..n-1]` is $\\ge 0$, then Player 1 wins (or ties).\n\n### Dynamic Programming Formulation:\nLet `dp[i][j]` represent the maximum score difference the current player can achieve from the subarray `nums[i..j]`.\n\n- **Base Cases (subarrays of length 1):**\n  When only one element `nums[i]` is left:\n  $$\\text{dp}[i][i] = nums[i]$$\n- **State Transition (subarrays of length $\\ge 2$):**\n  The current player has two choices:\n  1. Pick the left element `nums[i]`:\n     The opponent is left with subarray `nums[i + 1..j]`. By optimality, the opponent will gain a relative advantage of `dp[i + 1][j]`.\n     Thus, the net gain for the current player is:\n     $$nums[i] - \\text{dp}[i + 1][j]$$\n  2. Pick the right element `nums[j]`:\n     The opponent is left with subarray `nums[i..j - 1]`.\n     Thus, the net gain for the current player is:\n     $$nums[j] - \\text{dp}[i][j - 1]$$\n  The optimal player takes the maximum:\n  $$\\text{dp}[i][j] = \\max(nums[i] - \\text{dp}[i + 1][j],\\; nums[j] - \\text{dp}[i][j - 1])$$\n\n- **Final Answer:**\n  Player 1 wins if `dp[0][n - 1] >= 0`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^2)$\n  - There are $\\frac{N(N + 1)}{2}$ subproblems, and each transition takes $\\mathcal{O}(1)$ time. With $N \\le 20$, $\\approx 200$ operations run in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N^2)$\n  - An $N \\times N$ DP table.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 486 - Predict the Winner\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean predictTheWinner(int[] nums) {\n        int n = nums.length;\n        int[][] dp = new int[n][n];\n        for (int i = 0; i < n; i++) {\n            dp[i][i] = nums[i];\n        }\n        for (int len = 2; len <= n; len++) {\n            for (int i = 0; i <= n - len; i++) {\n                int j = i + len - 1;\n                dp[i][j] = Math.max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1]);\n            }\n        }\n        return dp[0][n - 1] >= 0;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 486 - Predict the Winner\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def predictTheWinner(self, nums: list[int]) -> bool:\n        n = len(nums)\n        # dp[i][j] stores the maximum score difference achievable from nums[i..j]\n        dp = [[0] * n for _ in range(n)]\n\n        for i in range(n):\n            dp[i][i] = nums[i]\n\n        for length in range(2, n + 1):\n            for i in range(n - length + 1):\n                j = i + length - 1\n                dp[i][j] = max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1])\n\n        return dp[0][n - 1] >= 0\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 486 - Predict the Winner\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\n/**\n * Problem: LeetCode 486 - Predict the Winner\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool predictTheWinner(std::vector<int>& nums) {\n        int n = nums.size();\n        std::vector<std::vector<int>> dp(n, std::vector<int>(n, 0));\n\n        for (int i = 0; i < n; ++i) {\n            dp[i][i] = nums[i];\n        }\n\n        for (int len = 2; len <= n; ++len) {\n            for (int i = 0; i <= n - len; ++i) {\n                int j = i + len - 1;\n                dp[i][j] = std::max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1]);\n            }\n        }\n\n        return dp[0][n - 1] >= 0;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 486 - Predict the Winner\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar predictTheWinner = function(nums) {\n    const n = nums.length;\n    const dp = Array.from({ length: n }, () => new Int32Array(n));\n\n    for (let i = 0; i < n; i++) {\n        dp[i][i] = nums[i];\n    }\n\n    for (let len = 2; len <= n; len++) {\n        for (let i = 0; i <= n - len; i++) {\n            const j = i + len - 1;\n            dp[i][j] = Math.max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1]);\n        }\n    }\n\n    return dp[0][n - 1] >= 0;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Recursion",
+    "Game Theory"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-486-predict-the-winner.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-486-predict-the-winner.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 486: Predict the Winner Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 486 (Predict the Winner) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N^2) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-486-predict-the-winner.jpg",
+    "keywords": [
+      "LeetCode 486",
+      "Predict the Winner",
+      "LeetCode 486 Solution",
+      "LeetCode Predict the Winner",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

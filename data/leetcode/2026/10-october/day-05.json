@@ -1,0 +1,80 @@
+{
+  "problem_number": 856,
+  "problem_title": "Score of Parentheses",
+  "slug": "score-of-parentheses",
+  "solution_date": "2026-10-05",
+  "formatted_date": "05-10-2026",
+  "day_number": 5,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N) where N = s.length",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/score-of-parentheses/",
+  "youtube_url": "https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT",
+  "notes": "Optimal O(N) where N = s.length time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a balanced parentheses string `s`, return the score of the string.\n\nThe score of a balanced parentheses string is based on the following rule:\n- `\"()\"` has score `1`.\n- `AB` has score `A + B`, where `A` and `B` are balanced parentheses strings.\n- `(A)` has score `2 * A`, where `A` is a balanced parentheses string.\n\n---",
+    "approach_summary": "Track nesting depth linearly. Each immediate '()' pair contributes 2^depth (1 << depth) to the total score in O(N) time and O(1) space.",
+    "full_explanation": "﻿# LeetCode 856: Score of Parentheses\n\n- **Publication Date:** 05 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/score-of-parentheses/](https://leetcode.com/problems/score-of-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)\n\n---\n\n## Problem Summary\n\nGiven a balanced parentheses string `s`, return the score of the string.\n\nThe score of a balanced parentheses string is based on the following rule:\n- `\"()\"` has score `1`.\n- `AB` has score `A + B`, where `A` and `B` are balanced parentheses strings.\n- `(A)` has score `2 * A`, where `A` is a balanced parentheses string.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Bit Manipulation**\n- **Math**\n\n---\n\n## Approach\n\n1. **Mathematical Depth Insight**:\n   - Notice the recursive structure: every time a pair `\"()\"` is enclosed inside outer parentheses, its value is multiplied by 2 for each level of nesting.\n   - For example, in `\"((()))\"`, the core `\"()\"` is nested inside 2 other pairs, making its contribution $1 \\times 2 \\times 2 = 2^2$.\n   - More generally, every immediate pair `\"()\"` at depth $d$ contributes exactly $2^d$ (using 0-indexed nesting depth) to the final score.\n\n2. **Linear Depth Tracking (O(1) Space)**:\n   - Instead of an explicit stack or recursion, track current nesting depth with an integer `depth = 0`.\n   - Iterate through the string:\n     - When encountering `'('`: increment `depth++`.\n     - When encountering `')'`:\n       - Decrement `depth--`.\n       - Check if this `')'` directly closes the preceding `'('` (`s[i - 1] == '('`).\n       - If yes, we found a primitive unit `\"()\"` at the current `depth`. Add $1 \\ll \\text{depth}$ ($2^{\\text{depth}}$) to `score`.\n   - Return the cumulative `score`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through string `s` of length $N \\le 50$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only primitive integer variables (`score`, `depth`), requiring no stack allocations.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)\n"
+  },
+  "approach_summary": "Track nesting depth linearly. Each immediate '()' pair contributes 2^depth (1 << depth) to the total score in O(N) time and O(1) space.",
+  "explanation": "﻿# LeetCode 856: Score of Parentheses\n\n- **Publication Date:** 05 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/score-of-parentheses/](https://leetcode.com/problems/score-of-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)\n\n---\n\n## Problem Summary\n\nGiven a balanced parentheses string `s`, return the score of the string.\n\nThe score of a balanced parentheses string is based on the following rule:\n- `\"()\"` has score `1`.\n- `AB` has score `A + B`, where `A` and `B` are balanced parentheses strings.\n- `(A)` has score `2 * A`, where `A` is a balanced parentheses string.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Bit Manipulation**\n- **Math**\n\n---\n\n## Approach\n\n1. **Mathematical Depth Insight**:\n   - Notice the recursive structure: every time a pair `\"()\"` is enclosed inside outer parentheses, its value is multiplied by 2 for each level of nesting.\n   - For example, in `\"((()))\"`, the core `\"()\"` is nested inside 2 other pairs, making its contribution $1 \\times 2 \\times 2 = 2^2$.\n   - More generally, every immediate pair `\"()\"` at depth $d$ contributes exactly $2^d$ (using 0-indexed nesting depth) to the final score.\n\n2. **Linear Depth Tracking (O(1) Space)**:\n   - Instead of an explicit stack or recursion, track current nesting depth with an integer `depth = 0`.\n   - Iterate through the string:\n     - When encountering `'('`: increment `depth++`.\n     - When encountering `')'`:\n       - Decrement `depth--`.\n       - Check if this `')'` directly closes the preceding `'('` (`s[i - 1] == '('`).\n       - If yes, we found a primitive unit `\"()\"` at the current `depth`. Add $1 \\ll \\text{depth}$ ($2^{\\text{depth}}$) to `score`.\n   - Return the cumulative `score`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through string `s` of length $N \\le 50$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only primitive integer variables (`score`, `depth`), requiring no stack allocations.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT](https://youtu.be/B1P1_QQIqsE?si=nEV9RpfDojlICfoT)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 856 - Score of Parentheses\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int scoreOfParentheses(String s) {\n        int score = 0;\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '(') {\n                depth++;\n            } else {\n                depth--;\n                // Direct \"()\" pair found\n                if (s.charAt(i - 1) == '(') {\n                    score += 1 << depth;\n                }\n            }\n        }\n        return score;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 856 - Score of Parentheses\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def scoreOfParentheses(self, s: str) -> int:\n        score = 0\n        depth = 0\n        for i in range(len(s)):\n            if s[i] == '(':\n                depth += 1\n            else:\n                depth -= 1\n                # Direct \"()\" pair found\n                if s[i - 1] == '(':\n                    score += 1 << depth\n        return score\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 856 - Score of Parentheses\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 856 - Score of Parentheses\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int scoreOfParentheses(string s) {\n        int score = 0;\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            if (s[i] == '(') {\n                depth++;\n            } else {\n                depth--;\n                // Direct \"()\" pair found\n                if (s[i - 1] == '(') {\n                    score += 1 << depth;\n                }\n            }\n        }\n        return score;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 856 - Score of Parentheses\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar scoreOfParentheses = function(s) {\n    let score = 0;\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] === '(') {\n            depth++;\n        } else {\n            depth--;\n            // Direct \"()\" pair found\n            if (s[i - 1] === '(') {\n                score += 1 << depth;\n            }\n        }\n    }\n    return score;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack",
+    "Bit Manipulation",
+    "Math"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-856-score-of-parentheses.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-856-score-of-parentheses.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 856: Score of Parentheses Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 856 (Score of Parentheses) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) where N = s.length approach and d...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-856-score-of-parentheses.jpg",
+    "keywords": [
+      "LeetCode 856",
+      "Score of Parentheses",
+      "LeetCode 856 Solution",
+      "LeetCode Score of Parentheses",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

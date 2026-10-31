@@ -1,41 +1,78 @@
 {
-  "day_number": 1,
-  "solution_date": "2026-01-01",
-  "year": 2026,
-  "month": "January",
-  "month_num": 1,
   "problem_number": 66,
   "problem_title": "Plus One",
   "slug": "plus-one",
+  "solution_date": "2026-01-01",
+  "formatted_date": "01-01-2026",
+  "day_number": 1,
+  "month": "January",
+  "month_num": 1,
+  "year": 2026,
   "difficulty": "Easy",
   "platform": "LeetCode",
-  "time_complexity": "O(n)",
+  "time_complexity": "O(N)",
   "space_complexity": "O(1)",
-  "leetcode_url": "",
+  "leetcode_url": "https://leetcode.com/problems/plus-one/",
   "youtube_url": "https://youtu.be/QaqpaMoCl3c?si=6zqZGMP5GpbmVLD3",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a **large integer** represented as an integer array `digits`, where each `digits[i]` is the $i^{\\text{th}}$ digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading `0`'s.\n\nIncrement the large integer by one and return *the resulting array of digits*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1, 2, 3]`\n- **Output:** `[1, 2, 4]`\n- **Explanation:** The array represents the integer 123. Incrementing by one gives $123 + 1 = 124$. Thus, the result should be `[1, 2, 4]`.\n\n#### Example 2:\n- **Input:** `digits = [4, 3, 2, 1]`\n- **Output:** `[4, 3, 2, 2]`\n- **Explanation:** The array represents the integer 4321. Incrementing by one gives $4321 + 1 = 4322$. Thus, the result should be `[4, 3, 2, 2]`.\n\n#### Example 3:\n- **Input:** `digits = [9]`\n- **Output:** `[1, 0]`\n- **Explanation:** The array represents the integer 9. Incrementing by one gives $9 + 1 = 10$. Thus, the result should be `[1, 0]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{digits.length} \\le 100$\n- $0 \\le \\text{digits}[i] \\le 9$\n- `digits` does not contain any leading `0`'s.\n\n---",
+    "approach_summary": "Traverse the digits from right to left. Increment the first digit strictly less than 9 and return immediately; otherwise set it to 0 and propagate the carry. If all digits were 9, allocate a new array of size n + 1 with leading 1.",
+    "full_explanation": "# LeetCode 66: Plus One\n\n- **Publication Date:** 01 January 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/plus-one/](https://leetcode.com/problems/plus-one/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c?si=6zqZGMP5GpbmVLD3)\n\n---\n\n## Problem Summary\n\nYou are given a **large integer** represented as an integer array `digits`, where each `digits[i]` is the $i^{\\text{th}}$ digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading `0`'s.\n\nIncrement the large integer by one and return *the resulting array of digits*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1, 2, 3]`\n- **Output:** `[1, 2, 4]`\n- **Explanation:** The array represents the integer 123. Incrementing by one gives $123 + 1 = 124$. Thus, the result should be `[1, 2, 4]`.\n\n#### Example 2:\n- **Input:** `digits = [4, 3, 2, 1]`\n- **Output:** `[4, 3, 2, 2]`\n- **Explanation:** The array represents the integer 4321. Incrementing by one gives $4321 + 1 = 4322$. Thus, the result should be `[4, 3, 2, 2]`.\n\n#### Example 3:\n- **Input:** `digits = [9]`\n- **Output:** `[1, 0]`\n- **Explanation:** The array represents the integer 9. Incrementing by one gives $9 + 1 = 10$. Thus, the result should be `[1, 0]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{digits.length} \\le 100$\n- $0 \\le \\text{digits}[i] \\le 9$\n- `digits` does not contain any leading `0`'s.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n### 1. Reverse Traversal & Carry Simulation\n\n1. **Right-to-Left Traversal:**\n   - Addition by one only affects the least significant digit first (at index $n - 1$).\n   - If the digit is strictly less than $9$, incrementing it by $1$ does not produce a carry. We can immediately return the modified array.\n   - If the digit is $9$, incrementing it causes an overflow for that place ($9 + 1 = 10$). The digit at that position becomes $0$, and a carry of $1$ propagates to the next position to the left (index $i - 1$).\n\n2. **All 9's Corner Case:**\n   - If all digits in the array were $9$ (e.g., `[9, 9, 9]`), the loop finishes and all positions will have been set to $0$.\n   - A carry remains that requires a new most significant digit of $1$ followed by zeros (e.g., $999 + 1 = 1000$).\n   - We allocate an array of size $n + 1$, set the first element to $1$ (defaulting all subsequent elements to $0$), and return it.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the number of digits in `digits`. In the worst-case scenario (all 9s), we inspect each digit once from right to left. In the average case, the algorithm terminates in $\\mathcal{O}(1)$ time whenever the last digit is less than 9.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ when modifying in-place, or $\\mathcal{O}(n)$ only in the worst-case carry overflow where a new array of size $n + 1$ is returned.\n\n---\n\n## Source Code Implementations\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
   "approach_summary": "Traverse the digits from right to left. Increment the first digit strictly less than 9 and return immediately; otherwise set it to 0 and propagate the carry. If all digits were 9, allocate a new array of size n + 1 with leading 1.",
-  "explanation": "## Problem Summary\n\nYou are given a **large integer** represented as an integer array `digits`, where each `digits[i]` is the $i^{\\text{th}}$ digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading `0`'s.\n\nIncrement the large integer by one and return *the resulting array of digits*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1, 2, 3]`\n- **Output:** `[1, 2, 4]`\n- **Explanation:** The array represents the integer 123. Incrementing by one gives $123 + 1 = 124$. Thus, the result should be `[1, 2, 4]`.\n\n#### Example 2:\n- **Input:** `digits = [4, 3, 2, 1]`\n- **Output:** `[4, 3, 2, 2]`\n- **Explanation:** The array represents the integer 4321. Incrementing by one gives $4321 + 1 = 4322$. Thus, the result should be `[4, 3, 2, 2]`.\n\n#### Example 3:\n- **Input:** `digits = [9]`\n- **Output:** `[1, 0]`\n- **Explanation:** The array represents the integer 9. Incrementing by one gives $9 + 1 = 10$. Thus, the result should be `[1, 0]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{digits.length} \\le 100$\n- $0 \\le \\text{digits}[i] \\le 9$\n- `digits` does not contain any leading `0`'s.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n### 1. Reverse Traversal & Carry Simulation\n\n1. **Right-to-Left Traversal:**\n   - Addition by one only affects the least significant digit first (at index $n - 1$).\n   - If the digit is strictly less than $9$, incrementing it by $1$ does not produce a carry. We can immediately return the modified array.\n   - If the digit is $9$, incrementing it causes an overflow for that place ($9 + 1 = 10$). The digit at that position becomes $0$, and a carry of $1$ propagates to the next position to the left (index $i - 1$).\n\n2. **All 9's Corner Case:**\n   - If all digits in the array were $9$ (e.g., `[9, 9, 9]`), the loop finishes and all positions will have been set to $0$.\n   - A carry remains that requires a new most significant digit of $1$ followed by zeros (e.g., $999 + 1 = 1000$).\n   - We allocate an array of size $n + 1$, set the first element to $1$ (defaulting all subsequent elements to $0$), and return it.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the number of digits in `digits`. In the worst-case scenario (all 9s), we inspect each digit once from right to left. In the average case, the algorithm terminates in $\\mathcal{O}(1)$ time whenever the last digit is less than 9.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ when modifying in-place, or $\\mathcal{O}(n)$ only in the worst-case carry overflow where a new array of size $n + 1$ is returned.",
-  "tags": [
-    "Array",
-    "Math",
-    "Simulation"
-  ],
+  "explanation": "# LeetCode 66: Plus One\n\n- **Publication Date:** 01 January 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/plus-one/](https://leetcode.com/problems/plus-one/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c?si=6zqZGMP5GpbmVLD3)\n\n---\n\n## Problem Summary\n\nYou are given a **large integer** represented as an integer array `digits`, where each `digits[i]` is the $i^{\\text{th}}$ digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading `0`'s.\n\nIncrement the large integer by one and return *the resulting array of digits*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1, 2, 3]`\n- **Output:** `[1, 2, 4]`\n- **Explanation:** The array represents the integer 123. Incrementing by one gives $123 + 1 = 124$. Thus, the result should be `[1, 2, 4]`.\n\n#### Example 2:\n- **Input:** `digits = [4, 3, 2, 1]`\n- **Output:** `[4, 3, 2, 2]`\n- **Explanation:** The array represents the integer 4321. Incrementing by one gives $4321 + 1 = 4322$. Thus, the result should be `[4, 3, 2, 2]`.\n\n#### Example 3:\n- **Input:** `digits = [9]`\n- **Output:** `[1, 0]`\n- **Explanation:** The array represents the integer 9. Incrementing by one gives $9 + 1 = 10$. Thus, the result should be `[1, 0]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{digits.length} \\le 100$\n- $0 \\le \\text{digits}[i] \\le 9$\n- `digits` does not contain any leading `0`'s.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n### 1. Reverse Traversal & Carry Simulation\n\n1. **Right-to-Left Traversal:**\n   - Addition by one only affects the least significant digit first (at index $n - 1$).\n   - If the digit is strictly less than $9$, incrementing it by $1$ does not produce a carry. We can immediately return the modified array.\n   - If the digit is $9$, incrementing it causes an overflow for that place ($9 + 1 = 10$). The digit at that position becomes $0$, and a carry of $1$ propagates to the next position to the left (index $i - 1$).\n\n2. **All 9's Corner Case:**\n   - If all digits in the array were $9$ (e.g., `[9, 9, 9]`), the loop finishes and all positions will have been set to $0$.\n   - A carry remains that requires a new most significant digit of $1$ followed by zeros (e.g., $999 + 1 = 1000$).\n   - We allocate an array of size $n + 1$, set the first element to $1$ (defaulting all subsequent elements to $0$), and return it.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the number of digits in `digits`. In the worst-case scenario (all 9s), we inspect each digit once from right to left. In the average case, the algorithm terminates in $\\mathcal{O}(1)$ time whenever the last digit is less than 9.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ when modifying in-place, or $\\mathcal{O}(n)$ only in the worst-case carry overflow where a new array of size $n + 1$ is returned.\n\n---\n\n## Source Code Implementations\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
   "codes": {
     "Java": {
+      "language": "Java",
+      "language_slug": "java",
       "is_primary": true,
       "code": "/**\n * Problem: LeetCode 66 - Plus One\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int[] plusOne(int[] digits) {\n        int n = digits.length;\n        // Traverse digits from right to left\n        for (int i = n - 1; i >= 0; i--) {\n            if (digits[i] < 9) {\n                digits[i]++;\n                return digits;\n            }\n            digits[i] = 0;\n        }\n        // If all digits were 9 (e.g. 99 -> 100)\n        int[] result = new int[n + 1];\n        result[0] = 1;\n        return result;\n    }\n}\n"
     },
     "Python": {
+      "language": "Python",
+      "language_slug": "python",
       "is_primary": false,
-      "code": "\"\"\"\nProblem: LeetCode 66 - Plus One\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def plusOne(self, digits: List[int]) -> List[int]:\n        n = len(digits)\n        # Traverse digits from right to left\n        for i in range(n - 1, -1, -1):\n            if digits[i] < 9:\n                digits[i] += 1\n                return digits\n            digits[i] = 0\n        # If all digits were 9 (e.g. 99 -> 100)\n        return [1] + [0] * n\n"
+      "code": "\"\"\"\nProblem: LeetCode 66 - Plus One\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def plusOne(self, digits: List[int]) -> List[int]:\n        n = len(digits)\n        # Traverse digits from right to left\n        for i in range(n - 1, -1, -1):\n            if digits[i] < 9:\n                digits[i] += 1\n                return digits\n            digits[i] = 0\n        # If all digits were 9 (e.g. 99 -> 100)\n        return [1] + [0] * n\n"
     },
     "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
       "is_primary": false,
-      "code": "/**\n * Problem: LeetCode 66 - Plus One\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<int> plusOne(vector<int>& digits) {\n        int n = digits.size();\n        // Traverse digits from right to left\n        for (int i = n - 1; i >= 0; i--) {\n            if (digits[i] < 9) {\n                digits[i]++;\n                return digits;\n            }\n            digits[i] = 0;\n        }\n        // If all digits were 9 (e.g. 99 -> 100)\n        vector<int> result(n + 1, 0);\n        result[0] = 1;\n        return result;\n    }\n};\n"
+      "code": "/**\n * Problem: LeetCode 66 - Plus One\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<int> plusOne(vector<int>& digits) {\n        int n = digits.size();\n        // Traverse digits from right to left\n        for (int i = n - 1; i >= 0; i--) {\n            if (digits[i] < 9) {\n                digits[i]++;\n                return digits;\n            }\n            digits[i] = 0;\n        }\n        // If all digits were 9 (e.g. 99 -> 100)\n        vector<int> result(n + 1, 0);\n        result[0] = 1;\n        return result;\n    }\n};\n"
     },
     "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
       "is_primary": false,
-      "code": "/**\n * Problem: LeetCode 66 - Plus One\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {number[]} digits\n * @return {number[]}\n */\nvar plusOne = function(digits) {\n    const n = digits.length;\n    // Traverse digits from right to left\n    for (let i = n - 1; i >= 0; i--) {\n        if (digits[i] < 9) {\n            digits[i]++;\n            return digits;\n        }\n        digits[i] = 0;\n    }\n    // If all digits were 9 (e.g. 99 -> 100)\n    const result = new Array(n + 1).fill(0);\n    result[0] = 1;\n    return result;\n};\n"
+      "code": "/**\n * Problem: LeetCode 66 - Plus One\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} digits\n * @return {number[]}\n */\nvar plusOne = function(digits) {\n    const n = digits.length;\n    // Traverse digits from right to left\n    for (let i = n - 1; i >= 0; i--) {\n        if (digits[i] < 9) {\n            digits[i]++;\n            return digits;\n        }\n        digits[i] = 0;\n    }\n    // If all digits were 9 (e.g. 99 -> 100)\n    const result = new Array(n + 1).fill(0);\n    result[0] = 1;\n    return result;\n};\n"
     }
+  },
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-66-plus-one.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-66-plus-one.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 66: Plus One Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 66 (Plus One) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-66-plus-one.jpg",
+    "keywords": [
+      "LeetCode 66",
+      "Plus One",
+      "LeetCode 66 Solution",
+      "LeetCode Plus One",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
   }
 }

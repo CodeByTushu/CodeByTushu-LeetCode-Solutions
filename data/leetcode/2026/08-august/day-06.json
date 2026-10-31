@@ -1,0 +1,78 @@
+{
+  "problem_number": 3345,
+  "problem_title": "Smallest Divisible Digit Product I",
+  "slug": "smallest-divisible-digit-product-i",
+  "solution_date": "2026-08-06",
+  "formatted_date": "06-08-2026",
+  "day_number": 6,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
+  "youtube_url": "https://youtu.be/s5l_psaxdqg?si=8xiX7X6n_y8FQLK8",
+  "notes": "Optimal O(1) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given two integers `n` and `t`. Return the **smallest number greater than or equal to `n`** such that the **product of its digits** is divisible by `t`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 10, t = 2`\n- **Output:** `10`\n- **Explanation:**\n  - The digit product of `10` is `1 * 0 = 0`.\n  - `0` is divisible by `2` (`0 % 2 == 0`).\n  - Thus, `10` is the smallest number $\\ge 10$ satisfying the condition.\n\n#### Example 2:\n\n- **Input:** `n = 15, t = 3`\n- **Output:** `16`\n- **Explanation:**\n  - For `15`: digit product is `1 * 5 = 5` (not divisible by `3`).\n  - For `16`: digit product is `1 * 6 = 6` (`6 % 3 == 0`).\n  - Thus, `16` is the smallest number $\\ge 15$ satisfying the condition.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 100$\n- $1 \\le t \\le 10$\n\n---",
+    "approach_summary": "Iterate upwards starting from n and compute the digit product of each candidate integer. Return the first number whose digit product is divisible by t. Within at most 10 iterations, a multiple of 10 is reached (digit product 0), guaranteeing O(1) termination.",
+    "full_explanation": "# LeetCode 3345: Smallest Divisible Digit Product I\n\n- **Publication Date:** 06 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/smallest-divisible-digit-product-i/](https://leetcode.com/problems/smallest-divisible-digit-product-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/s5l_psaxdqg?si=8xiX7X6n_y8FQLK8)\n\n---\n\n## Problem Summary\n\nYou are given two integers `n` and `t`. Return the **smallest number greater than or equal to `n`** such that the **product of its digits** is divisible by `t`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 10, t = 2`\n- **Output:** `10`\n- **Explanation:**\n  - The digit product of `10` is `1 * 0 = 0`.\n  - `0` is divisible by `2` (`0 % 2 == 0`).\n  - Thus, `10` is the smallest number $\\ge 10$ satisfying the condition.\n\n#### Example 2:\n\n- **Input:** `n = 15, t = 3`\n- **Output:** `16`\n- **Explanation:**\n  - For `15`: digit product is `1 * 5 = 5` (not divisible by `3`).\n  - For `16`: digit product is `1 * 6 = 6` (`6 % 3 == 0`).\n  - Thus, `16` is the smallest number $\\ge 15$ satisfying the condition.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 100$\n- $1 \\le t \\le 10$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### Simulation & Digit Extraction:\nStarting from $x = n$, we check candidate numbers in increasing order:\n1. Extract the digits of $x$ by repeatedly taking `x % 10` and dividing by `10`.\n2. Compute the cumulative product of these digits.\n3. If `product % t == 0`, we have found the smallest valid integer and immediately return $x$.\n4. Otherwise, increment $x$ by $1$ and test the next integer.\n\n### Upper Bound on Iterations:\nNotice that within at most $10$ consecutive numbers starting from any $n$, we will always encounter a multiple of $10$ (a number ending with digit `0`).\n- The digit product of any number containing a `0` is $0$.\n- Since $0 \\pmod t = 0$ for all valid $t \\in [1, 10]$, the search terminates in at most $10$ iterations, guaranteeing blazing fast $\\mathcal{O}(1)$ execution!\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$\n  - At most $10$ candidates are checked before reaching a number ending in $0$.\n  - Each candidate has at most $3$ digits ($n \\le 100$).\n  - Overall time is $\\mathcal{O}(1)$, executing in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses primitive integers for the product calculation.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Iterate upwards starting from n and compute the digit product of each candidate integer. Return the first number whose digit product is divisible by t. Within at most 10 iterations, a multiple of 10 is reached (digit product 0), guaranteeing O(1) termination.",
+  "explanation": "# LeetCode 3345: Smallest Divisible Digit Product I\n\n- **Publication Date:** 06 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/smallest-divisible-digit-product-i/](https://leetcode.com/problems/smallest-divisible-digit-product-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/s5l_psaxdqg?si=8xiX7X6n_y8FQLK8)\n\n---\n\n## Problem Summary\n\nYou are given two integers `n` and `t`. Return the **smallest number greater than or equal to `n`** such that the **product of its digits** is divisible by `t`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 10, t = 2`\n- **Output:** `10`\n- **Explanation:**\n  - The digit product of `10` is `1 * 0 = 0`.\n  - `0` is divisible by `2` (`0 % 2 == 0`).\n  - Thus, `10` is the smallest number $\\ge 10$ satisfying the condition.\n\n#### Example 2:\n\n- **Input:** `n = 15, t = 3`\n- **Output:** `16`\n- **Explanation:**\n  - For `15`: digit product is `1 * 5 = 5` (not divisible by `3`).\n  - For `16`: digit product is `1 * 6 = 6` (`6 % 3 == 0`).\n  - Thus, `16` is the smallest number $\\ge 15$ satisfying the condition.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 100$\n- $1 \\le t \\le 10$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### Simulation & Digit Extraction:\nStarting from $x = n$, we check candidate numbers in increasing order:\n1. Extract the digits of $x$ by repeatedly taking `x % 10` and dividing by `10`.\n2. Compute the cumulative product of these digits.\n3. If `product % t == 0`, we have found the smallest valid integer and immediately return $x$.\n4. Otherwise, increment $x$ by $1$ and test the next integer.\n\n### Upper Bound on Iterations:\nNotice that within at most $10$ consecutive numbers starting from any $n$, we will always encounter a multiple of $10$ (a number ending with digit `0`).\n- The digit product of any number containing a `0` is $0$.\n- Since $0 \\pmod t = 0$ for all valid $t \\in [1, 10]$, the search terminates in at most $10$ iterations, guaranteeing blazing fast $\\mathcal{O}(1)$ execution!\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$\n  - At most $10$ candidates are checked before reaching a number ending in $0$.\n  - Each candidate has at most $3$ digits ($n \\le 100$).\n  - Overall time is $\\mathcal{O}(1)$, executing in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses primitive integers for the product calculation.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3345 - Smallest Divisible Digit Product I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int smallestNumber(int n, int t) {\n        while (true) {\n            if (digitProduct(n) % t == 0) {\n                return n;\n            }\n            n++;\n        }\n    }\n\n    private int digitProduct(int num) {\n        int product = 1;\n        while (num > 0) {\n            product *= (num % 10);\n            num /= 10;\n        }\n        return product;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3345 - Smallest Divisible Digit Product I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def smallestNumber(self, n: int, t: int) -> int:\n        def digit_product(num: int) -> int:\n            product = 1\n            while num > 0:\n                product *= (num % 10)\n                num //= 10\n            return product\n\n        while True:\n            if digit_product(n) % t == 0:\n                return n\n            n += 1\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3345 - Smallest Divisible Digit Product I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int smallestNumber(int n, int t) {\n        while (true) {\n            if (digitProduct(n) % t == 0) {\n                return n;\n            }\n            n++;\n        }\n    }\n\nprivate:\n    int digitProduct(int num) {\n        int product = 1;\n        while (num > 0) {\n            product *= (num % 10);\n            num /= 10;\n        }\n        return product;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3345 - Smallest Divisible Digit Product I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar smallestNumber = function(n, t) {\n    const digitProduct = (num) => {\n        let product = 1;\n        while (num > 0) {\n            product *= (num % 10);\n            num = Math.floor(num / 10);\n        }\n        return product;\n    };\n\n    while (true) {\n        if (digitProduct(n) % t === 0) {\n            return n;\n        }\n        n++;\n    }\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3345-smallest-divisible-digit-product-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3345-smallest-divisible-digit-product-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3345: Smallest Divisible Digit Product I Solution | CodeBy...",
+    "meta_description": "Master LeetCode 3345 (Smallest Divisible Digit Product I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(1) approach and detai...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3345-smallest-divisible-digit-product-i.jpg",
+    "keywords": [
+      "LeetCode 3345",
+      "Smallest Divisible Digit Product I",
+      "LeetCode 3345 Solution",
+      "LeetCode Smallest Divisible Digit Product I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

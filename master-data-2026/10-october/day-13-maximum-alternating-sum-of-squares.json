@@ -1,0 +1,80 @@
+{
+  "problem_number": 3727,
+  "problem_title": "Maximum Alternating Sum of Squares",
+  "slug": "maximum-alternating-sum-of-squares",
+  "solution_date": "2026-10-13",
+  "formatted_date": "13-10-2026",
+  "day_number": 13,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N log N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-alternating-sum-of-squares/",
+  "youtube_url": "https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo",
+  "notes": "Optimal O(N log N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`. You may rearrange the elements in any order.\n\nThe **alternating score** of an array `arr` is defined as:\n$$\\text{score} = \\text{arr}[0]^2 - \\text{arr}[1]^2 + \\text{arr}[2]^2 - \\text{arr}[3]^2 + \\dots$$\n\nReturn an integer denoting the **maximum possible alternating score** of `nums` after rearranging its elements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3]`\n- **Output:** `12`\n- **Explanation:**\n  A possible rearrangement for `nums` is `[2, 1, 3]`, which gives the maximum alternating score:\n  $$\\text{score} = 2^2 - 1^2 + 3^2 = 4 - 1 + 9 = 12$$\n\n#### Example 2:\n- **Input:** `nums = [1, -1, 2, -2, 3, -3]`\n- **Output:** `16`\n- **Explanation:**\n  A possible rearrangement for `nums` is `[-3, -1, -2, 1, 3, 2]`, which gives the maximum alternating score:\n  $$\\text{score} = (-3)^2 - (-1)^2 + (-2)^2 - (1)^2 + 3^2 - 2^2 = 9 - 1 + 4 - 1 + 9 - 4 = 16$$\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $-4 \\times 10^4 \\le \\text{nums}[i] \\le 4 \\times 10^4$\n\n---",
+    "approach_summary": "Compute squares of all elements, sort them in ascending order. Assign the smallest n // 2 squares with negative signs and the remaining larger squares with positive signs.",
+    "full_explanation": "# LeetCode 3727: Maximum Alternating Sum of Squares\n\n- **Publication Date:** 13 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-alternating-sum-of-squares/](https://leetcode.com/problems/maximum-alternating-sum-of-squares/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`. You may rearrange the elements in any order.\n\nThe **alternating score** of an array `arr` is defined as:\n$$\\text{score} = \\text{arr}[0]^2 - \\text{arr}[1]^2 + \\text{arr}[2]^2 - \\text{arr}[3]^2 + \\dots$$\n\nReturn an integer denoting the **maximum possible alternating score** of `nums` after rearranging its elements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3]`\n- **Output:** `12`\n- **Explanation:**\n  A possible rearrangement for `nums` is `[2, 1, 3]`, which gives the maximum alternating score:\n  $$\\text{score} = 2^2 - 1^2 + 3^2 = 4 - 1 + 9 = 12$$\n\n#### Example 2:\n- **Input:** `nums = [1, -1, 2, -2, 3, -3]`\n- **Output:** `16`\n- **Explanation:**\n  A possible rearrangement for `nums` is `[-3, -1, -2, 1, 3, 2]`, which gives the maximum alternating score:\n  $$\\text{score} = (-3)^2 - (-1)^2 + (-2)^2 - (1)^2 + 3^2 - 2^2 = 9 - 1 + 4 - 1 + 9 - 4 = 16$$\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $-4 \\times 10^4 \\le \\text{nums}[i] \\le 4 \\times 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Greedy**\n- **Sorting**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n1. **Sign Breakdown in Alternating Score**:\n   - In any array of size $n$, indices $0, 2, 4, \\dots$ contribute positively ($+x^2$).\n   - Indices $1, 3, 5, \\dots$ contribute negatively ($-x^2$).\n   - Total positive terms: $\\lceil n / 2 \\rceil = n - \\lfloor n / 2 \\rfloor$.\n   - Total negative terms: $\\lfloor n / 2 \\rfloor$.\n\n2. **Greedy Assignment**:\n   - Since $x^2 \\ge 0$ for all real numbers, each element's square is non-negative.\n   - To maximize the net sum $\\sum \\text{positive} - \\sum \\text{negative}$, we must assign:\n     - The **smallest $\\lfloor n / 2 \\rfloor$ squares** to the negative positions.\n     - The **remaining largest $n - \\lfloor n / 2 \\rfloor$ squares** to the positive positions.\n\n3. **Step-by-Step Algorithm**:\n   - Compute the square of every element: $\\text{sq}[i] = \\text{nums}[i]^2$.\n   - Sort the squares in ascending order.\n   - Subtract the first $\\lfloor n / 2 \\rfloor$ squares from the total.\n   - Add the remaining squares to the total.\n   - Return the resulting 64-bit integer.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$\n  - Computing $n$ squares takes $\\mathcal{O}(N)$ time.\n  - Sorting the array of $n$ squares takes $\\mathcal{O}(N \\log N)$ time.\n  - Linear scan for addition/subtraction takes $\\mathcal{O}(N)$ time.\n  - Total time: $\\mathcal{O}(N \\log N)$, which runs well within the $10^5$ limit ($< 60\\text{ ms}$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Storing the array of squares requires $\\mathcal{O}(N)$ auxiliary memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)\n"
+  },
+  "approach_summary": "Compute squares of all elements, sort them in ascending order. Assign the smallest n // 2 squares with negative signs and the remaining larger squares with positive signs.",
+  "explanation": "# LeetCode 3727: Maximum Alternating Sum of Squares\n\n- **Publication Date:** 13 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-alternating-sum-of-squares/](https://leetcode.com/problems/maximum-alternating-sum-of-squares/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`. You may rearrange the elements in any order.\n\nThe **alternating score** of an array `arr` is defined as:\n$$\\text{score} = \\text{arr}[0]^2 - \\text{arr}[1]^2 + \\text{arr}[2]^2 - \\text{arr}[3]^2 + \\dots$$\n\nReturn an integer denoting the **maximum possible alternating score** of `nums` after rearranging its elements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3]`\n- **Output:** `12`\n- **Explanation:**\n  A possible rearrangement for `nums` is `[2, 1, 3]`, which gives the maximum alternating score:\n  $$\\text{score} = 2^2 - 1^2 + 3^2 = 4 - 1 + 9 = 12$$\n\n#### Example 2:\n- **Input:** `nums = [1, -1, 2, -2, 3, -3]`\n- **Output:** `16`\n- **Explanation:**\n  A possible rearrangement for `nums` is `[-3, -1, -2, 1, 3, 2]`, which gives the maximum alternating score:\n  $$\\text{score} = (-3)^2 - (-1)^2 + (-2)^2 - (1)^2 + 3^2 - 2^2 = 9 - 1 + 4 - 1 + 9 - 4 = 16$$\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $-4 \\times 10^4 \\le \\text{nums}[i] \\le 4 \\times 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Greedy**\n- **Sorting**\n- **Math**\n\n---\n\n## Approach & Intuition\n\n1. **Sign Breakdown in Alternating Score**:\n   - In any array of size $n$, indices $0, 2, 4, \\dots$ contribute positively ($+x^2$).\n   - Indices $1, 3, 5, \\dots$ contribute negatively ($-x^2$).\n   - Total positive terms: $\\lceil n / 2 \\rceil = n - \\lfloor n / 2 \\rfloor$.\n   - Total negative terms: $\\lfloor n / 2 \\rfloor$.\n\n2. **Greedy Assignment**:\n   - Since $x^2 \\ge 0$ for all real numbers, each element's square is non-negative.\n   - To maximize the net sum $\\sum \\text{positive} - \\sum \\text{negative}$, we must assign:\n     - The **smallest $\\lfloor n / 2 \\rfloor$ squares** to the negative positions.\n     - The **remaining largest $n - \\lfloor n / 2 \\rfloor$ squares** to the positive positions.\n\n3. **Step-by-Step Algorithm**:\n   - Compute the square of every element: $\\text{sq}[i] = \\text{nums}[i]^2$.\n   - Sort the squares in ascending order.\n   - Subtract the first $\\lfloor n / 2 \\rfloor$ squares from the total.\n   - Add the remaining squares to the total.\n   - Return the resulting 64-bit integer.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$\n  - Computing $n$ squares takes $\\mathcal{O}(N)$ time.\n  - Sorting the array of $n$ squares takes $\\mathcal{O}(N \\log N)$ time.\n  - Linear scan for addition/subtraction takes $\\mathcal{O}(N)$ time.\n  - Total time: $\\mathcal{O}(N \\log N)$, which runs well within the $10^5$ limit ($< 60\\text{ ms}$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Storing the array of squares requires $\\mathcal{O}(N)$ auxiliary memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo](https://youtu.be/lPOO0qTlah4?si=1wjwXU9KfcCsMHjo)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3727 - Maximum Alternating Sum of Squares\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.Arrays;\n\n/**\n * Problem: LeetCode 3727 - Maximum Alternating Sum of Squares\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public long maxAlternatingSum(int[] nums) {\n        int n = nums.length;\n        long[] sq = new long[n];\n        for (int i = 0; i < n; i++) {\n            sq[i] = (long) nums[i] * nums[i];\n        }\n        Arrays.sort(sq);\n        int minusCount = n / 2;\n        long ans = 0;\n        for (int i = 0; i < n; i++) {\n            if (i < minusCount) {\n                ans -= sq[i];\n            } else {\n                ans += sq[i];\n            }\n        }\n        return ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3727 - Maximum Alternating Sum of Squares\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\"\"\"\nProblem: LeetCode 3727 - Maximum Alternating Sum of Squares\nDifficulty: Medium\nLanguage: Python 3\nAuthor: CodeByTushu\n\"\"\"\n\nclass Solution:\n    def maxAlternatingSum(self, nums: List[int]) -> int:\n        n = len(nums)\n        sq = sorted(x * x for x in nums)\n        minus_count = n // 2\n        return sum(sq[minus_count:]) - sum(sq[:minus_count])\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3727 - Maximum Alternating Sum of Squares\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3727 - Maximum Alternating Sum of Squares\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    long long maxAlternatingSum(vector<int>& nums) {\n        int n = nums.size();\n        vector<long long> sq(n);\n        for (int i = 0; i < n; i++) {\n            sq[i] = 1LL * nums[i] * nums[i];\n        }\n        sort(sq.begin(), sq.end());\n        int minusCount = n / 2;\n        long long ans = 0;\n        for (int i = 0; i < n; i++) {\n            if (i < minusCount) {\n                ans -= sq[i];\n            } else {\n                ans += sq[i];\n            }\n        }\n        return ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3727 - Maximum Alternating Sum of Squares\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxAlternatingSum = function(nums) {\n    const n = nums.length;\n    const sq = new Float64Array(n);\n    for (let i = 0; i < n; i++) {\n        sq[i] = nums[i] * nums[i];\n    }\n    sq.sort();\n    const minusCount = Math.floor(n / 2);\n    let ans = 0;\n    for (let i = 0; i < n; i++) {\n        if (i < minusCount) {\n            ans -= sq[i];\n        } else {\n            ans += sq[i];\n        }\n    }\n    return ans;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Math"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3727-maximum-alternating-sum-of-squares.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3727-maximum-alternating-sum-of-squares.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3727: Maximum Alternating Sum of Squares Solution | CodeBy...",
+    "meta_description": "Master LeetCode 3727 (Maximum Alternating Sum of Squares) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N log N) approach and...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3727-maximum-alternating-sum-of-squares.jpg",
+    "keywords": [
+      "LeetCode 3727",
+      "Maximum Alternating Sum of Squares",
+      "LeetCode 3727 Solution",
+      "LeetCode Maximum Alternating Sum of Squares",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

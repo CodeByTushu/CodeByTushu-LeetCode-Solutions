@@ -1,0 +1,78 @@
+{
+  "problem_number": 153,
+  "problem_title": "Find Minimum in Rotated Sorted Array",
+  "slug": "find-minimum-in-rotated-sorted-array",
+  "solution_date": "2026-05-15",
+  "formatted_date": "15-05-2026",
+  "day_number": 15,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(log(N))",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+  "youtube_url": "https://youtu.be/kFmMM4LOyjc",
+  "notes": "Optimal O(log(N)) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Suppose an array of length $n$ sorted in ascending order is rotated between $1$ and $n$ times. For example, the array `nums = [0, 1, 2, 4, 5, 6, 7]` might become:\n- `[4, 5, 6, 7, 0, 1, 2]` if it was rotated 4 times.\n- `[0, 1, 2, 4, 5, 6, 7]` if it was rotated 7 times.\n\nNotice that rotating an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.\n\nGiven the sorted rotated array `nums` of **unique** elements, return the **minimum element** of this array.\n\nYou must write an algorithm that runs in $\\mathcal{O}(\\log n)$ time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [3, 4, 5, 1, 2]`\n- **Output:** `1`\n- **Explanation:** The original array was `[1, 2, 3, 4, 5]` rotated 3 times.\n\n#### Example 2:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`\n- **Output:** `0`\n- **Explanation:** The original array was `[0, 1, 2, 4, 5, 6, 7]` and it was rotated 4 times.\n\n#### Example 3:\n- **Input:** `nums = [11, 13, 15, 17]`\n- **Output:** `11`\n- **Explanation:** The original array was `[11, 13, 15, 17]` and it was rotated 4 times.\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $1 \\le n \\le 5000$\n- $-5000 \\le \\text{nums}[i] \\le 5000$\n- All the integers of `nums` are **unique**.\n- `nums` is sorted and rotated between $1$ and $n$ times.\n\n---",
+    "approach_summary": "Perform binary search comparing nums[mid] with nums[right] to determine whether the inflection point lies in the left or right half, converging to the minimum element.",
+    "full_explanation": "# LeetCode 153: Find Minimum in Rotated Sorted Array\n\n- **Publication Date:** 15 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kFmMM4LOyjc)\n\n---\n\n## Problem Summary\n\nSuppose an array of length $n$ sorted in ascending order is rotated between $1$ and $n$ times. For example, the array `nums = [0, 1, 2, 4, 5, 6, 7]` might become:\n- `[4, 5, 6, 7, 0, 1, 2]` if it was rotated 4 times.\n- `[0, 1, 2, 4, 5, 6, 7]` if it was rotated 7 times.\n\nNotice that rotating an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.\n\nGiven the sorted rotated array `nums` of **unique** elements, return the **minimum element** of this array.\n\nYou must write an algorithm that runs in $\\mathcal{O}(\\log n)$ time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [3, 4, 5, 1, 2]`\n- **Output:** `1`\n- **Explanation:** The original array was `[1, 2, 3, 4, 5]` rotated 3 times.\n\n#### Example 2:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`\n- **Output:** `0`\n- **Explanation:** The original array was `[0, 1, 2, 4, 5, 6, 7]` and it was rotated 4 times.\n\n#### Example 3:\n- **Input:** `nums = [11, 13, 15, 17]`\n- **Output:** `11`\n- **Explanation:** The original array was `[11, 13, 15, 17]` and it was rotated 4 times.\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $1 \\le n \\le 5000$\n- $-5000 \\le \\text{nums}[i] \\le 5000$\n- All the integers of `nums` are **unique**.\n- `nums` is sorted and rotated between $1$ and $n$ times.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Structure of a Rotated Sorted Array\n\nA rotated sorted array consists of two sorted subarrays:\n- The left subarray: values strictly greater than the rightmost element.\n- The right subarray: values containing the minimum element and ending at `nums[n - 1]`.\n\nThe transition between these two subarrays is the **inflection point** (where the value drops). The minimum element is located precisely at this inflection point.\n\n### 2. Binary Search Decision Rules\n\nWe maintain two pointers `left = 0` and `right = n - 1`:\n1. Calculate `mid = left + (right - left) / 2`.\n2. Compare `nums[mid]` with `nums[right]`:\n   - **Case 1: `nums[mid] > nums[right]`**\n     - Since `nums[mid]` is strictly greater than the rightmost element, `mid` lies in the left subarray.\n     - The inflection point (and thus the minimum) must lie strictly to the right:\n       $$\\text{left} = \\text{mid} + 1$$\n   - **Case 2: `nums[mid] <= nums[right]`**\n     - Because all elements are unique, `nums[mid] < nums[right]`.\n     - The subarray from `mid` to `right` is monotonically increasing.\n     - Therefore, the minimum cannot be to the right of `mid`, but could be `nums[mid]` itself:\n       $$\\text{right} = \\text{mid}$$\n3. When `left == right`, the search space has converged to the single minimum element: return `nums[left]`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log N)$\n  - With each iteration, the search interval is halved.\n  - For $N \\le 5000$, the algorithm terminates in at most $\\lceil \\log_2(5000) \\rceil = 13$ comparisons ($0\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses two pointer variables `left` and `right`.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/kFmMM4LOyjc](https://youtu.be/kFmMM4LOyjc)\n"
+  },
+  "approach_summary": "Perform binary search comparing nums[mid] with nums[right] to determine whether the inflection point lies in the left or right half, converging to the minimum element.",
+  "explanation": "# LeetCode 153: Find Minimum in Rotated Sorted Array\n\n- **Publication Date:** 15 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kFmMM4LOyjc)\n\n---\n\n## Problem Summary\n\nSuppose an array of length $n$ sorted in ascending order is rotated between $1$ and $n$ times. For example, the array `nums = [0, 1, 2, 4, 5, 6, 7]` might become:\n- `[4, 5, 6, 7, 0, 1, 2]` if it was rotated 4 times.\n- `[0, 1, 2, 4, 5, 6, 7]` if it was rotated 7 times.\n\nNotice that rotating an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.\n\nGiven the sorted rotated array `nums` of **unique** elements, return the **minimum element** of this array.\n\nYou must write an algorithm that runs in $\\mathcal{O}(\\log n)$ time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [3, 4, 5, 1, 2]`\n- **Output:** `1`\n- **Explanation:** The original array was `[1, 2, 3, 4, 5]` rotated 3 times.\n\n#### Example 2:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`\n- **Output:** `0`\n- **Explanation:** The original array was `[0, 1, 2, 4, 5, 6, 7]` and it was rotated 4 times.\n\n#### Example 3:\n- **Input:** `nums = [11, 13, 15, 17]`\n- **Output:** `11`\n- **Explanation:** The original array was `[11, 13, 15, 17]` and it was rotated 4 times.\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $1 \\le n \\le 5000$\n- $-5000 \\le \\text{nums}[i] \\le 5000$\n- All the integers of `nums` are **unique**.\n- `nums` is sorted and rotated between $1$ and $n$ times.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Structure of a Rotated Sorted Array\n\nA rotated sorted array consists of two sorted subarrays:\n- The left subarray: values strictly greater than the rightmost element.\n- The right subarray: values containing the minimum element and ending at `nums[n - 1]`.\n\nThe transition between these two subarrays is the **inflection point** (where the value drops). The minimum element is located precisely at this inflection point.\n\n### 2. Binary Search Decision Rules\n\nWe maintain two pointers `left = 0` and `right = n - 1`:\n1. Calculate `mid = left + (right - left) / 2`.\n2. Compare `nums[mid]` with `nums[right]`:\n   - **Case 1: `nums[mid] > nums[right]`**\n     - Since `nums[mid]` is strictly greater than the rightmost element, `mid` lies in the left subarray.\n     - The inflection point (and thus the minimum) must lie strictly to the right:\n       $$\\text{left} = \\text{mid} + 1$$\n   - **Case 2: `nums[mid] <= nums[right]`**\n     - Because all elements are unique, `nums[mid] < nums[right]`.\n     - The subarray from `mid` to `right` is monotonically increasing.\n     - Therefore, the minimum cannot be to the right of `mid`, but could be `nums[mid]` itself:\n       $$\\text{right} = \\text{mid}$$\n3. When `left == right`, the search space has converged to the single minimum element: return `nums[left]`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log N)$\n  - With each iteration, the search interval is halved.\n  - For $N \\le 5000$, the algorithm terminates in at most $\\lceil \\log_2(5000) \\rceil = 13$ comparisons ($0\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses two pointer variables `left` and `right`.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/kFmMM4LOyjc](https://youtu.be/kFmMM4LOyjc)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 153 - Find Minimum in Rotated Sorted Array\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int findMin(int[] nums) {\n        int left = 0;\n        int right = nums.length - 1;\n\n        // Binary search for the inflection point (minimum element)\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n\n            // If middle element is greater than rightmost element,\n            // the inflection point lies in the right half (mid + 1 to right)\n            if (nums[mid] > nums[right]) {\n                left = mid + 1;\n            } else {\n                // Otherwise, the minimum element is at mid or in the left half (left to mid)\n                right = mid;\n            }\n        }\n\n        return nums[left];\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 153 - Find Minimum in Rotated Sorted Array\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def findMin(self, nums: List[int]) -> int:\n        left, right = 0, len(nums) - 1\n\n        # Binary search for the inflection point (minimum element)\n        while left < right:\n            mid = left + (right - left) // 2\n\n            # If middle element is greater than rightmost element,\n            # the inflection point lies in the right half (mid + 1 to right)\n            if nums[mid] > nums[right]:\n                left = mid + 1\n            else:\n                # Otherwise, the minimum element is at mid or in the left half (left to mid)\n                right = mid\n\n        return nums[left]\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 153 - Find Minimum in Rotated Sorted Array\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int findMin(vector<int>& nums) {\n        int left = 0;\n        int right = nums.size() - 1;\n\n        // Binary search for the inflection point (minimum element)\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n\n            // If middle element is greater than rightmost element,\n            // the inflection point lies in the right half (mid + 1 to right)\n            if (nums[mid] > nums[right]) {\n                left = mid + 1;\n            } else {\n                // Otherwise, the minimum element is at mid or in the left half (left to mid)\n                right = mid;\n            }\n        }\n\n        return nums[left];\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 153 - Find Minimum in Rotated Sorted Array\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar findMin = function(nums) {\n    let left = 0;\n    let right = nums.length - 1;\n\n    // Binary search for the inflection point (minimum element)\n    while (left < right) {\n        const mid = left + Math.floor((right - left) / 2);\n\n        // If middle element is greater than rightmost element,\n        // the inflection point lies in the right half (mid + 1 to right)\n        if (nums[mid] > nums[right]) {\n            left = mid + 1;\n        } else {\n            // Otherwise, the minimum element is at mid or in the left half (left to mid)\n            right = mid;\n        }\n    }\n\n    return nums[left];\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-153-find-minimum-in-rotated-sorted-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-153-find-minimum-in-rotated-sorted-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 153: Find Minimum in Rotated Sorted Array Solution | CodeB...",
+    "meta_description": "Master LeetCode 153 (Find Minimum in Rotated Sorted Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log(N)) approach and...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-153-find-minimum-in-rotated-sorted-array.jpg",
+    "keywords": [
+      "LeetCode 153",
+      "Find Minimum in Rotated Sorted Array",
+      "LeetCode 153 Solution",
+      "LeetCode Find Minimum in Rotated Sorted Array",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

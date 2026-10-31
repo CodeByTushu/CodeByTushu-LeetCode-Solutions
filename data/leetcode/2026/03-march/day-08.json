@@ -1,42 +1,80 @@
 {
-  "day_number": 8,
-  "solution_date": "2026-03-08",
-  "year": 2026,
-  "month": "March",
-  "month_num": 3,
   "problem_number": 1980,
   "problem_title": "Find Unique Binary String",
   "slug": "find-unique-binary-string",
+  "solution_date": "2026-03-08",
+  "formatted_date": "08-03-2026",
+  "day_number": 8,
+  "month": "March",
+  "month_num": 3,
+  "year": 2026,
   "difficulty": "Medium",
   "platform": "LeetCode",
   "time_complexity": "O(n)",
   "space_complexity": "O(n)",
   "leetcode_url": "https://leetcode.com/problems/find-unique-binary-string/",
   "youtube_url": "https://youtu.be/kBxycqLcwjs?si=K6TZ2i66lt-yQFa8",
-  "approach_summary": "Apply Cantor's Diagonal Argument: construct a binary string of length n whose i-th character is inverted from nums[i][i]. This strictly guarantees the resulting string differs from each string in nums at least at position i, yielding an O(n) solution.",
+  "notes": "Optimal O(n) time complexity with O(n) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given an array of strings `nums` containing `n` unique binary strings each of length `n`, return a binary string of length `n` that **does not appear** in `nums`. If there are multiple answers, you may return any of them.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [\"01\",\"10\"]`\n- **Output:** `\"11\"`\n- **Explanation:** `\"11\"` does not appear in `nums`. `\"00\"` would also be correct.\n\n#### Example 2:\n- **Input:** `nums = [\"00\",\"01\"]`\n- **Output:** `\"11\"`\n- **Explanation:** `\"11\"` does not appear in `nums`. `\"10\"` would also be correct.\n\n#### Example 3:\n- **Input:** `nums = [\"111\",\"011\",\"001\"]`\n- **Output:** `\"101\"`\n- **Explanation:** `\"101\"` does not appear in `nums`. `\"000\"`, `\"010\"`, `\"100\"`, and `\"110\"` would also be correct.\n\n---\n\n### Constraints\n\n- `n == nums.length`\n- `1 <= n <= 16`\n- `nums[i].length == n`\n- `nums[i]` is either `'0'` or `'1'`.\n- All the strings of `nums` are unique.\n\n---",
+    "approach_summary": "Apply Cantor's Diagonal Argument: construct a string of length n whose i-th bit is inverted from nums[i][i]. This ensures the resulting string differs from each given string at least at position i, solving the problem in optimal O(n) time.",
+    "full_explanation": "# LeetCode 1980: Find Unique Binary String\n\n- **Publication Date:** 08 March 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/find-unique-binary-string/](https://leetcode.com/problems/find-unique-binary-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kBxycqLcwjs?si=K6TZ2i66lt-yQFa8)\n\n---\n\n## Problem Summary\n\nGiven an array of strings `nums` containing `n` unique binary strings each of length `n`, return a binary string of length `n` that **does not appear** in `nums`. If there are multiple answers, you may return any of them.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [\"01\",\"10\"]`\n- **Output:** `\"11\"`\n- **Explanation:** `\"11\"` does not appear in `nums`. `\"00\"` would also be correct.\n\n#### Example 2:\n- **Input:** `nums = [\"00\",\"01\"]`\n- **Output:** `\"11\"`\n- **Explanation:** `\"11\"` does not appear in `nums`. `\"10\"` would also be correct.\n\n#### Example 3:\n- **Input:** `nums = [\"111\",\"011\",\"001\"]`\n- **Output:** `\"101\"`\n- **Explanation:** `\"101\"` does not appear in `nums`. `\"000\"`, `\"010\"`, `\"100\"`, and `\"110\"` would also be correct.\n\n---\n\n### Constraints\n\n- `n == nums.length`\n- `1 <= n <= 16`\n- `nums[i].length == n`\n- `nums[i]` is either `'0'` or `'1'`.\n- All the strings of `nums` are unique.\n\n---\n\n## Topics and Tags\n\n- **Primary Tags:** Array, String\n- **Secondary Tags:** Backtracking, Math\n\n---\n\n## Detailed Algorithm Walkthrough\n\n### 1. The Power of Cantor's Diagonal Argument\n\nWhile this problem can be solved using backtracking, hash sets, or integer conversion, Georg Cantor's famous **Diagonal Argument** provides the most optimal, elegant $\\mathcal{O}(n)$ constructive solution.\n\nGiven $n$ binary strings of length $n$:\n$$\\begin{matrix}\n\\text{nums}[0]: & \\mathbf{b_{0,0}} & b_{0,1} & b_{0,2} & \\dots & b_{0,n-1} \\\\\n\\text{nums}[1]: & b_{1,0} & \\mathbf{b_{1,1}} & b_{1,2} & \\dots & b_{1,n-1} \\\\\n\\text{nums}[2]: & b_{2,0} & b_{2,1} & \\mathbf{b_{2,2}} & \\dots & b_{2,n-1} \\\\\n\\vdots & & & \\ddots & & \\\\\n\\text{nums}[n-1]: & b_{n-1,0} & b_{n-1,1} & b_{n-1,2} & \\dots & \\mathbf{b_{n-1,n-1}}\n\\end{matrix}$$\n\nWe can construct a new binary string $S$ of length $n$ by inverting each diagonal element:\n$$S[i] = \\begin{cases} '1' & \\text{if } \\text{nums}[i][i] = '0' \\\\ '0' & \\text{if } \\text{nums}[i][i] = '1' \\end{cases}$$\n\n### 2. Mathematical Proof of Uniqueness\n\n- For any string $\\text{nums}[i]$ ($0 \\le i < n$), our constructed string $S$ explicitly differs from $\\text{nums}[i]$ at position $i$ ($S[i] \\ne \\text{nums}[i][i]$).\n- Since $S$ differs from $\\text{nums}[0]$ at index $0$, $S \\ne \\text{nums}[0]$.\n- Since $S$ differs from $\\text{nums}[1]$ at index $1$, $S \\ne \\text{nums}[1]$.\n- In general, $S$ differs from every $\\text{nums}[i]$ at index $i$, which strictly guarantees that $S \\ne \\text{nums}[i]$ for all $0 \\le i < n$.\n- Therefore, $S$ is guaranteed not to exist in `nums`.\n\n### 3. Step-by-Step Implementation\n\n1. Initialize a string builder / empty string of length $n$.\n2. Iterate through each index $i$ from $0$ to $n - 1$:\n   - Inspect the character at $\\text{nums}[i][i]$.\n   - Append `'1'` if it is `'0'`, or `'0'` if it is `'1'`.\n3. Return the resulting string.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the length of `nums`. We perform a single loop of $n$ iterations, extracting and flipping one character per string in $\\mathcal{O}(1)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ auxiliary space beyond the $\\mathcal{O}(n)$ memory required to store and return the output string.\n\n---\n\n## Source Code\n\n### Java\n```java\n/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String findDifferentBinaryString(String[] nums) {\n        StringBuilder sb = new StringBuilder();\n        int n = nums.length;\n\n        // Cantor's Diagonalization:\n        // Construct string such that char at index i differs from nums[i].charAt(i)\n        for (int i = 0; i < n; i++) {\n            sb.append(nums[i].charAt(i) == '0' ? '1' : '0');\n        }\n\n        return sb.toString();\n    }\n}\n```\n\n### Python\n```python\n\"\"\"\nProblem: LeetCode 1980 - Find Unique Binary String\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def findDifferentBinaryString(self, nums: List[str]) -> str:\n        # Cantor's Diagonal Argument:\n        # Construct a string where the i-th character is inverted from nums[i][i]\n        return \"\".join('1' if nums[i][i] == '0' else '0' for i in range(len(nums)))\n```\n\n### C++\n```cpp\n/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    string findDifferentBinaryString(vector<string>& nums) {\n        string res = \"\";\n        int n = nums.size();\n\n        // Cantor's Diagonalization:\n        // Flip the diagonal bit nums[i][i] so res differs from every nums[i]\n        for (int i = 0; i < n; i++) {\n            res += (nums[i][i] == '0' ? '1' : '0');\n        }\n\n        return res;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {string[]} nums\n * @return {string}\n */\nvar findDifferentBinaryString = function(nums) {\n    const n = nums.length;\n    let res = \"\";\n\n    // Cantor's Diagonalization:\n    // Invert the i-th character of the i-th string\n    for (let i = 0; i < n; i++) {\n        res += nums[i][i] === '0' ? '1' : '0';\n    }\n\n    return res;\n};\n```\n"
+  },
+  "approach_summary": "Apply Cantor's Diagonal Argument: construct a string of length n whose i-th bit is inverted from nums[i][i]. This ensures the resulting string differs from each given string at least at position i, solving the problem in optimal O(n) time.",
   "explanation": "# LeetCode 1980: Find Unique Binary String\n\n- **Publication Date:** 08 March 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/find-unique-binary-string/](https://leetcode.com/problems/find-unique-binary-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kBxycqLcwjs?si=K6TZ2i66lt-yQFa8)\n\n---\n\n## Problem Summary\n\nGiven an array of strings `nums` containing `n` unique binary strings each of length `n`, return a binary string of length `n` that **does not appear** in `nums`. If there are multiple answers, you may return any of them.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [\"01\",\"10\"]`\n- **Output:** `\"11\"`\n- **Explanation:** `\"11\"` does not appear in `nums`. `\"00\"` would also be correct.\n\n#### Example 2:\n- **Input:** `nums = [\"00\",\"01\"]`\n- **Output:** `\"11\"`\n- **Explanation:** `\"11\"` does not appear in `nums`. `\"10\"` would also be correct.\n\n#### Example 3:\n- **Input:** `nums = [\"111\",\"011\",\"001\"]`\n- **Output:** `\"101\"`\n- **Explanation:** `\"101\"` does not appear in `nums`. `\"000\"`, `\"010\"`, `\"100\"`, and `\"110\"` would also be correct.\n\n---\n\n### Constraints\n\n- `n == nums.length`\n- `1 <= n <= 16`\n- `nums[i].length == n`\n- `nums[i]` is either `'0'` or `'1'`.\n- All the strings of `nums` are unique.\n\n---\n\n## Topics and Tags\n\n- **Primary Tags:** Array, String\n- **Secondary Tags:** Backtracking, Math\n\n---\n\n## Detailed Algorithm Walkthrough\n\n### 1. The Power of Cantor's Diagonal Argument\n\nWhile this problem can be solved using backtracking, hash sets, or integer conversion, Georg Cantor's famous **Diagonal Argument** provides the most optimal, elegant $\\mathcal{O}(n)$ constructive solution.\n\nGiven $n$ binary strings of length $n$:\n$$\\begin{matrix}\n\\text{nums}[0]: & \\mathbf{b_{0,0}} & b_{0,1} & b_{0,2} & \\dots & b_{0,n-1} \\\\\n\\text{nums}[1]: & b_{1,0} & \\mathbf{b_{1,1}} & b_{1,2} & \\dots & b_{1,n-1} \\\\\n\\text{nums}[2]: & b_{2,0} & b_{2,1} & \\mathbf{b_{2,2}} & \\dots & b_{2,n-1} \\\\\n\\vdots & & & \\ddots & & \\\\\n\\text{nums}[n-1]: & b_{n-1,0} & b_{n-1,1} & b_{n-1,2} & \\dots & \\mathbf{b_{n-1,n-1}}\n\\end{matrix}$$\n\nWe can construct a new binary string $S$ of length $n$ by inverting each diagonal element:\n$$S[i] = \\begin{cases} '1' & \\text{if } \\text{nums}[i][i] = '0' \\\\ '0' & \\text{if } \\text{nums}[i][i] = '1' \\end{cases}$$\n\n### 2. Mathematical Proof of Uniqueness\n\n- For any string $\\text{nums}[i]$ ($0 \\le i < n$), our constructed string $S$ explicitly differs from $\\text{nums}[i]$ at position $i$ ($S[i] \\ne \\text{nums}[i][i]$).\n- Since $S$ differs from $\\text{nums}[0]$ at index $0$, $S \\ne \\text{nums}[0]$.\n- Since $S$ differs from $\\text{nums}[1]$ at index $1$, $S \\ne \\text{nums}[1]$.\n- In general, $S$ differs from every $\\text{nums}[i]$ at index $i$, which strictly guarantees that $S \\ne \\text{nums}[i]$ for all $0 \\le i < n$.\n- Therefore, $S$ is guaranteed not to exist in `nums`.\n\n### 3. Step-by-Step Implementation\n\n1. Initialize a string builder / empty string of length $n$.\n2. Iterate through each index $i$ from $0$ to $n - 1$:\n   - Inspect the character at $\\text{nums}[i][i]$.\n   - Append `'1'` if it is `'0'`, or `'0'` if it is `'1'`.\n3. Return the resulting string.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the length of `nums`. We perform a single loop of $n$ iterations, extracting and flipping one character per string in $\\mathcal{O}(1)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ auxiliary space beyond the $\\mathcal{O}(n)$ memory required to store and return the output string.\n\n---\n\n## Source Code\n\n### Java\n```java\n/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String findDifferentBinaryString(String[] nums) {\n        StringBuilder sb = new StringBuilder();\n        int n = nums.length;\n\n        // Cantor's Diagonalization:\n        // Construct string such that char at index i differs from nums[i].charAt(i)\n        for (int i = 0; i < n; i++) {\n            sb.append(nums[i].charAt(i) == '0' ? '1' : '0');\n        }\n\n        return sb.toString();\n    }\n}\n```\n\n### Python\n```python\n\"\"\"\nProblem: LeetCode 1980 - Find Unique Binary String\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def findDifferentBinaryString(self, nums: List[str]) -> str:\n        # Cantor's Diagonal Argument:\n        # Construct a string where the i-th character is inverted from nums[i][i]\n        return \"\".join('1' if nums[i][i] == '0' else '0' for i in range(len(nums)))\n```\n\n### C++\n```cpp\n/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    string findDifferentBinaryString(vector<string>& nums) {\n        string res = \"\";\n        int n = nums.size();\n\n        // Cantor's Diagonalization:\n        // Flip the diagonal bit nums[i][i] so res differs from every nums[i]\n        for (int i = 0; i < n; i++) {\n            res += (nums[i][i] == '0' ? '1' : '0');\n        }\n\n        return res;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {string[]} nums\n * @return {string}\n */\nvar findDifferentBinaryString = function(nums) {\n    const n = nums.length;\n    let res = \"\";\n\n    // Cantor's Diagonalization:\n    // Invert the i-th character of the i-th string\n    for (let i = 0; i < n; i++) {\n        res += nums[i][i] === '0' ? '1' : '0';\n    }\n\n    return res;\n};\n```\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String findDifferentBinaryString(String[] nums) {\n        StringBuilder sb = new StringBuilder();\n        int n = nums.length;\n\n        // Cantor's Diagonalization:\n        // Construct string such that char at index i differs from nums[i].charAt(i)\n        for (int i = 0; i < n; i++) {\n            sb.append(nums[i].charAt(i) == '0' ? '1' : '0');\n        }\n\n        return sb.toString();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1980 - Find Unique Binary String\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def findDifferentBinaryString(self, nums: List[str]) -> str:\n        # Cantor's Diagonal Argument:\n        # Construct a string where the i-th character is inverted from nums[i][i]\n        return \"\".join('1' if nums[i][i] == '0' else '0' for i in range(len(nums)))\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    string findDifferentBinaryString(vector<string>& nums) {\n        string res = \"\";\n        int n = nums.size();\n\n        // Cantor's Diagonalization:\n        // Flip the diagonal bit nums[i][i] so res differs from every nums[i]\n        for (int i = 0; i < n; i++) {\n            res += (nums[i][i] == '0' ? '1' : '0');\n        }\n\n        return res;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {string[]} nums\n * @return {string}\n */\nvar findDifferentBinaryString = function(nums) {\n    const n = nums.length;\n    let res = \"\";\n\n    // Cantor's Diagonalization:\n    // Invert the i-th character of the i-th string\n    for (let i = 0; i < n; i++) {\n        res += nums[i][i] === '0' ? '1' : '0';\n    }\n\n    return res;\n};\n"
+    }
+  },
   "tags": [
     "Array",
     "String",
     "Backtracking",
     "Math"
   ],
-  "codes": {
-    "Java": {
-      "is_primary": true,
-      "code": "/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String findDifferentBinaryString(String[] nums) {\n        StringBuilder sb = new StringBuilder();\n        int n = nums.length;\n\n        // Cantor's Diagonalization:\n        // Construct string such that char at index i differs from nums[i].charAt(i)\n        for (int i = 0; i < n; i++) {\n            sb.append(nums[i].charAt(i) == '0' ? '1' : '0');\n        }\n\n        return sb.toString();\n    }\n}\n"
-    },
-    "Python": {
-      "is_primary": false,
-      "code": "\"\"\"\nProblem: LeetCode 1980 - Find Unique Binary String\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nfrom typing import List\n\nclass Solution:\n    def findDifferentBinaryString(self, nums: List[str]) -> str:\n        # Cantor's Diagonal Argument:\n        # Construct a string where the i-th character is inverted from nums[i][i]\n        return \"\".join('1' if nums[i][i] == '0' else '0' for i in range(len(nums)))\n"
-    },
-    "C++": {
-      "is_primary": false,
-      "code": "/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    string findDifferentBinaryString(vector<string>& nums) {\n        string res = \"\";\n        int n = nums.size();\n\n        // Cantor's Diagonalization:\n        // Flip the diagonal bit nums[i][i] so res differs from every nums[i]\n        for (int i = 0; i < n; i++) {\n            res += (nums[i][i] == '0' ? '1' : '0');\n        }\n\n        return res;\n    }\n};\n"
-    },
-    "JavaScript": {
-      "is_primary": false,
-      "code": "/**\n * Problem: LeetCode 1980 - Find Unique Binary String\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {string[]} nums\n * @return {string}\n */\nvar findDifferentBinaryString = function(nums) {\n    const n = nums.length;\n    let res = \"\";\n\n    // Cantor's Diagonalization:\n    // Invert the i-th character of the i-th string\n    for (let i = 0; i < n; i++) {\n        res += nums[i][i] === '0' ? '1' : '0';\n    }\n\n    return res;\n};\n"
-    }
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1980-find-unique-binary-string.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1980-find-unique-binary-string.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1980: Find Unique Binary String Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1980 (Find Unique Binary String) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(n) approach and detailed expla...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1980-find-unique-binary-string.jpg",
+    "keywords": [
+      "LeetCode 1980",
+      "Find Unique Binary String",
+      "LeetCode 1980 Solution",
+      "LeetCode Find Unique Binary String",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
   }
 }

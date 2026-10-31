@@ -1,0 +1,80 @@
+{
+  "problem_number": 3643,
+  "problem_title": "Flip Square Submatrix Vertically",
+  "slug": "flip-square-submatrix-vertically",
+  "solution_date": "2026-03-21",
+  "formatted_date": "21-03-2026",
+  "day_number": 21,
+  "month": "March",
+  "month_num": 3,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(k^2)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/flip-square-submatrix-vertically/",
+  "youtube_url": "https://youtu.be/nbEWFP5Eb-k?si=lb8z3Mu1OpI-3M4R",
+  "notes": "Optimal O(k^2) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an $m \\times n$ integer matrix `grid`, and three integers `x`, `y`, and `k`.\n\n- `(x, y)` represents the row and column indices of the **top-left corner** of a square submatrix.\n- `k` represents the size (side length) of the square submatrix.\n\nYour task is to **flip the square submatrix vertically** (i.e. reverse the order of its rows from top to bottom) while keeping the remainder of the matrix unchanged, and return the modified `grid`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:**\n  ```text\n  grid = [\n    [1, 2, 3, 4],\n    [5, 6, 7, 8],\n    [9, 10, 11, 12],\n    [13, 14, 15, 16]\n  ], x = 1, y = 0, k = 3\n  ```\n- **Output:**\n  ```text\n  [\n    [1, 2, 3, 4],\n    [13, 14, 15, 8],\n    [9, 10, 11, 12],\n    [5, 6, 7, 16]\n  ]\n  ```\n- **Explanation:**\n  The $3 \\times 3$ submatrix starting at `(1, 0)` spans rows 1 to 3 and columns 0 to 2.\n  Row 1 (`[5, 6, 7]`) and Row 3 (`[13, 14, 15]`) are swapped, while Row 2 (`[9, 10, 11]`) remains in place.\n\n#### Example 2:\n- **Input:** `grid = [[3, 4, 2, 3], [2, 3, 4, 2]], x = 0, y = 2, k = 2`\n- **Output:** `[[3, 4, 4, 2], [2, 3, 2, 3]]`\n- **Explanation:**\n  The submatrix starts at `(0, 2)` with size $2 \\times 2$:\n  - Original submatrix elements: row 0 has `[2, 3]`, row 1 has `[4, 2]`.\n  - After vertical flip: row 0 becomes `[4, 2]`, row 1 becomes `[2, 3]`.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i]\\text{.length}$\n- $1 \\le m, n \\le 50$\n- $1 \\le \\text{grid}[i][j] \\le 100$\n- $0 \\le x < m$\n- $0 \\le y < n$\n- $1 \\le k \\le \\min(m - x, n - y)$\n\n---",
+    "approach_summary": "Simulate vertical row reversal within the submatrix using two row pointers (top = x, bottom = x + k - 1), swapping corresponding row elements across columns y to y + k - 1 in-place.",
+    "full_explanation": "# LeetCode 3643: Flip Square Submatrix Vertically\n\n- **Publication Date:** 21 March 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/flip-square-submatrix-vertically/](https://leetcode.com/problems/flip-square-submatrix-vertically/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/nbEWFP5Eb-k?si=lb8z3Mu1OpI-3M4R)\n\n---\n\n## Problem Summary\n\nYou are given an $m \\times n$ integer matrix `grid`, and three integers `x`, `y`, and `k`.\n\n- `(x, y)` represents the row and column indices of the **top-left corner** of a square submatrix.\n- `k` represents the size (side length) of the square submatrix.\n\nYour task is to **flip the square submatrix vertically** (i.e. reverse the order of its rows from top to bottom) while keeping the remainder of the matrix unchanged, and return the modified `grid`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:**\n  ```text\n  grid = [\n    [1, 2, 3, 4],\n    [5, 6, 7, 8],\n    [9, 10, 11, 12],\n    [13, 14, 15, 16]\n  ], x = 1, y = 0, k = 3\n  ```\n- **Output:**\n  ```text\n  [\n    [1, 2, 3, 4],\n    [13, 14, 15, 8],\n    [9, 10, 11, 12],\n    [5, 6, 7, 16]\n  ]\n  ```\n- **Explanation:**\n  The $3 \\times 3$ submatrix starting at `(1, 0)` spans rows 1 to 3 and columns 0 to 2.\n  Row 1 (`[5, 6, 7]`) and Row 3 (`[13, 14, 15]`) are swapped, while Row 2 (`[9, 10, 11]`) remains in place.\n\n#### Example 2:\n- **Input:** `grid = [[3, 4, 2, 3], [2, 3, 4, 2]], x = 0, y = 2, k = 2`\n- **Output:** `[[3, 4, 4, 2], [2, 3, 2, 3]]`\n- **Explanation:**\n  The submatrix starts at `(0, 2)` with size $2 \\times 2$:\n  - Original submatrix elements: row 0 has `[2, 3]`, row 1 has `[4, 2]`.\n  - After vertical flip: row 0 becomes `[4, 2]`, row 1 becomes `[2, 3]`.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i]\\text{.length}$\n- $1 \\le m, n \\le 50$\n- $1 \\le \\text{grid}[i][j] \\le 100$\n- $0 \\le x < m$\n- $0 \\le y < n$\n- $1 \\le k \\le \\min(m - x, n - y)$\n\n---\n\n## Intuition & Algorithmic Approach\n\nThe problem requires a vertical flip of a square submatrix in-place. A vertical flip is mathematically equivalent to reversing the row order within the target boundary $[x, x + k - 1]$.\n\n### Two-Pointer Simulation:\n1. Initialize two pointers representing the row indices of the square submatrix:\n   - `top = x`\n   - `bottom = x + k - 1`\n2. While `top < bottom`:\n   - Iterate across each column $j$ in the submatrix range $[y, y + k - 1]$.\n   - Swap `grid[top][j]` and `grid[bottom][j]`.\n   - Increment `top` and decrement `bottom`.\n3. Return the modified `grid`.\n\nSince the operation only modifies elements within the $k \\times k$ region directly on the input matrix, no extra allocations are required.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(k^2)$\n  - There are $\\lfloor k / 2 \\rfloor$ row pairs to swap, and each swap visits $k$ column elements, taking $\\mathcal{O}(k^2)$ operations.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - All swaps are performed in-place using a single temporary variable.\n"
+  },
+  "approach_summary": "Simulate vertical row reversal within the submatrix using two row pointers (top = x, bottom = x + k - 1), swapping corresponding row elements across columns y to y + k - 1 in-place.",
+  "explanation": "# LeetCode 3643: Flip Square Submatrix Vertically\n\n- **Publication Date:** 21 March 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/flip-square-submatrix-vertically/](https://leetcode.com/problems/flip-square-submatrix-vertically/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/nbEWFP5Eb-k?si=lb8z3Mu1OpI-3M4R)\n\n---\n\n## Problem Summary\n\nYou are given an $m \\times n$ integer matrix `grid`, and three integers `x`, `y`, and `k`.\n\n- `(x, y)` represents the row and column indices of the **top-left corner** of a square submatrix.\n- `k` represents the size (side length) of the square submatrix.\n\nYour task is to **flip the square submatrix vertically** (i.e. reverse the order of its rows from top to bottom) while keeping the remainder of the matrix unchanged, and return the modified `grid`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:**\n  ```text\n  grid = [\n    [1, 2, 3, 4],\n    [5, 6, 7, 8],\n    [9, 10, 11, 12],\n    [13, 14, 15, 16]\n  ], x = 1, y = 0, k = 3\n  ```\n- **Output:**\n  ```text\n  [\n    [1, 2, 3, 4],\n    [13, 14, 15, 8],\n    [9, 10, 11, 12],\n    [5, 6, 7, 16]\n  ]\n  ```\n- **Explanation:**\n  The $3 \\times 3$ submatrix starting at `(1, 0)` spans rows 1 to 3 and columns 0 to 2.\n  Row 1 (`[5, 6, 7]`) and Row 3 (`[13, 14, 15]`) are swapped, while Row 2 (`[9, 10, 11]`) remains in place.\n\n#### Example 2:\n- **Input:** `grid = [[3, 4, 2, 3], [2, 3, 4, 2]], x = 0, y = 2, k = 2`\n- **Output:** `[[3, 4, 4, 2], [2, 3, 2, 3]]`\n- **Explanation:**\n  The submatrix starts at `(0, 2)` with size $2 \\times 2$:\n  - Original submatrix elements: row 0 has `[2, 3]`, row 1 has `[4, 2]`.\n  - After vertical flip: row 0 becomes `[4, 2]`, row 1 becomes `[2, 3]`.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i]\\text{.length}$\n- $1 \\le m, n \\le 50$\n- $1 \\le \\text{grid}[i][j] \\le 100$\n- $0 \\le x < m$\n- $0 \\le y < n$\n- $1 \\le k \\le \\min(m - x, n - y)$\n\n---\n\n## Intuition & Algorithmic Approach\n\nThe problem requires a vertical flip of a square submatrix in-place. A vertical flip is mathematically equivalent to reversing the row order within the target boundary $[x, x + k - 1]$.\n\n### Two-Pointer Simulation:\n1. Initialize two pointers representing the row indices of the square submatrix:\n   - `top = x`\n   - `bottom = x + k - 1`\n2. While `top < bottom`:\n   - Iterate across each column $j$ in the submatrix range $[y, y + k - 1]$.\n   - Swap `grid[top][j]` and `grid[bottom][j]`.\n   - Increment `top` and decrement `bottom`.\n3. Return the modified `grid`.\n\nSince the operation only modifies elements within the $k \\times k$ region directly on the input matrix, no extra allocations are required.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(k^2)$\n  - There are $\\lfloor k / 2 \\rfloor$ row pairs to swap, and each swap visits $k$ column elements, taking $\\mathcal{O}(k^2)$ operations.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - All swaps are performed in-place using a single temporary variable.\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3643 - Flip Square Submatrix Vertically\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int[][] flipSubmatrix(int[][] grid, int x, int y, int k) {\n        int top = x;\n        int bottom = x + k - 1;\n\n        while (top < bottom) {\n            for (int j = y; j < y + k; j++) {\n                int temp = grid[top][j];\n                grid[top][j] = grid[bottom][j];\n                grid[bottom][j] = temp;\n            }\n            top++;\n            bottom--;\n        }\n\n        return grid;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3643 - Flip Square Submatrix Vertically\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def flipSubmatrix(self, grid: list[list[int]], x: int, y: int, k: int) -> list[list[int]]:\n        top = x\n        bottom = x + k - 1\n\n        while top < bottom:\n            for j in range(y, y + k):\n                grid[top][j], grid[bottom][j] = grid[bottom][j], grid[top][j]\n            top += 1\n            bottom -= 1\n\n        return grid\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3643 - Flip Square Submatrix Vertically\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<vector<int>> flipSubmatrix(vector<vector<int>>& grid, int x, int y, int k) {\n        int top = x;\n        int bottom = x + k - 1;\n\n        while (top < bottom) {\n            for (int j = y; j < y + k; ++j) {\n                swap(grid[top][j], grid[bottom][j]);\n            }\n            top++;\n            bottom--;\n        }\n\n        return grid;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3643 - Flip Square Submatrix Vertically\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar flipSubmatrix = function(grid, x, y, k) {\n    let top = x;\n    let bottom = x + k - 1;\n\n    while (top < bottom) {\n        for (let j = y; j < y + k; j++) {\n            const temp = grid[top][j];\n            grid[top][j] = grid[bottom][j];\n            grid[bottom][j] = temp;\n        }\n        top++;\n        bottom--;\n    }\n\n    return grid;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation",
+    "Two Pointers"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3643-flip-square-submatrix-vertically.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3643-flip-square-submatrix-vertically.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3643: Flip Square Submatrix Vertically Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3643 (Flip Square Submatrix Vertically) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(k^2) approach and detai...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3643-flip-square-submatrix-vertically.jpg",
+    "keywords": [
+      "LeetCode 3643",
+      "Flip Square Submatrix Vertically",
+      "LeetCode 3643 Solution",
+      "LeetCode Flip Square Submatrix Vertically",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

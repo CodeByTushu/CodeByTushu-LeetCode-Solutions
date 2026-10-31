@@ -1,0 +1,78 @@
+{
+  "problem_number": 3069,
+  "problem_title": "Distribute Elements Into Two Arrays I",
+  "slug": "distribute-elements-into-two-arrays-i",
+  "solution_date": "2026-08-20",
+  "formatted_date": "20-08-2026",
+  "day_number": 20,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/",
+  "youtube_url": "https://youtu.be/UJimcNSmAOs?si=fQFr8AIcEztV7Ce2",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a **1-indexed** array of **distinct** integers `nums` of length `n`.\n\nYou need to distribute all the elements of `nums` between two arrays `arr1` and `arr2` using `n` operations:\n1. In the first operation, append `nums[1]` to `arr1`.\n2. In the second operation, append `nums[2]` to `arr2`.\n3. Afterwards, in the $i^{\\text{th}}$ operation:\n   - If the last element of `arr1` is **greater than** the last element of `arr2`, append `nums[i]` to `arr1`.\n   - Otherwise, append `nums[i]` to `arr2`.\n\nThe array `result` is formed by concatenating the arrays `arr1` and `arr2`. Concatenating two arrays appends the second to the end of the first (e.g., concatenating `[1, 2, 3]` with `[4, 5, 6]` gives `[1, 2, 3, 4, 5, 6]`).\n\nReturn the array `result`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2,1,3]`\n- **Output:** `[2,3,1]`\n- **Explanation:**\n  - After the first 2 operations, `arr1 = [2]` and `arr2 = [1]`.\n  - In the $3^{\\text{rd}}$ operation, as the last element of `arr1` is greater than the last element of `arr2` ($2 > 1$), append `nums[3]` to `arr1`.\n  - After 3 operations, `arr1 = [2, 3]` and `arr2 = [1]`.\n  - Hence, the array `result` formed by concatenation is `[2, 3, 1]`.\n\n#### Example 2:\n\n- **Input:** `nums = [5,4,3,8]`\n- **Output:** `[5,3,4,8]`\n- **Explanation:**\n  - After the first 2 operations, `arr1 = [5]` and `arr2 = [4]`.\n  - In the $3^{\\text{rd}}$ operation, as the last element of `arr1` is greater than the last element of `arr2` ($5 > 4$), append `nums[3]` to `arr1`, hence `arr1` becomes `[5, 3]`.\n  - In the $4^{\\text{th}}$ operation, as the last element of `arr2` is greater than the last element of `arr1` ($4 > 3$), append `nums[4]` to `arr2`, hence `arr2` becomes `[4, 8]`.\n  - After 4 operations, `arr1 = [5, 3]` and `arr2 = [4, 8]`.\n  - Hence, the array `result` formed by concatenation is `[5, 3, 4, 8]`.\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 50$\n- $1 \\le \\text{nums}[i] \\le 100$\n- All elements in `nums` are distinct.\n\n---",
+    "approach_summary": "Direct simulation by initializing arr1 with nums[0] and arr2 with nums[1]. For subsequent elements, append to arr1 if its last element exceeds arr2's last element, else append to arr2. Return arr1 concatenated with arr2.",
+    "full_explanation": "# LeetCode 3069: Distribute Elements Into Two Arrays I\n\n- **Publication Date:** 20 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/distribute-elements-into-two-arrays-i/](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/UJimcNSmAOs?si=fQFr8AIcEztV7Ce2)\n\n---\n\n## Problem Summary\n\nYou are given a **1-indexed** array of **distinct** integers `nums` of length `n`.\n\nYou need to distribute all the elements of `nums` between two arrays `arr1` and `arr2` using `n` operations:\n1. In the first operation, append `nums[1]` to `arr1`.\n2. In the second operation, append `nums[2]` to `arr2`.\n3. Afterwards, in the $i^{\\text{th}}$ operation:\n   - If the last element of `arr1` is **greater than** the last element of `arr2`, append `nums[i]` to `arr1`.\n   - Otherwise, append `nums[i]` to `arr2`.\n\nThe array `result` is formed by concatenating the arrays `arr1` and `arr2`. Concatenating two arrays appends the second to the end of the first (e.g., concatenating `[1, 2, 3]` with `[4, 5, 6]` gives `[1, 2, 3, 4, 5, 6]`).\n\nReturn the array `result`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2,1,3]`\n- **Output:** `[2,3,1]`\n- **Explanation:**\n  - After the first 2 operations, `arr1 = [2]` and `arr2 = [1]`.\n  - In the $3^{\\text{rd}}$ operation, as the last element of `arr1` is greater than the last element of `arr2` ($2 > 1$), append `nums[3]` to `arr1`.\n  - After 3 operations, `arr1 = [2, 3]` and `arr2 = [1]`.\n  - Hence, the array `result` formed by concatenation is `[2, 3, 1]`.\n\n#### Example 2:\n\n- **Input:** `nums = [5,4,3,8]`\n- **Output:** `[5,3,4,8]`\n- **Explanation:**\n  - After the first 2 operations, `arr1 = [5]` and `arr2 = [4]`.\n  - In the $3^{\\text{rd}}$ operation, as the last element of `arr1` is greater than the last element of `arr2` ($5 > 4$), append `nums[3]` to `arr1`, hence `arr1` becomes `[5, 3]`.\n  - In the $4^{\\text{th}}$ operation, as the last element of `arr2` is greater than the last element of `arr1` ($4 > 3$), append `nums[4]` to `arr2`, hence `arr2` becomes `[4, 8]`.\n  - After 4 operations, `arr1 = [5, 3]` and `arr2 = [4, 8]`.\n  - Hence, the array `result` formed by concatenation is `[5, 3, 4, 8]`.\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 50$\n- $1 \\le \\text{nums}[i] \\le 100$\n- All elements in `nums` are distinct.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### 1. Direct Sequential Simulation:\nThe rules for distributing the elements are deterministic and step-by-step:\n- Initialize two dynamic lists/arrays:\n  - `arr1` receives `nums[0]`.\n  - `arr2` receives `nums[1]`.\n- For each subsequent element `nums[i]` from index $i = 2$ to $n - 1$:\n  - Inspect the last appended elements: `arr1.back()` (or `arr1[arr1.length - 1]`) and `arr2.back()`.\n  - If `last(arr1) > last(arr2)`, append `nums[i]` to `arr1`.\n  - Otherwise, append `nums[i]` to `arr2`.\n\n### 2. Concatenation:\n- Concatenate `arr1` followed by `arr2` to produce the final `result` array of length $n$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$\n  - We make a single pass through the $n$ elements of `nums`, doing $\\mathcal{O}(1)$ work per element.\n  - Final concatenation copies all $n$ elements in $\\mathcal{O}(n)$ time.\n  - Overall time is $\\mathcal{O}(n)$, taking $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$\n  - We maintain `arr1` and `arr2`, which collectively store exactly $n$ elements.\n"
+  },
+  "approach_summary": "Direct simulation by initializing arr1 with nums[0] and arr2 with nums[1]. For subsequent elements, append to arr1 if its last element exceeds arr2's last element, else append to arr2. Return arr1 concatenated with arr2.",
+  "explanation": "# LeetCode 3069: Distribute Elements Into Two Arrays I\n\n- **Publication Date:** 20 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/distribute-elements-into-two-arrays-i/](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/UJimcNSmAOs?si=fQFr8AIcEztV7Ce2)\n\n---\n\n## Problem Summary\n\nYou are given a **1-indexed** array of **distinct** integers `nums` of length `n`.\n\nYou need to distribute all the elements of `nums` between two arrays `arr1` and `arr2` using `n` operations:\n1. In the first operation, append `nums[1]` to `arr1`.\n2. In the second operation, append `nums[2]` to `arr2`.\n3. Afterwards, in the $i^{\\text{th}}$ operation:\n   - If the last element of `arr1` is **greater than** the last element of `arr2`, append `nums[i]` to `arr1`.\n   - Otherwise, append `nums[i]` to `arr2`.\n\nThe array `result` is formed by concatenating the arrays `arr1` and `arr2`. Concatenating two arrays appends the second to the end of the first (e.g., concatenating `[1, 2, 3]` with `[4, 5, 6]` gives `[1, 2, 3, 4, 5, 6]`).\n\nReturn the array `result`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [2,1,3]`\n- **Output:** `[2,3,1]`\n- **Explanation:**\n  - After the first 2 operations, `arr1 = [2]` and `arr2 = [1]`.\n  - In the $3^{\\text{rd}}$ operation, as the last element of `arr1` is greater than the last element of `arr2` ($2 > 1$), append `nums[3]` to `arr1`.\n  - After 3 operations, `arr1 = [2, 3]` and `arr2 = [1]`.\n  - Hence, the array `result` formed by concatenation is `[2, 3, 1]`.\n\n#### Example 2:\n\n- **Input:** `nums = [5,4,3,8]`\n- **Output:** `[5,3,4,8]`\n- **Explanation:**\n  - After the first 2 operations, `arr1 = [5]` and `arr2 = [4]`.\n  - In the $3^{\\text{rd}}$ operation, as the last element of `arr1` is greater than the last element of `arr2` ($5 > 4$), append `nums[3]` to `arr1`, hence `arr1` becomes `[5, 3]`.\n  - In the $4^{\\text{th}}$ operation, as the last element of `arr2` is greater than the last element of `arr1` ($4 > 3$), append `nums[4]` to `arr2`, hence `arr2` becomes `[4, 8]`.\n  - After 4 operations, `arr1 = [5, 3]` and `arr2 = [4, 8]`.\n  - Hence, the array `result` formed by concatenation is `[5, 3, 4, 8]`.\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 50$\n- $1 \\le \\text{nums}[i] \\le 100$\n- All elements in `nums` are distinct.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### 1. Direct Sequential Simulation:\nThe rules for distributing the elements are deterministic and step-by-step:\n- Initialize two dynamic lists/arrays:\n  - `arr1` receives `nums[0]`.\n  - `arr2` receives `nums[1]`.\n- For each subsequent element `nums[i]` from index $i = 2$ to $n - 1$:\n  - Inspect the last appended elements: `arr1.back()` (or `arr1[arr1.length - 1]`) and `arr2.back()`.\n  - If `last(arr1) > last(arr2)`, append `nums[i]` to `arr1`.\n  - Otherwise, append `nums[i]` to `arr2`.\n\n### 2. Concatenation:\n- Concatenate `arr1` followed by `arr2` to produce the final `result` array of length $n$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$\n  - We make a single pass through the $n$ elements of `nums`, doing $\\mathcal{O}(1)$ work per element.\n  - Final concatenation copies all $n$ elements in $\\mathcal{O}(n)$ time.\n  - Overall time is $\\mathcal{O}(n)$, taking $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$\n  - We maintain `arr1` and `arr2`, which collectively store exactly $n$ elements.\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.ArrayList;\nimport java.util.List;\n\n/**\n * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int[] resultArray(int[] nums) {\n        List<Integer> arr1 = new ArrayList<>();\n        List<Integer> arr2 = new ArrayList<>();\n\n        arr1.add(nums[0]);\n        arr2.add(nums[1]);\n\n        for (int i = 2; i < nums.length; i++) {\n            if (arr1.get(arr1.size() - 1) > arr2.get(arr2.size() - 1)) {\n                arr1.add(nums[i]);\n            } else {\n                arr2.add(nums[i]);\n            }\n        }\n\n        int[] result = new int[nums.length];\n        int idx = 0;\n        for (int v : arr1) result[idx++] = v;\n        for (int v : arr2) result[idx++] = v;\n\n        return result;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3069 - Distribute Elements Into Two Arrays I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\nclass Solution:\n    def resultArray(self, nums: List[int]) -> List[int]:\n        arr1 = [nums[0]]\n        arr2 = [nums[1]]\n\n        for i in range(2, len(nums)):\n            if arr1[-1] > arr2[-1]:\n                arr1.append(nums[i])\n            else:\n                arr2.append(nums[i])\n\n        return arr1 + arr2\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\n/**\n * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    std::vector<int> resultArray(std::vector<int>& nums) {\n        std::vector<int> arr1;\n        std::vector<int> arr2;\n\n        arr1.push_back(nums[0]);\n        arr2.push_back(nums[1]);\n\n        for (size_t i = 2; i < nums.size(); ++i) {\n            if (arr1.back() > arr2.back()) {\n                arr1.push_back(nums[i]);\n            } else {\n                arr2.push_back(nums[i]);\n            }\n        }\n\n        arr1.insert(arr1.end(), arr2.begin(), arr2.end());\n        return arr1;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3069 - Distribute Elements Into Two Arrays I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar resultArray = function(nums) {\n    const arr1 = [nums[0]];\n    const arr2 = [nums[1]];\n\n    for (let i = 2; i < nums.length; i++) {\n        if (arr1[arr1.length - 1] > arr2[arr2.length - 1]) {\n            arr1.push(nums[i]);\n        } else {\n            arr2.push(nums[i]);\n        }\n    }\n\n    return arr1.concat(arr2);\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3069-distribute-elements-into-two-arrays-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3069-distribute-elements-into-two-arrays-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3069: Distribute Elements Into Two Arrays I Solution | Cod...",
+    "meta_description": "Master LeetCode 3069 (Distribute Elements Into Two Arrays I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and de...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3069-distribute-elements-into-two-arrays-i.jpg",
+    "keywords": [
+      "LeetCode 3069",
+      "Distribute Elements Into Two Arrays I",
+      "LeetCode 3069 Solution",
+      "LeetCode Distribute Elements Into Two Arrays I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

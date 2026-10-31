@@ -1,0 +1,77 @@
+{
+  "problem_number": 693,
+  "problem_title": "Binary Number with Alternating Bits",
+  "slug": "binary-number-with-alternating-bits",
+  "solution_date": "2026-02-18",
+  "formatted_date": "18-02-2026",
+  "day_number": 18,
+  "month": "February",
+  "month_num": 2,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+  "youtube_url": "https://youtu.be/zp-G8ooihyI?si=OGkxPTeyJqKLKfyu",
+  "notes": "Optimal O(1) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a positive integer $n$, check whether it has alternating bits: namely, if two adjacent bits in its binary representation always have different values.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 5`\n- **Output:** `true`\n- **Explanation:**\n  - Binary representation of 5 is `101`. Adjacent bits alternate between 1 and 0.\n\n#### Example 2:\n- **Input:** `n = 7`\n- **Output:** `false`\n- **Explanation:**\n  - Binary representation of 7 is `111`. Adjacent bits are identical.\n\n#### Example 3:\n- **Input:** `n = 11`\n- **Output:** `false`\n- **Explanation:**\n  - Binary representation of 11 is `1011`. Adjacent bits at positions 0 and 1 are both 1.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 2^{31} - 1$\n\n---",
+    "approach_summary": "XOR n with n >> 1 to obtain a bitmask x. If n has alternating bits, x is a contiguous sequence of 1s satisfying (x & (x + 1)) == 0 in O(1) time.",
+    "full_explanation": "# LeetCode 693: Binary Number with Alternating Bits\n\n- **Publication Date:** 18 February 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/binary-number-with-alternating-bits/](https://leetcode.com/problems/binary-number-with-alternating-bits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zp-G8ooihyI?si=OGkxPTeyJqKLKfyu)\n\n---\n\n## Problem Summary\n\nGiven a positive integer $n$, check whether it has alternating bits: namely, if two adjacent bits in its binary representation always have different values.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 5`\n- **Output:** `true`\n- **Explanation:**\n  - Binary representation of 5 is `101`. Adjacent bits alternate between 1 and 0.\n\n#### Example 2:\n- **Input:** `n = 7`\n- **Output:** `false`\n- **Explanation:**\n  - Binary representation of 7 is `111`. Adjacent bits are identical.\n\n#### Example 3:\n- **Input:** `n = 11`\n- **Output:** `false`\n- **Explanation:**\n  - Binary representation of 11 is `1011`. Adjacent bits at positions 0 and 1 are both 1.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 2^{31} - 1$\n\n---\n\n## Topics and Tags\n\n- **Primary Tags:** Bit Manipulation\n- **Secondary Tags:** Math, Simulation\n\n---\n\n## Detailed Algorithm Walkthrough\n\n### 1. XOR Adjacent Bit Invariant\n\nIf a number $n$ has alternating bits (such as `10101` or `1010`):\n- Shifting $n$ to the right by 1 bit yields $n \\gg 1$ (`01010` or `00101`).\n- Every bit in $n$ differs from the adjacent bit in $n \\gg 1$.\n- Computing the bitwise XOR between $n$ and $n \\gg 1$:\n  $$x = n \\oplus (n \\gg 1)$$\n  Because every adjacent bit pair differs, every bit from the most significant bit down to bit 0 becomes $1$!\n  For example, if $n = 5 = 101_2$:\n  $$x = 101_2 \\oplus 010_2 = 111_2 = 7$$\n\n### 2. The Power-of-Two Property of All-Ones Masks\n\nA number $x$ consists of all continuous 1s (i.e., $x = 2^k - 1$) **if and only if** adding $1$ yields a pure power of $2$ ($x + 1 = 2^k$):\n- Therefore, $x$ and $x + 1$ share no set bits:\n  $$x \\ \\& \\ (x + 1) == 0$$\n- If any adjacent bits in $n$ were identical, that position would result in a $0$ in $x$, breaking the contiguous sequence of 1s and making $x \\ \\& \\ (x + 1) \\ne 0$.\n\n### 3. Overflow Safety\n\nSince $n$ can be up to $2^{31} - 1$, casting $x$ to a 64-bit integer (`long` in Java, `long long` in C++) completely eliminates signed integer overflow when computing $x + 1$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$. Solved using exactly three constant-time bitwise operations ($\\oplus$, $\\gg$, $\\&$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$. Operates in-place with zero memory allocation.\n\n---\n\n## Source Code\n\n### Java\n```java\n/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean hasAlternatingBits(int n) {\n        long x = n ^ (n >> 1);\n        return (x & (x + 1)) == 0;\n    }\n}\n```\n\n### Python\n```python\n\"\"\"\nProblem: LeetCode 693 - Binary Number with Alternating Bits\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nclass Solution:\n    def hasAlternatingBits(self, n: int) -> bool:\n        x = n ^ (n >> 1)\n        return (x & (x + 1)) == 0\n```\n\n### C++\n```cpp\n/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool hasAlternatingBits(int n) {\n        long long x = n ^ (n >> 1);\n        return (x & (x + 1)) == 0;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {number} n\n * @return {boolean}\n */\nvar hasAlternatingBits = function(n) {\n    const x = n ^ (n >> 1);\n    return ((x + 1) & x) === 0;\n};\n```\n"
+  },
+  "approach_summary": "XOR n with n >> 1 to obtain a bitmask x. If n has alternating bits, x is a contiguous sequence of 1s satisfying (x & (x + 1)) == 0 in O(1) time.",
+  "explanation": "# LeetCode 693: Binary Number with Alternating Bits\n\n- **Publication Date:** 18 February 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/binary-number-with-alternating-bits/](https://leetcode.com/problems/binary-number-with-alternating-bits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zp-G8ooihyI?si=OGkxPTeyJqKLKfyu)\n\n---\n\n## Problem Summary\n\nGiven a positive integer $n$, check whether it has alternating bits: namely, if two adjacent bits in its binary representation always have different values.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 5`\n- **Output:** `true`\n- **Explanation:**\n  - Binary representation of 5 is `101`. Adjacent bits alternate between 1 and 0.\n\n#### Example 2:\n- **Input:** `n = 7`\n- **Output:** `false`\n- **Explanation:**\n  - Binary representation of 7 is `111`. Adjacent bits are identical.\n\n#### Example 3:\n- **Input:** `n = 11`\n- **Output:** `false`\n- **Explanation:**\n  - Binary representation of 11 is `1011`. Adjacent bits at positions 0 and 1 are both 1.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 2^{31} - 1$\n\n---\n\n## Topics and Tags\n\n- **Primary Tags:** Bit Manipulation\n- **Secondary Tags:** Math, Simulation\n\n---\n\n## Detailed Algorithm Walkthrough\n\n### 1. XOR Adjacent Bit Invariant\n\nIf a number $n$ has alternating bits (such as `10101` or `1010`):\n- Shifting $n$ to the right by 1 bit yields $n \\gg 1$ (`01010` or `00101`).\n- Every bit in $n$ differs from the adjacent bit in $n \\gg 1$.\n- Computing the bitwise XOR between $n$ and $n \\gg 1$:\n  $$x = n \\oplus (n \\gg 1)$$\n  Because every adjacent bit pair differs, every bit from the most significant bit down to bit 0 becomes $1$!\n  For example, if $n = 5 = 101_2$:\n  $$x = 101_2 \\oplus 010_2 = 111_2 = 7$$\n\n### 2. The Power-of-Two Property of All-Ones Masks\n\nA number $x$ consists of all continuous 1s (i.e., $x = 2^k - 1$) **if and only if** adding $1$ yields a pure power of $2$ ($x + 1 = 2^k$):\n- Therefore, $x$ and $x + 1$ share no set bits:\n  $$x \\ \\& \\ (x + 1) == 0$$\n- If any adjacent bits in $n$ were identical, that position would result in a $0$ in $x$, breaking the contiguous sequence of 1s and making $x \\ \\& \\ (x + 1) \\ne 0$.\n\n### 3. Overflow Safety\n\nSince $n$ can be up to $2^{31} - 1$, casting $x$ to a 64-bit integer (`long` in Java, `long long` in C++) completely eliminates signed integer overflow when computing $x + 1$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$. Solved using exactly three constant-time bitwise operations ($\\oplus$, $\\gg$, $\\&$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$. Operates in-place with zero memory allocation.\n\n---\n\n## Source Code\n\n### Java\n```java\n/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean hasAlternatingBits(int n) {\n        long x = n ^ (n >> 1);\n        return (x & (x + 1)) == 0;\n    }\n}\n```\n\n### Python\n```python\n\"\"\"\nProblem: LeetCode 693 - Binary Number with Alternating Bits\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\n\nclass Solution:\n    def hasAlternatingBits(self, n: int) -> bool:\n        x = n ^ (n >> 1)\n        return (x & (x + 1)) == 0\n```\n\n### C++\n```cpp\n/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool hasAlternatingBits(int n) {\n        long long x = n ^ (n >> 1);\n        return (x & (x + 1)) == 0;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n\n/**\n * @param {number} n\n * @return {boolean}\n */\nvar hasAlternatingBits = function(n) {\n    const x = n ^ (n >> 1);\n    return ((x + 1) & x) === 0;\n};\n```\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean hasAlternatingBits(int n) {\n        long x = n ^ (n >> 1);\n        return (x & (x + 1)) == 0;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 693 - Binary Number with Alternating Bits\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def hasAlternatingBits(self, n: int) -> bool:\n        x = n ^ (n >> 1)\n        return (x & (x + 1)) == 0\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool hasAlternatingBits(int n) {\n        long long x = n ^ (n >> 1);\n        return (x & (x + 1)) == 0;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 693 - Binary Number with Alternating Bits\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number} n\n * @return {boolean}\n */\nvar hasAlternatingBits = function(n) {\n    const x = n ^ (n >> 1);\n    return ((x + 1) & x) === 0;\n};\n"
+    }
+  },
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-693-binary-number-with-alternating-bits.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-693-binary-number-with-alternating-bits.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 693: Binary Number with Alternating Bits Solution | CodeBy...",
+    "meta_description": "Master LeetCode 693 (Binary Number with Alternating Bits) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(1) approach and detai...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-693-binary-number-with-alternating-bits.jpg",
+    "keywords": [
+      "LeetCode 693",
+      "Binary Number with Alternating Bits",
+      "LeetCode 693 Solution",
+      "LeetCode Binary Number with Alternating Bits",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

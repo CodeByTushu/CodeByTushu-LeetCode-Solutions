@@ -1,0 +1,79 @@
+{
+  "problem_number": 1510,
+  "problem_title": "Stone Game IV",
+  "slug": "stone-game-iv",
+  "solution_date": "2026-08-10",
+  "formatted_date": "10-08-2026",
+  "day_number": 10,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Hard",
+  "platform": "LeetCode",
+  "time_complexity": "O(N sqrt(N))",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/stone-game-iv/",
+  "youtube_url": "https://youtu.be/QFVxluA9TG4?si=QwKoR_unwgKplQOe",
+  "notes": "Optimal O(N sqrt(N)) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Alice and Bob take turns playing a game, with Alice starting first.\n\nInitially, there are `n` stones in a pile. On each player's turn, that player makes a move consisting of removing any **non-zero square number** of stones in the pile.\n\nAlso, if a player cannot make a move, he/she loses the game.\n\nGiven a positive integer `n`, return `true` if and only if Alice wins the game otherwise return `false`, assuming both players play optimally.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 1`\n- **Output:** `true`\n- **Explanation:** Alice can remove $1$ stone ($1^2 = 1$) winning the game immediately because Bob has no remaining stones and cannot make any move.\n\n#### Example 2:\n\n- **Input:** `n = 2`\n- **Output:** `false`\n- **Explanation:** Alice can only remove $1$ stone ($1^2 = 1$), leaving $1$ stone. Bob then removes the last stone ($1^2 = 1$) and wins the game ($2 \\to 1 \\to 0$).\n\n#### Example 3:\n\n- **Input:** `n = 4`\n- **Output:** `true`\n- **Explanation:** $n = 4$ is a perfect square ($2^2 = 4$). Alice can remove all $4$ stones in her first turn, leaving $0$ stones for Bob and winning immediately.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^5$\n\n---",
+    "approach_summary": "Impartial game DP: a position i is winning if there exists some perfect square k^2 <= i such that i - k^2 is a losing position for the opponent.",
+    "full_explanation": "# LeetCode 1510: Stone Game IV\n\n- **Publication Date:** 10 August 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/stone-game-iv/](https://leetcode.com/problems/stone-game-iv/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QFVxluA9TG4?si=QwKoR_unwgKplQOe)\n\n---\n\n## Problem Summary\n\nAlice and Bob take turns playing a game, with Alice starting first.\n\nInitially, there are `n` stones in a pile. On each player's turn, that player makes a move consisting of removing any **non-zero square number** of stones in the pile.\n\nAlso, if a player cannot make a move, he/she loses the game.\n\nGiven a positive integer `n`, return `true` if and only if Alice wins the game otherwise return `false`, assuming both players play optimally.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 1`\n- **Output:** `true`\n- **Explanation:** Alice can remove $1$ stone ($1^2 = 1$) winning the game immediately because Bob has no remaining stones and cannot make any move.\n\n#### Example 2:\n\n- **Input:** `n = 2`\n- **Output:** `false`\n- **Explanation:** Alice can only remove $1$ stone ($1^2 = 1$), leaving $1$ stone. Bob then removes the last stone ($1^2 = 1$) and wins the game ($2 \\to 1 \\to 0$).\n\n#### Example 3:\n\n- **Input:** `n = 4`\n- **Output:** `true`\n- **Explanation:** $n = 4$ is a perfect square ($2^2 = 4$). Alice can remove all $4$ stones in her first turn, leaving $0$ stones for Bob and winning immediately.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^5$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Dynamic Programming**\n- **Game Theory**\n\n---\n\n## Intuition and Approach\n\n### Combinatorial Game Theory & Winning/Losing Positions:\nThis is an impartial two-player normal play game under complete information.\n- A position $i$ is a **winning position** (`true`) if there exists at least one legal move to a **losing position** (`false`) for the opponent.\n- A position $i$ is a **losing position** (`false`) if every legal move leads only to **winning positions** for the opponent (or if no legal moves exist at all).\n\n### Base Case:\n- When $i = 0$, the player whose turn it is has no stones to remove and loses immediately:\n  $$\\text{dp}[0] = \\text{false}$$\n\n### Dynamic Programming Transition:\nLet `dp[i]` denote whether the current player starting with $i$ stones can guarantee a win.\n\nFor any pile size $i$ from $1$ up to $n$:\n1. Check every non-zero perfect square $k^2 \\le i$ (where $k \\ge 1$).\n2. Removing $k^2$ stones leaves the opponent with $i - k^2$ stones.\n3. If the opponent faces a losing state (`!dp[i - k * k]`), the current player can make this choice to force the opponent to lose:\n   $$\\text{dp}[i] = \\text{true}$$\n4. If after testing all $k^2 \\le i$ no move leaves the opponent in a losing state, the current player is forced into a loss:\n   $$\\text{dp}[i] = \\text{false}$$\n\nSince Alice moves first starting with $n$ stones, the answer is simply `dp[n]`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n \\sqrt{n})$\n  - For each state $i$ ($1 \\le i \\le n$), we iterate $k$ while $k^2 \\le i$, which takes $\\mathcal{O}(\\sqrt{i})$ steps.\n  - The total number of iterations is bounded by:\n    $$\\sum_{i=1}^n \\sqrt{i} \\approx \\int_0^n \\sqrt{x}\\,dx = \\frac{2}{3}n^{1.5}$$\n  - For $n = 10^5$, $\\frac{2}{3} \\times (10^5)^{1.5} \\approx 2.1 \\times 10^7$ basic operations in the worst case (with early breaking further reducing actual loop iterations).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$\n  - A 1D boolean array `dp` of size $n + 1$ stores the game state for each pile size from $0$ to $n$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Impartial game DP: a position i is winning if there exists some perfect square k^2 <= i such that i - k^2 is a losing position for the opponent.",
+  "explanation": "# LeetCode 1510: Stone Game IV\n\n- **Publication Date:** 10 August 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/stone-game-iv/](https://leetcode.com/problems/stone-game-iv/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QFVxluA9TG4?si=QwKoR_unwgKplQOe)\n\n---\n\n## Problem Summary\n\nAlice and Bob take turns playing a game, with Alice starting first.\n\nInitially, there are `n` stones in a pile. On each player's turn, that player makes a move consisting of removing any **non-zero square number** of stones in the pile.\n\nAlso, if a player cannot make a move, he/she loses the game.\n\nGiven a positive integer `n`, return `true` if and only if Alice wins the game otherwise return `false`, assuming both players play optimally.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 1`\n- **Output:** `true`\n- **Explanation:** Alice can remove $1$ stone ($1^2 = 1$) winning the game immediately because Bob has no remaining stones and cannot make any move.\n\n#### Example 2:\n\n- **Input:** `n = 2`\n- **Output:** `false`\n- **Explanation:** Alice can only remove $1$ stone ($1^2 = 1$), leaving $1$ stone. Bob then removes the last stone ($1^2 = 1$) and wins the game ($2 \\to 1 \\to 0$).\n\n#### Example 3:\n\n- **Input:** `n = 4`\n- **Output:** `true`\n- **Explanation:** $n = 4$ is a perfect square ($2^2 = 4$). Alice can remove all $4$ stones in her first turn, leaving $0$ stones for Bob and winning immediately.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^5$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Dynamic Programming**\n- **Game Theory**\n\n---\n\n## Intuition and Approach\n\n### Combinatorial Game Theory & Winning/Losing Positions:\nThis is an impartial two-player normal play game under complete information.\n- A position $i$ is a **winning position** (`true`) if there exists at least one legal move to a **losing position** (`false`) for the opponent.\n- A position $i$ is a **losing position** (`false`) if every legal move leads only to **winning positions** for the opponent (or if no legal moves exist at all).\n\n### Base Case:\n- When $i = 0$, the player whose turn it is has no stones to remove and loses immediately:\n  $$\\text{dp}[0] = \\text{false}$$\n\n### Dynamic Programming Transition:\nLet `dp[i]` denote whether the current player starting with $i$ stones can guarantee a win.\n\nFor any pile size $i$ from $1$ up to $n$:\n1. Check every non-zero perfect square $k^2 \\le i$ (where $k \\ge 1$).\n2. Removing $k^2$ stones leaves the opponent with $i - k^2$ stones.\n3. If the opponent faces a losing state (`!dp[i - k * k]`), the current player can make this choice to force the opponent to lose:\n   $$\\text{dp}[i] = \\text{true}$$\n4. If after testing all $k^2 \\le i$ no move leaves the opponent in a losing state, the current player is forced into a loss:\n   $$\\text{dp}[i] = \\text{false}$$\n\nSince Alice moves first starting with $n$ stones, the answer is simply `dp[n]`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n \\sqrt{n})$\n  - For each state $i$ ($1 \\le i \\le n$), we iterate $k$ while $k^2 \\le i$, which takes $\\mathcal{O}(\\sqrt{i})$ steps.\n  - The total number of iterations is bounded by:\n    $$\\sum_{i=1}^n \\sqrt{i} \\approx \\int_0^n \\sqrt{x}\\,dx = \\frac{2}{3}n^{1.5}$$\n  - For $n = 10^5$, $\\frac{2}{3} \\times (10^5)^{1.5} \\approx 2.1 \\times 10^7$ basic operations in the worst case (with early breaking further reducing actual loop iterations).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$\n  - A 1D boolean array `dp` of size $n + 1$ stores the game state for each pile size from $0$ to $n$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1510 - Stone Game IV\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean winnerSquareGame(int n) {\n        boolean[] dp = new boolean[n + 1];\n        for (int i = 1; i <= n; i++) {\n            for (int k = 1; k * k <= i; k++) {\n                if (!dp[i - k * k]) {\n                    dp[i] = true;\n                    break;\n                }\n            }\n        }\n        return dp[n];\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1510 - Stone Game IV\nDifficulty: Hard\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def winnerSquareGame(self, n: int) -> bool:\n        dp = [False] * (n + 1)\n        for i in range(1, n + 1):\n            k = 1\n            while k * k <= i:\n                if not dp[i - k * k]:\n                    dp[i] = True\n                    break\n                k += 1\n        return dp[n]\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1510 - Stone Game IV\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\n/**\n * Problem: LeetCode 1510 - Stone Game IV\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool winnerSquareGame(int n) {\n        std::vector<bool> dp(n + 1, false);\n        for (int i = 1; i <= n; ++i) {\n            for (int k = 1; k * k <= i; ++k) {\n                if (!dp[i - k * k]) {\n                    dp[i] = true;\n                    break;\n                }\n            }\n        }\n        return dp[n];\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1510 - Stone Game IV\n * Difficulty: Hard\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar winnerSquareGame = function(n) {\n    const dp = new Array(n + 1).fill(false);\n    for (let i = 1; i <= n; i++) {\n        for (let k = 1; k * k <= i; k++) {\n            if (!dp[i - k * k]) {\n                dp[i] = true;\n                break;\n            }\n        }\n    }\n    return dp[n];\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Game Theory"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1510-stone-game-iv.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1510-stone-game-iv.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1510: Stone Game IV Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1510 (Stone Game IV) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N sqrt(N)) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1510-stone-game-iv.jpg",
+    "keywords": [
+      "LeetCode 1510",
+      "Stone Game IV",
+      "LeetCode 1510 Solution",
+      "LeetCode Stone Game IV",
+      "Hard LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

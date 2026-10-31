@@ -1,0 +1,80 @@
+{
+  "problem_number": 678,
+  "problem_title": "Valid Parenthesis String",
+  "slug": "valid-parenthesis-string",
+  "solution_date": "2026-10-04",
+  "formatted_date": "04-10-2026",
+  "day_number": 4,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N) where N = s.length",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/valid-parenthesis-string/",
+  "youtube_url": "https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw",
+  "notes": "Optimal O(N) where N = s.length time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a string `s` containing only three types of characters: `'('`, `')'` and `'*'`, return `true` if `s` is valid.\n\nThe following rules define a valid string:\n- Any left parenthesis `'('` must have a corresponding right parenthesis `')'`.\n- Any right parenthesis `')'` must have a corresponding left parenthesis `'('`.\n- Left parenthesis `'('` must go before the corresponding right parenthesis `')'`.\n- `'*'` could be treated as a single right parenthesis `')'`, a single left parenthesis `'('`, or an empty string `\"\"`.\n\n---",
+    "approach_summary": "Greedy range tracking maintaining minimum and maximum possible open parentheses count [lo, hi]. If hi < 0 at any point return false; return lo == 0 at the end.",
+    "full_explanation": "﻿# LeetCode 678: Valid Parenthesis String\n\n- **Publication Date:** 04 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/valid-parenthesis-string/](https://leetcode.com/problems/valid-parenthesis-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw)\n\n---\n\n## Problem Summary\n\nGiven a string `s` containing only three types of characters: `'('`, `')'` and `'*'`, return `true` if `s` is valid.\n\nThe following rules define a valid string:\n- Any left parenthesis `'('` must have a corresponding right parenthesis `')'`.\n- Any right parenthesis `')'` must have a corresponding left parenthesis `'('`.\n- Left parenthesis `'('` must go before the corresponding right parenthesis `')'`.\n- `'*'` could be treated as a single right parenthesis `')'`, a single left parenthesis `'('`, or an empty string `\"\"`.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Stack**\n- **Greedy**\n\n---\n\n## Approach\n\n1. **Range of Possible Open Parentheses**:\n   - Because `'*'` can represent `'('`, `')'`, or empty string `\"\"`, the number of open parentheses at any point is not a fixed integer but a continuous range `[lo, hi]`.\n   - `lo`: the minimum possible count of open parentheses.\n   - `hi`: the maximum possible count of open parentheses.\n\n2. **Greedy Range Tracking**:\n   - Initialize `lo = 0`, `hi = 0`.\n   - Iterate through each character `c` of string `s`:\n     - If `c == '('`: both minimum and maximum possible open counts increment: `lo++`, `hi++`.\n     - If `c == ')'`: both decrement: `lo--`, `hi--`.\n     - If `c == '*'`:\n       - If treated as `')'`: open count decreases (`lo--`).\n       - If treated as `'('`: open count increases (`hi++`).\n       - If treated as `\"\"`: open count remains within `[lo, hi]`.\n   - **Pruning & Invariants**:\n     - If `hi < 0`: even under the most optimistic scenario (all `'*'` treated as `'('`), we encountered too many `')'`. Return `false`.\n     - If `lo < 0`: we cannot have negative open parentheses (an excess of `')'` can be absorbed by treating previous `'*'` as empty or `')'`), so reset `lo = 0`.\n\n3. **Final Balance**:\n   - After scanning the string, return `lo == 0` (meaning it is possible for all opening parentheses to be balanced).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through string `s` of length $N \\le 100$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only two primitive integer variables (`lo`, `hi`), requiring no stack allocations.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw](https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw)\n"
+  },
+  "approach_summary": "Greedy range tracking maintaining minimum and maximum possible open parentheses count [lo, hi]. If hi < 0 at any point return false; return lo == 0 at the end.",
+  "explanation": "﻿# LeetCode 678: Valid Parenthesis String\n\n- **Publication Date:** 04 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/valid-parenthesis-string/](https://leetcode.com/problems/valid-parenthesis-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw)\n\n---\n\n## Problem Summary\n\nGiven a string `s` containing only three types of characters: `'('`, `')'` and `'*'`, return `true` if `s` is valid.\n\nThe following rules define a valid string:\n- Any left parenthesis `'('` must have a corresponding right parenthesis `')'`.\n- Any right parenthesis `')'` must have a corresponding left parenthesis `'('`.\n- Left parenthesis `'('` must go before the corresponding right parenthesis `')'`.\n- `'*'` could be treated as a single right parenthesis `')'`, a single left parenthesis `'('`, or an empty string `\"\"`.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Stack**\n- **Greedy**\n\n---\n\n## Approach\n\n1. **Range of Possible Open Parentheses**:\n   - Because `'*'` can represent `'('`, `')'`, or empty string `\"\"`, the number of open parentheses at any point is not a fixed integer but a continuous range `[lo, hi]`.\n   - `lo`: the minimum possible count of open parentheses.\n   - `hi`: the maximum possible count of open parentheses.\n\n2. **Greedy Range Tracking**:\n   - Initialize `lo = 0`, `hi = 0`.\n   - Iterate through each character `c` of string `s`:\n     - If `c == '('`: both minimum and maximum possible open counts increment: `lo++`, `hi++`.\n     - If `c == ')'`: both decrement: `lo--`, `hi--`.\n     - If `c == '*'`:\n       - If treated as `')'`: open count decreases (`lo--`).\n       - If treated as `'('`: open count increases (`hi++`).\n       - If treated as `\"\"`: open count remains within `[lo, hi]`.\n   - **Pruning & Invariants**:\n     - If `hi < 0`: even under the most optimistic scenario (all `'*'` treated as `'('`), we encountered too many `')'`. Return `false`.\n     - If `lo < 0`: we cannot have negative open parentheses (an excess of `')'` can be absorbed by treating previous `'*'` as empty or `')'`), so reset `lo = 0`.\n\n3. **Final Balance**:\n   - After scanning the string, return `lo == 0` (meaning it is possible for all opening parentheses to be balanced).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through string `s` of length $N \\le 100$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only two primitive integer variables (`lo`, `hi`), requiring no stack allocations.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw](https://youtu.be/0S7wxtnsuRw?si=b2BCOBwmrecN2GLw)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 678 - Valid Parenthesis String\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean checkValidString(String s) {\n        int lo = 0, hi = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                lo++;\n                hi++;\n            } else if (c == ')') {\n                lo--;\n                hi--;\n            } else { // '*'\n                lo--;\n                hi++;\n            }\n            if (hi < 0) return false;\n            if (lo < 0) lo = 0;\n        }\n        return lo == 0;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 678 - Valid Parenthesis String\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def checkValidString(self, s: str) -> bool:\n        lo = 0\n        hi = 0\n        for c in s:\n            if c == '(':\n                lo += 1\n                hi += 1\n            elif c == ')':\n                lo -= 1\n                hi -= 1\n            else:  # '*'\n                lo -= 1\n                hi += 1\n            if hi < 0:\n                return False\n            if lo < 0:\n                lo = 0\n        return lo == 0\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 678 - Valid Parenthesis String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 678 - Valid Parenthesis String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool checkValidString(string s) {\n        int lo = 0, hi = 0;\n        for (char c : s) {\n            if (c == '(') {\n                lo++;\n                hi++;\n            } else if (c == ')') {\n                lo--;\n                hi--;\n            } else { // '*'\n                lo--;\n                hi++;\n            }\n            if (hi < 0) return false;\n            if (lo < 0) lo = 0;\n        }\n        return lo == 0;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 678 - Valid Parenthesis String\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar checkValidString = function(s) {\n    let lo = 0;\n    let hi = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            lo++;\n            hi++;\n        } else if (c === ')') {\n            lo--;\n            hi--;\n        } else { // '*'\n            lo--;\n            hi++;\n        }\n        if (hi < 0) return false;\n        if (lo < 0) lo = 0;\n    }\n    return lo === 0;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-678-valid-parenthesis-string.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-678-valid-parenthesis-string.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 678: Valid Parenthesis String Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 678 (Valid Parenthesis String) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) where N = s.length approach a...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-678-valid-parenthesis-string.jpg",
+    "keywords": [
+      "LeetCode 678",
+      "Valid Parenthesis String",
+      "LeetCode 678 Solution",
+      "LeetCode Valid Parenthesis String",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

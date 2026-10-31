@@ -1,0 +1,79 @@
+{
+  "problem_number": 1855,
+  "problem_title": "Maximum Distance Between a Pair of Values",
+  "slug": "maximum-distance-between-a-pair-of-values",
+  "solution_date": "2026-04-19",
+  "formatted_date": "19-04-2026",
+  "day_number": 19,
+  "month": "April",
+  "month_num": 4,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N + M)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/",
+  "youtube_url": "https://youtu.be/oNOsHV3pif4",
+  "notes": "Optimal O(N + M) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given two **non-increasing** 0-indexed integer arrays `nums1` and `nums2`.\n\nA pair of indices `(i, j)`, where $0 \\le i < \\text{nums1.length}$ and $0 \\le j < \\text{nums2.length}$, is **valid** if:\n1. $i \\le j$, and\n2. $\\text{nums1}[i] \\le \\text{nums2}[j]$.\n\nThe **distance** of the pair is $j - i$.\n\nReturn the **maximum distance** of any valid pair `(i, j)`. If there are no valid pairs, return `0`.\n\nAn array `arr` is **non-increasing** if $\\text{arr}[i-1] \\ge \\text{arr}[i]$ for every $1 \\le i < \\text{arr.length}$.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums1 = [55,30,5,4,2]`, `nums2 = [100,20,10,10,5]`\n- **Output:** `2`\n- **Explanation:**\n  - Valid pairs are $(0,0)$, $(2,2)$, $(2,3)$, $(2,4)$, $(3,3)$, $(3,4)$, and $(4,4)$.\n  - The maximum distance is $2$ achieved by pair $(2, 4)$ where $2 \\le 4$ and $5 \\le 5$ with distance $4 - 2 = 2$.\n\n#### Example 2:\n- **Input:** `nums1 = [2,2,2]`, `nums2 = [10,10,1]`\n- **Output:** `1`\n- **Explanation:**\n  - Valid pairs are $(0,0)$, $(0,1)$, and $(1,1)$.\n  - The maximum distance is $1$ achieved by pair $(0, 1)$ where $0 \\le 1$ and $2 \\le 10$ with distance $1 - 0 = 1$.\n\n#### Example 3:\n- **Input:** `nums1 = [30,29,19,5]`, `nums2 = [25,25,25,25,25]`\n- **Output:** `2`\n- **Explanation:**\n  - Valid pairs include $(2,2)$, $(2,3)$, $(2,4)$, $(3,3)$, and $(3,4)$.\n  - The maximum distance is $2$ with pair $(2, 4)$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums1.length}, \\text{nums2.length} \\le 10^5$\n- $1 \\le \\text{nums1}[i], \\text{nums2}[j] \\le 10^5$\n- Both `nums1` and `nums2` are **non-increasing**.\n\n---",
+    "approach_summary": "Use a two-pointer technique on the non-increasing arrays, greedily advancing j when nums1[i] <= nums2[j] and advancing i otherwise.",
+    "full_explanation": "# LeetCode 1855: Maximum Distance Between a Pair of Values\n\n- **Publication Date:** 19 April 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/oNOsHV3pif4)\n\n---\n\n## Problem Summary\n\nYou are given two **non-increasing** 0-indexed integer arrays `nums1` and `nums2`.\n\nA pair of indices `(i, j)`, where $0 \\le i < \\text{nums1.length}$ and $0 \\le j < \\text{nums2.length}$, is **valid** if:\n1. $i \\le j$, and\n2. $\\text{nums1}[i] \\le \\text{nums2}[j]$.\n\nThe **distance** of the pair is $j - i$.\n\nReturn the **maximum distance** of any valid pair `(i, j)`. If there are no valid pairs, return `0`.\n\nAn array `arr` is **non-increasing** if $\\text{arr}[i-1] \\ge \\text{arr}[i]$ for every $1 \\le i < \\text{arr.length}$.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums1 = [55,30,5,4,2]`, `nums2 = [100,20,10,10,5]`\n- **Output:** `2`\n- **Explanation:**\n  - Valid pairs are $(0,0)$, $(2,2)$, $(2,3)$, $(2,4)$, $(3,3)$, $(3,4)$, and $(4,4)$.\n  - The maximum distance is $2$ achieved by pair $(2, 4)$ where $2 \\le 4$ and $5 \\le 5$ with distance $4 - 2 = 2$.\n\n#### Example 2:\n- **Input:** `nums1 = [2,2,2]`, `nums2 = [10,10,1]`\n- **Output:** `1`\n- **Explanation:**\n  - Valid pairs are $(0,0)$, $(0,1)$, and $(1,1)$.\n  - The maximum distance is $1$ achieved by pair $(0, 1)$ where $0 \\le 1$ and $2 \\le 10$ with distance $1 - 0 = 1$.\n\n#### Example 3:\n- **Input:** `nums1 = [30,29,19,5]`, `nums2 = [25,25,25,25,25]`\n- **Output:** `2`\n- **Explanation:**\n  - Valid pairs include $(2,2)$, $(2,3)$, $(2,4)$, $(3,3)$, and $(3,4)$.\n  - The maximum distance is $2$ with pair $(2, 4)$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums1.length}, \\text{nums2.length} \\le 10^5$\n- $1 \\le \\text{nums1}[i], \\text{nums2}[j] \\le 10^5$\n- Both `nums1` and `nums2` are **non-increasing**.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Two Pointers**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Monotonicity Invariant\n\nBoth input arrays are sorted in descending (non-increasing) order:\n$$\\text{nums1}[0] \\ge \\text{nums1}[1] \\ge \\dots \\ge \\text{nums1}[m-1]$$\n$$\\text{nums2}[0] \\ge \\text{nums2}[1] \\ge \\dots \\ge \\text{nums2}[n-1]$$\n\nThis monotonic structure enables a linear two-pointer scan:\n1. If $\\text{nums1}[i] \\le \\text{nums2}[j]$:\n   - The pair $(i, j)$ is valid (whenever $i \\le j$), yielding a distance $j - i$.\n   - To maximize distance $j - i$ for this fixed $i$, we greedily advance $j$ (`j++`) to see if even larger index distances can satisfy $\\text{nums1}[i] \\le \\text{nums2}[j']$.\n2. If $\\text{nums1}[i] > \\text{nums2}[j]$:\n   - Because `nums2` is non-increasing, every subsequent element $j' > j$ will have $\\text{nums2}[j'] \\le \\text{nums2}[j] < \\text{nums1}[i]$.\n   - Hence, no future index $j' \\ge j$ can ever satisfy $\\text{nums1}[i] \\le \\text{nums2}[j']$.\n   - Therefore, the current element $\\text{nums1}[i]$ can never yield a larger distance, and we must increment $i$ (`i++`).\n\n### 2. Implicit Synchronization\n\nWhen $i$ overtakes $j$ ($i > j$), $j - i < 0 \\le \\text{maxDist}$, so $\\max(\\text{maxDist}, j - i)$ naturally ignores invalid negative distances, and $j$ catches up on subsequent steps.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(M + N)$\n  - Pointer $i$ advances at most $M = \\text{nums1.length}$ times.\n  - Pointer $j$ advances at most $N = \\text{nums2.length}$ times.\n  - Total iterations $\\le M + N \\le 2 \\times 10^5$, executing in $< 5\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two index pointers and a scalar tracking variable are maintained.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/oNOsHV3pif4](https://youtu.be/oNOsHV3pif4)\n"
+  },
+  "approach_summary": "Use a two-pointer technique on the non-increasing arrays, greedily advancing j when nums1[i] <= nums2[j] and advancing i otherwise.",
+  "explanation": "# LeetCode 1855: Maximum Distance Between a Pair of Values\n\n- **Publication Date:** 19 April 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/oNOsHV3pif4)\n\n---\n\n## Problem Summary\n\nYou are given two **non-increasing** 0-indexed integer arrays `nums1` and `nums2`.\n\nA pair of indices `(i, j)`, where $0 \\le i < \\text{nums1.length}$ and $0 \\le j < \\text{nums2.length}$, is **valid** if:\n1. $i \\le j$, and\n2. $\\text{nums1}[i] \\le \\text{nums2}[j]$.\n\nThe **distance** of the pair is $j - i$.\n\nReturn the **maximum distance** of any valid pair `(i, j)`. If there are no valid pairs, return `0`.\n\nAn array `arr` is **non-increasing** if $\\text{arr}[i-1] \\ge \\text{arr}[i]$ for every $1 \\le i < \\text{arr.length}$.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums1 = [55,30,5,4,2]`, `nums2 = [100,20,10,10,5]`\n- **Output:** `2`\n- **Explanation:**\n  - Valid pairs are $(0,0)$, $(2,2)$, $(2,3)$, $(2,4)$, $(3,3)$, $(3,4)$, and $(4,4)$.\n  - The maximum distance is $2$ achieved by pair $(2, 4)$ where $2 \\le 4$ and $5 \\le 5$ with distance $4 - 2 = 2$.\n\n#### Example 2:\n- **Input:** `nums1 = [2,2,2]`, `nums2 = [10,10,1]`\n- **Output:** `1`\n- **Explanation:**\n  - Valid pairs are $(0,0)$, $(0,1)$, and $(1,1)$.\n  - The maximum distance is $1$ achieved by pair $(0, 1)$ where $0 \\le 1$ and $2 \\le 10$ with distance $1 - 0 = 1$.\n\n#### Example 3:\n- **Input:** `nums1 = [30,29,19,5]`, `nums2 = [25,25,25,25,25]`\n- **Output:** `2`\n- **Explanation:**\n  - Valid pairs include $(2,2)$, $(2,3)$, $(2,4)$, $(3,3)$, and $(3,4)$.\n  - The maximum distance is $2$ with pair $(2, 4)$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums1.length}, \\text{nums2.length} \\le 10^5$\n- $1 \\le \\text{nums1}[i], \\text{nums2}[j] \\le 10^5$\n- Both `nums1` and `nums2` are **non-increasing**.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Two Pointers**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Monotonicity Invariant\n\nBoth input arrays are sorted in descending (non-increasing) order:\n$$\\text{nums1}[0] \\ge \\text{nums1}[1] \\ge \\dots \\ge \\text{nums1}[m-1]$$\n$$\\text{nums2}[0] \\ge \\text{nums2}[1] \\ge \\dots \\ge \\text{nums2}[n-1]$$\n\nThis monotonic structure enables a linear two-pointer scan:\n1. If $\\text{nums1}[i] \\le \\text{nums2}[j]$:\n   - The pair $(i, j)$ is valid (whenever $i \\le j$), yielding a distance $j - i$.\n   - To maximize distance $j - i$ for this fixed $i$, we greedily advance $j$ (`j++`) to see if even larger index distances can satisfy $\\text{nums1}[i] \\le \\text{nums2}[j']$.\n2. If $\\text{nums1}[i] > \\text{nums2}[j]$:\n   - Because `nums2` is non-increasing, every subsequent element $j' > j$ will have $\\text{nums2}[j'] \\le \\text{nums2}[j] < \\text{nums1}[i]$.\n   - Hence, no future index $j' \\ge j$ can ever satisfy $\\text{nums1}[i] \\le \\text{nums2}[j']$.\n   - Therefore, the current element $\\text{nums1}[i]$ can never yield a larger distance, and we must increment $i$ (`i++`).\n\n### 2. Implicit Synchronization\n\nWhen $i$ overtakes $j$ ($i > j$), $j - i < 0 \\le \\text{maxDist}$, so $\\max(\\text{maxDist}, j - i)$ naturally ignores invalid negative distances, and $j$ catches up on subsequent steps.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(M + N)$\n  - Pointer $i$ advances at most $M = \\text{nums1.length}$ times.\n  - Pointer $j$ advances at most $N = \\text{nums2.length}$ times.\n  - Total iterations $\\le M + N \\le 2 \\times 10^5$, executing in $< 5\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two index pointers and a scalar tracking variable are maintained.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/oNOsHV3pif4](https://youtu.be/oNOsHV3pif4)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1855 - Maximum Distance Between a Pair of Values\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maxDistance(int[] nums1, int[] nums2) {\n        int maxDist = 0;\n        int i = 0;\n        int j = 0;\n        final int m = nums1.length;\n        final int n = nums2.length;\n        \n        while (i < m && j < n) {\n            if (nums1[i] <= nums2[j]) {\n                maxDist = Math.max(maxDist, j - i);\n                j++; // Greedily extend distance with current i\n            } else {\n                i++; // nums1[i] is too large for remaining elements in nums2\n            }\n        }\n        \n        return maxDist;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1855 - Maximum Distance Between a Pair of Values\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def maxDistance(self, nums1: List[int], nums2: List[int]) -> int:\n        max_dist = 0\n        i = 0\n        j = 0\n        m, n = len(nums1), len(nums2)\n        \n        while i < m and j < n:\n            if nums1[i] <= nums2[j]:\n                max_dist = max(max_dist, j - i)\n                j += 1\n            else:\n                i += 1\n                \n        return max_dist\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1855 - Maximum Distance Between a Pair of Values\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int maxDistance(vector<int>& nums1, vector<int>& nums2) {\n        int maxDist = 0;\n        int i = 0;\n        int j = 0;\n        const int m = nums1.size();\n        const int n = nums2.size();\n        \n        while (i < m && j < n) {\n            if (nums1[i] <= nums2[j]) {\n                maxDist = max(maxDist, j - i);\n                j++;\n            } else {\n                i++;\n            }\n        }\n        \n        return maxDist;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1855 - Maximum Distance Between a Pair of Values\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar maxDistance = function(nums1, nums2) {\n    let maxDist = 0;\n    let i = 0;\n    let j = 0;\n    const m = nums1.length;\n    const n = nums2.length;\n    \n    while (i < m && j < n) {\n        if (nums1[i] <= nums2[j]) {\n            if (j - i > maxDist) {\n                maxDist = j - i;\n            }\n            j++;\n        } else {\n            i++;\n        }\n    }\n    \n    return maxDist;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1855-maximum-distance-between-a-pair-of-values.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1855-maximum-distance-between-a-pair-of-values.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1855: Maximum Distance Between a Pair of Values Solution |...",
+    "meta_description": "Master LeetCode 1855 (Maximum Distance Between a Pair of Values) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N + M) approac...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1855-maximum-distance-between-a-pair-of-values.jpg",
+    "keywords": [
+      "LeetCode 1855",
+      "Maximum Distance Between a Pair of Values",
+      "LeetCode 1855 Solution",
+      "LeetCode Maximum Distance Between a Pair of Values",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

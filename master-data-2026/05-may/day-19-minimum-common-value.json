@@ -1,0 +1,80 @@
+{
+  "problem_number": 2540,
+  "problem_title": "Minimum Common Value",
+  "slug": "minimum-common-value",
+  "solution_date": "2026-05-19",
+  "formatted_date": "19-05-2026",
+  "day_number": 19,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N + M)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-common-value/",
+  "youtube_url": "https://youtu.be/-GQ6yHMBlfc",
+  "notes": "Optimal O(N + M) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given two integer arrays `nums1` and `nums2`, sorted in **non-decreasing order**, return the **minimum integer common to both arrays**. If there is no common integer amongst `nums1` and `nums2`, return `-1`.\n\nNote that an integer is said to be common to `nums1` and `nums2` if both arrays have at least one occurrence of that integer.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums1 = [1, 2, 3]`, `nums2 = [2, 4]`\n- **Output:** `2`\n- **Explanation:**\n  - The smallest element common to both arrays is `2`, so we return `2`.\n\n#### Example 2:\n- **Input:** `nums1 = [1, 2, 3, 6]`, `nums2 = [2, 3, 4, 5]`\n- **Output:** `2`\n- **Explanation:**\n  - There are two common elements in the array: `2` and `3`.\n  - Out of these, `2` is the smallest, so `2` is returned.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums1.length}, \\text{nums2.length} \\le 10^5$\n- $1 \\le \\text{nums1}[i], \\text{nums2}[j] \\le 10^9$\n- Both `nums1` and `nums2` are sorted in non-decreasing order.\n\n---",
+    "approach_summary": "Traverse both sorted arrays using two pointers, advancing the pointer with the smaller value until a matching element is found.",
+    "full_explanation": "# LeetCode 2540: Minimum Common Value\n\n- **Publication Date:** 19 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-common-value/](https://leetcode.com/problems/minimum-common-value/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/-GQ6yHMBlfc)\n\n---\n\n## Problem Summary\n\nGiven two integer arrays `nums1` and `nums2`, sorted in **non-decreasing order**, return the **minimum integer common to both arrays**. If there is no common integer amongst `nums1` and `nums2`, return `-1`.\n\nNote that an integer is said to be common to `nums1` and `nums2` if both arrays have at least one occurrence of that integer.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums1 = [1, 2, 3]`, `nums2 = [2, 4]`\n- **Output:** `2`\n- **Explanation:**\n  - The smallest element common to both arrays is `2`, so we return `2`.\n\n#### Example 2:\n- **Input:** `nums1 = [1, 2, 3, 6]`, `nums2 = [2, 3, 4, 5]`\n- **Output:** `2`\n- **Explanation:**\n  - There are two common elements in the array: `2` and `3`.\n  - Out of these, `2` is the smallest, so `2` is returned.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums1.length}, \\text{nums2.length} \\le 10^5$\n- $1 \\le \\text{nums1}[i], \\text{nums2}[j] \\le 10^9$\n- Both `nums1` and `nums2` are sorted in non-decreasing order.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Two Pointers**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Utilizing the Pre-Sorted Property\n\nBoth arrays `nums1` and `nums2` are already sorted in non-decreasing order. This crucial invariant eliminates the need for hash sets or sorting overhead and allows an optimal **Two Pointers** scan:\n- Maintain pointer `i = 0` for `nums1` and `j = 0` for `nums2`.\n- At each step, compare `nums1[i]` with `nums2[j]`:\n  1. If `nums1[i] == nums2[j]`:\n     - Since both arrays are scanned in increasing order from left to right, this first match is mathematically guaranteed to be the minimum common integer. Return `nums1[i]` immediately.\n  2. If `nums1[i] < nums2[j]`:\n     - `nums1[i]` is smaller than the current element of `nums2`, and since `nums2` is non-decreasing, `nums1[i]` cannot match any subsequent element in `nums2`. Advance pointer `i++`.\n  3. If `nums1[i] > nums2[j]`:\n     - Similarly, `nums2[j]` is smaller than `nums1[i]`. Advance pointer `j++`.\n- If either array is exhausted without finding a common element, return `-1`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N + M)$\n  - At each iteration of the `while` loop, at least one of the two pointers (`i` or `j`) is incremented.\n  - In the worst case where no common element exists, at most $N + M$ comparisons are performed.\n  - Strictly linear: $\\mathcal{O}(N + M) \\approx 2 \\times 10^5$ operations ($\\approx 1\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two index pointer variables are used, requiring no extra memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/-GQ6yHMBlfc](https://youtu.be/-GQ6yHMBlfc)\n"
+  },
+  "approach_summary": "Traverse both sorted arrays using two pointers, advancing the pointer with the smaller value until a matching element is found.",
+  "explanation": "# LeetCode 2540: Minimum Common Value\n\n- **Publication Date:** 19 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-common-value/](https://leetcode.com/problems/minimum-common-value/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/-GQ6yHMBlfc)\n\n---\n\n## Problem Summary\n\nGiven two integer arrays `nums1` and `nums2`, sorted in **non-decreasing order**, return the **minimum integer common to both arrays**. If there is no common integer amongst `nums1` and `nums2`, return `-1`.\n\nNote that an integer is said to be common to `nums1` and `nums2` if both arrays have at least one occurrence of that integer.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums1 = [1, 2, 3]`, `nums2 = [2, 4]`\n- **Output:** `2`\n- **Explanation:**\n  - The smallest element common to both arrays is `2`, so we return `2`.\n\n#### Example 2:\n- **Input:** `nums1 = [1, 2, 3, 6]`, `nums2 = [2, 3, 4, 5]`\n- **Output:** `2`\n- **Explanation:**\n  - There are two common elements in the array: `2` and `3`.\n  - Out of these, `2` is the smallest, so `2` is returned.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums1.length}, \\text{nums2.length} \\le 10^5$\n- $1 \\le \\text{nums1}[i], \\text{nums2}[j] \\le 10^9$\n- Both `nums1` and `nums2` are sorted in non-decreasing order.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Two Pointers**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Utilizing the Pre-Sorted Property\n\nBoth arrays `nums1` and `nums2` are already sorted in non-decreasing order. This crucial invariant eliminates the need for hash sets or sorting overhead and allows an optimal **Two Pointers** scan:\n- Maintain pointer `i = 0` for `nums1` and `j = 0` for `nums2`.\n- At each step, compare `nums1[i]` with `nums2[j]`:\n  1. If `nums1[i] == nums2[j]`:\n     - Since both arrays are scanned in increasing order from left to right, this first match is mathematically guaranteed to be the minimum common integer. Return `nums1[i]` immediately.\n  2. If `nums1[i] < nums2[j]`:\n     - `nums1[i]` is smaller than the current element of `nums2`, and since `nums2` is non-decreasing, `nums1[i]` cannot match any subsequent element in `nums2`. Advance pointer `i++`.\n  3. If `nums1[i] > nums2[j]`:\n     - Similarly, `nums2[j]` is smaller than `nums1[i]`. Advance pointer `j++`.\n- If either array is exhausted without finding a common element, return `-1`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N + M)$\n  - At each iteration of the `while` loop, at least one of the two pointers (`i` or `j`) is incremented.\n  - In the worst case where no common element exists, at most $N + M$ comparisons are performed.\n  - Strictly linear: $\\mathcal{O}(N + M) \\approx 2 \\times 10^5$ operations ($\\approx 1\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two index pointer variables are used, requiring no extra memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/-GQ6yHMBlfc](https://youtu.be/-GQ6yHMBlfc)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2540 - Minimum Common Value\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int getCommon(int[] nums1, int[] nums2) {\n        int i = 0;\n        int j = 0;\n        int n = nums1.length;\n        int m = nums2.length;\n\n        // Two-pointer linear traversal over both sorted arrays\n        while (i < n && j < m) {\n            if (nums1[i] == nums2[j]) {\n                return nums1[i]; // Smallest common element found\n            } else if (nums1[i] < nums2[j]) {\n                i++;\n            } else {\n                j++;\n            }\n        }\n\n        return -1;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2540 - Minimum Common Value\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:\n        i, j = 0, 0\n        n, m = len(nums1), len(nums2)\n\n        # Two-pointer traversal over both sorted arrays\n        while i < n and j < m:\n            if nums1[i] == nums2[j]:\n                return nums1[i]\n            elif nums1[i] < nums2[j]:\n                i += 1\n            else:\n                j += 1\n\n        return -1\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2540 - Minimum Common Value\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int getCommon(vector<int>& nums1, vector<int>& nums2) {\n        int i = 0;\n        int j = 0;\n        int n = nums1.size();\n        int m = nums2.size();\n\n        // Two-pointer scan through sorted vectors\n        while (i < n && j < m) {\n            if (nums1[i] == nums2[j]) {\n                return nums1[i];\n            } else if (nums1[i] < nums2[j]) {\n                i++;\n            } else {\n                j++;\n            }\n        }\n\n        return -1;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2540 - Minimum Common Value\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar getCommon = function(nums1, nums2) {\n    let i = 0;\n    let j = 0;\n    const n = nums1.length;\n    const m = nums2.length;\n\n    // Two-pointer traversal\n    while (i < n && j < m) {\n        if (nums1[i] === nums2[j]) {\n            return nums1[i];\n        } else if (nums1[i] < nums2[j]) {\n            i++;\n        } else {\n            j++;\n        }\n    }\n\n    return -1;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2540-minimum-common-value.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2540-minimum-common-value.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2540: Minimum Common Value Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 2540 (Minimum Common Value) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N + M) approach and detailed explan...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2540-minimum-common-value.jpg",
+    "keywords": [
+      "LeetCode 2540",
+      "Minimum Common Value",
+      "LeetCode 2540 Solution",
+      "LeetCode Minimum Common Value",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

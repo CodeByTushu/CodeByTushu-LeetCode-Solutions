@@ -1,0 +1,79 @@
+{
+  "problem_number": 2958,
+  "problem_title": "Length of Longest Subarray With at Most K Frequency",
+  "slug": "length-of-longest-subarray-with-at-most-k-frequency",
+  "solution_date": "2026-08-12",
+  "formatted_date": "12-08-2026",
+  "day_number": 12,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/",
+  "youtube_url": "https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` and an integer `k`.\n\nThe **frequency** of an element `x` is the number of times it occurs in an array.\n\nAn array is called **good** if the frequency of each element in this array is **less than or equal to** `k`.\n\nReturn the length of the **longest good subarray** of `nums`.\n\nA **subarray** is a contiguous non-empty sequence of elements within an array.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3,1,2,3,1,2], k = 2`\n- **Output:** `6`\n- **Explanation:** The longest possible good subarray is `[1,2,3,1,2,3]` since the values $1, 2,$ and $3$ occur at most twice in this subarray. Note that the subarrays `[2,3,1,2,3,1]` and `[3,1,2,3,1,2]` are also good. There is no good subarray with length greater than $6$.\n\n#### Example 2:\n\n- **Input:** `nums = [1,2,1,2,1,2,1,2], k = 1`\n- **Output:** `2`\n- **Explanation:** The longest possible good subarray is `[1,2]` since the values $1$ and $2$ occur at most once in this subarray. Note that `[2,1]` is also good. There is no good subarray with length greater than $2$.\n\n#### Example 3:\n\n- **Input:** `nums = [5,5,5,5,5,5,5], k = 4`\n- **Output:** `4`\n- **Explanation:** The longest possible good subarray is `[5,5,5,5]` since the value $5$ occurs $4$ times in this subarray.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n- $1 \\le k \\le \\text{nums.length}$\n\n---",
+    "approach_summary": "Expand the right pointer while maintaining element frequencies in a hash map. When any frequency exceeds k, advance the left pointer until validity is restored.",
+    "full_explanation": "# LeetCode 2958: Length of Longest Subarray With at Most K Frequency\n\n- **Publication Date:** 12 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` and an integer `k`.\n\nThe **frequency** of an element `x` is the number of times it occurs in an array.\n\nAn array is called **good** if the frequency of each element in this array is **less than or equal to** `k`.\n\nReturn the length of the **longest good subarray** of `nums`.\n\nA **subarray** is a contiguous non-empty sequence of elements within an array.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3,1,2,3,1,2], k = 2`\n- **Output:** `6`\n- **Explanation:** The longest possible good subarray is `[1,2,3,1,2,3]` since the values $1, 2,$ and $3$ occur at most twice in this subarray. Note that the subarrays `[2,3,1,2,3,1]` and `[3,1,2,3,1,2]` are also good. There is no good subarray with length greater than $6$.\n\n#### Example 2:\n\n- **Input:** `nums = [1,2,1,2,1,2,1,2], k = 1`\n- **Output:** `2`\n- **Explanation:** The longest possible good subarray is `[1,2]` since the values $1$ and $2$ occur at most once in this subarray. Note that `[2,1]` is also good. There is no good subarray with length greater than $2$.\n\n#### Example 3:\n\n- **Input:** `nums = [5,5,5,5,5,5,5], k = 4`\n- **Output:** `4`\n- **Explanation:** The longest possible good subarray is `[5,5,5,5]` since the value $5$ occurs $4$ times in this subarray.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n- $1 \\le k \\le \\text{nums.length}$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sliding Window**\n\n---\n\n## Intuition and Approach\n\n### Sliding Window Technique:\nA subarray is contiguous, so we can naturally use a dynamic **sliding window** defined by two pointers, `left` and `right`:\n1. Expand the window by advancing `right` across the array and updating the frequency of `nums[right]` in a hash table `freq`.\n2. Notice that after adding `nums[right]`, the only element whose frequency might exceed $k$ is `nums[right]` itself.\n3. If `freq[nums[right]] > k`, the current window `[left, right]` is invalid.\n   - Shrink the window from the left by decrementing `freq[nums[left]]` and incrementing `left++`.\n   - Continue until the count of `nums[right]` is restored to $\\le k$.\n4. Once the window is valid, its length is `right - left + 1`. We update our running maximum length:\n   $$\\text{maxLen} = \\max(\\text{maxLen}, \\text{right} - \\text{left} + 1)$$\n\nBecause both `left` and `right` traverse the array at most once, the total time remains linear $\\mathcal{O}(N)$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - The pointer `right` iterates from $0$ to $N - 1$.\n  - The pointer `left` only increments and never resets, moving at most $N$ times across the entire algorithm.\n  - Each hash table insertion and lookup takes $\\mathcal{O}(1)$ average time.\n  - Overall time complexity is $\\mathcal{O}(N)$, completing well within 50 ms for $N = 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A hash map stores counts of distinct values currently within the sliding window, bounded by $\\min(N, \\text{distinct values})$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Expand the right pointer while maintaining element frequencies in a hash map. When any frequency exceeds k, advance the left pointer until validity is restored.",
+  "explanation": "# LeetCode 2958: Length of Longest Subarray With at Most K Frequency\n\n- **Publication Date:** 12 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/XymP0XzPwng?si=6vNOYD09gMIil917)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` and an integer `k`.\n\nThe **frequency** of an element `x` is the number of times it occurs in an array.\n\nAn array is called **good** if the frequency of each element in this array is **less than or equal to** `k`.\n\nReturn the length of the **longest good subarray** of `nums`.\n\nA **subarray** is a contiguous non-empty sequence of elements within an array.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3,1,2,3,1,2], k = 2`\n- **Output:** `6`\n- **Explanation:** The longest possible good subarray is `[1,2,3,1,2,3]` since the values $1, 2,$ and $3$ occur at most twice in this subarray. Note that the subarrays `[2,3,1,2,3,1]` and `[3,1,2,3,1,2]` are also good. There is no good subarray with length greater than $6$.\n\n#### Example 2:\n\n- **Input:** `nums = [1,2,1,2,1,2,1,2], k = 1`\n- **Output:** `2`\n- **Explanation:** The longest possible good subarray is `[1,2]` since the values $1$ and $2$ occur at most once in this subarray. Note that `[2,1]` is also good. There is no good subarray with length greater than $2$.\n\n#### Example 3:\n\n- **Input:** `nums = [5,5,5,5,5,5,5], k = 4`\n- **Output:** `4`\n- **Explanation:** The longest possible good subarray is `[5,5,5,5]` since the value $5$ occurs $4$ times in this subarray.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n- $1 \\le k \\le \\text{nums.length}$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sliding Window**\n\n---\n\n## Intuition and Approach\n\n### Sliding Window Technique:\nA subarray is contiguous, so we can naturally use a dynamic **sliding window** defined by two pointers, `left` and `right`:\n1. Expand the window by advancing `right` across the array and updating the frequency of `nums[right]` in a hash table `freq`.\n2. Notice that after adding `nums[right]`, the only element whose frequency might exceed $k$ is `nums[right]` itself.\n3. If `freq[nums[right]] > k`, the current window `[left, right]` is invalid.\n   - Shrink the window from the left by decrementing `freq[nums[left]]` and incrementing `left++`.\n   - Continue until the count of `nums[right]` is restored to $\\le k$.\n4. Once the window is valid, its length is `right - left + 1`. We update our running maximum length:\n   $$\\text{maxLen} = \\max(\\text{maxLen}, \\text{right} - \\text{left} + 1)$$\n\nBecause both `left` and `right` traverse the array at most once, the total time remains linear $\\mathcal{O}(N)$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - The pointer `right` iterates from $0$ to $N - 1$.\n  - The pointer `left` only increments and never resets, moving at most $N$ times across the entire algorithm.\n  - Each hash table insertion and lookup takes $\\mathcal{O}(1)$ average time.\n  - Overall time complexity is $\\mathcal{O}(N)$, completing well within 50 ms for $N = 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A hash map stores counts of distinct values currently within the sliding window, bounded by $\\min(N, \\text{distinct values})$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.HashMap;\nimport java.util.Map;\n\n/**\n * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maxSubarrayLength(int[] nums, int k) {\n        Map<Integer, Integer> freq = new HashMap<>();\n        int left = 0;\n        int maxLen = 0;\n\n        for (int right = 0; right < nums.length; right++) {\n            freq.put(nums[right], freq.getOrDefault(nums[right], 0) + 1);\n\n            while (freq.get(nums[right]) > k) {\n                freq.put(nums[left], freq.get(nums[left]) - 1);\n                left++;\n            }\n\n            maxLen = Math.max(maxLen, right - left + 1);\n        }\n\n        return maxLen;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom collections import defaultdict\n\n\nclass Solution:\n    def maxSubarrayLength(self, nums: list[int], k: int) -> int:\n        freq = defaultdict(int)\n        left = 0\n        max_len = 0\n\n        for right in range(len(nums)):\n            freq[nums[right]] += 1\n\n            while freq[nums[right]] > k:\n                freq[nums[left]] -= 1\n                left += 1\n\n            max_len = max(max_len, right - left + 1)\n\n        return max_len\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <unordered_map>\n#include <algorithm>\n\n/**\n * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maxSubarrayLength(std::vector<int>& nums, int k) {\n        std::unordered_map<int, int> freq;\n        int left = 0;\n        int maxLen = 0;\n\n        for (int right = 0; right < static_cast<int>(nums.size()); ++right) {\n            freq[nums[right]]++;\n\n            while (freq[nums[right]] > k) {\n                freq[nums[left]]--;\n                left++;\n            }\n\n            maxLen = std::max(maxLen, right - left + 1);\n        }\n\n        return maxLen;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2958 - Length of Longest Subarray With at Most K Frequency\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxSubarrayLength = function(nums, k) {\n    const freq = new Map();\n    let left = 0;\n    let maxLen = 0;\n\n    for (let right = 0; right < nums.length; right++) {\n        const val = nums[right];\n        freq.set(val, (freq.get(val) || 0) + 1);\n\n        while (freq.get(val) > k) {\n            const leftVal = nums[left];\n            freq.set(leftVal, freq.get(leftVal) - 1);\n            left++;\n        }\n\n        maxLen = Math.max(maxLen, right - left + 1);\n    }\n\n    return maxLen;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2958-length-of-longest-subarray-with-at-most-k-frequency.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2958-length-of-longest-subarray-with-at-most-k-frequency.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2958: Length of Longest Subarray With at Most K Frequency...",
+    "meta_description": "Master LeetCode 2958 (Length of Longest Subarray With at Most K Frequency) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) a...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2958-length-of-longest-subarray-with-at-most-k-frequency.jpg",
+    "keywords": [
+      "LeetCode 2958",
+      "Length of Longest Subarray With at Most K Frequency",
+      "LeetCode 2958 Solution",
+      "LeetCode Length of Longest Subarray With at Most K Frequency",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

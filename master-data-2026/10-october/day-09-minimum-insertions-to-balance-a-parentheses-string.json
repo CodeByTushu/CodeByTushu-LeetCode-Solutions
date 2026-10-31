@@ -1,0 +1,79 @@
+{
+  "problem_number": 1541,
+  "problem_title": "Minimum Insertions to Balance a Parentheses String",
+  "slug": "minimum-insertions-to-balance-a-parentheses-string",
+  "solution_date": "2026-10-09",
+  "formatted_date": "09-10-2026",
+  "day_number": 9,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N) where N = s.length",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+  "youtube_url": "https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx",
+  "notes": "Optimal O(N) where N = s.length time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a parentheses string `s` containing only the characters `'('` and `')'`. A parentheses string is balanced if:\n1. Any left parenthesis `'('` must have a corresponding two consecutive right parenthesis `'))'`.\n2. Left parenthesis `'('` must go before the corresponding two consecutive right parenthesis `'))'`.\n\nIn other words, we treat `'('` as an opening parenthesis and `'))'` as a closing parenthesis.\nYou can insert `'('` and `')'` at any position of the string to balance it.\n\nReturn the minimum number of insertions needed to make `s` balanced.\n\n---",
+    "approach_summary": "Greedy linear traversal maintaining count of unmatched '(' and required insertions. Consecutive ')' are grouped together, inserting missing ')' or '(' when necessary.",
+    "full_explanation": "﻿# LeetCode 1541: Minimum Insertions to Balance a Parentheses String\n\n- **Publication Date:** 09 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)\n\n---\n\n## Problem Summary\n\nGiven a parentheses string `s` containing only the characters `'('` and `')'`. A parentheses string is balanced if:\n1. Any left parenthesis `'('` must have a corresponding two consecutive right parenthesis `'))'`.\n2. Left parenthesis `'('` must go before the corresponding two consecutive right parenthesis `'))'`.\n\nIn other words, we treat `'('` as an opening parenthesis and `'))'` as a closing parenthesis.\nYou can insert `'('` and `')'` at any position of the string to balance it.\n\nReturn the minimum number of insertions needed to make `s` balanced.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Greedy**\n\n---\n\n## Approach\n\n1. **Rule Representation**:\n   - Each opening parenthesis `'('` requires exactly a pair of consecutive closing parentheses `'))'`.\n   - We track unmatched opening parentheses using a counter `open` (acting as a lightweight stack counter).\n   - We track the count of required insertions using `ans`.\n\n2. **Linear Greedy Traversal**:\n   - Iterate through the string using a pointer `i`:\n     - If `s[i] == '('`:\n       - Increment `open++` and advance `i` by 1.\n     - If `s[i] == ')'`:\n       - Check if the next character is also `')'` (`i + 1 < n && s[i + 1] == ')'`):\n         - If yes, we found a complete closing pair `'))'`. Advance `i` by 2.\n         - If no, we are missing a second `')'`. We greedily insert one `')'` (`ans++`) and advance `i` by 1.\n       - Now that we have a full `'))'` pair:\n         - If there is an existing unmatched opening parenthesis (`open > 0`), pair it up: decrement `open--`.\n         - Otherwise, no `'('` is available to pair with this `'))'`, so we must insert a `'('` before it: `ans++`.\n\n3. **Handling Remaining Unmatched Opening Parentheses**:\n   - After traversing the entire string, each remaining unmatched `'('` in `open` requires two `')'` characters to be balanced.\n   - Therefore, add `open * 2` to `ans`.\n   - Return `ans`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through the string of length $N$ with constant-time operations per character.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only primitive integer variables (`open`, `ans`, `i`, `n`), requiring no additional heap or stack allocations.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)\n"
+  },
+  "approach_summary": "Greedy linear traversal maintaining count of unmatched '(' and required insertions. Consecutive ')' are grouped together, inserting missing ')' or '(' when necessary.",
+  "explanation": "﻿# LeetCode 1541: Minimum Insertions to Balance a Parentheses String\n\n- **Publication Date:** 09 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)\n\n---\n\n## Problem Summary\n\nGiven a parentheses string `s` containing only the characters `'('` and `')'`. A parentheses string is balanced if:\n1. Any left parenthesis `'('` must have a corresponding two consecutive right parenthesis `'))'`.\n2. Left parenthesis `'('` must go before the corresponding two consecutive right parenthesis `'))'`.\n\nIn other words, we treat `'('` as an opening parenthesis and `'))'` as a closing parenthesis.\nYou can insert `'('` and `')'` at any position of the string to balance it.\n\nReturn the minimum number of insertions needed to make `s` balanced.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Greedy**\n\n---\n\n## Approach\n\n1. **Rule Representation**:\n   - Each opening parenthesis `'('` requires exactly a pair of consecutive closing parentheses `'))'`.\n   - We track unmatched opening parentheses using a counter `open` (acting as a lightweight stack counter).\n   - We track the count of required insertions using `ans`.\n\n2. **Linear Greedy Traversal**:\n   - Iterate through the string using a pointer `i`:\n     - If `s[i] == '('`:\n       - Increment `open++` and advance `i` by 1.\n     - If `s[i] == ')'`:\n       - Check if the next character is also `')'` (`i + 1 < n && s[i + 1] == ')'`):\n         - If yes, we found a complete closing pair `'))'`. Advance `i` by 2.\n         - If no, we are missing a second `')'`. We greedily insert one `')'` (`ans++`) and advance `i` by 1.\n       - Now that we have a full `'))'` pair:\n         - If there is an existing unmatched opening parenthesis (`open > 0`), pair it up: decrement `open--`.\n         - Otherwise, no `'('` is available to pair with this `'))'`, so we must insert a `'('` before it: `ans++`.\n\n3. **Handling Remaining Unmatched Opening Parentheses**:\n   - After traversing the entire string, each remaining unmatched `'('` in `open` requires two `')'` characters to be balanced.\n   - Therefore, add `open * 2` to `ans`.\n   - Return `ans`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single pass through the string of length $N$ with constant-time operations per character.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only primitive integer variables (`open`, `ans`, `i`, `n`), requiring no additional heap or stack allocations.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx](https://youtu.be/ln0satcFHX8?si=HxNayirF5m7BC8Gx)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int minInsertions(String s) {\n        int open = 0; // unmatched '('\n        int ans = 0;  // insertions\n        int i = 0, n = s.length();\n\n        while (i < n) {\n            if (s.charAt(i) == '(') {\n                open++;\n                i++;\n            } else {\n                // Need two consecutive ')'\n                if (i + 1 < n && s.charAt(i + 1) == ')') {\n                    i += 2;\n                } else {\n                    ans++; // insert missing ')'\n                    i++;\n                }\n\n                if (open > 0) {\n                    open--;\n                } else {\n                    ans++; // insert missing '('\n                }\n            }\n        }\n\n        return ans + open * 2;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def minInsertions(self, s: str) -> int:\n        open_count = 0  # unmatched '('\n        ans = 0         # insertions\n        i = 0\n        n = len(s)\n\n        while i < n:\n            if s[i] == '(':\n                open_count += 1\n                i += 1\n            else:\n                # Need two consecutive ')'\n                if i + 1 < n and s[i + 1] == ')':\n                    i += 2\n                else:\n                    ans += 1  # insert missing ')'\n                    i += 1\n\n                if open_count > 0:\n                    open_count -= 1\n                else:\n                    ans += 1  # insert missing '('\n\n        return ans + open_count * 2\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int minInsertions(string s) {\n        int open = 0; // unmatched '('\n        int ans = 0;  // insertions\n        int i = 0, n = s.length();\n\n        while (i < n) {\n            if (s[i] == '(') {\n                open++;\n                i++;\n            } else {\n                // Need two consecutive ')'\n                if (i + 1 < n && s[i + 1] == ')') {\n                    i += 2;\n                } else {\n                    ans++; // insert missing ')'\n                    i++;\n                }\n\n                if (open > 0) {\n                    open--;\n                } else {\n                    ans++; // insert missing '('\n                }\n            }\n        }\n\n        return ans + open * 2;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1541 - Minimum Insertions to Balance a Parentheses String\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar minInsertions = function(s) {\n    let open = 0; // unmatched '('\n    let ans = 0;  // insertions\n    let i = 0;\n    const n = s.length;\n\n    while (i < n) {\n        if (s[i] === '(') {\n            open++;\n            i++;\n        } else {\n            // Need two consecutive ')'\n            if (i + 1 < n && s[i + 1] === ')') {\n                i += 2;\n            } else {\n                ans++; // insert missing ')'\n                i++;\n            }\n\n            if (open > 0) {\n                open--;\n            } else {\n                ans++; // insert missing '('\n            }\n        }\n    }\n\n    return ans + open * 2;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1541-minimum-insertions-to-balance-a-parentheses-string.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1541-minimum-insertions-to-balance-a-parentheses-string.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1541: Minimum Insertions to Balance a Parentheses String S...",
+    "meta_description": "Master LeetCode 1541 (Minimum Insertions to Balance a Parentheses String) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) wh...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1541-minimum-insertions-to-balance-a-parentheses-string.jpg",
+    "keywords": [
+      "LeetCode 1541",
+      "Minimum Insertions to Balance a Parentheses String",
+      "LeetCode 1541 Solution",
+      "LeetCode Minimum Insertions to Balance a Parentheses String",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

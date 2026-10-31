@@ -1,0 +1,78 @@
+{
+  "problem_number": 154,
+  "problem_title": "Find Minimum in Rotated Sorted Array II",
+  "slug": "find-minimum-in-rotated-sorted-array-ii",
+  "solution_date": "2026-05-16",
+  "formatted_date": "16-05-2026",
+  "day_number": 16,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Hard",
+  "platform": "LeetCode",
+  "time_complexity": "O(log(N)) average, O(N) worst case",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/",
+  "youtube_url": "https://youtu.be/kL9Dr5e7P4k",
+  "notes": "Optimal O(log(N)) average, O(N) worst case time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Suppose an array of length $n$ sorted in ascending order is rotated between $1$ and $n$ times. For example, the array `nums = [0, 1, 4, 4, 5, 6, 7]` might become:\n- `[4, 5, 6, 7, 0, 1, 4]` if it was rotated 4 times.\n- `[0, 1, 4, 4, 5, 6, 7]` if it was rotated 7 times.\n\nNotice that rotating an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.\n\nGiven the sorted rotated array `nums` that may contain **duplicates**, return the **minimum element** of this array.\n\nYou must decrease the overall operation steps as much as possible.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 5]`\n- **Output:** `1`\n\n#### Example 2:\n- **Input:** `nums = [2, 2, 2, 0, 1]`\n- **Output:** `0`\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $1 \\le n \\le 5000$\n- $-5000 \\le \\text{nums}[i] \\le 5000$\n- `nums` is sorted and rotated between $1$ and $n$ times.\n\n---",
+    "approach_summary": "Apply modified binary search comparing nums[mid] with nums[right], safely decrementing right when equal to handle duplicates while maintaining search bounds.",
+    "full_explanation": "# LeetCode 154: Find Minimum in Rotated Sorted Array II\n\n- **Publication Date:** 16 May 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kL9Dr5e7P4k)\n\n---\n\n## Problem Summary\n\nSuppose an array of length $n$ sorted in ascending order is rotated between $1$ and $n$ times. For example, the array `nums = [0, 1, 4, 4, 5, 6, 7]` might become:\n- `[4, 5, 6, 7, 0, 1, 4]` if it was rotated 4 times.\n- `[0, 1, 4, 4, 5, 6, 7]` if it was rotated 7 times.\n\nNotice that rotating an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.\n\nGiven the sorted rotated array `nums` that may contain **duplicates**, return the **minimum element** of this array.\n\nYou must decrease the overall operation steps as much as possible.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 5]`\n- **Output:** `1`\n\n#### Example 2:\n- **Input:** `nums = [2, 2, 2, 0, 1]`\n- **Output:** `0`\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $1 \\le n \\le 5000$\n- $-5000 \\le \\text{nums}[i] \\le 5000$\n- `nums` is sorted and rotated between $1$ and $n$ times.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Handling Duplicates in Rotated Sorted Arrays\n\nWhen the array contains distinct elements (as in LeetCode 153), comparing `nums[mid]` with `nums[right]` strictly partitions the search space in half at every step.\n\nHowever, when duplicates exist, we can encounter:\n$$\\text{nums}[\\text{mid}] == \\text{nums}[\\text{right}]$$\n\nIn this case, the minimum could lie either to the left or to the right of `mid`:\n- Example A: `[3, 3, 1, 3]` $\\to$ `mid = 1` (`val = 3`), `right = 3` (`val = 3`). The minimum is in the right half.\n- Example B: `[3, 1, 3, 3]` $\\to$ `mid = 1` (`val = 1`), `right = 3` (`val = 3`). The minimum is at/left of `mid`.\n\nBecause `nums[mid] == nums[right]`, the value at `right` is already represented by `nums[mid]`. Even if `nums[right]` is the minimum, we will not lose it by decrementing `right` by 1 (`right--`).\n\n### 2. Modified Binary Search Algorithm\n\n1. Maintain search boundaries `left = 0` and `right = n - 1`.\n2. While `left < right`:\n   - Compute `mid = left + (right - left) / 2`.\n   - **Case 1: `nums[mid] > nums[right]`**\n     - The inflection point must lie strictly in the right half $\\implies \\text{left} = \\text{mid} + 1$.\n   - **Case 2: `nums[mid] < nums[right]`**\n     - The right half is sorted; the minimum is at `mid` or to its left $\\implies \\text{right} = \\text{mid}$.\n   - **Case 3: `nums[mid] == nums[right]`**\n     - Safely shrink the right boundary $\\implies \\text{right} = \\text{right} - 1$.\n3. When `left == right`, return `nums[left]`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:**\n  - **Average Case:** $\\mathcal{O}(\\log N)$, when duplicates are sparse and the search space is halved in most iterations.\n  - **Worst Case:** $\\mathcal{O}(N)$, when all or almost all elements are equal (e.g. `[1, 1, 1, 1, 1]`), where `right` decrements by 1 each step.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant extra space for pointers.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/kL9Dr5e7P4k](https://youtu.be/kL9Dr5e7P4k)\n"
+  },
+  "approach_summary": "Apply modified binary search comparing nums[mid] with nums[right], safely decrementing right when equal to handle duplicates while maintaining search bounds.",
+  "explanation": "# LeetCode 154: Find Minimum in Rotated Sorted Array II\n\n- **Publication Date:** 16 May 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kL9Dr5e7P4k)\n\n---\n\n## Problem Summary\n\nSuppose an array of length $n$ sorted in ascending order is rotated between $1$ and $n$ times. For example, the array `nums = [0, 1, 4, 4, 5, 6, 7]` might become:\n- `[4, 5, 6, 7, 0, 1, 4]` if it was rotated 4 times.\n- `[0, 1, 4, 4, 5, 6, 7]` if it was rotated 7 times.\n\nNotice that rotating an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.\n\nGiven the sorted rotated array `nums` that may contain **duplicates**, return the **minimum element** of this array.\n\nYou must decrease the overall operation steps as much as possible.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 5]`\n- **Output:** `1`\n\n#### Example 2:\n- **Input:** `nums = [2, 2, 2, 0, 1]`\n- **Output:** `0`\n\n---\n\n### Constraints\n\n- $n == \\text{nums.length}$\n- $1 \\le n \\le 5000$\n- $-5000 \\le \\text{nums}[i] \\le 5000$\n- `nums` is sorted and rotated between $1$ and $n$ times.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Handling Duplicates in Rotated Sorted Arrays\n\nWhen the array contains distinct elements (as in LeetCode 153), comparing `nums[mid]` with `nums[right]` strictly partitions the search space in half at every step.\n\nHowever, when duplicates exist, we can encounter:\n$$\\text{nums}[\\text{mid}] == \\text{nums}[\\text{right}]$$\n\nIn this case, the minimum could lie either to the left or to the right of `mid`:\n- Example A: `[3, 3, 1, 3]` $\\to$ `mid = 1` (`val = 3`), `right = 3` (`val = 3`). The minimum is in the right half.\n- Example B: `[3, 1, 3, 3]` $\\to$ `mid = 1` (`val = 1`), `right = 3` (`val = 3`). The minimum is at/left of `mid`.\n\nBecause `nums[mid] == nums[right]`, the value at `right` is already represented by `nums[mid]`. Even if `nums[right]` is the minimum, we will not lose it by decrementing `right` by 1 (`right--`).\n\n### 2. Modified Binary Search Algorithm\n\n1. Maintain search boundaries `left = 0` and `right = n - 1`.\n2. While `left < right`:\n   - Compute `mid = left + (right - left) / 2`.\n   - **Case 1: `nums[mid] > nums[right]`**\n     - The inflection point must lie strictly in the right half $\\implies \\text{left} = \\text{mid} + 1$.\n   - **Case 2: `nums[mid] < nums[right]`**\n     - The right half is sorted; the minimum is at `mid` or to its left $\\implies \\text{right} = \\text{mid}$.\n   - **Case 3: `nums[mid] == nums[right]`**\n     - Safely shrink the right boundary $\\implies \\text{right} = \\text{right} - 1$.\n3. When `left == right`, return `nums[left]`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:**\n  - **Average Case:** $\\mathcal{O}(\\log N)$, when duplicates are sparse and the search space is halved in most iterations.\n  - **Worst Case:** $\\mathcal{O}(N)$, when all or almost all elements are equal (e.g. `[1, 1, 1, 1, 1]`), where `right` decrements by 1 each step.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant extra space for pointers.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/kL9Dr5e7P4k](https://youtu.be/kL9Dr5e7P4k)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 154 - Find Minimum in Rotated Sorted Array II\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int findMin(int[] nums) {\n        int left = 0;\n        int right = nums.length - 1;\n\n        // Binary search with duplicate handling\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n\n            if (nums[mid] > nums[right]) {\n                // Inflection point is strictly in the right half\n                left = mid + 1;\n            } else if (nums[mid] < nums[right]) {\n                // Right half is sorted, inflection point is at mid or in left half\n                right = mid;\n            } else {\n                // nums[mid] == nums[right]: duplicate detected, safely shrink right boundary\n                right--;\n            }\n        }\n\n        return nums[left];\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 154 - Find Minimum in Rotated Sorted Array II\nDifficulty: Hard\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def findMin(self, nums: List[int]) -> int:\n        left, right = 0, len(nums) - 1\n\n        # Binary search with duplicate handling\n        while left < right:\n            mid = left + (right - left) // 2\n\n            if nums[mid] > nums[right]:\n                # Inflection point is strictly in the right half\n                left = mid + 1\n            elif nums[mid] < nums[right]:\n                # Right half is sorted, inflection point is at mid or in left half\n                right = mid\n            else:\n                # nums[mid] == nums[right]: duplicate detected, safely shrink right boundary\n                right -= 1\n\n        return nums[left]\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 154 - Find Minimum in Rotated Sorted Array II\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int findMin(vector<int>& nums) {\n        int left = 0;\n        int right = nums.size() - 1;\n\n        // Binary search with duplicate handling\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n\n            if (nums[mid] > nums[right]) {\n                // Inflection point is strictly in the right half\n                left = mid + 1;\n            } else if (nums[mid] < nums[right]) {\n                // Right half is sorted, inflection point is at mid or in left half\n                right = mid;\n            } else {\n                // nums[mid] == nums[right]: duplicate detected, safely shrink right boundary\n                right--;\n            }\n        }\n\n        return nums[left];\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 154 - Find Minimum in Rotated Sorted Array II\n * Difficulty: Hard\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar findMin = function(nums) {\n    let left = 0;\n    let right = nums.length - 1;\n\n    // Binary search with duplicate handling\n    while (left < right) {\n        const mid = left + Math.floor((right - left) / 2);\n\n        if (nums[mid] > nums[right]) {\n            // Inflection point is strictly in the right half\n            left = mid + 1;\n        } else if (nums[mid] < nums[right]) {\n            // Right half is sorted, inflection point is at mid or in left half\n            right = mid;\n        } else {\n            // nums[mid] === nums[right]: duplicate detected, safely shrink right boundary\n            right--;\n        }\n    }\n\n    return nums[left];\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-154-find-minimum-in-rotated-sorted-array-ii.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-154-find-minimum-in-rotated-sorted-array-ii.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 154: Find Minimum in Rotated Sorted Array II Solution | Co...",
+    "meta_description": "Master LeetCode 154 (Find Minimum in Rotated Sorted Array II) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log(N)) average,...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-154-find-minimum-in-rotated-sorted-array-ii.jpg",
+    "keywords": [
+      "LeetCode 154",
+      "Find Minimum in Rotated Sorted Array II",
+      "LeetCode 154 Solution",
+      "LeetCode Find Minimum in Rotated Sorted Array II",
+      "Hard LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

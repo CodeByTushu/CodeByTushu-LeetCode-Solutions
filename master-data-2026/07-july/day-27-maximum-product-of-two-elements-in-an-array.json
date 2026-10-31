@@ -1,0 +1,79 @@
+{
+  "problem_number": 1464,
+  "problem_title": "Maximum Product of Two Elements in an Array",
+  "slug": "maximum-product-of-two-elements-in-an-array",
+  "solution_date": "2026-07-27",
+  "formatted_date": "27-07-2026",
+  "day_number": 27,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/",
+  "youtube_url": "https://youtu.be/ZTa6oHtIDMM?si=54-tRAm-OZFSCUxa",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an array of integers `nums`.\n\nChoose two different indices `i` and `j` of that array.\n\nReturn the **maximum value** of `(nums[i] - 1) * (nums[j] - 1)`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [3, 4, 5, 2]`\n- **Output:** `12`\n- **Explanation:** If you choose the indices $i=1$ and $j=2$ (0-indexed), you get $(nums[1] - 1) \\times (nums[2] - 1) = (4 - 1) \\times (5 - 1) = 3 \\times 4 = 12$.\n\n#### Example 2:\n\n- **Input:** `nums = [1, 5, 4, 5]`\n- **Output:** `16`\n- **Explanation:** Choosing the indices $i=1$ and $j=3$ (0-indexed), you get $(5 - 1) \\times (5 - 1) = 16$.\n\n#### Example 3:\n\n- **Input:** `nums = [3, 7]`\n- **Output:** `12`\n- **Explanation:** The only two available elements are $3$ and $7$, giving $(3 - 1) \\times (7 - 1) = 2 \\times 6 = 12$.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 500$\n- $1 \\le \\text{nums}[i] \\le 10^3$\n\n---",
+    "approach_summary": "Track the two largest elements in nums (max1 and max2) during a single pass and return (max1 - 1) * (max2 - 1).",
+    "full_explanation": "# LeetCode 1464: Maximum Product of Two Elements in an Array\n\n- **Publication Date:** 27 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ZTa6oHtIDMM?si=54-tRAm-OZFSCUxa)\n\n---\n\n## Problem Summary\n\nYou are given an array of integers `nums`.\n\nChoose two different indices `i` and `j` of that array.\n\nReturn the **maximum value** of `(nums[i] - 1) * (nums[j] - 1)`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [3, 4, 5, 2]`\n- **Output:** `12`\n- **Explanation:** If you choose the indices $i=1$ and $j=2$ (0-indexed), you get $(nums[1] - 1) \\times (nums[2] - 1) = (4 - 1) \\times (5 - 1) = 3 \\times 4 = 12$.\n\n#### Example 2:\n\n- **Input:** `nums = [1, 5, 4, 5]`\n- **Output:** `16`\n- **Explanation:** Choosing the indices $i=1$ and $j=3$ (0-indexed), you get $(5 - 1) \\times (5 - 1) = 16$.\n\n#### Example 3:\n\n- **Input:** `nums = [3, 7]`\n- **Output:** `12`\n- **Explanation:** The only two available elements are $3$ and $7$, giving $(3 - 1) \\times (7 - 1) = 2 \\times 6 = 12$.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 500$\n- $1 \\le \\text{nums}[i] \\le 10^3$\n\n---\n\n## Algorithmic Approach\n\n### 1. Monotonicity & Greedy Observation\n- Each element satisfies $\\text{nums}[i] \\ge 1$, which implies $(\\text{nums}[i] - 1) \\ge 0$.\n- Because both factors are non-negative, the product $(\\text{nums}[i] - 1) \\times (\\text{nums}[j] - 1)$ is strictly maximized by selecting the **two largest elements** in the entire array.\n\n### 2. Single-Pass Linear Scan ($\\mathcal{O}(n)$ Time, $\\mathcal{O}(1)$ Space)\nInstead of sorting the array in $\\mathcal{O}(n \\log n)$ time:\n- Maintain two scalar trackers:\n  - `max1`: the largest element found so far (initialized to $0$).\n  - `max2`: the second largest element found so far (initialized to $0$).\n- Traverse each `num` in `nums`:\n  - If `num >= max1`: the former `max1` demotes to `max2`, and `max1` becomes `num`.\n  - Else if `num > max2`: update `max2 = num`.\n- Return `(max1 - 1) * (max2 - 1)`.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Single pass over $n$ elements in `nums`. Each element is checked against `max1` and `max2` in constant time $\\mathcal{O}(1)$. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only two integer tracking variables are allocated. No heap allocation or extra arrays are used. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Track the two largest elements in nums (max1 and max2) during a single pass and return (max1 - 1) * (max2 - 1).",
+  "explanation": "# LeetCode 1464: Maximum Product of Two Elements in an Array\n\n- **Publication Date:** 27 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ZTa6oHtIDMM?si=54-tRAm-OZFSCUxa)\n\n---\n\n## Problem Summary\n\nYou are given an array of integers `nums`.\n\nChoose two different indices `i` and `j` of that array.\n\nReturn the **maximum value** of `(nums[i] - 1) * (nums[j] - 1)`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [3, 4, 5, 2]`\n- **Output:** `12`\n- **Explanation:** If you choose the indices $i=1$ and $j=2$ (0-indexed), you get $(nums[1] - 1) \\times (nums[2] - 1) = (4 - 1) \\times (5 - 1) = 3 \\times 4 = 12$.\n\n#### Example 2:\n\n- **Input:** `nums = [1, 5, 4, 5]`\n- **Output:** `16`\n- **Explanation:** Choosing the indices $i=1$ and $j=3$ (0-indexed), you get $(5 - 1) \\times (5 - 1) = 16$.\n\n#### Example 3:\n\n- **Input:** `nums = [3, 7]`\n- **Output:** `12`\n- **Explanation:** The only two available elements are $3$ and $7$, giving $(3 - 1) \\times (7 - 1) = 2 \\times 6 = 12$.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 500$\n- $1 \\le \\text{nums}[i] \\le 10^3$\n\n---\n\n## Algorithmic Approach\n\n### 1. Monotonicity & Greedy Observation\n- Each element satisfies $\\text{nums}[i] \\ge 1$, which implies $(\\text{nums}[i] - 1) \\ge 0$.\n- Because both factors are non-negative, the product $(\\text{nums}[i] - 1) \\times (\\text{nums}[j] - 1)$ is strictly maximized by selecting the **two largest elements** in the entire array.\n\n### 2. Single-Pass Linear Scan ($\\mathcal{O}(n)$ Time, $\\mathcal{O}(1)$ Space)\nInstead of sorting the array in $\\mathcal{O}(n \\log n)$ time:\n- Maintain two scalar trackers:\n  - `max1`: the largest element found so far (initialized to $0$).\n  - `max2`: the second largest element found so far (initialized to $0$).\n- Traverse each `num` in `nums`:\n  - If `num >= max1`: the former `max1` demotes to `max2`, and `max1` becomes `num`.\n  - Else if `num > max2`: update `max2 = num`.\n- Return `(max1 - 1) * (max2 - 1)`.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Single pass over $n$ elements in `nums`. Each element is checked against `max1` and `max2` in constant time $\\mathcal{O}(1)$. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only two integer tracking variables are allocated. No heap allocation or extra arrays are used. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maxProduct(int[] nums) {\n        int max1 = 0;\n        int max2 = 0;\n\n        for (int num : nums) {\n            if (num >= max1) {\n                max2 = max1;\n                max1 = num;\n            } else if (num > max2) {\n                max2 = num;\n            }\n        }\n\n        return (max1 - 1) * (max2 - 1);\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1464 - Maximum Product of Two Elements in an Array\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def maxProduct(self, nums: List[int]) -> int:\n        max1 = 0\n        max2 = 0\n\n        for num in nums:\n            if num >= max1:\n                max2 = max1\n                max1 = num\n            elif num > max2:\n                max2 = num\n\n        return (max1 - 1) * (max2 - 1)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maxProduct(vector<int>& nums) {\n        int max1 = 0;\n        int max2 = 0;\n\n        for (int num : nums) {\n            if (num >= max1) {\n                max2 = max1;\n                max1 = num;\n            } else if (num > max2) {\n                max2 = num;\n            }\n        }\n\n        return (max1 - 1) * (max2 - 1);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1464 - Maximum Product of Two Elements in an Array\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxProduct = function(nums) {\n    let max1 = 0;\n    let max2 = 0;\n\n    for (const num of nums) {\n        if (num >= max1) {\n            max2 = max1;\n            max1 = num;\n        } else if (num > max2) {\n            max2 = num;\n        }\n    }\n\n    return (max1 - 1) * (max2 - 1);\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1464-maximum-product-of-two-elements-in-an-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1464-maximum-product-of-two-elements-in-an-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1464: Maximum Product of Two Elements in an Array Solution...",
+    "meta_description": "Master LeetCode 1464 (Maximum Product of Two Elements in an Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1464-maximum-product-of-two-elements-in-an-array.jpg",
+    "keywords": [
+      "LeetCode 1464",
+      "Maximum Product of Two Elements in an Array",
+      "LeetCode 1464 Solution",
+      "LeetCode Maximum Product of Two Elements in an Array",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

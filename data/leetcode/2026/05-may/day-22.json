@@ -1,0 +1,78 @@
+{
+  "problem_number": 33,
+  "problem_title": "Search in Rotated Sorted Array",
+  "slug": "search-in-rotated-sorted-array",
+  "solution_date": "2026-05-22",
+  "formatted_date": "22-05-2026",
+  "day_number": 22,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(log N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+  "youtube_url": "https://youtu.be/tOzKgWlmqTA",
+  "notes": "Optimal O(log N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "There is an integer array `nums` sorted in ascending order with **distinct values**.\n\nPrior to being passed to your function, `nums` is possibly left-rotated at an unknown pivot index $k$ ($1 \\le k < \\text{nums.length}$) such that the resulting array is:\n$$[\\text{nums}[k], \\text{nums}[k+1], \\dots, \\text{nums}[n-1], \\text{nums}[0], \\text{nums}[1], \\dots, \\text{nums}[k-1]]$$\n\nGiven the array `nums` after the possible rotation and an integer `target`, return the **index of `target`** if it is in `nums`, or `-1` if it is not in `nums`.\n\nYou must write an algorithm with **$\\mathcal{O}(\\log n)$ runtime complexity**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`, `target = 0`\n- **Output:** `4`\n\n#### Example 2:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`, `target = 3`\n- **Output:** `-1`\n\n#### Example 3:\n- **Input:** `nums = [1]`, `target = 0`\n- **Output:** `-1`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 5000$\n- $-10^4 \\le \\text{nums}[i] \\le 10^4$\n- All values of `nums` are **unique**.\n- `nums` is an ascending array that is possibly rotated.\n- $-10^4 \\le \\text{target} \\le 10^4$\n\n---",
+    "approach_summary": "Apply modified binary search by identifying which half is sorted and determining if the target lies within the boundaries of that sorted half.",
+    "full_explanation": "# LeetCode 33: Search in Rotated Sorted Array\n\n- **Publication Date:** 22 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/tOzKgWlmqTA)\n\n---\n\n## Problem Summary\n\nThere is an integer array `nums` sorted in ascending order with **distinct values**.\n\nPrior to being passed to your function, `nums` is possibly left-rotated at an unknown pivot index $k$ ($1 \\le k < \\text{nums.length}$) such that the resulting array is:\n$$[\\text{nums}[k], \\text{nums}[k+1], \\dots, \\text{nums}[n-1], \\text{nums}[0], \\text{nums}[1], \\dots, \\text{nums}[k-1]]$$\n\nGiven the array `nums` after the possible rotation and an integer `target`, return the **index of `target`** if it is in `nums`, or `-1` if it is not in `nums`.\n\nYou must write an algorithm with **$\\mathcal{O}(\\log n)$ runtime complexity**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`, `target = 0`\n- **Output:** `4`\n\n#### Example 2:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`, `target = 3`\n- **Output:** `-1`\n\n#### Example 3:\n- **Input:** `nums = [1]`, `target = 0`\n- **Output:** `-1`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 5000$\n- $-10^4 \\le \\text{nums}[i] \\le 10^4$\n- All values of `nums` are **unique**.\n- `nums` is an ascending array that is possibly rotated.\n- $-10^4 \\le \\text{target} \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Rotated Sorted Array Invariant\n\nEven though the array has been rotated, dividing the search space at any midpoint index `mid` splits the array into two halves, where **at least one half is always strictly sorted**:\n- If `nums[left] <= nums[mid]`, the left half `[left...mid]` is sorted.\n- Otherwise, the right half `[mid...right]` is sorted.\n\n### 2. Modified Binary Search\n\nAt each step with pointers `left` and `right`:\n1. Compute `mid = left + (right - left) / 2`.\n2. If `nums[mid] == target`, we have found the target; return `mid`.\n3. If the **left half is sorted** (`nums[left] <= nums[mid]`):\n   - Check if `target` falls within the boundary `nums[left] <= target < nums[mid]`:\n     - If yes, search the left half: `right = mid - 1`.\n     - Otherwise, the target must be in the right half: `left = mid + 1`.\n4. If the **right half is sorted** (`nums[left] > nums[mid]`):\n   - Check if `target` falls within the boundary `nums[mid] < target <= nums[right]`:\n     - If yes, search the right half: `left = mid + 1`.\n     - Otherwise, the target must be in the left half: `right = mid - 1`.\n5. If `left > right` without finding `target`, return `-1`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log N)$\n  - With each iteration, the search interval is halved, exactly as in standard binary search.\n  - At most $\\lceil\\log_2 5000\\rceil \\approx 13$ comparisons are performed.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only constant extra space for pointers (`left`, `right`, `mid`).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/tOzKgWlmqTA](https://youtu.be/tOzKgWlmqTA)\n"
+  },
+  "approach_summary": "Apply modified binary search by identifying which half is sorted and determining if the target lies within the boundaries of that sorted half.",
+  "explanation": "# LeetCode 33: Search in Rotated Sorted Array\n\n- **Publication Date:** 22 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/tOzKgWlmqTA)\n\n---\n\n## Problem Summary\n\nThere is an integer array `nums` sorted in ascending order with **distinct values**.\n\nPrior to being passed to your function, `nums` is possibly left-rotated at an unknown pivot index $k$ ($1 \\le k < \\text{nums.length}$) such that the resulting array is:\n$$[\\text{nums}[k], \\text{nums}[k+1], \\dots, \\text{nums}[n-1], \\text{nums}[0], \\text{nums}[1], \\dots, \\text{nums}[k-1]]$$\n\nGiven the array `nums` after the possible rotation and an integer `target`, return the **index of `target`** if it is in `nums`, or `-1` if it is not in `nums`.\n\nYou must write an algorithm with **$\\mathcal{O}(\\log n)$ runtime complexity**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`, `target = 0`\n- **Output:** `4`\n\n#### Example 2:\n- **Input:** `nums = [4, 5, 6, 7, 0, 1, 2]`, `target = 3`\n- **Output:** `-1`\n\n#### Example 3:\n- **Input:** `nums = [1]`, `target = 0`\n- **Output:** `-1`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 5000$\n- $-10^4 \\le \\text{nums}[i] \\le 10^4$\n- All values of `nums` are **unique**.\n- `nums` is an ascending array that is possibly rotated.\n- $-10^4 \\le \\text{target} \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Binary Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Rotated Sorted Array Invariant\n\nEven though the array has been rotated, dividing the search space at any midpoint index `mid` splits the array into two halves, where **at least one half is always strictly sorted**:\n- If `nums[left] <= nums[mid]`, the left half `[left...mid]` is sorted.\n- Otherwise, the right half `[mid...right]` is sorted.\n\n### 2. Modified Binary Search\n\nAt each step with pointers `left` and `right`:\n1. Compute `mid = left + (right - left) / 2`.\n2. If `nums[mid] == target`, we have found the target; return `mid`.\n3. If the **left half is sorted** (`nums[left] <= nums[mid]`):\n   - Check if `target` falls within the boundary `nums[left] <= target < nums[mid]`:\n     - If yes, search the left half: `right = mid - 1`.\n     - Otherwise, the target must be in the right half: `left = mid + 1`.\n4. If the **right half is sorted** (`nums[left] > nums[mid]`):\n   - Check if `target` falls within the boundary `nums[mid] < target <= nums[right]`:\n     - If yes, search the right half: `left = mid + 1`.\n     - Otherwise, the target must be in the left half: `right = mid - 1`.\n5. If `left > right` without finding `target`, return `-1`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log N)$\n  - With each iteration, the search interval is halved, exactly as in standard binary search.\n  - At most $\\lceil\\log_2 5000\\rceil \\approx 13$ comparisons are performed.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only constant extra space for pointers (`left`, `right`, `mid`).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/tOzKgWlmqTA](https://youtu.be/tOzKgWlmqTA)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 33 - Search in Rotated Sorted Array\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int search(int[] nums, int target) {\n        int left = 0;\n        int right = nums.length - 1;\n\n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n\n            if (nums[mid] == target) {\n                return mid;\n            }\n\n            // Check if the left half [left...mid] is sorted\n            if (nums[left] <= nums[mid]) {\n                if (nums[left] <= target && target < nums[mid]) {\n                    right = mid - 1; // Target is within sorted left half\n                } else {\n                    left = mid + 1;  // Target is in right half\n                }\n            } else { // Right half [mid...right] is sorted\n                if (nums[mid] < target && target <= nums[right]) {\n                    left = mid + 1;  // Target is within sorted right half\n                } else {\n                    right = mid - 1; // Target is in left half\n                }\n            }\n        }\n\n        return -1;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 33 - Search in Rotated Sorted Array\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def search(self, nums: List[int], target: int) -> int:\n        left, right = 0, len(nums) - 1\n\n        while left <= right:\n            mid = left + (right - left) // 2\n\n            if nums[mid] == target:\n                return mid\n\n            # Check if left half is sorted\n            if nums[left] <= nums[mid]:\n                if nums[left] <= target < nums[mid]:\n                    right = mid - 1\n                else:\n                    left = mid + 1\n            else:  # Right half is sorted\n                if nums[mid] < target <= nums[right]:\n                    left = mid + 1\n                else:\n                    right = mid - 1\n\n        return -1\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 33 - Search in Rotated Sorted Array\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int search(vector<int>& nums, int target) {\n        int left = 0;\n        int right = nums.size() - 1;\n\n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n\n            if (nums[mid] == target) {\n                return mid;\n            }\n\n            // Left half is sorted\n            if (nums[left] <= nums[mid]) {\n                if (nums[left] <= target && target < nums[mid]) {\n                    right = mid - 1;\n                } else {\n                    left = mid + 1;\n                }\n            } else { // Right half is sorted\n                if (nums[mid] < target && target <= nums[right]) {\n                    left = mid + 1;\n                } else {\n                    right = mid - 1;\n                }\n            }\n        }\n\n        return -1;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 33 - Search in Rotated Sorted Array\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar search = function(nums, target) {\n    let left = 0;\n    let right = nums.length - 1;\n\n    while (left <= right) {\n        const mid = Math.floor(left + (right - left) / 2);\n\n        if (nums[mid] === target) {\n            return mid;\n        }\n\n        // Left half is sorted\n        if (nums[left] <= nums[mid]) {\n            if (nums[left] <= target && target < nums[mid]) {\n                right = mid - 1;\n            } else {\n                left = mid + 1;\n            }\n        } else { // Right half is sorted\n            if (nums[mid] < target && target <= nums[right]) {\n                left = mid + 1;\n            } else {\n                right = mid - 1;\n            }\n        }\n    }\n\n    return -1;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-33-search-in-rotated-sorted-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-33-search-in-rotated-sorted-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 33: Search in Rotated Sorted Array Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 33 (Search in Rotated Sorted Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log N) approach and detaile...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-33-search-in-rotated-sorted-array.jpg",
+    "keywords": [
+      "LeetCode 33",
+      "Search in Rotated Sorted Array",
+      "LeetCode 33 Solution",
+      "LeetCode Search in Rotated Sorted Array",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

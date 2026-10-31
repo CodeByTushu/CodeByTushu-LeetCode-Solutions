@@ -1,0 +1,79 @@
+{
+  "problem_number": 2515,
+  "problem_title": "Shortest Distance to Target String in a Circular Array",
+  "slug": "shortest-distance-to-target-string-in-a-circular-array",
+  "solution_date": "2026-04-15",
+  "formatted_date": "15-04-2026",
+  "day_number": 15,
+  "month": "April",
+  "month_num": 4,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N * L)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
+  "youtube_url": "https://youtu.be/dBau2j8rHQ4",
+  "notes": "Optimal O(N * L) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a 0-indexed **circular** string array `words` and a string `target`. In a circular array, the end connects to the beginning:\n- The next element of `words[i]` is `words[(i + 1) % n]`.\n- The previous element of `words[i]` is `words[(i - 1 + n) % n]`.\n\nStarting from `startIndex`, you can move to either the next word or the previous word with 1 step at a time.\n\nReturn the **shortest distance** needed to reach the string `target`. If `target` does not exist in `words`, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `words = [\"hello\", \"i\", \"am\", \"leetcode\", \"hello\"]`, `target = \"hello\"`, `startIndex = 1`\n- **Output:** `1`\n- **Explanation:**\n  - Starting from index $1$, we can reach `\"hello\"` at index $0$ by moving $1$ unit to the left.\n  - Shortest distance is $1$.\n\n#### Example 2:\n- **Input:** `words = [\"a\", \"b\", \"leetcode\"]`, `target = \"leetcode\"`, `startIndex = 0`\n- **Output:** `1`\n- **Explanation:**\n  - Starting from index $0$, we can reach `\"leetcode\"` at index $2$ by moving $1$ unit to the left.\n  - Shortest distance is $1$.\n\n#### Example 3:\n- **Input:** `words = [\"i\", \"eat\", \"leetcode\"]`, `target = \"ate\"`, `startIndex = 0`\n- **Output:** `-1`\n- **Explanation:**\n  - `\"ate\"` does not exist in `words`, so return $-1$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{words.length} \\le 100$\n- $1 \\le \\text{words}[i].\\text{length} \\le 100$\n- `words[i]` and `target` consist only of lowercase English letters.\n- $0 \\le \\text{startIndex} < \\text{words.length}$\n\n---",
+    "approach_summary": "Iterate through the array, and for each occurrence of target, compute min(abs(i - startIndex), n - abs(i - startIndex)).",
+    "full_explanation": "# LeetCode 2515: Shortest Distance to Target String in a Circular Array\n\n- **Publication Date:** 15 April 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/](https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/dBau2j8rHQ4)\n\n---\n\n## Problem Summary\n\nYou are given a 0-indexed **circular** string array `words` and a string `target`. In a circular array, the end connects to the beginning:\n- The next element of `words[i]` is `words[(i + 1) % n]`.\n- The previous element of `words[i]` is `words[(i - 1 + n) % n]`.\n\nStarting from `startIndex`, you can move to either the next word or the previous word with 1 step at a time.\n\nReturn the **shortest distance** needed to reach the string `target`. If `target` does not exist in `words`, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `words = [\"hello\", \"i\", \"am\", \"leetcode\", \"hello\"]`, `target = \"hello\"`, `startIndex = 1`\n- **Output:** `1`\n- **Explanation:**\n  - Starting from index $1$, we can reach `\"hello\"` at index $0$ by moving $1$ unit to the left.\n  - Shortest distance is $1$.\n\n#### Example 2:\n- **Input:** `words = [\"a\", \"b\", \"leetcode\"]`, `target = \"leetcode\"`, `startIndex = 0`\n- **Output:** `1`\n- **Explanation:**\n  - Starting from index $0$, we can reach `\"leetcode\"` at index $2$ by moving $1$ unit to the left.\n  - Shortest distance is $1$.\n\n#### Example 3:\n- **Input:** `words = [\"i\", \"eat\", \"leetcode\"]`, `target = \"ate\"`, `startIndex = 0`\n- **Output:** `-1`\n- **Explanation:**\n  - `\"ate\"` does not exist in `words`, so return $-1$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{words.length} \\le 100$\n- $1 \\le \\text{words}[i].\\text{length} \\le 100$\n- `words[i]` and `target` consist only of lowercase English letters.\n- $0 \\le \\text{startIndex} < \\text{words.length}$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **String**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Direct Circular Distance Metric\n\nIn a circular array of size $n$, the distance between two indices `startIndex` and $i$ can be traversed in two directions:\n1. **Direct distance along the linear index:**\n   $$d = |i - \\text{startIndex}|$$\n2. **Wrap-around distance across the array boundary:**\n   $$n - d = n - |i - \\text{startIndex}|$$\n\nThe shortest distance to index $i$ is:\n$$\\text{dist}(i, \\text{startIndex}) = \\min(|i - \\text{startIndex}|, \\ n - |i - \\text{startIndex}|)$$\n\n### 2. Single-Pass Search\n\n- Iterate through all indices $i \\in [0, n - 1]$.\n- If `words[i] == target`, compute $\\min(|i - \\text{startIndex}|, \\ n - |i - \\text{startIndex}|)$ and update the running minimum distance.\n- If no matching string was found after scanning the entire array, return $-1$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\cdot L)$\n  - Scanning $N \\le 100$ words, each string comparison takes $\\mathcal{O}(L \\le 100)$ time.\n  - Overall time is $\\mathcal{O}(N \\cdot L)$ operations ($\\approx 10^4$), completing in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only scalar integer distance variables are stored, requiring zero extra memory allocations.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/dBau2j8rHQ4](https://youtu.be/dBau2j8rHQ4)\n"
+  },
+  "approach_summary": "Iterate through the array, and for each occurrence of target, compute min(abs(i - startIndex), n - abs(i - startIndex)).",
+  "explanation": "# LeetCode 2515: Shortest Distance to Target String in a Circular Array\n\n- **Publication Date:** 15 April 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/](https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/dBau2j8rHQ4)\n\n---\n\n## Problem Summary\n\nYou are given a 0-indexed **circular** string array `words` and a string `target`. In a circular array, the end connects to the beginning:\n- The next element of `words[i]` is `words[(i + 1) % n]`.\n- The previous element of `words[i]` is `words[(i - 1 + n) % n]`.\n\nStarting from `startIndex`, you can move to either the next word or the previous word with 1 step at a time.\n\nReturn the **shortest distance** needed to reach the string `target`. If `target` does not exist in `words`, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `words = [\"hello\", \"i\", \"am\", \"leetcode\", \"hello\"]`, `target = \"hello\"`, `startIndex = 1`\n- **Output:** `1`\n- **Explanation:**\n  - Starting from index $1$, we can reach `\"hello\"` at index $0$ by moving $1$ unit to the left.\n  - Shortest distance is $1$.\n\n#### Example 2:\n- **Input:** `words = [\"a\", \"b\", \"leetcode\"]`, `target = \"leetcode\"`, `startIndex = 0`\n- **Output:** `1`\n- **Explanation:**\n  - Starting from index $0$, we can reach `\"leetcode\"` at index $2$ by moving $1$ unit to the left.\n  - Shortest distance is $1$.\n\n#### Example 3:\n- **Input:** `words = [\"i\", \"eat\", \"leetcode\"]`, `target = \"ate\"`, `startIndex = 0`\n- **Output:** `-1`\n- **Explanation:**\n  - `\"ate\"` does not exist in `words`, so return $-1$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{words.length} \\le 100$\n- $1 \\le \\text{words}[i].\\text{length} \\le 100$\n- `words[i]` and `target` consist only of lowercase English letters.\n- $0 \\le \\text{startIndex} < \\text{words.length}$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **String**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Direct Circular Distance Metric\n\nIn a circular array of size $n$, the distance between two indices `startIndex` and $i$ can be traversed in two directions:\n1. **Direct distance along the linear index:**\n   $$d = |i - \\text{startIndex}|$$\n2. **Wrap-around distance across the array boundary:**\n   $$n - d = n - |i - \\text{startIndex}|$$\n\nThe shortest distance to index $i$ is:\n$$\\text{dist}(i, \\text{startIndex}) = \\min(|i - \\text{startIndex}|, \\ n - |i - \\text{startIndex}|)$$\n\n### 2. Single-Pass Search\n\n- Iterate through all indices $i \\in [0, n - 1]$.\n- If `words[i] == target`, compute $\\min(|i - \\text{startIndex}|, \\ n - |i - \\text{startIndex}|)$ and update the running minimum distance.\n- If no matching string was found after scanning the entire array, return $-1$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\cdot L)$\n  - Scanning $N \\le 100$ words, each string comparison takes $\\mathcal{O}(L \\le 100)$ time.\n  - Overall time is $\\mathcal{O}(N \\cdot L)$ operations ($\\approx 10^4$), completing in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only scalar integer distance variables are stored, requiring zero extra memory allocations.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/dBau2j8rHQ4](https://youtu.be/dBau2j8rHQ4)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2515 - Shortest Distance to Target String in a Circular Array\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int closestTarget(String[] words, String target, int startIndex) {\n        int n = words.length;\n        int minDistance = Integer.MAX_VALUE;\n\n        for (int i = 0; i < n; i++) {\n            if (words[i].equals(target)) {\n                int direct = Math.abs(i - startIndex);\n                int circular = n - direct;\n                minDistance = Math.min(minDistance, Math.min(direct, circular));\n            }\n        }\n\n        return minDistance == Integer.MAX_VALUE ? -1 : minDistance;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2515 - Shortest Distance to Target String in a Circular Array\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def closestTarget(self, words: List[str], target: str, startIndex: int) -> int:\n        n = len(words)\n        min_dist = float('inf')\n\n        for i, word in enumerate(words):\n            if word == target:\n                direct = abs(i - startIndex)\n                circular = n - direct\n                min_dist = min(min_dist, direct, circular)\n\n        return -1 if min_dist == float('inf') else min_dist\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2515 - Shortest Distance to Target String in a Circular Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n#include <algorithm>\n#include <climits>\n#include <cmath>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int closestTarget(vector<string>& words, string target, int startIndex) {\n        int n = words.size();\n        int minDistance = INT_MAX;\n\n        for (int i = 0; i < n; i++) {\n            if (words[i] == target) {\n                int direct = abs(i - startIndex);\n                int circular = n - direct;\n                minDistance = min(minDistance, min(direct, circular));\n            }\n        }\n\n        return minDistance == INT_MAX ? -1 : minDistance;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2515 - Shortest Distance to Target String in a Circular Array\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {string[]} words\n * @param {string} target\n * @param {number} startIndex\n * @return {number}\n */\nvar closestTarget = function(words, target, startIndex) {\n    const n = words.length;\n    let minDistance = Infinity;\n\n    for (let i = 0; i < n; i++) {\n        if (words[i] === target) {\n            const direct = Math.abs(i - startIndex);\n            const circular = n - direct;\n            minDistance = Math.min(minDistance, Math.min(direct, circular));\n        }\n    }\n\n    return minDistance === Infinity ? -1 : minDistance;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2515-shortest-distance-to-target-string-in-a-circular-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2515-shortest-distance-to-target-string-in-a-circular-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2515: Shortest Distance to Target String in a Circular Arr...",
+    "meta_description": "Master LeetCode 2515 (Shortest Distance to Target String in a Circular Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2515-shortest-distance-to-target-string-in-a-circular-array.jpg",
+    "keywords": [
+      "LeetCode 2515",
+      "Shortest Distance to Target String in a Circular Array",
+      "LeetCode 2515 Solution",
+      "LeetCode Shortest Distance to Target String in a Circular Array",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

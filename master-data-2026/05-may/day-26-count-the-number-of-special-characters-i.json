@@ -1,0 +1,79 @@
+{
+  "problem_number": 3120,
+  "problem_title": "Count the Number of Special Characters I",
+  "slug": "count-the-number-of-special-characters-i",
+  "solution_date": "2026-05-26",
+  "formatted_date": "26-05-2026",
+  "day_number": 26,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-special-characters-i/",
+  "youtube_url": "https://youtu.be/h7jRTqBlfA4",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a string `word`. A letter is called **special** if it appears **both** in lowercase and uppercase in `word`.\n\nReturn the number of **special** letters in `word`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `word = \"aaAbcBC\"`\n- **Output:** `3`\n- **Explanation:**\n  - The letter `'a'` appears in both lowercase (`'a'`) and uppercase (`'A'`).\n  - The letter `'b'` appears in both lowercase (`'b'`) and uppercase (`'B'`).\n  - The letter `'c'` appears in both lowercase (`'c'`) and uppercase (`'C'`).\n  - Thus, there are 3 special characters.\n\n#### Example 2:\n- **Input:** `word = \"abc\"`\n- **Output:** `0`\n- **Explanation:**\n  - No character in `word` appears in uppercase.\n\n#### Example 3:\n- **Input:** `word = \"abBCab\"`\n- **Output:** `1`\n- **Explanation:**\n  - Only the character `'b'` appears in both lowercase and uppercase.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{word.length} \\le 50$\n- `word` consists of only lowercase and uppercase English letters.\n\n---",
+    "approach_summary": "Track lowercase and uppercase occurrences in two 26-bit masks, then count common characters using bitwise AND and popcount.",
+    "full_explanation": "# LeetCode 3120: Count the Number of Special Characters I\n\n- **Publication Date:** 26 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/count-the-number-of-special-characters-i/](https://leetcode.com/problems/count-the-number-of-special-characters-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/h7jRTqBlfA4)\n\n---\n\n## Problem Summary\n\nYou are given a string `word`. A letter is called **special** if it appears **both** in lowercase and uppercase in `word`.\n\nReturn the number of **special** letters in `word`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `word = \"aaAbcBC\"`\n- **Output:** `3`\n- **Explanation:**\n  - The letter `'a'` appears in both lowercase (`'a'`) and uppercase (`'A'`).\n  - The letter `'b'` appears in both lowercase (`'b'`) and uppercase (`'B'`).\n  - The letter `'c'` appears in both lowercase (`'c'`) and uppercase (`'C'`).\n  - Thus, there are 3 special characters.\n\n#### Example 2:\n- **Input:** `word = \"abc\"`\n- **Output:** `0`\n- **Explanation:**\n  - No character in `word` appears in uppercase.\n\n#### Example 3:\n- **Input:** `word = \"abBCab\"`\n- **Output:** `1`\n- **Explanation:**\n  - Only the character `'b'` appears in both lowercase and uppercase.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{word.length} \\le 50$\n- `word` consists of only lowercase and uppercase English letters.\n\n---\n\n## Topics and Tags\n\n- **Hash Table**\n- **String**\n- **Bit Manipulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Bitmask State Tracking ($\\mathcal{O}(1)$ Space)\n\nThe English alphabet has exactly $26$ letters. We can maintain two integer bitmasks:\n1. `lowerMask`: The $k$-th bit is set if the $k$-th letter of the alphabet (`'a' + k`) has appeared in lowercase.\n2. `upperMask`: The $k$-th bit is set if the $k$-th letter of the alphabet (`'A' + k`) has appeared in uppercase.\n\n### 2. Counting Common Special Letters\n\n- Iterate through `word`:\n  - If character $c$ is lowercase: `lowerMask |= (1 << (c - 'a'))`\n  - If character $c$ is uppercase: `upperMask |= (1 << (c - 'A'))`\n- The letters that appear in both lowercase and uppercase correspond precisely to the bits set in both masks:\n  $$\\text{common} = \\text{lowerMask} \\ \\& \\ \\text{upperMask}$$\n- The answer is simply the number of set bits in $\\text{common}$ (i.e. `popcount(common)`).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We scan the string `word` of length $N$ once, performing $\\mathcal{O}(1)$ bitwise operations per character.\n  - Computing the population count of the 26-bit mask runs in $\\mathcal{O}(1)$ time.\n  - Overall time complexity is $\\mathcal{O}(N)$ (takes $< 1\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two 32-bit integers (`lowerMask` and `upperMask`) are used, requiring zero additional heap allocations.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/h7jRTqBlfA4](https://youtu.be/h7jRTqBlfA4)\n"
+  },
+  "approach_summary": "Track lowercase and uppercase occurrences in two 26-bit masks, then count common characters using bitwise AND and popcount.",
+  "explanation": "# LeetCode 3120: Count the Number of Special Characters I\n\n- **Publication Date:** 26 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/count-the-number-of-special-characters-i/](https://leetcode.com/problems/count-the-number-of-special-characters-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/h7jRTqBlfA4)\n\n---\n\n## Problem Summary\n\nYou are given a string `word`. A letter is called **special** if it appears **both** in lowercase and uppercase in `word`.\n\nReturn the number of **special** letters in `word`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `word = \"aaAbcBC\"`\n- **Output:** `3`\n- **Explanation:**\n  - The letter `'a'` appears in both lowercase (`'a'`) and uppercase (`'A'`).\n  - The letter `'b'` appears in both lowercase (`'b'`) and uppercase (`'B'`).\n  - The letter `'c'` appears in both lowercase (`'c'`) and uppercase (`'C'`).\n  - Thus, there are 3 special characters.\n\n#### Example 2:\n- **Input:** `word = \"abc\"`\n- **Output:** `0`\n- **Explanation:**\n  - No character in `word` appears in uppercase.\n\n#### Example 3:\n- **Input:** `word = \"abBCab\"`\n- **Output:** `1`\n- **Explanation:**\n  - Only the character `'b'` appears in both lowercase and uppercase.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{word.length} \\le 50$\n- `word` consists of only lowercase and uppercase English letters.\n\n---\n\n## Topics and Tags\n\n- **Hash Table**\n- **String**\n- **Bit Manipulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Bitmask State Tracking ($\\mathcal{O}(1)$ Space)\n\nThe English alphabet has exactly $26$ letters. We can maintain two integer bitmasks:\n1. `lowerMask`: The $k$-th bit is set if the $k$-th letter of the alphabet (`'a' + k`) has appeared in lowercase.\n2. `upperMask`: The $k$-th bit is set if the $k$-th letter of the alphabet (`'A' + k`) has appeared in uppercase.\n\n### 2. Counting Common Special Letters\n\n- Iterate through `word`:\n  - If character $c$ is lowercase: `lowerMask |= (1 << (c - 'a'))`\n  - If character $c$ is uppercase: `upperMask |= (1 << (c - 'A'))`\n- The letters that appear in both lowercase and uppercase correspond precisely to the bits set in both masks:\n  $$\\text{common} = \\text{lowerMask} \\ \\& \\ \\text{upperMask}$$\n- The answer is simply the number of set bits in $\\text{common}$ (i.e. `popcount(common)`).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We scan the string `word` of length $N$ once, performing $\\mathcal{O}(1)$ bitwise operations per character.\n  - Computing the population count of the 26-bit mask runs in $\\mathcal{O}(1)$ time.\n  - Overall time complexity is $\\mathcal{O}(N)$ (takes $< 1\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only two 32-bit integers (`lowerMask` and `upperMask`) are used, requiring zero additional heap allocations.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/h7jRTqBlfA4](https://youtu.be/h7jRTqBlfA4)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3120 - Count the Number of Special Characters I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int numberOfSpecialChars(String word) {\n        int lowerMask = 0;\n        int upperMask = 0;\n\n        for (int i = 0; i < word.length(); i++) {\n            char ch = word.charAt(i);\n            if (ch >= 'a' && ch <= 'z') {\n                lowerMask |= (1 << (ch - 'a'));\n            } else if (ch >= 'A' && ch <= 'Z') {\n                upperMask |= (1 << (ch - 'A'));\n            }\n        }\n\n        return Integer.bitCount(lowerMask & upperMask);\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3120 - Count the Number of Special Characters I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def numberOfSpecialChars(self, word: str) -> int:\n        lower_mask = 0\n        upper_mask = 0\n\n        for ch in word:\n            if 'a' <= ch <= 'z':\n                lower_mask |= (1 << (ord(ch) - ord('a')))\n            elif 'A' <= ch <= 'Z':\n                upper_mask |= (1 << (ord(ch) - ord('A')))\n\n        return (lower_mask & upper_mask).bit_count()\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3120 - Count the Number of Special Characters I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int numberOfSpecialChars(string word) {\n        int lowerMask = 0;\n        int upperMask = 0;\n\n        for (char ch : word) {\n            if (ch >= 'a' && ch <= 'z') {\n                lowerMask |= (1 << (ch - 'a'));\n            } else if (ch >= 'A' && ch <= 'Z') {\n                upperMask |= (1 << (ch - 'A'));\n            }\n        }\n\n        return __builtin_popcount(lowerMask & upperMask);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3120 - Count the Number of Special Characters I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {string} word\n * @return {number}\n */\nvar numberOfSpecialChars = function(word) {\n    let lowerMask = 0;\n    let upperMask = 0;\n\n    for (let i = 0; i < word.length; i++) {\n        const code = word.charCodeAt(i);\n        if (code >= 97 && code <= 122) { // 'a' - 'z'\n            lowerMask |= (1 << (code - 97));\n        } else if (code >= 65 && code <= 90) { // 'A' - 'Z'\n            upperMask |= (1 << (code - 65));\n        }\n    }\n\n    let common = lowerMask & upperMask;\n    let count = 0;\n    while (common > 0) {\n        common &= (common - 1);\n        count++;\n    }\n    return count;\n};\n"
+    }
+  },
+  "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3120-count-the-number-of-special-characters-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3120-count-the-number-of-special-characters-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3120: Count the Number of Special Characters I Solution |...",
+    "meta_description": "Master LeetCode 3120 (Count the Number of Special Characters I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3120-count-the-number-of-special-characters-i.jpg",
+    "keywords": [
+      "LeetCode 3120",
+      "Count the Number of Special Characters I",
+      "LeetCode 3120 Solution",
+      "LeetCode Count the Number of Special Characters I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

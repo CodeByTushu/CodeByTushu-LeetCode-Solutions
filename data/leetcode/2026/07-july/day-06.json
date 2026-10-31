@@ -1,0 +1,78 @@
+{
+  "problem_number": 1288,
+  "problem_title": "Remove Covered Intervals",
+  "slug": "remove-covered-intervals",
+  "solution_date": "2026-07-06",
+  "formatted_date": "06-07-2026",
+  "day_number": 6,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N log N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/remove-covered-intervals/",
+  "youtube_url": "https://youtu.be/80ycan6T6jk?si=olTBuqXYrQg_lk-T",
+  "notes": "Optimal O(N log N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given an array `intervals` where `intervals[i] = [l_i, r_i]` represent the interval $[l_i, r_i)$, remove all intervals that are covered by another interval in the list.\n\nThe interval $[a, b)$ is covered by the interval $[c, d)$ if and only if:\n$$c \\le a \\quad \\text{and} \\quad b \\le d$$\n\nReturn the **number of remaining intervals**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `intervals = [[1,4],[3,6],[2,8]]`\n- **Output:** `2`\n- **Explanation:**\n  - Interval `[3, 6]` is covered by `[2, 8]` because $2 \\le 3$ and $6 \\le 8$.\n  - Therefore, `[3, 6]` is removed, leaving `[1, 4]` and `[2, 8]`.\n\n#### Example 2:\n\n- **Input:** `intervals = [[1,4],[2,3]]`\n- **Output:** `1`\n- **Explanation:**\n  - Interval `[2, 3]` is covered by `[1, 4]`, leaving only `[1, 4]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{intervals.length} \\le 1000$\n- $\\text{intervals}[i].\\text{length} == 2$\n- $0 \\le l_i < r_i \\le 10^5$\n- All the given intervals are **unique**.\n\n---",
+    "approach_summary": "Sort intervals by start ascending and end descending, then greedily count intervals whose end exceeds the maximum end seen so far.",
+    "full_explanation": "# LeetCode 1288: Remove Covered Intervals\n\n- **Publication Date:** 06 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/remove-covered-intervals/](https://leetcode.com/problems/remove-covered-intervals/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/80ycan6T6jk?si=olTBuqXYrQg_lk-T)\n\n---\n\n## Problem Summary\n\nGiven an array `intervals` where `intervals[i] = [l_i, r_i]` represent the interval $[l_i, r_i)$, remove all intervals that are covered by another interval in the list.\n\nThe interval $[a, b)$ is covered by the interval $[c, d)$ if and only if:\n$$c \\le a \\quad \\text{and} \\quad b \\le d$$\n\nReturn the **number of remaining intervals**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `intervals = [[1,4],[3,6],[2,8]]`\n- **Output:** `2`\n- **Explanation:**\n  - Interval `[3, 6]` is covered by `[2, 8]` because $2 \\le 3$ and $6 \\le 8$.\n  - Therefore, `[3, 6]` is removed, leaving `[1, 4]` and `[2, 8]`.\n\n#### Example 2:\n\n- **Input:** `intervals = [[1,4],[2,3]]`\n- **Output:** `1`\n- **Explanation:**\n  - Interval `[2, 3]` is covered by `[1, 4]`, leaving only `[1, 4]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{intervals.length} \\le 1000$\n- $\\text{intervals}[i].\\text{length} == 2$\n- $0 \\le l_i < r_i \\le 10^5$\n- All the given intervals are **unique**.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Sorting**\n\n---\n\n## Intuition and Approach\n\n### 1. Custom Sorting Strategy\nAn interval $[a, b)$ is covered by $[c, d)$ when $c \\le a$ and $b \\le d$. \nIf we sort intervals primarily by their starting coordinates $l_i$ in **ascending order**:\n- Any interval that could potentially cover interval $i$ must appear **before** $i$ in the sorted sequence.\n\nWhat if two intervals have the **same starting point**?\n- E.g., `[1, 5]` and `[1, 4]`.\n- Here, `[1, 5]` covers `[1, 4]`.\n- To ensure the larger interval is processed first, we sort secondarily by right endpoint $r_i$ in **descending order**.\n\nThus, our sort comparator is:\n$$\\text{Sort by } l_i \\text{ ascending, then by } r_i \\text{ descending}.$$\n\n### 2. Single-Pass Greedy Evaluation\nAfter sorting:\n- We maintain `maxEnd`, representing the maximum right endpoint seen so far among all processed intervals.\n- For each interval $[l, r]$:\n  - If $r > \\text{maxEnd}$:\n    - Since all previously processed intervals started at coordinates $\\le l$ and had right endpoints $\\le \\text{maxEnd} < r$, **no previous interval can cover this interval**.\n    - Furthermore, no future interval can cover this interval because all future intervals will have start coordinates $\\ge l$.\n    - Hence, this interval must be kept! We increment `count` and update $\\text{maxEnd} = r$.\n  - If $r \\le \\text{maxEnd}$:\n    - There exists some preceding interval that started at $\\le l$ and ends at $\\text{maxEnd} \\ge r$.\n    - This preceding interval completely encloses $[l, r]$. Thus, the current interval is covered and discarded.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$\n  - Sorting the array of $N$ intervals takes $\\mathcal{O}(N \\log N)$ time.\n  - The linear scan evaluates each interval once in $\\mathcal{O}(N)$ time.\n  - With $N \\le 1000$, total operations are $\\approx 10^4$, executing in under $2\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ (in-place sort) or $\\mathcal{O}(\\log N)$ (sorting call stack recursion).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Sort intervals by start ascending and end descending, then greedily count intervals whose end exceeds the maximum end seen so far.",
+  "explanation": "# LeetCode 1288: Remove Covered Intervals\n\n- **Publication Date:** 06 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/remove-covered-intervals/](https://leetcode.com/problems/remove-covered-intervals/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/80ycan6T6jk?si=olTBuqXYrQg_lk-T)\n\n---\n\n## Problem Summary\n\nGiven an array `intervals` where `intervals[i] = [l_i, r_i]` represent the interval $[l_i, r_i)$, remove all intervals that are covered by another interval in the list.\n\nThe interval $[a, b)$ is covered by the interval $[c, d)$ if and only if:\n$$c \\le a \\quad \\text{and} \\quad b \\le d$$\n\nReturn the **number of remaining intervals**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `intervals = [[1,4],[3,6],[2,8]]`\n- **Output:** `2`\n- **Explanation:**\n  - Interval `[3, 6]` is covered by `[2, 8]` because $2 \\le 3$ and $6 \\le 8$.\n  - Therefore, `[3, 6]` is removed, leaving `[1, 4]` and `[2, 8]`.\n\n#### Example 2:\n\n- **Input:** `intervals = [[1,4],[2,3]]`\n- **Output:** `1`\n- **Explanation:**\n  - Interval `[2, 3]` is covered by `[1, 4]`, leaving only `[1, 4]`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{intervals.length} \\le 1000$\n- $\\text{intervals}[i].\\text{length} == 2$\n- $0 \\le l_i < r_i \\le 10^5$\n- All the given intervals are **unique**.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Sorting**\n\n---\n\n## Intuition and Approach\n\n### 1. Custom Sorting Strategy\nAn interval $[a, b)$ is covered by $[c, d)$ when $c \\le a$ and $b \\le d$. \nIf we sort intervals primarily by their starting coordinates $l_i$ in **ascending order**:\n- Any interval that could potentially cover interval $i$ must appear **before** $i$ in the sorted sequence.\n\nWhat if two intervals have the **same starting point**?\n- E.g., `[1, 5]` and `[1, 4]`.\n- Here, `[1, 5]` covers `[1, 4]`.\n- To ensure the larger interval is processed first, we sort secondarily by right endpoint $r_i$ in **descending order**.\n\nThus, our sort comparator is:\n$$\\text{Sort by } l_i \\text{ ascending, then by } r_i \\text{ descending}.$$\n\n### 2. Single-Pass Greedy Evaluation\nAfter sorting:\n- We maintain `maxEnd`, representing the maximum right endpoint seen so far among all processed intervals.\n- For each interval $[l, r]$:\n  - If $r > \\text{maxEnd}$:\n    - Since all previously processed intervals started at coordinates $\\le l$ and had right endpoints $\\le \\text{maxEnd} < r$, **no previous interval can cover this interval**.\n    - Furthermore, no future interval can cover this interval because all future intervals will have start coordinates $\\ge l$.\n    - Hence, this interval must be kept! We increment `count` and update $\\text{maxEnd} = r$.\n  - If $r \\le \\text{maxEnd}$:\n    - There exists some preceding interval that started at $\\le l$ and ends at $\\text{maxEnd} \\ge r$.\n    - This preceding interval completely encloses $[l, r]$. Thus, the current interval is covered and discarded.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$\n  - Sorting the array of $N$ intervals takes $\\mathcal{O}(N \\log N)$ time.\n  - The linear scan evaluates each interval once in $\\mathcal{O}(N)$ time.\n  - With $N \\le 1000$, total operations are $\\approx 10^4$, executing in under $2\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ (in-place sort) or $\\mathcal{O}(\\log N)$ (sorting call stack recursion).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1288 - Remove Covered Intervals\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.*;\n\n/**\n * Problem: LeetCode 1288 - Remove Covered Intervals\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int removeCoveredIntervals(int[][] intervals) {\n        Arrays.sort(intervals, (a, b) -> {\n            if (a[0] == b[0]) {\n                return b[1] - a[1];\n            }\n            return a[0] - b[0];\n        });\n\n        int count = 0;\n        int maxEnd = 0;\n\n        for (int[] interval : intervals) {\n            if (interval[1] > maxEnd) {\n                count++;\n                maxEnd = interval[1];\n            }\n        }\n\n        return count;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1288 - Remove Covered Intervals\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\nclass Solution:\n    def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:\n        # Sort by start ascending, then by end descending\n        intervals.sort(key=lambda x: (x[0], -x[1]))\n\n        count = 0\n        max_end = 0\n\n        for _, r in intervals:\n            if r > max_end:\n                count += 1\n                max_end = r\n\n        return count\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1288 - Remove Covered Intervals\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1288 - Remove Covered Intervals\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int removeCoveredIntervals(vector<vector<int>>& intervals) {\n        sort(intervals.begin(), intervals.end(), [](const vector<int>& a, const vector<int>& b) {\n            if (a[0] == b[0]) {\n                return a[1] > b[1];\n            }\n            return a[0] < b[0];\n        });\n\n        int count = 0;\n        int maxEnd = 0;\n\n        for (const auto& interval : intervals) {\n            if (interval[1] > maxEnd) {\n                count++;\n                maxEnd = interval[1];\n            }\n        }\n\n        return count;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1288 - Remove Covered Intervals\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar removeCoveredIntervals = function(intervals) {\n    intervals.sort((a, b) => {\n        if (a[0] === b[0]) {\n            return b[1] - a[1];\n        }\n        return a[0] - b[0];\n    });\n\n    let count = 0;\n    let maxEnd = 0;\n\n    for (let i = 0; i < intervals.length; i++) {\n        if (intervals[i][1] > maxEnd) {\n            count++;\n            maxEnd = intervals[i][1];\n        }\n    }\n\n    return count;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1288-remove-covered-intervals.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1288-remove-covered-intervals.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1288: Remove Covered Intervals Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1288 (Remove Covered Intervals) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N log N) approach and detailed...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1288-remove-covered-intervals.jpg",
+    "keywords": [
+      "LeetCode 1288",
+      "Remove Covered Intervals",
+      "LeetCode 1288 Solution",
+      "LeetCode Remove Covered Intervals",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

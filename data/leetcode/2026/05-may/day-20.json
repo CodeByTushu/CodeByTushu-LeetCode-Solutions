@@ -1,0 +1,79 @@
+{
+  "problem_number": 2657,
+  "problem_title": "Find the Prefix Common Array of Two Arrays",
+  "slug": "find-the-prefix-common-array-of-two-arrays",
+  "solution_date": "2026-05-20",
+  "formatted_date": "20-05-2026",
+  "day_number": 20,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/",
+  "youtube_url": "https://youtu.be/W91IYzHUi4k",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given two 0-indexed integer permutations `A` and `B` of length `n`.\n\nA **prefix common array** of `A` and `B` is an array `C` such that `C[i]` is equal to the count of numbers that are present at or before the index `i` in both `A` and `B`.\n\nReturn the **prefix common array** of `A` and `B`.\n\nA sequence of `n` integers is called a **permutation** if it contains all integers from $1$ to $n$ exactly once.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `A = [1, 3, 2, 4]`, `B = [3, 1, 2, 4]`\n- **Output:** `[0, 2, 3, 4]`\n- **Explanation:**\n  - At $i = 0$: no number is common in prefixes (`A[0..0] = {1}`, `B[0..0] = {3}`), so $C[0] = 0$.\n  - At $i = 1$: numbers $1$ and $3$ are common in prefixes (`{1, 3}` and `{3, 1}`), so $C[1] = 2$.\n  - At $i = 2$: numbers $1, 2,$ and $3$ are common in prefixes, so $C[2] = 3$.\n  - At $i = 3$: numbers $1, 2, 3,$ and $4$ are common in both prefixes, so $C[3] = 4$.\n\n#### Example 2:\n- **Input:** `A = [2, 3, 1]`, `B = [3, 1, 2]`\n- **Output:** `[0, 1, 3]`\n- **Explanation:**\n  - At $i = 0$: no common number $\\implies C[0] = 0$.\n  - At $i = 1$: only $3$ is common in prefixes $\\implies C[1] = 1$.\n  - At $i = 2$: numbers $1, 2,$ and $3$ are common $\\implies C[2] = 3$.\n\n---\n\n### Constraints\n\n- $1 \\le A.\\text{length} == B.\\text{length} == n \\le 50$\n- $1 \\le A[i], B[i] \\le n$\n- It is guaranteed that $A$ and $B$ are both permutations of $n$ integers.\n\n---",
+    "approach_summary": "Maintain a frequency array across the prefixes; when the frequency of any element reaches 2, increment the running common count.",
+    "full_explanation": "# LeetCode 2657: Find the Prefix Common Array of Two Arrays\n\n- **Publication Date:** 20 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/W91IYzHUi4k)\n\n---\n\n## Problem Summary\n\nYou are given two 0-indexed integer permutations `A` and `B` of length `n`.\n\nA **prefix common array** of `A` and `B` is an array `C` such that `C[i]` is equal to the count of numbers that are present at or before the index `i` in both `A` and `B`.\n\nReturn the **prefix common array** of `A` and `B`.\n\nA sequence of `n` integers is called a **permutation** if it contains all integers from $1$ to $n$ exactly once.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `A = [1, 3, 2, 4]`, `B = [3, 1, 2, 4]`\n- **Output:** `[0, 2, 3, 4]`\n- **Explanation:**\n  - At $i = 0$: no number is common in prefixes (`A[0..0] = {1}`, `B[0..0] = {3}`), so $C[0] = 0$.\n  - At $i = 1$: numbers $1$ and $3$ are common in prefixes (`{1, 3}` and `{3, 1}`), so $C[1] = 2$.\n  - At $i = 2$: numbers $1, 2,$ and $3$ are common in prefixes, so $C[2] = 3$.\n  - At $i = 3$: numbers $1, 2, 3,$ and $4$ are common in both prefixes, so $C[3] = 4$.\n\n#### Example 2:\n- **Input:** `A = [2, 3, 1]`, `B = [3, 1, 2]`\n- **Output:** `[0, 1, 3]`\n- **Explanation:**\n  - At $i = 0$: no common number $\\implies C[0] = 0$.\n  - At $i = 1$: only $3$ is common in prefixes $\\implies C[1] = 1$.\n  - At $i = 2$: numbers $1, 2,$ and $3$ are common $\\implies C[2] = 3$.\n\n---\n\n### Constraints\n\n- $1 \\le A.\\text{length} == B.\\text{length} == n \\le 50$\n- $1 \\le A[i], B[i] \\le n$\n- It is guaranteed that $A$ and $B$ are both permutations of $n$ integers.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Bit Manipulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Key Permutation Invariant\n\nBecause $A$ and $B$ are permutations of numbers from $1$ to $n$:\n- Each number $x \\in [1, n]$ appears **at most once** in array $A$.\n- Each number $x \\in [1, n]$ appears **at most once** in array $B$.\n\nConsequently, across both prefixes $A[0..i]$ and $B[0..i]$, any number can appear at most **twice**:\n- If frequency of $x$ is $1$, it has appeared in either $A$ or $B$, but not both yet.\n- If frequency of $x$ becomes $2$, it has now appeared in **both** $A$ and $B$ within the current prefix range!\n\n### 2. Single-Pass Running Frequency Count ($\\mathcal{O}(N)$)\n\n1. Maintain a frequency array `freq` of size $n + 1$ initialized to $0$, and a counter `commonCount = 0`.\n2. Iterate through each index $i$ from $0$ to $n - 1$:\n   - Increment `freq[A[i]]`. If it becomes $2$, increment `commonCount`.\n   - Increment `freq[B[i]]`. If it becomes $2$, increment `commonCount`.\n   - Store $C[i] = \\text{commonCount}$.\n3. If $A[i] == B[i]$, `freq[A[i]]` is incremented once to $1$, then immediately to $2$, correctly incrementing `commonCount` by $1$.\n\nThis avoids quadratic $\\mathcal{O}(N^2)$ set intersections and computes the answer in a single linear sweep.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We traverse the arrays of length $N$ once.\n  - At each index $i$, frequency table updates and comparisons take $\\mathcal{O}(1)$ time.\n  - Overall time complexity is strictly $\\mathcal{O}(N) \\approx 50$ operations ($< 1\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - The frequency table `freq` takes $\\mathcal{O}(N)$ space ($51$ entries).\n  - *(Note: Since $N \\le 50$, this can also be implemented in $\\mathcal{O}(1)$ auxiliary space using a 64-bit bitmask integer).*\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/W91IYzHUi4k](https://youtu.be/W91IYzHUi4k)\n"
+  },
+  "approach_summary": "Maintain a frequency array across the prefixes; when the frequency of any element reaches 2, increment the running common count.",
+  "explanation": "# LeetCode 2657: Find the Prefix Common Array of Two Arrays\n\n- **Publication Date:** 20 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/W91IYzHUi4k)\n\n---\n\n## Problem Summary\n\nYou are given two 0-indexed integer permutations `A` and `B` of length `n`.\n\nA **prefix common array** of `A` and `B` is an array `C` such that `C[i]` is equal to the count of numbers that are present at or before the index `i` in both `A` and `B`.\n\nReturn the **prefix common array** of `A` and `B`.\n\nA sequence of `n` integers is called a **permutation** if it contains all integers from $1$ to $n$ exactly once.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `A = [1, 3, 2, 4]`, `B = [3, 1, 2, 4]`\n- **Output:** `[0, 2, 3, 4]`\n- **Explanation:**\n  - At $i = 0$: no number is common in prefixes (`A[0..0] = {1}`, `B[0..0] = {3}`), so $C[0] = 0$.\n  - At $i = 1$: numbers $1$ and $3$ are common in prefixes (`{1, 3}` and `{3, 1}`), so $C[1] = 2$.\n  - At $i = 2$: numbers $1, 2,$ and $3$ are common in prefixes, so $C[2] = 3$.\n  - At $i = 3$: numbers $1, 2, 3,$ and $4$ are common in both prefixes, so $C[3] = 4$.\n\n#### Example 2:\n- **Input:** `A = [2, 3, 1]`, `B = [3, 1, 2]`\n- **Output:** `[0, 1, 3]`\n- **Explanation:**\n  - At $i = 0$: no common number $\\implies C[0] = 0$.\n  - At $i = 1$: only $3$ is common in prefixes $\\implies C[1] = 1$.\n  - At $i = 2$: numbers $1, 2,$ and $3$ are common $\\implies C[2] = 3$.\n\n---\n\n### Constraints\n\n- $1 \\le A.\\text{length} == B.\\text{length} == n \\le 50$\n- $1 \\le A[i], B[i] \\le n$\n- It is guaranteed that $A$ and $B$ are both permutations of $n$ integers.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Bit Manipulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Key Permutation Invariant\n\nBecause $A$ and $B$ are permutations of numbers from $1$ to $n$:\n- Each number $x \\in [1, n]$ appears **at most once** in array $A$.\n- Each number $x \\in [1, n]$ appears **at most once** in array $B$.\n\nConsequently, across both prefixes $A[0..i]$ and $B[0..i]$, any number can appear at most **twice**:\n- If frequency of $x$ is $1$, it has appeared in either $A$ or $B$, but not both yet.\n- If frequency of $x$ becomes $2$, it has now appeared in **both** $A$ and $B$ within the current prefix range!\n\n### 2. Single-Pass Running Frequency Count ($\\mathcal{O}(N)$)\n\n1. Maintain a frequency array `freq` of size $n + 1$ initialized to $0$, and a counter `commonCount = 0`.\n2. Iterate through each index $i$ from $0$ to $n - 1$:\n   - Increment `freq[A[i]]`. If it becomes $2$, increment `commonCount`.\n   - Increment `freq[B[i]]`. If it becomes $2$, increment `commonCount`.\n   - Store $C[i] = \\text{commonCount}$.\n3. If $A[i] == B[i]$, `freq[A[i]]` is incremented once to $1$, then immediately to $2$, correctly incrementing `commonCount` by $1$.\n\nThis avoids quadratic $\\mathcal{O}(N^2)$ set intersections and computes the answer in a single linear sweep.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - We traverse the arrays of length $N$ once.\n  - At each index $i$, frequency table updates and comparisons take $\\mathcal{O}(1)$ time.\n  - Overall time complexity is strictly $\\mathcal{O}(N) \\approx 50$ operations ($< 1\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - The frequency table `freq` takes $\\mathcal{O}(N)$ space ($51$ entries).\n  - *(Note: Since $N \\le 50$, this can also be implemented in $\\mathcal{O}(1)$ auxiliary space using a 64-bit bitmask integer).*\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/W91IYzHUi4k](https://youtu.be/W91IYzHUi4k)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2657 - Find the Prefix Common Array of Two Arrays\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int[] findThePrefixCommonArray(int[] A, int[] B) {\n        int n = A.length;\n        int[] C = new int[n];\n        int[] freq = new int[n + 1];\n        int commonCount = 0;\n\n        for (int i = 0; i < n; i++) {\n            // Track frequency of A[i]\n            if (++freq[A[i]] == 2) {\n                commonCount++;\n            }\n\n            // Track frequency of B[i]\n            if (++freq[B[i]] == 2) {\n                commonCount++;\n            }\n\n            C[i] = commonCount;\n        }\n\n        return C;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2657 - Find the Prefix Common Array of Two Arrays\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:\n        n = len(A)\n        C = [0] * n\n        freq = [0] * (n + 1)\n        common_count = 0\n\n        for i in range(n):\n            freq[A[i]] += 1\n            if freq[A[i]] == 2:\n                common_count += 1\n\n            freq[B[i]] += 1\n            if freq[B[i]] == 2:\n                common_count += 1\n\n            C[i] = common_count\n\n        return C\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2657 - Find the Prefix Common Array of Two Arrays\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<int> findThePrefixCommonArray(vector<int>& A, vector<int>& B) {\n        int n = A.size();\n        vector<int> C(n, 0);\n        vector<int> freq(n + 1, 0);\n        int commonCount = 0;\n\n        for (int i = 0; i < n; ++i) {\n            if (++freq[A[i]] == 2) {\n                commonCount++;\n            }\n            if (++freq[B[i]] == 2) {\n                commonCount++;\n            }\n            C[i] = commonCount;\n        }\n\n        return C;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2657 - Find the Prefix Common Array of Two Arrays\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} A\n * @param {number[]} B\n * @return {number[]}\n */\nvar findThePrefixCommonArray = function(A, B) {\n    const n = A.length;\n    const C = new Array(n);\n    const freq = new Uint8Array(n + 1);\n    let commonCount = 0;\n\n    for (let i = 0; i < n; i++) {\n        if (++freq[A[i]] === 2) {\n            commonCount++;\n        }\n        if (++freq[B[i]] === 2) {\n            commonCount++;\n        }\n        C[i] = commonCount;\n    }\n\n    return C;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2657-find-the-prefix-common-array-of-two-arrays.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2657-find-the-prefix-common-array-of-two-arrays.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2657: Find the Prefix Common Array of Two Arrays Solution...",
+    "meta_description": "Master LeetCode 2657 (Find the Prefix Common Array of Two Arrays) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach a...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2657-find-the-prefix-common-array-of-two-arrays.jpg",
+    "keywords": [
+      "LeetCode 2657",
+      "Find the Prefix Common Array of Two Arrays",
+      "LeetCode 2657 Solution",
+      "LeetCode Find the Prefix Common Array of Two Arrays",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

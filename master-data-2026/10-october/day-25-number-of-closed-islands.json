@@ -1,0 +1,81 @@
+{
+  "problem_number": 1254,
+  "problem_title": "Number of Closed Islands",
+  "slug": "number-of-closed-islands",
+  "solution_date": "2026-10-25",
+  "formatted_date": "25-10-2026",
+  "day_number": 25,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(M * N)",
+  "space_complexity": "O(M * N)",
+  "leetcode_url": "https://leetcode.com/problems/number-of-closed-islands/",
+  "youtube_url": "https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI",
+  "notes": "Optimal O(M * N) time complexity with O(M * N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a 2D `grid` consists of `0`s (land) and `1`s (water). An island is a maximal 4-directionally connected group of `0`s and a closed island is an island totally (all left, top, right, bottom) surrounded by `1`s.\n\nReturn the **number of closed islands**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]`\n- **Output:** `2`\n- **Explanation:**\n  - Islands completely enclosed by water (`1`s) are closed islands.\n  - Land connected to the boundaries of the grid cannot be surrounded by water on all four sides.\n\n#### Example 2:\n- **Input:** `grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]`\n- **Output:** `1`\n\n#### Example 3:\n- **Input:** `grid = [[1,1,1,1,1,1,1],[1,0,0,0,0,0,1],[1,0,1,1,1,0,1],[1,0,1,0,1,0,1],[1,0,1,1,1,0,1],[1,0,0,0,0,0,1],[1,1,1,1,1,1,1]]`\n- **Output:** `2`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{grid.length}, \\text{grid}[0].length \\le 100$\n- $0 \\le \\text{grid}[i][j] \\le 1$\n\n---",
+    "approach_summary": "First flood-fill all boundary-connected land cells by initiating DFS from all perimeter cells (row 0, row m-1, col 0, col n-1) and converting them to water (1). Then, traverse the inner grid cells; each remaining unvisited land cell (0) is a valid closed island, increment the count and flood-fill it.",
+    "full_explanation": "# LeetCode 1254: Number of Closed Islands\n\n- **Publication Date:** 25 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/number-of-closed-islands/](https://leetcode.com/problems/number-of-closed-islands/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI)\n\n---\n\n## Problem Summary\n\nGiven a 2D `grid` consists of `0`s (land) and `1`s (water). An island is a maximal 4-directionally connected group of `0`s and a closed island is an island totally (all left, top, right, bottom) surrounded by `1`s.\n\nReturn the **number of closed islands**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]`\n- **Output:** `2`\n- **Explanation:**\n  - Islands completely enclosed by water (`1`s) are closed islands.\n  - Land connected to the boundaries of the grid cannot be surrounded by water on all four sides.\n\n#### Example 2:\n- **Input:** `grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]`\n- **Output:** `1`\n\n#### Example 3:\n- **Input:** `grid = [[1,1,1,1,1,1,1],[1,0,0,0,0,0,1],[1,0,1,1,1,0,1],[1,0,1,0,1,0,1],[1,0,1,1,1,0,1],[1,0,0,0,0,0,1],[1,1,1,1,1,1,1]]`\n- **Output:** `2`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{grid.length}, \\text{grid}[0].length \\le 100$\n- $0 \\le \\text{grid}[i][j] \\le 1$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Depth-First Search**\n- **Breadth-First Search**\n- **Union Find**\n- **Matrix**\n\n---\n\n## Approach & Intuition\n\n### 1. Eliminating Boundary-Connected Land\n\n1. **Definition of a Closed Island:**\n   - A closed island must be strictly surrounded by water (`1`s) on all 4 directions (left, right, top, bottom).\n   - If any cell in a connected land component touches the boundary of the grid ($i = 0$, $i = m - 1$, $j = 0$, or $j = n - 1$), that component can **never** be a closed island because it extends to the perimeter without water shielding that edge.\n\n2. **Step 1 — Flood Fill All Boundary Land:**\n   - Scan the first row, last row, first column, and last column.\n   - For every land cell (`grid[i][j] == 0`), initiate a Depth-First Search (DFS) / flood-fill to turn all connected land cells into water (`1`).\n   - By eliminating all boundary-connected land upfront, every remaining land cell in the grid is guaranteed to belong to a completely enclosed, closed island.\n\n3. **Step 2 — Count Internal Islands:**\n   - Iterate through the interior cells ($1 \\le i < m - 1$, $1 \\le j < n - 1$).\n   - When an unvisited land cell (`grid[i][j] == 0`) is discovered:\n     - Increment `count` by $1$.\n     - Run DFS to mark the entire closed island as visited (converting `0`s to `1`s).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(M \\times N)$\n  - Each cell is visited at most a constant number of times during the boundary elimination and internal counting phases.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(M \\times N)$\n  - In the worst case (e.g., a grid full of land), recursion call stack depth reaches $\\mathcal{O}(M \\times N)$. In-place modification uses $\\mathcal{O}(1)$ additional memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI](https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI)\n"
+  },
+  "approach_summary": "First flood-fill all boundary-connected land cells by initiating DFS from all perimeter cells (row 0, row m-1, col 0, col n-1) and converting them to water (1). Then, traverse the inner grid cells; each remaining unvisited land cell (0) is a valid closed island, increment the count and flood-fill it.",
+  "explanation": "# LeetCode 1254: Number of Closed Islands\n\n- **Publication Date:** 25 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/number-of-closed-islands/](https://leetcode.com/problems/number-of-closed-islands/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI)\n\n---\n\n## Problem Summary\n\nGiven a 2D `grid` consists of `0`s (land) and `1`s (water). An island is a maximal 4-directionally connected group of `0`s and a closed island is an island totally (all left, top, right, bottom) surrounded by `1`s.\n\nReturn the **number of closed islands**.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]`\n- **Output:** `2`\n- **Explanation:**\n  - Islands completely enclosed by water (`1`s) are closed islands.\n  - Land connected to the boundaries of the grid cannot be surrounded by water on all four sides.\n\n#### Example 2:\n- **Input:** `grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]`\n- **Output:** `1`\n\n#### Example 3:\n- **Input:** `grid = [[1,1,1,1,1,1,1],[1,0,0,0,0,0,1],[1,0,1,1,1,0,1],[1,0,1,0,1,0,1],[1,0,1,1,1,0,1],[1,0,0,0,0,0,1],[1,1,1,1,1,1,1]]`\n- **Output:** `2`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{grid.length}, \\text{grid}[0].length \\le 100$\n- $0 \\le \\text{grid}[i][j] \\le 1$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Depth-First Search**\n- **Breadth-First Search**\n- **Union Find**\n- **Matrix**\n\n---\n\n## Approach & Intuition\n\n### 1. Eliminating Boundary-Connected Land\n\n1. **Definition of a Closed Island:**\n   - A closed island must be strictly surrounded by water (`1`s) on all 4 directions (left, right, top, bottom).\n   - If any cell in a connected land component touches the boundary of the grid ($i = 0$, $i = m - 1$, $j = 0$, or $j = n - 1$), that component can **never** be a closed island because it extends to the perimeter without water shielding that edge.\n\n2. **Step 1 — Flood Fill All Boundary Land:**\n   - Scan the first row, last row, first column, and last column.\n   - For every land cell (`grid[i][j] == 0`), initiate a Depth-First Search (DFS) / flood-fill to turn all connected land cells into water (`1`).\n   - By eliminating all boundary-connected land upfront, every remaining land cell in the grid is guaranteed to belong to a completely enclosed, closed island.\n\n3. **Step 2 — Count Internal Islands:**\n   - Iterate through the interior cells ($1 \\le i < m - 1$, $1 \\le j < n - 1$).\n   - When an unvisited land cell (`grid[i][j] == 0`) is discovered:\n     - Increment `count` by $1$.\n     - Run DFS to mark the entire closed island as visited (converting `0`s to `1`s).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(M \\times N)$\n  - Each cell is visited at most a constant number of times during the boundary elimination and internal counting phases.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(M \\times N)$\n  - In the worst case (e.g., a grid full of land), recursion call stack depth reaches $\\mathcal{O}(M \\times N)$. In-place modification uses $\\mathcal{O}(1)$ additional memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI](https://youtu.be/VsC1e6-CwG8?si=RMKS-b7NqlJXmOwI)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1254 - Number of Closed Islands\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int closedIsland(int[][] grid) {\n        int m = grid.length, n = grid[0].length;\n        for (int i = 0; i < m; i++) {\n            if (grid[i][0] == 0) dfs(grid, i, 0);\n            if (grid[i][n - 1] == 0) dfs(grid, i, n - 1);\n        }\n        for (int j = 0; j < n; j++) {\n            if (grid[0][j] == 0) dfs(grid, 0, j);\n            if (grid[m - 1][j] == 0) dfs(grid, m - 1, j);\n        }\n        int count = 0;\n        for (int i = 1; i < m - 1; i++) {\n            for (int j = 1; j < n - 1; j++) {\n                if (grid[i][j] == 0) {\n                    count++;\n                    dfs(grid, i, j);\n                }\n            }\n        }\n        return count;\n    }\n\n    private void dfs(int[][] grid, int i, int j) {\n        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] == 1) {\n            return;\n        }\n        grid[i][j] = 1;\n        dfs(grid, i + 1, j);\n        dfs(grid, i - 1, j);\n        dfs(grid, i, j + 1);\n        dfs(grid, i, j - 1);\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1254 - Number of Closed Islands\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def closedIsland(self, grid: List[List[int]]) -> int:\n        m, n = len(grid), len(grid[0])\n\n        def dfs(i: int, j: int) -> None:\n            if i < 0 or j < 0 or i >= m or j >= n or grid[i][j] == 1:\n                return\n            grid[i][j] = 1\n            dfs(i + 1, j)\n            dfs(i - 1, j)\n            dfs(i, j + 1)\n            dfs(i, j - 1)\n\n        # Flood fill boundary-connected land\n        for i in range(m):\n            if grid[i][0] == 0:\n                dfs(i, 0)\n            if grid[i][n - 1] == 0:\n                dfs(i, n - 1)\n\n        for j in range(n):\n            if grid[0][j] == 0:\n                dfs(0, j)\n            if grid[m - 1][j] == 0:\n                dfs(m - 1, j)\n\n        count = 0\n        for i in range(1, m - 1):\n            for j in range(1, n - 1):\n                if grid[i][j] == 0:\n                    count += 1\n                    dfs(i, j)\n\n        return count\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1254 - Number of Closed Islands\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int closedIsland(vector<vector<int>>& grid) {\n        int m = grid.size(), n = grid[0].size();\n\n        for (int i = 0; i < m; i++) {\n            if (grid[i][0] == 0) dfs(grid, i, 0);\n            if (grid[i][n - 1] == 0) dfs(grid, i, n - 1);\n        }\n        for (int j = 0; j < n; j++) {\n            if (grid[0][j] == 0) dfs(grid, 0, j);\n            if (grid[m - 1][j] == 0) dfs(grid, m - 1, j);\n        }\n\n        int count = 0;\n        for (int i = 1; i < m - 1; i++) {\n            for (int j = 1; j < n - 1; j++) {\n                if (grid[i][j] == 0) {\n                    count++;\n                    dfs(grid, i, j);\n                }\n            }\n        }\n        return count;\n    }\n\nprivate:\n    void dfs(vector<vector<int>>& grid, int i, int j) {\n        if (i < 0 || j < 0 || i >= (int)grid.size() || j >= (int)grid[0].size() || grid[i][j] == 1) {\n            return;\n        }\n        grid[i][j] = 1;\n        dfs(grid, i + 1, j);\n        dfs(grid, i - 1, j);\n        dfs(grid, i, j + 1);\n        dfs(grid, i, j - 1);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1254 - Number of Closed Islands\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar closedIsland = function(grid) {\n    const m = grid.length, n = grid[0].length;\n\n    const dfs = (i, j) => {\n        if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] === 1) {\n            return;\n        }\n        grid[i][j] = 1;\n        dfs(i + 1, j);\n        dfs(i - 1, j);\n        dfs(i, j + 1);\n        dfs(i, j - 1);\n    };\n\n    for (let i = 0; i < m; i++) {\n        if (grid[i][0] === 0) dfs(i, 0);\n        if (grid[i][n - 1] === 0) dfs(i, n - 1);\n    }\n    for (let j = 0; j < n; j++) {\n        if (grid[0][j] === 0) dfs(0, j);\n        if (grid[m - 1][j] === 0) dfs(m - 1, j);\n    }\n\n    let count = 0;\n    for (let i = 1; i < m - 1; i++) {\n        for (let j = 1; j < n - 1; j++) {\n            if (grid[i][j] === 0) {\n                count++;\n                dfs(i, j);\n            }\n        }\n    }\n    return count;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1254-number-of-closed-islands.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1254-number-of-closed-islands.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1254: Number of Closed Islands Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1254 (Number of Closed Islands) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(M * N) approach and detailed ex...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1254-number-of-closed-islands.jpg",
+    "keywords": [
+      "LeetCode 1254",
+      "Number of Closed Islands",
+      "LeetCode 1254 Solution",
+      "LeetCode Number of Closed Islands",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

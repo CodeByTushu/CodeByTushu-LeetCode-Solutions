@@ -1,0 +1,79 @@
+{
+  "problem_number": 1260,
+  "problem_title": "Shift 2D Grid",
+  "slug": "shift-2d-grid",
+  "solution_date": "2026-07-20",
+  "formatted_date": "20-07-2026",
+  "day_number": 20,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(M * N)",
+  "space_complexity": "O(M * N)",
+  "leetcode_url": "https://leetcode.com/problems/shift-2d-grid/",
+  "youtube_url": "https://youtu.be/AXx9c4YUOZM?si=rkj8QeQRgQDzQuLY",
+  "notes": "Optimal O(M * N) time complexity with O(M * N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a 2D `grid` of size `m x n` and an integer `k`, return the 2D grid after shifting it `k` times.\n\nIn one shift operation:\n- Element at `grid[i][j]` moves to `grid[i][j + 1]`.\n- Element at `grid[i][n - 1]` moves to `grid[i + 1][0]`.\n- Element at `grid[m - 1][n - 1]` moves to `grid[0][0]`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1`\n- **Output:** `[[9,1,2],[3,4,5],[6,7,8]]`\n- **Explanation:**\n  - Every element shifts by 1 position forward in row-major order.\n  - The last element `9` wraps around to `[0][0]`.\n\n#### Example 2:\n\n- **Input:** `grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4`\n- **Output:** `[[12,0,21,13],[3,8,1,9],[19,7,2,5],[4,6,11,10]]`\n- **Explanation:**\n  - Since $n = 4$ columns, shifting by 4 positions shifts every row down by exactly 1 row, wrapping the last row to the top.\n\n#### Example 3:\n\n- **Input:** `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 9`\n- **Output:** `[[1,2,3],[4,5,6],[7,8,9]]`\n- **Explanation:**\n  - Total cells is $3 \\times 3 = 9$. Shifting by $9$ is equivalent to shifting by $9 \\pmod 9 = 0$, leaving the grid unchanged.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i]\\text{.length}$\n- $1 \\le m \\le 50$\n- $1 \\le n \\le 50$\n- $-1000 \\le \\text{grid}[i][j] \\le 1000$\n- $0 \\le k \\le 100$\n\n---",
+    "approach_summary": "Flatten the 2D grid concept into 1D indices [0..m*n-1], apply modulo shift (idx + k) % (m * n), and map the new 1D index back to 2D coordinates (newIdx / n, newIdx % n).",
+    "full_explanation": "# LeetCode 1260: Shift 2D Grid\n\n- **Publication Date:** 20 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/shift-2d-grid/](https://leetcode.com/problems/shift-2d-grid/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/AXx9c4YUOZM?si=rkj8QeQRgQDzQuLY)\n\n---\n\n## Problem Summary\n\nGiven a 2D `grid` of size `m x n` and an integer `k`, return the 2D grid after shifting it `k` times.\n\nIn one shift operation:\n- Element at `grid[i][j]` moves to `grid[i][j + 1]`.\n- Element at `grid[i][n - 1]` moves to `grid[i + 1][0]`.\n- Element at `grid[m - 1][n - 1]` moves to `grid[0][0]`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1`\n- **Output:** `[[9,1,2],[3,4,5],[6,7,8]]`\n- **Explanation:**\n  - Every element shifts by 1 position forward in row-major order.\n  - The last element `9` wraps around to `[0][0]`.\n\n#### Example 2:\n\n- **Input:** `grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4`\n- **Output:** `[[12,0,21,13],[3,8,1,9],[19,7,2,5],[4,6,11,10]]`\n- **Explanation:**\n  - Since $n = 4$ columns, shifting by 4 positions shifts every row down by exactly 1 row, wrapping the last row to the top.\n\n#### Example 3:\n\n- **Input:** `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 9`\n- **Output:** `[[1,2,3],[4,5,6],[7,8,9]]`\n- **Explanation:**\n  - Total cells is $3 \\times 3 = 9$. Shifting by $9$ is equivalent to shifting by $9 \\pmod 9 = 0$, leaving the grid unchanged.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i]\\text{.length}$\n- $1 \\le m \\le 50$\n- $1 \\le n \\le 50$\n- $-1000 \\le \\text{grid}[i][j] \\le 1000$\n- $0 \\le k \\le 100$\n\n---\n\n## Algorithmic Approach\n\nThe problem asks us to perform cyclic shifts on a 2D grid in row-major order. We can map the 2D matrix directly to a 1D array to avoid simulating $k$ individual step-by-step movements.\n\n### 1. 1D Coordinate Flattening\n- A cell at row $i$ and column $j$ corresponds to a unique 1D index:\n  $$\\text{idx} = i \\times n + j$$\n  where total cells is $\\text{total} = m \\times n$.\n\n### 2. Modulo Optimization\n- Performing $\\text{total}$ shifts results in the original grid configuration.\n- We only need to shift by:\n  $$k = k \\pmod{\\text{total}}$$\n- The destination 1D index for cell $(i, j)$ is:\n  $$\\text{newIdx} = (\\text{idx} + k) \\pmod{\\text{total}}$$\n\n### 3. Coordinate Conversion\n- Convert $\\text{newIdx}$ back to 2D indices:\n  $$r = \\lfloor\\text{newIdx} / n\\rfloor, \\quad c = \\text{newIdx} \\pmod n$$\n- Place the original element $\\text{grid}[i][j]$ directly into $\\text{ans}[r][c]$.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(m \\times n)$ | We iterate through each of the $m \\times n$ cells once and perform $\\mathcal{O}(1)$ arithmetic operations per cell. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Beyond the resulting output matrix/list, only a few primitive integer variables are maintained. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Flatten the 2D grid concept into 1D indices [0..m*n-1], apply modulo shift (idx + k) % (m * n), and map the new 1D index back to 2D coordinates (newIdx / n, newIdx % n).",
+  "explanation": "# LeetCode 1260: Shift 2D Grid\n\n- **Publication Date:** 20 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/shift-2d-grid/](https://leetcode.com/problems/shift-2d-grid/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/AXx9c4YUOZM?si=rkj8QeQRgQDzQuLY)\n\n---\n\n## Problem Summary\n\nGiven a 2D `grid` of size `m x n` and an integer `k`, return the 2D grid after shifting it `k` times.\n\nIn one shift operation:\n- Element at `grid[i][j]` moves to `grid[i][j + 1]`.\n- Element at `grid[i][n - 1]` moves to `grid[i + 1][0]`.\n- Element at `grid[m - 1][n - 1]` moves to `grid[0][0]`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1`\n- **Output:** `[[9,1,2],[3,4,5],[6,7,8]]`\n- **Explanation:**\n  - Every element shifts by 1 position forward in row-major order.\n  - The last element `9` wraps around to `[0][0]`.\n\n#### Example 2:\n\n- **Input:** `grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4`\n- **Output:** `[[12,0,21,13],[3,8,1,9],[19,7,2,5],[4,6,11,10]]`\n- **Explanation:**\n  - Since $n = 4$ columns, shifting by 4 positions shifts every row down by exactly 1 row, wrapping the last row to the top.\n\n#### Example 3:\n\n- **Input:** `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 9`\n- **Output:** `[[1,2,3],[4,5,6],[7,8,9]]`\n- **Explanation:**\n  - Total cells is $3 \\times 3 = 9$. Shifting by $9$ is equivalent to shifting by $9 \\pmod 9 = 0$, leaving the grid unchanged.\n\n---\n\n### Constraints\n\n- $m == \\text{grid.length}$\n- $n == \\text{grid}[i]\\text{.length}$\n- $1 \\le m \\le 50$\n- $1 \\le n \\le 50$\n- $-1000 \\le \\text{grid}[i][j] \\le 1000$\n- $0 \\le k \\le 100$\n\n---\n\n## Algorithmic Approach\n\nThe problem asks us to perform cyclic shifts on a 2D grid in row-major order. We can map the 2D matrix directly to a 1D array to avoid simulating $k$ individual step-by-step movements.\n\n### 1. 1D Coordinate Flattening\n- A cell at row $i$ and column $j$ corresponds to a unique 1D index:\n  $$\\text{idx} = i \\times n + j$$\n  where total cells is $\\text{total} = m \\times n$.\n\n### 2. Modulo Optimization\n- Performing $\\text{total}$ shifts results in the original grid configuration.\n- We only need to shift by:\n  $$k = k \\pmod{\\text{total}}$$\n- The destination 1D index for cell $(i, j)$ is:\n  $$\\text{newIdx} = (\\text{idx} + k) \\pmod{\\text{total}}$$\n\n### 3. Coordinate Conversion\n- Convert $\\text{newIdx}$ back to 2D indices:\n  $$r = \\lfloor\\text{newIdx} / n\\rfloor, \\quad c = \\text{newIdx} \\pmod n$$\n- Place the original element $\\text{grid}[i][j]$ directly into $\\text{ans}[r][c]$.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(m \\times n)$ | We iterate through each of the $m \\times n$ cells once and perform $\\mathcal{O}(1)$ arithmetic operations per cell. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Beyond the resulting output matrix/list, only a few primitive integer variables are maintained. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1260 - Shift 2D Grid\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.*;\n\n/**\n * Problem: LeetCode 1260 - Shift 2D Grid\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public List<List<Integer>> shiftGrid(int[][] grid, int k) {\n        int m = grid.length;\n        int n = grid[0].length;\n        int total = m * n;\n\n        k %= total;\n\n        int[][] ans = new int[m][n];\n\n        for (int i = 0; i < m; i++) {\n            for (int j = 0; j < n; j++) {\n                int idx = i * n + j;\n                int newIdx = (idx + k) % total;\n\n                int r = newIdx / n;\n                int c = newIdx % n;\n\n                ans[r][c] = grid[i][j];\n            }\n        }\n\n        List<List<Integer>> res = new ArrayList<>();\n\n        for (int i = 0; i < m; i++) {\n            List<Integer> row = new ArrayList<>();\n            for (int j = 0; j < n; j++) {\n                row.add(ans[i][j]);\n            }\n            res.add(row);\n        }\n\n        return res;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1260 - Shift 2D Grid\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\nclass Solution:\n    def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:\n        m = len(grid)\n        n = len(grid[0])\n        total = m * n\n\n        k %= total\n\n        ans = [[0] * n for _ in range(m)]\n\n        for i in range(m):\n            for j in range(n):\n                idx = i * n + j\n                new_idx = (idx + k) % total\n\n                r = new_idx // n\n                c = new_idx % n\n\n                ans[r][c] = grid[i][j]\n\n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1260 - Shift 2D Grid\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1260 - Shift 2D Grid\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {\n        int m = grid.size();\n        int n = grid[0].size();\n        int total = m * n;\n\n        k %= total;\n\n        vector<vector<int>> ans(m, vector<int>(n));\n\n        for (int i = 0; i < m; i++) {\n            for (int j = 0; j < n; j++) {\n                int idx = i * n + j;\n                int newIdx = (idx + k) % total;\n\n                int r = newIdx / n;\n                int c = newIdx % n;\n\n                ans[r][c] = grid[i][j];\n            }\n        }\n\n        return ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1260 - Shift 2D Grid\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar shiftGrid = function(grid, k) {\n    const m = grid.length;\n    const n = grid[0].length;\n    const total = m * n;\n\n    k %= total;\n\n    const ans = Array.from({ length: m }, () => new Array(n).fill(0));\n\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            const idx = i * n + j;\n            const newIdx = (idx + k) % total;\n\n            const r = Math.floor(newIdx / n);\n            const c = newIdx % n;\n\n            ans[r][c] = grid[i][j];\n        }\n    }\n\n    return ans;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1260-shift-2d-grid.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1260-shift-2d-grid.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1260: Shift 2D Grid Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1260 (Shift 2D Grid) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(M * N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1260-shift-2d-grid.jpg",
+    "keywords": [
+      "LeetCode 1260",
+      "Shift 2D Grid",
+      "LeetCode 1260 Solution",
+      "LeetCode Shift 2D Grid",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

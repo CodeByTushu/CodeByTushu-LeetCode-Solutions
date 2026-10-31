@@ -1,0 +1,79 @@
+{
+  "problem_number": 1111,
+  "problem_title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+  "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "solution_date": "2026-09-30",
+  "formatted_date": "30-09-2026",
+  "day_number": 30,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/",
+  "youtube_url": "https://youtu.be/HH1W_e3mVg0?si=mkGpGXqxeu-Mih80",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "A string is a **valid parentheses string** (denoted VPS) if and only if it consists of `\"(\"` and `\")\"` characters only, and:\n- It is the empty string, or\n- It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are VPS's, or\n- It can be written as `(A)`, where `A` is a VPS.\n\nWe can similarly define the *nesting depth* `depth(S)` of any VPS `S` as follows:\n- `depth(\"\") = 0`\n- `depth(A + B) = max(depth(A), depth(B))`, where `A` and `B` are VPS's\n- `depth(\"(\" + A + \")\") = 1 + depth(A)`, where `A` is a VPS.\n\nGiven a VPS `seq`, split it into two disjoint subsequences `A` and `B`, such that `A` and `B` are VPS's (and `A.length + B.length = seq.length`).\n\nNow choose any such `A` and `B` such that `max(depth(A), depth(B))` is the minimum possible value.\n\nReturn an `answer` array (of length `seq.length`) that encodes such a choice of `A` and `B`: `answer[i] = 0` if `seq[i]` is part of `A`, else `answer[i] = 1`. Note that even though multiple answers may exist, you may return any of them.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `seq = \"(()())\"`\n- **Output:** `[0,1,1,1,1,0]` (or any valid optimal split such as `[1,0,0,0,0,1]`)\n\n#### Example 2:\n\n- **Input:** `seq = \"()(())()\"`\n- **Output:** `[0,0,0,1,1,0,1,1]`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{seq.size} \\le 10000$\n\n---",
+    "approach_summary": "Assign parentheses based on the parity of their nesting depth (depth % 2) so that alternating nesting levels are distributed evenly between the two subsequences.",
+    "full_explanation": "# LeetCode 1111: Maximum Nesting Depth of Two Valid Parentheses Strings\n\n- **Publication Date:** 30 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/HH1W_e3mVg0?si=mkGpGXqxeu-Mih80)\n\n---\n\n## Problem Summary\n\nA string is a **valid parentheses string** (denoted VPS) if and only if it consists of `\"(\"` and `\")\"` characters only, and:\n- It is the empty string, or\n- It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are VPS's, or\n- It can be written as `(A)`, where `A` is a VPS.\n\nWe can similarly define the *nesting depth* `depth(S)` of any VPS `S` as follows:\n- `depth(\"\") = 0`\n- `depth(A + B) = max(depth(A), depth(B))`, where `A` and `B` are VPS's\n- `depth(\"(\" + A + \")\") = 1 + depth(A)`, where `A` is a VPS.\n\nGiven a VPS `seq`, split it into two disjoint subsequences `A` and `B`, such that `A` and `B` are VPS's (and `A.length + B.length = seq.length`).\n\nNow choose any such `A` and `B` such that `max(depth(A), depth(B))` is the minimum possible value.\n\nReturn an `answer` array (of length `seq.length`) that encodes such a choice of `A` and `B`: `answer[i] = 0` if `seq[i]` is part of `A`, else `answer[i] = 1`. Note that even though multiple answers may exist, you may return any of them.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `seq = \"(()())\"`\n- **Output:** `[0,1,1,1,1,0]` (or any valid optimal split such as `[1,0,0,0,0,1]`)\n\n#### Example 2:\n\n- **Input:** `seq = \"()(())()\"`\n- **Output:** `[0,0,0,1,1,0,1,1]`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{seq.size} \\le 10000$\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Greedy**\n\n---\n\n## Intuition and Approach\n\n### Core Idea:\nThe total nesting depth of the string is distributed among nested parentheses. To minimize $\\max(\\text{depth}(A), \\text{depth}(B))$, the optimal strategy is to divide the nesting layers evenly between subsequence $A$ and subsequence $B$.\nSpecifically:\n- Parentheses at **odd** nesting depths can be assigned to one group (e.g., group 1).\n- Parentheses at **even** nesting depths can be assigned to the other group (e.g., group 0).\n\n### Algorithm:\n1. Initialize an integer `depth = 0`.\n2. Iterate through each character `seq[i]`:\n   - If `seq[i] == '('`:\n     - Increment `depth++` (entering a deeper nesting level).\n     - Assign `ans[i] = depth % 2`.\n   - If `seq[i] == ')'`:\n     - Assign `ans[i] = depth % 2` (matching the depth level of its opening bracket).\n     - Decrement `depth--` (exiting this nesting level).\n3. Return `ans`.\n\nSince matching pairs of parentheses share the exact same nesting level, both subsequence $A$ and subsequence $B$ are guaranteed to be valid parentheses strings (VPS), and the maximum depth is bounded by $\\lceil \\text{depth} / 2 \\rceil$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the string of length $N \\le 10000$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - No auxiliary data structures used; only a primitive integer variable `depth` is maintained (excluding the return array).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Assign parentheses based on the parity of their nesting depth (depth % 2) so that alternating nesting levels are distributed evenly between the two subsequences.",
+  "explanation": "# LeetCode 1111: Maximum Nesting Depth of Two Valid Parentheses Strings\n\n- **Publication Date:** 30 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/HH1W_e3mVg0?si=mkGpGXqxeu-Mih80)\n\n---\n\n## Problem Summary\n\nA string is a **valid parentheses string** (denoted VPS) if and only if it consists of `\"(\"` and `\")\"` characters only, and:\n- It is the empty string, or\n- It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are VPS's, or\n- It can be written as `(A)`, where `A` is a VPS.\n\nWe can similarly define the *nesting depth* `depth(S)` of any VPS `S` as follows:\n- `depth(\"\") = 0`\n- `depth(A + B) = max(depth(A), depth(B))`, where `A` and `B` are VPS's\n- `depth(\"(\" + A + \")\") = 1 + depth(A)`, where `A` is a VPS.\n\nGiven a VPS `seq`, split it into two disjoint subsequences `A` and `B`, such that `A` and `B` are VPS's (and `A.length + B.length = seq.length`).\n\nNow choose any such `A` and `B` such that `max(depth(A), depth(B))` is the minimum possible value.\n\nReturn an `answer` array (of length `seq.length`) that encodes such a choice of `A` and `B`: `answer[i] = 0` if `seq[i]` is part of `A`, else `answer[i] = 1`. Note that even though multiple answers may exist, you may return any of them.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `seq = \"(()())\"`\n- **Output:** `[0,1,1,1,1,0]` (or any valid optimal split such as `[1,0,0,0,0,1]`)\n\n#### Example 2:\n\n- **Input:** `seq = \"()(())()\"`\n- **Output:** `[0,0,0,1,1,0,1,1]`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{seq.size} \\le 10000$\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n- **Greedy**\n\n---\n\n## Intuition and Approach\n\n### Core Idea:\nThe total nesting depth of the string is distributed among nested parentheses. To minimize $\\max(\\text{depth}(A), \\text{depth}(B))$, the optimal strategy is to divide the nesting layers evenly between subsequence $A$ and subsequence $B$.\nSpecifically:\n- Parentheses at **odd** nesting depths can be assigned to one group (e.g., group 1).\n- Parentheses at **even** nesting depths can be assigned to the other group (e.g., group 0).\n\n### Algorithm:\n1. Initialize an integer `depth = 0`.\n2. Iterate through each character `seq[i]`:\n   - If `seq[i] == '('`:\n     - Increment `depth++` (entering a deeper nesting level).\n     - Assign `ans[i] = depth % 2`.\n   - If `seq[i] == ')'`:\n     - Assign `ans[i] = depth % 2` (matching the depth level of its opening bracket).\n     - Decrement `depth--` (exiting this nesting level).\n3. Return `ans`.\n\nSince matching pairs of parentheses share the exact same nesting level, both subsequence $A$ and subsequence $B$ are guaranteed to be valid parentheses strings (VPS), and the maximum depth is bounded by $\\lceil \\text{depth} / 2 \\rceil$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the string of length $N \\le 10000$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - No auxiliary data structures used; only a primitive integer variable `depth` is maintained (excluding the return array).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int[] maxDepthAfterSplit(String seq) {\n        int n = seq.length();\n        int[] ans = new int[n];\n        int depth = 0;\n\n        for (int i = 0; i < n; i++) {\n            if (seq.charAt(i) == '(') {\n                depth++;\n                ans[i] = depth % 2;\n            } else {\n                ans[i] = depth % 2;\n                depth--;\n            }\n        }\n\n        return ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def maxDepthAfterSplit(self, seq: str) -> list[int]:\n        n = len(seq)\n        ans = [0] * n\n        depth = 0\n\n        for i, char in enumerate(seq):\n            if char == '(':\n                depth += 1\n                ans[i] = depth % 2\n            else:\n                ans[i] = depth % 2\n                depth -= 1\n\n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n\n/**\n * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    std::vector<int> maxDepthAfterSplit(std::string seq) {\n        int n = seq.size();\n        std::vector<int> ans(n);\n        int depth = 0;\n\n        for (int i = 0; i < n; ++i) {\n            if (seq[i] == '(') {\n                depth++;\n                ans[i] = depth % 2;\n            } else {\n                ans[i] = depth % 2;\n                depth--;\n            }\n        }\n\n        return ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1111 - Maximum Nesting Depth of Two Valid Parentheses Strings\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxDepthAfterSplit = function(seq) {\n    const n = seq.length;\n    const ans = new Array(n);\n    let depth = 0;\n\n    for (let i = 0; i < n; i++) {\n        if (seq[i] === '(') {\n            depth++;\n            ans[i] = depth % 2;\n        } else {\n            ans[i] = depth % 2;\n            depth--;\n        }\n    }\n\n    return ans;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1111-maximum-nesting-depth-of-two-valid-parentheses-strings.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1111-maximum-nesting-depth-of-two-valid-parentheses-strings.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1111: Maximum Nesting Depth of Two Valid Parentheses Strin...",
+    "meta_description": "Master LeetCode 1111 (Maximum Nesting Depth of Two Valid Parentheses Strings) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1111-maximum-nesting-depth-of-two-valid-parentheses-strings.jpg",
+    "keywords": [
+      "LeetCode 1111",
+      "Maximum Nesting Depth of Two Valid Parentheses Strings",
+      "LeetCode 1111 Solution",
+      "LeetCode Maximum Nesting Depth of Two Valid Parentheses Strings",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

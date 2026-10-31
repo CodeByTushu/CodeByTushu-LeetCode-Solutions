@@ -1,0 +1,79 @@
+{
+  "problem_number": 2833,
+  "problem_title": "Furthest Point From Origin",
+  "slug": "furthest-point-from-origin",
+  "solution_date": "2026-04-24",
+  "formatted_date": "24-04-2026",
+  "day_number": 24,
+  "month": "April",
+  "month_num": 4,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/furthest-point-from-origin/",
+  "youtube_url": "https://youtu.be/PO0y5ruMki8",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a string `moves` of length `n` consisting only of characters `'L'`, `'R'`, and `'_'`. The string represents your movement on a number line starting from the origin `0`.\n\nIn the $i^{\\text{th}}$ move, you can choose one of the following directions:\n- move to the left if `moves[i] = 'L'` or `moves[i] = '_'`\n- move to the right if `moves[i] = 'R'` or `moves[i] = '_'`\n\nReturn *the **distance from the origin** of the furthest point you can get to after `n` moves*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `moves = \"L_RL__R\"`\n- **Output:** `3`\n- **Explanation:**\n  - The furthest point we can reach from the origin $0$ is point $-3$ through the following sequence of moves: `\"LLRLLLR\"`.\n  - The absolute distance from $0$ is $|-3| = 3$.\n\n#### Example 2:\n- **Input:** `moves = \"_R__LL_\"`\n- **Output:** `5`\n- **Explanation:**\n  - The furthest point we can reach from the origin $0$ is point $-5$ through the following sequence of moves: `\"LRLLLLL\"`.\n  - The absolute distance from $0$ is $|-5| = 5$.\n\n#### Example 3:\n- **Input:** `moves = \"_______\"`\n- **Output:** `7`\n- **Explanation:**\n  - Choosing to move left on every step gives point $-7$, and choosing right gives point $+7$. In both cases, the furthest distance is $7$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{moves.length} == n \\le 50$\n- `moves` consists only of characters `'L'`, `'R'`, and `'_'`.\n\n---",
+    "approach_summary": "Count occurrences of 'L', 'R', and '_' and greedily assign all blanks in the dominant direction via |countL - countR| + countBlank.",
+    "full_explanation": "# LeetCode 2833: Furthest Point From Origin\n\n- **Publication Date:** 24 April 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/furthest-point-from-origin/](https://leetcode.com/problems/furthest-point-from-origin/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/PO0y5ruMki8)\n\n---\n\n## Problem Summary\n\nYou are given a string `moves` of length `n` consisting only of characters `'L'`, `'R'`, and `'_'`. The string represents your movement on a number line starting from the origin `0`.\n\nIn the $i^{\\text{th}}$ move, you can choose one of the following directions:\n- move to the left if `moves[i] = 'L'` or `moves[i] = '_'`\n- move to the right if `moves[i] = 'R'` or `moves[i] = '_'`\n\nReturn *the **distance from the origin** of the furthest point you can get to after `n` moves*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `moves = \"L_RL__R\"`\n- **Output:** `3`\n- **Explanation:**\n  - The furthest point we can reach from the origin $0$ is point $-3$ through the following sequence of moves: `\"LLRLLLR\"`.\n  - The absolute distance from $0$ is $|-3| = 3$.\n\n#### Example 2:\n- **Input:** `moves = \"_R__LL_\"`\n- **Output:** `5`\n- **Explanation:**\n  - The furthest point we can reach from the origin $0$ is point $-5$ through the following sequence of moves: `\"LRLLLLL\"`.\n  - The absolute distance from $0$ is $|-5| = 5$.\n\n#### Example 3:\n- **Input:** `moves = \"_______\"`\n- **Output:** `7`\n- **Explanation:**\n  - Choosing to move left on every step gives point $-7$, and choosing right gives point $+7$. In both cases, the furthest distance is $7$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{moves.length} == n \\le 50$\n- `moves` consists only of characters `'L'`, `'R'`, and `'_'`.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Counting**\n- **Greedy**\n\n---\n\n## Approach & Intuition\n\n### 1. Directional Displacements\n\n- Every `'L'` forces a $-1$ step along the number line.\n- Every `'R'` forces a $+1$ step along the number line.\n- Every `'_'` provides a wildcard choice: we can choose either $-1$ (left) or $+1$ (right).\n\nLet:\n- $c_L$ = count of `'L'`\n- $c_R$ = count of `'R'`\n- $c_{\\_}$ = count of `'_'`\n\nWithout the blanks, our net displacement is $c_R - c_L$.\n\n### 2. Greedy Wildcard Assignment\n\nTo maximize our final distance from the origin $| \\text{position} |$:\n- If we choose to maximize our distance in the **positive** direction (right):\n  $$\\text{dist}_{\\text{right}} = (c_R + c_{\\_}) - c_L = (c_R - c_L) + c_{\\_}$$\n- If we choose to maximize our distance in the **negative** direction (left):\n  $$\\text{dist}_{\\text{left}} = (c_L + c_{\\_}) - c_R = (c_L - c_R) + c_{\\_}$$\n- Taking the maximum of both orientations:\n  $$\\max(\\text{dist}_{\\text{right}}, \\text{dist}_{\\text{left}}) = |c_L - c_R| + c_{\\_}$$\n\nThus, a single pass counting occurrences of `'L'`, `'R'`, and `'_'` yields the answer immediately in $\\mathcal{O}(N)$ time and $\\mathcal{O}(1)$ space.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan over the string of length $N \\le 50$ suffices. Runs in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only scalar counters are used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/PO0y5ruMki8](https://youtu.be/PO0y5ruMki8)\n"
+  },
+  "approach_summary": "Count occurrences of 'L', 'R', and '_' and greedily assign all blanks in the dominant direction via |countL - countR| + countBlank.",
+  "explanation": "# LeetCode 2833: Furthest Point From Origin\n\n- **Publication Date:** 24 April 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/furthest-point-from-origin/](https://leetcode.com/problems/furthest-point-from-origin/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/PO0y5ruMki8)\n\n---\n\n## Problem Summary\n\nYou are given a string `moves` of length `n` consisting only of characters `'L'`, `'R'`, and `'_'`. The string represents your movement on a number line starting from the origin `0`.\n\nIn the $i^{\\text{th}}$ move, you can choose one of the following directions:\n- move to the left if `moves[i] = 'L'` or `moves[i] = '_'`\n- move to the right if `moves[i] = 'R'` or `moves[i] = '_'`\n\nReturn *the **distance from the origin** of the furthest point you can get to after `n` moves*.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `moves = \"L_RL__R\"`\n- **Output:** `3`\n- **Explanation:**\n  - The furthest point we can reach from the origin $0$ is point $-3$ through the following sequence of moves: `\"LLRLLLR\"`.\n  - The absolute distance from $0$ is $|-3| = 3$.\n\n#### Example 2:\n- **Input:** `moves = \"_R__LL_\"`\n- **Output:** `5`\n- **Explanation:**\n  - The furthest point we can reach from the origin $0$ is point $-5$ through the following sequence of moves: `\"LRLLLLL\"`.\n  - The absolute distance from $0$ is $|-5| = 5$.\n\n#### Example 3:\n- **Input:** `moves = \"_______\"`\n- **Output:** `7`\n- **Explanation:**\n  - Choosing to move left on every step gives point $-7$, and choosing right gives point $+7$. In both cases, the furthest distance is $7$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{moves.length} == n \\le 50$\n- `moves` consists only of characters `'L'`, `'R'`, and `'_'`.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Counting**\n- **Greedy**\n\n---\n\n## Approach & Intuition\n\n### 1. Directional Displacements\n\n- Every `'L'` forces a $-1$ step along the number line.\n- Every `'R'` forces a $+1$ step along the number line.\n- Every `'_'` provides a wildcard choice: we can choose either $-1$ (left) or $+1$ (right).\n\nLet:\n- $c_L$ = count of `'L'`\n- $c_R$ = count of `'R'`\n- $c_{\\_}$ = count of `'_'`\n\nWithout the blanks, our net displacement is $c_R - c_L$.\n\n### 2. Greedy Wildcard Assignment\n\nTo maximize our final distance from the origin $| \\text{position} |$:\n- If we choose to maximize our distance in the **positive** direction (right):\n  $$\\text{dist}_{\\text{right}} = (c_R + c_{\\_}) - c_L = (c_R - c_L) + c_{\\_}$$\n- If we choose to maximize our distance in the **negative** direction (left):\n  $$\\text{dist}_{\\text{left}} = (c_L + c_{\\_}) - c_R = (c_L - c_R) + c_{\\_}$$\n- Taking the maximum of both orientations:\n  $$\\max(\\text{dist}_{\\text{right}}, \\text{dist}_{\\text{left}}) = |c_L - c_R| + c_{\\_}$$\n\nThus, a single pass counting occurrences of `'L'`, `'R'`, and `'_'` yields the answer immediately in $\\mathcal{O}(N)$ time and $\\mathcal{O}(1)$ space.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan over the string of length $N \\le 50$ suffices. Runs in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only scalar counters are used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/PO0y5ruMki8](https://youtu.be/PO0y5ruMki8)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2833 - Furthest Point From Origin\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int furthestDistanceFromOrigin(String moves) {\n        int countL = 0;\n        int countR = 0;\n        int countBlank = 0;\n        \n        int n = moves.length();\n        for (int i = 0; i < n; i++) {\n            char c = moves.charAt(i);\n            if (c == 'L') {\n                countL++;\n            } else if (c == 'R') {\n                countR++;\n            } else {\n                countBlank++;\n            }\n        }\n        \n        return Math.abs(countL - countR) + countBlank;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2833 - Furthest Point From Origin\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def furthestDistanceFromOrigin(self, moves: str) -> int:\n        count_l = moves.count('L')\n        count_r = moves.count('R')\n        count_blank = moves.count('_')\n        return abs(count_l - count_r) + count_blank\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2833 - Furthest Point From Origin\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <cmath>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int furthestDistanceFromOrigin(string moves) {\n        int countL = 0;\n        int countR = 0;\n        int countBlank = 0;\n        \n        for (char c : moves) {\n            if (c == 'L') {\n                countL++;\n            } else if (c == 'R') {\n                countR++;\n            } else {\n                countBlank++;\n            }\n        }\n        \n        return abs(countL - countR) + countBlank;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2833 - Furthest Point From Origin\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {string} moves\n * @return {number}\n */\nvar furthestDistanceFromOrigin = function(moves) {\n    let countL = 0;\n    let countR = 0;\n    let countBlank = 0;\n\n    for (let i = 0; i < moves.length; i++) {\n        const c = moves.charCodeAt(i);\n        if (c === 76) {        // 'L'\n            countL++;\n        } else if (c === 82) { // 'R'\n            countR++;\n        } else {               // '_'\n            countBlank++;\n        }\n    }\n\n    return Math.abs(countL - countR) + countBlank;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Counting",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2833-furthest-point-from-origin.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2833-furthest-point-from-origin.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2833: Furthest Point From Origin Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 2833 (Furthest Point From Origin) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed expl...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2833-furthest-point-from-origin.jpg",
+    "keywords": [
+      "LeetCode 2833",
+      "Furthest Point From Origin",
+      "LeetCode 2833 Solution",
+      "LeetCode Furthest Point From Origin",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

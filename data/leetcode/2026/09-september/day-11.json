@@ -1,0 +1,79 @@
+{
+  "problem_number": 3483,
+  "problem_title": "Unique 3-Digit Even Numbers",
+  "slug": "unique-3-digit-even-numbers",
+  "solution_date": "2026-09-11",
+  "formatted_date": "11-09-2026",
+  "day_number": 11,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N³)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/unique-3-digit-even-numbers/",
+  "youtube_url": "https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1",
+  "notes": "Optimal O(N³) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n**Note:**\n- Each copy of a digit can only be used **once per number**.\n- The number formed **must not have leading zeros** (it must lie in the range $[100, 998]$).\n- The number formed **must be even** (its units digit must be even).\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1,2,3,4]`\n- **Output:** `12`\n- **Explanation:**\n  The 12 distinct 3-digit even numbers that can be formed are:\n  `124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432`.\n  Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n#### Example 2:\n- **Input:** `digits = [0,2,2]`\n- **Output:** `2`\n- **Explanation:**\n  The only 3-digit even numbers that can be formed are `202` and `220`.\n  Note that digit 2 can be used twice because it appears twice in the array.\n\n#### Example 3:\n- **Input:** `digits = [6,6,6]`\n- **Output:** `1`\n- **Explanation:**\n  Only `666` can be formed.\n\n#### Example 4:\n- **Input:** `digits = [1,3,5]`\n- **Output:** `0`\n- **Explanation:**\n  No even 3-digit numbers can be formed.\n\n---\n\n### Constraints\n\n- $3 \\le \\text{digits.length} \\le 10$\n- $0 \\le \\text{digits}[i] \\le 9$\n\n---",
+    "approach_summary": "Iterate through all unique index triplets (i, j, k) with distinct indices. Verify that digits[i] != 0 and digits[k] is even. Add the resulting 3-digit number to a set to remove duplicates, returning the set size.",
+    "full_explanation": "# LeetCode 3483: Unique 3-Digit Even Numbers\n\n- **Publication Date:** 11 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/unique-3-digit-even-numbers/](https://leetcode.com/problems/unique-3-digit-even-numbers/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n**Note:**\n- Each copy of a digit can only be used **once per number**.\n- The number formed **must not have leading zeros** (it must lie in the range $[100, 998]$).\n- The number formed **must be even** (its units digit must be even).\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1,2,3,4]`\n- **Output:** `12`\n- **Explanation:**\n  The 12 distinct 3-digit even numbers that can be formed are:\n  `124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432`.\n  Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n#### Example 2:\n- **Input:** `digits = [0,2,2]`\n- **Output:** `2`\n- **Explanation:**\n  The only 3-digit even numbers that can be formed are `202` and `220`.\n  Note that digit 2 can be used twice because it appears twice in the array.\n\n#### Example 3:\n- **Input:** `digits = [6,6,6]`\n- **Output:** `1`\n- **Explanation:**\n  Only `666` can be formed.\n\n#### Example 4:\n- **Input:** `digits = [1,3,5]`\n- **Output:** `0`\n- **Explanation:**\n  No even 3-digit numbers can be formed.\n\n---\n\n### Constraints\n\n- $3 \\le \\text{digits.length} \\le 10$\n- $0 \\le \\text{digits}[i] \\le 9$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Enumeration**\n\n---\n\n## Approach & Intuition (Brute Force Permutation & Set Deduplication)\n\n1. **Problem Properties**:\n   - We must select 3 distinct indices $(i, j, k)$ from the given `digits` array such that:\n     1. $i \\ne j$, $j \\ne k$, and $i \\ne k$.\n     2. $\\text{digits}[i] \\ne 0$ (no leading zero).\n     3. $\\text{digits}[k] \\pmod 2 == 0$ (even number requirement).\n   - Form the number:\n     $$\\text{num} = \\text{digits}[i] \\times 100 + \\text{digits}[j] \\times 10 + \\text{digits}[k]$$\n   - Insert `num` into a hash set to automatically filter out duplicate numbers arising from duplicate digits in the input.\n\n2. **Feasibility Analysis**:\n   - The length of `digits` is at most $10$ ($N \\le 10$).\n   - A 3-nested loop visits at most $10 \\times 10 \\times 10 = 1,000$ index triplets.\n   - Validating the three conditions and inserting into the hash set takes $\\mathcal{O}(1)$ time per triplet.\n   - The size of the set at the end gives the exact count of unique 3-digit even numbers.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^3)$ where $N = \\text{digits.length}$\n  - For $N \\le 10$, the loop runs at most $10^3 = 1,000$ iterations, which executes in less than $1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - The maximum number of 3-digit even numbers in the range $[100, 998]$ is $450$. The hash set stores at most $450$ integers, representing strictly bounded $\\mathcal{O}(1)$ auxiliary space.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Iterate through all unique index triplets (i, j, k) with distinct indices. Verify that digits[i] != 0 and digits[k] is even. Add the resulting 3-digit number to a set to remove duplicates, returning the set size.",
+  "explanation": "# LeetCode 3483: Unique 3-Digit Even Numbers\n\n- **Publication Date:** 11 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/unique-3-digit-even-numbers/](https://leetcode.com/problems/unique-3-digit-even-numbers/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n**Note:**\n- Each copy of a digit can only be used **once per number**.\n- The number formed **must not have leading zeros** (it must lie in the range $[100, 998]$).\n- The number formed **must be even** (its units digit must be even).\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `digits = [1,2,3,4]`\n- **Output:** `12`\n- **Explanation:**\n  The 12 distinct 3-digit even numbers that can be formed are:\n  `124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432`.\n  Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n#### Example 2:\n- **Input:** `digits = [0,2,2]`\n- **Output:** `2`\n- **Explanation:**\n  The only 3-digit even numbers that can be formed are `202` and `220`.\n  Note that digit 2 can be used twice because it appears twice in the array.\n\n#### Example 3:\n- **Input:** `digits = [6,6,6]`\n- **Output:** `1`\n- **Explanation:**\n  Only `666` can be formed.\n\n#### Example 4:\n- **Input:** `digits = [1,3,5]`\n- **Output:** `0`\n- **Explanation:**\n  No even 3-digit numbers can be formed.\n\n---\n\n### Constraints\n\n- $3 \\le \\text{digits.length} \\le 10$\n- $0 \\le \\text{digits}[i] \\le 9$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Enumeration**\n\n---\n\n## Approach & Intuition (Brute Force Permutation & Set Deduplication)\n\n1. **Problem Properties**:\n   - We must select 3 distinct indices $(i, j, k)$ from the given `digits` array such that:\n     1. $i \\ne j$, $j \\ne k$, and $i \\ne k$.\n     2. $\\text{digits}[i] \\ne 0$ (no leading zero).\n     3. $\\text{digits}[k] \\pmod 2 == 0$ (even number requirement).\n   - Form the number:\n     $$\\text{num} = \\text{digits}[i] \\times 100 + \\text{digits}[j] \\times 10 + \\text{digits}[k]$$\n   - Insert `num` into a hash set to automatically filter out duplicate numbers arising from duplicate digits in the input.\n\n2. **Feasibility Analysis**:\n   - The length of `digits` is at most $10$ ($N \\le 10$).\n   - A 3-nested loop visits at most $10 \\times 10 \\times 10 = 1,000$ index triplets.\n   - Validating the three conditions and inserting into the hash set takes $\\mathcal{O}(1)$ time per triplet.\n   - The size of the set at the end gives the exact count of unique 3-digit even numbers.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N^3)$ where $N = \\text{digits.length}$\n  - For $N \\le 10$, the loop runs at most $10^3 = 1,000$ iterations, which executes in less than $1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - The maximum number of 3-digit even numbers in the range $[100, 998]$ is $450$. The hash set stores at most $450$ integers, representing strictly bounded $\\mathcal{O}(1)$ auxiliary space.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1](https://youtu.be/zd7LLk7yjsA?si=i5tTg5y5Lob96hS1)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.HashSet;\nimport java.util.Set;\n\n/**\n * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int totalNumbers(int[] digits) {\n        Set<Integer> result = new HashSet<>();\n        int n = digits.length;\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                for (int k = 0; k < n; k++) {\n                    if (i == j || j == k || i == k) continue;\n                    if (digits[i] == 0) continue;\n                    if (digits[k] % 2 != 0) continue;\n                    int num = digits[i] * 100 + digits[j] * 10 + digits[k];\n                    result.add(num);\n                }\n            }\n        }\n        return result.size();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3483 - Unique 3-Digit Even Numbers\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def totalNumbers(self, digits: List[int]) -> int:\n        result = set()\n        n = len(digits)\n        for i in range(n):\n            for j in range(n):\n                for k in range(n):\n                    if i == j or j == k or i == k:\n                        continue\n                    if digits[i] == 0:\n                        continue\n                    if digits[k] % 2 != 0:\n                        continue\n                    num = digits[i] * 100 + digits[j] * 10 + digits[k]\n                    result.add(num)\n        return len(result)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <unordered_set>\n\n/**\n * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int totalNumbers(std::vector<int>& digits) {\n        std::unordered_set<int> result;\n        int n = digits.size();\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                for (int k = 0; k < n; k++) {\n                    if (i == j || j == k || i == k) continue;\n                    if (digits[i] == 0) continue;\n                    if (digits[k] % 2 != 0) continue;\n                    int num = digits[i] * 100 + digits[j] * 10 + digits[k];\n                    result.insert(num);\n                }\n            }\n        }\n        return result.size();\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3483 - Unique 3-Digit Even Numbers\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar totalNumbers = function(digits) {\n    const result = new Set();\n    const n = digits.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n; j++) {\n            for (let k = 0; k < n; k++) {\n                if (i === j || j === k || i === k) continue;\n                if (digits[i] === 0) continue;\n                if (digits[k] % 2 !== 0) continue;\n                const num = digits[i] * 100 + digits[j] * 10 + digits[k];\n                result.add(num);\n            }\n        }\n    }\n    return result.size;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3483-unique-3-digit-even-numbers.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3483-unique-3-digit-even-numbers.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3483: Unique 3-Digit Even Numbers Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3483 (Unique 3-Digit Even Numbers) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N³) approach and detailed ex...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3483-unique-3-digit-even-numbers.jpg",
+    "keywords": [
+      "LeetCode 3483",
+      "Unique 3-Digit Even Numbers",
+      "LeetCode 3483 Solution",
+      "LeetCode Unique 3-Digit Even Numbers",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

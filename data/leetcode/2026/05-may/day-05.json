@@ -1,0 +1,78 @@
+{
+  "problem_number": 61,
+  "problem_title": "Rotate List",
+  "slug": "rotate-list",
+  "solution_date": "2026-05-05",
+  "formatted_date": "05-05-2026",
+  "day_number": 5,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/rotate-list/",
+  "youtube_url": "https://youtu.be/gjZTwxOHhUY",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given the `head` of a linked list, rotate the list to the right by `k` places.\n\n---\n\n### Examples\n\n#### Example 1:\n```text\nOriginal: 1 -> 2 -> 3 -> 4 -> 5\nRotate 1: 5 -> 1 -> 2 -> 3 -> 4\nRotate 2: 4 -> 5 -> 1 -> 2 -> 3\n```\n- **Input:** `head = [1,2,3,4,5]`, `k = 2`\n- **Output:** `[4,5,1,2,3]`\n\n#### Example 2:\n```text\nOriginal: 0 -> 1 -> 2\nRotate 1: 2 -> 0 -> 1\nRotate 2: 1 -> 2 -> 0\nRotate 3: 0 -> 1 -> 2\nRotate 4: 2 -> 0 -> 1\n```\n- **Input:** `head = [0,1,2]`, `k = 4`\n- **Output:** `[2,0,1]`\n\n---\n\n### Constraints\n\n- The number of nodes in the list is in the range `[0, 500]`.\n- $-100 \\le \\text{Node.val} \\le 100$\n- $0 \\le k \\le 2 \\times 10^9$\n\n---",
+    "approach_summary": "Count length L and link tail to head forming a circular list. Compute k = k % L, advance L - k steps to find the new tail, set new head, and break the cycle.",
+    "full_explanation": "# LeetCode 61: Rotate List\n\n- **Publication Date:** 05 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/rotate-list/](https://leetcode.com/problems/rotate-list/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/gjZTwxOHhUY)\n\n---\n\n## Problem Summary\n\nGiven the `head` of a linked list, rotate the list to the right by `k` places.\n\n---\n\n### Examples\n\n#### Example 1:\n```text\nOriginal: 1 -> 2 -> 3 -> 4 -> 5\nRotate 1: 5 -> 1 -> 2 -> 3 -> 4\nRotate 2: 4 -> 5 -> 1 -> 2 -> 3\n```\n- **Input:** `head = [1,2,3,4,5]`, `k = 2`\n- **Output:** `[4,5,1,2,3]`\n\n#### Example 2:\n```text\nOriginal: 0 -> 1 -> 2\nRotate 1: 2 -> 0 -> 1\nRotate 2: 1 -> 2 -> 0\nRotate 3: 0 -> 1 -> 2\nRotate 4: 2 -> 0 -> 1\n```\n- **Input:** `head = [0,1,2]`, `k = 4`\n- **Output:** `[2,0,1]`\n\n---\n\n### Constraints\n\n- The number of nodes in the list is in the range `[0, 500]`.\n- $-100 \\le \\text{Node.val} \\le 100$\n- $0 \\le k \\le 2 \\times 10^9$\n\n---\n\n## Topics and Tags\n\n- **Linked List**\n- **Two Pointers**\n\n---\n\n## Approach & Intuition\n\n### 1. Modulo Reduction on $k$\n\nRotating a list of length $L$ by $L$ steps brings the list back to its original configuration. Since $k$ can be as large as $2 \\times 10^9$, we first calculate the length $L$ of the list and reduce $k$:\n$$k = k \\pmod{L}$$\nIf $k == 0$, or if the list has fewer than $2$ nodes (`head == null` or `head.next == null`), no rotation is needed and we return `head` directly.\n\n### 2. Forming a Circular List\n\nA very clean way to perform cyclic rotation on a singly linked list without extra pointers or arrays:\n1. Traverse to the tail of the list while counting the total length $L$.\n2. Connect `tail.next = head` to form a circular linked list.\n3. The new head after rotating right by $k$ will be the node at position $L - k$ (1-indexed from the original head).\n4. The node right before it (at position $L - k$ from `tail`) will become the **new tail**.\n5. Advance $L - k$ steps from `tail` to reach the `newTail`.\n6. Set `newHead = newTail.next`.\n7. Break the cycle by setting `newTail.next = null`.\n8. Return `newHead`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - First pass to determine the length $L$ and find `tail` takes $\\mathcal{O}(N)$ time.\n  - Second pass moves at most $L$ steps to find `newTail`.\n  - Overall time complexity is $\\mathcal{O}(N)$, which easily processes lists up to length $500$ in sub-millisecond time.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - The rotation is performed strictly in-place by updating node references without creating additional nodes or arrays.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/gjZTwxOHhUY](https://youtu.be/gjZTwxOHhUY)\n"
+  },
+  "approach_summary": "Count length L and link tail to head forming a circular list. Compute k = k % L, advance L - k steps to find the new tail, set new head, and break the cycle.",
+  "explanation": "# LeetCode 61: Rotate List\n\n- **Publication Date:** 05 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/rotate-list/](https://leetcode.com/problems/rotate-list/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/gjZTwxOHhUY)\n\n---\n\n## Problem Summary\n\nGiven the `head` of a linked list, rotate the list to the right by `k` places.\n\n---\n\n### Examples\n\n#### Example 1:\n```text\nOriginal: 1 -> 2 -> 3 -> 4 -> 5\nRotate 1: 5 -> 1 -> 2 -> 3 -> 4\nRotate 2: 4 -> 5 -> 1 -> 2 -> 3\n```\n- **Input:** `head = [1,2,3,4,5]`, `k = 2`\n- **Output:** `[4,5,1,2,3]`\n\n#### Example 2:\n```text\nOriginal: 0 -> 1 -> 2\nRotate 1: 2 -> 0 -> 1\nRotate 2: 1 -> 2 -> 0\nRotate 3: 0 -> 1 -> 2\nRotate 4: 2 -> 0 -> 1\n```\n- **Input:** `head = [0,1,2]`, `k = 4`\n- **Output:** `[2,0,1]`\n\n---\n\n### Constraints\n\n- The number of nodes in the list is in the range `[0, 500]`.\n- $-100 \\le \\text{Node.val} \\le 100$\n- $0 \\le k \\le 2 \\times 10^9$\n\n---\n\n## Topics and Tags\n\n- **Linked List**\n- **Two Pointers**\n\n---\n\n## Approach & Intuition\n\n### 1. Modulo Reduction on $k$\n\nRotating a list of length $L$ by $L$ steps brings the list back to its original configuration. Since $k$ can be as large as $2 \\times 10^9$, we first calculate the length $L$ of the list and reduce $k$:\n$$k = k \\pmod{L}$$\nIf $k == 0$, or if the list has fewer than $2$ nodes (`head == null` or `head.next == null`), no rotation is needed and we return `head` directly.\n\n### 2. Forming a Circular List\n\nA very clean way to perform cyclic rotation on a singly linked list without extra pointers or arrays:\n1. Traverse to the tail of the list while counting the total length $L$.\n2. Connect `tail.next = head` to form a circular linked list.\n3. The new head after rotating right by $k$ will be the node at position $L - k$ (1-indexed from the original head).\n4. The node right before it (at position $L - k$ from `tail`) will become the **new tail**.\n5. Advance $L - k$ steps from `tail` to reach the `newTail`.\n6. Set `newHead = newTail.next`.\n7. Break the cycle by setting `newTail.next = null`.\n8. Return `newHead`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - First pass to determine the length $L$ and find `tail` takes $\\mathcal{O}(N)$ time.\n  - Second pass moves at most $L$ steps to find `newTail`.\n  - Overall time complexity is $\\mathcal{O}(N)$, which easily processes lists up to length $500$ in sub-millisecond time.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - The rotation is performed strictly in-place by updating node references without creating additional nodes or arrays.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/gjZTwxOHhUY](https://youtu.be/gjZTwxOHhUY)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 61 - Rotate List\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\n/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\n/**\n * Problem: LeetCode 61 - Rotate List\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public ListNode rotateRight(ListNode head, int k) {\n        if (head == null || head.next == null || k == 0) {\n            return head;\n        }\n\n        // Step 1: Find the length and tail of the linked list\n        int len = 1;\n        ListNode tail = head;\n        while (tail.next != null) {\n            tail = tail.next;\n            len++;\n        }\n\n        // Step 2: Normalize k\n        k = k % len;\n        if (k == 0) {\n            return head;\n        }\n\n        // Step 3: Connect tail to head to form a circular list\n        tail.next = head;\n\n        // Step 4: Find the new tail at (len - k) steps from tail\n        int stepsToNewTail = len - k;\n        ListNode newTail = tail;\n        for (int i = 0; i < stepsToNewTail; i++) {\n            newTail = newTail.next;\n        }\n\n        // Step 5: Disconnect and set new head\n        ListNode newHead = newTail.next;\n        newTail.next = null;\n\n        return newHead;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 61 - Rotate List\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import Optional\n\n# Definition for singly-linked list.\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\nclass Solution:\n    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\n        if not head or not head.next or k == 0:\n            return head\n\n        # Step 1: Find length and tail\n        length = 1\n        tail = head\n        while tail.next:\n            tail = tail.next\n            length += 1\n\n        # Step 2: Normalize k\n        k %= length\n        if k == 0:\n            return head\n\n        # Step 3: Make it circular\n        tail.next = head\n\n        # Step 4: Find new tail (length - k steps from tail)\n        steps_to_new_tail = length - k\n        new_tail = tail\n        for _ in range(steps_to_new_tail):\n            new_tail = new_tail.next\n\n        # Step 5: Disconnect and return new head\n        new_head = new_tail.next\n        new_tail.next = None\n\n        return new_head\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 61 - Rotate List\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\n/**\n * Problem: LeetCode 61 - Rotate List\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    ListNode* rotateRight(ListNode* head, int k) {\n        if (!head || !head->next || k == 0) {\n            return head;\n        }\n\n        // Step 1: Find length and tail\n        int len = 1;\n        ListNode* tail = head;\n        while (tail->next != nullptr) {\n            tail = tail->next;\n            len++;\n        }\n\n        // Step 2: Normalize k\n        k = k % len;\n        if (k == 0) {\n            return head;\n        }\n\n        // Step 3: Form circular list\n        tail->next = head;\n\n        // Step 4: Find new tail\n        int stepsToNewTail = len - k;\n        ListNode* newTail = tail;\n        for (int i = 0; i < stepsToNewTail; i++) {\n            newTail = newTail->next;\n        }\n\n        // Step 5: Disconnect circular list\n        ListNode* newHead = newTail->next;\n        newTail->next = nullptr;\n\n        return newHead;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 61 - Rotate List\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * Definition for singly-linked list.\n * function ListNode(val, next) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.next = (next===undefined ? null : next)\n * }\n */\n/**\n * Problem: LeetCode 61 - Rotate List\n * Difficulty: Medium\n * Language: JavaScript (ES6+ / Node.js)\n * Author: CodeByTushu\n *\n * @param {ListNode} head\n * @param {number} k\n * @return {ListNode}\n */\nvar rotateRight = function(head, k) {\n    if (!head || !head.next || k === 0) {\n        return head;\n    }\n\n    // Step 1: Find length and tail\n    let len = 1;\n    let tail = head;\n    while (tail.next !== null) {\n        tail = tail.next;\n        len++;\n    }\n\n    // Step 2: Normalize k\n    k = k % len;\n    if (k === 0) {\n        return head;\n    }\n\n    // Step 3: Form circular list\n    tail.next = head;\n\n    // Step 4: Find new tail\n    const stepsToNewTail = len - k;\n    let newTail = tail;\n    for (let i = 0; i < stepsToNewTail; i++) {\n        newTail = newTail.next;\n    }\n\n    // Step 5: Disconnect circular list\n    const newHead = newTail.next;\n    newTail.next = null;\n\n    return newHead;\n};\n"
+    }
+  },
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-61-rotate-list.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-61-rotate-list.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 61: Rotate List Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 61 (Rotate List) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-61-rotate-list.jpg",
+    "keywords": [
+      "LeetCode 61",
+      "Rotate List",
+      "LeetCode 61 Solution",
+      "LeetCode Rotate List",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

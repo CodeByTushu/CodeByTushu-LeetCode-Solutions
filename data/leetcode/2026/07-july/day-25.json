@@ -1,0 +1,79 @@
+{
+  "problem_number": 3536,
+  "problem_title": "Maximum Product of Two Digits",
+  "slug": "maximum-product-of-two-digits",
+  "solution_date": "2026-07-25",
+  "formatted_date": "25-07-2026",
+  "day_number": 25,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(log10(N))",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-of-two-digits/",
+  "youtube_url": "https://youtu.be/rZcPoUpOtLU?si=1Yp3OyflWRo0ByHC",
+  "notes": "Optimal O(log10(N)) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a positive integer `n`.\n\nReturn the **maximum product** of any two digits in `n`.\n\n> **Note:** You may use the same digit twice if it appears more than once in `n`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 31`\n- **Output:** `3`\n- **Explanation:**\n  - The digits of `n` are `[3, 1]`.\n  - The possible products of any two digits are: $3 \\times 1 = 3$.\n  - The maximum product is $3$.\n\n#### Example 2:\n\n- **Input:** `n = 22`\n- **Output:** `4`\n- **Explanation:**\n  - The digits of `n` are `[2, 2]`.\n  - The possible products of any two digits are: $2 \\times 2 = 4$.\n  - The maximum product is $4$.\n\n#### Example 3:\n\n- **Input:** `n = 124`\n- **Output:** `8`\n- **Explanation:**\n  - The digits of `n` are `[1, 2, 4]`.\n  - The possible products of any two digits are: $1 \\times 2 = 2$, $1 \\times 4 = 4$, $2 \\times 4 = 8$.\n  - The maximum product is $8$.\n\n---\n\n### Constraints\n\n- $10 \\le n \\le 10^9$\n\n---",
+    "approach_summary": "Extract digits of n and greedily track the top two largest digits seen so far (first and second). Return first * second.",
+    "full_explanation": "# LeetCode 3536: Maximum Product of Two Digits\n\n- **Publication Date:** 25 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-product-of-two-digits/](https://leetcode.com/problems/maximum-product-of-two-digits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/rZcPoUpOtLU?si=1Yp3OyflWRo0ByHC)\n\n---\n\n## Problem Summary\n\nYou are given a positive integer `n`.\n\nReturn the **maximum product** of any two digits in `n`.\n\n> **Note:** You may use the same digit twice if it appears more than once in `n`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 31`\n- **Output:** `3`\n- **Explanation:**\n  - The digits of `n` are `[3, 1]`.\n  - The possible products of any two digits are: $3 \\times 1 = 3$.\n  - The maximum product is $3$.\n\n#### Example 2:\n\n- **Input:** `n = 22`\n- **Output:** `4`\n- **Explanation:**\n  - The digits of `n` are `[2, 2]`.\n  - The possible products of any two digits are: $2 \\times 2 = 4$.\n  - The maximum product is $4$.\n\n#### Example 3:\n\n- **Input:** `n = 124`\n- **Output:** `8`\n- **Explanation:**\n  - The digits of `n` are `[1, 2, 4]`.\n  - The possible products of any two digits are: $1 \\times 2 = 2$, $1 \\times 4 = 4$, $2 \\times 4 = 8$.\n  - The maximum product is $8$.\n\n---\n\n### Constraints\n\n- $10 \\le n \\le 10^9$\n\n---\n\n## Algorithmic Approach\n\n### 1. Greedy Top-Two Digits Tracking\n- Since all decimal digits are non-negative ($0 \\le d \\le 9$), the maximum product of any two digits is achieved by multiplying the **largest digit** and the **second largest digit** present in $n$.\n- If a digit appears multiple times, it can naturally serve as both the largest and the second largest digit (as handled by the comparison `digit >= first`).\n\n### 2. Single-Pass Digit Extraction\n- Extract digits of $n$ one by one from right to left using `digit = n % 10` and `n /= 10`.\n- Maintain two scalar variables:\n  - `first`: the maximum digit encountered so far.\n  - `second`: the second maximum digit encountered so far.\n- For each extracted `digit`:\n  - If `digit >= first`: the old `first` demotes to `second`, and `first` becomes `digit`.\n  - Else if `digit > second`: update `second = digit`.\n- After processing all digits, the answer is simply `first * second`.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(\\log_{10} n)$ | A single while loop extracts each decimal digit of $n$. For $n \\le 10^9$, there are at most $10$ digits, running in $\\mathcal{O}(1)$ practical time. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only two integer trackers (`first`, `second`) and loop variables are used. No additional memory or heap allocation is required. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Extract digits of n and greedily track the top two largest digits seen so far (first and second). Return first * second.",
+  "explanation": "# LeetCode 3536: Maximum Product of Two Digits\n\n- **Publication Date:** 25 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-product-of-two-digits/](https://leetcode.com/problems/maximum-product-of-two-digits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/rZcPoUpOtLU?si=1Yp3OyflWRo0ByHC)\n\n---\n\n## Problem Summary\n\nYou are given a positive integer `n`.\n\nReturn the **maximum product** of any two digits in `n`.\n\n> **Note:** You may use the same digit twice if it appears more than once in `n`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 31`\n- **Output:** `3`\n- **Explanation:**\n  - The digits of `n` are `[3, 1]`.\n  - The possible products of any two digits are: $3 \\times 1 = 3$.\n  - The maximum product is $3$.\n\n#### Example 2:\n\n- **Input:** `n = 22`\n- **Output:** `4`\n- **Explanation:**\n  - The digits of `n` are `[2, 2]`.\n  - The possible products of any two digits are: $2 \\times 2 = 4$.\n  - The maximum product is $4$.\n\n#### Example 3:\n\n- **Input:** `n = 124`\n- **Output:** `8`\n- **Explanation:**\n  - The digits of `n` are `[1, 2, 4]`.\n  - The possible products of any two digits are: $1 \\times 2 = 2$, $1 \\times 4 = 4$, $2 \\times 4 = 8$.\n  - The maximum product is $8$.\n\n---\n\n### Constraints\n\n- $10 \\le n \\le 10^9$\n\n---\n\n## Algorithmic Approach\n\n### 1. Greedy Top-Two Digits Tracking\n- Since all decimal digits are non-negative ($0 \\le d \\le 9$), the maximum product of any two digits is achieved by multiplying the **largest digit** and the **second largest digit** present in $n$.\n- If a digit appears multiple times, it can naturally serve as both the largest and the second largest digit (as handled by the comparison `digit >= first`).\n\n### 2. Single-Pass Digit Extraction\n- Extract digits of $n$ one by one from right to left using `digit = n % 10` and `n /= 10`.\n- Maintain two scalar variables:\n  - `first`: the maximum digit encountered so far.\n  - `second`: the second maximum digit encountered so far.\n- For each extracted `digit`:\n  - If `digit >= first`: the old `first` demotes to `second`, and `first` becomes `digit`.\n  - Else if `digit > second`: update `second = digit`.\n- After processing all digits, the answer is simply `first * second`.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(\\log_{10} n)$ | A single while loop extracts each decimal digit of $n$. For $n \\le 10^9$, there are at most $10$ digits, running in $\\mathcal{O}(1)$ practical time. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only two integer trackers (`first`, `second`) and loop variables are used. No additional memory or heap allocation is required. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3536 - Maximum Product of Two Digits\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maxProduct(int n) {\n        int first = 0;\n        int second = 0;\n        while (n > 0) {\n            int digit = n % 10;\n            if (digit >= first) {\n                second = first;\n                first = digit;\n            } else if (digit > second) {\n                second = digit;\n            }\n            n /= 10;\n        }\n        return first * second;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3536 - Maximum Product of Two Digits\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def maxProduct(self, n: int) -> int:\n        first = 0\n        second = 0\n        while n > 0:\n            digit = n % 10\n            if digit >= first:\n                second = first\n                first = digit\n            elif digit > second:\n                second = digit\n            n //= 10\n        return first * second\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3536 - Maximum Product of Two Digits\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maxProduct(int n) {\n        int first = 0;\n        int second = 0;\n        while (n > 0) {\n            int digit = n % 10;\n            if (digit >= first) {\n                second = first;\n                first = digit;\n            } else if (digit > second) {\n                second = digit;\n            }\n            n /= 10;\n        }\n        return first * second;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3536 - Maximum Product of Two Digits\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxProduct = function(n) {\n    let first = 0;\n    let second = 0;\n    while (n > 0) {\n        const digit = n % 10;\n        if (digit >= first) {\n            second = first;\n            first = digit;\n        } else if (digit > second) {\n            second = digit;\n        }\n        n = Math.floor(n / 10);\n    }\n    return first * second;\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3536-maximum-product-of-two-digits.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3536-maximum-product-of-two-digits.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3536: Maximum Product of Two Digits Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3536 (Maximum Product of Two Digits) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log10(N)) approach and det...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3536-maximum-product-of-two-digits.jpg",
+    "keywords": [
+      "LeetCode 3536",
+      "Maximum Product of Two Digits",
+      "LeetCode 3536 Solution",
+      "LeetCode Maximum Product of Two Digits",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

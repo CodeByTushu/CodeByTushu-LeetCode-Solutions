@@ -1,0 +1,79 @@
+{
+  "problem_number": 3300,
+  "problem_title": "Minimum Element After Replacement With Digit Sum",
+  "slug": "minimum-element-after-replacement-with-digit-sum",
+  "solution_date": "2026-05-29",
+  "formatted_date": "29-05-2026",
+  "day_number": 29,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/",
+  "youtube_url": "https://youtu.be/yquk5zDu8gM",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`.\n\nYou replace each element in `nums` with the **sum of its digits**.\n\nReturn the **minimum** element in `nums` after all replacements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [10, 12, 13, 14]`\n- **Output:** `1`\n- **Explanation:**\n  - $10 \\rightarrow 1 + 0 = 1$\n  - $12 \\rightarrow 1 + 2 = 3$\n  - $13 \\rightarrow 1 + 3 = 4$\n  - $14 \\rightarrow 1 + 4 = 5$\n  - `nums` becomes `[1, 3, 4, 5]`, with minimum element $1$.\n\n#### Example 2:\n- **Input:** `nums = [1, 2, 3, 4]`\n- **Output:** `1`\n- **Explanation:**\n  - `nums` remains `[1, 2, 3, 4]`, with minimum element $1$.\n\n#### Example 3:\n- **Input:** `nums = [999, 19, 199]`\n- **Output:** `10`\n- **Explanation:**\n  - $999 \\rightarrow 9 + 9 + 9 = 27$\n  - $19 \\rightarrow 1 + 9 = 10$\n  - $199 \\rightarrow 1 + 9 + 9 = 19$\n  - `nums` becomes `[27, 10, 19]`, with minimum element $10$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 10^4$\n\n---",
+    "approach_summary": "Iterate through each number, compute the sum of its decimal digits using modulo and division, and track the global minimum.",
+    "full_explanation": "# LeetCode 3300: Minimum Element After Replacement With Digit Sum\n\n- **Publication Date:** 29 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/yquk5zDu8gM)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nYou replace each element in `nums` with the **sum of its digits**.\n\nReturn the **minimum** element in `nums` after all replacements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [10, 12, 13, 14]`\n- **Output:** `1`\n- **Explanation:**\n  - $10 \\rightarrow 1 + 0 = 1$\n  - $12 \\rightarrow 1 + 2 = 3$\n  - $13 \\rightarrow 1 + 3 = 4$\n  - $14 \\rightarrow 1 + 4 = 5$\n  - `nums` becomes `[1, 3, 4, 5]`, with minimum element $1$.\n\n#### Example 2:\n- **Input:** `nums = [1, 2, 3, 4]`\n- **Output:** `1`\n- **Explanation:**\n  - `nums` remains `[1, 2, 3, 4]`, with minimum element $1$.\n\n#### Example 3:\n- **Input:** `nums = [999, 19, 199]`\n- **Output:** `10`\n- **Explanation:**\n  - $999 \\rightarrow 9 + 9 + 9 = 27$\n  - $19 \\rightarrow 1 + 9 = 10$\n  - $199 \\rightarrow 1 + 9 + 9 = 19$\n  - `nums` becomes `[27, 10, 19]`, with minimum element $10$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Direct Linear Scan with Digit Sum Extraction\n\nFor each integer `num` in `nums`:\n- Extract each digit using modulo arithmetic (`temp % 10`) and division (`temp /= 10`).\n- Maintain a running minimum `minVal` initialized to $\\infty$.\n- Update `minVal = min(minVal, digitSum)`.\n- Return `minVal` after checking all elements.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\cdot \\log_{10}(\\max(\\text{nums})))$\n  - With $\\text{nums}[i] \\le 10^4$, each number has at most 5 digits.\n  - Overall time complexity is strictly $\\mathcal{O}(N)$, running in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant auxiliary variables without extra memory allocations.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/yquk5zDu8gM](https://youtu.be/yquk5zDu8gM)\n"
+  },
+  "approach_summary": "Iterate through each number, compute the sum of its decimal digits using modulo and division, and track the global minimum.",
+  "explanation": "# LeetCode 3300: Minimum Element After Replacement With Digit Sum\n\n- **Publication Date:** 29 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/yquk5zDu8gM)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nYou replace each element in `nums` with the **sum of its digits**.\n\nReturn the **minimum** element in `nums` after all replacements.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [10, 12, 13, 14]`\n- **Output:** `1`\n- **Explanation:**\n  - $10 \\rightarrow 1 + 0 = 1$\n  - $12 \\rightarrow 1 + 2 = 3$\n  - $13 \\rightarrow 1 + 3 = 4$\n  - $14 \\rightarrow 1 + 4 = 5$\n  - `nums` becomes `[1, 3, 4, 5]`, with minimum element $1$.\n\n#### Example 2:\n- **Input:** `nums = [1, 2, 3, 4]`\n- **Output:** `1`\n- **Explanation:**\n  - `nums` remains `[1, 2, 3, 4]`, with minimum element $1$.\n\n#### Example 3:\n- **Input:** `nums = [999, 19, 199]`\n- **Output:** `10`\n- **Explanation:**\n  - $999 \\rightarrow 9 + 9 + 9 = 27$\n  - $19 \\rightarrow 1 + 9 = 10$\n  - $199 \\rightarrow 1 + 9 + 9 = 19$\n  - `nums` becomes `[27, 10, 19]`, with minimum element $10$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Direct Linear Scan with Digit Sum Extraction\n\nFor each integer `num` in `nums`:\n- Extract each digit using modulo arithmetic (`temp % 10`) and division (`temp /= 10`).\n- Maintain a running minimum `minVal` initialized to $\\infty$.\n- Update `minVal = min(minVal, digitSum)`.\n- Return `minVal` after checking all elements.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\cdot \\log_{10}(\\max(\\text{nums})))$\n  - With $\\text{nums}[i] \\le 10^4$, each number has at most 5 digits.\n  - Overall time complexity is strictly $\\mathcal{O}(N)$, running in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant auxiliary variables without extra memory allocations.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/yquk5zDu8gM](https://youtu.be/yquk5zDu8gM)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3300 - Minimum Element After Replacement With Digit Sum\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int minElement(int[] nums) {\n        int minVal = Integer.MAX_VALUE;\n\n        for (int num : nums) {\n            int sum = 0;\n            int temp = num;\n            while (temp > 0) {\n                sum += temp % 10;\n                temp /= 10;\n            }\n            if (sum < minVal) {\n                minVal = sum;\n            }\n        }\n\n        return minVal;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3300 - Minimum Element After Replacement With Digit Sum\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def minElement(self, nums: List[int]) -> int:\n        min_val = float('inf')\n\n        for num in nums:\n            digit_sum = 0\n            temp = num\n            while temp > 0:\n                digit_sum += temp % 10\n                temp //= 10\n            if digit_sum < min_val:\n                min_val = digit_sum\n\n        return min_val\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3300 - Minimum Element After Replacement With Digit Sum\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n#include <climits>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minElement(vector<int>& nums) {\n        int minVal = INT_MAX;\n\n        for (int num : nums) {\n            int sum = 0;\n            int temp = num;\n            while (temp > 0) {\n                sum += temp % 10;\n                temp /= 10;\n            }\n            minVal = min(minVal, sum);\n        }\n\n        return minVal;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3300 - Minimum Element After Replacement With Digit Sum\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minElement = function(nums) {\n    let minVal = Infinity;\n\n    for (let i = 0; i < nums.length; i++) {\n        let sum = 0;\n        let temp = nums[i];\n        while (temp > 0) {\n            sum += temp % 10;\n            temp = Math.floor(temp / 10);\n        }\n        if (sum < minVal) {\n            minVal = sum;\n        }\n    }\n\n    return minVal;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3300-minimum-element-after-replacement-with-digit-sum.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3300-minimum-element-after-replacement-with-digit-sum.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3300: Minimum Element After Replacement With Digit Sum Sol...",
+    "meta_description": "Master LeetCode 3300 (Minimum Element After Replacement With Digit Sum) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) appr...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3300-minimum-element-after-replacement-with-digit-sum.jpg",
+    "keywords": [
+      "LeetCode 3300",
+      "Minimum Element After Replacement With Digit Sum",
+      "LeetCode 3300 Solution",
+      "LeetCode Minimum Element After Replacement With Digit Sum",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

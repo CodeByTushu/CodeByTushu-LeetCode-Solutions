@@ -1,0 +1,79 @@
+{
+  "problem_number": 3723,
+  "problem_title": "Maximize Sum of Squares of Digits",
+  "slug": "maximize-sum-of-squares-of-digits",
+  "solution_date": "2026-10-14",
+  "formatted_date": "14-10-2026",
+  "day_number": 14,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(num)",
+  "space_complexity": "O(num)",
+  "leetcode_url": "https://leetcode.com/problems/maximize-sum-of-squares-of-digits/",
+  "youtube_url": "https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o",
+  "notes": "Optimal O(num) time complexity with O(num) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given two positive integers `num` and `sum`.\n\nA positive integer `n` is **good** if it satisfies both of the following:\n- The number of digits in `n` is exactly `num`.\n- The sum of digits in `n` is exactly `sum`.\n\nThe **score** of a good integer `n` is the sum of the squares of digits in `n`.\n\nReturn a string denoting the **good integer `n`** that achieves the **maximum score**. If there are multiple possible integers, return the **maximum one**. If no such integer exists, return an empty string `\"\"`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `num = 2, sum = 3`\n- **Output:** `\"30\"`\n- **Explanation:**\n  There are 3 good integers: 12, 21, and 30.\n  - The score of 12 is $1^2 + 2^2 = 5$.\n  - The score of 21 is $2^2 + 1^2 = 5$.\n  - The score of 30 is $3^2 + 0^2 = 9$.\n  The maximum score is 9, achieved by 30.\n\n#### Example 2:\n- **Input:** `num = 2, sum = 17`\n- **Output:** `\"98\"`\n- **Explanation:**\n  There are 2 good integers: 89 and 98.\n  - The score of 89 is $8^2 + 9^2 = 145$.\n  - The score of 98 is $9^2 + 8^2 = 145$.\n  Both give the maximum score 145. The maximum good integer is 98.\n\n#### Example 3:\n- **Input:** `num = 1, sum = 10`\n- **Output:** `\"\"`\n- **Explanation:**\n  No single-digit integer can sum to 10 since the maximum single digit is 9. Hence, return `\"\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{num} \\le 2 \\times 10^5$\n- $1 \\le \\text{sum} \\le 2 \\times 10^6$\n\n---",
+    "approach_summary": "Return empty string if sum > 9 * num. By convexity of x^2, greedily place as many 9s as possible from the highest place value, followed by the remainder digit, and then 0s.",
+    "full_explanation": "# LeetCode 3723: Maximize Sum of Squares of Digits\n\n- **Publication Date:** 14 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximize-sum-of-squares-of-digits/](https://leetcode.com/problems/maximize-sum-of-squares-of-digits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o)\n\n---\n\n## Problem Summary\n\nYou are given two positive integers `num` and `sum`.\n\nA positive integer `n` is **good** if it satisfies both of the following:\n- The number of digits in `n` is exactly `num`.\n- The sum of digits in `n` is exactly `sum`.\n\nThe **score** of a good integer `n` is the sum of the squares of digits in `n`.\n\nReturn a string denoting the **good integer `n`** that achieves the **maximum score**. If there are multiple possible integers, return the **maximum one**. If no such integer exists, return an empty string `\"\"`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `num = 2, sum = 3`\n- **Output:** `\"30\"`\n- **Explanation:**\n  There are 3 good integers: 12, 21, and 30.\n  - The score of 12 is $1^2 + 2^2 = 5$.\n  - The score of 21 is $2^2 + 1^2 = 5$.\n  - The score of 30 is $3^2 + 0^2 = 9$.\n  The maximum score is 9, achieved by 30.\n\n#### Example 2:\n- **Input:** `num = 2, sum = 17`\n- **Output:** `\"98\"`\n- **Explanation:**\n  There are 2 good integers: 89 and 98.\n  - The score of 89 is $8^2 + 9^2 = 145$.\n  - The score of 98 is $9^2 + 8^2 = 145$.\n  Both give the maximum score 145. The maximum good integer is 98.\n\n#### Example 3:\n- **Input:** `num = 1, sum = 10`\n- **Output:** `\"\"`\n- **Explanation:**\n  No single-digit integer can sum to 10 since the maximum single digit is 9. Hence, return `\"\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{num} \\le 2 \\times 10^5$\n- $1 \\le \\text{sum} \\le 2 \\times 10^6$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Greedy**\n- **String**\n\n---\n\n## Approach & Intuition\n\n1. **Feasibility Check**:\n   - The maximum possible sum with `num` digits occurs when all digits are 9: $\\text{max\\_sum} = 9 \\times \\text{num}$.\n   - If $\\text{sum} > 9 \\times \\text{num}$, it is impossible to form any valid integer, so return `\"\"`.\n\n2. **Convexity of Squares & Greedy Assignment**:\n   - Because $f(x) = x^2$ is strictly convex, distributing a fixed sum into extreme values always maximizes the sum of squares. For example:\n     $$9^2 + 0^2 = 81 > 8^2 + 1^2 = 65 > 7^2 + 2^2 = 53 > \\dots$$\n   - To maximize $\\sum d_i^2$, we must make as many digits equal to 9 as possible, followed by at most one remainder digit $r = \\text{sum} \\pmod 9$, with all remaining positions filled with 0.\n\n3. **Tie-Breaking for Maximum Integer**:\n   - When multiple arrangements have the exact same multiset of digits (and thus the exact same sum of squares), placing larger digits at higher place values (from left to right) produces the strictly larger integer.\n   - Therefore, we greedily place all `9`s first, followed by the remainder digit $r$ (if $r > 0$), followed by all `0`s.\n\n4. **No Leading Zero Guarantee**:\n   - Since $\\text{sum} \\ge 1$, the first digit will always be at least $\\min(9, \\text{sum}) \\ge 1$. Hence, the integer is always valid without any leading zero.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\text{num})$\n  - Constructing a string of length $\\text{num}$ takes linear time.\n  - With $\\text{num} \\le 2 \\times 10^5$, this runs in $< 20\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(\\text{num})$\n  - Memory required to store and return the output string of length $\\text{num}$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o)\n"
+  },
+  "approach_summary": "Return empty string if sum > 9 * num. By convexity of x^2, greedily place as many 9s as possible from the highest place value, followed by the remainder digit, and then 0s.",
+  "explanation": "# LeetCode 3723: Maximize Sum of Squares of Digits\n\n- **Publication Date:** 14 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximize-sum-of-squares-of-digits/](https://leetcode.com/problems/maximize-sum-of-squares-of-digits/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o)\n\n---\n\n## Problem Summary\n\nYou are given two positive integers `num` and `sum`.\n\nA positive integer `n` is **good** if it satisfies both of the following:\n- The number of digits in `n` is exactly `num`.\n- The sum of digits in `n` is exactly `sum`.\n\nThe **score** of a good integer `n` is the sum of the squares of digits in `n`.\n\nReturn a string denoting the **good integer `n`** that achieves the **maximum score**. If there are multiple possible integers, return the **maximum one**. If no such integer exists, return an empty string `\"\"`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `num = 2, sum = 3`\n- **Output:** `\"30\"`\n- **Explanation:**\n  There are 3 good integers: 12, 21, and 30.\n  - The score of 12 is $1^2 + 2^2 = 5$.\n  - The score of 21 is $2^2 + 1^2 = 5$.\n  - The score of 30 is $3^2 + 0^2 = 9$.\n  The maximum score is 9, achieved by 30.\n\n#### Example 2:\n- **Input:** `num = 2, sum = 17`\n- **Output:** `\"98\"`\n- **Explanation:**\n  There are 2 good integers: 89 and 98.\n  - The score of 89 is $8^2 + 9^2 = 145$.\n  - The score of 98 is $9^2 + 8^2 = 145$.\n  Both give the maximum score 145. The maximum good integer is 98.\n\n#### Example 3:\n- **Input:** `num = 1, sum = 10`\n- **Output:** `\"\"`\n- **Explanation:**\n  No single-digit integer can sum to 10 since the maximum single digit is 9. Hence, return `\"\"`.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{num} \\le 2 \\times 10^5$\n- $1 \\le \\text{sum} \\le 2 \\times 10^6$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Greedy**\n- **String**\n\n---\n\n## Approach & Intuition\n\n1. **Feasibility Check**:\n   - The maximum possible sum with `num` digits occurs when all digits are 9: $\\text{max\\_sum} = 9 \\times \\text{num}$.\n   - If $\\text{sum} > 9 \\times \\text{num}$, it is impossible to form any valid integer, so return `\"\"`.\n\n2. **Convexity of Squares & Greedy Assignment**:\n   - Because $f(x) = x^2$ is strictly convex, distributing a fixed sum into extreme values always maximizes the sum of squares. For example:\n     $$9^2 + 0^2 = 81 > 8^2 + 1^2 = 65 > 7^2 + 2^2 = 53 > \\dots$$\n   - To maximize $\\sum d_i^2$, we must make as many digits equal to 9 as possible, followed by at most one remainder digit $r = \\text{sum} \\pmod 9$, with all remaining positions filled with 0.\n\n3. **Tie-Breaking for Maximum Integer**:\n   - When multiple arrangements have the exact same multiset of digits (and thus the exact same sum of squares), placing larger digits at higher place values (from left to right) produces the strictly larger integer.\n   - Therefore, we greedily place all `9`s first, followed by the remainder digit $r$ (if $r > 0$), followed by all `0`s.\n\n4. **No Leading Zero Guarantee**:\n   - Since $\\text{sum} \\ge 1$, the first digit will always be at least $\\min(9, \\text{sum}) \\ge 1$. Hence, the integer is always valid without any leading zero.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\text{num})$\n  - Constructing a string of length $\\text{num}$ takes linear time.\n  - With $\\text{num} \\le 2 \\times 10^5$, this runs in $< 20\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(\\text{num})$\n  - Memory required to store and return the output string of length $\\text{num}$.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o](https://youtu.be/zMSnBgnabV8?si=1lOGAjzs3d52fN1o)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3723 - Maximize Sum of Squares of Digits\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String maxSumOfSquares(int num, int sum) {\n        if (sum > 9 * num) return \"\";\n        StringBuilder sb = new StringBuilder();\n        int remaining = sum;\n        for (int i = 0; i < num; i++) {\n            int d = Math.min(9, remaining);\n            sb.append(d);\n            remaining -= d;\n        }\n        return sb.toString();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3723 - Maximize Sum of Squares of Digits\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def maxSumOfSquares(self, num: int, sum: int) -> str:\n        if sum > 9 * num:\n            return \"\"\n        \n        nines = sum // 9\n        rem = sum % 9\n        zeros = num - nines - (1 if rem > 0 else 0)\n        \n        if rem > 0:\n            return \"9\" * nines + str(rem) + \"0\" * zeros\n        return \"9\" * nines + \"0\" * zeros\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3723 - Maximize Sum of Squares of Digits\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3723 - Maximize Sum of Squares of Digits\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    string maxSumOfSquares(int num, int sum) {\n        if (sum > 9LL * num) return \"\";\n        string result = \"\";\n        result.reserve(num);\n        int remaining = sum;\n        for (int i = 0; i < num; i++) {\n            int d = min(9, remaining);\n            result.push_back('0' + d);\n            remaining -= d;\n        }\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3723 - Maximize Sum of Squares of Digits\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxSumOfSquares = function(num, sum) {\n    if (sum > 9 * num) return \"\";\n    const nines = Math.floor(sum / 9);\n    const rem = sum % 9;\n    const zeros = num - nines - (rem > 0 ? 1 : 0);\n    \n    if (rem > 0) {\n        return \"9\".repeat(nines) + rem.toString() + \"0\".repeat(zeros);\n    }\n    return \"9\".repeat(nines) + \"0\".repeat(zeros);\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Greedy",
+    "String"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3723-maximize-sum-of-squares-of-digits.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3723-maximize-sum-of-squares-of-digits.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3723: Maximize Sum of Squares of Digits Solution | CodeByT...",
+    "meta_description": "Master LeetCode 3723 (Maximize Sum of Squares of Digits) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(num) approach and deta...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3723-maximize-sum-of-squares-of-digits.jpg",
+    "keywords": [
+      "LeetCode 3723",
+      "Maximize Sum of Squares of Digits",
+      "LeetCode 3723 Solution",
+      "LeetCode Maximize Sum of Squares of Digits",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

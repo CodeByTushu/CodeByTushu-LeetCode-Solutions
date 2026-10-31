@@ -1,0 +1,79 @@
+{
+  "problem_number": 1306,
+  "problem_title": "Jump Game III",
+  "slug": "jump-game-iii",
+  "solution_date": "2026-05-17",
+  "formatted_date": "17-05-2026",
+  "day_number": 17,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-iii/",
+  "youtube_url": "https://youtu.be/JnySdp-1ExE",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given an array of non-negative integers `arr`, you are initially positioned at `start` index of the array. When you are at index `i`, you can jump to:\n- `i + arr[i]` (forward jump)\n- `i - arr[i]` (backward jump)\n\nCheck if you can reach **any index with value 0**.\n\nNotice that you cannot jump outside of the array boundaries at any time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `arr = [4, 2, 3, 0, 3, 1, 2]`, `start = 5`\n- **Output:** `true`\n- **Explanation:**\n  - All possible ways to reach index 3 with value 0 are:\n    - index 5 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n    - index 5 $\\to$ index 6 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n\n#### Example 2:\n- **Input:** `arr = [4, 2, 3, 0, 3, 1, 2]`, `start = 0`\n- **Output:** `true`\n- **Explanation:**\n  - One possible way to reach index 3 with value 0 is:\n    - index 0 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n\n#### Example 3:\n- **Input:** `arr = [3, 0, 2, 1, 2]`, `start = 2`\n- **Output:** `false`\n- **Explanation:**\n  - There is no way to reach index 1 with value 0 from index 2.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{arr.length} \\le 5 \\times 10^4$\n- $0 \\le \\text{arr}[i] < \\text{arr.length}$\n- $0 \\le \\text{start} < \\text{arr.length}$\n\n---",
+    "approach_summary": "Model the possible jumps as an unweighted directed graph and use Breadth-First Search (BFS) with a visited array to explore reachable states.",
+    "full_explanation": "# LeetCode 1306: Jump Game III\n\n- **Publication Date:** 17 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/jump-game-iii/](https://leetcode.com/problems/jump-game-iii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/JnySdp-1ExE)\n\n---\n\n## Problem Summary\n\nGiven an array of non-negative integers `arr`, you are initially positioned at `start` index of the array. When you are at index `i`, you can jump to:\n- `i + arr[i]` (forward jump)\n- `i - arr[i]` (backward jump)\n\nCheck if you can reach **any index with value 0**.\n\nNotice that you cannot jump outside of the array boundaries at any time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `arr = [4, 2, 3, 0, 3, 1, 2]`, `start = 5`\n- **Output:** `true`\n- **Explanation:**\n  - All possible ways to reach index 3 with value 0 are:\n    - index 5 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n    - index 5 $\\to$ index 6 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n\n#### Example 2:\n- **Input:** `arr = [4, 2, 3, 0, 3, 1, 2]`, `start = 0`\n- **Output:** `true`\n- **Explanation:**\n  - One possible way to reach index 3 with value 0 is:\n    - index 0 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n\n#### Example 3:\n- **Input:** `arr = [3, 0, 2, 1, 2]`, `start = 2`\n- **Output:** `false`\n- **Explanation:**\n  - There is no way to reach index 1 with value 0 from index 2.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{arr.length} \\le 5 \\times 10^4$\n- $0 \\le \\text{arr}[i] < \\text{arr.length}$\n- $0 \\le \\text{start} < \\text{arr.length}$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Depth-First Search**\n- **Breadth-First Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Graph Reachability Formulation\n\nThe problem can be modeled as finding a path in an unweighted directed graph:\n- Each index $i \\in [0, n - 1]$ is a node.\n- Directed outgoing edges from node $i$ point to:\n  - $i + \\text{arr}[i]$ if $i + \\text{arr}[i] < n$\n  - $i - \\text{arr}[i]$ if $i - \\text{arr}[i] \\ge 0$\n- We want to determine if there exists a directed path from node `start` to any node $t$ such that $\\text{arr}[t] == 0$.\n\n### 2. Breadth-First Search (BFS) / Depth-First Search (DFS)\n\nUsing **BFS** with a `visited` array:\n1. Initialize a queue with `start` and mark `visited[start] = true`.\n2. While the queue is not empty:\n   - Dequeue the front element `curr`.\n   - If `arr[curr] == 0`, return `true` immediately.\n   - Compute forward jump `forward = curr + arr[curr]`:\n     - If `forward < n` and `!visited[forward]`, mark visited and push to queue.\n   - Compute backward jump `backward = curr - arr[curr]`:\n     - If `backward >= 0` and `!visited[backward]`, mark visited and push to queue.\n3. If the queue is exhausted without reaching value 0, return `false`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Each of the $N$ indices is pushed and popped from the queue at most once.\n  - From each node, at most 2 outgoing transitions are checked in $\\mathcal{O}(1)$ time.\n  - Overall time complexity is strictly linear: $\\mathcal{O}(N) \\approx 5 \\times 10^4$ operations ($\\approx 2\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - The `visited` array and queue store at most $N$ elements.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/JnySdp-1ExE](https://youtu.be/JnySdp-1ExE)\n"
+  },
+  "approach_summary": "Model the possible jumps as an unweighted directed graph and use Breadth-First Search (BFS) with a visited array to explore reachable states.",
+  "explanation": "# LeetCode 1306: Jump Game III\n\n- **Publication Date:** 17 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/jump-game-iii/](https://leetcode.com/problems/jump-game-iii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/JnySdp-1ExE)\n\n---\n\n## Problem Summary\n\nGiven an array of non-negative integers `arr`, you are initially positioned at `start` index of the array. When you are at index `i`, you can jump to:\n- `i + arr[i]` (forward jump)\n- `i - arr[i]` (backward jump)\n\nCheck if you can reach **any index with value 0**.\n\nNotice that you cannot jump outside of the array boundaries at any time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `arr = [4, 2, 3, 0, 3, 1, 2]`, `start = 5`\n- **Output:** `true`\n- **Explanation:**\n  - All possible ways to reach index 3 with value 0 are:\n    - index 5 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n    - index 5 $\\to$ index 6 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n\n#### Example 2:\n- **Input:** `arr = [4, 2, 3, 0, 3, 1, 2]`, `start = 0`\n- **Output:** `true`\n- **Explanation:**\n  - One possible way to reach index 3 with value 0 is:\n    - index 0 $\\to$ index 4 $\\to$ index 1 $\\to$ index 3\n\n#### Example 3:\n- **Input:** `arr = [3, 0, 2, 1, 2]`, `start = 2`\n- **Output:** `false`\n- **Explanation:**\n  - There is no way to reach index 1 with value 0 from index 2.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{arr.length} \\le 5 \\times 10^4$\n- $0 \\le \\text{arr}[i] < \\text{arr.length}$\n- $0 \\le \\text{start} < \\text{arr.length}$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Depth-First Search**\n- **Breadth-First Search**\n\n---\n\n## Approach & Intuition\n\n### 1. Graph Reachability Formulation\n\nThe problem can be modeled as finding a path in an unweighted directed graph:\n- Each index $i \\in [0, n - 1]$ is a node.\n- Directed outgoing edges from node $i$ point to:\n  - $i + \\text{arr}[i]$ if $i + \\text{arr}[i] < n$\n  - $i - \\text{arr}[i]$ if $i - \\text{arr}[i] \\ge 0$\n- We want to determine if there exists a directed path from node `start` to any node $t$ such that $\\text{arr}[t] == 0$.\n\n### 2. Breadth-First Search (BFS) / Depth-First Search (DFS)\n\nUsing **BFS** with a `visited` array:\n1. Initialize a queue with `start` and mark `visited[start] = true`.\n2. While the queue is not empty:\n   - Dequeue the front element `curr`.\n   - If `arr[curr] == 0`, return `true` immediately.\n   - Compute forward jump `forward = curr + arr[curr]`:\n     - If `forward < n` and `!visited[forward]`, mark visited and push to queue.\n   - Compute backward jump `backward = curr - arr[curr]`:\n     - If `backward >= 0` and `!visited[backward]`, mark visited and push to queue.\n3. If the queue is exhausted without reaching value 0, return `false`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Each of the $N$ indices is pushed and popped from the queue at most once.\n  - From each node, at most 2 outgoing transitions are checked in $\\mathcal{O}(1)$ time.\n  - Overall time complexity is strictly linear: $\\mathcal{O}(N) \\approx 5 \\times 10^4$ operations ($\\approx 2\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - The `visited` array and queue store at most $N$ elements.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/JnySdp-1ExE](https://youtu.be/JnySdp-1ExE)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1306 - Jump Game III\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.ArrayDeque;\nimport java.util.Queue;\n\nclass Solution {\n    public boolean canReach(int[] arr, int start) {\n        int n = arr.length;\n        Queue<Integer> queue = new ArrayDeque<>();\n        boolean[] visited = new boolean[n];\n\n        queue.offer(start);\n        visited[start] = true;\n\n        while (!queue.isEmpty()) {\n            int curr = queue.poll();\n\n            // Target reached: current index has value 0\n            if (arr[curr] == 0) {\n                return true;\n            }\n\n            // Jump forward: curr + arr[curr]\n            int forward = curr + arr[curr];\n            if (forward < n && !visited[forward]) {\n                visited[forward] = true;\n                queue.offer(forward);\n            }\n\n            // Jump backward: curr - arr[curr]\n            int backward = curr - arr[curr];\n            if (backward >= 0 && !visited[backward]) {\n                visited[backward] = true;\n                queue.offer(backward);\n            }\n        }\n\n        return false;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1306 - Jump Game III\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\nfrom collections import deque\n\nclass Solution:\n    def canReach(self, arr: List[int], start: int) -> bool:\n        n = len(arr)\n        queue = deque([start])\n        visited = [False] * n\n        visited[start] = True\n\n        while queue:\n            curr = queue.popleft()\n\n            # Target reached: current index has value 0\n            if arr[curr] == 0:\n                return True\n\n            # Jump forward: curr + arr[curr]\n            forward = curr + arr[curr]\n            if forward < n and not visited[forward]:\n                visited[forward] = True\n                queue.append(forward)\n\n            # Jump backward: curr - arr[curr]\n            backward = curr - arr[curr]\n            if backward >= 0 and not visited[backward]:\n                visited[backward] = True\n                queue.append(backward)\n\n        return False\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1306 - Jump Game III\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <queue>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool canReach(vector<int>& arr, int start) {\n        int n = arr.size();\n        queue<int> q;\n        vector<bool> visited(n, false);\n\n        q.push(start);\n        visited[start] = true;\n\n        while (!q.empty()) {\n            int curr = q.front();\n            q.pop();\n\n            // Target reached: current index has value 0\n            if (arr[curr] == 0) {\n                return true;\n            }\n\n            // Jump forward: curr + arr[curr]\n            int forward = curr + arr[curr];\n            if (forward < n && !visited[forward]) {\n                visited[forward] = true;\n                q.push(forward);\n            }\n\n            // Jump backward: curr - arr[curr]\n            int backward = curr - arr[curr];\n            if (backward >= 0 && !visited[backward]) {\n                visited[backward] = true;\n                q.push(backward);\n            }\n        }\n\n        return false;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1306 - Jump Game III\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar canReach = function(arr, start) {\n    const n = arr.length;\n    const queue = [start];\n    const visited = new Uint8Array(n);\n    visited[start] = 1;\n\n    let head = 0;\n    while (head < queue.length) {\n        const curr = queue[head++];\n\n        // Target reached: current index has value 0\n        if (arr[curr] === 0) {\n            return true;\n        }\n\n        // Jump forward: curr + arr[curr]\n        const forward = curr + arr[curr];\n        if (forward < n && !visited[forward]) {\n            visited[forward] = 1;\n            queue.push(forward);\n        }\n\n        // Jump backward: curr - arr[curr]\n        const backward = curr - arr[curr];\n        if (backward >= 0 && !visited[backward]) {\n            visited[backward] = 1;\n            queue.push(backward);\n        }\n    }\n\n    return false;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1306-jump-game-iii.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1306-jump-game-iii.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1306: Jump Game III Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1306 (Jump Game III) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1306-jump-game-iii.jpg",
+    "keywords": [
+      "LeetCode 1306",
+      "Jump Game III",
+      "LeetCode 1306 Solution",
+      "LeetCode Jump Game III",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

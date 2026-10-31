@@ -1,0 +1,79 @@
+{
+  "problem_number": 3689,
+  "problem_title": "Maximum Total Subarray Value I",
+  "slug": "maximum-total-subarray-value-i",
+  "solution_date": "2026-06-09",
+  "formatted_date": "09-06-2026",
+  "day_number": 9,
+  "month": "June",
+  "month_num": 6,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
+  "youtube_url": "https://youtu.be/i55hAAnD0Is?si=aS1uEZSA1wGjtwGX",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` of length `n` and an integer `k`.\n\nYou need to choose **exactly** `k` non-empty subarrays `nums[l..r]` of `nums`. Subarrays may overlap, and the exact same subarray (same `l` and `r`) can be chosen more than once.\n\nThe **value** of a subarray `nums[l..r]` is defined as:\n$$\\text{value}(nums[l..r]) = \\max(\\text{nums}[l..r]) - \\min(\\text{nums}[l..r])$$\n\nThe **total value** is the sum of the values of all chosen subarrays.\n\nReturn the **maximum possible total value** you can achieve.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 2]`, `k = 2`\n- **Output:** `4`\n- **Explanation:**\n  - One optimal approach is:\n    - Choose `nums[0..1] = [1, 3]`: $\\max = 3, \\min = 1 \\implies 3 - 1 = 2$.\n    - Choose `nums[0..2] = [1, 3, 2]`: $\\max = 3, \\min = 1 \\implies 3 - 1 = 2$.\n    - Alternatively, choose `nums[0..2]` both times: $2 + 2 = 4$.\n  - Total value achieved = $2 + 2 = 4$.\n\n#### Example 2:\n- **Input:** `nums = [4, 2, 5, 1]`, `k = 3`\n- **Output:** `12`\n- **Explanation:**\n  - The global maximum is $5$ and global minimum is $1$.\n  - Choosing the full array `[4, 2, 5, 1]` gives value $5 - 1 = 4$.\n  - Choosing this same subarray all $k = 3$ times gives a total value of $4 \\times 3 = 12$.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n- $1 \\le k \\le 10^5$\n\n---",
+    "approach_summary": "Any chosen subarray's value is at most max(nums) - min(nums). Since duplicate subarray selection is permitted, choose the subarray containing both extremes all k times, giving (max - min) * k in O(N) time and O(1) space.",
+    "full_explanation": "# LeetCode 3689: Maximum Total Subarray Value I\n\n- **Publication Date:** 09 June 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-total-subarray-value-i/](https://leetcode.com/problems/maximum-total-subarray-value-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/i55hAAnD0Is?si=aS1uEZSA1wGjtwGX)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length `n` and an integer `k`.\n\nYou need to choose **exactly** `k` non-empty subarrays `nums[l..r]` of `nums`. Subarrays may overlap, and the exact same subarray (same `l` and `r`) can be chosen more than once.\n\nThe **value** of a subarray `nums[l..r]` is defined as:\n$$\\text{value}(nums[l..r]) = \\max(\\text{nums}[l..r]) - \\min(\\text{nums}[l..r])$$\n\nThe **total value** is the sum of the values of all chosen subarrays.\n\nReturn the **maximum possible total value** you can achieve.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 2]`, `k = 2`\n- **Output:** `4`\n- **Explanation:**\n  - One optimal approach is:\n    - Choose `nums[0..1] = [1, 3]`: $\\max = 3, \\min = 1 \\implies 3 - 1 = 2$.\n    - Choose `nums[0..2] = [1, 3, 2]`: $\\max = 3, \\min = 1 \\implies 3 - 1 = 2$.\n    - Alternatively, choose `nums[0..2]` both times: $2 + 2 = 4$.\n  - Total value achieved = $2 + 2 = 4$.\n\n#### Example 2:\n- **Input:** `nums = [4, 2, 5, 1]`, `k = 3`\n- **Output:** `12`\n- **Explanation:**\n  - The global maximum is $5$ and global minimum is $1$.\n  - Choosing the full array `[4, 2, 5, 1]` gives value $5 - 1 = 4$.\n  - Choosing this same subarray all $k = 3$ times gives a total value of $4 \\times 3 = 12$.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n- $1 \\le k \\le 10^5$\n\n---\n\n## Algorithmic Approach\n\n### 1. Mathematical Upper Bound & Greedy Repetition\nThe problem contains a crucial specification:\n> *\"Subarrays may overlap, and the exact same subarray (same $l$ and $r$) can be chosen more than once.\"*\n\n1. **Upper Bound on a Single Subarray:**\n   For any subarray $nums[l..r]$:\n   $$\\max(nums[l..r]) \\le \\max(nums) \\quad \\text{and} \\quad \\min(nums[l..r]) \\ge \\min(nums)$$\n   Therefore, the value of any chosen subarray is strictly bounded by:\n   $$\\text{value}(nums[l..r]) = \\max(nums[l..r]) - \\min(nums[l..r]) \\le \\max(nums) - \\min(nums)$$\n\n2. **Achievability:**\n   Any subarray containing both the global minimum and global maximum element (for instance, the entire array $nums[0..n-1]$) achieves this theoretical maximum of:\n   $$\\Delta_{\\max} = \\max(nums) - \\min(nums)$$\n\n3. **Optimal Selection:**\n   Since we can select the exact same subarray all $k$ times without restriction, the optimal strategy simply selects this maximally valued subarray $k$ times:\n   $$\\text{Answer} = 1\\text{L} \\times (\\max(nums) - \\min(nums)) \\times k$$\n\n4. **Implementation:**\n   Scan `nums` once to identify `min` and `max`, then multiply their difference by `k` using 64-bit integer arithmetic to prevent overflow.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(N)$ | Single linear pass across `nums` to compute the global minimum and maximum. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only a few scalar variables (`min`, `max`) are allocated. |\n\n---\n\n## Multi-Language Implementations\n\n### Java\n```java\nclass Solution {\n    public long maxTotalValue(int[] nums, int k) {\n        int min = Integer.MAX_VALUE;\n        int max = Integer.MIN_VALUE;\n\n        for (int num : nums) {\n            min = Math.min(min, num);\n            max = Math.max(max, num);\n        }\n        return 1L * (max - min) * k;\n    }\n}\n```\n\n### Python\n```python\nfrom typing import List\n\n\nclass Solution:\n    def maxTotalValue(self, nums: List[int], k: int) -> int:\n        min_val = min(nums)\n        max_val = max(nums)\n        return (max_val - min_val) * k\n```\n\n### C++\n```cpp\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    long long maxTotalValue(vector<int>& nums, int k) {\n        int minVal = nums[0];\n        int maxVal = nums[0];\n\n        for (int num : nums) {\n            minVal = min(minVal, num);\n            maxVal = max(maxVal, num);\n        }\n\n        return 1LL * (maxVal - minVal) * k;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxTotalValue = function(nums, k) {\n    let min = nums[0];\n    let max = nums[0];\n\n    for (let i = 1; i < nums.length; i++) {\n        if (nums[i] < min) min = nums[i];\n        if (nums[i] > max) max = nums[i];\n    }\n\n    return (max - min) * k;\n};\n```\n"
+  },
+  "approach_summary": "Any chosen subarray's value is at most max(nums) - min(nums). Since duplicate subarray selection is permitted, choose the subarray containing both extremes all k times, giving (max - min) * k in O(N) time and O(1) space.",
+  "explanation": "# LeetCode 3689: Maximum Total Subarray Value I\n\n- **Publication Date:** 09 June 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/maximum-total-subarray-value-i/](https://leetcode.com/problems/maximum-total-subarray-value-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/i55hAAnD0Is?si=aS1uEZSA1wGjtwGX)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length `n` and an integer `k`.\n\nYou need to choose **exactly** `k` non-empty subarrays `nums[l..r]` of `nums`. Subarrays may overlap, and the exact same subarray (same `l` and `r`) can be chosen more than once.\n\nThe **value** of a subarray `nums[l..r]` is defined as:\n$$\\text{value}(nums[l..r]) = \\max(\\text{nums}[l..r]) - \\min(\\text{nums}[l..r])$$\n\nThe **total value** is the sum of the values of all chosen subarrays.\n\nReturn the **maximum possible total value** you can achieve.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 2]`, `k = 2`\n- **Output:** `4`\n- **Explanation:**\n  - One optimal approach is:\n    - Choose `nums[0..1] = [1, 3]`: $\\max = 3, \\min = 1 \\implies 3 - 1 = 2$.\n    - Choose `nums[0..2] = [1, 3, 2]`: $\\max = 3, \\min = 1 \\implies 3 - 1 = 2$.\n    - Alternatively, choose `nums[0..2]` both times: $2 + 2 = 4$.\n  - Total value achieved = $2 + 2 = 4$.\n\n#### Example 2:\n- **Input:** `nums = [4, 2, 5, 1]`, `k = 3`\n- **Output:** `12`\n- **Explanation:**\n  - The global maximum is $5$ and global minimum is $1$.\n  - Choosing the full array `[4, 2, 5, 1]` gives value $5 - 1 = 4$.\n  - Choosing this same subarray all $k = 3$ times gives a total value of $4 \\times 3 = 12$.\n\n---\n\n### Constraints\n\n- $1 \\le n == \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^9$\n- $1 \\le k \\le 10^5$\n\n---\n\n## Algorithmic Approach\n\n### 1. Mathematical Upper Bound & Greedy Repetition\nThe problem contains a crucial specification:\n> *\"Subarrays may overlap, and the exact same subarray (same $l$ and $r$) can be chosen more than once.\"*\n\n1. **Upper Bound on a Single Subarray:**\n   For any subarray $nums[l..r]$:\n   $$\\max(nums[l..r]) \\le \\max(nums) \\quad \\text{and} \\quad \\min(nums[l..r]) \\ge \\min(nums)$$\n   Therefore, the value of any chosen subarray is strictly bounded by:\n   $$\\text{value}(nums[l..r]) = \\max(nums[l..r]) - \\min(nums[l..r]) \\le \\max(nums) - \\min(nums)$$\n\n2. **Achievability:**\n   Any subarray containing both the global minimum and global maximum element (for instance, the entire array $nums[0..n-1]$) achieves this theoretical maximum of:\n   $$\\Delta_{\\max} = \\max(nums) - \\min(nums)$$\n\n3. **Optimal Selection:**\n   Since we can select the exact same subarray all $k$ times without restriction, the optimal strategy simply selects this maximally valued subarray $k$ times:\n   $$\\text{Answer} = 1\\text{L} \\times (\\max(nums) - \\min(nums)) \\times k$$\n\n4. **Implementation:**\n   Scan `nums` once to identify `min` and `max`, then multiply their difference by `k` using 64-bit integer arithmetic to prevent overflow.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(N)$ | Single linear pass across `nums` to compute the global minimum and maximum. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only a few scalar variables (`min`, `max`) are allocated. |\n\n---\n\n## Multi-Language Implementations\n\n### Java\n```java\nclass Solution {\n    public long maxTotalValue(int[] nums, int k) {\n        int min = Integer.MAX_VALUE;\n        int max = Integer.MIN_VALUE;\n\n        for (int num : nums) {\n            min = Math.min(min, num);\n            max = Math.max(max, num);\n        }\n        return 1L * (max - min) * k;\n    }\n}\n```\n\n### Python\n```python\nfrom typing import List\n\n\nclass Solution:\n    def maxTotalValue(self, nums: List[int], k: int) -> int:\n        min_val = min(nums)\n        max_val = max(nums)\n        return (max_val - min_val) * k\n```\n\n### C++\n```cpp\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    long long maxTotalValue(vector<int>& nums, int k) {\n        int minVal = nums[0];\n        int maxVal = nums[0];\n\n        for (int num : nums) {\n            minVal = min(minVal, num);\n            maxVal = max(maxVal, num);\n        }\n\n        return 1LL * (maxVal - minVal) * k;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxTotalValue = function(nums, k) {\n    let min = nums[0];\n    let max = nums[0];\n\n    for (let i = 1; i < nums.length; i++) {\n        if (nums[i] < min) min = nums[i];\n        if (nums[i] > max) max = nums[i];\n    }\n\n    return (max - min) * k;\n};\n```\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3689 - Maximum Total Subarray Value I\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public long maxTotalValue(int[] nums, int k) {\n        int min = Integer.MAX_VALUE;\n        int max = Integer.MIN_VALUE;\n\n        for (int num : nums) {\n            min = Math.min(min, num);\n            max = Math.max(max, num);\n        }\n        return 1L * (max - min) * k;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3689 - Maximum Total Subarray Value I\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\nclass Solution:\n    def maxTotalValue(self, nums: List[int], k: int) -> int:\n        min_val = min(nums)\n        max_val = max(nums)\n        return (max_val - min_val) * k\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3689 - Maximum Total Subarray Value I\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3689 - Maximum Total Subarray Value I\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    long long maxTotalValue(vector<int>& nums, int k) {\n        int minVal = nums[0];\n        int maxVal = nums[0];\n\n        for (int num : nums) {\n            minVal = min(minVal, num);\n            maxVal = max(maxVal, num);\n        }\n\n        return 1LL * (maxVal - minVal) * k;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3689 - Maximum Total Subarray Value I\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxTotalValue = function(nums, k) {\n    let min = nums[0];\n    let max = nums[0];\n\n    for (let i = 1; i < nums.length; i++) {\n        if (nums[i] < min) min = nums[i];\n        if (nums[i] > max) max = nums[i];\n    }\n\n    return (max - min) * k;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3689-maximum-total-subarray-value-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3689-maximum-total-subarray-value-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3689: Maximum Total Subarray Value I Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3689 (Maximum Total Subarray Value I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3689-maximum-total-subarray-value-i.jpg",
+    "keywords": [
+      "LeetCode 3689",
+      "Maximum Total Subarray Value I",
+      "LeetCode 3689 Solution",
+      "LeetCode Maximum Total Subarray Value I",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "problem_number": 3550,
+  "problem_title": "Smallest Index With Digit Sum Equal to Index",
+  "slug": "smallest-index-with-digit-sum-equal-to-index",
+  "solution_date": "2026-09-24",
+  "formatted_date": "24-09-2026",
+  "day_number": 24,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N * log10(max(nums)))",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/",
+  "youtube_url": "https://youtu.be/8iL2OXi1ElA?si=c6kDkQhlsyme3kKH",
+  "notes": "Optimal O(N * log10(max(nums))) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`.\n\nReturn the **smallest index** `i` such that the sum of the digits of `nums[i]` is equal to `i`.\n\nIf no such index exists, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1,3,2]`\n- **Output:** `2`\n- **Explanation:**\n  - For $i = 0$: `nums[0] = 1`, digit sum is $1 \\ne 0$.\n  - For $i = 1$: `nums[1] = 3`, digit sum is $3 \\ne 1$.\n  - For $i = 2$: `nums[2] = 2`, digit sum is $2 = 2$.\n  - The smallest satisfying index is $2$.\n\n#### Example 2:\n- **Input:** `nums = [1,10,11]`\n- **Output:** `1`\n- **Explanation:**\n  - For $i = 0$: `nums[0] = 1`, digit sum is $1 \\ne 0$.\n  - For $i = 1$: `nums[1] = 10`, digit sum is $1 + 0 = 1$, which equals $i = 1$.\n  - For $i = 2$: `nums[2] = 11`, digit sum is $1 + 1 = 2$, which equals $i = 2$.\n  - Since index $1$ is smaller than $2$, the output is $1$.\n\n#### Example 3:\n- **Input:** `nums = [1,2,3]`\n- **Output:** `-1`\n- **Explanation:**\n  - Since no index satisfies the condition, the output is $-1$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $0 \\le \\text{nums}[i] \\le 1000$\n\n---",
+    "approach_summary": "Iterate sequentially from index 0 to n - 1, compute the digit sum of each element by extracting digits modulo 10, and return the first matching index.",
+    "full_explanation": "# LeetCode 3550: Smallest Index With Digit Sum Equal to Index\n\n- **Publication Date:** 24 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/8iL2OXi1ElA?si=c6kDkQhlsyme3kKH)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nReturn the **smallest index** `i` such that the sum of the digits of `nums[i]` is equal to `i`.\n\nIf no such index exists, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1,3,2]`\n- **Output:** `2`\n- **Explanation:**\n  - For $i = 0$: `nums[0] = 1`, digit sum is $1 \\ne 0$.\n  - For $i = 1$: `nums[1] = 3`, digit sum is $3 \\ne 1$.\n  - For $i = 2$: `nums[2] = 2`, digit sum is $2 = 2$.\n  - The smallest satisfying index is $2$.\n\n#### Example 2:\n- **Input:** `nums = [1,10,11]`\n- **Output:** `1`\n- **Explanation:**\n  - For $i = 0$: `nums[0] = 1`, digit sum is $1 \\ne 0$.\n  - For $i = 1$: `nums[1] = 10`, digit sum is $1 + 0 = 1$, which equals $i = 1$.\n  - For $i = 2$: `nums[2] = 11`, digit sum is $1 + 1 = 2$, which equals $i = 2$.\n  - Since index $1$ is smaller than $2$, the output is $1$.\n\n#### Example 3:\n- **Input:** `nums = [1,2,3]`\n- **Output:** `-1`\n- **Explanation:**\n  - Since no index satisfies the condition, the output is $-1$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $0 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Sequential Scanning\nWe need the **smallest index** $i$ where the sum of the digits of `nums[i]` equals $i$.\n- By iterating from $i = 0$ to $n - 1$ sequentially, the very first index that satisfies the condition is guaranteed to be the smallest valid index.\n- If such an index is encountered, we return it immediately.\n- If the loop finishes without finding any match, return `-1`.\n\n### 2. Digit Sum Helper\nTo compute the sum of digits of a non-negative integer $n$:\n- Initialize `sum = 0`.\n- While $n > 0$:\n  - Extract the last digit: `sum += n % 10`.\n  - Truncate the last digit: `n /= 10`.\n- Return `sum`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log_{10}(\\max(\\text{nums})))$\n  - With $N \\le 100$ and $\\text{nums}[i] \\le 1000$, each number has at most $4$ digits.\n  - The loop performs at most $100 \\times 4 = 400$ basic operations, executing in under $1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only constant extra memory is used for iteration variables and digit accumulation.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Iterate sequentially from index 0 to n - 1, compute the digit sum of each element by extracting digits modulo 10, and return the first matching index.",
+  "explanation": "# LeetCode 3550: Smallest Index With Digit Sum Equal to Index\n\n- **Publication Date:** 24 September 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/8iL2OXi1ElA?si=c6kDkQhlsyme3kKH)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nReturn the **smallest index** `i` such that the sum of the digits of `nums[i]` is equal to `i`.\n\nIf no such index exists, return `-1`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1,3,2]`\n- **Output:** `2`\n- **Explanation:**\n  - For $i = 0$: `nums[0] = 1`, digit sum is $1 \\ne 0$.\n  - For $i = 1$: `nums[1] = 3`, digit sum is $3 \\ne 1$.\n  - For $i = 2$: `nums[2] = 2`, digit sum is $2 = 2$.\n  - The smallest satisfying index is $2$.\n\n#### Example 2:\n- **Input:** `nums = [1,10,11]`\n- **Output:** `1`\n- **Explanation:**\n  - For $i = 0$: `nums[0] = 1`, digit sum is $1 \\ne 0$.\n  - For $i = 1$: `nums[1] = 10`, digit sum is $1 + 0 = 1$, which equals $i = 1$.\n  - For $i = 2$: `nums[2] = 11`, digit sum is $1 + 1 = 2$, which equals $i = 2$.\n  - Since index $1$ is smaller than $2$, the output is $1$.\n\n#### Example 3:\n- **Input:** `nums = [1,2,3]`\n- **Output:** `-1`\n- **Explanation:**\n  - Since no index satisfies the condition, the output is $-1$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 100$\n- $0 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Sequential Scanning\nWe need the **smallest index** $i$ where the sum of the digits of `nums[i]` equals $i$.\n- By iterating from $i = 0$ to $n - 1$ sequentially, the very first index that satisfies the condition is guaranteed to be the smallest valid index.\n- If such an index is encountered, we return it immediately.\n- If the loop finishes without finding any match, return `-1`.\n\n### 2. Digit Sum Helper\nTo compute the sum of digits of a non-negative integer $n$:\n- Initialize `sum = 0`.\n- While $n > 0$:\n  - Extract the last digit: `sum += n % 10`.\n  - Truncate the last digit: `n /= 10`.\n- Return `sum`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log_{10}(\\max(\\text{nums})))$\n  - With $N \\le 100$ and $\\text{nums}[i] \\le 1000$, each number has at most $4$ digits.\n  - The loop performs at most $100 \\times 4 = 400$ basic operations, executing in under $1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only constant extra memory is used for iteration variables and digit accumulation.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int smallestIndex(int[] nums) {\n        for (int i = 0; i < nums.length; i++) {\n            if (digitSum(nums[i]) == i) {\n                return i;\n            }\n        }\n        return -1;\n    }\n\n    private int digitSum(int n) {\n        int sum = 0;\n        while (n > 0) {\n            sum += n % 10;\n            n /= 10;\n        }\n        return sum;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def smallestIndex(self, nums: List[int]) -> int:\n        def digit_sum(n: int) -> int:\n            s = 0\n            while n > 0:\n                s += n % 10\n                n //= 10\n            return s\n\n        for i, val in enumerate(nums):\n            if digit_sum(val) == i:\n                return i\n        return -1\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\n/**\n * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\n    int digitSum(int n) {\n        int sum = 0;\n        while (n > 0) {\n            sum += n % 10;\n            n /= 10;\n        }\n        return sum;\n    }\n\npublic:\n    int smallestIndex(std::vector<int>& nums) {\n        for (int i = 0; i < static_cast<int>(nums.size()); i++) {\n            if (digitSum(nums[i]) == i) {\n                return i;\n            }\n        }\n        return -1;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3550 - Smallest Index With Digit Sum Equal to Index\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar smallestIndex = function(nums) {\n    function digitSum(n) {\n        let sum = 0;\n        while (n > 0) {\n            sum += n % 10;\n            n = Math.floor(n / 10);\n        }\n        return sum;\n    }\n\n    for (let i = 0; i < nums.length; i++) {\n        if (digitSum(nums[i]) === i) {\n            return i;\n        }\n    }\n    return -1;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3550-smallest-index-with-digit-sum-equal-to-index.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3550-smallest-index-with-digit-sum-equal-to-index.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3550: Smallest Index With Digit Sum Equal to Index Solutio...",
+    "meta_description": "Master LeetCode 3550 (Smallest Index With Digit Sum Equal to Index) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N * log10(m...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3550-smallest-index-with-digit-sum-equal-to-index.jpg",
+    "keywords": [
+      "LeetCode 3550",
+      "Smallest Index With Digit Sum Equal to Index",
+      "LeetCode 3550 Solution",
+      "LeetCode Smallest Index With Digit Sum Equal to Index",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

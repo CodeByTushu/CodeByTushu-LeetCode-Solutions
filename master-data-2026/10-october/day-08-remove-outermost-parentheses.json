@@ -1,0 +1,78 @@
+{
+  "problem_number": 1021,
+  "problem_title": "Remove Outermost Parentheses",
+  "slug": "remove-outermost-parentheses",
+  "solution_date": "2026-10-08",
+  "formatted_date": "08-10-2026",
+  "day_number": 8,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N) where N = s.length",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/remove-outermost-parentheses/",
+  "youtube_url": "https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn",
+  "notes": "Optimal O(N) where N = s.length time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "A valid parentheses string is either empty `\"\"`, `\"(\" + A + \")\"`, or `A + B`, where `A` and `B` are valid parentheses strings, and `+` represents string concatenation.\n\nA valid parentheses string `s` is **primitive** if it is nonempty, and there does not exist a way to split it into `s = A + B`, with `A` and `B` nonempty valid parentheses strings.\n\nGiven a valid parentheses string `s`, consider its primitive decomposition: `s = P1 + P2 + ... + Pk`, where `Pi` are primitive valid parentheses strings.\n\nReturn `s` after removing the outermost parentheses of every primitive string in the primitive decomposition of `s`.\n\n---",
+    "approach_summary": "Track nesting depth linearly. Only include '(' when current depth > 0 before incrementing, and include ')' when depth > 0 after decrementing.",
+    "full_explanation": "﻿# LeetCode 1021: Remove Outermost Parentheses\n\n- **Publication Date:** 08 October 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/remove-outermost-parentheses/](https://leetcode.com/problems/remove-outermost-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)\n\n---\n\n## Problem Summary\n\nA valid parentheses string is either empty `\"\"`, `\"(\" + A + \")\"`, or `A + B`, where `A` and `B` are valid parentheses strings, and `+` represents string concatenation.\n\nA valid parentheses string `s` is **primitive** if it is nonempty, and there does not exist a way to split it into `s = A + B`, with `A` and `B` nonempty valid parentheses strings.\n\nGiven a valid parentheses string `s`, consider its primitive decomposition: `s = P1 + P2 + ... + Pk`, where `Pi` are primitive valid parentheses strings.\n\nReturn `s` after removing the outermost parentheses of every primitive string in the primitive decomposition of `s`.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n\n---\n\n## Approach\n\n1. **Primitive Parentheses & Nesting Depth**:\n   - Each primitive valid parentheses string starts with an opening parenthesis `'('` at depth 0 and closes with a matching `')'` that brings the depth back down to 0.\n   - The outermost parentheses of each primitive block are precisely:\n     - The first `'('` (where depth transition is $0 \\to 1$).\n     - The corresponding final `')'` (where depth transition is $1 \\to 0$).\n\n2. **Linear Depth Tracking (O(1) Auxiliary Space)**:\n   - Instead of maintaining an explicit stack, track the current nesting depth with an integer `depth = 0`.\n   - Traverse each character `c` of string `s`:\n     - If `c == '('`:\n       - If `depth > 0`, this `'('` is an inner parenthesis (not outermost), so append it to our result.\n       - Increment `depth++`.\n     - If `c == ')'`:\n       - Decrement `depth--`.\n       - If `depth > 0`, this `')'` is an inner parenthesis (not outermost), so append it to our result.\n   - This cleanly strips away the outermost pair of every primitive block while retaining all inner structure.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single linear pass through string `s` of length $N \\le 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses a single integer variable `depth` for depth counting. Auxiliary memory beyond the output string is $\\mathcal{O}(1)$.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)\n"
+  },
+  "approach_summary": "Track nesting depth linearly. Only include '(' when current depth > 0 before incrementing, and include ')' when depth > 0 after decrementing.",
+  "explanation": "﻿# LeetCode 1021: Remove Outermost Parentheses\n\n- **Publication Date:** 08 October 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/remove-outermost-parentheses/](https://leetcode.com/problems/remove-outermost-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)\n\n---\n\n## Problem Summary\n\nA valid parentheses string is either empty `\"\"`, `\"(\" + A + \")\"`, or `A + B`, where `A` and `B` are valid parentheses strings, and `+` represents string concatenation.\n\nA valid parentheses string `s` is **primitive** if it is nonempty, and there does not exist a way to split it into `s = A + B`, with `A` and `B` nonempty valid parentheses strings.\n\nGiven a valid parentheses string `s`, consider its primitive decomposition: `s = P1 + P2 + ... + Pk`, where `Pi` are primitive valid parentheses strings.\n\nReturn `s` after removing the outermost parentheses of every primitive string in the primitive decomposition of `s`.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Stack**\n\n---\n\n## Approach\n\n1. **Primitive Parentheses & Nesting Depth**:\n   - Each primitive valid parentheses string starts with an opening parenthesis `'('` at depth 0 and closes with a matching `')'` that brings the depth back down to 0.\n   - The outermost parentheses of each primitive block are precisely:\n     - The first `'('` (where depth transition is $0 \\to 1$).\n     - The corresponding final `')'` (where depth transition is $1 \\to 0$).\n\n2. **Linear Depth Tracking (O(1) Auxiliary Space)**:\n   - Instead of maintaining an explicit stack, track the current nesting depth with an integer `depth = 0`.\n   - Traverse each character `c` of string `s`:\n     - If `c == '('`:\n       - If `depth > 0`, this `'('` is an inner parenthesis (not outermost), so append it to our result.\n       - Increment `depth++`.\n     - If `c == ')'`:\n       - Decrement `depth--`.\n       - If `depth > 0`, this `')'` is an inner parenthesis (not outermost), so append it to our result.\n   - This cleanly strips away the outermost pair of every primitive block while retaining all inner structure.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Single linear pass through string `s` of length $N \\le 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only uses a single integer variable `depth` for depth counting. Auxiliary memory beyond the output string is $\\mathcal{O}(1)$.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn](https://youtu.be/IiCJD07FtWQ?si=hII9yMy6olSN8TSn)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1021 - Remove Outermost Parentheses\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String removeOuterParentheses(String s) {\n        StringBuilder sb = new StringBuilder();\n        int depth = 0;\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (c == '(') {\n                if (depth > 0) sb.append(c);\n                depth++;\n            } else {\n                depth--;\n                if (depth > 0) sb.append(c);\n            }\n        }\n        return sb.toString();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1021 - Remove Outermost Parentheses\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def removeOuterParentheses(self, s: str) -> str:\n        res = []\n        depth = 0\n        for c in s:\n            if c == '(':\n                if depth > 0:\n                    res.append(c)\n                depth += 1\n            else:\n                depth -= 1\n                if depth > 0:\n                    res.append(c)\n        return \"\".join(res)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1021 - Remove Outermost Parentheses\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1021 - Remove Outermost Parentheses\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    string removeOuterParentheses(string s) {\n        string result = \"\";\n        int depth = 0;\n        for (char c : s) {\n            if (c == '(') {\n                if (depth > 0) result += c;\n                depth++;\n            } else {\n                depth--;\n                if (depth > 0) result += c;\n            }\n        }\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1021 - Remove Outermost Parentheses\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar removeOuterParentheses = function(s) {\n    let result = '';\n    let depth = 0;\n    for (let i = 0; i < s.length; i++) {\n        const c = s[i];\n        if (c === '(') {\n            if (depth > 0) result += c;\n            depth++;\n        } else {\n            depth--;\n            if (depth > 0) result += c;\n        }\n    }\n    return result;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1021-remove-outermost-parentheses.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1021-remove-outermost-parentheses.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1021: Remove Outermost Parentheses Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1021 (Remove Outermost Parentheses) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) where N = s.length appro...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1021-remove-outermost-parentheses.jpg",
+    "keywords": [
+      "LeetCode 1021",
+      "Remove Outermost Parentheses",
+      "LeetCode 1021 Solution",
+      "LeetCode Remove Outermost Parentheses",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

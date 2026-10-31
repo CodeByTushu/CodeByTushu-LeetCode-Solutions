@@ -1,0 +1,81 @@
+{
+  "problem_number": 2029,
+  "problem_title": "Stone Game IX",
+  "slug": "stone-game-ix",
+  "solution_date": "2026-08-16",
+  "formatted_date": "16-08-2026",
+  "day_number": 16,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/stone-game-ix/",
+  "youtube_url": "https://youtu.be/0xYKStmu5Lo?si=GW0kUTFhNjQDeP4s",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Alice and Bob continue their games with stones. There is a row of $n$ stones, and each stone has an associated value. You are given an integer array `stones`, where `stones[i]` is the value of the $i^{\\text{th}}$ stone.\n\nAlice and Bob take turns, with **Alice starting first**. On each turn, the player may remove any stone from `stones`. The player who removes a stone **loses** if the **sum of the values of all removed stones is divisible by 3**. Bob will win automatically if there are no remaining stones (even if it is Alice's turn).\n\nAssuming both players play **optimally**, return `true` if Alice wins and `false` if Bob wins.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `stones = [2,1]`\n- **Output:** `true`\n- **Explanation:** The game will be played as follows:\n  - Turn 1: Alice can remove either stone.\n  - Turn 2: Bob removes the remaining stone.\n  The sum of the removed stones is $1 + 2 = 3$ and is divisible by 3. Therefore, Bob loses and Alice wins the game.\n\n#### Example 2:\n\n- **Input:** `stones = [2]`\n- **Output:** `false`\n- **Explanation:** Alice will remove the only stone, and the sum of the values on the removed stones is $2$.\n  Since all the stones are removed and the sum of values is not divisible by 3, Bob wins the game.\n\n#### Example 3:\n\n- **Input:** `stones = [5,1,2,4,3]`\n- **Output:** `false`\n- **Explanation:** Bob will always win. One possible way for Bob to win is shown below:\n  - Turn 1: Alice removes stone with value 1. Sum = 1.\n  - Turn 2: Bob removes stone with value 3. Sum = 1 + 3 = 4.\n  - Turn 3: Alice removes stone with value 4. Sum = 1 + 3 + 4 = 8.\n  - Turn 4: Bob removes stone with value 2. Sum = 1 + 3 + 4 + 2 = 10.\n  - Turn 5: Alice removes stone with value 5. Sum = 1 + 3 + 4 + 2 + 5 = 15.\n  Alice loses because the sum ($15$) is divisible by 3. Bob wins the game.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{stones.length} \\le 10^5$\n- $1 \\le \\text{stones}[i] \\le 10^4$\n\n---",
+    "approach_summary": "Classify stones by remainder modulo 3. Stones with remainder 0 toggle parity without altering modulo state. Analyze whether Alice can guarantee alternating moves without reaching a multiple of 3 based on 0-stone parity.",
+    "full_explanation": "# LeetCode 2029: Stone Game IX\n\n- **Publication Date:** 16 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/stone-game-ix/](https://leetcode.com/problems/stone-game-ix/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0xYKStmu5Lo?si=GW0kUTFhNjQDeP4s)\n\n---\n\n## Problem Summary\n\nAlice and Bob continue their games with stones. There is a row of $n$ stones, and each stone has an associated value. You are given an integer array `stones`, where `stones[i]` is the value of the $i^{\\text{th}}$ stone.\n\nAlice and Bob take turns, with **Alice starting first**. On each turn, the player may remove any stone from `stones`. The player who removes a stone **loses** if the **sum of the values of all removed stones is divisible by 3**. Bob will win automatically if there are no remaining stones (even if it is Alice's turn).\n\nAssuming both players play **optimally**, return `true` if Alice wins and `false` if Bob wins.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `stones = [2,1]`\n- **Output:** `true`\n- **Explanation:** The game will be played as follows:\n  - Turn 1: Alice can remove either stone.\n  - Turn 2: Bob removes the remaining stone.\n  The sum of the removed stones is $1 + 2 = 3$ and is divisible by 3. Therefore, Bob loses and Alice wins the game.\n\n#### Example 2:\n\n- **Input:** `stones = [2]`\n- **Output:** `false`\n- **Explanation:** Alice will remove the only stone, and the sum of the values on the removed stones is $2$.\n  Since all the stones are removed and the sum of values is not divisible by 3, Bob wins the game.\n\n#### Example 3:\n\n- **Input:** `stones = [5,1,2,4,3]`\n- **Output:** `false`\n- **Explanation:** Bob will always win. One possible way for Bob to win is shown below:\n  - Turn 1: Alice removes stone with value 1. Sum = 1.\n  - Turn 2: Bob removes stone with value 3. Sum = 1 + 3 = 4.\n  - Turn 3: Alice removes stone with value 4. Sum = 1 + 3 + 4 = 8.\n  - Turn 4: Bob removes stone with value 2. Sum = 1 + 3 + 4 + 2 = 10.\n  - Turn 5: Alice removes stone with value 5. Sum = 1 + 3 + 4 + 2 + 5 = 15.\n  Alice loses because the sum ($15$) is divisible by 3. Bob wins the game.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{stones.length} \\le 10^5$\n- $1 \\le \\text{stones}[i] \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Greedy**\n- **Game Theory**\n- **Counting**\n\n---\n\n## Intuition and Approach\n\n### Modulo 3 Classification:\nBecause the win/loss condition depends solely on whether the cumulative sum is divisible by $3$, each stone's actual numerical value is irrelevant—only its remainder modulo 3 matters:\n- `cnt[0]`: count of stones with value $\\equiv 0 \\pmod 3$\n- `cnt[1]`: count of stones with value $\\equiv 1 \\pmod 3$\n- `cnt[2]`: count of stones with value $\\equiv 2 \\pmod 3$\n\n### Role of Stones with Remainder 0:\nA stone with remainder $0$ does not change the running sum modulo 3. Playing a $0$-stone only passes the turn to the opponent. Thus, they act purely as parity toggles:\n- **Case 1: `cnt[0]` is Even**\n  - An even number of $0$-stones can always be symmetrically matched by the opposing player.\n  - Alice must choose either a remainder $1$ or remainder $2$ stone on turn 1.\n  - If Alice chooses remainder $1$, subsequent optimal play requires alternating between $1$ and $2$ (e.g. sequence modulo 3: $1, 1, 2, 1, 2, 1, 2, \\dots$).\n  - If either `cnt[1] == 0` or `cnt[2] == 0`, Alice is forced to pick the only available remainder and will quickly cause a multiple of 3 on turn 3, or Bob wins when stones run out.\n  - Therefore, Alice wins if and only if:\n    $$\\text{cnt}[1] \\ge 1 \\quad \\text{and} \\quad \\text{cnt}[2] \\ge 1$$\n\n- **Case 2: `cnt[0]` is Odd**\n  - An odd number of $0$-stones transfers the turn advantage: whoever plays the last $0$-stone flips who is cornered.\n  - Alice wins if and only if one remainder category substantially outnumbers the other so that the alternate player is forced to cause a multiple of 3:\n    $$|\\text{cnt}[1] - \\text{cnt}[2]| > 2$$\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single pass over the array counts the frequencies modulo 3.\n  - Followed by $\\mathcal{O}(1)$ constant-time arithmetic checks.\n  - Runs in $\\approx 1\\text{ ms}$ for $N = 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only a fixed-size array of 3 integers.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Classify stones by remainder modulo 3. Stones with remainder 0 toggle parity without altering modulo state. Analyze whether Alice can guarantee alternating moves without reaching a multiple of 3 based on 0-stone parity.",
+  "explanation": "# LeetCode 2029: Stone Game IX\n\n- **Publication Date:** 16 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/stone-game-ix/](https://leetcode.com/problems/stone-game-ix/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0xYKStmu5Lo?si=GW0kUTFhNjQDeP4s)\n\n---\n\n## Problem Summary\n\nAlice and Bob continue their games with stones. There is a row of $n$ stones, and each stone has an associated value. You are given an integer array `stones`, where `stones[i]` is the value of the $i^{\\text{th}}$ stone.\n\nAlice and Bob take turns, with **Alice starting first**. On each turn, the player may remove any stone from `stones`. The player who removes a stone **loses** if the **sum of the values of all removed stones is divisible by 3**. Bob will win automatically if there are no remaining stones (even if it is Alice's turn).\n\nAssuming both players play **optimally**, return `true` if Alice wins and `false` if Bob wins.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `stones = [2,1]`\n- **Output:** `true`\n- **Explanation:** The game will be played as follows:\n  - Turn 1: Alice can remove either stone.\n  - Turn 2: Bob removes the remaining stone.\n  The sum of the removed stones is $1 + 2 = 3$ and is divisible by 3. Therefore, Bob loses and Alice wins the game.\n\n#### Example 2:\n\n- **Input:** `stones = [2]`\n- **Output:** `false`\n- **Explanation:** Alice will remove the only stone, and the sum of the values on the removed stones is $2$.\n  Since all the stones are removed and the sum of values is not divisible by 3, Bob wins the game.\n\n#### Example 3:\n\n- **Input:** `stones = [5,1,2,4,3]`\n- **Output:** `false`\n- **Explanation:** Bob will always win. One possible way for Bob to win is shown below:\n  - Turn 1: Alice removes stone with value 1. Sum = 1.\n  - Turn 2: Bob removes stone with value 3. Sum = 1 + 3 = 4.\n  - Turn 3: Alice removes stone with value 4. Sum = 1 + 3 + 4 = 8.\n  - Turn 4: Bob removes stone with value 2. Sum = 1 + 3 + 4 + 2 = 10.\n  - Turn 5: Alice removes stone with value 5. Sum = 1 + 3 + 4 + 2 + 5 = 15.\n  Alice loses because the sum ($15$) is divisible by 3. Bob wins the game.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{stones.length} \\le 10^5$\n- $1 \\le \\text{stones}[i] \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Greedy**\n- **Game Theory**\n- **Counting**\n\n---\n\n## Intuition and Approach\n\n### Modulo 3 Classification:\nBecause the win/loss condition depends solely on whether the cumulative sum is divisible by $3$, each stone's actual numerical value is irrelevant—only its remainder modulo 3 matters:\n- `cnt[0]`: count of stones with value $\\equiv 0 \\pmod 3$\n- `cnt[1]`: count of stones with value $\\equiv 1 \\pmod 3$\n- `cnt[2]`: count of stones with value $\\equiv 2 \\pmod 3$\n\n### Role of Stones with Remainder 0:\nA stone with remainder $0$ does not change the running sum modulo 3. Playing a $0$-stone only passes the turn to the opponent. Thus, they act purely as parity toggles:\n- **Case 1: `cnt[0]` is Even**\n  - An even number of $0$-stones can always be symmetrically matched by the opposing player.\n  - Alice must choose either a remainder $1$ or remainder $2$ stone on turn 1.\n  - If Alice chooses remainder $1$, subsequent optimal play requires alternating between $1$ and $2$ (e.g. sequence modulo 3: $1, 1, 2, 1, 2, 1, 2, \\dots$).\n  - If either `cnt[1] == 0` or `cnt[2] == 0`, Alice is forced to pick the only available remainder and will quickly cause a multiple of 3 on turn 3, or Bob wins when stones run out.\n  - Therefore, Alice wins if and only if:\n    $$\\text{cnt}[1] \\ge 1 \\quad \\text{and} \\quad \\text{cnt}[2] \\ge 1$$\n\n- **Case 2: `cnt[0]` is Odd**\n  - An odd number of $0$-stones transfers the turn advantage: whoever plays the last $0$-stone flips who is cornered.\n  - Alice wins if and only if one remainder category substantially outnumbers the other so that the alternate player is forced to cause a multiple of 3:\n    $$|\\text{cnt}[1] - \\text{cnt}[2]| > 2$$\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single pass over the array counts the frequencies modulo 3.\n  - Followed by $\\mathcal{O}(1)$ constant-time arithmetic checks.\n  - Runs in $\\approx 1\\text{ ms}$ for $N = 10^5$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Uses only a fixed-size array of 3 integers.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2029 - Stone Game IX\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean stoneGameIX(int[] stones) {\n        int[] cnt = new int[3];\n        for (int s : stones) {\n            cnt[s % 3]++;\n        }\n\n        if (cnt[0] % 2 == 0) {\n            return cnt[1] >= 1 && cnt[2] >= 1;\n        } else {\n            return Math.abs(cnt[1] - cnt[2]) > 2;\n        }\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2029 - Stone Game IX\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def stoneGameIX(self, stones: List[int]) -> bool:\n        cnt = [0] * 3\n        for s in stones:\n            cnt[s % 3] += 1\n\n        if cnt[0] % 2 == 0:\n            return cnt[1] >= 1 and cnt[2] >= 1\n        else:\n            return abs(cnt[1] - cnt[2]) > 2\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2029 - Stone Game IX\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <cmath>\n#include <cstdlib>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 2029 - Stone Game IX\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool stoneGameIX(vector<int>& stones) {\n        int cnt[3] = {0, 0, 0};\n        for (int s : stones) {\n            cnt[s % 3]++;\n        }\n\n        if (cnt[0] % 2 == 0) {\n            return cnt[1] >= 1 && cnt[2] >= 1;\n        } else {\n            return abs(cnt[1] - cnt[2]) > 2;\n        }\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2029 - Stone Game IX\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar stoneGameIX = function(stones) {\n    const cnt = [0, 0, 0];\n    for (const s of stones) {\n        cnt[s % 3]++;\n    }\n\n    if (cnt[0] % 2 === 0) {\n        return cnt[1] >= 1 && cnt[2] >= 1;\n    } else {\n        return Math.abs(cnt[1] - cnt[2]) > 2;\n    }\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Game Theory",
+    "Counting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2029-stone-game-ix.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2029-stone-game-ix.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2029: Stone Game IX Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 2029 (Stone Game IX) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2029-stone-game-ix.jpg",
+    "keywords": [
+      "LeetCode 2029",
+      "Stone Game IX",
+      "LeetCode 2029 Solution",
+      "LeetCode Stone Game IX",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

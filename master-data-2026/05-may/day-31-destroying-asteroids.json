@@ -1,0 +1,79 @@
+{
+  "problem_number": 2126,
+  "problem_title": "Destroying Asteroids",
+  "slug": "destroying-asteroids",
+  "solution_date": "2026-05-31",
+  "formatted_date": "31-05-2026",
+  "day_number": 31,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N log N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/destroying-asteroids/",
+  "youtube_url": "https://youtu.be/7i8gMq4Pneo",
+  "notes": "Optimal O(N log N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer `mass`, representing the initial mass of a planet. You are also given an integer array `asteroids`, where `asteroids[i]` is the mass of the $i^{\\text{th}}$ asteroid.\n\nYou can arrange for the planet to collide with the asteroids in **any arbitrary order**.\n- If the current mass of the planet is **greater than or equal to** the asteroid's mass, the asteroid is destroyed and the planet gains the asteroid's mass ($m \\leftarrow m + \\text{asteroid}$).\n- Otherwise, the planet is destroyed.\n\nReturn `true` if all asteroids can be destroyed, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mass = 10`, `asteroids = [3, 9, 19, 5, 21]`\n- **Output:** `true`\n- **Explanation:**\n  - Collide with asteroid of mass $3$: new mass is $10 + 3 = 13$.\n  - Collide with asteroid of mass $5$: new mass is $13 + 5 = 18$.\n  - Collide with asteroid of mass $9$: new mass is $18 + 9 = 27$.\n  - Collide with asteroid of mass $19$: new mass is $27 + 19 = 46$.\n  - Collide with asteroid of mass $21$: new mass is $46 + 21 = 67$.\n  - All asteroids are successfully destroyed.\n\n#### Example 2:\n- **Input:** `mass = 5`, `asteroids = [4, 9, 23, 4]`\n- **Output:** `false`\n- **Explanation:**\n  - Even after destroying asteroids $4, 4, 9$, total mass is $5 + 4 + 4 + 9 = 22 < 23$.\n  - The planet cannot destroy the asteroid of mass $23$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{mass} \\le 10^5$\n- $1 \\le \\text{asteroids.length} \\le 10^5$\n- $1 \\le \\text{asteroids}[i] \\le 10^5$\n\n---",
+    "approach_summary": "Sort the asteroids in ascending order and greedily destroy each asteroid while accumulating mass using a 64-bit integer to prevent overflow.",
+    "full_explanation": "# LeetCode 2126: Destroying Asteroids\n\n- **Publication Date:** 31 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/destroying-asteroids/](https://leetcode.com/problems/destroying-asteroids/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/7i8gMq4Pneo)\n\n---\n\n## Problem Summary\n\nYou are given an integer `mass`, representing the initial mass of a planet. You are also given an integer array `asteroids`, where `asteroids[i]` is the mass of the $i^{\\text{th}}$ asteroid.\n\nYou can arrange for the planet to collide with the asteroids in **any arbitrary order**.\n- If the current mass of the planet is **greater than or equal to** the asteroid's mass, the asteroid is destroyed and the planet gains the asteroid's mass ($m \\leftarrow m + \\text{asteroid}$).\n- Otherwise, the planet is destroyed.\n\nReturn `true` if all asteroids can be destroyed, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mass = 10`, `asteroids = [3, 9, 19, 5, 21]`\n- **Output:** `true`\n- **Explanation:**\n  - Collide with asteroid of mass $3$: new mass is $10 + 3 = 13$.\n  - Collide with asteroid of mass $5$: new mass is $13 + 5 = 18$.\n  - Collide with asteroid of mass $9$: new mass is $18 + 9 = 27$.\n  - Collide with asteroid of mass $19$: new mass is $27 + 19 = 46$.\n  - Collide with asteroid of mass $21$: new mass is $46 + 21 = 67$.\n  - All asteroids are successfully destroyed.\n\n#### Example 2:\n- **Input:** `mass = 5`, `asteroids = [4, 9, 23, 4]`\n- **Output:** `false`\n- **Explanation:**\n  - Even after destroying asteroids $4, 4, 9$, total mass is $5 + 4 + 4 + 9 = 22 < 23$.\n  - The planet cannot destroy the asteroid of mass $23$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{mass} \\le 10^5$\n- $1 \\le \\text{asteroids.length} \\le 10^5$\n- $1 \\le \\text{asteroids}[i] \\le 10^5$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Greedy**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Greedy Choice Property\n\nTo maximize the chance of destroying all asteroids, the planet should always consume the smallest available asteroid first:\n- If the planet cannot destroy the smallest asteroid remaining, it cannot destroy any larger asteroid either.\n- By absorbing smaller asteroids first, the planet's mass monotonically increases, making subsequent larger collisions strictly easier.\n\n### 2. Implementation & 64-bit Overflow Prevention\n\n- Sort `asteroids` in non-decreasing order: $\\mathcal{O}(N \\log N)$.\n- Iterate through each asteroid:\n  - If `currentMass < asteroid`, return `false`.\n  - Otherwise, `currentMass += asteroid`.\n- **Note on integer overflow:** With $\\text{asteroids.length} = 10^5$ and each asteroid up to $10^5$, total mass can reach $10^{10}$, which exceeds 32-bit signed integers ($2^{31} - 1 \\approx 2.14 \\times 10^9$). We use 64-bit integers (`long` in Java, `long long` in C++) to prevent overflow.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$\n  - Sorting `asteroids` of size $N = 10^5$ takes $\\mathcal{O}(N \\log N)$ time.\n  - Linear scan takes $\\mathcal{O}(N)$ time.\n  - Overall time complexity is $\\mathcal{O}(N \\log N)$ ($\\approx 15\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ or $\\mathcal{O}(N)$\n  - In-place sorting requires $\\mathcal{O}(1)$ auxiliary space in C++ (or $\\mathcal{O}(\\log N)$ stack space).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/7i8gMq4Pneo](https://youtu.be/7i8gMq4Pneo)\n"
+  },
+  "approach_summary": "Sort the asteroids in ascending order and greedily destroy each asteroid while accumulating mass using a 64-bit integer to prevent overflow.",
+  "explanation": "# LeetCode 2126: Destroying Asteroids\n\n- **Publication Date:** 31 May 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/destroying-asteroids/](https://leetcode.com/problems/destroying-asteroids/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/7i8gMq4Pneo)\n\n---\n\n## Problem Summary\n\nYou are given an integer `mass`, representing the initial mass of a planet. You are also given an integer array `asteroids`, where `asteroids[i]` is the mass of the $i^{\\text{th}}$ asteroid.\n\nYou can arrange for the planet to collide with the asteroids in **any arbitrary order**.\n- If the current mass of the planet is **greater than or equal to** the asteroid's mass, the asteroid is destroyed and the planet gains the asteroid's mass ($m \\leftarrow m + \\text{asteroid}$).\n- Otherwise, the planet is destroyed.\n\nReturn `true` if all asteroids can be destroyed, or `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mass = 10`, `asteroids = [3, 9, 19, 5, 21]`\n- **Output:** `true`\n- **Explanation:**\n  - Collide with asteroid of mass $3$: new mass is $10 + 3 = 13$.\n  - Collide with asteroid of mass $5$: new mass is $13 + 5 = 18$.\n  - Collide with asteroid of mass $9$: new mass is $18 + 9 = 27$.\n  - Collide with asteroid of mass $19$: new mass is $27 + 19 = 46$.\n  - Collide with asteroid of mass $21$: new mass is $46 + 21 = 67$.\n  - All asteroids are successfully destroyed.\n\n#### Example 2:\n- **Input:** `mass = 5`, `asteroids = [4, 9, 23, 4]`\n- **Output:** `false`\n- **Explanation:**\n  - Even after destroying asteroids $4, 4, 9$, total mass is $5 + 4 + 4 + 9 = 22 < 23$.\n  - The planet cannot destroy the asteroid of mass $23$.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{mass} \\le 10^5$\n- $1 \\le \\text{asteroids.length} \\le 10^5$\n- $1 \\le \\text{asteroids}[i] \\le 10^5$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Greedy**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Greedy Choice Property\n\nTo maximize the chance of destroying all asteroids, the planet should always consume the smallest available asteroid first:\n- If the planet cannot destroy the smallest asteroid remaining, it cannot destroy any larger asteroid either.\n- By absorbing smaller asteroids first, the planet's mass monotonically increases, making subsequent larger collisions strictly easier.\n\n### 2. Implementation & 64-bit Overflow Prevention\n\n- Sort `asteroids` in non-decreasing order: $\\mathcal{O}(N \\log N)$.\n- Iterate through each asteroid:\n  - If `currentMass < asteroid`, return `false`.\n  - Otherwise, `currentMass += asteroid`.\n- **Note on integer overflow:** With $\\text{asteroids.length} = 10^5$ and each asteroid up to $10^5$, total mass can reach $10^{10}$, which exceeds 32-bit signed integers ($2^{31} - 1 \\approx 2.14 \\times 10^9$). We use 64-bit integers (`long` in Java, `long long` in C++) to prevent overflow.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N \\log N)$\n  - Sorting `asteroids` of size $N = 10^5$ takes $\\mathcal{O}(N \\log N)$ time.\n  - Linear scan takes $\\mathcal{O}(N)$ time.\n  - Overall time complexity is $\\mathcal{O}(N \\log N)$ ($\\approx 15\\text{ ms}$).\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$ or $\\mathcal{O}(N)$\n  - In-place sorting requires $\\mathcal{O}(1)$ auxiliary space in C++ (or $\\mathcal{O}(\\log N)$ stack space).\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/7i8gMq4Pneo](https://youtu.be/7i8gMq4Pneo)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2126 - Destroying Asteroids\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.Arrays;\n\nclass Solution {\n    public boolean asteroidsDestroyed(int mass, int[] asteroids) {\n        Arrays.sort(asteroids);\n        long currentMass = mass;\n\n        for (int asteroid : asteroids) {\n            if (currentMass < asteroid) {\n                return false;\n            }\n            currentMass += asteroid;\n        }\n\n        return true;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2126 - Destroying Asteroids\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def asteroidsDestroyed(self, mass: int, asteroids: List[int]) -> bool:\n        asteroids.sort()\n        current_mass = mass\n\n        for asteroid in asteroids:\n            if current_mass < asteroid:\n                return False\n            current_mass += asteroid\n\n        return True\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2126 - Destroying Asteroids\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool asteroidsDestroyed(int mass, vector<int>& asteroids) {\n        sort(asteroids.begin(), asteroids.end());\n        long long currentMass = mass;\n\n        for (int asteroid : asteroids) {\n            if (currentMass < asteroid) {\n                return false;\n            }\n            currentMass += asteroid;\n        }\n\n        return true;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2126 - Destroying Asteroids\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number} mass\n * @param {number[]} asteroids\n * @return {boolean}\n */\nvar asteroidsDestroyed = function(mass, asteroids) {\n    asteroids.sort((a, b) => a - b);\n    let currentMass = mass;\n\n    for (let i = 0; i < asteroids.length; i++) {\n        if (currentMass < asteroids[i]) {\n            return false;\n        }\n        currentMass += asteroids[i];\n    }\n\n    return true;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2126-destroying-asteroids.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2126-destroying-asteroids.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2126: Destroying Asteroids Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 2126 (Destroying Asteroids) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N log N) approach and detailed expl...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2126-destroying-asteroids.jpg",
+    "keywords": [
+      "LeetCode 2126",
+      "Destroying Asteroids",
+      "LeetCode 2126 Solution",
+      "LeetCode Destroying Asteroids",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

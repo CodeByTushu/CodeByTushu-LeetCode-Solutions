@@ -1,0 +1,79 @@
+{
+  "problem_number": 3637,
+  "problem_title": "Trionic Array I",
+  "slug": "trionic-array-i",
+  "solution_date": "2026-02-03",
+  "formatted_date": "03-02-2026",
+  "day_number": 3,
+  "month": "February",
+  "month_num": 2,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/trionic-array-i/",
+  "youtube_url": "https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` of length `n`.\n\nAn array is **trionic** if there exist indices $0 < p < q < n - 1$ such that:\n- `nums[0...p]` is **strictly increasing**,\n- `nums[p...q]` is **strictly decreasing**,\n- `nums[q...n - 1]` is **strictly increasing**.\n\nReturn `true` if `nums` is trionic, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 5, 4, 2, 6]`\n- **Output:** `true`\n- **Explanation:**\n  Pick $p = 2, q = 4$:\n  - `nums[0...2] = [1, 3, 5]` is strictly increasing ($1 < 3 < 5$).\n  - `nums[2...4] = [5, 4, 2]` is strictly decreasing ($5 > 4 > 2$).\n  - `nums[4...5] = [2, 6]` is strictly increasing ($2 < 6$).\n\n#### Example 2:\n- **Input:** `nums = [2, 1, 3]`\n- **Output:** `false`\n- **Explanation:**\n  There is no way to pick $p$ and $q$ to form the required three segments because $n = 3$, and we require $0 < p < q < n - 1$ (which implies $n \\ge 4$).\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 100$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n\n---",
+    "approach_summary": "Perform a single-pass three-phase linear traversal. First, climb strictly increasing elements to locate peak p (validating 0 < p < n - 2). Next, descend strictly decreasing elements to find valley q (validating p < q < n - 1). Finally, climb strictly increasing elements to the end, returning true if the pointer reaches index n - 1.",
+    "full_explanation": "# LeetCode 3637: Trionic Array I\n\n- **Publication Date:** 03 February 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/trionic-array-i/](https://leetcode.com/problems/trionic-array-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length `n`.\n\nAn array is **trionic** if there exist indices $0 < p < q < n - 1$ such that:\n- `nums[0...p]` is **strictly increasing**,\n- `nums[p...q]` is **strictly decreasing**,\n- `nums[q...n - 1]` is **strictly increasing**.\n\nReturn `true` if `nums` is trionic, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 5, 4, 2, 6]`\n- **Output:** `true`\n- **Explanation:**\n  Pick $p = 2, q = 4$:\n  - `nums[0...2] = [1, 3, 5]` is strictly increasing ($1 < 3 < 5$).\n  - `nums[2...4] = [5, 4, 2]` is strictly decreasing ($5 > 4 > 2$).\n  - `nums[4...5] = [2, 6]` is strictly increasing ($2 < 6$).\n\n#### Example 2:\n- **Input:** `nums = [2, 1, 3]`\n- **Output:** `false`\n- **Explanation:**\n  There is no way to pick $p$ and $q$ to form the required three segments because $n = 3$, and we require $0 < p < q < n - 1$ (which implies $n \\ge 4$).\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 100$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Two Pointers**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Three-Phase Linear Scanning\n\n1. **Size Requirement:**\n   - To have valid integer indices satisfying $0 < p < q < n - 1$, the array must contain at least four elements ($n \\ge 4$). If $n < 4$, return `false` immediately.\n\n2. **Phase 1: Strictly Increasing Ascent (Finding Peak $p$):**\n   - Starting from index $0$, advance pointer $i$ as long as $i + 1 < n$ and $\\text{nums}[i] < \\text{nums}[i + 1]$.\n   - Let $p = i$ be the detected peak.\n   - For a valid trionic array, $p$ must be strictly greater than $0$ (the increasing segment cannot be empty) and strictly less than $n - 2$ (at least two elements must remain to form the decreasing and subsequent increasing segments). If $p == 0$ or $p \\ge n - 2$, return `false`.\n\n3. **Phase 2: Strictly Decreasing Descent (Finding Valley $q$):**\n   - From $p$, advance pointer $i$ as long as $i + 1 < n$ and $\\text{nums}[i] > \\text{nums}[i + 1]$.\n   - Let $q = i$ be the detected valley.\n   - For a valid descent, $q > p$ (at least one decreasing step) and $q < n - 1$ (at least one element must remain for the final ascent). If $q == p$ or $q \\ge n - 1$, return `false`.\n\n4. **Phase 3: Final Strictly Increasing Ascent:**\n   - From $q$, advance pointer $i$ as long as $i + 1 < n$ and $\\text{nums}[i] < \\text{nums}[i + 1]$.\n   - The array is trionic if and only if this final ascent reaches the last element ($i == n - 1$).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the length of `nums`. The single pointer traverses the array from left to right exactly once, inspecting each adjacent pair in constant $\\mathcal{O}(1)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$. Only a few scalar pointer variables are used, requiring strictly constant extra space.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX)\n"
+  },
+  "approach_summary": "Perform a single-pass three-phase linear traversal. First, climb strictly increasing elements to locate peak p (validating 0 < p < n - 2). Next, descend strictly decreasing elements to find valley q (validating p < q < n - 1). Finally, climb strictly increasing elements to the end, returning true if the pointer reaches index n - 1.",
+  "explanation": "# LeetCode 3637: Trionic Array I\n\n- **Publication Date:** 03 February 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/trionic-array-i/](https://leetcode.com/problems/trionic-array-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` of length `n`.\n\nAn array is **trionic** if there exist indices $0 < p < q < n - 1$ such that:\n- `nums[0...p]` is **strictly increasing**,\n- `nums[p...q]` is **strictly decreasing**,\n- `nums[q...n - 1]` is **strictly increasing**.\n\nReturn `true` if `nums` is trionic, otherwise return `false`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 3, 5, 4, 2, 6]`\n- **Output:** `true`\n- **Explanation:**\n  Pick $p = 2, q = 4$:\n  - `nums[0...2] = [1, 3, 5]` is strictly increasing ($1 < 3 < 5$).\n  - `nums[2...4] = [5, 4, 2]` is strictly decreasing ($5 > 4 > 2$).\n  - `nums[4...5] = [2, 6]` is strictly increasing ($2 < 6$).\n\n#### Example 2:\n- **Input:** `nums = [2, 1, 3]`\n- **Output:** `false`\n- **Explanation:**\n  There is no way to pick $p$ and $q$ to form the required three segments because $n = 3$, and we require $0 < p < q < n - 1$ (which implies $n \\ge 4$).\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 100$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Two Pointers**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Three-Phase Linear Scanning\n\n1. **Size Requirement:**\n   - To have valid integer indices satisfying $0 < p < q < n - 1$, the array must contain at least four elements ($n \\ge 4$). If $n < 4$, return `false` immediately.\n\n2. **Phase 1: Strictly Increasing Ascent (Finding Peak $p$):**\n   - Starting from index $0$, advance pointer $i$ as long as $i + 1 < n$ and $\\text{nums}[i] < \\text{nums}[i + 1]$.\n   - Let $p = i$ be the detected peak.\n   - For a valid trionic array, $p$ must be strictly greater than $0$ (the increasing segment cannot be empty) and strictly less than $n - 2$ (at least two elements must remain to form the decreasing and subsequent increasing segments). If $p == 0$ or $p \\ge n - 2$, return `false`.\n\n3. **Phase 2: Strictly Decreasing Descent (Finding Valley $q$):**\n   - From $p$, advance pointer $i$ as long as $i + 1 < n$ and $\\text{nums}[i] > \\text{nums}[i + 1]$.\n   - Let $q = i$ be the detected valley.\n   - For a valid descent, $q > p$ (at least one decreasing step) and $q < n - 1$ (at least one element must remain for the final ascent). If $q == p$ or $q \\ge n - 1$, return `false`.\n\n4. **Phase 3: Final Strictly Increasing Ascent:**\n   - From $q$, advance pointer $i$ as long as $i + 1 < n$ and $\\text{nums}[i] < \\text{nums}[i + 1]$.\n   - The array is trionic if and only if this final ascent reaches the last element ($i == n - 1$).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the length of `nums`. The single pointer traverses the array from left to right exactly once, inspecting each adjacent pair in constant $\\mathcal{O}(1)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$. Only a few scalar pointer variables are used, requiring strictly constant extra space.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3637 - Trionic Array I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean isTrionic(int[] nums) {\n        int n = nums.length;\n        if (n < 4) {\n            return false;\n        }\n\n        int i = 0;\n\n        // Phase 1: Strictly increasing to peak p\n        while (i + 1 < n && nums[i] < nums[i + 1]) {\n            i++;\n        }\n        int p = i;\n        if (p == 0 || p >= n - 2) {\n            return false;\n        }\n\n        // Phase 2: Strictly decreasing to valley q\n        while (i + 1 < n && nums[i] > nums[i + 1]) {\n            i++;\n        }\n        int q = i;\n        if (q == p || q >= n - 1) {\n            return false;\n        }\n\n        // Phase 3: Strictly increasing to the end\n        while (i + 1 < n && nums[i] < nums[i + 1]) {\n            i++;\n        }\n\n        return i == n - 1;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3637 - Trionic Array I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\nclass Solution:\n    def isTrionic(self, nums: List[int]) -> bool:\n        n = len(nums)\n        if n < 4:\n            return False\n\n        i = 0\n\n        # Phase 1: Strictly increasing to peak p\n        while i + 1 < n and nums[i] < nums[i + 1]:\n            i += 1\n        p = i\n        if p == 0 or p >= n - 2:\n            return False\n\n        # Phase 2: Strictly decreasing to valley q\n        while i + 1 < n and nums[i] > nums[i + 1]:\n            i += 1\n        q = i\n        if q == p or q >= n - 1:\n            return False\n\n        # Phase 3: Strictly increasing to the end\n        while i + 1 < n and nums[i] < nums[i + 1]:\n            i += 1\n\n        return i == n - 1\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3637 - Trionic Array I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool isTrionic(vector<int>& nums) {\n        int n = nums.size();\n        if (n < 4) {\n            return false;\n        }\n\n        int i = 0;\n\n        // Phase 1: Strictly increasing to peak p\n        while (i + 1 < n && nums[i] < nums[i + 1]) {\n            i++;\n        }\n        int p = i;\n        if (p == 0 || p >= n - 2) {\n            return false;\n        }\n\n        // Phase 2: Strictly decreasing to valley q\n        while (i + 1 < n && nums[i] > nums[i + 1]) {\n            i++;\n        }\n        int q = i;\n        if (q == p || q >= n - 1) {\n            return false;\n        }\n\n        // Phase 3: Strictly increasing to the end\n        while (i + 1 < n && nums[i] < nums[i + 1]) {\n            i++;\n        }\n\n        return i == n - 1;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3637 - Trionic Array I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar isTrionic = function(nums) {\n    const n = nums.length;\n    if (n < 4) {\n        return false;\n    }\n\n    let i = 0;\n\n    // Phase 1: Strictly increasing to peak p\n    while (i + 1 < n && nums[i] < nums[i + 1]) {\n        i++;\n    }\n    const p = i;\n    if (p === 0 || p >= n - 2) {\n        return false;\n    }\n\n    // Phase 2: Strictly decreasing to valley q\n    while (i + 1 < n && nums[i] > nums[i + 1]) {\n        i++;\n    }\n    const q = i;\n    if (q === p || q >= n - 1) {\n        return false;\n    }\n\n    // Phase 3: Strictly increasing to the end\n    while (i + 1 < n && nums[i] < nums[i + 1]) {\n        i++;\n    }\n\n    return i === n - 1;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3637-trionic-array-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3637-trionic-array-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3637: Trionic Array I Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3637 (Trionic Array I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3637-trionic-array-i.jpg",
+    "keywords": [
+      "LeetCode 3637",
+      "Trionic Array I",
+      "LeetCode 3637 Solution",
+      "LeetCode Trionic Array I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

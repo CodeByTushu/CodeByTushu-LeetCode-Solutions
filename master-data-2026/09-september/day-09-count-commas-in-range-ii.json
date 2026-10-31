@@ -1,0 +1,77 @@
+{
+  "problem_number": 3871,
+  "problem_title": "Count Commas in Range II",
+  "slug": "count-commas-in-range-ii",
+  "solution_date": "2026-09-09",
+  "formatted_date": "09-09-2026",
+  "day_number": 9,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/count-commas-in-range-ii/",
+  "youtube_url": "https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i",
+  "notes": "Optimal O(1) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer `n`.\n\nReturn the total number of commas used when writing all integers from $[1, n]$ (inclusive) in standard number formatting.\n\nIn standard formatting:\n- A comma is inserted after every three digits from the right.\n- Numbers with fewer than 4 digits contain no commas.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 1002`\n- **Output:** `3`\n- **Explanation:**\n  The numbers `\"1,000\"`, `\"1,001\"`, and `\"1,002\"` each contain one comma, giving a total of 3.\n\n#### Example 2:\n- **Input:** `n = 998`\n- **Output:** `0`\n- **Explanation:**\n  All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^{15}$\n\n---",
+    "approach_summary": "Iterate through powers of 1,000 using 64-bit integers and add (n - threshold + 1) for each threshold level until the threshold exceeds n.",
+    "full_explanation": "# LeetCode 3871: Count Commas in Range II\n\n- **Publication Date:** 09 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/count-commas-in-range-ii/](https://leetcode.com/problems/count-commas-in-range-ii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i)\n\n---\n\n## Problem Summary\n\nYou are given an integer `n`.\n\nReturn the total number of commas used when writing all integers from $[1, n]$ (inclusive) in standard number formatting.\n\nIn standard formatting:\n- A comma is inserted after every three digits from the right.\n- Numbers with fewer than 4 digits contain no commas.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 1002`\n- **Output:** `3`\n- **Explanation:**\n  The numbers `\"1,000\"`, `\"1,001\"`, and `\"1,002\"` each contain one comma, giving a total of 3.\n\n#### Example 2:\n- **Input:** `n = 998`\n- **Output:** `0`\n- **Explanation:**\n  All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^{15}$\n\n---\n\n## Topics and Tags\n\n- **Math**\n\n---\n\n## Approach & Intuition\n\n1. **Threshold Scaling Logic**:\n   - In Count Commas in Range II, $n$ scales up to large 64-bit integer limits ($10^{15}$).\n   - We calculate the contribution directly by tiers:\n     - Tier 1: Numbers $\\ge 1,000$ (each adds 1 comma): $(n - 1000 + 1)$\n     - Tier 2: Numbers $\\ge 1,000,000$ (each adds a second comma): $(n - 1000000 + 1)$\n     - Tier 3: Numbers $\\ge 1,000,000,000$ (each adds a third comma): $(n - 10^9 + 1)$\n     - Tier 4: Numbers $\\ge 10^{12}$ (each adds a fourth comma): $(n - 10^{12} + 1)$\n     - And so on for each power of $1000$.\n\n2. **Algorithm**:\n   - Initialize `result = 0` and `threshold = 1000L`.\n   - While `threshold <= n`:\n     - Add `n - threshold + 1` to `result`.\n     - Advance `threshold *= 1000L` with 64-bit precision to prevent overflow.\n   - Return `result`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{1000} N) = \\mathcal{O}(1)$\n  - For $n \\le 10^{15}$, the loop executes at most 5 iterations.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant memory used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Iterate through powers of 1,000 using 64-bit integers and add (n - threshold + 1) for each threshold level until the threshold exceeds n.",
+  "explanation": "# LeetCode 3871: Count Commas in Range II\n\n- **Publication Date:** 09 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/count-commas-in-range-ii/](https://leetcode.com/problems/count-commas-in-range-ii/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i)\n\n---\n\n## Problem Summary\n\nYou are given an integer `n`.\n\nReturn the total number of commas used when writing all integers from $[1, n]$ (inclusive) in standard number formatting.\n\nIn standard formatting:\n- A comma is inserted after every three digits from the right.\n- Numbers with fewer than 4 digits contain no commas.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 1002`\n- **Output:** `3`\n- **Explanation:**\n  The numbers `\"1,000\"`, `\"1,001\"`, and `\"1,002\"` each contain one comma, giving a total of 3.\n\n#### Example 2:\n- **Input:** `n = 998`\n- **Output:** `0`\n- **Explanation:**\n  All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^{15}$\n\n---\n\n## Topics and Tags\n\n- **Math**\n\n---\n\n## Approach & Intuition\n\n1. **Threshold Scaling Logic**:\n   - In Count Commas in Range II, $n$ scales up to large 64-bit integer limits ($10^{15}$).\n   - We calculate the contribution directly by tiers:\n     - Tier 1: Numbers $\\ge 1,000$ (each adds 1 comma): $(n - 1000 + 1)$\n     - Tier 2: Numbers $\\ge 1,000,000$ (each adds a second comma): $(n - 1000000 + 1)$\n     - Tier 3: Numbers $\\ge 1,000,000,000$ (each adds a third comma): $(n - 10^9 + 1)$\n     - Tier 4: Numbers $\\ge 10^{12}$ (each adds a fourth comma): $(n - 10^{12} + 1)$\n     - And so on for each power of $1000$.\n\n2. **Algorithm**:\n   - Initialize `result = 0` and `threshold = 1000L`.\n   - While `threshold <= n`:\n     - Add `n - threshold + 1` to `result`.\n     - Advance `threshold *= 1000L` with 64-bit precision to prevent overflow.\n   - Return `result`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{1000} N) = \\mathcal{O}(1)$\n  - For $n \\le 10^{15}$, the loop executes at most 5 iterations.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Constant memory used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i](https://youtu.be/M_w6tgVlFuw?si=WnxejlFcVQEuvu3i)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3871 - Count Commas in Range II\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public long countCommas(long n) {\n        long result = 0;\n        long threshold = 1000L;\n\n        while (threshold <= n) {\n            result += (n - threshold + 1);\n            threshold *= 1000L;\n        }\n\n        return result;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3871 - Count Commas in Range II\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def countCommas(self, n: int) -> int:\n        result = 0\n        threshold = 1000\n\n        while threshold <= n:\n            result += (n - threshold + 1)\n            threshold *= 1000\n\n        return result\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3871 - Count Commas in Range II\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    long long countCommas(long long n) {\n        long long result = 0;\n        long long threshold = 1000LL;\n\n        while (threshold <= n) {\n            result += (n - threshold + 1);\n            if (threshold > n / 1000LL) {\n                break;\n            }\n            threshold *= 1000LL;\n        }\n\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3871 - Count Commas in Range II\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar countCommas = function(n) {\n    let result = 0n;\n    const bigN = BigInt(n);\n    let threshold = 1000n;\n\n    while (threshold <= bigN) {\n        result += (bigN - threshold + 1n);\n        threshold *= 1000n;\n    }\n\n    return Number(result);\n};\n"
+    }
+  },
+  "tags": [
+    "Math"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3871-count-commas-in-range-ii.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3871-count-commas-in-range-ii.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3871: Count Commas in Range II Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3871 (Count Commas in Range II) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(1) approach and detailed explan...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3871-count-commas-in-range-ii.jpg",
+    "keywords": [
+      "LeetCode 3871",
+      "Count Commas in Range II",
+      "LeetCode 3871 Solution",
+      "LeetCode Count Commas in Range II",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

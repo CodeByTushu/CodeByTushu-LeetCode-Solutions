@@ -1,0 +1,80 @@
+{
+  "problem_number": 1927,
+  "problem_title": "Sum Game",
+  "slug": "sum-game",
+  "solution_date": "2026-08-23",
+  "formatted_date": "23-08-2026",
+  "day_number": 23,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/sum-game/",
+  "youtube_url": "https://youtu.be/vQ0iABESqvk?si=XDI-GisCWhYbkbyK",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Alice and Bob take turns playing a game, with **Alice starting first**.\n\nYou are given a string `num` of **even length** consisting of digits and `'?'` characters. On each turn, a player replaces a single `'?'` with any digit between `'0'` and `'9'`. The game ends when there are no more `'?'` characters remaining in `num`.\n\n- **Bob wins** if the sum of the digits in the first half of `num` equals the sum of the digits in the second half.\n- **Alice wins** if the sums are not equal.\n\nAssuming both Alice and Bob play optimally, return `true` if Alice will win and `false` if Bob will win.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `num = \"5023\"`\n- **Output:** `false`\n- **Explanation:**\n  - There are no `'?'` marks to replace.\n  - Sum of first half: $5 + 0 = 5$.\n  - Sum of second half: $2 + 3 = 5$.\n  - Both sums are equal, so Bob wins.\n\n#### Example 2:\n\n- **Input:** `num = \"25??\"`\n- **Output:** `true`\n- **Explanation:**\n  - Alice replaces one `'?'` with `'9'`, making it impossible for Bob to balance the two halves.\n  - Alice wins.\n\n#### Example 3:\n\n- **Input:** `num = \"?3295???\"`\n- **Output:** `false`\n- **Explanation:**\n  - It can be proven that Bob can always match Alice's moves by picking complementary digits summing to $9$.\n  - Bob always wins.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{num.length} \\le 10^5$\n- `num.length` is even.\n- `num` consists only of digits `'0'`–`'9'` and `'?'`.\n\n---",
+    "approach_summary": "Alice always wins if total question marks are odd. When even, Bob can pair question mark plays to force sums of 9; Bob wins if and only if known sum difference perfectly counters the question mark disparity.",
+    "full_explanation": "# LeetCode 1927: Sum Game\n\n- **Publication Date:** 23 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/sum-game/](https://leetcode.com/problems/sum-game/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vQ0iABESqvk?si=XDI-GisCWhYbkbyK)\n\n---\n\n## Problem Summary\n\nAlice and Bob take turns playing a game, with **Alice starting first**.\n\nYou are given a string `num` of **even length** consisting of digits and `'?'` characters. On each turn, a player replaces a single `'?'` with any digit between `'0'` and `'9'`. The game ends when there are no more `'?'` characters remaining in `num`.\n\n- **Bob wins** if the sum of the digits in the first half of `num` equals the sum of the digits in the second half.\n- **Alice wins** if the sums are not equal.\n\nAssuming both Alice and Bob play optimally, return `true` if Alice will win and `false` if Bob will win.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `num = \"5023\"`\n- **Output:** `false`\n- **Explanation:**\n  - There are no `'?'` marks to replace.\n  - Sum of first half: $5 + 0 = 5$.\n  - Sum of second half: $2 + 3 = 5$.\n  - Both sums are equal, so Bob wins.\n\n#### Example 2:\n\n- **Input:** `num = \"25??\"`\n- **Output:** `true`\n- **Explanation:**\n  - Alice replaces one `'?'` with `'9'`, making it impossible for Bob to balance the two halves.\n  - Alice wins.\n\n#### Example 3:\n\n- **Input:** `num = \"?3295???\"`\n- **Output:** `false`\n- **Explanation:**\n  - It can be proven that Bob can always match Alice's moves by picking complementary digits summing to $9$.\n  - Bob always wins.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{num.length} \\le 10^5$\n- `num.length` is even.\n- `num` consists only of digits `'0'`–`'9'` and `'?'`.\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Greedy**\n- **Game Theory**\n- **String**\n\n---\n\n## Intuition and Approach\n\n### 1. Parity of Question Marks:\nLet $q_1$ and $q_2$ denote the number of `'?'` marks in the first and second halves, respectively, and let $\\text{sum}_1$ and $\\text{sum}_2$ denote their respective known digit sums.\n- If the total number of question marks $q_1 + q_2$ is **odd**, Alice has the last move.\n  - No matter what sum Bob achieves, on her final move Alice can select any digit from $0$ to $9$.\n  - At most one digit makes the two halves equal, so Alice simply chooses any of the other 9 digits to ensure inequality.\n  - Therefore, if $(q_1 + q_2) \\pmod 2 == 1$, **Alice always wins (`true`)**.\n\n### 2. Symmetrical Pairing and the Complementary Strategy (Sum of 9):\nWhen $q_1 + q_2$ is **even**, Bob plays second and has the final move.\n- Whenever Alice plays a digit $d$ in a question mark pair on one side, Bob can respond by playing $9 - d$ in the matched question mark on the same side, guaranteeing that every pair of turns on the same side contributes exactly $9$ to that side's sum.\n- If there are question marks on both sides, Bob can mirror Alice's placements to maintain parity.\n- Thus, the net imbalance of question marks between the two sides is $\\Delta q = q_1 - q_2$.\n- Because turns alternate, Bob controls the completion of each of the $|\\Delta q| / 2$ pairs. Each pair will contribute $9$.\n- To make the sums equal, the difference in known digit sums $\\text{diff} = \\text{sum}_1 - \\text{sum}_2$ must be perfectly offset by the question mark contribution:\n  $$\\text{finalDiff} = (\\text{sum}_1 - \\text{sum}_2) + \\frac{9 \\cdot (q_1 - q_2)}{2} = 0$$\n- If $\\text{finalDiff} == 0$, Bob can force a tie; otherwise, Alice can force unequal sums and win.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the string of length $N$ to compute sums and count question marks.\n  - Constant-time arithmetic comparison at the end.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Requires only scalar counters.\n"
+  },
+  "approach_summary": "Alice always wins if total question marks are odd. When even, Bob can pair question mark plays to force sums of 9; Bob wins if and only if known sum difference perfectly counters the question mark disparity.",
+  "explanation": "# LeetCode 1927: Sum Game\n\n- **Publication Date:** 23 August 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/sum-game/](https://leetcode.com/problems/sum-game/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vQ0iABESqvk?si=XDI-GisCWhYbkbyK)\n\n---\n\n## Problem Summary\n\nAlice and Bob take turns playing a game, with **Alice starting first**.\n\nYou are given a string `num` of **even length** consisting of digits and `'?'` characters. On each turn, a player replaces a single `'?'` with any digit between `'0'` and `'9'`. The game ends when there are no more `'?'` characters remaining in `num`.\n\n- **Bob wins** if the sum of the digits in the first half of `num` equals the sum of the digits in the second half.\n- **Alice wins** if the sums are not equal.\n\nAssuming both Alice and Bob play optimally, return `true` if Alice will win and `false` if Bob will win.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `num = \"5023\"`\n- **Output:** `false`\n- **Explanation:**\n  - There are no `'?'` marks to replace.\n  - Sum of first half: $5 + 0 = 5$.\n  - Sum of second half: $2 + 3 = 5$.\n  - Both sums are equal, so Bob wins.\n\n#### Example 2:\n\n- **Input:** `num = \"25??\"`\n- **Output:** `true`\n- **Explanation:**\n  - Alice replaces one `'?'` with `'9'`, making it impossible for Bob to balance the two halves.\n  - Alice wins.\n\n#### Example 3:\n\n- **Input:** `num = \"?3295???\"`\n- **Output:** `false`\n- **Explanation:**\n  - It can be proven that Bob can always match Alice's moves by picking complementary digits summing to $9$.\n  - Bob always wins.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{num.length} \\le 10^5$\n- `num.length` is even.\n- `num` consists only of digits `'0'`–`'9'` and `'?'`.\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Greedy**\n- **Game Theory**\n- **String**\n\n---\n\n## Intuition and Approach\n\n### 1. Parity of Question Marks:\nLet $q_1$ and $q_2$ denote the number of `'?'` marks in the first and second halves, respectively, and let $\\text{sum}_1$ and $\\text{sum}_2$ denote their respective known digit sums.\n- If the total number of question marks $q_1 + q_2$ is **odd**, Alice has the last move.\n  - No matter what sum Bob achieves, on her final move Alice can select any digit from $0$ to $9$.\n  - At most one digit makes the two halves equal, so Alice simply chooses any of the other 9 digits to ensure inequality.\n  - Therefore, if $(q_1 + q_2) \\pmod 2 == 1$, **Alice always wins (`true`)**.\n\n### 2. Symmetrical Pairing and the Complementary Strategy (Sum of 9):\nWhen $q_1 + q_2$ is **even**, Bob plays second and has the final move.\n- Whenever Alice plays a digit $d$ in a question mark pair on one side, Bob can respond by playing $9 - d$ in the matched question mark on the same side, guaranteeing that every pair of turns on the same side contributes exactly $9$ to that side's sum.\n- If there are question marks on both sides, Bob can mirror Alice's placements to maintain parity.\n- Thus, the net imbalance of question marks between the two sides is $\\Delta q = q_1 - q_2$.\n- Because turns alternate, Bob controls the completion of each of the $|\\Delta q| / 2$ pairs. Each pair will contribute $9$.\n- To make the sums equal, the difference in known digit sums $\\text{diff} = \\text{sum}_1 - \\text{sum}_2$ must be perfectly offset by the question mark contribution:\n  $$\\text{finalDiff} = (\\text{sum}_1 - \\text{sum}_2) + \\frac{9 \\cdot (q_1 - q_2)}{2} = 0$$\n- If $\\text{finalDiff} == 0$, Bob can force a tie; otherwise, Alice can force unequal sums and win.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - A single linear scan through the string of length $N$ to compute sums and count question marks.\n  - Constant-time arithmetic comparison at the end.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Requires only scalar counters.\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1927 - Sum Game\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean sumGame(String num) {\n        int n = num.length();\n        int half = n / 2;\n\n        int sum1 = 0, sum2 = 0;\n        int q1 = 0, q2 = 0;\n\n        for (int i = 0; i < half; i++) {\n            char c = num.charAt(i);\n            if (c == '?') {\n                q1++;\n            } else {\n                sum1 += c - '0';\n            }\n        }\n\n        for (int i = half; i < n; i++) {\n            char c = num.charAt(i);\n            if (c == '?') {\n                q2++;\n            } else {\n                sum2 += c - '0';\n            }\n        }\n\n        int totalQ = q1 + q2;\n        if (totalQ % 2 == 1) {\n            return true; // Alice always wins with the last move\n        }\n\n        int diff = sum1 - sum2;\n        int finalDiff = diff + 9 * (q1 - q2) / 2;\n\n        return finalDiff != 0;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1927 - Sum Game\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def sumGame(self, num: str) -> bool:\n        n = len(num)\n        half = n // 2\n\n        sum1 = sum(int(c) for c in num[:half] if c != \"?\")\n        sum2 = sum(int(c) for c in num[half:] if c != \"?\")\n\n        q1 = num[:half].count(\"?\")\n        q2 = num[half:].count(\"?\")\n\n        if (q1 + q2) % 2 == 1:\n            return True\n\n        diff = sum1 - sum2\n        final_diff = diff + 9 * (q1 - q2) // 2\n\n        return final_diff != 0\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1927 - Sum Game\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\n/**\n * Problem: LeetCode 1927 - Sum Game\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool sumGame(std::string num) {\n        int n = num.size();\n        int half = n / 2;\n\n        int sum1 = 0, sum2 = 0;\n        int q1 = 0, q2 = 0;\n\n        for (int i = 0; i < half; ++i) {\n            if (num[i] == '?') {\n                q1++;\n            } else {\n                sum1 += num[i] - '0';\n            }\n        }\n\n        for (int i = half; i < n; ++i) {\n            if (num[i] == '?') {\n                q2++;\n            } else {\n                sum2 += num[i] - '0';\n            }\n        }\n\n        if ((q1 + q2) % 2 == 1) {\n            return true;\n        }\n\n        int diff = sum1 - sum2;\n        int finalDiff = diff + 9 * (q1 - q2) / 2;\n\n        return finalDiff != 0;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1927 - Sum Game\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar sumGame = function(num) {\n    const n = num.length;\n    const half = Math.floor(n / 2);\n\n    let sum1 = 0, sum2 = 0;\n    let q1 = 0, q2 = 0;\n\n    for (let i = 0; i < half; i++) {\n        if (num[i] === '?') {\n            q1++;\n        } else {\n            sum1 += num.charCodeAt(i) - 48;\n        }\n    }\n\n    for (let i = half; i < n; i++) {\n        if (num[i] === '?') {\n            q2++;\n        } else {\n            sum2 += num.charCodeAt(i) - 48;\n        }\n    }\n\n    if ((q1 + q2) % 2 === 1) {\n        return true;\n    }\n\n    const diff = sum1 - sum2;\n    const finalDiff = diff + Math.floor(9 * (q1 - q2) / 2);\n\n    return finalDiff !== 0;\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Greedy",
+    "Game Theory",
+    "String"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1927-sum-game.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1927-sum-game.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1927: Sum Game Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1927 (Sum Game) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1927-sum-game.jpg",
+    "keywords": [
+      "LeetCode 1927",
+      "Sum Game",
+      "LeetCode 1927 Solution",
+      "LeetCode Sum Game",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

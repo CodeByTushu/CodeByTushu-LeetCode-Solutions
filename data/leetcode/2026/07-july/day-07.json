@@ -1,0 +1,78 @@
+{
+  "problem_number": 3754,
+  "problem_title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+  "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+  "solution_date": "2026-07-07",
+  "formatted_date": "07-07-2026",
+  "day_number": 7,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(log10 n)",
+  "space_complexity": "O(log10 n)",
+  "leetcode_url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
+  "youtube_url": "https://youtu.be/GXzw2DnuScQ?si=9ZVaWQGkCqKTQqsM",
+  "notes": "Optimal O(log10 n) time complexity with O(log10 n) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer `n`.\n\n1. Form a new integer `x` by concatenating all the **non-zero digits** of `n` in their original order. If there are no non-zero digits, set `x = 0`.\n2. Let `sum` be the **sum of digits** in `x`.\n\nReturn an integer representing the value of `x * sum`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 10203004`\n- **Output:** `12340`\n- **Explanation:**\n  - The non-zero digits are `1`, `2`, `3`, and `4`. Thus, $x = 1234$.\n  - The sum of digits is $\\text{sum} = 1 + 2 + 3 + 4 = 10$.\n  - Therefore, the answer is $x \\times \\text{sum} = 1234 \\times 10 = 12340$.\n\n#### Example 2:\n\n- **Input:** `n = 1000`\n- **Output:** `1`\n- **Explanation:**\n  - The non-zero digit is `1`, so $x = 1$ and $\\text{sum} = 1$.\n  - Therefore, the answer is $x \\times \\text{sum} = 1 \\times 1 = 1$.\n\n---\n\n### Constraints\n\n- $0 \\le n \\le 10^9$\n\n---",
+    "approach_summary": "Iterate through the digits of n, filtering out zeroes to construct x while concurrently accumulating the digit sum.",
+    "full_explanation": "# LeetCode 3754: Concatenate Non-Zero Digits and Multiply by Sum I\n\n- **Publication Date:** 07 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/GXzw2DnuScQ?si=9ZVaWQGkCqKTQqsM)\n\n---\n\n## Problem Summary\n\nYou are given an integer `n`.\n\n1. Form a new integer `x` by concatenating all the **non-zero digits** of `n` in their original order. If there are no non-zero digits, set `x = 0`.\n2. Let `sum` be the **sum of digits** in `x`.\n\nReturn an integer representing the value of `x * sum`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 10203004`\n- **Output:** `12340`\n- **Explanation:**\n  - The non-zero digits are `1`, `2`, `3`, and `4`. Thus, $x = 1234$.\n  - The sum of digits is $\\text{sum} = 1 + 2 + 3 + 4 = 10$.\n  - Therefore, the answer is $x \\times \\text{sum} = 1234 \\times 10 = 12340$.\n\n#### Example 2:\n\n- **Input:** `n = 1000`\n- **Output:** `1`\n- **Explanation:**\n  - The non-zero digit is `1`, so $x = 1$ and $\\text{sum} = 1$.\n  - Therefore, the answer is $x \\times \\text{sum} = 1 \\times 1 = 1$.\n\n---\n\n### Constraints\n\n- $0 \\le n \\le 10^9$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### 1. Direct Digit Processing\nThe problem requires extracting all non-zero digits from the decimal representation of `n`, preserving their order, and building:\n- A concatenated number $x$.\n- The digit sum $\\text{sum} = \\sum d$.\n\nIf $n = 0$, there are no non-zero digits, so $x = 0$ and the answer is $0$.\n\n### 2. Algorithmic Steps\n1. Convert `n` to its string representation (or extract digits mathematically).\n2. Traverse each character:\n   - If the character is `'0'`, ignore it.\n   - If the character is a non-zero digit $d \\in [1, 9]$:\n     - Shift and append to $x$: $x = x \\times 10 + d$.\n     - Accumulate into the digit sum: $\\text{sum} = \\text{sum} + d$.\n3. Compute and return $x \\times \\text{sum}$.\n\n### 3. Overflow Consideration\n- Since $n \\le 10^9$, $n$ contains at most 10 digits.\n- The maximum value of $x$ occurs when all digits are non-zero (e.g., $999,999,999$), with a digit sum of at most $9 \\times 9 = 81$.\n- The maximum product is $\\approx 10^9 \\times 81 \\approx 8.1 \\times 10^{10}$, which exceeds a signed 32-bit integer ($2.14 \\times 10^9$) but comfortably fits inside a 64-bit integer (`long` in Java, `long long` in C++).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{10} n)$\n  - The number of digits in $n$ is at most $\\lfloor \\log_{10} n \\rfloor + 1 \\le 10$.\n  - Scanning through at most 10 characters takes $\\mathcal{O}(1)$ practical time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(\\log_{10} n)$ for string conversion, or $\\mathcal{O}(1)$ auxiliary space.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Iterate through the digits of n, filtering out zeroes to construct x while concurrently accumulating the digit sum.",
+  "explanation": "# LeetCode 3754: Concatenate Non-Zero Digits and Multiply by Sum I\n\n- **Publication Date:** 07 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/GXzw2DnuScQ?si=9ZVaWQGkCqKTQqsM)\n\n---\n\n## Problem Summary\n\nYou are given an integer `n`.\n\n1. Form a new integer `x` by concatenating all the **non-zero digits** of `n` in their original order. If there are no non-zero digits, set `x = 0`.\n2. Let `sum` be the **sum of digits** in `x`.\n\nReturn an integer representing the value of `x * sum`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `n = 10203004`\n- **Output:** `12340`\n- **Explanation:**\n  - The non-zero digits are `1`, `2`, `3`, and `4`. Thus, $x = 1234$.\n  - The sum of digits is $\\text{sum} = 1 + 2 + 3 + 4 = 10$.\n  - Therefore, the answer is $x \\times \\text{sum} = 1234 \\times 10 = 12340$.\n\n#### Example 2:\n\n- **Input:** `n = 1000`\n- **Output:** `1`\n- **Explanation:**\n  - The non-zero digit is `1`, so $x = 1$ and $\\text{sum} = 1$.\n  - Therefore, the answer is $x \\times \\text{sum} = 1 \\times 1 = 1$.\n\n---\n\n### Constraints\n\n- $0 \\le n \\le 10^9$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Intuition and Approach\n\n### 1. Direct Digit Processing\nThe problem requires extracting all non-zero digits from the decimal representation of `n`, preserving their order, and building:\n- A concatenated number $x$.\n- The digit sum $\\text{sum} = \\sum d$.\n\nIf $n = 0$, there are no non-zero digits, so $x = 0$ and the answer is $0$.\n\n### 2. Algorithmic Steps\n1. Convert `n` to its string representation (or extract digits mathematically).\n2. Traverse each character:\n   - If the character is `'0'`, ignore it.\n   - If the character is a non-zero digit $d \\in [1, 9]$:\n     - Shift and append to $x$: $x = x \\times 10 + d$.\n     - Accumulate into the digit sum: $\\text{sum} = \\text{sum} + d$.\n3. Compute and return $x \\times \\text{sum}$.\n\n### 3. Overflow Consideration\n- Since $n \\le 10^9$, $n$ contains at most 10 digits.\n- The maximum value of $x$ occurs when all digits are non-zero (e.g., $999,999,999$), with a digit sum of at most $9 \\times 9 = 81$.\n- The maximum product is $\\approx 10^9 \\times 81 \\approx 8.1 \\times 10^{10}$, which exceeds a signed 32-bit integer ($2.14 \\times 10^9$) but comfortably fits inside a 64-bit integer (`long` in Java, `long long` in C++).\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{10} n)$\n  - The number of digits in $n$ is at most $\\lfloor \\log_{10} n \\rfloor + 1 \\le 10$.\n  - Scanning through at most 10 characters takes $\\mathcal{O}(1)$ practical time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(\\log_{10} n)$ for string conversion, or $\\mathcal{O}(1)$ auxiliary space.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public long sumAndMultiply(int n) {\n        long x = 0;\n        long sum = 0;\n\n        if (n == 0) return 0;\n\n        String s = String.valueOf(n);\n\n        for (char ch : s.toCharArray()) {\n            if (ch != '0') {\n                int digit = ch - '0';\n                x = x * 10 + digit;\n                sum += digit;\n            }\n        }\n\n        return x * sum;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def sumAndMultiply(self, n: int) -> int:\n        if n == 0:\n            return 0\n\n        x = 0\n        digit_sum = 0\n\n        for ch in str(n):\n            if ch != \"0\":\n                digit = ord(ch) - ord(\"0\")\n                x = x * 10 + digit\n                digit_sum += digit\n\n        return x * digit_sum\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    long long sumAndMultiply(int n) {\n        if (n == 0) return 0;\n\n        long long x = 0;\n        long long sum = 0;\n\n        string s = to_string(n);\n\n        for (char ch : s) {\n            if (ch != '0') {\n                int digit = ch - '0';\n                x = x * 10 + digit;\n                sum += digit;\n            }\n        }\n\n        return x * sum;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3754 - Concatenate Non-Zero Digits and Multiply by Sum I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar sumAndMultiply = function(n) {\n    if (n === 0) return 0;\n\n    let x = 0;\n    let sum = 0;\n\n    const s = n.toString();\n\n    for (let i = 0; i < s.length; i++) {\n        if (s[i] !== '0') {\n            const digit = s.charCodeAt(i) - 48;\n            x = x * 10 + digit;\n            sum += digit;\n        }\n    }\n\n    return x * sum;\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3754-concatenate-non-zero-digits-and-multiply-by-sum-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3754-concatenate-non-zero-digits-and-multiply-by-sum-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3754: Concatenate Non-Zero Digits and Multiply by Sum I So...",
+    "meta_description": "Master LeetCode 3754 (Concatenate Non-Zero Digits and Multiply by Sum I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log10...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3754-concatenate-non-zero-digits-and-multiply-by-sum-i.jpg",
+    "keywords": [
+      "LeetCode 3754",
+      "Concatenate Non-Zero Digits and Multiply by Sum I",
+      "LeetCode 3754 Solution",
+      "LeetCode Concatenate Non-Zero Digits and Multiply by Sum I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

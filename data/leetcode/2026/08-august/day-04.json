@@ -1,0 +1,79 @@
+{
+  "problem_number": 3731,
+  "problem_title": "Find Missing Elements",
+  "slug": "find-missing-elements",
+  "solution_date": "2026-08-04",
+  "formatted_date": "04-08-2026",
+  "day_number": 4,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N + (max - min))",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/find-missing-elements/",
+  "youtube_url": "https://youtu.be/DFShzZTuOvY?si=P5R1yv417pDQPPx0",
+  "notes": "Optimal O(N + (max - min)) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` consisting of unique integers.\n\nOriginally, `nums` contained every integer within a certain range. However, some integers might have gone missing from the array.\n\nThe smallest and largest integers of the original range are still present in `nums`.\n\nReturn a sorted list of all the missing integers in this range. If no integers are missing, return an empty list.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,4,2,5]`\n- **Output:** `[3]`\n- **Explanation:**\n  - The smallest integer is `1` and the largest is `5`, so the full range should be `[1,2,3,4,5]`.\n  - Among these, only `3` is missing.\n\n#### Example 2:\n\n- **Input:** `nums = [7,8,6,9]`\n- **Output:** `[]`\n- **Explanation:**\n  - The smallest integer is `6` and the largest is `9`, so the full range is `[6,7,8,9]`.\n  - All integers are already present, so no integer is missing.\n\n#### Example 3:\n\n- **Input:** `nums = [5,1]`\n- **Output:** `[2,3,4]`\n- **Explanation:**\n  - The smallest integer is `1` and the largest is `5`, so the full range should be `[1,2,3,4,5]`.\n  - The missing integers are `2`, `3`, and `4`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 100$\n\n---",
+    "approach_summary": "Find the minimum and maximum elements in nums, insert all elements into a hash set for O(1) membership testing, and collect all integers from min to max absent from the set into a sorted result list.",
+    "full_explanation": "# LeetCode 3731: Find Missing Elements\n\n- **Publication Date:** 04 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-missing-elements/](https://leetcode.com/problems/find-missing-elements/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/DFShzZTuOvY?si=P5R1yv417pDQPPx0)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` consisting of unique integers.\n\nOriginally, `nums` contained every integer within a certain range. However, some integers might have gone missing from the array.\n\nThe smallest and largest integers of the original range are still present in `nums`.\n\nReturn a sorted list of all the missing integers in this range. If no integers are missing, return an empty list.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,4,2,5]`\n- **Output:** `[3]`\n- **Explanation:**\n  - The smallest integer is `1` and the largest is `5`, so the full range should be `[1,2,3,4,5]`.\n  - Among these, only `3` is missing.\n\n#### Example 2:\n\n- **Input:** `nums = [7,8,6,9]`\n- **Output:** `[]`\n- **Explanation:**\n  - The smallest integer is `6` and the largest is `9`, so the full range is `[6,7,8,9]`.\n  - All integers are already present, so no integer is missing.\n\n#### Example 3:\n\n- **Input:** `nums = [5,1]`\n- **Output:** `[2,3,4]`\n- **Explanation:**\n  - The smallest integer is `1` and the largest is `5`, so the full range should be `[1,2,3,4,5]`.\n  - The missing integers are `2`, `3`, and `4`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 100$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sorting**\n\n---\n\n## Intuition and Approach\n\n1. **Find Range Bounds:**\n   - Scan the array to find the minimum element `min` and maximum element `max`.\n2. **Fast Membership Lookup:**\n   - Store all numbers present in `nums` into a hash set for $\\mathcal{O}(1)$ average-time lookups.\n3. **Scan Missing Elements:**\n   - Iterate sequentially through each integer $i$ from `min` to `max`.\n   - If $i$ is not found in the set, append $i$ to our result list.\n   - Because $i$ increases monotonically from `min` to `max`, the collected missing elements are automatically in ascending sorted order.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N + (M - m))$\n  - Finding the minimum and maximum and building the hash set takes $\\mathcal{O}(N)$ time.\n  - The loop runs $M - m + 1$ times with $\\mathcal{O}(1)$ set lookups.\n  - With $N \\le 100$ and $1 \\le \\text{nums}[i] \\le 100$, operations are $\\le 200$, completing in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - To store elements of `nums` in the hash set.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Find the minimum and maximum elements in nums, insert all elements into a hash set for O(1) membership testing, and collect all integers from min to max absent from the set into a sorted result list.",
+  "explanation": "# LeetCode 3731: Find Missing Elements\n\n- **Publication Date:** 04 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-missing-elements/](https://leetcode.com/problems/find-missing-elements/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/DFShzZTuOvY?si=P5R1yv417pDQPPx0)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` consisting of unique integers.\n\nOriginally, `nums` contained every integer within a certain range. However, some integers might have gone missing from the array.\n\nThe smallest and largest integers of the original range are still present in `nums`.\n\nReturn a sorted list of all the missing integers in this range. If no integers are missing, return an empty list.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,4,2,5]`\n- **Output:** `[3]`\n- **Explanation:**\n  - The smallest integer is `1` and the largest is `5`, so the full range should be `[1,2,3,4,5]`.\n  - Among these, only `3` is missing.\n\n#### Example 2:\n\n- **Input:** `nums = [7,8,6,9]`\n- **Output:** `[]`\n- **Explanation:**\n  - The smallest integer is `6` and the largest is `9`, so the full range is `[6,7,8,9]`.\n  - All integers are already present, so no integer is missing.\n\n#### Example 3:\n\n- **Input:** `nums = [5,1]`\n- **Output:** `[2,3,4]`\n- **Explanation:**\n  - The smallest integer is `1` and the largest is `5`, so the full range should be `[1,2,3,4,5]`.\n  - The missing integers are `2`, `3`, and `4`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{nums.length} \\le 100$\n- $1 \\le \\text{nums}[i] \\le 100$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sorting**\n\n---\n\n## Intuition and Approach\n\n1. **Find Range Bounds:**\n   - Scan the array to find the minimum element `min` and maximum element `max`.\n2. **Fast Membership Lookup:**\n   - Store all numbers present in `nums` into a hash set for $\\mathcal{O}(1)$ average-time lookups.\n3. **Scan Missing Elements:**\n   - Iterate sequentially through each integer $i$ from `min` to `max`.\n   - If $i$ is not found in the set, append $i$ to our result list.\n   - Because $i$ increases monotonically from `min` to `max`, the collected missing elements are automatically in ascending sorted order.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N + (M - m))$\n  - Finding the minimum and maximum and building the hash set takes $\\mathcal{O}(N)$ time.\n  - The loop runs $M - m + 1$ times with $\\mathcal{O}(1)$ set lookups.\n  - With $N \\le 100$ and $1 \\le \\text{nums}[i] \\le 100$, operations are $\\le 200$, completing in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - To store elements of `nums` in the hash set.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3731 - Find Missing Elements\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.*;\n\n/**\n * Problem: LeetCode 3731 - Find Missing Elements\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public List<Integer> findMissingElements(int[] nums) {\n        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;\n        for (int num : nums) {\n            min = Math.min(min, num);\n            max = Math.max(max, num);\n        }\n        Set<Integer> present = new HashSet<>();\n        for (int num : nums) {\n            present.add(num);\n        }\n        List<Integer> result = new ArrayList<>();\n        for (int i = min; i <= max; i++) {\n            if (!present.contains(i)) {\n                result.add(i);\n            }\n        }\n        return result;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3731 - Find Missing Elements\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def findMissingElements(self, nums: list[int]) -> list[int]:\n        min_val = min(nums)\n        max_val = max(nums)\n        present = set(nums)\n\n        result = []\n        for i in range(min_val, max_val + 1):\n            if i not in present:\n                result.append(i)\n\n        return result\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3731 - Find Missing Elements\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <unordered_set>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3731 - Find Missing Elements\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    vector<int> findMissingElements(vector<int>& nums) {\n        int min_val = nums[0], max_val = nums[0];\n        unordered_set<int> present;\n\n        for (int num : nums) {\n            min_val = min(min_val, num);\n            max_val = max(max_val, num);\n            present.insert(num);\n        }\n\n        vector<int> result;\n        for (int i = min_val; i <= max_val; i++) {\n            if (present.find(i) == present.end()) {\n                result.push_back(i);\n            }\n        }\n\n        return result;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3731 - Find Missing Elements\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar findMissingElements = function(nums) {\n    let minVal = Infinity;\n    let maxVal = -Infinity;\n    const present = new Set();\n\n    for (const num of nums) {\n        if (num < minVal) minVal = num;\n        if (num > maxVal) maxVal = num;\n        present.add(num);\n    }\n\n    const result = [];\n    for (let i = minVal; i <= maxVal; i++) {\n        if (!present.has(i)) {\n            result.push(i);\n        }\n    }\n\n    return result;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3731-find-missing-elements.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3731-find-missing-elements.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3731: Find Missing Elements Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3731 (Find Missing Elements) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N + (max - min)) approach and deta...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3731-find-missing-elements.jpg",
+    "keywords": [
+      "LeetCode 3731",
+      "Find Missing Elements",
+      "LeetCode 3731 Solution",
+      "LeetCode Find Missing Elements",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

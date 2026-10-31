@@ -1,0 +1,80 @@
+{
+  "problem_number": 2996,
+  "problem_title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+  "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+  "solution_date": "2026-08-11",
+  "formatted_date": "11-08-2026",
+  "day_number": 11,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+  "youtube_url": "https://youtu.be/B46sB6XHfLQ?si=lsCDtikQl0QXDpzD",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a **0-indexed** array of integers `nums`.\n\nA prefix `nums[0..i]` is **sequential** if, for all $1 \\le j \\le i$, $\\text{nums}[j] = \\text{nums}[j - 1] + 1$. In particular, the prefix consisting only of `nums[0]` is sequential.\n\nReturn the **smallest integer** $x$ missing from `nums` such that $x$ is greater than or equal to the sum of the longest sequential prefix.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3,2,5]`\n- **Output:** `6`\n- **Explanation:**\n  - The longest sequential prefix of `nums` is `[1, 2, 3]` with a sum of $1 + 2 + 3 = 6$.\n  - $6$ is not present in `nums`.\n  - Therefore, $6$ is the smallest missing integer greater than or equal to the sum of the longest sequential prefix.\n\n#### Example 2:\n\n- **Input:** `nums = [3,4,5,1,12,14,13]`\n- **Output:** `15`\n- **Explanation:**\n  - The longest sequential prefix of `nums` is `[3, 4, 5]` with a sum of $3 + 4 + 5 = 12$.\n  - $12, 13,$ and $14$ belong to `nums`, while $15$ does not.\n  - Therefore, $15$ is the smallest missing integer greater than or equal to the sequential prefix sum.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 50$\n- $1 \\le \\text{nums}[i] \\le 50$\n\n---",
+    "approach_summary": "Sum the longest sequential prefix where nums[i] == nums[i - 1] + 1, store all elements in a hash set, and increment the sum until finding a value absent from the set.",
+    "full_explanation": "# LeetCode 2996: Smallest Missing Integer Greater Than Sequential Prefix Sum\n\n- **Publication Date:** 11 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/B46sB6XHfLQ?si=lsCDtikQl0QXDpzD)\n\n---\n\n## Problem Summary\n\nYou are given a **0-indexed** array of integers `nums`.\n\nA prefix `nums[0..i]` is **sequential** if, for all $1 \\le j \\le i$, $\\text{nums}[j] = \\text{nums}[j - 1] + 1$. In particular, the prefix consisting only of `nums[0]` is sequential.\n\nReturn the **smallest integer** $x$ missing from `nums` such that $x$ is greater than or equal to the sum of the longest sequential prefix.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3,2,5]`\n- **Output:** `6`\n- **Explanation:**\n  - The longest sequential prefix of `nums` is `[1, 2, 3]` with a sum of $1 + 2 + 3 = 6$.\n  - $6$ is not present in `nums`.\n  - Therefore, $6$ is the smallest missing integer greater than or equal to the sum of the longest sequential prefix.\n\n#### Example 2:\n\n- **Input:** `nums = [3,4,5,1,12,14,13]`\n- **Output:** `15`\n- **Explanation:**\n  - The longest sequential prefix of `nums` is `[3, 4, 5]` with a sum of $3 + 4 + 5 = 12$.\n  - $12, 13,$ and $14$ belong to `nums`, while $15$ does not.\n  - Therefore, $15$ is the smallest missing integer greater than or equal to the sequential prefix sum.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 50$\n- $1 \\le \\text{nums}[i] \\le 50$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sorting**\n- **Prefix Sum**\n\n---\n\n## Intuition and Approach\n\n### 1. Identify the Longest Sequential Prefix:\n- By definition, the prefix starts at index $0$ with value `nums[0]`.\n- We initialize `sum = nums[0]` and iterate $i$ from $1$ onward.\n- While $i < n$ and $\\text{nums}[i] == \\text{nums}[i - 1] + 1$:\n  - Add $\\text{nums}[i]$ to `sum`.\n  - Increment $i$.\n- As soon as $\\text{nums}[i] \\ne \\text{nums}[i - 1] + 1$ or the end of the array is reached, the longest sequential prefix has concluded.\n\n### 2. Search for the Smallest Missing Integer $\\ge \\text{sum}$:\n- Insert all elements of `nums` into a hash set for $\\mathcal{O}(1)$ average lookup time.\n- Starting from `sum`, we verify whether `sum` is contained in the set:\n  - If `set.contains(sum)`, we increment `sum++`.\n  - We repeat until `sum` is no longer in the set.\n- The first value of `sum` not in `nums` satisfies both conditions:\n  1. It is $\\ge$ the initial sequential prefix sum.\n  2. It does not exist in `nums`.\n  3. It is the minimum such integer.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Scanning the sequential prefix takes at most $N$ steps.\n  - Constructing the hash set takes $\\mathcal{O}(N)$ time.\n  - The search loop increments `sum` at most $N$ times since there are at most $N$ distinct values in the array.\n  - Overall time complexity is linear $\\mathcal{O}(N)$, running in $< 1\\text{ ms}$ for $N \\le 50$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A hash set stores up to $N$ unique elements from `nums`.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Sum the longest sequential prefix where nums[i] == nums[i - 1] + 1, store all elements in a hash set, and increment the sum until finding a value absent from the set.",
+  "explanation": "# LeetCode 2996: Smallest Missing Integer Greater Than Sequential Prefix Sum\n\n- **Publication Date:** 11 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/B46sB6XHfLQ?si=lsCDtikQl0QXDpzD)\n\n---\n\n## Problem Summary\n\nYou are given a **0-indexed** array of integers `nums`.\n\nA prefix `nums[0..i]` is **sequential** if, for all $1 \\le j \\le i$, $\\text{nums}[j] = \\text{nums}[j - 1] + 1$. In particular, the prefix consisting only of `nums[0]` is sequential.\n\nReturn the **smallest integer** $x$ missing from `nums` such that $x$ is greater than or equal to the sum of the longest sequential prefix.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1,2,3,2,5]`\n- **Output:** `6`\n- **Explanation:**\n  - The longest sequential prefix of `nums` is `[1, 2, 3]` with a sum of $1 + 2 + 3 = 6$.\n  - $6$ is not present in `nums`.\n  - Therefore, $6$ is the smallest missing integer greater than or equal to the sum of the longest sequential prefix.\n\n#### Example 2:\n\n- **Input:** `nums = [3,4,5,1,12,14,13]`\n- **Output:** `15`\n- **Explanation:**\n  - The longest sequential prefix of `nums` is `[3, 4, 5]` with a sum of $3 + 4 + 5 = 12$.\n  - $12, 13,$ and $14$ belong to `nums`, while $15$ does not.\n  - Therefore, $15$ is the smallest missing integer greater than or equal to the sequential prefix sum.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{nums.length} \\le 50$\n- $1 \\le \\text{nums}[i] \\le 50$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Sorting**\n- **Prefix Sum**\n\n---\n\n## Intuition and Approach\n\n### 1. Identify the Longest Sequential Prefix:\n- By definition, the prefix starts at index $0$ with value `nums[0]`.\n- We initialize `sum = nums[0]` and iterate $i$ from $1$ onward.\n- While $i < n$ and $\\text{nums}[i] == \\text{nums}[i - 1] + 1$:\n  - Add $\\text{nums}[i]$ to `sum`.\n  - Increment $i$.\n- As soon as $\\text{nums}[i] \\ne \\text{nums}[i - 1] + 1$ or the end of the array is reached, the longest sequential prefix has concluded.\n\n### 2. Search for the Smallest Missing Integer $\\ge \\text{sum}$:\n- Insert all elements of `nums` into a hash set for $\\mathcal{O}(1)$ average lookup time.\n- Starting from `sum`, we verify whether `sum` is contained in the set:\n  - If `set.contains(sum)`, we increment `sum++`.\n  - We repeat until `sum` is no longer in the set.\n- The first value of `sum` not in `nums` satisfies both conditions:\n  1. It is $\\ge$ the initial sequential prefix sum.\n  2. It does not exist in `nums`.\n  3. It is the minimum such integer.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Scanning the sequential prefix takes at most $N$ steps.\n  - Constructing the hash set takes $\\mathcal{O}(N)$ time.\n  - The search loop increments `sum` at most $N$ times since there are at most $N$ distinct values in the array.\n  - Overall time complexity is linear $\\mathcal{O}(N)$, running in $< 1\\text{ ms}$ for $N \\le 50$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - A hash set stores up to $N$ unique elements from `nums`.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.HashSet;\nimport java.util.Set;\n\n/**\n * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int missingInteger(int[] nums) {\n        int n = nums.length;\n        int sum = nums[0];\n        int i = 1;\n        while (i < n && nums[i] == nums[i - 1] + 1) {\n            sum += nums[i];\n            i++;\n        }\n\n        Set<Integer> set = new HashSet<>();\n        for (int num : nums) {\n            set.add(num);\n        }\n\n        while (set.contains(sum)) {\n            sum++;\n        }\n\n        return sum;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def missingInteger(self, nums: list[int]) -> int:\n        n = len(nums)\n        seq_sum = nums[0]\n        i = 1\n        while i < n and nums[i] == nums[i - 1] + 1:\n            seq_sum += nums[i]\n            i += 1\n\n        num_set = set(nums)\n        while seq_sum in num_set:\n            seq_sum += 1\n\n        return seq_sum\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <unordered_set>\n\n/**\n * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int missingInteger(std::vector<int>& nums) {\n        int n = nums.size();\n        int sum = nums[0];\n        int i = 1;\n        while (i < n && nums[i] == nums[i - 1] + 1) {\n            sum += nums[i];\n            i++;\n        }\n\n        std::unordered_set<int> num_set(nums.begin(), nums.end());\n        while (num_set.count(sum)) {\n            sum++;\n        }\n\n        return sum;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2996 - Smallest Missing Integer Greater Than Sequential Prefix Sum\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar missingInteger = function(nums) {\n    const n = nums.length;\n    let sum = nums[0];\n    let i = 1;\n    while (i < n && nums[i] === nums[i - 1] + 1) {\n        sum += nums[i];\n        i++;\n    }\n\n    const set = new Set(nums);\n    while (set.has(sum)) {\n        sum++;\n    }\n\n    return sum;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2996-smallest-missing-integer-greater-than-sequential-prefix-sum.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2996-smallest-missing-integer-greater-than-sequential-prefix-sum.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2996: Smallest Missing Integer Greater Than Sequential Pre...",
+    "meta_description": "Master LeetCode 2996 (Smallest Missing Integer Greater Than Sequential Prefix Sum) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optima...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2996-smallest-missing-integer-greater-than-sequential-prefix-sum.jpg",
+    "keywords": [
+      "LeetCode 2996",
+      "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "LeetCode 2996 Solution",
+      "LeetCode Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

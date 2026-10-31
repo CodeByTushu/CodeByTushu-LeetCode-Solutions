@@ -1,0 +1,79 @@
+{
+  "problem_number": 2946,
+  "problem_title": "Matrix Similarity After Cyclic Shifts",
+  "slug": "matrix-similarity-after-cyclic-shifts",
+  "solution_date": "2026-03-27",
+  "formatted_date": "27-03-2026",
+  "day_number": 27,
+  "month": "March",
+  "month_num": 3,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(m * n)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/",
+  "youtube_url": "https://youtu.be/ZEbsF_RRncI?si=SP0ppPsNVpjt5xx_",
+  "notes": "Optimal O(m * n) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an $m \\times n$ integer matrix `mat` and an integer `k`. The matrix rows are 0-indexed.\n\nThe following process happens `k` times:\n- **Even-indexed rows** ($0, 2, 4, \\dots$) are cyclically shifted to the **left**.\n- **Odd-indexed rows** ($1, 3, 5, \\dots$) are cyclically shifted to the **right**.\n\nReturn `true` if the final modified matrix after $k$ steps is identical to the original matrix, and `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 4`\n- **Output:** `false`\n- **Explanation:**\n  - $n = 3$, so shifting $4$ times is equivalent to shifting $4 \\pmod 3 = 1$ time.\n  - In each step, left shift is applied to rows 0 and 2, and right shift to row 1.\n  - After 4 steps:\n    - Row 0 becomes `[2, 3, 1]` $\\ne$ `[1, 2, 3]`\n    - Row 1 becomes `[6, 4, 5]` $\\ne$ `[4, 5, 6]`\n    - Row 2 becomes `[8, 9, 7]` $\\ne$ `[7, 8, 9]`\n  - The matrix is not identical to the original, so return `false`.\n\n#### Example 2:\n- **Input:** `mat = [[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], k = 2`\n- **Output:** `true`\n- **Explanation:**\n  - $n = 4$, $k = 2$.\n  - Shifting row 0 (`[1, 2, 1, 2]`) left by 2 yields `[1, 2, 1, 2]`.\n  - Shifting row 1 (`[5, 5, 5, 5]`) right by 2 yields `[5, 5, 5, 5]`.\n  - Shifting row 2 (`[6, 3, 6, 3]`) left by 2 yields `[6, 3, 6, 3]`.\n  - The entire matrix remains identical to the original, so return `true`.\n\n#### Example 3:\n- **Input:** `mat = [[2, 2], [2, 2]], k = 3`\n- **Output:** `true`\n- **Explanation:**\n  All elements in each row are identical, so any cyclic shift leaves the matrix unchanged. Return `true`.\n\n---\n\n### Constraints\n\n- $1 \\le m == \\text{mat.length} \\le 25$\n- $1 \\le n == \\text{mat}[i]\\text{.length} \\le 25$\n- $1 \\le \\text{mat}[i][j] \\le 25$\n- $1 \\le k \\le 50$\n\n---",
+    "approach_summary": "Reduce k modulo n and check whether mat[i][j] equals mat[i][(j + k) % n] for all cells in the matrix.",
+    "full_explanation": "# LeetCode 2946: Matrix Similarity After Cyclic Shifts\n\n- **Publication Date:** 27 March 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ZEbsF_RRncI?si=SP0ppPsNVpjt5xx_)\n\n---\n\n## Problem Summary\n\nYou are given an $m \\times n$ integer matrix `mat` and an integer `k`. The matrix rows are 0-indexed.\n\nThe following process happens `k` times:\n- **Even-indexed rows** ($0, 2, 4, \\dots$) are cyclically shifted to the **left**.\n- **Odd-indexed rows** ($1, 3, 5, \\dots$) are cyclically shifted to the **right**.\n\nReturn `true` if the final modified matrix after $k$ steps is identical to the original matrix, and `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 4`\n- **Output:** `false`\n- **Explanation:**\n  - $n = 3$, so shifting $4$ times is equivalent to shifting $4 \\pmod 3 = 1$ time.\n  - In each step, left shift is applied to rows 0 and 2, and right shift to row 1.\n  - After 4 steps:\n    - Row 0 becomes `[2, 3, 1]` $\\ne$ `[1, 2, 3]`\n    - Row 1 becomes `[6, 4, 5]` $\\ne$ `[4, 5, 6]`\n    - Row 2 becomes `[8, 9, 7]` $\\ne$ `[7, 8, 9]`\n  - The matrix is not identical to the original, so return `false`.\n\n#### Example 2:\n- **Input:** `mat = [[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], k = 2`\n- **Output:** `true`\n- **Explanation:**\n  - $n = 4$, $k = 2$.\n  - Shifting row 0 (`[1, 2, 1, 2]`) left by 2 yields `[1, 2, 1, 2]`.\n  - Shifting row 1 (`[5, 5, 5, 5]`) right by 2 yields `[5, 5, 5, 5]`.\n  - Shifting row 2 (`[6, 3, 6, 3]`) left by 2 yields `[6, 3, 6, 3]`.\n  - The entire matrix remains identical to the original, so return `true`.\n\n#### Example 3:\n- **Input:** `mat = [[2, 2], [2, 2]], k = 3`\n- **Output:** `true`\n- **Explanation:**\n  All elements in each row are identical, so any cyclic shift leaves the matrix unchanged. Return `true`.\n\n---\n\n### Constraints\n\n- $1 \\le m == \\text{mat.length} \\le 25$\n- $1 \\le n == \\text{mat}[i]\\text{.length} \\le 25$\n- $1 \\le \\text{mat}[i][j] \\le 25$\n- $1 \\le k \\le 50$\n\n---\n\n## Key Invariant & Algorithmic Approach\n\nA cyclic shift of an array of length $n$ by $k$ positions repeats periodically with period $n$. Therefore, we first reduce $k$:\n$$k = k \\pmod n$$\n\nIf $k = 0$, zero shifts occur, meaning the matrix is guaranteed to be unchanged, so we immediately return `true`.\n\n### Symmetry of Left and Right Invariance:\nFor any row $A$ of length $n$:\n1. A **left shift** by $k$ moves the element at original index $(j + k) \\pmod n$ to index $j$.\n   For the row to be invariant under left shift:\n   $$A[j] = A[(j + k) \\pmod n] \\quad \\text{for all } j \\in [0, n - 1]$$\n2. A **right shift** by $k$ moves the element at original index $(j - k + n) \\pmod n$ to index $j$.\n   For the row to be invariant under right shift:\n   $$A[j] = A[(j - k + n) \\pmod n] \\quad \\text{for all } j \\in [0, n - 1]$$\n\nNotice that since shifting is a cyclic permutation, $A[j] = A[(j + k) \\pmod n]$ for all $j$ if and only if $A[j] = A[(j - k + n) \\pmod n]$ for all $j$! The condition for invariance is identical regardless of shift direction.\n\nThus, we simply iterate through every row $i$ and column $j$:\n- If $\\text{mat}[i][j] \\ne \\text{mat}[i][(j + k) \\pmod n]$, return `false`.\n- If all cells match their shifted counterparts, return `true`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(m \\cdot n)$\n  - We iterate through each element of the $m \\times n$ matrix exactly once, performing an $\\mathcal{O}(1)$ index arithmetic and comparison check.\n  - Given $m, n \\le 25$, at most $625$ operations are performed, which executes in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - No extra data structures or copies of the matrix are allocated.\n"
+  },
+  "approach_summary": "Reduce k modulo n and check whether mat[i][j] equals mat[i][(j + k) % n] for all cells in the matrix.",
+  "explanation": "# LeetCode 2946: Matrix Similarity After Cyclic Shifts\n\n- **Publication Date:** 27 March 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ZEbsF_RRncI?si=SP0ppPsNVpjt5xx_)\n\n---\n\n## Problem Summary\n\nYou are given an $m \\times n$ integer matrix `mat` and an integer `k`. The matrix rows are 0-indexed.\n\nThe following process happens `k` times:\n- **Even-indexed rows** ($0, 2, 4, \\dots$) are cyclically shifted to the **left**.\n- **Odd-indexed rows** ($1, 3, 5, \\dots$) are cyclically shifted to the **right**.\n\nReturn `true` if the final modified matrix after $k$ steps is identical to the original matrix, and `false` otherwise.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 4`\n- **Output:** `false`\n- **Explanation:**\n  - $n = 3$, so shifting $4$ times is equivalent to shifting $4 \\pmod 3 = 1$ time.\n  - In each step, left shift is applied to rows 0 and 2, and right shift to row 1.\n  - After 4 steps:\n    - Row 0 becomes `[2, 3, 1]` $\\ne$ `[1, 2, 3]`\n    - Row 1 becomes `[6, 4, 5]` $\\ne$ `[4, 5, 6]`\n    - Row 2 becomes `[8, 9, 7]` $\\ne$ `[7, 8, 9]`\n  - The matrix is not identical to the original, so return `false`.\n\n#### Example 2:\n- **Input:** `mat = [[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], k = 2`\n- **Output:** `true`\n- **Explanation:**\n  - $n = 4$, $k = 2$.\n  - Shifting row 0 (`[1, 2, 1, 2]`) left by 2 yields `[1, 2, 1, 2]`.\n  - Shifting row 1 (`[5, 5, 5, 5]`) right by 2 yields `[5, 5, 5, 5]`.\n  - Shifting row 2 (`[6, 3, 6, 3]`) left by 2 yields `[6, 3, 6, 3]`.\n  - The entire matrix remains identical to the original, so return `true`.\n\n#### Example 3:\n- **Input:** `mat = [[2, 2], [2, 2]], k = 3`\n- **Output:** `true`\n- **Explanation:**\n  All elements in each row are identical, so any cyclic shift leaves the matrix unchanged. Return `true`.\n\n---\n\n### Constraints\n\n- $1 \\le m == \\text{mat.length} \\le 25$\n- $1 \\le n == \\text{mat}[i]\\text{.length} \\le 25$\n- $1 \\le \\text{mat}[i][j] \\le 25$\n- $1 \\le k \\le 50$\n\n---\n\n## Key Invariant & Algorithmic Approach\n\nA cyclic shift of an array of length $n$ by $k$ positions repeats periodically with period $n$. Therefore, we first reduce $k$:\n$$k = k \\pmod n$$\n\nIf $k = 0$, zero shifts occur, meaning the matrix is guaranteed to be unchanged, so we immediately return `true`.\n\n### Symmetry of Left and Right Invariance:\nFor any row $A$ of length $n$:\n1. A **left shift** by $k$ moves the element at original index $(j + k) \\pmod n$ to index $j$.\n   For the row to be invariant under left shift:\n   $$A[j] = A[(j + k) \\pmod n] \\quad \\text{for all } j \\in [0, n - 1]$$\n2. A **right shift** by $k$ moves the element at original index $(j - k + n) \\pmod n$ to index $j$.\n   For the row to be invariant under right shift:\n   $$A[j] = A[(j - k + n) \\pmod n] \\quad \\text{for all } j \\in [0, n - 1]$$\n\nNotice that since shifting is a cyclic permutation, $A[j] = A[(j + k) \\pmod n]$ for all $j$ if and only if $A[j] = A[(j - k + n) \\pmod n]$ for all $j$! The condition for invariance is identical regardless of shift direction.\n\nThus, we simply iterate through every row $i$ and column $j$:\n- If $\\text{mat}[i][j] \\ne \\text{mat}[i][(j + k) \\pmod n]$, return `false`.\n- If all cells match their shifted counterparts, return `true`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(m \\cdot n)$\n  - We iterate through each element of the $m \\times n$ matrix exactly once, performing an $\\mathcal{O}(1)$ index arithmetic and comparison check.\n  - Given $m, n \\le 25$, at most $625$ operations are performed, which executes in $< 1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - No extra data structures or copies of the matrix are allocated.\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2946 - Matrix Similarity After Cyclic Shifts\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean areSimilar(int[][] mat, int k) {\n        int m = mat.length;\n        int n = mat[0].length;\n        k %= n;\n\n        if (k == 0) {\n            return true;\n        }\n\n        for (int i = 0; i < m; i++) {\n            for (int j = 0; j < n; j++) {\n                if (mat[i][j] != mat[i][(j + k) % n]) {\n                    return false;\n                }\n            }\n        }\n\n        return true;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2946 - Matrix Similarity After Cyclic Shifts\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def areSimilar(self, mat: list[list[int]], k: int) -> bool:\n        m = len(mat)\n        n = len(mat[0])\n        k %= n\n\n        if k == 0:\n            return True\n\n        for i in range(m):\n            for j in range(n):\n                if mat[i][j] != mat[i][(j + k) % n]:\n                    return False\n\n        return True\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2946 - Matrix Similarity After Cyclic Shifts\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    bool areSimilar(vector<vector<int>>& mat, int k) {\n        int m = mat.size();\n        int n = mat[0].size();\n        k %= n;\n\n        if (k == 0) {\n            return true;\n        }\n\n        for (int i = 0; i < m; ++i) {\n            for (int j = 0; j < n; ++j) {\n                if (mat[i][j] != mat[i][(j + k) % n]) {\n                    return false;\n                }\n            }\n        }\n\n        return true;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2946 - Matrix Similarity After Cyclic Shifts\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar areSimilar = function(mat, k) {\n    const m = mat.length;\n    const n = mat[0].length;\n    k %= n;\n\n    if (k === 0) {\n        return true;\n    }\n\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            if (mat[i][j] !== mat[i][(j + k) % n]) {\n                return false;\n            }\n        }\n    }\n\n    return true;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2946-matrix-similarity-after-cyclic-shifts.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2946-matrix-similarity-after-cyclic-shifts.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2946: Matrix Similarity After Cyclic Shifts Solution | Cod...",
+    "meta_description": "Master LeetCode 2946 (Matrix Similarity After Cyclic Shifts) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(m * n) approach an...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2946-matrix-similarity-after-cyclic-shifts.jpg",
+    "keywords": [
+      "LeetCode 2946",
+      "Matrix Similarity After Cyclic Shifts",
+      "LeetCode 2946 Solution",
+      "LeetCode Matrix Similarity After Cyclic Shifts",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

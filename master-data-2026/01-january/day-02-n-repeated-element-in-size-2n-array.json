@@ -1,0 +1,78 @@
+{
+  "problem_number": 961,
+  "problem_title": "N-Repeated Element in Size 2N Array",
+  "slug": "n-repeated-element-in-size-2n-array",
+  "solution_date": "2026-01-02",
+  "formatted_date": "02-01-2026",
+  "day_number": 2,
+  "month": "January",
+  "month_num": 1,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
+  "youtube_url": "https://youtu.be/11vqhm5_GNs?si=EqL279K43kh_O5lD",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums` with the following properties:\n- `nums.length == 2 * n`.\n- `nums` contains `n + 1` unique elements, and `n` of which occur exactly once in the array.\n- Exactly one element of `nums` is repeated `n` times.\n\nReturn the element that is repeated `n` times.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3, 3]`\n- **Output:** `3`\n\n#### Example 2:\n- **Input:** `nums = [2, 1, 2, 5, 3, 2]`\n- **Output:** `2`\n\n#### Example 3:\n- **Input:** `nums = [5, 1, 5, 2, 5, 3, 5, 4]`\n- **Output:** `5`\n\n---\n\n### Constraints\n\n- $2 \\le n \\le 5000$\n- $\\text{nums.length} == 2 \\times n$\n- $0 \\le \\text{nums}[i] \\le 10^4$\n- `nums` contains $n + 1$ unique elements and one of them is repeated exactly $n$ times.\n\n---",
+    "approach_summary": "Traverse the array while tracking visited elements in a hash set. Because all other elements occur strictly once, the very first duplicate encountered is guaranteed to be the n-repeated answer.",
+    "full_explanation": "# LeetCode 961: N-Repeated Element in Size 2N Array\n\n- **Publication Date:** 02 January 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/n-repeated-element-in-size-2n-array/](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/11vqhm5_GNs?si=EqL279K43kh_O5lD)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` with the following properties:\n- `nums.length == 2 * n`.\n- `nums` contains `n + 1` unique elements, and `n` of which occur exactly once in the array.\n- Exactly one element of `nums` is repeated `n` times.\n\nReturn the element that is repeated `n` times.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3, 3]`\n- **Output:** `3`\n\n#### Example 2:\n- **Input:** `nums = [2, 1, 2, 5, 3, 2]`\n- **Output:** `2`\n\n#### Example 3:\n- **Input:** `nums = [5, 1, 5, 2, 5, 3, 5, 4]`\n- **Output:** `5`\n\n---\n\n### Constraints\n\n- $2 \\le n \\le 5000$\n- $\\text{nums.length} == 2 \\times n$\n- $0 \\le \\text{nums}[i] \\le 10^4$\n- `nums` contains $n + 1$ unique elements and one of them is repeated exactly $n$ times.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n\n---\n\n## Approach & Intuition\n\n### 1. Hash Set / First Duplicate Detection\n\n- **Key Insight:**\n  The array has a total length of $2n$ elements with $n + 1$ unique values. Exactly $n$ elements appear once, and exactly **one** special element appears $n$ times.\n- Since all other $n$ elements are strictly unique (they appear exactly once in the entire array), **the very first duplicate value encountered while iterating through `nums` is guaranteed to be the element repeated $n$ times**.\n- We iterate through `nums` while keeping track of numbers we've already observed in a hash set:\n  1. For each `num`, check if `num` is already in `seen`.\n  2. If it is present, return `num` immediately as our answer.\n  3. Otherwise, insert `num` into `seen`.\n- By the Pigeonhole Principle, among any 4 consecutive elements (or at most $n + 2$ elements overall), a duplicate must appear. Thus, the loop terminates very quickly.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $2n$ is the length of `nums`. In the worst-case scenario, at most $n + 2$ lookups are performed before finding the duplicate; on average it terminates in $\\mathcal{O}(1)$ time. Hash set lookup and insertion take $\\mathcal{O}(1)$ on average.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$ to store visited unique elements in the hash set.\n\n---\n\n## Source Code Implementations\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Traverse the array while tracking visited elements in a hash set. Because all other elements occur strictly once, the very first duplicate encountered is guaranteed to be the n-repeated answer.",
+  "explanation": "# LeetCode 961: N-Repeated Element in Size 2N Array\n\n- **Publication Date:** 02 January 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/n-repeated-element-in-size-2n-array/](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/11vqhm5_GNs?si=EqL279K43kh_O5lD)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums` with the following properties:\n- `nums.length == 2 * n`.\n- `nums` contains `n + 1` unique elements, and `n` of which occur exactly once in the array.\n- Exactly one element of `nums` is repeated `n` times.\n\nReturn the element that is repeated `n` times.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3, 3]`\n- **Output:** `3`\n\n#### Example 2:\n- **Input:** `nums = [2, 1, 2, 5, 3, 2]`\n- **Output:** `2`\n\n#### Example 3:\n- **Input:** `nums = [5, 1, 5, 2, 5, 3, 5, 4]`\n- **Output:** `5`\n\n---\n\n### Constraints\n\n- $2 \\le n \\le 5000$\n- $\\text{nums.length} == 2 \\times n$\n- $0 \\le \\text{nums}[i] \\le 10^4$\n- `nums` contains $n + 1$ unique elements and one of them is repeated exactly $n$ times.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n\n---\n\n## Approach & Intuition\n\n### 1. Hash Set / First Duplicate Detection\n\n- **Key Insight:**\n  The array has a total length of $2n$ elements with $n + 1$ unique values. Exactly $n$ elements appear once, and exactly **one** special element appears $n$ times.\n- Since all other $n$ elements are strictly unique (they appear exactly once in the entire array), **the very first duplicate value encountered while iterating through `nums` is guaranteed to be the element repeated $n$ times**.\n- We iterate through `nums` while keeping track of numbers we've already observed in a hash set:\n  1. For each `num`, check if `num` is already in `seen`.\n  2. If it is present, return `num` immediately as our answer.\n  3. Otherwise, insert `num` into `seen`.\n- By the Pigeonhole Principle, among any 4 consecutive elements (or at most $n + 2$ elements overall), a duplicate must appear. Thus, the loop terminates very quickly.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $2n$ is the length of `nums`. In the worst-case scenario, at most $n + 2$ lookups are performed before finding the duplicate; on average it terminates in $\\mathcal{O}(1)$ time. Hash set lookup and insertion take $\\mathcal{O}(1)$ on average.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$ to store visited unique elements in the hash set.\n\n---\n\n## Source Code Implementations\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 961 - N-Repeated Element in Size 2N Array\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.HashSet;\nimport java.util.Set;\n\nclass Solution {\n    public int repeatedNTimes(int[] nums) {\n        Set<Integer> seen = new HashSet<>();\n        for (int num : nums) {\n            // Because all other elements occur strictly once,\n            // the very first duplicate found is guaranteed to be our answer!\n            if (seen.contains(num)) {\n                return num;\n            }\n            seen.add(num);\n        }\n        return -1; // Fallback to satisfy compiler (unreachable per constraints)\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 961 - N-Repeated Element in Size 2N Array\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def repeatedNTimes(self, nums: List[int]) -> int:\n        seen = set()\n        for num in nums:\n            if num in seen:\n                return num\n            seen.add(num)\n        return -1\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 961 - N-Repeated Element in Size 2N Array\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <unordered_set>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int repeatedNTimes(vector<int>& nums) {\n        unordered_set<int> seen;\n        for (int num : nums) {\n            if (seen.count(num)) {\n                return num;\n            }\n            seen.insert(num);\n        }\n        return -1;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 961 - N-Repeated Element in Size 2N Array\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums\n * @return {number}\n */\nvar repeatedNTimes = function(nums) {\n    const seen = new Set();\n    for (const num of nums) {\n        if (seen.has(num)) {\n            return num;\n        }\n        seen.add(num);\n    }\n    return -1;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-961-n-repeated-element-in-size-2n-array.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-961-n-repeated-element-in-size-2n-array.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 961: N-Repeated Element in Size 2N Array Solution | CodeBy...",
+    "meta_description": "Master LeetCode 961 (N-Repeated Element in Size 2N Array) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detai...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-961-n-repeated-element-in-size-2n-array.jpg",
+    "keywords": [
+      "LeetCode 961",
+      "N-Repeated Element in Size 2N Array",
+      "LeetCode 961 Solution",
+      "LeetCode N-Repeated Element in Size 2N Array",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

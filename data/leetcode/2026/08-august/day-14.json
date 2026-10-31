@@ -1,0 +1,79 @@
+{
+  "problem_number": 3090,
+  "problem_title": "Maximum Length Substring With Two Occurrences",
+  "slug": "maximum-length-substring-with-two-occurrences",
+  "solution_date": "2026-08-14",
+  "formatted_date": "14-08-2026",
+  "day_number": 14,
+  "month": "August",
+  "month_num": 8,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/",
+  "youtube_url": "https://youtu.be/J8Y3UhpZ-H4?si=TujrIga45VUF_-12",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given a string `s`, return the **maximum length** of a substring such that it contains **at most two occurrences** of each character.\n\nA **substring** is a contiguous non-empty sequence of characters within a string.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"bcbbbcba\"`\n- **Output:** `4`\n- **Explanation:** The following substring has a length of $4$ and contains at most two occurrences of each character: `\"bcba\"`.\n\n#### Example 2:\n\n- **Input:** `s = \"aaaa\"`\n- **Output:** `2`\n- **Explanation:** The following substring has a length of $2$ and contains at most two occurrences of each character: `\"aa\"`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{s.length} \\le 100$\n- `s` consists only of lowercase English letters.\n\n---",
+    "approach_summary": "Track character frequencies within the active window using a 26-element array. Expand the right pointer, and shrink the window from the left whenever any character frequency exceeds 2.",
+    "full_explanation": "# LeetCode 3090: Maximum Length Substring With Two Occurrences\n\n- **Publication Date:** 14 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/J8Y3UhpZ-H4?si=TujrIga45VUF_-12)\n\n---\n\n## Problem Summary\n\nGiven a string `s`, return the **maximum length** of a substring such that it contains **at most two occurrences** of each character.\n\nA **substring** is a contiguous non-empty sequence of characters within a string.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"bcbbbcba\"`\n- **Output:** `4`\n- **Explanation:** The following substring has a length of $4$ and contains at most two occurrences of each character: `\"bcba\"`.\n\n#### Example 2:\n\n- **Input:** `s = \"aaaa\"`\n- **Output:** `2`\n- **Explanation:** The following substring has a length of $2$ and contains at most two occurrences of each character: `\"aa\"`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{s.length} \\le 100$\n- `s` consists only of lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **Hash Table**\n- **String**\n- **Sliding Window**\n\n---\n\n## Intuition and Approach\n\n### Two-Pointer Sliding Window:\nBecause we want to find the longest contiguous substring satisfying the frequency constraint ($\\le 2$ of each letter), a variable-length **sliding window** is optimal:\n1. Maintain a frequency table (an array `freq` of size 26) representing character counts within the active window $[left, right]$.\n2. Iterate `right` across the string from index $0$ to $N - 1$:\n   - Increment `freq[s[right] - 'a']`.\n   - If the newly added character's frequency exceeds $2$, the window is violated.\n   - Advance `left` while decrementing `freq[s[left] - 'a']` until `freq[s[right] - 'a'] <= 2`.\n3. Compute the current window length $\\text{right} - \\text{left} + 1$ and update the maximum length found:\n   $$\\text{maxLen} = \\max(\\text{maxLen}, \\text{right} - \\text{left} + 1)$$\n\nBecause both `left` and `right` monotonically move forward from $0$ to $N$, the algorithm runs in linear $\\mathcal{O}(N)$ time.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - `right` visits each of the $N$ characters once.\n  - `left` increments at most $N$ times across the entire loop.\n  - Array lookups and updates take $\\mathcal{O}(1)$ time.\n  - Overall time complexity is $\\mathcal{O}(N)$, completing instantaneously ($\\le 1\\text{ ms}$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only a fixed-size integer array of length $26$ is used for lowercase English letters.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Track character frequencies within the active window using a 26-element array. Expand the right pointer, and shrink the window from the left whenever any character frequency exceeds 2.",
+  "explanation": "# LeetCode 3090: Maximum Length Substring With Two Occurrences\n\n- **Publication Date:** 14 August 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/J8Y3UhpZ-H4?si=TujrIga45VUF_-12)\n\n---\n\n## Problem Summary\n\nGiven a string `s`, return the **maximum length** of a substring such that it contains **at most two occurrences** of each character.\n\nA **substring** is a contiguous non-empty sequence of characters within a string.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"bcbbbcba\"`\n- **Output:** `4`\n- **Explanation:** The following substring has a length of $4$ and contains at most two occurrences of each character: `\"bcba\"`.\n\n#### Example 2:\n\n- **Input:** `s = \"aaaa\"`\n- **Output:** `2`\n- **Explanation:** The following substring has a length of $2$ and contains at most two occurrences of each character: `\"aa\"`.\n\n---\n\n### Constraints\n\n- $2 \\le \\text{s.length} \\le 100$\n- `s` consists only of lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **Hash Table**\n- **String**\n- **Sliding Window**\n\n---\n\n## Intuition and Approach\n\n### Two-Pointer Sliding Window:\nBecause we want to find the longest contiguous substring satisfying the frequency constraint ($\\le 2$ of each letter), a variable-length **sliding window** is optimal:\n1. Maintain a frequency table (an array `freq` of size 26) representing character counts within the active window $[left, right]$.\n2. Iterate `right` across the string from index $0$ to $N - 1$:\n   - Increment `freq[s[right] - 'a']`.\n   - If the newly added character's frequency exceeds $2$, the window is violated.\n   - Advance `left` while decrementing `freq[s[left] - 'a']` until `freq[s[right] - 'a'] <= 2`.\n3. Compute the current window length $\\text{right} - \\text{left} + 1$ and update the maximum length found:\n   $$\\text{maxLen} = \\max(\\text{maxLen}, \\text{right} - \\text{left} + 1)$$\n\nBecause both `left` and `right` monotonically move forward from $0$ to $N$, the algorithm runs in linear $\\mathcal{O}(N)$ time.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - `right` visits each of the $N$ characters once.\n  - `left` increments at most $N$ times across the entire loop.\n  - Array lookups and updates take $\\mathcal{O}(1)$ time.\n  - Overall time complexity is $\\mathcal{O}(N)$, completing instantaneously ($\\le 1\\text{ ms}$).\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only a fixed-size integer array of length $26$ is used for lowercase English letters.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maximumLengthSubstring(String s) {\n        int n = s.length();\n        int[] freq = new int[26];\n        int left = 0;\n        int maxLen = 0;\n\n        for (int right = 0; right < n; right++) {\n            int c = s.charAt(right) - 'a';\n            freq[c]++;\n\n            while (freq[c] > 2) {\n                freq[s.charAt(left) - 'a']--;\n                left++;\n            }\n\n            maxLen = Math.max(maxLen, right - left + 1);\n        }\n\n        return maxLen;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3090 - Maximum Length Substring With Two Occurrences\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def maximumLengthSubstring(self, s: str) -> int:\n        freq = [0] * 26\n        left = 0\n        max_len = 0\n\n        for right, ch in enumerate(s):\n            c = ord(ch) - ord('a')\n            freq[c] += 1\n\n            while freq[c] > 2:\n                freq[ord(s[left]) - ord('a')] -= 1\n                left += 1\n\n            max_len = max(max_len, right - left + 1)\n\n        return max_len\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maximumLengthSubstring(string s) {\n        int n = s.length();\n        vector<int> freq(26, 0);\n        int left = 0;\n        int maxLen = 0;\n\n        for (int right = 0; right < n; right++) {\n            int c = s[right] - 'a';\n            freq[c]++;\n\n            while (freq[c] > 2) {\n                freq[s[left] - 'a']--;\n                left++;\n            }\n\n            maxLen = max(maxLen, right - left + 1);\n        }\n\n        return maxLen;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3090 - Maximum Length Substring With Two Occurrences\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maximumLengthSubstring = function(s) {\n    const n = s.length;\n    const freq = new Int32Array(26);\n    let left = 0;\n    let maxLen = 0;\n\n    for (let right = 0; right < n; right++) {\n        const c = s.charCodeAt(right) - 97;\n        freq[c]++;\n\n        while (freq[c] > 2) {\n            freq[s.charCodeAt(left) - 97]--;\n            left++;\n        }\n\n        maxLen = Math.max(maxLen, right - left + 1);\n    }\n\n    return maxLen;\n};\n"
+    }
+  },
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3090-maximum-length-substring-with-two-occurrences.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3090-maximum-length-substring-with-two-occurrences.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3090: Maximum Length Substring With Two Occurrences Soluti...",
+    "meta_description": "Master LeetCode 3090 (Maximum Length Substring With Two Occurrences) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approac...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3090-maximum-length-substring-with-two-occurrences.jpg",
+    "keywords": [
+      "LeetCode 3090",
+      "Maximum Length Substring With Two Occurrences",
+      "LeetCode 3090 Solution",
+      "LeetCode Maximum Length Substring With Two Occurrences",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

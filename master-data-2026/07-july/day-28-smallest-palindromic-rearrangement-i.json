@@ -1,0 +1,80 @@
+{
+  "problem_number": 3517,
+  "problem_title": "Smallest Palindromic Rearrangement I",
+  "slug": "smallest-palindromic-rearrangement-i",
+  "solution_date": "2026-07-28",
+  "formatted_date": "28-07-2026",
+  "day_number": 28,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/",
+  "youtube_url": "https://youtu.be/0Ubxy-GYdXo?si=53zyuP0Nrdx8Wsex",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a palindromic string `s`.\n\nReturn the **lexicographically smallest** palindromic permutation of `s`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"z\"`\n- **Output:** `\"z\"`\n- **Explanation:** A string of only one character is already the lexicographically smallest palindrome.\n\n#### Example 2:\n\n- **Input:** `s = \"babab\"`\n- **Output:** `\"abbba\"`\n- **Explanation:** Rearranging `\"babab\"` $\\to$ `\"abbba\"` gives the smallest lexicographic palindrome.\n\n#### Example 3:\n\n- **Input:** `s = \"daccad\"`\n- **Output:** `\"acddca\"`\n- **Explanation:** Rearranging `\"daccad\"` $\\to$ `\"acddca\"` gives the smallest lexicographic palindrome.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 10^5$\n- `s` consists of lowercase English letters.\n- `s` is guaranteed to be palindromic.\n\n---",
+    "approach_summary": "Count character frequencies across all 26 lowercase English letters. Greedily append pairs of characters in alphabetical order to the left half, place the unique odd character (if any) at the center, and append the reversed left half to form the final palindrome.",
+    "full_explanation": "# LeetCode 3517: Smallest Palindromic Rearrangement I\n\n- **Publication Date:** 28 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/smallest-palindromic-rearrangement-i/](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0Ubxy-GYdXo?si=53zyuP0Nrdx8Wsex)\n\n---\n\n## Problem Summary\n\nYou are given a palindromic string `s`.\n\nReturn the **lexicographically smallest** palindromic permutation of `s`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"z\"`\n- **Output:** `\"z\"`\n- **Explanation:** A string of only one character is already the lexicographically smallest palindrome.\n\n#### Example 2:\n\n- **Input:** `s = \"babab\"`\n- **Output:** `\"abbba\"`\n- **Explanation:** Rearranging `\"babab\"` $\\to$ `\"abbba\"` gives the smallest lexicographic palindrome.\n\n#### Example 3:\n\n- **Input:** `s = \"daccad\"`\n- **Output:** `\"acddca\"`\n- **Explanation:** Rearranging `\"daccad\"` $\\to$ `\"acddca\"` gives the smallest lexicographic palindrome.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 10^5$\n- `s` consists of lowercase English letters.\n- `s` is guaranteed to be palindromic.\n\n---\n\n## Algorithmic Approach\n\n### 1. Palindromic Symmetry & Lexicographical Priority\n- In any palindrome, the prefix (first half) mirrors the suffix (second half), with at most one character having an odd frequency placed at the exact center (if string length is odd).\n- To make the reconstructed palindrome **lexicographically smallest**, we must make its prefix as alphabetically small as possible. This means greedily placing smaller characters (`'a'`, `'b'`, ...) as early as possible.\n\n### 2. Frequency Counting & Symmetrical Reassembly ($\\mathcal{O}(n)$ Time)\nBecause `s` is already guaranteed to be palindromic:\n1. Count the frequency of each lowercase letter using a fixed-size frequency array of length $26$.\n2. Iterate through characters from `'a'` to `'z'`:\n   - While `freq[i] >= 2`, append character `(char)('a' + i)` to `left` and decrement `freq[i]` by $2$.\n   - If `freq[i] == 1`, assign that character to `middle`.\n3. Construct `right` as the reverse of `left`.\n4. Concatenate and return `left + middle + right`.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Counting frequencies takes $\\mathcal{O}(n)$ time. Iterating through 26 characters and constructing the string of length $n$ takes $\\mathcal{O}(n + |\\Sigma|) = \\mathcal{O}(n)$. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | The frequency array is fixed to size $26$ regardless of input length. Auxiliary space beyond the output string is $\\mathcal{O}(1)$. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Count character frequencies across all 26 lowercase English letters. Greedily append pairs of characters in alphabetical order to the left half, place the unique odd character (if any) at the center, and append the reversed left half to form the final palindrome.",
+  "explanation": "# LeetCode 3517: Smallest Palindromic Rearrangement I\n\n- **Publication Date:** 28 July 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/smallest-palindromic-rearrangement-i/](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0Ubxy-GYdXo?si=53zyuP0Nrdx8Wsex)\n\n---\n\n## Problem Summary\n\nYou are given a palindromic string `s`.\n\nReturn the **lexicographically smallest** palindromic permutation of `s`.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `s = \"z\"`\n- **Output:** `\"z\"`\n- **Explanation:** A string of only one character is already the lexicographically smallest palindrome.\n\n#### Example 2:\n\n- **Input:** `s = \"babab\"`\n- **Output:** `\"abbba\"`\n- **Explanation:** Rearranging `\"babab\"` $\\to$ `\"abbba\"` gives the smallest lexicographic palindrome.\n\n#### Example 3:\n\n- **Input:** `s = \"daccad\"`\n- **Output:** `\"acddca\"`\n- **Explanation:** Rearranging `\"daccad\"` $\\to$ `\"acddca\"` gives the smallest lexicographic palindrome.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length} \\le 10^5$\n- `s` consists of lowercase English letters.\n- `s` is guaranteed to be palindromic.\n\n---\n\n## Algorithmic Approach\n\n### 1. Palindromic Symmetry & Lexicographical Priority\n- In any palindrome, the prefix (first half) mirrors the suffix (second half), with at most one character having an odd frequency placed at the exact center (if string length is odd).\n- To make the reconstructed palindrome **lexicographically smallest**, we must make its prefix as alphabetically small as possible. This means greedily placing smaller characters (`'a'`, `'b'`, ...) as early as possible.\n\n### 2. Frequency Counting & Symmetrical Reassembly ($\\mathcal{O}(n)$ Time)\nBecause `s` is already guaranteed to be palindromic:\n1. Count the frequency of each lowercase letter using a fixed-size frequency array of length $26$.\n2. Iterate through characters from `'a'` to `'z'`:\n   - While `freq[i] >= 2`, append character `(char)('a' + i)` to `left` and decrement `freq[i]` by $2$.\n   - If `freq[i] == 1`, assign that character to `middle`.\n3. Construct `right` as the reverse of `left`.\n4. Concatenate and return `left + middle + right`.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | Counting frequencies takes $\\mathcal{O}(n)$ time. Iterating through 26 characters and constructing the string of length $n$ takes $\\mathcal{O}(n + |\\Sigma|) = \\mathcal{O}(n)$. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | The frequency array is fixed to size $26$ regardless of input length. Auxiliary space beyond the output string is $\\mathcal{O}(1)$. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public String smallestPalindrome(String s) {\n        int[] freq = new int[26];\n        for (char c : s.toCharArray()) {\n            freq[c - 'a']++; \n        }\n        StringBuilder left = new StringBuilder();\n        String middle = \"\";\n        for (int i = 0; i < 26; i++) {\n            while (freq[i] >= 2) {\n                left.append((char) ('a' + i));\n                freq[i] -= 2;\n            }\n            if (freq[i] == 1) {\n                middle = String.valueOf((char) ('a' + i));\n            }\n        }\n        StringBuilder right = new StringBuilder(left).reverse();\n        return left.toString() + middle + right.toString();\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3517 - Smallest Palindromic Rearrangement I\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def smallestPalindrome(self, s: str) -> str:\n        freq = [0] * 26\n        for c in s:\n            freq[ord(c) - ord('a')] += 1\n\n        left = []\n        middle = \"\"\n        for i in range(26):\n            while freq[i] >= 2:\n                left.append(chr(ord('a') + i))\n                freq[i] -= 2\n            if freq[i] == 1:\n                middle = chr(ord('a') + i)\n\n        left_str = \"\".join(left)\n        right_str = left_str[::-1]\n        return left_str + middle + right_str\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n#include <algorithm>\n\n/**\n * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    std::string smallestPalindrome(std::string s) {\n        std::vector<int> freq(26, 0);\n        for (char c : s) {\n            freq[c - 'a']++;\n        }\n\n        std::string left = \"\";\n        left.reserve(s.length() / 2);\n        std::string middle = \"\";\n\n        for (int i = 0; i < 26; i++) {\n            while (freq[i] >= 2) {\n                left += static_cast<char>('a' + i);\n                freq[i] -= 2;\n            }\n            if (freq[i] == 1) {\n                middle = static_cast<char>('a' + i);\n            }\n        }\n\n        std::string right = left;\n        std::reverse(right.begin(), right.end());\n        return left + middle + right;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3517 - Smallest Palindromic Rearrangement I\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar smallestPalindrome = function(s) {\n    const freq = new Array(26).fill(0);\n    for (let i = 0; i < s.length; i++) {\n        freq[s.charCodeAt(i) - 97]++;\n    }\n\n    const left = [];\n    let middle = \"\";\n\n    for (let i = 0; i < 26; i++) {\n        while (freq[i] >= 2) {\n            left.push(String.fromCharCode(97 + i));\n            freq[i] -= 2;\n        }\n        if (freq[i] === 1) {\n            middle = String.fromCharCode(97 + i);\n        }\n    }\n\n    const leftStr = left.join('');\n    const rightStr = left.slice().reverse().join('');\n    return leftStr + middle + rightStr;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting",
+    "Two Pointers"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3517-smallest-palindromic-rearrangement-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3517-smallest-palindromic-rearrangement-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3517: Smallest Palindromic Rearrangement I Solution | Code...",
+    "meta_description": "Master LeetCode 3517 (Smallest Palindromic Rearrangement I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and det...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3517-smallest-palindromic-rearrangement-i.jpg",
+    "keywords": [
+      "LeetCode 3517",
+      "Smallest Palindromic Rearrangement I",
+      "LeetCode 3517 Solution",
+      "LeetCode Smallest Palindromic Rearrangement I",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

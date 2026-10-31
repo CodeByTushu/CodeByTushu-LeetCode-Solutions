@@ -1,0 +1,78 @@
+{
+  "problem_number": 796,
+  "problem_title": "Rotate String",
+  "slug": "rotate-string",
+  "solution_date": "2026-05-03",
+  "formatted_date": "03-05-2026",
+  "day_number": 3,
+  "month": "May",
+  "month_num": 5,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(N)",
+  "leetcode_url": "https://leetcode.com/problems/rotate-string/",
+  "youtube_url": "https://youtu.be/ppNAV1CisvI",
+  "notes": "Optimal O(N) time complexity with O(N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given two strings `s` and `goal`, return `true` *if and only if* `s` *can become* `goal` *after some number of shifts on* `s`.\n\nA **shift** on `s` consists of moving the leftmost character of `s` to the rightmost position.\n- For example, if `s = \"abcde\"`, then after one shift it becomes `\"bcdea\"`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abcde\"`, `goal = \"cdeab\"`\n- **Output:** `true`\n- **Explanation:**\n  - Shift 1: `\"abcde\"` $\\to$ `\"bcdea\"`\n  - Shift 2: `\"bcdea\"` $\\to$ `\"cdeab\"` (matches `goal`)\n\n#### Example 2:\n- **Input:** `s = \"abcde\"`, `goal = \"abced\"`\n- **Output:** `false`\n- **Explanation:** No series of shifts can produce `\"abced\"` because the order of `'d'` and `'e'` is swapped.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length}, \\text{goal.length} \\le 100$\n- `s` and `goal` consist of lowercase English letters.\n\n---",
+    "approach_summary": "All possible cyclic shifts of s are substrings of length s.length in s + s. Verify s.length == goal.length and check if (s + s) contains goal.",
+    "full_explanation": "# LeetCode 796: Rotate String\n\n- **Publication Date:** 03 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/rotate-string/](https://leetcode.com/problems/rotate-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ppNAV1CisvI)\n\n---\n\n## Problem Summary\n\nGiven two strings `s` and `goal`, return `true` *if and only if* `s` *can become* `goal` *after some number of shifts on* `s`.\n\nA **shift** on `s` consists of moving the leftmost character of `s` to the rightmost position.\n- For example, if `s = \"abcde\"`, then after one shift it becomes `\"bcdea\"`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abcde\"`, `goal = \"cdeab\"`\n- **Output:** `true`\n- **Explanation:**\n  - Shift 1: `\"abcde\"` $\\to$ `\"bcdea\"`\n  - Shift 2: `\"bcdea\"` $\\to$ `\"cdeab\"` (matches `goal`)\n\n#### Example 2:\n- **Input:** `s = \"abcde\"`, `goal = \"abced\"`\n- **Output:** `false`\n- **Explanation:** No series of shifts can produce `\"abced\"` because the order of `'d'` and `'e'` is swapped.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length}, \\text{goal.length} \\le 100$\n- `s` and `goal` consist of lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **String Matching**\n\n---\n\n## Approach & Intuition\n\n### 1. Invariant of String Rotations\n\nWhen a string `s` of length $n$ is shifted left repeatedly:\n- All possible cyclic shifts of `s` are substrings of length $n$ contained within the doubled string $s + s$.\n- For example, if $s = \\text{\"abcde\"}$:\n  $$s + s = \\text{\"abcdeabcde\"}$$\n  The substrings of length $5$ are:\n  - Offset 0: `\"abcde\"`\n  - Offset 1: `\"bcdea\"`\n  - Offset 2: `\"cdeab\"`\n  - Offset 3: `\"deabc\"`\n  - Offset 4: `\"eabcd\"`\n\n### 2. Necessary & Sufficient Conditions\n\n`s` can become `goal` after some number of shifts if and only if:\n1. `s.length == goal.length` (both strings must have the exact same length).\n2. `(s + s).contains(goal)` (`goal` must appear as a contiguous substring of $s + s$).\n\nThis allows solving the problem in a single line of code with optimal performance.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Generating $s + s$ takes $\\mathcal{O}(N)$ time.\n  - Substring search on a string of length $2N$ takes $\\mathcal{O}(N)$ time using standard library string matching algorithms (KMP / Boyer-Moore / Two-Way algorithm).\n  - Since $N \\le 100$, execution completes in microseconds.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Creating the concatenated string $s + s$ of length $2N$ takes $\\mathcal{O}(N)$ auxiliary memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/ppNAV1CisvI](https://youtu.be/ppNAV1CisvI)\n"
+  },
+  "approach_summary": "All possible cyclic shifts of s are substrings of length s.length in s + s. Verify s.length == goal.length and check if (s + s) contains goal.",
+  "explanation": "# LeetCode 796: Rotate String\n\n- **Publication Date:** 03 May 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/rotate-string/](https://leetcode.com/problems/rotate-string/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ppNAV1CisvI)\n\n---\n\n## Problem Summary\n\nGiven two strings `s` and `goal`, return `true` *if and only if* `s` *can become* `goal` *after some number of shifts on* `s`.\n\nA **shift** on `s` consists of moving the leftmost character of `s` to the rightmost position.\n- For example, if `s = \"abcde\"`, then after one shift it becomes `\"bcdea\"`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"abcde\"`, `goal = \"cdeab\"`\n- **Output:** `true`\n- **Explanation:**\n  - Shift 1: `\"abcde\"` $\\to$ `\"bcdea\"`\n  - Shift 2: `\"bcdea\"` $\\to$ `\"cdeab\"` (matches `goal`)\n\n#### Example 2:\n- **Input:** `s = \"abcde\"`, `goal = \"abced\"`\n- **Output:** `false`\n- **Explanation:** No series of shifts can produce `\"abced\"` because the order of `'d'` and `'e'` is swapped.\n\n---\n\n### Constraints\n\n- $1 \\le \\text{s.length}, \\text{goal.length} \\le 100$\n- `s` and `goal` consist of lowercase English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **String Matching**\n\n---\n\n## Approach & Intuition\n\n### 1. Invariant of String Rotations\n\nWhen a string `s` of length $n$ is shifted left repeatedly:\n- All possible cyclic shifts of `s` are substrings of length $n$ contained within the doubled string $s + s$.\n- For example, if $s = \\text{\"abcde\"}$:\n  $$s + s = \\text{\"abcdeabcde\"}$$\n  The substrings of length $5$ are:\n  - Offset 0: `\"abcde\"`\n  - Offset 1: `\"bcdea\"`\n  - Offset 2: `\"cdeab\"`\n  - Offset 3: `\"deabc\"`\n  - Offset 4: `\"eabcd\"`\n\n### 2. Necessary & Sufficient Conditions\n\n`s` can become `goal` after some number of shifts if and only if:\n1. `s.length == goal.length` (both strings must have the exact same length).\n2. `(s + s).contains(goal)` (`goal` must appear as a contiguous substring of $s + s$).\n\nThis allows solving the problem in a single line of code with optimal performance.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N)$\n  - Generating $s + s$ takes $\\mathcal{O}(N)$ time.\n  - Substring search on a string of length $2N$ takes $\\mathcal{O}(N)$ time using standard library string matching algorithms (KMP / Boyer-Moore / Two-Way algorithm).\n  - Since $N \\le 100$, execution completes in microseconds.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(N)$\n  - Creating the concatenated string $s + s$ of length $2N$ takes $\\mathcal{O}(N)$ auxiliary memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/ppNAV1CisvI](https://youtu.be/ppNAV1CisvI)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 796 - Rotate String\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean rotateString(String s, String goal) {\n        return s.length() == goal.length() && (s + s).contains(goal);\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 796 - Rotate String\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def rotateString(self, s: str, goal: str) -> bool:\n        return len(s) == len(goal) and goal in (s + s)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 796 - Rotate String\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 796 - Rotate String\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool rotateString(string s, string goal) {\n        return s.length() == goal.length() && (s + s).find(goal) != string::npos;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 796 - Rotate String\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar rotateString = function(s, goal) {\n    return s.length === goal.length && (s + s).includes(goal);\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "String Matching"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-796-rotate-string.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-796-rotate-string.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 796: Rotate String Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 796 (Rotate String) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed explanation.",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-796-rotate-string.jpg",
+    "keywords": [
+      "LeetCode 796",
+      "Rotate String",
+      "LeetCode 796 Solution",
+      "LeetCode Rotate String",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "problem_number": 115,
+  "problem_title": "Distinct Subsequences",
+  "slug": "distinct-subsequences",
+  "solution_date": "2026-09-06",
+  "formatted_date": "06-09-2026",
+  "day_number": 6,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Hard",
+  "platform": "LeetCode",
+  "time_complexity": "O(M * N)",
+  "space_complexity": "O(M * N)",
+  "leetcode_url": "https://leetcode.com/problems/distinct-subsequences/",
+  "youtube_url": "https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK",
+  "notes": "Optimal O(M * N) time complexity with O(M * N) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given two strings `s` and `t`, return the number of distinct **subsequences** of `s` which equals `t`.\n\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"rabbbit\", t = \"rabbit\"`\n- **Output:** `3`\n- **Explanation:**\n  As shown below, there are 3 ways you can generate `\"rabbit\"` from `s`:\n  1. `ra_b_bbit`\n  2. `rab_b_bit`\n  3. `rabb_b_it`\n\n#### Example 2:\n- **Input:** `s = \"babgbag\", t = \"bag\"`\n- **Output:** `5`\n- **Explanation:**\n  As shown below, there are 5 ways you can generate `\"bag\"` from `s`:\n  1. `ba_b_gbag`\n  2. `ba_bgba_g`\n  3. `babg_ba_g`\n  4. `bab_gba_g`\n  5. `babgbag`\n\n---\n\n### Constraints\n\n- $1 \\le s.\\text{length}, t.\\text{length} \\le 1000$\n- `s` and `t` consist of English letters.\n\n---",
+    "approach_summary": "Define dp[i][j] as the number of distinct subsequences of prefix s[0..i-1] equal to t[0..j-1]. Transition using dp[i][j] = dp[i-1][j] + (s[i-1] == t[j-1] ? dp[i-1][j-1] : 0) with base case dp[i][0] = 1.",
+    "full_explanation": "# LeetCode 115: Distinct Subsequences\n\n- **Publication Date:** 06 September 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/distinct-subsequences/](https://leetcode.com/problems/distinct-subsequences/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK)\n\n---\n\n## Problem Summary\n\nGiven two strings `s` and `t`, return the number of distinct **subsequences** of `s` which equals `t`.\n\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"rabbbit\", t = \"rabbit\"`\n- **Output:** `3`\n- **Explanation:**\n  As shown below, there are 3 ways you can generate `\"rabbit\"` from `s`:\n  1. `ra_b_bbit`\n  2. `rab_b_bit`\n  3. `rabb_b_it`\n\n#### Example 2:\n- **Input:** `s = \"babgbag\", t = \"bag\"`\n- **Output:** `5`\n- **Explanation:**\n  As shown below, there are 5 ways you can generate `\"bag\"` from `s`:\n  1. `ba_b_gbag`\n  2. `ba_bgba_g`\n  3. `babg_ba_g`\n  4. `bab_gba_g`\n  5. `babgbag`\n\n---\n\n### Constraints\n\n- $1 \\le s.\\text{length}, t.\\text{length} \\le 1000$\n- `s` and `t` consist of English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n\n---\n\n## Approach & Intuition\n\n1. **Recurrence Relation**:\n   - Let $\\text{dp}[i][j]$ represent the number of distinct subsequences of prefix $s[0..i-1]$ that equal prefix $t[0..j-1]$.\n   - **Base Cases**:\n     - $\\text{dp}[i][0] = 1$ for all $0 \\le i \\le m$: An empty string $t$ is a subsequence of any prefix of $s$ in exactly 1 way (by deleting all characters).\n     - $\\text{dp}[0][j] = 0$ for all $1 \\le j \\le n$: A non-empty string $t$ cannot be formed from an empty string $s$.\n   - **Transitions**:\n     - At character $s[i-1]$ and $t[j-1]$, we always have the option to ignore $s[i-1]$:\n       $$\\text{dp}[i][j] = \\text{dp}[i-1][j]$$\n     - If the current characters match ($s[i-1] == t[j-1]$), we also have the option to match them, which adds the ways to form $t[0..j-2]$ from $s[0..i-2]$:\n       $$\\text{dp}[i][j] += \\text{dp}[i-1][j-1]$$\n\n2. **Final Answer**:\n   - The final answer is stored in $\\text{dp}[m][n]$ where $m = s.\\text{length}()$ and $n = t.\\text{length}()$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(M \\times N)$\n  - Filling the 2D DP table takes nested loops of size $(M + 1) \\times (N + 1)$ with $\\mathcal{O}(1)$ work per state.\n  - Overall time complexity is $\\mathcal{O}(M \\times N)$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(M \\times N)$\n  - 2D DP array of size $(M + 1) \\times (N + 1)$. Can be further optimized to $\\mathcal{O}(N)$ using a 1D rolling array.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK](https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n"
+  },
+  "approach_summary": "Define dp[i][j] as the number of distinct subsequences of prefix s[0..i-1] equal to t[0..j-1]. Transition using dp[i][j] = dp[i-1][j] + (s[i-1] == t[j-1] ? dp[i-1][j-1] : 0) with base case dp[i][0] = 1.",
+  "explanation": "# LeetCode 115: Distinct Subsequences\n\n- **Publication Date:** 06 September 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/distinct-subsequences/](https://leetcode.com/problems/distinct-subsequences/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK)\n\n---\n\n## Problem Summary\n\nGiven two strings `s` and `t`, return the number of distinct **subsequences** of `s` which equals `t`.\n\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `s = \"rabbbit\", t = \"rabbit\"`\n- **Output:** `3`\n- **Explanation:**\n  As shown below, there are 3 ways you can generate `\"rabbit\"` from `s`:\n  1. `ra_b_bbit`\n  2. `rab_b_bit`\n  3. `rabb_b_it`\n\n#### Example 2:\n- **Input:** `s = \"babgbag\", t = \"bag\"`\n- **Output:** `5`\n- **Explanation:**\n  As shown below, there are 5 ways you can generate `\"bag\"` from `s`:\n  1. `ba_b_gbag`\n  2. `ba_bgba_g`\n  3. `babg_ba_g`\n  4. `bab_gba_g`\n  5. `babgbag`\n\n---\n\n### Constraints\n\n- $1 \\le s.\\text{length}, t.\\text{length} \\le 1000$\n- `s` and `t` consist of English letters.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n\n---\n\n## Approach & Intuition\n\n1. **Recurrence Relation**:\n   - Let $\\text{dp}[i][j]$ represent the number of distinct subsequences of prefix $s[0..i-1]$ that equal prefix $t[0..j-1]$.\n   - **Base Cases**:\n     - $\\text{dp}[i][0] = 1$ for all $0 \\le i \\le m$: An empty string $t$ is a subsequence of any prefix of $s$ in exactly 1 way (by deleting all characters).\n     - $\\text{dp}[0][j] = 0$ for all $1 \\le j \\le n$: A non-empty string $t$ cannot be formed from an empty string $s$.\n   - **Transitions**:\n     - At character $s[i-1]$ and $t[j-1]$, we always have the option to ignore $s[i-1]$:\n       $$\\text{dp}[i][j] = \\text{dp}[i-1][j]$$\n     - If the current characters match ($s[i-1] == t[j-1]$), we also have the option to match them, which adds the ways to form $t[0..j-2]$ from $s[0..i-2]$:\n       $$\\text{dp}[i][j] += \\text{dp}[i-1][j-1]$$\n\n2. **Final Answer**:\n   - The final answer is stored in $\\text{dp}[m][n]$ where $m = s.\\text{length}()$ and $n = t.\\text{length}()$.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(M \\times N)$\n  - Filling the 2D DP table takes nested loops of size $(M + 1) \\times (N + 1)$ with $\\mathcal{O}(1)$ work per state.\n  - Overall time complexity is $\\mathcal{O}(M \\times N)$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(M \\times N)$\n  - 2D DP array of size $(M + 1) \\times (N + 1)$. Can be further optimized to $\\mathcal{O}(N)$ using a 1D rolling array.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK](https://youtu.be/3zsIGf3Eshg?si=yh8q8tS_D6U5VvvK)\n\n---\n\n## Resources & Community\n\n- 🌐 **Platform Website:** [https://codebytushu.com/](https://codebytushu.com/)\n- 💻 **All LeetCode Solutions:** [https://codebytushu.com/Leetcode/](https://codebytushu.com/Leetcode/)\n- 📂 **GitHub Repository:** [https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions](https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 115 - Distinct Subsequences\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int numDistinct(String s, String t) {\n        int m = s.length(), n = t.length();\n        int[][] dp = new int[m + 1][n + 1];\n        for (int i = 0; i <= m; i++) {\n            dp[i][0] = 1;\n        }\n        for (int i = 1; i <= m; i++) {\n            for (int j = 1; j <= n; j++) {\n                dp[i][j] = dp[i - 1][j];\n                if (s.charAt(i - 1) == t.charAt(j - 1)) {\n                    dp[i][j] += dp[i - 1][j - 1];\n                }\n            }\n        }\n        return dp[m][n];\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 115 - Distinct Subsequences\nDifficulty: Hard\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def numDistinct(self, s: str, t: str) -> int:\n        m, n = len(s), len(t)\n        dp = [[0] * (n + 1) for _ in range(m + 1)]\n\n        for i in range(m + 1):\n            dp[i][0] = 1\n\n        for i in range(1, m + 1):\n            for j in range(1, n + 1):\n                dp[i][j] = dp[i - 1][j]\n                if s[i - 1] == t[j - 1]:\n                    dp[i][j] += dp[i - 1][j - 1]\n\n        return dp[m][n]\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 115 - Distinct Subsequences\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\n#include <string>\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 115 - Distinct Subsequences\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int numDistinct(string s, string t) {\n        int m = s.length(), n = t.length();\n        vector<vector<unsigned long long>> dp(m + 1, vector<unsigned long long>(n + 1, 0));\n\n        for (int i = 0; i <= m; i++) {\n            dp[i][0] = 1;\n        }\n\n        for (int i = 1; i <= m; i++) {\n            for (int j = 1; j <= n; j++) {\n                dp[i][j] = dp[i - 1][j];\n                if (s[i - 1] == t[j - 1]) {\n                    dp[i][j] += dp[i - 1][j - 1];\n                }\n            }\n        }\n\n        return static_cast<int>(dp[m][n]);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 115 - Distinct Subsequences\n * Difficulty: Hard\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar numDistinct = function(s, t) {\n    const m = s.length, n = t.length;\n    const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));\n\n    for (let i = 0; i <= m; i++) {\n        dp[i][0] = 1;\n    }\n\n    for (let i = 1; i <= m; i++) {\n        for (let j = 1; j <= n; j++) {\n            dp[i][j] = dp[i - 1][j];\n            if (s[i - 1] === t[j - 1]) {\n                dp[i][j] += dp[i - 1][j - 1];\n            }\n        }\n    }\n\n    return dp[m][n];\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-115-distinct-subsequences.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-115-distinct-subsequences.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 115: Distinct Subsequences Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 115 (Distinct Subsequences) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(M * N) approach and detailed explan...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-115-distinct-subsequences.jpg",
+    "keywords": [
+      "LeetCode 115",
+      "Distinct Subsequences",
+      "LeetCode 115 Solution",
+      "LeetCode Distinct Subsequences",
+      "Hard LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

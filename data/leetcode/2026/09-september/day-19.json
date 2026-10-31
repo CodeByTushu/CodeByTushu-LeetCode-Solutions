@@ -1,0 +1,78 @@
+{
+  "problem_number": 1401,
+  "problem_title": "Circle and Rectangle Overlapping",
+  "slug": "circle-and-rectangle-overlapping",
+  "solution_date": "2026-09-19",
+  "formatted_date": "19-09-2026",
+  "day_number": 19,
+  "month": "September",
+  "month_num": 9,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/circle-and-rectangle-overlapping/",
+  "youtube_url": "https://youtu.be/t1-1bEsleUw?si=s1gebZKnVh9SHB_r",
+  "notes": "Optimal O(1) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a circle represented as `(radius, xCenter, yCenter)` and an axis-aligned rectangle represented as `(x1, y1, x2, y2)`, where `(x1, y1)` are the coordinates of the bottom-left corner, and `(x2, y2)` are the coordinates of the top-right corner of the rectangle.\n\nReturn `true` if the circle and rectangle are overlapped otherwise return `false`. In other words, check if there is **any** point $(x, y)$ that belongs to the circle and the rectangle at the same time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1`\n- **Output:** `true`\n- **Explanation:**\n  The circle and rectangle share the point $(1, 0)$.\n\n#### Example 2:\n- **Input:** `radius = 1, xCenter = 1, yCenter = 1, x1 = 1, y1 = -3, x2 = 2, y2 = -1`\n- **Output:** `false`\n\n#### Example 3:\n- **Input:** `radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1`\n- **Output:** `true`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{radius} \\le 2000$\n- $-10^4 \\le \\text{xCenter}, \\text{yCenter} \\le 10^4$\n- $-10^4 \\le x_1 < x_2 \\le 10^4$\n- $-10^4 \\le y_1 < y_2 \\le 10^4$\n\n---",
+    "approach_summary": "Find the closest point on the rectangle to the circle's center by clamping the coordinates, then verify if the squared Euclidean distance is within radius squared.",
+    "full_explanation": "# LeetCode 1401: Circle and Rectangle Overlapping\n\n- **Publication Date:** 19 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/circle-and-rectangle-overlapping/](https://leetcode.com/problems/circle-and-rectangle-overlapping/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/t1-1bEsleUw?si=s1gebZKnVh9SHB_r)\n\n---\n\n## Problem Summary\n\nYou are given a circle represented as `(radius, xCenter, yCenter)` and an axis-aligned rectangle represented as `(x1, y1, x2, y2)`, where `(x1, y1)` are the coordinates of the bottom-left corner, and `(x2, y2)` are the coordinates of the top-right corner of the rectangle.\n\nReturn `true` if the circle and rectangle are overlapped otherwise return `false`. In other words, check if there is **any** point $(x, y)$ that belongs to the circle and the rectangle at the same time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1`\n- **Output:** `true`\n- **Explanation:**\n  The circle and rectangle share the point $(1, 0)$.\n\n#### Example 2:\n- **Input:** `radius = 1, xCenter = 1, yCenter = 1, x1 = 1, y1 = -3, x2 = 2, y2 = -1`\n- **Output:** `false`\n\n#### Example 3:\n- **Input:** `radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1`\n- **Output:** `true`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{radius} \\le 2000$\n- $-10^4 \\le \\text{xCenter}, \\text{yCenter} \\le 10^4$\n- $-10^4 \\le x_1 < x_2 \\le 10^4$\n- $-10^4 \\le y_1 < y_2 \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Geometry**\n\n---\n\n## Approach & Intuition\n\n### Key Mathematical Insight:\n\nTo determine whether a circle overlaps with an axis-aligned bounding box (AABB) $[x_1, x_2] \\times [y_1, y_2]$, we find the point $(x, y)$ inside or on the boundary of the rectangle that is **closest** to the circle's center $(xCenter, yCenter)$.\n\n1. **Clamping onto the Rectangle**:\n   Since the rectangle is axis-aligned, the $x$-coordinate and $y$-coordinate of the closest point can be solved independently by clamping:\n   $$\\text{closestX} = \\text{clamp}(xCenter, x_1, x_2) = \\max(x_1, \\min(x_2, xCenter))$$\n   $$\\text{closestY} = \\text{clamp}(yCenter, y_1, y_2) = \\max(y_1, \\min(y_2, yCenter))$$\n\n2. **Distance Comparison**:\n   The minimum Euclidean distance between the center of the circle and the rectangle is:\n   $$d = \\sqrt{(xCenter - \\text{closestX})^2 + (yCenter - \\text{closestY})^2}$$\n   \n   The circle and rectangle overlap if and only if $d \\le \\text{radius}$, or equivalently without square roots:\n   $$(xCenter - \\text{closestX})^2 + (yCenter - \\text{closestY})^2 \\le \\text{radius}^2$$\n\n3. **Efficiency**:\n   - Clamping takes constant $\\mathcal{O}(1)$ time with no loops or search needed.\n   - Using 64-bit integers prevents 32-bit signed overflow when computing squared distances.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$\n  - Constant arithmetic operations and clamping comparisons.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only a few primitive scalar variables are allocated.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n"
+  },
+  "approach_summary": "Find the closest point on the rectangle to the circle's center by clamping the coordinates, then verify if the squared Euclidean distance is within radius squared.",
+  "explanation": "# LeetCode 1401: Circle and Rectangle Overlapping\n\n- **Publication Date:** 19 September 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/circle-and-rectangle-overlapping/](https://leetcode.com/problems/circle-and-rectangle-overlapping/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/t1-1bEsleUw?si=s1gebZKnVh9SHB_r)\n\n---\n\n## Problem Summary\n\nYou are given a circle represented as `(radius, xCenter, yCenter)` and an axis-aligned rectangle represented as `(x1, y1, x2, y2)`, where `(x1, y1)` are the coordinates of the bottom-left corner, and `(x2, y2)` are the coordinates of the top-right corner of the rectangle.\n\nReturn `true` if the circle and rectangle are overlapped otherwise return `false`. In other words, check if there is **any** point $(x, y)$ that belongs to the circle and the rectangle at the same time.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1`\n- **Output:** `true`\n- **Explanation:**\n  The circle and rectangle share the point $(1, 0)$.\n\n#### Example 2:\n- **Input:** `radius = 1, xCenter = 1, yCenter = 1, x1 = 1, y1 = -3, x2 = 2, y2 = -1`\n- **Output:** `false`\n\n#### Example 3:\n- **Input:** `radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1`\n- **Output:** `true`\n\n---\n\n### Constraints\n\n- $1 \\le \\text{radius} \\le 2000$\n- $-10^4 \\le \\text{xCenter}, \\text{yCenter} \\le 10^4$\n- $-10^4 \\le x_1 < x_2 \\le 10^4$\n- $-10^4 \\le y_1 < y_2 \\le 10^4$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Geometry**\n\n---\n\n## Approach & Intuition\n\n### Key Mathematical Insight:\n\nTo determine whether a circle overlaps with an axis-aligned bounding box (AABB) $[x_1, x_2] \\times [y_1, y_2]$, we find the point $(x, y)$ inside or on the boundary of the rectangle that is **closest** to the circle's center $(xCenter, yCenter)$.\n\n1. **Clamping onto the Rectangle**:\n   Since the rectangle is axis-aligned, the $x$-coordinate and $y$-coordinate of the closest point can be solved independently by clamping:\n   $$\\text{closestX} = \\text{clamp}(xCenter, x_1, x_2) = \\max(x_1, \\min(x_2, xCenter))$$\n   $$\\text{closestY} = \\text{clamp}(yCenter, y_1, y_2) = \\max(y_1, \\min(y_2, yCenter))$$\n\n2. **Distance Comparison**:\n   The minimum Euclidean distance between the center of the circle and the rectangle is:\n   $$d = \\sqrt{(xCenter - \\text{closestX})^2 + (yCenter - \\text{closestY})^2}$$\n   \n   The circle and rectangle overlap if and only if $d \\le \\text{radius}$, or equivalently without square roots:\n   $$(xCenter - \\text{closestX})^2 + (yCenter - \\text{closestY})^2 \\le \\text{radius}^2$$\n\n3. **Efficiency**:\n   - Clamping takes constant $\\mathcal{O}(1)$ time with no loops or search needed.\n   - Using 64-bit integers prevents 32-bit signed overflow when computing squared distances.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(1)$\n  - Constant arithmetic operations and clamping comparisons.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only a few primitive scalar variables are allocated.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1401 - Circle and Rectangle Overlapping\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public boolean checkOverlap(int radius, int xCenter, int yCenter, int x1, int y1, int x2, int y2) {\n        int closestX = clamp(xCenter, x1, x2);\n        int closestY = clamp(yCenter, y1, y2);\n        long dx = xCenter - closestX;\n        long dy = yCenter - closestY;\n        return dx * dx + dy * dy <= (long) radius * radius;\n    }\n\n    private int clamp(int val, int min, int max) {\n        return Math.max(min, Math.min(max, val));\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1401 - Circle and Rectangle Overlapping\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def checkOverlap(self, radius: int, xCenter: int, yCenter: int, x1: int, y1: int, x2: int, y2: int) -> bool:\n        closest_x = max(x1, min(x2, xCenter))\n        closest_y = max(y1, min(y2, yCenter))\n        dx = xCenter - closest_x\n        dy = yCenter - closest_y\n        return dx * dx + dy * dy <= radius * radius\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1401 - Circle and Rectangle Overlapping\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <algorithm>\n\n/**\n * Problem: LeetCode 1401 - Circle and Rectangle Overlapping\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    bool checkOverlap(int radius, int xCenter, int yCenter, int x1, int y1, int x2, int y2) {\n        int closestX = std::max(x1, std::min(x2, xCenter));\n        int closestY = std::max(y1, std::min(y2, yCenter));\n        long long dx = xCenter - closestX;\n        long long dy = yCenter - closestY;\n        return dx * dx + dy * dy <= 1LL * radius * radius;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1401 - Circle and Rectangle Overlapping\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar checkOverlap = function(radius, xCenter, yCenter, x1, y1, x2, y2) {\n    const closestX = Math.max(x1, Math.min(x2, xCenter));\n    const closestY = Math.max(y1, Math.min(y2, yCenter));\n    const dx = xCenter - closestX;\n    const dy = yCenter - closestY;\n    return dx * dx + dy * dy <= radius * radius;\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1401-circle-and-rectangle-overlapping.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1401-circle-and-rectangle-overlapping.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1401: Circle and Rectangle Overlapping Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1401 (Circle and Rectangle Overlapping) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(1) approach and detaile...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1401-circle-and-rectangle-overlapping.jpg",
+    "keywords": [
+      "LeetCode 1401",
+      "Circle and Rectangle Overlapping",
+      "LeetCode 1401 Solution",
+      "LeetCode Circle and Rectangle Overlapping",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

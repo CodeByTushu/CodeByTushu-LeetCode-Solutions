@@ -1,0 +1,79 @@
+{
+  "problem_number": 628,
+  "problem_title": "Maximum Product of Three Numbers",
+  "slug": "maximum-product-of-three-numbers",
+  "solution_date": "2026-07-26",
+  "formatted_date": "26-07-2026",
+  "day_number": 26,
+  "month": "July",
+  "month_num": 7,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+  "youtube_url": "https://youtu.be/Mcq84C3PKTs?si=zovlxqrDnauzdslZ",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer array `nums`.\n\nFind three numbers whose product is maximum and return the **maximum product**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1, 2, -3]`\n- **Output:** `-6`\n- **Explanation:** The only three numbers are $1, 2,$ and $-3$, so the maximum product is $1 \\times 2 \\times (-3) = -6$.\n\n#### Example 2:\n\n- **Input:** `nums = [1, 2, 3, 4]`\n- **Output:** `24`\n- **Explanation:** The largest product comes from the three greatest numbers: $2 \\times 3 \\times 4 = 24$.\n\n#### Example 3:\n\n- **Input:** `nums = [-1, -2, -3]`\n- **Output:** `-6`\n- **Explanation:** The only three numbers are $-1, -2,$ and $-3$, so the maximum product is $(-1) \\times (-2) \\times (-3) = -6$.\n\n---\n\n### Constraints\n\n- $3 \\le \\text{nums.length} \\le 10^4$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n\n---",
+    "approach_summary": "Single-pass linear scan to track the three largest elements (max1, max2, max3) and two smallest elements (min1, min2). Return max(max1 * max2 * max3, max1 * min1 * min2).",
+    "full_explanation": "# LeetCode 628: Maximum Product of Three Numbers\n\n- **Publication Date:** 26 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-product-of-three-numbers/](https://leetcode.com/problems/maximum-product-of-three-numbers/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Mcq84C3PKTs?si=zovlxqrDnauzdslZ)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nFind three numbers whose product is maximum and return the **maximum product**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1, 2, -3]`\n- **Output:** `-6`\n- **Explanation:** The only three numbers are $1, 2,$ and $-3$, so the maximum product is $1 \\times 2 \\times (-3) = -6$.\n\n#### Example 2:\n\n- **Input:** `nums = [1, 2, 3, 4]`\n- **Output:** `24`\n- **Explanation:** The largest product comes from the three greatest numbers: $2 \\times 3 \\times 4 = 24$.\n\n#### Example 3:\n\n- **Input:** `nums = [-1, -2, -3]`\n- **Output:** `-6`\n- **Explanation:** The only three numbers are $-1, -2,$ and $-3$, so the maximum product is $(-1) \\times (-2) \\times (-3) = -6$.\n\n---\n\n### Constraints\n\n- $3 \\le \\text{nums.length} \\le 10^4$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Algorithmic Approach\n\n### 1. Mathematical Observations\nWhen selecting three numbers from an array containing both positive and negative integers, the maximum product can arise from only two distinct configurations:\n1. **Three Largest Values:** $\\text{max}_1 \\times \\text{max}_2 \\times \\text{max}_3$ (e.g., when all numbers are positive, or all are negative).\n2. **Two Most Negative Values $\\times$ The Largest Value:** $\\text{max}_1 \\times \\text{min}_1 \\times \\text{min}_2$ (multiplying two large-magnitude negative numbers yields a large positive product, which when multiplied by the largest positive number $\\text{max}_1$ may exceed $\\text{max}_1 \\times \\text{max}_2 \\times \\text{max}_3$).\n\nTherefore, the result is always:\n$$\\max(\\text{max}_1 \\times \\text{max}_2 \\times \\text{max}_3, \\; \\text{max}_1 \\times \\text{min}_1 \\times \\text{min}_2)$$\n\n### 2. Linear Scan ($\\mathcal{O}(n)$ Time, $\\mathcal{O}(1)$ Space)\nInstead of sorting the entire array in $\\mathcal{O}(n \\log n)$ time:\n- Maintain five scalar variables:\n  - $\\text{max}_1, \\text{max}_2, \\text{max}_3$: the top three maximums initialized to $-\\infty$.\n  - $\\text{min}_1, \\text{min}_2$: the bottom two minimums initialized to $+\\infty$.\n- In a single linear scan through `nums`, cascade-update the maximums and minimums whenever a new qualifying element is encountered.\n- Return the maximum of the two candidate products.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | A single pass over $n$ elements updates five scalar variables in constant time $\\mathcal{O}(1)$ per element. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only five tracking variables are maintained. No heap allocation or auxiliary arrays are used. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n"
+  },
+  "approach_summary": "Single-pass linear scan to track the three largest elements (max1, max2, max3) and two smallest elements (min1, min2). Return max(max1 * max2 * max3, max1 * min1 * min2).",
+  "explanation": "# LeetCode 628: Maximum Product of Three Numbers\n\n- **Publication Date:** 26 July 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/maximum-product-of-three-numbers/](https://leetcode.com/problems/maximum-product-of-three-numbers/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Mcq84C3PKTs?si=zovlxqrDnauzdslZ)\n\n---\n\n## Problem Summary\n\nYou are given an integer array `nums`.\n\nFind three numbers whose product is maximum and return the **maximum product**.\n\n---\n\n### Examples\n\n#### Example 1:\n\n- **Input:** `nums = [1, 2, -3]`\n- **Output:** `-6`\n- **Explanation:** The only three numbers are $1, 2,$ and $-3$, so the maximum product is $1 \\times 2 \\times (-3) = -6$.\n\n#### Example 2:\n\n- **Input:** `nums = [1, 2, 3, 4]`\n- **Output:** `24`\n- **Explanation:** The largest product comes from the three greatest numbers: $2 \\times 3 \\times 4 = 24$.\n\n#### Example 3:\n\n- **Input:** `nums = [-1, -2, -3]`\n- **Output:** `-6`\n- **Explanation:** The only three numbers are $-1, -2,$ and $-3$, so the maximum product is $(-1) \\times (-2) \\times (-3) = -6$.\n\n---\n\n### Constraints\n\n- $3 \\le \\text{nums.length} \\le 10^4$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n\n---\n\n## Algorithmic Approach\n\n### 1. Mathematical Observations\nWhen selecting three numbers from an array containing both positive and negative integers, the maximum product can arise from only two distinct configurations:\n1. **Three Largest Values:** $\\text{max}_1 \\times \\text{max}_2 \\times \\text{max}_3$ (e.g., when all numbers are positive, or all are negative).\n2. **Two Most Negative Values $\\times$ The Largest Value:** $\\text{max}_1 \\times \\text{min}_1 \\times \\text{min}_2$ (multiplying two large-magnitude negative numbers yields a large positive product, which when multiplied by the largest positive number $\\text{max}_1$ may exceed $\\text{max}_1 \\times \\text{max}_2 \\times \\text{max}_3$).\n\nTherefore, the result is always:\n$$\\max(\\text{max}_1 \\times \\text{max}_2 \\times \\text{max}_3, \\; \\text{max}_1 \\times \\text{min}_1 \\times \\text{min}_2)$$\n\n### 2. Linear Scan ($\\mathcal{O}(n)$ Time, $\\mathcal{O}(1)$ Space)\nInstead of sorting the entire array in $\\mathcal{O}(n \\log n)$ time:\n- Maintain five scalar variables:\n  - $\\text{max}_1, \\text{max}_2, \\text{max}_3$: the top three maximums initialized to $-\\infty$.\n  - $\\text{min}_1, \\text{min}_2$: the bottom two minimums initialized to $+\\infty$.\n- In a single linear scan through `nums`, cascade-update the maximums and minimums whenever a new qualifying element is encountered.\n- Return the maximum of the two candidate products.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(n)$ | A single pass over $n$ elements updates five scalar variables in constant time $\\mathcal{O}(1)$ per element. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only five tracking variables are maintained. No heap allocation or auxiliary arrays are used. |\n\n---\n\n## Multi-Language Implementations\n\n- [Java Solution](./Solution.java)\n- [Python Solution](./solution.py)\n- [C++ Solution](./solution.cpp)\n- [JavaScript Solution](./solution.js)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 628 - Maximum Product of Three Numbers\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maximumProduct(int[] nums) {\n        int max1 = Integer.MIN_VALUE;\n        int max2 = Integer.MIN_VALUE;\n        int max3 = Integer.MIN_VALUE;\n        int min1 = Integer.MAX_VALUE;\n        int min2 = Integer.MAX_VALUE;\n        for (int num : nums) {\n            if (num >= max1) {\n                max3 = max2;\n                max2 = max1;\n                max1 = num;\n            } else if (num >= max2) {\n                max3 = max2;\n                max2 = num;\n            } else if (num >= max3) {\n                max3 = num;\n            }\n            if (num <= min1) {\n                min2 = min1;\n                min1 = num;\n            } else if (num <= min2) {\n                min2 = num;\n            }\n        }\n        return Math.max(max1 * max2 * max3, max1 * min1 * min2);\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 628 - Maximum Product of Three Numbers\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def maximumProduct(self, nums: List[int]) -> int:\n        max1 = float('-inf')\n        max2 = float('-inf')\n        max3 = float('-inf')\n        min1 = float('inf')\n        min2 = float('inf')\n        for num in nums:\n            if num >= max1:\n                max3 = max2\n                max2 = max1\n                max1 = num\n            elif num >= max2:\n                max3 = max2\n                max2 = num\n            elif num >= max3:\n                max3 = num\n\n            if num <= min1:\n                min2 = min1\n                min1 = num\n            elif num <= min2:\n                min2 = num\n\n        return max(int(max1 * max2 * max3), int(max1 * min1 * min2))\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 628 - Maximum Product of Three Numbers\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n#include <climits>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 628 - Maximum Product of Three Numbers\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maximumProduct(vector<int>& nums) {\n        int max1 = INT_MIN;\n        int max2 = INT_MIN;\n        int max3 = INT_MIN;\n        int min1 = INT_MAX;\n        int min2 = INT_MAX;\n        for (int num : nums) {\n            if (num >= max1) {\n                max3 = max2;\n                max2 = max1;\n                max1 = num;\n            } else if (num >= max2) {\n                max3 = max2;\n                max2 = num;\n            } else if (num >= max3) {\n                max3 = num;\n            }\n\n            if (num <= min1) {\n                min2 = min1;\n                min1 = num;\n            } else if (num <= min2) {\n                min2 = num;\n            }\n        }\n        return max(max1 * max2 * max3, max1 * min1 * min2);\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 628 - Maximum Product of Three Numbers\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maximumProduct = function(nums) {\n    let max1 = -Infinity;\n    let max2 = -Infinity;\n    let max3 = -Infinity;\n    let min1 = Infinity;\n    let min2 = Infinity;\n    for (const num of nums) {\n        if (num >= max1) {\n            max3 = max2;\n            max2 = max1;\n            max1 = num;\n        } else if (num >= max2) {\n            max3 = max2;\n            max2 = num;\n        } else if (num >= max3) {\n            max3 = num;\n        }\n\n        if (num <= min1) {\n            min2 = min1;\n            min1 = num;\n        } else if (num <= min2) {\n            min2 = num;\n        }\n    }\n    return Math.max(max1 * max2 * max3, max1 * min1 * min2);\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-628-maximum-product-of-three-numbers.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-628-maximum-product-of-three-numbers.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 628: Maximum Product of Three Numbers Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 628 (Maximum Product of Three Numbers) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-628-maximum-product-of-three-numbers.jpg",
+    "keywords": [
+      "LeetCode 628",
+      "Maximum Product of Three Numbers",
+      "LeetCode 628 Solution",
+      "LeetCode Maximum Product of Three Numbers",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

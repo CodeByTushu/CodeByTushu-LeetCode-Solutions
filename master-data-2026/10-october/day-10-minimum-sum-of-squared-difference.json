@@ -1,0 +1,81 @@
+{
+  "problem_number": 2333,
+  "problem_title": "Minimum Sum of Squared Difference",
+  "slug": "minimum-sum-of-squared-difference",
+  "solution_date": "2026-10-10",
+  "formatted_date": "10-10-2026",
+  "day_number": 10,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(N + M) where M = max(diff) ≤ 10⁵",
+  "space_complexity": "O(M)",
+  "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+  "youtube_url": "https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a",
+  "notes": "Optimal O(N + M) where M = max(diff) ≤ 10⁵ time complexity with O(M) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given two positive `0`-indexed integer arrays `nums1` and `nums2`, both of length `n`.\n\nYou are also given two positive integers `k1` and `k2`. You can modify any element of `nums1` by increasing or decreasing it by `1` at most `k1` times, and you can modify any element of `nums2` by increasing or decreasing it by `1` at most `k2` times.\n\nReturn the **minimum sum of squared difference** $\\sum_{i=0}^{n-1} (nums1[i] - nums2[i])^2$ after applying at most `k1` operations on `nums1` and at most `k2` operations on `nums2`.\n\n---",
+    "approach_summary": "Pool total reductions k = k1 + k2. Since (x)^2 - (x-1)^2 = 2x - 1, largest differences yield the greatest square decrease. Use a frequency bucket count[d] over bounded differences (<= 10^5) to step down from maxDiff in O(N + M) time.",
+    "full_explanation": "# LeetCode 2333: Minimum Sum of Squared Difference\n\n- **Publication Date:** 10 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-sum-of-squared-difference/](https://leetcode.com/problems/minimum-sum-of-squared-difference/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)\n\n---\n\n## Problem Summary\n\nYou are given two positive `0`-indexed integer arrays `nums1` and `nums2`, both of length `n`.\n\nYou are also given two positive integers `k1` and `k2`. You can modify any element of `nums1` by increasing or decreasing it by `1` at most `k1` times, and you can modify any element of `nums2` by increasing or decreasing it by `1` at most `k2` times.\n\nReturn the **minimum sum of squared difference** $\\sum_{i=0}^{n-1} (nums1[i] - nums2[i])^2$ after applying at most `k1` operations on `nums1` and at most `k2` operations on `nums2`.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Greedy**\n- **Bucket Sort** / **Frequency Array**\n- **Sorting & Counting**\n\n---\n\n## Approach\n\n1. **Operation Equivalence**:\n   - Modifying an element in `nums1` by $\\pm 1$ or modifying an element in `nums2` by $\\mp 1$ has the identical net effect: reducing the absolute difference $|nums1[i] - nums2[i]|$ by $1$.\n   - Hence, the total operations available can be pooled together into $k = k1 + k2$.\n\n2. **Greedy Reduction Strategy**:\n   - Because the squared function $f(x) = x^2$ grows super-linearly, decrementing a large difference yields a significantly greater reduction in the objective value than decrementing a smaller difference:\n     $$(x)^2 - (x - 1)^2 = 2x - 1$$\n   - Therefore, we must always greedily reduce the largest differences first.\n\n3. **Bucket Counting Optimization**:\n   - The values in `nums1` and `nums2` are bounded ($1 \\le nums[i] \\le 10^5$), so the maximum possible difference $M = \\max(diff)$ is at most $10^5$.\n   - Rather than maintaining an $\\mathcal{O}(N \\log N)$ max-heap or conducting binary search, we maintain a frequency bucket `count[d]` where $d$ is the difference value.\n   - We scan downwards from $d = \\max(diff)$ down to $1$:\n     - For each value $d$, we have $\\text{count}[d]$ elements.\n     - The number of decrements we can apply to move them from $d$ to $d - 1$ is $\\text{take} = \\min(\\text{count}[d], k)$.\n     - We decrement $\\text{count}[d]$ by $\\text{take}$, increment $\\text{count}[d - 1]$ by $\\text{take}$, and decrease $k$ by $\\text{take}$.\n     - When $k = 0$, we stop early.\n\n4. **Sum of Squares Calculation**:\n   - Finally, we calculate $\\sum_{d=1}^{M} \\text{count}[d] \\times d^2$ using 64-bit integer (`long` / `long long` / `BigInt`) to prevent arithmetic overflow.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N + M)$\n  - $\\mathcal{O}(N)$ to compute the initial differences $|nums1[i] - nums2[i]|$.\n  - $\\mathcal{O}(M)$ to traverse down the frequency bucket array from $M = \\max(diff) \\le 10^5$ to $1$.\n  - Overall time is linear and runs in under $15\\text{ ms}$, substantially outperforming heap-based solutions.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(M)$\n  - Frequency bucket array of size $M + 1 \\le 100,001$ integers. Input arrays are not modified.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)\n"
+  },
+  "approach_summary": "Pool total reductions k = k1 + k2. Since (x)^2 - (x-1)^2 = 2x - 1, largest differences yield the greatest square decrease. Use a frequency bucket count[d] over bounded differences (<= 10^5) to step down from maxDiff in O(N + M) time.",
+  "explanation": "# LeetCode 2333: Minimum Sum of Squared Difference\n\n- **Publication Date:** 10 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/minimum-sum-of-squared-difference/](https://leetcode.com/problems/minimum-sum-of-squared-difference/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)\n\n---\n\n## Problem Summary\n\nYou are given two positive `0`-indexed integer arrays `nums1` and `nums2`, both of length `n`.\n\nYou are also given two positive integers `k1` and `k2`. You can modify any element of `nums1` by increasing or decreasing it by `1` at most `k1` times, and you can modify any element of `nums2` by increasing or decreasing it by `1` at most `k2` times.\n\nReturn the **minimum sum of squared difference** $\\sum_{i=0}^{n-1} (nums1[i] - nums2[i])^2$ after applying at most `k1` operations on `nums1` and at most `k2` operations on `nums2`.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Math**\n- **Greedy**\n- **Bucket Sort** / **Frequency Array**\n- **Sorting & Counting**\n\n---\n\n## Approach\n\n1. **Operation Equivalence**:\n   - Modifying an element in `nums1` by $\\pm 1$ or modifying an element in `nums2` by $\\mp 1$ has the identical net effect: reducing the absolute difference $|nums1[i] - nums2[i]|$ by $1$.\n   - Hence, the total operations available can be pooled together into $k = k1 + k2$.\n\n2. **Greedy Reduction Strategy**:\n   - Because the squared function $f(x) = x^2$ grows super-linearly, decrementing a large difference yields a significantly greater reduction in the objective value than decrementing a smaller difference:\n     $$(x)^2 - (x - 1)^2 = 2x - 1$$\n   - Therefore, we must always greedily reduce the largest differences first.\n\n3. **Bucket Counting Optimization**:\n   - The values in `nums1` and `nums2` are bounded ($1 \\le nums[i] \\le 10^5$), so the maximum possible difference $M = \\max(diff)$ is at most $10^5$.\n   - Rather than maintaining an $\\mathcal{O}(N \\log N)$ max-heap or conducting binary search, we maintain a frequency bucket `count[d]` where $d$ is the difference value.\n   - We scan downwards from $d = \\max(diff)$ down to $1$:\n     - For each value $d$, we have $\\text{count}[d]$ elements.\n     - The number of decrements we can apply to move them from $d$ to $d - 1$ is $\\text{take} = \\min(\\text{count}[d], k)$.\n     - We decrement $\\text{count}[d]$ by $\\text{take}$, increment $\\text{count}[d - 1]$ by $\\text{take}$, and decrease $k$ by $\\text{take}$.\n     - When $k = 0$, we stop early.\n\n4. **Sum of Squares Calculation**:\n   - Finally, we calculate $\\sum_{d=1}^{M} \\text{count}[d] \\times d^2$ using 64-bit integer (`long` / `long long` / `BigInt`) to prevent arithmetic overflow.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(N + M)$\n  - $\\mathcal{O}(N)$ to compute the initial differences $|nums1[i] - nums2[i]|$.\n  - $\\mathcal{O}(M)$ to traverse down the frequency bucket array from $M = \\max(diff) \\le 10^5$ to $1$.\n  - Overall time is linear and runs in under $15\\text{ ms}$, substantially outperforming heap-based solutions.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(M)$\n  - Frequency bucket array of size $M + 1 \\le 100,001$ integers. Input arrays are not modified.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a](https://youtu.be/pZeFXqcBrmw?si=IGa9ALoQNbC5Z45a)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2333 - Minimum Sum of Squared Difference\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {\n        int n = nums1.length;\n        int maxDiff = 100000;\n        long[] cnt = new long[maxDiff + 2];\n        for (int i = 0; i < n; i++) {\n            cnt[Math.abs(nums1[i] - nums2[i])]++;\n        }\n        long k = (long) k1 + k2;\n        for (int d = maxDiff; d >= 1 && k > 0; d--) {\n            if (cnt[d] == 0) continue;\n            if (cnt[d] <= k) {\n                k -= cnt[d];\n                cnt[d - 1] += cnt[d];\n                cnt[d] = 0;\n            } else {\n                cnt[d - 1] += k;\n                cnt[d] -= k;\n                k = 0;\n            }\n        }\n        long ans = 0;\n        for (int d = 1; d <= maxDiff; d++) {\n            ans += (long) d * d * cnt[d];\n        }\n        return ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2333 - Minimum Sum of Squared Difference\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def minSumSquareDiff(self, nums1, nums2, k1, k2):\n        max_diff = 100000\n        cnt = [0] * (max_diff + 2)\n\n        for a, b in zip(nums1, nums2):\n            cnt[abs(a - b)] += 1\n\n        k = k1 + k2\n\n        for d in range(max_diff, 0, -1):\n            if k == 0:\n                break\n\n            if cnt[d] <= k:\n                k -= cnt[d]\n                cnt[d - 1] += cnt[d]\n                cnt[d] = 0\n            else:\n                cnt[d - 1] += k\n                cnt[d] -= k\n                k = 0\n\n        ans = 0\n        for d in range(1, max_diff + 1):\n            ans += d * d * cnt[d]\n\n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2333 - Minimum Sum of Squared Difference\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <cmath>\n#include <cstdlib>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 2333 - Minimum Sum of Squared Difference\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    long long minSumSquareDiff(vector<int>& nums1, vector<int>& nums2,\n                               int k1, int k2) {\n        const int maxDiff = 100000;\n        vector<long long> cnt(maxDiff + 2, 0);\n\n        int n = nums1.size();\n\n        for (int i = 0; i < n; i++) {\n            cnt[abs(nums1[i] - nums2[i])]++;\n        }\n\n        long long k = (long long)k1 + k2;\n\n        for (int d = maxDiff; d >= 1 && k > 0; d--) {\n            if (cnt[d] == 0) continue;\n\n            if (cnt[d] <= k) {\n                k -= cnt[d];\n                cnt[d - 1] += cnt[d];\n                cnt[d] = 0;\n            } else {\n                cnt[d - 1] += k;\n                cnt[d] -= k;\n                k = 0;\n            }\n        }\n\n        long long ans = 0;\n\n        for (int d = 1; d <= maxDiff; d++) {\n            ans += 1LL * d * d * cnt[d];\n        }\n\n        return ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2333 - Minimum Sum of Squared Difference\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nclass Solution {\n    minSumSquareDiff(nums1, nums2, k1, k2) {\n        const maxDiff = 100000;\n        const cnt = new Array(maxDiff + 2).fill(0);\n\n        for (let i = 0; i < nums1.length; i++) {\n            cnt[Math.abs(nums1[i] - nums2[i])]++;\n        }\n\n        let k = k1 + k2;\n\n        for (let d = maxDiff; d >= 1 && k > 0; d--) {\n            if (cnt[d] === 0) continue;\n\n            if (cnt[d] <= k) {\n                k -= cnt[d];\n                cnt[d - 1] += cnt[d];\n                cnt[d] = 0;\n            } else {\n                cnt[d - 1] += k;\n                cnt[d] -= k;\n                k = 0;\n            }\n        }\n\n        let ans = 0;\n\n        for (let d = 1; d <= maxDiff; d++) {\n            ans += d * d * cnt[d];\n        }\n\n        return ans;\n    }\n}\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Bucket Sort",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2333-minimum-sum-of-squared-difference.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2333-minimum-sum-of-squared-difference.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2333: Minimum Sum of Squared Difference Solution | CodeByT...",
+    "meta_description": "Master LeetCode 2333 (Minimum Sum of Squared Difference) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N + M) where M = max(d...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2333-minimum-sum-of-squared-difference.jpg",
+    "keywords": [
+      "LeetCode 2333",
+      "Minimum Sum of Squared Difference",
+      "LeetCode 2333 Solution",
+      "LeetCode Minimum Sum of Squared Difference",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "problem_number": 3783,
+  "problem_title": "Mirror Distance of an Integer",
+  "slug": "mirror-distance-of-an-integer",
+  "solution_date": "2026-04-18",
+  "formatted_date": "18-04-2026",
+  "day_number": 18,
+  "month": "April",
+  "month_num": 4,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(log10(N))",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/mirror-distance-of-an-integer/",
+  "youtube_url": "https://youtu.be/aAbY96Dc3G4",
+  "notes": "Optimal O(log10(N)) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an integer `n`.\n\nDefine its **mirror distance** as:\n$$\\text{mirrorDistance}(n) = |n - \\text{reverse}(n)|$$\n\nwhere $\\text{reverse}(n)$ is the integer formed by reversing the digits of $n$. Leading zeros are omitted after reversing (for example, $\\text{reverse}(10) = 1$, $\\text{reverse}(120) = 21$).\n\nReturn an integer denoting the mirror distance of `n`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 25`\n- **Output:** `27`\n- **Explanation:**\n  - $\\text{reverse}(25) = 52$.\n  - Thus, the answer is $|25 - 52| = 27$.\n\n#### Example 2:\n- **Input:** `n = 10`\n- **Output:** `9`\n- **Explanation:**\n  - $\\text{reverse}(10) = 1$ (leading zeros omitted).\n  - Thus, the answer is $|10 - 1| = 9$.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^9$\n\n---",
+    "approach_summary": "Reverse the digits of n mathematically via modulo and division, then return the absolute difference abs(n - reverse(n)).",
+    "full_explanation": "# LeetCode 3783: Mirror Distance of an Integer\n\n- **Publication Date:** 18 April 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/mirror-distance-of-an-integer/](https://leetcode.com/problems/mirror-distance-of-an-integer/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/aAbY96Dc3G4)\n\n---\n\n## Problem Summary\n\nYou are given an integer `n`.\n\nDefine its **mirror distance** as:\n$$\\text{mirrorDistance}(n) = |n - \\text{reverse}(n)|$$\n\nwhere $\\text{reverse}(n)$ is the integer formed by reversing the digits of $n$. Leading zeros are omitted after reversing (for example, $\\text{reverse}(10) = 1$, $\\text{reverse}(120) = 21$).\n\nReturn an integer denoting the mirror distance of `n`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 25`\n- **Output:** `27`\n- **Explanation:**\n  - $\\text{reverse}(25) = 52$.\n  - Thus, the answer is $|25 - 52| = 27$.\n\n#### Example 2:\n- **Input:** `n = 10`\n- **Output:** `9`\n- **Explanation:**\n  - $\\text{reverse}(10) = 1$ (leading zeros omitted).\n  - Thus, the answer is $|10 - 1| = 9$.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^9$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Mathematical Digit Reversal\n\nTo calculate $\\text{reverse}(n)$ efficiently with $\\mathcal{O}(1)$ auxiliary memory:\n1. Initialize `reversed = 0` and `temp = n`.\n2. Extract the least significant digit using `temp % 10`.\n3. Append it to `reversed` by shifting existing digits left: `reversed = reversed * 10 + (temp % 10)`.\n4. Truncate the least significant digit: `temp = temp / 10`.\n5. Repeat until `temp == 0`.\n\n### 2. Absolute Difference\n\nOnce $\\text{reverse}(n)$ is computed, return $|n - \\text{reverse}(n)|$.\nBecause $n \\le 10^9$, both $n$ and $\\text{reverse}(n)$ fit comfortably within standard 32-bit signed integers with zero risk of overflow.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{10} n)$\n  - An integer $n \\le 10^9$ has at most $10$ decimal digits.\n  - The loop performs at most $10$ iterations, running in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only scalar integer variables are used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/aAbY96Dc3G4](https://youtu.be/aAbY96Dc3G4)\n"
+  },
+  "approach_summary": "Reverse the digits of n mathematically via modulo and division, then return the absolute difference abs(n - reverse(n)).",
+  "explanation": "# LeetCode 3783: Mirror Distance of an Integer\n\n- **Publication Date:** 18 April 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/mirror-distance-of-an-integer/](https://leetcode.com/problems/mirror-distance-of-an-integer/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/aAbY96Dc3G4)\n\n---\n\n## Problem Summary\n\nYou are given an integer `n`.\n\nDefine its **mirror distance** as:\n$$\\text{mirrorDistance}(n) = |n - \\text{reverse}(n)|$$\n\nwhere $\\text{reverse}(n)$ is the integer formed by reversing the digits of $n$. Leading zeros are omitted after reversing (for example, $\\text{reverse}(10) = 1$, $\\text{reverse}(120) = 21$).\n\nReturn an integer denoting the mirror distance of `n`.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `n = 25`\n- **Output:** `27`\n- **Explanation:**\n  - $\\text{reverse}(25) = 52$.\n  - Thus, the answer is $|25 - 52| = 27$.\n\n#### Example 2:\n- **Input:** `n = 10`\n- **Output:** `9`\n- **Explanation:**\n  - $\\text{reverse}(10) = 1$ (leading zeros omitted).\n  - Thus, the answer is $|10 - 1| = 9$.\n\n---\n\n### Constraints\n\n- $1 \\le n \\le 10^9$\n\n---\n\n## Topics and Tags\n\n- **Math**\n- **Simulation**\n\n---\n\n## Approach & Intuition\n\n### 1. Mathematical Digit Reversal\n\nTo calculate $\\text{reverse}(n)$ efficiently with $\\mathcal{O}(1)$ auxiliary memory:\n1. Initialize `reversed = 0` and `temp = n`.\n2. Extract the least significant digit using `temp % 10`.\n3. Append it to `reversed` by shifting existing digits left: `reversed = reversed * 10 + (temp % 10)`.\n4. Truncate the least significant digit: `temp = temp / 10`.\n5. Repeat until `temp == 0`.\n\n### 2. Absolute Difference\n\nOnce $\\text{reverse}(n)$ is computed, return $|n - \\text{reverse}(n)|$.\nBecause $n \\le 10^9$, both $n$ and $\\text{reverse}(n)$ fit comfortably within standard 32-bit signed integers with zero risk of overflow.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(\\log_{10} n)$\n  - An integer $n \\le 10^9$ has at most $10$ decimal digits.\n  - The loop performs at most $10$ iterations, running in $< 1\\text{ ms}$.\n\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - Only scalar integer variables are used.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/aAbY96Dc3G4](https://youtu.be/aAbY96Dc3G4)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3783 - Mirror Distance of an Integer\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int mirrorDistance(int n) {\n        int temp = n;\n        long reversed = 0;\n        \n        while (temp > 0) {\n            reversed = reversed * 10 + (temp % 10);\n            temp /= 10;\n        }\n        \n        return (int) Math.abs(n - reversed);\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3783 - Mirror Distance of an Integer\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nclass Solution:\n    def mirrorDistance(self, n: int) -> int:\n        reversed_n = int(str(n)[::-1])\n        return abs(n - reversed_n)\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3783 - Mirror Distance of an Integer\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <cmath>\n#include <cstdlib>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int mirrorDistance(int n) {\n        int temp = n;\n        long long reversed = 0;\n        \n        while (temp > 0) {\n            reversed = reversed * 10 + (temp % 10);\n            temp /= 10;\n        }\n        \n        return static_cast<int>(abs(n - reversed));\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3783 - Mirror Distance of an Integer\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number} n\n * @return {number}\n */\nvar mirrorDistance = function(n) {\n    let temp = n;\n    let reversed = 0;\n    \n    while (temp > 0) {\n        reversed = reversed * 10 + (temp % 10);\n        temp = Math.floor(temp / 10);\n    }\n    \n    return Math.abs(n - reversed);\n};\n"
+    }
+  },
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3783-mirror-distance-of-an-integer.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3783-mirror-distance-of-an-integer.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3783: Mirror Distance of an Integer Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 3783 (Mirror Distance of an Integer) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(log10(N)) approach and det...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3783-mirror-distance-of-an-integer.jpg",
+    "keywords": [
+      "LeetCode 3783",
+      "Mirror Distance of an Integer",
+      "LeetCode 3783 Solution",
+      "LeetCode Mirror Distance of an Integer",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

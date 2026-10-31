@@ -1,0 +1,81 @@
+{
+  "problem_number": 2897,
+  "problem_title": "Apply Operations on Array to Maximize Sum of Squares",
+  "slug": "apply-operations-on-array-to-maximize-sum-of-squares",
+  "solution_date": "2026-10-12",
+  "formatted_date": "12-10-2026",
+  "day_number": 12,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Hard",
+  "platform": "LeetCode",
+  "time_complexity": "O(N + K) where N = nums.length, K = k",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
+  "youtube_url": "https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f",
+  "notes": "Optimal O(N + K) where N = nums.length, K = k time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given a `0`-indexed integer array `nums` and a positive integer `k`.\n\nYou can perform the following operation any number of times:\n- Choose two distinct indices `i` and `j`, and simultaneously set:\n  $$\\text{nums}[i] \\gets (\\text{nums}[i] \\text{ AND } \\text{nums}[j])$$\n  $$\\text{nums}[j] \\gets (\\text{nums}[i] \\text{ OR } \\text{nums}[j])$$\n\nChoose `k` elements from the final array to maximize the sum of their squares. Return the maximum possible sum of squares modulo $10^9 + 7$.\n\n---",
+    "approach_summary": "Total set bits at each position are invariant under AND/OR. Count bits at positions 0..29, greedily construct k numbers with all available bits, and sum squares modulo 10^9 + 7.",
+    "full_explanation": "# LeetCode 2897: Apply Operations on Array to Maximize Sum of Squares\n\n- **Publication Date:** 12 October 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)\n\n---\n\n## Problem Summary\n\nYou are given a `0`-indexed integer array `nums` and a positive integer `k`.\n\nYou can perform the following operation any number of times:\n- Choose two distinct indices `i` and `j`, and simultaneously set:\n  $$\\text{nums}[i] \\gets (\\text{nums}[i] \\text{ AND } \\text{nums}[j])$$\n  $$\\text{nums}[j] \\gets (\\text{nums}[i] \\text{ OR } \\text{nums}[j])$$\n\nChoose `k` elements from the final array to maximize the sum of their squares. Return the maximum possible sum of squares modulo $10^9 + 7$.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Math**\n- **Greedy**\n- **Bit Manipulation**\n\n---\n\n## Approach\n\n1. **Bit Conservation Invariant**:\n   - For any bit position $b \\in [0, 29]$:\n     - If both numbers have a $1$, both still have $1$ after the operation.\n     - If both numbers have a $0$, both still have $0$.\n     - If one has $1$ and the other has $0$, the `OR` result receives the $1$ while the `AND` result receives the $0$.\n   - Thus, the total count of set bits at each bit position across the entire array is invariant. The operation allows us to freely shift set bits from one number to another.\n\n2. **Greedy Maximization of Squares**:\n   - Because squaring is a convex function, for $a \\ge b$ and positive $\\Delta$:\n     $$(a + \\Delta)^2 + (b - \\Delta)^2 = a^2 + b^2 + 2\\Delta(a - b) + 2\\Delta^2 > a^2 + b^2$$\n   - To maximize the sum of squares, we should greedily concentrate set bits into the largest possible numbers.\n\n3. **Algorithm**:\n   - Count the frequency of set bits at each bit position $b \\in [0, 29]$ across `nums`.\n   - Greedily construct $k$ numbers:\n     - For each of the $k$ numbers, include bit $b$ if `cnt[b] > 0`, then decrement `cnt[b]`.\n     - Square the resulting number modulo $10^9 + 7$ and add it to `ans`.\n   - Return `ans`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(30 \\times N + 30 \\times K) = \\mathcal{O}(N + K)$\n  - Counting set bits takes $30 \\times N$ operations.\n  - Forming the $k$ greedy numbers takes $30 \\times K$ operations.\n  - With $N, K \\le 10^5$, this executes in $< 40\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - A fixed-size array of 30 integers to store the bit counts.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)\n"
+  },
+  "approach_summary": "Total set bits at each position are invariant under AND/OR. Count bits at positions 0..29, greedily construct k numbers with all available bits, and sum squares modulo 10^9 + 7.",
+  "explanation": "# LeetCode 2897: Apply Operations on Array to Maximize Sum of Squares\n\n- **Publication Date:** 12 October 2026\n- **Difficulty:** Hard\n- **Problem Link:** [https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)\n\n---\n\n## Problem Summary\n\nYou are given a `0`-indexed integer array `nums` and a positive integer `k`.\n\nYou can perform the following operation any number of times:\n- Choose two distinct indices `i` and `j`, and simultaneously set:\n  $$\\text{nums}[i] \\gets (\\text{nums}[i] \\text{ AND } \\text{nums}[j])$$\n  $$\\text{nums}[j] \\gets (\\text{nums}[i] \\text{ OR } \\text{nums}[j])$$\n\nChoose `k` elements from the final array to maximize the sum of their squares. Return the maximum possible sum of squares modulo $10^9 + 7$.\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Hash Table**\n- **Math**\n- **Greedy**\n- **Bit Manipulation**\n\n---\n\n## Approach\n\n1. **Bit Conservation Invariant**:\n   - For any bit position $b \\in [0, 29]$:\n     - If both numbers have a $1$, both still have $1$ after the operation.\n     - If both numbers have a $0$, both still have $0$.\n     - If one has $1$ and the other has $0$, the `OR` result receives the $1$ while the `AND` result receives the $0$.\n   - Thus, the total count of set bits at each bit position across the entire array is invariant. The operation allows us to freely shift set bits from one number to another.\n\n2. **Greedy Maximization of Squares**:\n   - Because squaring is a convex function, for $a \\ge b$ and positive $\\Delta$:\n     $$(a + \\Delta)^2 + (b - \\Delta)^2 = a^2 + b^2 + 2\\Delta(a - b) + 2\\Delta^2 > a^2 + b^2$$\n   - To maximize the sum of squares, we should greedily concentrate set bits into the largest possible numbers.\n\n3. **Algorithm**:\n   - Count the frequency of set bits at each bit position $b \\in [0, 29]$ across `nums`.\n   - Greedily construct $k$ numbers:\n     - For each of the $k$ numbers, include bit $b$ if `cnt[b] > 0`, then decrement `cnt[b]`.\n     - Square the resulting number modulo $10^9 + 7$ and add it to `ans`.\n   - Return `ans`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(30 \\times N + 30 \\times K) = \\mathcal{O}(N + K)$\n  - Counting set bits takes $30 \\times N$ operations.\n  - Forming the $k$ greedy numbers takes $30 \\times K$ operations.\n  - With $N, K \\le 10^5$, this executes in $< 40\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$\n  - A fixed-size array of 30 integers to store the bit counts.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f](https://youtu.be/vLShc1gTSjY?si=Ci66M9FUKr5VFZ8f)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.List;\n\n/**\n * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares\n * Difficulty: Hard\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int maxSum(List<Integer> nums, int k) {\n        final int MOD = 1_000_000_007;\n        int[] cnt = new int[30];\n        for (int num : nums) {\n            for (int b = 0; b < 30; b++) {\n                if (((num >> b) & 1) == 1) cnt[b]++;\n            }\n        }\n        long ans = 0;\n        for (int i = 0; i < k; i++) {\n            long cur = 0;\n            for (int b = 0; b < 30; b++) {\n                if (cnt[b] > 0) {\n                    cur |= (1L << b);\n                    cnt[b]--;\n                }\n            }\n            ans = (ans + (cur % MOD) * (cur % MOD)) % MOD;\n        }\n        return (int) ans;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares\nDifficulty: Hard\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def maxSum(self, nums: List[int], k: int) -> int:\n        MOD = 1_000_000_007\n        cnt = [0] * 30\n\n        for num in nums:\n            for b in range(30):\n                if (num >> b) & 1:\n                    cnt[b] += 1\n\n        ans = 0\n        for _ in range(k):\n            cur = 0\n            for b in range(30):\n                if cnt[b] > 0:\n                    cur |= (1 << b)\n                    cnt[b] -= 1\n            ans = (ans + cur * cur) % MOD\n\n        return ans\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares\n * Difficulty: Hard\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int maxSum(vector<int>& nums, int k) {\n        const int MOD = 1'000'000'007;\n        vector<int> cnt(30, 0);\n\n        for (int num : nums) {\n            for (int b = 0; b < 30; b++) {\n                if ((num >> b) & 1) {\n                    cnt[b]++;\n                }\n            }\n        }\n\n        long long ans = 0;\n        for (int i = 0; i < k; i++) {\n            long long cur = 0;\n            for (int b = 0; b < 30; b++) {\n                if (cnt[b] > 0) {\n                    cur |= (1LL << b);\n                    cnt[b]--;\n                }\n            }\n            ans = (ans + (cur % MOD) * (cur % MOD)) % MOD;\n        }\n\n        return (int) ans;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 2897 - Apply Operations on Array to Maximize Sum of Squares\n * Difficulty: Hard\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar maxSum = function(nums, k) {\n    const MOD = 1000000007n;\n    const cnt = new Int32Array(30);\n\n    for (let i = 0; i < nums.length; i++) {\n        const num = nums[i];\n        for (let b = 0; b < 30; b++) {\n            if ((num >> b) & 1) {\n                cnt[b]++;\n            }\n        }\n    }\n\n    let ans = 0n;\n    for (let i = 0; i < k; i++) {\n        let cur = 0n;\n        for (let b = 0; b < 30; b++) {\n            if (cnt[b] > 0) {\n                cur |= (1n << BigInt(b));\n                cnt[b]--;\n            }\n        }\n        ans = (ans + cur * cur) % MOD;\n    }\n\n    return Number(ans);\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-2897-apply-operations-on-array-to-maximize-sum-of-squares.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-2897-apply-operations-on-array-to-maximize-sum-of-squares.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 2897: Apply Operations on Array to Maximize Sum of Squares...",
+    "meta_description": "Master LeetCode 2897 (Apply Operations on Array to Maximize Sum of Squares) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N +...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-2897-apply-operations-on-array-to-maximize-sum-of-squares.jpg",
+    "keywords": [
+      "LeetCode 2897",
+      "Apply Operations on Array to Maximize Sum of Squares",
+      "LeetCode 2897 Solution",
+      "LeetCode Apply Operations on Array to Maximize Sum of Squares",
+      "Hard LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

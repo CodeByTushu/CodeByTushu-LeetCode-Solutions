@@ -1,0 +1,78 @@
+{
+  "problem_number": 1732,
+  "problem_title": "Find the Highest Altitude",
+  "slug": "find-the-highest-altitude",
+  "solution_date": "2026-06-19",
+  "formatted_date": "19-06-2026",
+  "day_number": 19,
+  "month": "June",
+  "month_num": 6,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/find-the-highest-altitude/",
+  "youtube_url": "https://youtu.be/sOtYOSroows?si=coS-WYZe0fCy1XkI",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "There is a biker going on a road trip. The road trip consists of $n + 1$ points at different altitudes. The biker starts his trip on point $0$ with altitude equal to $0$.\n\nYou are given an integer array `gain` of length $n$ where `gain[i]` is the **net gain in altitude** between points $i$ and $i + 1$ for all ($0 \\le i < n$). Return the **highest altitude** of a point.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `gain = [-5,1,5,0,-7]`\n- **Output:** `1`\n- **Explanation:**\n  - Start at point 0: altitude = 0.\n  - After gain `[-5]`: altitude = $0 + (-5) = -5$.\n  - After gain `[1]`: altitude = $-5 + 1 = -4$.\n  - After gain `[5]`: altitude = $-4 + 5 = 1$.\n  - After gain `[0]`: altitude = $1 + 0 = 1$.\n  - After gain `[-7]`: altitude = $1 + (-7) = -6$.\n  - Altitudes visited: `[0, -5, -4, 1, 1, -6]`. The highest altitude reached is `1`.\n\n#### Example 2:\n- **Input:** `gain = [-4,-3,-2,-1,4,3,2]`\n- **Output:** `0`\n- **Explanation:**\n  - Altitudes visited: `[0, -4, -7, -9, -10, -6, -3, -1]`. The highest altitude reached is `0`.\n\n---\n\n### Constraints\n\n- $n == \\text{gain.length}$\n- $1 \\le n \\le 100$\n- $-100 \\le \\text{gain}[i] \\le 100$\n\n---",
+    "approach_summary": "Maintain a running prefix sum of net gains starting from altitude 0, tracking and returning the maximum peak value encountered.",
+    "full_explanation": "# LeetCode 1732: Find the Highest Altitude\n\n- **Publication Date:** 19 June 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-the-highest-altitude/](https://leetcode.com/problems/find-the-highest-altitude/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sOtYOSroows?si=coS-WYZe0fCy1XkI)\n\n---\n\n## Problem Summary\n\nThere is a biker going on a road trip. The road trip consists of $n + 1$ points at different altitudes. The biker starts his trip on point $0$ with altitude equal to $0$.\n\nYou are given an integer array `gain` of length $n$ where `gain[i]` is the **net gain in altitude** between points $i$ and $i + 1$ for all ($0 \\le i < n$). Return the **highest altitude** of a point.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `gain = [-5,1,5,0,-7]`\n- **Output:** `1`\n- **Explanation:**\n  - Start at point 0: altitude = 0.\n  - After gain `[-5]`: altitude = $0 + (-5) = -5$.\n  - After gain `[1]`: altitude = $-5 + 1 = -4$.\n  - After gain `[5]`: altitude = $-4 + 5 = 1$.\n  - After gain `[0]`: altitude = $1 + 0 = 1$.\n  - After gain `[-7]`: altitude = $1 + (-7) = -6$.\n  - Altitudes visited: `[0, -5, -4, 1, 1, -6]`. The highest altitude reached is `1`.\n\n#### Example 2:\n- **Input:** `gain = [-4,-3,-2,-1,4,3,2]`\n- **Output:** `0`\n- **Explanation:**\n  - Altitudes visited: `[0, -4, -7, -9, -10, -6, -3, -1]`. The highest altitude reached is `0`.\n\n---\n\n### Constraints\n\n- $n == \\text{gain.length}$\n- $1 \\le n \\le 100$\n- $-100 \\le \\text{gain}[i] \\le 100$\n\n---\n\n## Algorithmic Approach\n\n### Running Prefix Sum Accumulation\n\nThe problem asks for the maximum point value during a cumulative prefix sum trajectory starting at $0$:\n\n1. **State Tracking:**\n   - Maintain `altitude = 0` representing the biker's current altitude at point $0$.\n   - Maintain `maxAltitude = 0` representing the highest peak observed so far (at minimum 0 since the trip begins at altitude 0).\n\n2. **Single Pass:**\n   - Iterate through each net gain `g` in `gain`:\n     - Accumulate the current altitude: `altitude += g`.\n     - Update the maximum peak: `maxAltitude = Math.max(maxAltitude, altitude)`.\n\n3. **Return Result:**\n   - After processing all segments, return `maxAltitude`.\n\nThis avoids allocating an auxiliary prefix sum array, requiring only $\\mathcal{O}(1)$ extra memory.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(N)$ | A single linear pass through the `gain` array of size $N$ performs constant-time additions and comparisons. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only two primitive scalar integer variables (`altitude` and `maxAltitude`) are maintained. |\n\n---\n\n## Multi-Language Implementations\n\n### Java\n```java\nclass Solution {\n    public int largestAltitude(int[] gain) {\n        int altitude = 0;\n        int maxAltitude = 0;\n        for (int g : gain) {\n            altitude += g;\n            maxAltitude = Math.max(maxAltitude, altitude);\n        }\n        return maxAltitude;\n    }\n}\n```\n\n### Python\n```python\nfrom typing import List\n\nclass Solution:\n    def largestAltitude(self, gain: List[int]) -> int:\n        altitude = 0\n        max_altitude = 0\n        for g in gain:\n            altitude += g\n            max_altitude = max(max_altitude, altitude)\n        return max_altitude\n```\n\n### C++\n```cpp\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int largestAltitude(vector<int>& gain) {\n        int altitude = 0;\n        int maxAltitude = 0;\n        for (int g : gain) {\n            altitude += g;\n            maxAltitude = max(maxAltitude, altitude);\n        }\n        return maxAltitude;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * @param {number[]} gain\n * @return {number}\n */\nvar largestAltitude = function(gain) {\n    let altitude = 0;\n    let maxAltitude = 0;\n    for (const g of gain) {\n        altitude += g;\n        maxAltitude = Math.max(maxAltitude, altitude);\n    }\n    return maxAltitude;\n};\n```\n\n---\n\n<p align=\"center\">\n  <a href=\"../18-June/1344-Angle-Between-Hands-of-a-Clock/\"><strong>⬅️ Previous Problem (18 June: #1344)</strong></a>\n  &nbsp;&nbsp;•&nbsp;&nbsp;\n  <a href=\"../../README.md\"><strong>🌊 June 2026 Archive</strong></a>\n  &nbsp;&nbsp;•&nbsp;&nbsp;\n  <a href=\"../../../README.md\"><strong>🗂️ All Solutions Archive</strong></a>\n</p>\n"
+  },
+  "approach_summary": "Maintain a running prefix sum of net gains starting from altitude 0, tracking and returning the maximum peak value encountered.",
+  "explanation": "# LeetCode 1732: Find the Highest Altitude\n\n- **Publication Date:** 19 June 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/find-the-highest-altitude/](https://leetcode.com/problems/find-the-highest-altitude/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/sOtYOSroows?si=coS-WYZe0fCy1XkI)\n\n---\n\n## Problem Summary\n\nThere is a biker going on a road trip. The road trip consists of $n + 1$ points at different altitudes. The biker starts his trip on point $0$ with altitude equal to $0$.\n\nYou are given an integer array `gain` of length $n$ where `gain[i]` is the **net gain in altitude** between points $i$ and $i + 1$ for all ($0 \\le i < n$). Return the **highest altitude** of a point.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `gain = [-5,1,5,0,-7]`\n- **Output:** `1`\n- **Explanation:**\n  - Start at point 0: altitude = 0.\n  - After gain `[-5]`: altitude = $0 + (-5) = -5$.\n  - After gain `[1]`: altitude = $-5 + 1 = -4$.\n  - After gain `[5]`: altitude = $-4 + 5 = 1$.\n  - After gain `[0]`: altitude = $1 + 0 = 1$.\n  - After gain `[-7]`: altitude = $1 + (-7) = -6$.\n  - Altitudes visited: `[0, -5, -4, 1, 1, -6]`. The highest altitude reached is `1`.\n\n#### Example 2:\n- **Input:** `gain = [-4,-3,-2,-1,4,3,2]`\n- **Output:** `0`\n- **Explanation:**\n  - Altitudes visited: `[0, -4, -7, -9, -10, -6, -3, -1]`. The highest altitude reached is `0`.\n\n---\n\n### Constraints\n\n- $n == \\text{gain.length}$\n- $1 \\le n \\le 100$\n- $-100 \\le \\text{gain}[i] \\le 100$\n\n---\n\n## Algorithmic Approach\n\n### Running Prefix Sum Accumulation\n\nThe problem asks for the maximum point value during a cumulative prefix sum trajectory starting at $0$:\n\n1. **State Tracking:**\n   - Maintain `altitude = 0` representing the biker's current altitude at point $0$.\n   - Maintain `maxAltitude = 0` representing the highest peak observed so far (at minimum 0 since the trip begins at altitude 0).\n\n2. **Single Pass:**\n   - Iterate through each net gain `g` in `gain`:\n     - Accumulate the current altitude: `altitude += g`.\n     - Update the maximum peak: `maxAltitude = Math.max(maxAltitude, altitude)`.\n\n3. **Return Result:**\n   - After processing all segments, return `maxAltitude`.\n\nThis avoids allocating an auxiliary prefix sum array, requiring only $\\mathcal{O}(1)$ extra memory.\n\n---\n\n## Complexity Analysis\n\n| Metric | Complexity | Rationale |\n| :--- | :---: | :--- |\n| **Time Complexity** | $\\mathcal{O}(N)$ | A single linear pass through the `gain` array of size $N$ performs constant-time additions and comparisons. |\n| **Auxiliary Space** | $\\mathcal{O}(1)$ | Only two primitive scalar integer variables (`altitude` and `maxAltitude`) are maintained. |\n\n---\n\n## Multi-Language Implementations\n\n### Java\n```java\nclass Solution {\n    public int largestAltitude(int[] gain) {\n        int altitude = 0;\n        int maxAltitude = 0;\n        for (int g : gain) {\n            altitude += g;\n            maxAltitude = Math.max(maxAltitude, altitude);\n        }\n        return maxAltitude;\n    }\n}\n```\n\n### Python\n```python\nfrom typing import List\n\nclass Solution:\n    def largestAltitude(self, gain: List[int]) -> int:\n        altitude = 0\n        max_altitude = 0\n        for g in gain:\n            altitude += g\n            max_altitude = max(max_altitude, altitude)\n        return max_altitude\n```\n\n### C++\n```cpp\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int largestAltitude(vector<int>& gain) {\n        int altitude = 0;\n        int maxAltitude = 0;\n        for (int g : gain) {\n            altitude += g;\n            maxAltitude = max(maxAltitude, altitude);\n        }\n        return maxAltitude;\n    }\n};\n```\n\n### JavaScript\n```javascript\n/**\n * @param {number[]} gain\n * @return {number}\n */\nvar largestAltitude = function(gain) {\n    let altitude = 0;\n    let maxAltitude = 0;\n    for (const g of gain) {\n        altitude += g;\n        maxAltitude = Math.max(maxAltitude, altitude);\n    }\n    return maxAltitude;\n};\n```\n\n---\n\n<p align=\"center\">\n  <a href=\"../18-June/1344-Angle-Between-Hands-of-a-Clock/\"><strong>⬅️ Previous Problem (18 June: #1344)</strong></a>\n  &nbsp;&nbsp;•&nbsp;&nbsp;\n  <a href=\"../../README.md\"><strong>🌊 June 2026 Archive</strong></a>\n  &nbsp;&nbsp;•&nbsp;&nbsp;\n  <a href=\"../../../README.md\"><strong>🗂️ All Solutions Archive</strong></a>\n</p>\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 1732 - Find the Highest Altitude\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int largestAltitude(int[] gain) {\n        int altitude = 0;\n        int maxAltitude = 0;\n        for (int g : gain) {\n            altitude += g;\n            maxAltitude = Math.max(maxAltitude, altitude);\n        }\n        return maxAltitude;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 1732 - Find the Highest Altitude\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def largestAltitude(self, gain: List[int]) -> int:\n        altitude = 0\n        max_altitude = 0\n        for g in gain:\n            altitude += g\n            max_altitude = max(max_altitude, altitude)\n        return max_altitude\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1732 - Find the Highest Altitude\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 1732 - Find the Highest Altitude\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    int largestAltitude(vector<int>& gain) {\n        int altitude = 0;\n        int maxAltitude = 0;\n        for (int g : gain) {\n            altitude += g;\n            maxAltitude = max(maxAltitude, altitude);\n        }\n        return maxAltitude;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 1732 - Find the Highest Altitude\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar largestAltitude = function(gain) {\n    let altitude = 0;\n    let maxAltitude = 0;\n    for (const g of gain) {\n        altitude += g;\n        maxAltitude = Math.max(maxAltitude, altitude);\n    }\n    return maxAltitude;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-1732-find-the-highest-altitude.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-1732-find-the-highest-altitude.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 1732: Find the Highest Altitude Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 1732 (Find the Highest Altitude) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) approach and detailed expla...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-1732-find-the-highest-altitude.jpg",
+    "keywords": [
+      "LeetCode 1732",
+      "Find the Highest Altitude",
+      "LeetCode 1732 Solution",
+      "LeetCode Find the Highest Altitude",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

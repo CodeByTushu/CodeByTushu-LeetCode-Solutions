@@ -1,0 +1,79 @@
+{
+  "problem_number": 3010,
+  "problem_title": "Divide an Array Into Subarrays With Minimum Cost I",
+  "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
+  "solution_date": "2026-02-01",
+  "formatted_date": "01-02-2026",
+  "day_number": 1,
+  "month": "February",
+  "month_num": 2,
+  "year": 2026,
+  "difficulty": "Easy",
+  "platform": "LeetCode",
+  "time_complexity": "O(N)",
+  "space_complexity": "O(1)",
+  "leetcode_url": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/",
+  "youtube_url": "https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf",
+  "notes": "Optimal O(N) time complexity with O(1) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "You are given an array of integers `nums` of length `n`.\n\nThe **cost** of an array is the value of its **first element**. For example, the cost of `[1, 2, 3]` is $1$, while the cost of `[3, 4, 1]` is $3$.\n\nYou need to divide `nums` into **$3$ disjoint contiguous subarrays**.\n\nReturn the **minimum possible sum** of the cost of these subarrays.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3, 12]`\n- **Output:** `6`\n- **Explanation:** The best possible way to form 3 subarrays is: `[1]`, `[2]`, and `[3, 12]` at a total cost of $1 + 2 + 3 = 6$.\n  Other possible partitionings include:\n  - `[1]`, `[2, 3]`, and `[12]` at a cost of $1 + 2 + 12 = 15$.\n  - `[1, 2]`, `[3]`, and `[12]` at a cost of $1 + 3 + 12 = 16$.\n\n#### Example 2:\n- **Input:** `nums = [5, 4, 3]`\n- **Output:** `12`\n- **Explanation:** The best possible way to form 3 subarrays is: `[5]`, `[4]`, and `[3]` at a total cost of $5 + 4 + 3 = 12$. It can be shown that 12 is the minimum cost achievable.\n\n#### Example 3:\n- **Input:** `nums = [10, 3, 1, 1]`\n- **Output:** `12`\n- **Explanation:** The best possible way to form 3 subarrays is: `[10, 3]`, `[1]`, and `[1]` at a total cost of $10 + 1 + 1 = 12$.\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 50$\n- $1 \\le \\text{nums}[i] \\le 50$\n\n---",
+    "approach_summary": "The first subarray always starts at index 0, contributing nums[0] to the cost. The remaining two subarrays must start at two distinct indices in nums[1 ... n - 1]. To minimize the sum, identify the two smallest elements in nums[1 ... n - 1] in a single linear pass and add them to nums[0].",
+    "full_explanation": "# LeetCode 3010: Divide an Array Into Subarrays With Minimum Cost I\n\n- **Publication Date:** 01 February 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf)\n\n---\n\n## Problem Summary\n\nYou are given an array of integers `nums` of length `n`.\n\nThe **cost** of an array is the value of its **first element**. For example, the cost of `[1, 2, 3]` is $1$, while the cost of `[3, 4, 1]` is $3$.\n\nYou need to divide `nums` into **$3$ disjoint contiguous subarrays**.\n\nReturn the **minimum possible sum** of the cost of these subarrays.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3, 12]`\n- **Output:** `6`\n- **Explanation:** The best possible way to form 3 subarrays is: `[1]`, `[2]`, and `[3, 12]` at a total cost of $1 + 2 + 3 = 6$.\n  Other possible partitionings include:\n  - `[1]`, `[2, 3]`, and `[12]` at a cost of $1 + 2 + 12 = 15$.\n  - `[1, 2]`, `[3]`, and `[12]` at a cost of $1 + 3 + 12 = 16$.\n\n#### Example 2:\n- **Input:** `nums = [5, 4, 3]`\n- **Output:** `12`\n- **Explanation:** The best possible way to form 3 subarrays is: `[5]`, `[4]`, and `[3]` at a total cost of $5 + 4 + 3 = 12$. It can be shown that 12 is the minimum cost achievable.\n\n#### Example 3:\n- **Input:** `nums = [10, 3, 1, 1]`\n- **Output:** `12`\n- **Explanation:** The best possible way to form 3 subarrays is: `[10, 3]`, `[1]`, and `[1]` at a total cost of $10 + 1 + 1 = 12$.\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 50$\n- $1 \\le \\text{nums}[i] \\le 50$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Greedy**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Fixed First Element & Greedy Selection\n\n1. **Subarray Structure & Fixed Cost:**\n   - Any valid division of `nums` into three contiguous non-empty subarrays partitions the array into three segments:\n     - Subarray 1: `nums[0 ... i - 1]`\n     - Subarray 2: `nums[i ... j - 1]`\n     - Subarray 3: `nums[j ... n - 1]`\n     where the boundary indices satisfy $1 \\le i < j \\le n - 1$.\n   - The cost of Subarray 1 is always `nums[0]`, regardless of where $i$ and $j$ are chosen.\n   - The cost of Subarray 2 is `nums[i]`.\n   - The cost of Subarray 3 is `nums[j]`.\n   - Therefore, the total sum of costs is:\n     $$\\text{Total Cost} = \\text{nums}[0] + \\text{nums}[i] + \\text{nums}[j]$$\n\n2. **Selecting Optimal Starting Indices:**\n   - To minimize the total cost, we must minimize $\\text{nums}[i] + \\text{nums}[j]$ subject to $1 \\le i < j \\le n - 1$.\n   - Since any pair of distinct indices $i$ and $j$ ($1 \\le i < j < n$) defines valid non-empty contiguous subarrays, this problem reduces directly to finding the **two smallest elements** in the subarray `nums[1 ... n - 1]`.\n\n3. **Optimal $\\mathcal{O}(n)$ Single-Pass Search:**\n   - While sorting `nums[1 ... n - 1]` would yield $\\mathcal{O}(n \\log n)$ time, we can track the two smallest values `min1` and `min2` in a single linear scan from index $1$ to $n - 1$:\n     - If `nums[k] < min1`: update `min2 = min1`, then `min1 = nums[k]`.\n     - Else if `nums[k] < min2`: update `min2 = nums[k]`.\n   - The minimal answer is simply `nums[0] + min1 + min2`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the length of `nums`. We perform a single linear traversal of the elements from index $1$ to $n - 1$, examining each element in constant $\\mathcal{O}(1)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$. Only two scalar variables (`min1` and `min2`) are maintained, requiring strictly constant extra memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf)\n"
+  },
+  "approach_summary": "The first subarray always starts at index 0, contributing nums[0] to the cost. The remaining two subarrays must start at two distinct indices in nums[1 ... n - 1]. To minimize the sum, identify the two smallest elements in nums[1 ... n - 1] in a single linear pass and add them to nums[0].",
+  "explanation": "# LeetCode 3010: Divide an Array Into Subarrays With Minimum Cost I\n\n- **Publication Date:** 01 February 2026\n- **Difficulty:** Easy\n- **Problem Link:** [https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf)\n\n---\n\n## Problem Summary\n\nYou are given an array of integers `nums` of length `n`.\n\nThe **cost** of an array is the value of its **first element**. For example, the cost of `[1, 2, 3]` is $1$, while the cost of `[3, 4, 1]` is $3$.\n\nYou need to divide `nums` into **$3$ disjoint contiguous subarrays**.\n\nReturn the **minimum possible sum** of the cost of these subarrays.\n\n---\n\n### Examples\n\n#### Example 1:\n- **Input:** `nums = [1, 2, 3, 12]`\n- **Output:** `6`\n- **Explanation:** The best possible way to form 3 subarrays is: `[1]`, `[2]`, and `[3, 12]` at a total cost of $1 + 2 + 3 = 6$.\n  Other possible partitionings include:\n  - `[1]`, `[2, 3]`, and `[12]` at a cost of $1 + 2 + 12 = 15$.\n  - `[1, 2]`, `[3]`, and `[12]` at a cost of $1 + 3 + 12 = 16$.\n\n#### Example 2:\n- **Input:** `nums = [5, 4, 3]`\n- **Output:** `12`\n- **Explanation:** The best possible way to form 3 subarrays is: `[5]`, `[4]`, and `[3]` at a total cost of $5 + 4 + 3 = 12$. It can be shown that 12 is the minimum cost achievable.\n\n#### Example 3:\n- **Input:** `nums = [10, 3, 1, 1]`\n- **Output:** `12`\n- **Explanation:** The best possible way to form 3 subarrays is: `[10, 3]`, `[1]`, and `[1]` at a total cost of $10 + 1 + 1 = 12$.\n\n---\n\n### Constraints\n\n- $3 \\le n \\le 50$\n- $1 \\le \\text{nums}[i] \\le 50$\n\n---\n\n## Topics and Tags\n\n- **Array**\n- **Greedy**\n- **Sorting**\n\n---\n\n## Approach & Intuition\n\n### 1. Fixed First Element & Greedy Selection\n\n1. **Subarray Structure & Fixed Cost:**\n   - Any valid division of `nums` into three contiguous non-empty subarrays partitions the array into three segments:\n     - Subarray 1: `nums[0 ... i - 1]`\n     - Subarray 2: `nums[i ... j - 1]`\n     - Subarray 3: `nums[j ... n - 1]`\n     where the boundary indices satisfy $1 \\le i < j \\le n - 1$.\n   - The cost of Subarray 1 is always `nums[0]`, regardless of where $i$ and $j$ are chosen.\n   - The cost of Subarray 2 is `nums[i]`.\n   - The cost of Subarray 3 is `nums[j]`.\n   - Therefore, the total sum of costs is:\n     $$\\text{Total Cost} = \\text{nums}[0] + \\text{nums}[i] + \\text{nums}[j]$$\n\n2. **Selecting Optimal Starting Indices:**\n   - To minimize the total cost, we must minimize $\\text{nums}[i] + \\text{nums}[j]$ subject to $1 \\le i < j \\le n - 1$.\n   - Since any pair of distinct indices $i$ and $j$ ($1 \\le i < j < n$) defines valid non-empty contiguous subarrays, this problem reduces directly to finding the **two smallest elements** in the subarray `nums[1 ... n - 1]`.\n\n3. **Optimal $\\mathcal{O}(n)$ Single-Pass Search:**\n   - While sorting `nums[1 ... n - 1]` would yield $\\mathcal{O}(n \\log n)$ time, we can track the two smallest values `min1` and `min2` in a single linear scan from index $1$ to $n - 1$:\n     - If `nums[k] < min1`: update `min2 = min1`, then `min1 = nums[k]`.\n     - Else if `nums[k] < min2`: update `min2 = nums[k]`.\n   - The minimal answer is simply `nums[0] + min1 + min2`.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}(n)$, where $n$ is the length of `nums`. We perform a single linear traversal of the elements from index $1$ to $n - 1$, examining each element in constant $\\mathcal{O}(1)$ time.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(1)$. Only two scalar variables (`min1` and `min2`) are maintained, requiring strictly constant extra memory.\n\n---\n\n## Solutions\n\n- [☕ Java Solution (`Solution.java`)](./Solution.java)\n- [🐍 Python Solution (`solution.py`)](./solution.py)\n- [⚡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [🌐 JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 3010 - Divide an Array Into Subarrays With Minimum Cost I\n * Difficulty: Easy\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public int minimumCost(int[] nums) {\n        // The first subarray always begins at index 0, so nums[0] is fixed.\n        int firstCost = nums[0];\n\n        // Find the two smallest elements in the remaining elements nums[1 ... n - 1].\n        int min1 = Integer.MAX_VALUE;\n        int min2 = Integer.MAX_VALUE;\n\n        for (int i = 1; i < nums.length; i++) {\n            if (nums[i] < min1) {\n                min2 = min1;\n                min1 = nums[i];\n            } else if (nums[i] < min2) {\n                min2 = nums[i];\n            }\n        }\n\n        return firstCost + min1 + min2;\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 3010 - Divide an Array Into Subarrays With Minimum Cost I\nDifficulty: Easy\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\n\nclass Solution:\n    def minimumCost(self, nums: List[int]) -> int:\n        # The first subarray must start at index 0, fixing nums[0] as its cost.\n        # Find the two smallest values in nums[1:] in a single linear scan.\n        min1 = float('inf')\n        min2 = float('inf')\n\n        for x in nums[1:]:\n            if x < min1:\n                min2 = min1\n                min1 = x\n            elif x < min2:\n                min2 = x\n\n        return nums[0] + min1 + min2\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3010 - Divide an Array Into Subarrays With Minimum Cost I\n * Difficulty: Easy\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <climits>\n#include <algorithm>\n\nusing namespace std;\n\nclass Solution {\npublic:\n    int minimumCost(vector<int>& nums) {\n        // The first subarray always begins at index 0, fixing nums[0].\n        int firstCost = nums[0];\n        int min1 = INT_MAX;\n        int min2 = INT_MAX;\n\n        for (size_t i = 1; i < nums.size(); ++i) {\n            if (nums[i] < min1) {\n                min2 = min1;\n                min1 = nums[i];\n            } else if (nums[i] < min2) {\n                min2 = nums[i];\n            }\n        }\n\n        return firstCost + min1 + min2;\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 3010 - Divide an Array Into Subarrays With Minimum Cost I\n * Difficulty: Easy\n * Language: JavaScript\n * Author: CodeByTushu\n */\n/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumCost = function(nums) {\n    // The first subarray always begins at index 0, fixing nums[0].\n    const firstCost = nums[0];\n    let min1 = Infinity;\n    let min2 = Infinity;\n\n    for (let i = 1; i < nums.length; i++) {\n        if (nums[i] < min1) {\n            min2 = min1;\n            min1 = nums[i];\n        } else if (nums[i] < min2) {\n            min2 = nums[i];\n        }\n    }\n\n    return firstCost + min1 + min2;\n};\n"
+    }
+  },
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-3010-divide-an-array-into-subarrays-with-minimum-cost-i.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-3010-divide-an-array-into-subarrays-with-minimum-cost-i.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 3010: Divide an Array Into Subarrays With Minimum Cost I S...",
+    "meta_description": "Master LeetCode 3010 (Divide an Array Into Subarrays With Minimum Cost I) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(N) ap...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-3010-divide-an-array-into-subarrays-with-minimum-cost-i.jpg",
+    "keywords": [
+      "LeetCode 3010",
+      "Divide an Array Into Subarrays With Minimum Cost I",
+      "LeetCode 3010 Solution",
+      "LeetCode Divide an Array Into Subarrays With Minimum Cost I",
+      "Easy LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

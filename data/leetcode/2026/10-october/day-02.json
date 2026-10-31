@@ -1,0 +1,79 @@
+{
+  "problem_number": 22,
+  "problem_title": "Generate Parentheses",
+  "slug": "generate-parentheses",
+  "solution_date": "2026-10-02",
+  "formatted_date": "02-10-2026",
+  "day_number": 2,
+  "month": "October",
+  "month_num": 10,
+  "year": 2026,
+  "difficulty": "Medium",
+  "platform": "LeetCode",
+  "time_complexity": "O(4^n / sqrt(n)) bounded by n-th Catalan number",
+  "space_complexity": "O(n)",
+  "leetcode_url": "https://leetcode.com/problems/generate-parentheses/",
+  "youtube_url": "https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9",
+  "notes": "Optimal O(4^n / sqrt(n)) bounded by n-th Catalan number time complexity with O(n) space complexity. Complete dry run, edge cases handled, and multi-language implementation provided by CodeByTushu.",
+  "publish": {
+    "status": "Published",
+    "is_published": 1,
+    "is_featured": 0
+  },
+  "description": {
+    "problem_description": "Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\n\n---",
+    "approach_summary": "Backtracking ensuring valid prefix invariants: only add '(' if open < n, and only add ')' if close < open.",
+    "full_explanation": "﻿# LeetCode 22: Generate Parentheses\n\n- **Publication Date:** 02 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/generate-parentheses/](https://leetcode.com/problems/generate-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)\n\n---\n\n## Problem Summary\n\nGiven `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Backtracking**\n\n---\n\n## Approach\n\n1. **Backtracking Invariants**:\n   - A sequence of parentheses is valid if and only if at every prefix, the number of closing parentheses never exceeds the number of opening parentheses, and the total count of both reaches `n`.\n   - We track:\n     - `open`: count of `'('` placed so far ($open \\le n$).\n     - `close`: count of `')'` placed so far ($close \\le open$).\n\n2. **Recursive Backtracking**:\n   - Base Case: When `current.length == 2 * n`, all pairs are placed in valid order. Add the string to `result`.\n   - Exploration Choices:\n     - If `open < n`: We can place an opening parenthesis `'('`. Recurse with `open + 1`, then backtrack.\n     - If `close < open`: We can place a closing parenthesis `')'`. Recurse with `close + 1`, then backtrack.\n   - This ensures we never construct an invalid sequence, visiting only valid combinations.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}\\left(\\frac{4^n}{\\sqrt{n}}\\right)$\n  - Bounded by the $n$-th Catalan number $C_n = \\frac{1}{n+1}\\binom{2n}{n}$. For $n \\le 8$, $C_8 = 1430$ strings are generated, executing in under $1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$\n  - Maximum depth of recursion call stack is $2n \\le 16$.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)\n"
+  },
+  "approach_summary": "Backtracking ensuring valid prefix invariants: only add '(' if open < n, and only add ')' if close < open.",
+  "explanation": "﻿# LeetCode 22: Generate Parentheses\n\n- **Publication Date:** 02 October 2026\n- **Difficulty:** Medium\n- **Problem Link:** [https://leetcode.com/problems/generate-parentheses/](https://leetcode.com/problems/generate-parentheses/)\n- **YouTube Solution:** [Watch on YouTube](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)\n\n---\n\n## Problem Summary\n\nGiven `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\n\n---\n\n## Topics and Tags\n\n- **String**\n- **Dynamic Programming**\n- **Backtracking**\n\n---\n\n## Approach\n\n1. **Backtracking Invariants**:\n   - A sequence of parentheses is valid if and only if at every prefix, the number of closing parentheses never exceeds the number of opening parentheses, and the total count of both reaches `n`.\n   - We track:\n     - `open`: count of `'('` placed so far ($open \\le n$).\n     - `close`: count of `')'` placed so far ($close \\le open$).\n\n2. **Recursive Backtracking**:\n   - Base Case: When `current.length == 2 * n`, all pairs are placed in valid order. Add the string to `result`.\n   - Exploration Choices:\n     - If `open < n`: We can place an opening parenthesis `'('`. Recurse with `open + 1`, then backtrack.\n     - If `close < open`: We can place a closing parenthesis `')'`. Recurse with `close + 1`, then backtrack.\n   - This ensures we never construct an invalid sequence, visiting only valid combinations.\n\n---\n\n## Complexity Analysis\n\n- **Time Complexity:** $\\mathcal{O}\\left(\\frac{4^n}{\\sqrt{n}}\\right)$\n  - Bounded by the $n$-th Catalan number $C_n = \\frac{1}{n+1}\\binom{2n}{n}$. For $n \\le 8$, $C_8 = 1430$ strings are generated, executing in under $1\\text{ ms}$.\n- **Auxiliary Space Complexity:** $\\mathcal{O}(n)$\n  - Maximum depth of recursion call stack is $2n \\le 16$.\n\n---\n\n## Solutions\n\n- [â˜• Java Solution (`Solution.java`)](./Solution.java)\n- [ðŸ Python Solution (`solution.py`)](./solution.py)\n- [âš¡ C++ Solution (`solution.cpp`)](./solution.cpp)\n- [ðŸŒ JavaScript Solution (`solution.js`)](./solution.js)\n\n---\n\n## Video Explanation\n\n- ðŸŽ¥ **Watch the full step-by-step video solution on YouTube:** [https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9](https://youtu.be/C76W89ZnU9o?si=1brTDBvYZVjXgXU9)\n",
+  "codes": {
+    "Java": {
+      "language": "Java",
+      "language_slug": "java",
+      "is_primary": true,
+      "code": "/**\n * Problem: LeetCode 22 - Generate Parentheses\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nimport java.util.ArrayList;\nimport java.util.List;\n\n/**\n * Problem: LeetCode 22 - Generate Parentheses\n * Difficulty: Medium\n * Language: Java\n * Author: CodeByTushu\n */\nclass Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> result = new ArrayList<>();\n        backtrack(result, new StringBuilder(), 0, 0, n);\n        return result;\n    }\n\n    private void backtrack(List<String> result, StringBuilder sb, int open, int close, int n) {\n        if (sb.length() == 2 * n) {\n            result.add(sb.toString());\n            return;\n        }\n        if (open < n) {\n            sb.append('(');\n            backtrack(result, sb, open + 1, close, n);\n            sb.deleteCharAt(sb.length() - 1);\n        }\n        if (close < open) {\n            sb.append(')');\n            backtrack(result, sb, open, close + 1, n);\n            sb.deleteCharAt(sb.length() - 1);\n        }\n    }\n}\n"
+    },
+    "Python": {
+      "language": "Python",
+      "language_slug": "python",
+      "is_primary": false,
+      "code": "\"\"\"\nProblem: LeetCode 22 - Generate Parentheses\nDifficulty: Medium\nLanguage: Python\nAuthor: CodeByTushu\n\"\"\"\nfrom typing import List\n\nclass Solution:\n    def generateParenthesis(self, n: int) -> List[str]:\n        result = []\n\n        def backtrack(current: list, open_count: int, close_count: int):\n            if len(current) == 2 * n:\n                result.append(\"\".join(current))\n                return\n\n            if open_count < n:\n                current.append('(')\n                backtrack(current, open_count + 1, close_count)\n                current.pop()\n\n            if close_count < open_count:\n                current.append(')')\n                backtrack(current, open_count, close_count + 1)\n                current.pop()\n\n        backtrack([], 0, 0)\n        return result\n"
+    },
+    "C++": {
+      "language": "C++",
+      "language_slug": "cpp",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 22 - Generate Parentheses\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\n#include <vector>\n#include <string>\n\nusing namespace std;\n\n/**\n * Problem: LeetCode 22 - Generate Parentheses\n * Difficulty: Medium\n * Language: C++\n * Author: CodeByTushu\n */\nclass Solution {\npublic:\n    vector<string> generateParenthesis(int n) {\n        vector<string> result;\n        string current = \"\";\n        backtrack(result, current, 0, 0, n);\n        return result;\n    }\n\nprivate:\n    void backtrack(vector<string>& result, string& current, int open, int close, int n) {\n        if (current.length() == 2 * n) {\n            result.push_back(current);\n            return;\n        }\n\n        if (open < n) {\n            current.push_back('(');\n            backtrack(result, current, open + 1, close, n);\n            current.pop_back();\n        }\n\n        if (close < open) {\n            current.push_back(')');\n            backtrack(result, current, open, close + 1, n);\n            current.pop_back();\n        }\n    }\n};\n"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "language_slug": "javascript",
+      "is_primary": false,
+      "code": "/**\n * Problem: LeetCode 22 - Generate Parentheses\n * Difficulty: Medium\n * Language: JavaScript\n * Author: CodeByTushu\n */\nvar generateParenthesis = function(n) {\n    const result = [];\n\n    const backtrack = (current, open, close) => {\n        if (current.length === 2 * n) {\n            result.push(current);\n            return;\n        }\n\n        if (open < n) {\n            backtrack(current + '(', open + 1, close);\n        }\n\n        if (close < open) {\n            backtrack(current + ')', open, close + 1);\n        }\n    };\n\n    backtrack('', 0, 0);\n    return result;\n};\n"
+    }
+  },
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "media": {
+    "thumbnail_image": "/uploads/leetcode/thumbs/leetcode-22-generate-parentheses.jpg",
+    "solution_pdf": "/uploads/leetcode/pdfs/leetcode-22-generate-parentheses.pdf"
+  },
+  "seo": {
+    "seo_title": "LeetCode 22: Generate Parentheses Solution | CodeByTushu",
+    "meta_description": "Master LeetCode 22 (Generate Parentheses) with clean, optimal solutions in Java, Python, C++, and JavaScript. Optimal O(4^n / sqrt(n)) bounded by n-th Catala...",
+    "og_image_url": "https://codebytushu.com/uploads/leetcode/thumbs/leetcode-22-generate-parentheses.jpg",
+    "keywords": [
+      "LeetCode 22",
+      "Generate Parentheses",
+      "LeetCode 22 Solution",
+      "LeetCode Generate Parentheses",
+      "Medium LeetCode",
+      "CodeByTushu",
+      "DSA Solutions"
+    ]
+  }
+}

@@ -7,11 +7,11 @@ This document contains the complete, production-grade YouTube Titles, YouTube Vi
 ## 📅 01 January 2026 — LeetCode 66: Plus One (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/1-January/66-Plus-One
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/01-January/66-Plus-One
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -52,19 +52,19 @@ We iterate backwards from the least significant digit toward the most significan
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/1-January/66-Plus-One
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/01-January/66-Plus-One
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/1-January/66-Plus-One/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/01-January/66-Plus-One/solution.js
 
 🔗 LeetCode Source Code
 
@@ -134,11 +134,11 @@ Why is creating a new array only necessary when all original digits are 9?
 ## 📅 02 January 2026 — LeetCode 961: N-Repeated Element in Size 2N Array (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -179,19 +179,19 @@ By the Pigeonhole Principle, because the repeated element occupies half of the t
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js
 
 🔗 LeetCode Source Code
 
@@ -261,11 +261,11 @@ What is the maximum distance between two identical elements of the repeated numb
 ## 📅 03 January 2026 — LeetCode 1411: Number of Ways to Paint N × 3 Grid (Hard)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -306,19 +306,19 @@ For any row of 3 cells, there are only two valid color configurations: Type A (A
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js
 
 🔗 LeetCode Source Code
 
@@ -388,11 +388,11 @@ How many total valid color configurations exist for a single row of length 3 usi
 ## 📅 04 January 2026 — LeetCode 1390: Four Divisors (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/4-January/1390-Four-Divisors
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/04-January/1390-Four-Divisors
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -433,19 +433,19 @@ For each number n in nums, we iterate potential divisors d from 1 up to floor(sq
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/4-January/1390-Four-Divisors
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/04-January/1390-Four-Divisors
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/4-January/1390-Four-Divisors/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/04-January/1390-Four-Divisors/solution.js
 
 🔗 LeetCode Source Code
 
@@ -515,11 +515,11 @@ Which form must an integer have to possess exactly four positive divisors?
 ## 📅 05 January 2026 — LeetCode 1975: Maximum Matrix Sum (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/5-January/1975-Maximum-Matrix-Sum
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/05-January/1975-Maximum-Matrix-Sum
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -560,19 +560,19 @@ Because any operation flips the signs of two adjacent cells simultaneously, the 
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/5-January/1975-Maximum-Matrix-Sum
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/05-January/1975-Maximum-Matrix-Sum
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.js
 
 🔗 LeetCode Source Code
 
@@ -642,11 +642,11 @@ Why can negative signs be shifted between any two arbitrary cells in the matrix?
 ## 📅 06 January 2026 — LeetCode 1161: Maximum Level Sum of a Binary Tree (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -687,19 +687,19 @@ We employ a standard queue-based Breadth-First Search (BFS) for level order trav
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js
 
 🔗 LeetCode Source Code
 
@@ -769,11 +769,11 @@ Why is initializing the maximum sum to 0 incorrect in this problem?
 ## 📅 07 January 2026 — LeetCode 1339: Maximum Product of Splitted Binary Tree (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -814,19 +814,19 @@ Removing an edge decomposes the tree into a subtree with sum S and the remaining
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js
 
 🔗 LeetCode Source Code
 
@@ -896,11 +896,11 @@ Why must the modulo operation be deferred until after finding the maximum produc
 ## 📅 08 January 2026 — LeetCode 1458: Max Dot Product of Two Subsequences (Hard)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -941,19 +941,19 @@ Let dp[i][j] be the maximum dot product using non-empty subsequences from prefix
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1023,11 +1023,11 @@ How does the algorithm handle cases where all elements of nums1 are positive and
 ## 📅 09 January 2026 — LeetCode 865: Smallest Subtree with all the Deepest Nodes (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1068,19 +1068,19 @@ This problem is equivalent to finding the Lowest Common Ancestor (LCA) of all th
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1277,11 +1277,11 @@ How does this problem relate to the Longest Common Subsequence (LCS)?
 ## 📅 11 January 2026 — LeetCode 85: Maximal Rectangle (Hard)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/11-January/85-Maximal-Rectangle
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/101-January/85-Maximal-Rectangle
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1322,19 +1322,19 @@ We treat each row of the matrix as the base of a histogram where bar heights rep
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/11-January/85-Maximal-Rectangle
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/101-January/85-Maximal-Rectangle
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/11-January/85-Maximal-Rectangle/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/101-January/85-Maximal-Rectangle/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1404,11 +1404,11 @@ Why does encountering a '0' in a matrix cell reset the histogram height to 0?
 ## 📅 12 January 2026 — LeetCode 1266: Minimum Time Visiting All Points (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1449,19 +1449,19 @@ Moving diagonally allows changing both x and y coordinates by 1 in a single seco
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/12-January/1266-Minimum-Time-Visiting-All-Points/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/102-January/1266-Minimum-Time-Visiting-All-Points/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1531,11 +1531,11 @@ Why is the time between (x1, y1) and (x2, y2) equal to max(|dx|, |dy|) rather th
 ## 📅 13 January 2026 — LeetCode 3453: Separate Squares I (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/13-January/3453-Separate-Squares-I
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/103-January/3453-Separate-Squares-I
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1576,19 +1576,19 @@ The total area below horizontal line y is a monotonically non-decreasing functio
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/13-January/3453-Separate-Squares-I
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/103-January/3453-Separate-Squares-I
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/13-January/3453-Separate-Squares-I/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/103-January/3453-Separate-Squares-I/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1658,11 +1658,11 @@ Why does a fixed iteration loop (e.g. 70 iterations) work better than while(righ
 ## 📅 14 January 2026 — LeetCode 3454: Separate Squares II (Hard)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/14-January/3454-Separate-Squares-II
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/104-January/3454-Separate-Squares-II
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1703,19 +1703,19 @@ Unlike Part I, overlapping areas cannot be double counted. We use a Segment Tree
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/14-January/3454-Separate-Squares-II
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/104-January/3454-Separate-Squares-II
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/14-January/3454-Separate-Squares-II/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/104-January/3454-Separate-Squares-II/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1785,11 +1785,11 @@ Why is a segment tree necessary in Separate Squares II but not in Separate Squar
 ## 📅 15 January 2026 — LeetCode 2943: Maximize Area of Square Hole in Grid (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1830,19 +1830,19 @@ Removing k consecutive bars merges k + 1 grid cells, producing a gap of size k +
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/15-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/105-January/2943-Maximize-Area-of-Square-Hole-in-Grid/solution.js
 
 🔗 LeetCode Source Code
 
@@ -1912,11 +1912,11 @@ If 3 consecutive grid bars are removed, what is the span of the resulting open g
 ## 📅 16 January 2026 — LeetCode 2975: Maximum Square Area by Removing Fences From a Field (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -1957,19 +1957,19 @@ Add boundaries 1 and m to hFences, and 1 and n to vFences. Compute all pairwise 
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/16-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/106-January/2975-Maximum-Square-Area-by-Removing-Fences-From-a-Field/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2039,11 +2039,11 @@ Why do we include 1 and m/n in the fence coordinates?
 ## 📅 17 January 2026 — LeetCode 3047: Find the Largest Area of Square Inside Two Rectangles (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2084,19 +2084,19 @@ We iterate over all pairs of rectangles (i, j) with 0 <= i < j < n. The intersec
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/17-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/107-January/3047-Find-the-Largest-Area-of-Square-Inside-Two-Rectangles/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2166,11 +2166,11 @@ What defines the intersection coordinates of two axis-aligned rectangles [x1, y1
 ## 📅 18 January 2026 — LeetCode 1895: Largest Magic Square (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/18-January/1895-Largest-Magic-Square
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/108-January/1895-Largest-Magic-Square
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2211,19 +2211,19 @@ We precompute 2D row prefix sums, column prefix sums, and diagonal/anti-diagonal
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/18-January/1895-Largest-Magic-Square
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/108-January/1895-Largest-Magic-Square
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/18-January/1895-Largest-Magic-Square/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/108-January/1895-Largest-Magic-Square/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2293,11 +2293,11 @@ Why is searching side length k in descending order optimal for Largest Magic Squ
 ## 📅 19 January 2026 — LeetCode 1292: Maximum Side Length of a Square with Sum Less than or Equal to Threshold (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2338,19 +2338,19 @@ We precompute the 2D prefix sum array pref[r][c] in O(M * N). Then, as we traver
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/19-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/109-January/1292-Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2547,11 +2547,11 @@ Why does nums[i] = 2 yield -1 in Construct the Minimum Bitwise Array?
 ## 📅 21 January 2026 — LeetCode 3315: Construct the Minimum Bitwise Array II (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2592,19 +2592,19 @@ With nums[i] up to 10^9, a brute-force search is impossible. Observing x OR (x +
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/21-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/201-January/3315-Construct-the-Minimum-Bitwise-Array-II/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2674,11 +2674,11 @@ Which bitwise expression isolates the lowest 0-bit in an integer p?
 ## 📅 22 January 2026 — LeetCode 3507: Minimum Pair Removal to Sort Array I (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2719,19 +2719,19 @@ With array length up to 50, we can directly simulate the operation. In each roun
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/22-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/202-January/3507-Minimum-Pair-Removal-to-Sort-Array-I/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2801,11 +2801,11 @@ How many operations at most can be performed on an array of length N in this pro
 ## 📅 23 January 2026 — LeetCode 3510: Minimum Pair Removal to Sort Array II (Hard)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2846,19 +2846,19 @@ With N up to 10^5, O(N^2) simulation times out. We represent the array as a Doub
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/23-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/203-January/3510-Minimum-Pair-Removal-to-Sort-Array-II/solution.js
 
 🔗 LeetCode Source Code
 
@@ -2928,11 +2928,11 @@ Why is tracking an inversion counter better than checking the whole list each st
 ## 📅 24 January 2026 — LeetCode 1877: Minimize Maximum Pair Sum in Array (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -2973,19 +2973,19 @@ By the rearrangement inequality, pairing the smallest remaining element with the
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/24-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/204-January/1877-Minimize-Maximum-Pair-Sum-in-Array/solution.js
 
 🔗 LeetCode Source Code
 
@@ -3055,11 +3055,11 @@ Why does pairing nums[i] with nums[n - 1 - i] minimize the maximum pair sum?
 ## 📅 25 January 2026 — LeetCode 1984: Minimum Difference Between Highest and Lowest of K Scores (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -3100,19 +3100,19 @@ If k == 1, the difference is trivially 0. For k > 1, the optimal k elements will
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/25-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/205-January/1984-Minimum-Difference-Between-Highest-and-Lowest-of-K-Scores/solution.js
 
 🔗 LeetCode Source Code
 
@@ -3182,11 +3182,11 @@ Why must the k chosen elements be contiguous in the sorted array?
 ## 📅 26 January 2026 — LeetCode 1200: Minimum Absolute Difference (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/26-January/1200-Minimum-Absolute-Difference
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/206-January/1200-Minimum-Absolute-Difference
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -3227,19 +3227,19 @@ In a sorted array, the minimum absolute difference must occur between two adjace
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/26-January/1200-Minimum-Absolute-Difference
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/206-January/1200-Minimum-Absolute-Difference
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/26-January/1200-Minimum-Absolute-Difference/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/206-January/1200-Minimum-Absolute-Difference/solution.js
 
 🔗 LeetCode Source Code
 
@@ -3309,11 +3309,11 @@ Why can non-adjacent elements in a sorted array be ignored when finding the mini
 ## 📅 27 January 2026 — LeetCode 3650: Minimum Cost Path with Edge Reversals (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -3354,19 +3354,19 @@ Because all edge weights are strictly positive, any shortest path is simple and 
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/27-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/207-January/3650-Minimum-Cost-Path-with-Edge-Reversals/solution.js
 
 🔗 LeetCode Source Code
 
@@ -3436,11 +3436,11 @@ Why does adding reverse edges with weight 2 * w not violate the 'at most once pe
 ## 📅 28 January 2026 — LeetCode 3651: Minimum Cost Path with Teleportations (Hard)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -3481,19 +3481,19 @@ Normal moves form a DAG where DP computes optimal paths in O(m * n). Because tel
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/28-January/3651-Minimum-Cost-Path-with-Teleportations/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/208-January/3651-Minimum-Cost-Path-with-Teleportations/solution.js
 
 🔗 LeetCode Source Code
 
@@ -3563,11 +3563,11 @@ Why can two consecutive teleportations without intermediate normal moves always 
 ## 📅 29 January 2026 — LeetCode 2976: Minimum Cost to Convert String I (Medium)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -3608,19 +3608,19 @@ Because character positions transform independently, the problem reduces to all-
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/29-January/2976-Minimum-Cost-to-Convert-String-I/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/209-January/2976-Minimum-Cost-to-Convert-String-I/solution.js
 
 🔗 LeetCode Source Code
 
@@ -3817,11 +3817,11 @@ Why does the constraint 'operations must be either disjoint or identical' enable
 ## 📅 31 January 2026 — LeetCode 744: Find Smallest Letter Greater Than Target (Easy)
 
 ### 1️⃣ Direct GitHub Links
-- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target
-- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/Solution.java
-- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.py
-- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.cpp
-- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.js
+- 📂 **Problem Folder & Detailed Documentation:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target
+- ☕ **Java Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/Solution.java
+- 🐍 **Python Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.py
+- ⚡ **C++ Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.cpp
+- 🌐 **JavaScript Solution:** https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.js
 
 ### 2️⃣ YouTube Video Title (NO EMOJIS)
 ```text
@@ -3862,19 +3862,19 @@ Because letters is sorted, we perform an upper bound binary search in O(log N) t
 05:20 Final Summary
 
 📂 Problem Folder & Detailed Documentation:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/tree/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target
 
 ☕ Java Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/Solution.java
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/Solution.java
 
 🐍 Python Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.py
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.py
 
 ⚡ C++ Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.cpp
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.cpp
 
 🌐 JavaScript Solution:
-https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/31-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.js
+https://github.com/CodeByTushu/CodeByTushu-LeetCode-Solutions/blob/main/solutions/January/301-January/744-Find-Smallest-Letter-Greater-Than-Target/solution.js
 
 🔗 LeetCode Source Code
 

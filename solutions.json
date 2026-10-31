@@ -1106,9 +1106,9 @@
     "formattedDate": "09 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "9-October",
+    "dayFolder": "09-October",
     "problemFolder": "1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
-    "folderPath": "solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
+    "folderPath": "solutions/October/09-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
@@ -1127,22 +1127,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java"
+        "relativePath": "solutions/October/09-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py"
+        "relativePath": "solutions/October/09-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp"
+        "relativePath": "solutions/October/09-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/9-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js"
+        "relativePath": "solutions/October/09-October/1541-Minimum-Insertions-to-Balance-a-Parentheses-String/solution.js"
       }
     }
   },
@@ -1155,9 +1155,9 @@
     "formattedDate": "08 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "8-October",
+    "dayFolder": "08-October",
     "problemFolder": "1021-Remove-Outermost-Parentheses",
-    "folderPath": "solutions/October/8-October/1021-Remove-Outermost-Parentheses",
+    "folderPath": "solutions/October/08-October/1021-Remove-Outermost-Parentheses",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-outermost-parentheses/",
@@ -1175,22 +1175,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/8-October/1021-Remove-Outermost-Parentheses/Solution.java"
+        "relativePath": "solutions/October/08-October/1021-Remove-Outermost-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/8-October/1021-Remove-Outermost-Parentheses/solution.py"
+        "relativePath": "solutions/October/08-October/1021-Remove-Outermost-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/8-October/1021-Remove-Outermost-Parentheses/solution.cpp"
+        "relativePath": "solutions/October/08-October/1021-Remove-Outermost-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/8-October/1021-Remove-Outermost-Parentheses/solution.js"
+        "relativePath": "solutions/October/08-October/1021-Remove-Outermost-Parentheses/solution.js"
       }
     }
   },
@@ -1203,9 +1203,9 @@
     "formattedDate": "07 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "7-October",
+    "dayFolder": "07-October",
     "problemFolder": "301-Remove-Invalid-Parentheses",
-    "folderPath": "solutions/October/7-October/301-Remove-Invalid-Parentheses",
+    "folderPath": "solutions/October/07-October/301-Remove-Invalid-Parentheses",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-invalid-parentheses/",
@@ -1225,22 +1225,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/7-October/301-Remove-Invalid-Parentheses/Solution.java"
+        "relativePath": "solutions/October/07-October/301-Remove-Invalid-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/7-October/301-Remove-Invalid-Parentheses/solution.py"
+        "relativePath": "solutions/October/07-October/301-Remove-Invalid-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/7-October/301-Remove-Invalid-Parentheses/solution.cpp"
+        "relativePath": "solutions/October/07-October/301-Remove-Invalid-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/7-October/301-Remove-Invalid-Parentheses/solution.js"
+        "relativePath": "solutions/October/07-October/301-Remove-Invalid-Parentheses/solution.js"
       }
     }
   },
@@ -1253,9 +1253,9 @@
     "formattedDate": "06 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "6-October",
+    "dayFolder": "06-October",
     "problemFolder": "921-Minimum-Add-to-Make-Parentheses-Valid",
-    "folderPath": "solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid",
+    "folderPath": "solutions/October/06-October/921-Minimum-Add-to-Make-Parentheses-Valid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
@@ -1274,22 +1274,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java"
+        "relativePath": "solutions/October/06-October/921-Minimum-Add-to-Make-Parentheses-Valid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py"
+        "relativePath": "solutions/October/06-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp"
+        "relativePath": "solutions/October/06-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/6-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js"
+        "relativePath": "solutions/October/06-October/921-Minimum-Add-to-Make-Parentheses-Valid/solution.js"
       }
     }
   },
@@ -1302,9 +1302,9 @@
     "formattedDate": "05 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "5-October",
+    "dayFolder": "05-October",
     "problemFolder": "856-Score-of-Parentheses",
-    "folderPath": "solutions/October/5-October/856-Score-of-Parentheses",
+    "folderPath": "solutions/October/05-October/856-Score-of-Parentheses",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/score-of-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/score-of-parentheses/",
@@ -1324,22 +1324,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/5-October/856-Score-of-Parentheses/Solution.java"
+        "relativePath": "solutions/October/05-October/856-Score-of-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/5-October/856-Score-of-Parentheses/solution.py"
+        "relativePath": "solutions/October/05-October/856-Score-of-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/5-October/856-Score-of-Parentheses/solution.cpp"
+        "relativePath": "solutions/October/05-October/856-Score-of-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/5-October/856-Score-of-Parentheses/solution.js"
+        "relativePath": "solutions/October/05-October/856-Score-of-Parentheses/solution.js"
       }
     }
   },
@@ -1352,9 +1352,9 @@
     "formattedDate": "04 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "4-October",
+    "dayFolder": "04-October",
     "problemFolder": "678-Valid-Parenthesis-String",
-    "folderPath": "solutions/October/4-October/678-Valid-Parenthesis-String",
+    "folderPath": "solutions/October/04-October/678-Valid-Parenthesis-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
     "leetcodeUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
@@ -1374,22 +1374,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/4-October/678-Valid-Parenthesis-String/Solution.java"
+        "relativePath": "solutions/October/04-October/678-Valid-Parenthesis-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/4-October/678-Valid-Parenthesis-String/solution.py"
+        "relativePath": "solutions/October/04-October/678-Valid-Parenthesis-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/4-October/678-Valid-Parenthesis-String/solution.cpp"
+        "relativePath": "solutions/October/04-October/678-Valid-Parenthesis-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/4-October/678-Valid-Parenthesis-String/solution.js"
+        "relativePath": "solutions/October/04-October/678-Valid-Parenthesis-String/solution.js"
       }
     }
   },
@@ -1402,9 +1402,9 @@
     "formattedDate": "03 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "3-October",
+    "dayFolder": "03-October",
     "problemFolder": "32-Longest-Valid-Parentheses",
-    "folderPath": "solutions/October/3-October/32-Longest-Valid-Parentheses",
+    "folderPath": "solutions/October/03-October/32-Longest-Valid-Parentheses",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
@@ -1423,22 +1423,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/3-October/32-Longest-Valid-Parentheses/Solution.java"
+        "relativePath": "solutions/October/03-October/32-Longest-Valid-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/3-October/32-Longest-Valid-Parentheses/solution.py"
+        "relativePath": "solutions/October/03-October/32-Longest-Valid-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/3-October/32-Longest-Valid-Parentheses/solution.cpp"
+        "relativePath": "solutions/October/03-October/32-Longest-Valid-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/3-October/32-Longest-Valid-Parentheses/solution.js"
+        "relativePath": "solutions/October/03-October/32-Longest-Valid-Parentheses/solution.js"
       }
     }
   },
@@ -1451,9 +1451,9 @@
     "formattedDate": "02 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "2-October",
+    "dayFolder": "02-October",
     "problemFolder": "22-Generate-Parentheses",
-    "folderPath": "solutions/October/2-October/22-Generate-Parentheses",
+    "folderPath": "solutions/October/02-October/22-Generate-Parentheses",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/generate-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
@@ -1472,22 +1472,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/2-October/22-Generate-Parentheses/Solution.java"
+        "relativePath": "solutions/October/02-October/22-Generate-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/2-October/22-Generate-Parentheses/solution.py"
+        "relativePath": "solutions/October/02-October/22-Generate-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/2-October/22-Generate-Parentheses/solution.cpp"
+        "relativePath": "solutions/October/02-October/22-Generate-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/2-October/22-Generate-Parentheses/solution.js"
+        "relativePath": "solutions/October/02-October/22-Generate-Parentheses/solution.js"
       }
     }
   },
@@ -1500,9 +1500,9 @@
     "formattedDate": "01 Oct 2026",
     "year": "2026",
     "month": "October",
-    "dayFolder": "1-October",
+    "dayFolder": "01-October",
     "problemFolder": "20-Valid-Parentheses",
-    "folderPath": "solutions/October/1-October/20-Valid-Parentheses",
+    "folderPath": "solutions/October/01-October/20-Valid-Parentheses",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/valid-parentheses/",
     "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
@@ -1520,22 +1520,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/October/1-October/20-Valid-Parentheses/Solution.java"
+        "relativePath": "solutions/October/01-October/20-Valid-Parentheses/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/October/1-October/20-Valid-Parentheses/solution.py"
+        "relativePath": "solutions/October/01-October/20-Valid-Parentheses/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/October/1-October/20-Valid-Parentheses/solution.cpp"
+        "relativePath": "solutions/October/01-October/20-Valid-Parentheses/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/October/1-October/20-Valid-Parentheses/solution.js"
+        "relativePath": "solutions/October/01-October/20-Valid-Parentheses/solution.js"
       }
     }
   },
@@ -2578,9 +2578,9 @@
     "formattedDate": "09 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "9-September",
+    "dayFolder": "09-September",
     "problemFolder": "3871-Count-Commas-in-Range-II",
-    "folderPath": "solutions/September/9-September/3871-Count-Commas-in-Range-II",
+    "folderPath": "solutions/September/09-September/3871-Count-Commas-in-Range-II",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/count-commas-in-range-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/count-commas-in-range-ii/",
@@ -2597,22 +2597,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/9-September/3871-Count-Commas-in-Range-II/Solution.java"
+        "relativePath": "solutions/September/09-September/3871-Count-Commas-in-Range-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/9-September/3871-Count-Commas-in-Range-II/solution.py"
+        "relativePath": "solutions/September/09-September/3871-Count-Commas-in-Range-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/9-September/3871-Count-Commas-in-Range-II/solution.cpp"
+        "relativePath": "solutions/September/09-September/3871-Count-Commas-in-Range-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/9-September/3871-Count-Commas-in-Range-II/solution.js"
+        "relativePath": "solutions/September/09-September/3871-Count-Commas-in-Range-II/solution.js"
       }
     }
   },
@@ -2625,9 +2625,9 @@
     "formattedDate": "08 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "8-September",
+    "dayFolder": "08-September",
     "problemFolder": "3870-Count-Commas-in-Range",
-    "folderPath": "solutions/September/8-September/3870-Count-Commas-in-Range",
+    "folderPath": "solutions/September/08-September/3870-Count-Commas-in-Range",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/count-commas-in-range/",
     "leetcodeUrl": "https://leetcode.com/problems/count-commas-in-range/",
@@ -2644,22 +2644,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/8-September/3870-Count-Commas-in-Range/Solution.java"
+        "relativePath": "solutions/September/08-September/3870-Count-Commas-in-Range/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/8-September/3870-Count-Commas-in-Range/solution.py"
+        "relativePath": "solutions/September/08-September/3870-Count-Commas-in-Range/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/8-September/3870-Count-Commas-in-Range/solution.cpp"
+        "relativePath": "solutions/September/08-September/3870-Count-Commas-in-Range/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/8-September/3870-Count-Commas-in-Range/solution.js"
+        "relativePath": "solutions/September/08-September/3870-Count-Commas-in-Range/solution.js"
       }
     }
   },
@@ -2672,9 +2672,9 @@
     "formattedDate": "07 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "7-September",
+    "dayFolder": "07-September",
     "problemFolder": "940-Distinct-Subsequences-II",
-    "folderPath": "solutions/September/7-September/940-Distinct-Subsequences-II",
+    "folderPath": "solutions/September/07-September/940-Distinct-Subsequences-II",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/distinct-subsequences-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/distinct-subsequences-ii/",
@@ -2692,22 +2692,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/Solution.java"
+        "relativePath": "solutions/September/07-September/940-Distinct-Subsequences-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/solution.py"
+        "relativePath": "solutions/September/07-September/940-Distinct-Subsequences-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/solution.cpp"
+        "relativePath": "solutions/September/07-September/940-Distinct-Subsequences-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/7-September/940-Distinct-Subsequences-II/solution.js"
+        "relativePath": "solutions/September/07-September/940-Distinct-Subsequences-II/solution.js"
       }
     }
   },
@@ -2720,9 +2720,9 @@
     "formattedDate": "06 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "6-September",
+    "dayFolder": "06-September",
     "problemFolder": "115-Distinct-Subsequences",
-    "folderPath": "solutions/September/6-September/115-Distinct-Subsequences",
+    "folderPath": "solutions/September/06-September/115-Distinct-Subsequences",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/distinct-subsequences/",
     "leetcodeUrl": "https://leetcode.com/problems/distinct-subsequences/",
@@ -2740,22 +2740,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/Solution.java"
+        "relativePath": "solutions/September/06-September/115-Distinct-Subsequences/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/solution.py"
+        "relativePath": "solutions/September/06-September/115-Distinct-Subsequences/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/solution.cpp"
+        "relativePath": "solutions/September/06-September/115-Distinct-Subsequences/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/6-September/115-Distinct-Subsequences/solution.js"
+        "relativePath": "solutions/September/06-September/115-Distinct-Subsequences/solution.js"
       }
     }
   },
@@ -2768,9 +2768,9 @@
     "formattedDate": "05 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "5-September",
+    "dayFolder": "05-September",
     "problemFolder": "3904-Smallest-Stable-Index-II",
-    "folderPath": "solutions/September/5-September/3904-Smallest-Stable-Index-II",
+    "folderPath": "solutions/September/05-September/3904-Smallest-Stable-Index-II",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/smallest-stable-index-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-ii/",
@@ -2788,22 +2788,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/Solution.java"
+        "relativePath": "solutions/September/05-September/3904-Smallest-Stable-Index-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/solution.py"
+        "relativePath": "solutions/September/05-September/3904-Smallest-Stable-Index-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/solution.cpp"
+        "relativePath": "solutions/September/05-September/3904-Smallest-Stable-Index-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/5-September/3904-Smallest-Stable-Index-II/solution.js"
+        "relativePath": "solutions/September/05-September/3904-Smallest-Stable-Index-II/solution.js"
       }
     }
   },
@@ -2816,9 +2816,9 @@
     "formattedDate": "04 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "4-September",
+    "dayFolder": "04-September",
     "problemFolder": "3903-Smallest-Stable-Index-I",
-    "folderPath": "solutions/September/4-September/3903-Smallest-Stable-Index-I",
+    "folderPath": "solutions/September/04-September/3903-Smallest-Stable-Index-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/smallest-stable-index-i/",
     "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-i/",
@@ -2836,22 +2836,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/Solution.java"
+        "relativePath": "solutions/September/04-September/3903-Smallest-Stable-Index-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/solution.py"
+        "relativePath": "solutions/September/04-September/3903-Smallest-Stable-Index-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/solution.cpp"
+        "relativePath": "solutions/September/04-September/3903-Smallest-Stable-Index-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/4-September/3903-Smallest-Stable-Index-I/solution.js"
+        "relativePath": "solutions/September/04-September/3903-Smallest-Stable-Index-I/solution.js"
       }
     }
   },
@@ -2864,9 +2864,9 @@
     "formattedDate": "03 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "3-September",
+    "dayFolder": "03-September",
     "problemFolder": "3876-Construct-Uniform-Parity-Array-II",
-    "folderPath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II",
+    "folderPath": "solutions/September/03-September/3876-Construct-Uniform-Parity-Array-II",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/construct-uniform-parity-array-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/construct-uniform-parity-array-ii/",
@@ -2885,22 +2885,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/Solution.java"
+        "relativePath": "solutions/September/03-September/3876-Construct-Uniform-Parity-Array-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/solution.py"
+        "relativePath": "solutions/September/03-September/3876-Construct-Uniform-Parity-Array-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/solution.cpp"
+        "relativePath": "solutions/September/03-September/3876-Construct-Uniform-Parity-Array-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/3-September/3876-Construct-Uniform-Parity-Array-II/solution.js"
+        "relativePath": "solutions/September/03-September/3876-Construct-Uniform-Parity-Array-II/solution.js"
       }
     }
   },
@@ -2913,9 +2913,9 @@
     "formattedDate": "02 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "2-September",
+    "dayFolder": "02-September",
     "problemFolder": "3875-Construct-Uniform-Parity-Array-I",
-    "folderPath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I",
+    "folderPath": "solutions/September/02-September/3875-Construct-Uniform-Parity-Array-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/construct-uniform-parity-array-i/",
     "leetcodeUrl": "https://leetcode.com/problems/construct-uniform-parity-array-i/",
@@ -2933,22 +2933,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/Solution.java"
+        "relativePath": "solutions/September/02-September/3875-Construct-Uniform-Parity-Array-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/solution.py"
+        "relativePath": "solutions/September/02-September/3875-Construct-Uniform-Parity-Array-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/solution.cpp"
+        "relativePath": "solutions/September/02-September/3875-Construct-Uniform-Parity-Array-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/2-September/3875-Construct-Uniform-Parity-Array-I/solution.js"
+        "relativePath": "solutions/September/02-September/3875-Construct-Uniform-Parity-Array-I/solution.js"
       }
     }
   },
@@ -2961,9 +2961,9 @@
     "formattedDate": "01 Sep 2026",
     "year": "2026",
     "month": "September",
-    "dayFolder": "1-September",
+    "dayFolder": "01-September",
     "problemFolder": "3568-Minimum-Moves-to-Clean-the-Classroom",
-    "folderPath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom",
+    "folderPath": "solutions/September/01-September/3568-Minimum-Moves-to-Clean-the-Classroom",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
@@ -2983,22 +2983,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/Solution.java"
+        "relativePath": "solutions/September/01-September/3568-Minimum-Moves-to-Clean-the-Classroom/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.py"
+        "relativePath": "solutions/September/01-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.cpp"
+        "relativePath": "solutions/September/01-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/September/1-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.js"
+        "relativePath": "solutions/September/01-September/3568-Minimum-Moves-to-Clean-the-Classroom/solution.js"
       }
     }
   },
@@ -4096,9 +4096,9 @@
     "formattedDate": "09 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "9-August",
+    "dayFolder": "09-August",
     "problemFolder": "1140-Stone-Game-II",
-    "folderPath": "solutions/August/9-August/1140-Stone-Game-II",
+    "folderPath": "solutions/August/09-August/1140-Stone-Game-II",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/stone-game-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/stone-game-ii/",
@@ -4119,22 +4119,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/9-August/1140-Stone-Game-II/Solution.java"
+        "relativePath": "solutions/August/09-August/1140-Stone-Game-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/9-August/1140-Stone-Game-II/solution.py"
+        "relativePath": "solutions/August/09-August/1140-Stone-Game-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/9-August/1140-Stone-Game-II/solution.cpp"
+        "relativePath": "solutions/August/09-August/1140-Stone-Game-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/9-August/1140-Stone-Game-II/solution.js"
+        "relativePath": "solutions/August/09-August/1140-Stone-Game-II/solution.js"
       }
     }
   },
@@ -4147,9 +4147,9 @@
     "formattedDate": "08 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "8-August",
+    "dayFolder": "08-August",
     "problemFolder": "3302-Find-the-Lexicographically-Smallest-Valid-Sequence",
-    "folderPath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence",
+    "folderPath": "solutions/August/08-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
     "leetcodeUrl": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
@@ -4169,22 +4169,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/Solution.java"
+        "relativePath": "solutions/August/08-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.py"
+        "relativePath": "solutions/August/08-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.cpp"
+        "relativePath": "solutions/August/08-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/8-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.js"
+        "relativePath": "solutions/August/08-August/3302-Find-the-Lexicographically-Smallest-Valid-Sequence/solution.js"
       }
     }
   },
@@ -4197,9 +4197,9 @@
     "formattedDate": "07 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "7-August",
+    "dayFolder": "07-August",
     "problemFolder": "3348-Smallest-Divisible-Digit-Product-II",
-    "folderPath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II",
+    "folderPath": "solutions/August/07-August/3348-Smallest-Divisible-Digit-Product-II",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
@@ -4219,22 +4219,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/Solution.java"
+        "relativePath": "solutions/August/07-August/3348-Smallest-Divisible-Digit-Product-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/solution.py"
+        "relativePath": "solutions/August/07-August/3348-Smallest-Divisible-Digit-Product-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/solution.cpp"
+        "relativePath": "solutions/August/07-August/3348-Smallest-Divisible-Digit-Product-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/7-August/3348-Smallest-Divisible-Digit-Product-II/solution.js"
+        "relativePath": "solutions/August/07-August/3348-Smallest-Divisible-Digit-Product-II/solution.js"
       }
     }
   },
@@ -4247,9 +4247,9 @@
     "formattedDate": "06 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "6-August",
+    "dayFolder": "06-August",
     "problemFolder": "3345-Smallest-Divisible-Digit-Product-I",
-    "folderPath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I",
+    "folderPath": "solutions/August/06-August/3345-Smallest-Divisible-Digit-Product-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
     "leetcodeUrl": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
@@ -4267,22 +4267,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/Solution.java"
+        "relativePath": "solutions/August/06-August/3345-Smallest-Divisible-Digit-Product-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/solution.py"
+        "relativePath": "solutions/August/06-August/3345-Smallest-Divisible-Digit-Product-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/solution.cpp"
+        "relativePath": "solutions/August/06-August/3345-Smallest-Divisible-Digit-Product-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/6-August/3345-Smallest-Divisible-Digit-Product-I/solution.js"
+        "relativePath": "solutions/August/06-August/3345-Smallest-Divisible-Digit-Product-I/solution.js"
       }
     }
   },
@@ -4295,9 +4295,9 @@
     "formattedDate": "05 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "5-August",
+    "dayFolder": "05-August",
     "problemFolder": "3310-Remove-Methods-From-Project",
-    "folderPath": "solutions/August/5-August/3310-Remove-Methods-From-Project",
+    "folderPath": "solutions/August/05-August/3310-Remove-Methods-From-Project",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/remove-methods-from-project/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-methods-from-project/",
@@ -4317,22 +4317,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/Solution.java"
+        "relativePath": "solutions/August/05-August/3310-Remove-Methods-From-Project/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/solution.py"
+        "relativePath": "solutions/August/05-August/3310-Remove-Methods-From-Project/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/solution.cpp"
+        "relativePath": "solutions/August/05-August/3310-Remove-Methods-From-Project/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/5-August/3310-Remove-Methods-From-Project/solution.js"
+        "relativePath": "solutions/August/05-August/3310-Remove-Methods-From-Project/solution.js"
       }
     }
   },
@@ -4345,9 +4345,9 @@
     "formattedDate": "04 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "4-August",
+    "dayFolder": "04-August",
     "problemFolder": "3731-Find-Missing-Elements",
-    "folderPath": "solutions/August/4-August/3731-Find-Missing-Elements",
+    "folderPath": "solutions/August/04-August/3731-Find-Missing-Elements",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/find-missing-elements/",
     "leetcodeUrl": "https://leetcode.com/problems/find-missing-elements/",
@@ -4366,22 +4366,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/Solution.java"
+        "relativePath": "solutions/August/04-August/3731-Find-Missing-Elements/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/solution.py"
+        "relativePath": "solutions/August/04-August/3731-Find-Missing-Elements/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/solution.cpp"
+        "relativePath": "solutions/August/04-August/3731-Find-Missing-Elements/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/4-August/3731-Find-Missing-Elements/solution.js"
+        "relativePath": "solutions/August/04-August/3731-Find-Missing-Elements/solution.js"
       }
     }
   },
@@ -4394,9 +4394,9 @@
     "formattedDate": "03 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "3-August",
+    "dayFolder": "03-August",
     "problemFolder": "1406-Stone-Game-III",
-    "folderPath": "solutions/August/3-August/1406-Stone-Game-III",
+    "folderPath": "solutions/August/03-August/1406-Stone-Game-III",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/stone-game-iii/",
     "leetcodeUrl": "https://leetcode.com/problems/stone-game-iii/",
@@ -4416,22 +4416,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/Solution.java"
+        "relativePath": "solutions/August/03-August/1406-Stone-Game-III/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/solution.py"
+        "relativePath": "solutions/August/03-August/1406-Stone-Game-III/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/solution.cpp"
+        "relativePath": "solutions/August/03-August/1406-Stone-Game-III/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/3-August/1406-Stone-Game-III/solution.js"
+        "relativePath": "solutions/August/03-August/1406-Stone-Game-III/solution.js"
       }
     }
   },
@@ -4444,9 +4444,9 @@
     "formattedDate": "02 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "2-August",
+    "dayFolder": "02-August",
     "problemFolder": "877-Stone-Game",
-    "folderPath": "solutions/August/2-August/877-Stone-Game",
+    "folderPath": "solutions/August/02-August/877-Stone-Game",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/stone-game/",
     "leetcodeUrl": "https://leetcode.com/problems/stone-game/",
@@ -4466,22 +4466,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/2-August/877-Stone-Game/Solution.java"
+        "relativePath": "solutions/August/02-August/877-Stone-Game/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/2-August/877-Stone-Game/solution.py"
+        "relativePath": "solutions/August/02-August/877-Stone-Game/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/2-August/877-Stone-Game/solution.cpp"
+        "relativePath": "solutions/August/02-August/877-Stone-Game/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/2-August/877-Stone-Game/solution.js"
+        "relativePath": "solutions/August/02-August/877-Stone-Game/solution.js"
       }
     }
   },
@@ -4494,9 +4494,9 @@
     "formattedDate": "01 Aug 2026",
     "year": "2026",
     "month": "August",
-    "dayFolder": "1-August",
+    "dayFolder": "01-August",
     "problemFolder": "486-Predict-the-Winner",
-    "folderPath": "solutions/August/1-August/486-Predict-the-Winner",
+    "folderPath": "solutions/August/01-August/486-Predict-the-Winner",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/predict-the-winner/",
     "leetcodeUrl": "https://leetcode.com/problems/predict-the-winner/",
@@ -4517,22 +4517,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/Solution.java"
+        "relativePath": "solutions/August/01-August/486-Predict-the-Winner/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.py"
+        "relativePath": "solutions/August/01-August/486-Predict-the-Winner/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.cpp"
+        "relativePath": "solutions/August/01-August/486-Predict-the-Winner/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/August/1-August/486-Predict-the-Winner/solution.js"
+        "relativePath": "solutions/August/01-August/486-Predict-the-Winner/solution.js"
       }
     }
   },
@@ -5639,9 +5639,9 @@
     "formattedDate": "09 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "9-July",
+    "dayFolder": "09-July",
     "problemFolder": "3532-Path-Existence-Queries-in-a-Graph-I",
-    "folderPath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I",
+    "folderPath": "solutions/July/09-July/3532-Path-Existence-Queries-in-a-Graph-I",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/path-existence-queries-in-a-graph-i/",
     "leetcodeUrl": "https://leetcode.com/problems/path-existence-queries-in-a-graph-i/",
@@ -5660,22 +5660,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/Solution.java"
+        "relativePath": "solutions/July/09-July/3532-Path-Existence-Queries-in-a-Graph-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.py"
+        "relativePath": "solutions/July/09-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.cpp"
+        "relativePath": "solutions/July/09-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/9-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.js"
+        "relativePath": "solutions/July/09-July/3532-Path-Existence-Queries-in-a-Graph-I/solution.js"
       }
     },
     "date": "09 July 2026"
@@ -5688,9 +5688,9 @@
     "formattedDate": "08 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "8-July",
+    "dayFolder": "08-July",
     "problemFolder": "3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II",
-    "folderPath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II",
+    "folderPath": "solutions/July/08-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
@@ -5710,22 +5710,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/Solution.java"
+        "relativePath": "solutions/July/08-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.py"
+        "relativePath": "solutions/July/08-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.cpp"
+        "relativePath": "solutions/July/08-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/8-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.js"
+        "relativePath": "solutions/July/08-July/3756-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-II/solution.js"
       }
     },
     "date": "08 July 2026"
@@ -5738,9 +5738,9 @@
     "formattedDate": "07 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "7-July",
+    "dayFolder": "07-July",
     "problemFolder": "3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I",
-    "folderPath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I",
+    "folderPath": "solutions/July/07-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
     "leetcodeUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
@@ -5758,22 +5758,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/Solution.java"
+        "relativePath": "solutions/July/07-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.py"
+        "relativePath": "solutions/July/07-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.cpp"
+        "relativePath": "solutions/July/07-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/7-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.js"
+        "relativePath": "solutions/July/07-July/3754-Concatenate-Non-Zero-Digits-and-Multiply-by-Sum-I/solution.js"
       }
     },
     "date": "07 July 2026"
@@ -5786,9 +5786,9 @@
     "formattedDate": "06 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "6-July",
+    "dayFolder": "06-July",
     "problemFolder": "1288-Remove-Covered-Intervals",
-    "folderPath": "solutions/July/6-July/1288-Remove-Covered-Intervals",
+    "folderPath": "solutions/July/06-July/1288-Remove-Covered-Intervals",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/remove-covered-intervals/",
     "leetcodeUrl": "https://leetcode.com/problems/remove-covered-intervals/",
@@ -5806,22 +5806,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/Solution.java"
+        "relativePath": "solutions/July/06-July/1288-Remove-Covered-Intervals/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.py"
+        "relativePath": "solutions/July/06-July/1288-Remove-Covered-Intervals/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.cpp"
+        "relativePath": "solutions/July/06-July/1288-Remove-Covered-Intervals/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/6-July/1288-Remove-Covered-Intervals/solution.js"
+        "relativePath": "solutions/July/06-July/1288-Remove-Covered-Intervals/solution.js"
       }
     },
     "date": "06 July 2026"
@@ -5834,9 +5834,9 @@
     "formattedDate": "05 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "5-July",
+    "dayFolder": "05-July",
     "problemFolder": "1301-Number-of-Paths-with-Max-Score",
-    "folderPath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score",
+    "folderPath": "solutions/July/05-July/1301-Number-of-Paths-with-Max-Score",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/number-of-paths-with-max-score/",
     "leetcodeUrl": "https://leetcode.com/problems/number-of-paths-with-max-score/",
@@ -5855,22 +5855,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/Solution.java"
+        "relativePath": "solutions/July/05-July/1301-Number-of-Paths-with-Max-Score/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.py"
+        "relativePath": "solutions/July/05-July/1301-Number-of-Paths-with-Max-Score/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.cpp"
+        "relativePath": "solutions/July/05-July/1301-Number-of-Paths-with-Max-Score/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/5-July/1301-Number-of-Paths-with-Max-Score/solution.js"
+        "relativePath": "solutions/July/05-July/1301-Number-of-Paths-with-Max-Score/solution.js"
       }
     },
     "date": "05 July 2026"
@@ -5883,9 +5883,9 @@
     "formattedDate": "04 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "4-July",
+    "dayFolder": "04-July",
     "problemFolder": "2492-Minimum-Score-of-a-Path-Between-Two-Cities",
-    "folderPath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities",
+    "folderPath": "solutions/July/04-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
@@ -5905,22 +5905,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/Solution.java"
+        "relativePath": "solutions/July/04-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.py"
+        "relativePath": "solutions/July/04-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.cpp"
+        "relativePath": "solutions/July/04-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/4-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.js"
+        "relativePath": "solutions/July/04-July/2492-Minimum-Score-of-a-Path-Between-Two-Cities/solution.js"
       }
     },
     "date": "04 July 2026"
@@ -5933,9 +5933,9 @@
     "formattedDate": "03 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "3-July",
+    "dayFolder": "03-July",
     "problemFolder": "3620-Network-Recovery-Pathways",
-    "folderPath": "solutions/July/3-July/3620-Network-Recovery-Pathways",
+    "folderPath": "solutions/July/03-July/3620-Network-Recovery-Pathways",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/network-recovery-pathways/",
     "leetcodeUrl": "https://leetcode.com/problems/network-recovery-pathways/",
@@ -5956,22 +5956,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/Solution.java"
+        "relativePath": "solutions/July/03-July/3620-Network-Recovery-Pathways/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.py"
+        "relativePath": "solutions/July/03-July/3620-Network-Recovery-Pathways/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.cpp"
+        "relativePath": "solutions/July/03-July/3620-Network-Recovery-Pathways/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/3-July/3620-Network-Recovery-Pathways/solution.js"
+        "relativePath": "solutions/July/03-July/3620-Network-Recovery-Pathways/solution.js"
       }
     },
     "date": "03 July 2026"
@@ -5984,9 +5984,9 @@
     "formattedDate": "02 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "2-July",
+    "dayFolder": "02-July",
     "problemFolder": "3286-Find-a-Safe-Walk-Through-a-Grid",
-    "folderPath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid",
+    "folderPath": "solutions/July/02-July/3286-Find-a-Safe-Walk-Through-a-Grid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
     "leetcodeUrl": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
@@ -6008,22 +6008,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/Solution.java"
+        "relativePath": "solutions/July/02-July/3286-Find-a-Safe-Walk-Through-a-Grid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.py"
+        "relativePath": "solutions/July/02-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.cpp"
+        "relativePath": "solutions/July/02-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/2-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.js"
+        "relativePath": "solutions/July/02-July/3286-Find-a-Safe-Walk-Through-a-Grid/solution.js"
       }
     },
     "date": "02 July 2026"
@@ -6036,9 +6036,9 @@
     "formattedDate": "01 Jul 2026",
     "year": "2026",
     "month": "July",
-    "dayFolder": "1-July",
+    "dayFolder": "01-July",
     "problemFolder": "2812-Find-the-Safest-Path-in-a-Grid",
-    "folderPath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid",
+    "folderPath": "solutions/July/01-July/2812-Find-the-Safest-Path-in-a-Grid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
     "leetcodeUrl": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
@@ -6058,22 +6058,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/Solution.java"
+        "relativePath": "solutions/July/01-July/2812-Find-the-Safest-Path-in-a-Grid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.py"
+        "relativePath": "solutions/July/01-July/2812-Find-the-Safest-Path-in-a-Grid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.cpp"
+        "relativePath": "solutions/July/01-July/2812-Find-the-Safest-Path-in-a-Grid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/July/1-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js"
+        "relativePath": "solutions/July/01-July/2812-Find-the-Safest-Path-in-a-Grid/solution.js"
       }
     },
     "date": "01 July 2026"
@@ -7118,9 +7118,9 @@
     "formattedDate": "09 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "9-June",
+    "dayFolder": "09-June",
     "problemFolder": "3689-Maximum-Total-Subarray-Value-I",
-    "folderPath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I",
+    "folderPath": "solutions/June/09-June/3689-Maximum-Total-Subarray-Value-I",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
     "leetcodeUrl": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
@@ -7139,22 +7139,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/Solution.java"
+        "relativePath": "solutions/June/09-June/3689-Maximum-Total-Subarray-Value-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/solution.py"
+        "relativePath": "solutions/June/09-June/3689-Maximum-Total-Subarray-Value-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/solution.cpp"
+        "relativePath": "solutions/June/09-June/3689-Maximum-Total-Subarray-Value-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/9-June/3689-Maximum-Total-Subarray-Value-I/solution.js"
+        "relativePath": "solutions/June/09-June/3689-Maximum-Total-Subarray-Value-I/solution.js"
       }
     }
   },
@@ -7167,9 +7167,9 @@
     "formattedDate": "08 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "8-June",
+    "dayFolder": "08-June",
     "problemFolder": "2161-Partition-Array-According-to-Given-Pivot",
-    "folderPath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot",
+    "folderPath": "solutions/June/08-June/2161-Partition-Array-According-to-Given-Pivot",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
     "leetcodeUrl": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
@@ -7188,22 +7188,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/Solution.java"
+        "relativePath": "solutions/June/08-June/2161-Partition-Array-According-to-Given-Pivot/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/solution.py"
+        "relativePath": "solutions/June/08-June/2161-Partition-Array-According-to-Given-Pivot/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/solution.cpp"
+        "relativePath": "solutions/June/08-June/2161-Partition-Array-According-to-Given-Pivot/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/8-June/2161-Partition-Array-According-to-Given-Pivot/solution.js"
+        "relativePath": "solutions/June/08-June/2161-Partition-Array-According-to-Given-Pivot/solution.js"
       }
     }
   },
@@ -7216,9 +7216,9 @@
     "formattedDate": "07 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "7-June",
+    "dayFolder": "07-June",
     "problemFolder": "2196-Create-Binary-Tree-From-Descriptions",
-    "folderPath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions",
+    "folderPath": "solutions/June/07-June/2196-Create-Binary-Tree-From-Descriptions",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
     "leetcodeUrl": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
@@ -7238,22 +7238,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/Solution.java"
+        "relativePath": "solutions/June/07-June/2196-Create-Binary-Tree-From-Descriptions/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/solution.py"
+        "relativePath": "solutions/June/07-June/2196-Create-Binary-Tree-From-Descriptions/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/solution.cpp"
+        "relativePath": "solutions/June/07-June/2196-Create-Binary-Tree-From-Descriptions/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/7-June/2196-Create-Binary-Tree-From-Descriptions/solution.js"
+        "relativePath": "solutions/June/07-June/2196-Create-Binary-Tree-From-Descriptions/solution.js"
       }
     }
   },
@@ -7266,9 +7266,9 @@
     "formattedDate": "06 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "6-June",
+    "dayFolder": "06-June",
     "problemFolder": "2574-Left-and-Right-Sum-Differences",
-    "folderPath": "solutions/June/6-June/2574-Left-and-Right-Sum-Differences",
+    "folderPath": "solutions/June/06-June/2574-Left-and-Right-Sum-Differences",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/left-and-right-sum-differences/",
     "leetcodeUrl": "https://leetcode.com/problems/left-and-right-sum-differences/",
@@ -7286,22 +7286,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/6-June/2574-Left-and-Right-Sum-Differences/Solution.java"
+        "relativePath": "solutions/June/06-June/2574-Left-and-Right-Sum-Differences/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/6-June/2574-Left-and-Right-Sum-Differences/solution.py"
+        "relativePath": "solutions/June/06-June/2574-Left-and-Right-Sum-Differences/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/6-June/2574-Left-and-Right-Sum-Differences/solution.cpp"
+        "relativePath": "solutions/June/06-June/2574-Left-and-Right-Sum-Differences/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/6-June/2574-Left-and-Right-Sum-Differences/solution.js"
+        "relativePath": "solutions/June/06-June/2574-Left-and-Right-Sum-Differences/solution.js"
       }
     }
   },
@@ -7314,9 +7314,9 @@
     "formattedDate": "05 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "5-June",
+    "dayFolder": "05-June",
     "problemFolder": "3753-Total-Waviness-of-Numbers-in-Range-II",
-    "folderPath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II",
+    "folderPath": "solutions/June/05-June/3753-Total-Waviness-of-Numbers-in-Range-II",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
@@ -7335,22 +7335,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/Solution.java"
+        "relativePath": "solutions/June/05-June/3753-Total-Waviness-of-Numbers-in-Range-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.py"
+        "relativePath": "solutions/June/05-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.cpp"
+        "relativePath": "solutions/June/05-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/5-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.js"
+        "relativePath": "solutions/June/05-June/3753-Total-Waviness-of-Numbers-in-Range-II/solution.js"
       }
     }
   },
@@ -7363,9 +7363,9 @@
     "formattedDate": "04 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "4-June",
+    "dayFolder": "04-June",
     "problemFolder": "3751-Total-Waviness-of-Numbers-in-Range-I",
-    "folderPath": "solutions/June/4-June/3751-Total-Waviness-of-Numbers-in-Range-I",
+    "folderPath": "solutions/June/04-June/3751-Total-Waviness-of-Numbers-in-Range-I",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/",
     "leetcodeUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/",
@@ -7384,22 +7384,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/4-June/3751-Total-Waviness-of-Numbers-in-Range-I/Solution.java"
+        "relativePath": "solutions/June/04-June/3751-Total-Waviness-of-Numbers-in-Range-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/4-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.py"
+        "relativePath": "solutions/June/04-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/4-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.cpp"
+        "relativePath": "solutions/June/04-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/4-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.js"
+        "relativePath": "solutions/June/04-June/3751-Total-Waviness-of-Numbers-in-Range-I/solution.js"
       }
     }
   },
@@ -7412,9 +7412,9 @@
     "formattedDate": "03 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "3-June",
+    "dayFolder": "03-June",
     "problemFolder": "3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II",
-    "folderPath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II",
+    "folderPath": "solutions/June/03-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/",
@@ -7434,22 +7434,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/Solution.java"
+        "relativePath": "solutions/June/03-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.py"
+        "relativePath": "solutions/June/03-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.cpp"
+        "relativePath": "solutions/June/03-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/3-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.js"
+        "relativePath": "solutions/June/03-June/3635-Earliest-Finish-Time-for-Land-and-Water-Rides-II/solution.js"
       }
     }
   },
@@ -7462,9 +7462,9 @@
     "formattedDate": "02 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "2-June",
+    "dayFolder": "02-June",
     "problemFolder": "3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I",
-    "folderPath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I",
+    "folderPath": "solutions/June/02-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/",
     "leetcodeUrl": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/",
@@ -7483,22 +7483,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/Solution.java"
+        "relativePath": "solutions/June/02-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.py"
+        "relativePath": "solutions/June/02-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.cpp"
+        "relativePath": "solutions/June/02-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/2-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.js"
+        "relativePath": "solutions/June/02-June/3633-Earliest-Finish-Time-for-Land-and-Water-Rides-I/solution.js"
       }
     }
   },
@@ -7511,9 +7511,9 @@
     "formattedDate": "01 Jun 2026",
     "year": "2026",
     "month": "June",
-    "dayFolder": "1-June",
+    "dayFolder": "01-June",
     "problemFolder": "2144-Minimum-Cost-of-Buying-Candies-With-Discount",
-    "folderPath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount",
+    "folderPath": "solutions/June/01-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
@@ -7532,22 +7532,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/Solution.java"
+        "relativePath": "solutions/June/01-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.py"
+        "relativePath": "solutions/June/01-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.cpp"
+        "relativePath": "solutions/June/01-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/June/1-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.js"
+        "relativePath": "solutions/June/01-June/2144-Minimum-Cost-of-Buying-Candies-With-Discount/solution.js"
       }
     }
   },
@@ -8635,9 +8635,9 @@
     "formattedDate": "09 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "9-May",
+    "dayFolder": "09-May",
     "problemFolder": "1914-Cyclically-Rotating-a-Grid",
-    "folderPath": "solutions/May/9-May/1914-Cyclically-Rotating-a-Grid",
+    "folderPath": "solutions/May/09-May/1914-Cyclically-Rotating-a-Grid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/cyclically-rotating-a-grid/",
     "leetcodeUrl": "https://leetcode.com/problems/cyclically-rotating-a-grid/",
@@ -8656,22 +8656,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/9-May/1914-Cyclically-Rotating-a-Grid/Solution.java"
+        "relativePath": "solutions/May/09-May/1914-Cyclically-Rotating-a-Grid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/9-May/1914-Cyclically-Rotating-a-Grid/solution.py"
+        "relativePath": "solutions/May/09-May/1914-Cyclically-Rotating-a-Grid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/9-May/1914-Cyclically-Rotating-a-Grid/solution.cpp"
+        "relativePath": "solutions/May/09-May/1914-Cyclically-Rotating-a-Grid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/9-May/1914-Cyclically-Rotating-a-Grid/solution.js"
+        "relativePath": "solutions/May/09-May/1914-Cyclically-Rotating-a-Grid/solution.js"
       }
     }
   },
@@ -8684,9 +8684,9 @@
     "formattedDate": "08 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "8-May",
+    "dayFolder": "08-May",
     "problemFolder": "3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation",
-    "folderPath": "solutions/May/8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation",
+    "folderPath": "solutions/May/08-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/",
@@ -8706,22 +8706,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/Solution.java"
+        "relativePath": "solutions/May/08-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.py"
+        "relativePath": "solutions/May/08-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.cpp"
+        "relativePath": "solutions/May/08-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/8-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.js"
+        "relativePath": "solutions/May/08-May/3629-Minimum-Jumps-to-Reach-End-via-Prime-Teleportation/solution.js"
       }
     }
   },
@@ -8734,9 +8734,9 @@
     "formattedDate": "07 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "7-May",
+    "dayFolder": "07-May",
     "problemFolder": "3660-Jump-Game-IX",
-    "folderPath": "solutions/May/7-May/3660-Jump-Game-IX",
+    "folderPath": "solutions/May/07-May/3660-Jump-Game-IX",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/jump-game-ix/",
     "leetcodeUrl": "https://leetcode.com/problems/jump-game-ix/",
@@ -8755,22 +8755,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/7-May/3660-Jump-Game-IX/Solution.java"
+        "relativePath": "solutions/May/07-May/3660-Jump-Game-IX/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/7-May/3660-Jump-Game-IX/solution.py"
+        "relativePath": "solutions/May/07-May/3660-Jump-Game-IX/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/7-May/3660-Jump-Game-IX/solution.cpp"
+        "relativePath": "solutions/May/07-May/3660-Jump-Game-IX/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/7-May/3660-Jump-Game-IX/solution.js"
+        "relativePath": "solutions/May/07-May/3660-Jump-Game-IX/solution.js"
       }
     }
   },
@@ -8783,9 +8783,9 @@
     "formattedDate": "06 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "6-May",
+    "dayFolder": "06-May",
     "problemFolder": "1861-Rotating-the-Box",
-    "folderPath": "solutions/May/6-May/1861-Rotating-the-Box",
+    "folderPath": "solutions/May/06-May/1861-Rotating-the-Box",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/rotating-the-box/",
     "leetcodeUrl": "https://leetcode.com/problems/rotating-the-box/",
@@ -8804,22 +8804,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/6-May/1861-Rotating-the-Box/Solution.java"
+        "relativePath": "solutions/May/06-May/1861-Rotating-the-Box/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/6-May/1861-Rotating-the-Box/solution.py"
+        "relativePath": "solutions/May/06-May/1861-Rotating-the-Box/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/6-May/1861-Rotating-the-Box/solution.cpp"
+        "relativePath": "solutions/May/06-May/1861-Rotating-the-Box/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/6-May/1861-Rotating-the-Box/solution.js"
+        "relativePath": "solutions/May/06-May/1861-Rotating-the-Box/solution.js"
       }
     }
   },
@@ -8832,9 +8832,9 @@
     "formattedDate": "05 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "5-May",
+    "dayFolder": "05-May",
     "problemFolder": "61-Rotate-List",
-    "folderPath": "solutions/May/5-May/61-Rotate-List",
+    "folderPath": "solutions/May/05-May/61-Rotate-List",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/rotate-list/",
     "leetcodeUrl": "https://leetcode.com/problems/rotate-list/",
@@ -8852,22 +8852,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/5-May/61-Rotate-List/Solution.java"
+        "relativePath": "solutions/May/05-May/61-Rotate-List/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/5-May/61-Rotate-List/solution.py"
+        "relativePath": "solutions/May/05-May/61-Rotate-List/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/5-May/61-Rotate-List/solution.cpp"
+        "relativePath": "solutions/May/05-May/61-Rotate-List/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/5-May/61-Rotate-List/solution.js"
+        "relativePath": "solutions/May/05-May/61-Rotate-List/solution.js"
       }
     }
   },
@@ -8880,9 +8880,9 @@
     "formattedDate": "04 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "4-May",
+    "dayFolder": "04-May",
     "problemFolder": "48-Rotate-Image",
-    "folderPath": "solutions/May/4-May/48-Rotate-Image",
+    "folderPath": "solutions/May/04-May/48-Rotate-Image",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/rotate-image/",
     "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
@@ -8901,22 +8901,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/4-May/48-Rotate-Image/Solution.java"
+        "relativePath": "solutions/May/04-May/48-Rotate-Image/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/4-May/48-Rotate-Image/solution.py"
+        "relativePath": "solutions/May/04-May/48-Rotate-Image/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/4-May/48-Rotate-Image/solution.cpp"
+        "relativePath": "solutions/May/04-May/48-Rotate-Image/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/4-May/48-Rotate-Image/solution.js"
+        "relativePath": "solutions/May/04-May/48-Rotate-Image/solution.js"
       }
     }
   },
@@ -8929,9 +8929,9 @@
     "formattedDate": "03 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "3-May",
+    "dayFolder": "03-May",
     "problemFolder": "796-Rotate-String",
-    "folderPath": "solutions/May/3-May/796-Rotate-String",
+    "folderPath": "solutions/May/03-May/796-Rotate-String",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/rotate-string/",
     "leetcodeUrl": "https://leetcode.com/problems/rotate-string/",
@@ -8949,22 +8949,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/3-May/796-Rotate-String/Solution.java"
+        "relativePath": "solutions/May/03-May/796-Rotate-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/3-May/796-Rotate-String/solution.py"
+        "relativePath": "solutions/May/03-May/796-Rotate-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/3-May/796-Rotate-String/solution.cpp"
+        "relativePath": "solutions/May/03-May/796-Rotate-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/3-May/796-Rotate-String/solution.js"
+        "relativePath": "solutions/May/03-May/796-Rotate-String/solution.js"
       }
     }
   },
@@ -8977,9 +8977,9 @@
     "formattedDate": "02 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "2-May",
+    "dayFolder": "02-May",
     "problemFolder": "788-Rotated-Digits",
-    "folderPath": "solutions/May/2-May/788-Rotated-Digits",
+    "folderPath": "solutions/May/02-May/788-Rotated-Digits",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/rotated-digits/",
     "leetcodeUrl": "https://leetcode.com/problems/rotated-digits/",
@@ -8997,22 +8997,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/2-May/788-Rotated-Digits/Solution.java"
+        "relativePath": "solutions/May/02-May/788-Rotated-Digits/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/2-May/788-Rotated-Digits/solution.py"
+        "relativePath": "solutions/May/02-May/788-Rotated-Digits/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/2-May/788-Rotated-Digits/solution.cpp"
+        "relativePath": "solutions/May/02-May/788-Rotated-Digits/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/2-May/788-Rotated-Digits/solution.js"
+        "relativePath": "solutions/May/02-May/788-Rotated-Digits/solution.js"
       }
     }
   },
@@ -9025,9 +9025,9 @@
     "formattedDate": "01 May 2026",
     "year": "2026",
     "month": "May",
-    "dayFolder": "1-May",
+    "dayFolder": "01-May",
     "problemFolder": "396-Rotate-Function",
-    "folderPath": "solutions/May/1-May/396-Rotate-Function",
+    "folderPath": "solutions/May/01-May/396-Rotate-Function",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/rotate-function/",
     "leetcodeUrl": "https://leetcode.com/problems/rotate-function/",
@@ -9046,22 +9046,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/May/1-May/396-Rotate-Function/Solution.java"
+        "relativePath": "solutions/May/01-May/396-Rotate-Function/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.py"
+        "relativePath": "solutions/May/01-May/396-Rotate-Function/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.cpp"
+        "relativePath": "solutions/May/01-May/396-Rotate-Function/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/May/1-May/396-Rotate-Function/solution.js"
+        "relativePath": "solutions/May/01-May/396-Rotate-Function/solution.js"
       }
     }
   },
@@ -10997,9 +10997,9 @@
     "formattedDate": "09 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "9-March",
+    "dayFolder": "09-March",
     "problemFolder": "3129-Find-All-Possible-Stable-Binary-Arrays-I",
-    "folderPath": "solutions/March/9-March/3129-Find-All-Possible-Stable-Binary-Arrays-I",
+    "folderPath": "solutions/March/09-March/3129-Find-All-Possible-Stable-Binary-Arrays-I",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/",
     "leetcodeUrl": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/",
@@ -11017,22 +11017,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/9-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/Solution.java"
+        "relativePath": "solutions/March/09-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/9-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/solution.py"
+        "relativePath": "solutions/March/09-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/9-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/solution.cpp"
+        "relativePath": "solutions/March/09-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/9-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/solution.js"
+        "relativePath": "solutions/March/09-March/3129-Find-All-Possible-Stable-Binary-Arrays-I/solution.js"
       }
     }
   },
@@ -11045,9 +11045,9 @@
     "formattedDate": "08 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "8-March",
+    "dayFolder": "08-March",
     "problemFolder": "1980-Find-Unique-Binary-String",
-    "folderPath": "solutions/March/8-March/1980-Find-Unique-Binary-String",
+    "folderPath": "solutions/March/08-March/1980-Find-Unique-Binary-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/find-unique-binary-string/",
     "leetcodeUrl": "https://leetcode.com/problems/find-unique-binary-string/",
@@ -11067,22 +11067,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/Solution.java"
+        "relativePath": "solutions/March/08-March/1980-Find-Unique-Binary-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/solution.py"
+        "relativePath": "solutions/March/08-March/1980-Find-Unique-Binary-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/solution.cpp"
+        "relativePath": "solutions/March/08-March/1980-Find-Unique-Binary-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/8-March/1980-Find-Unique-Binary-String/solution.js"
+        "relativePath": "solutions/March/08-March/1980-Find-Unique-Binary-String/solution.js"
       }
     }
   },
@@ -11095,9 +11095,9 @@
     "formattedDate": "07 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "7-March",
+    "dayFolder": "07-March",
     "problemFolder": "1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating",
-    "folderPath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating",
+    "folderPath": "solutions/March/07-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/",
@@ -11116,22 +11116,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/Solution.java"
+        "relativePath": "solutions/March/07-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.py"
+        "relativePath": "solutions/March/07-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.cpp"
+        "relativePath": "solutions/March/07-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/7-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.js"
+        "relativePath": "solutions/March/07-March/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating/solution.js"
       }
     }
   },
@@ -11144,9 +11144,9 @@
     "formattedDate": "06 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "6-March",
+    "dayFolder": "06-March",
     "problemFolder": "1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones",
-    "folderPath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones",
+    "folderPath": "solutions/March/06-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
     "leetcodeUrl": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
@@ -11164,22 +11164,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/Solution.java"
+        "relativePath": "solutions/March/06-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.py"
+        "relativePath": "solutions/March/06-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.cpp"
+        "relativePath": "solutions/March/06-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/6-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.js"
+        "relativePath": "solutions/March/06-March/1784-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/solution.js"
       }
     }
   },
@@ -11192,9 +11192,9 @@
     "formattedDate": "05 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "5-March",
+    "dayFolder": "05-March",
     "problemFolder": "1758-Minimum-Changes-To-Make-Alternating-Binary-String",
-    "folderPath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String",
+    "folderPath": "solutions/March/05-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
@@ -11212,22 +11212,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/Solution.java"
+        "relativePath": "solutions/March/05-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.py"
+        "relativePath": "solutions/March/05-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.cpp"
+        "relativePath": "solutions/March/05-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/5-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.js"
+        "relativePath": "solutions/March/05-March/1758-Minimum-Changes-To-Make-Alternating-Binary-String/solution.js"
       }
     }
   },
@@ -11240,9 +11240,9 @@
     "formattedDate": "04 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "4-March",
+    "dayFolder": "04-March",
     "problemFolder": "1582-Special-Positions-in-a-Binary-Matrix",
-    "folderPath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix",
+    "folderPath": "solutions/March/04-March/1582-Special-Positions-in-a-Binary-Matrix",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
     "leetcodeUrl": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
@@ -11261,22 +11261,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/Solution.java"
+        "relativePath": "solutions/March/04-March/1582-Special-Positions-in-a-Binary-Matrix/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.py"
+        "relativePath": "solutions/March/04-March/1582-Special-Positions-in-a-Binary-Matrix/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.cpp"
+        "relativePath": "solutions/March/04-March/1582-Special-Positions-in-a-Binary-Matrix/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/4-March/1582-Special-Positions-in-a-Binary-Matrix/solution.js"
+        "relativePath": "solutions/March/04-March/1582-Special-Positions-in-a-Binary-Matrix/solution.js"
       }
     }
   },
@@ -11289,9 +11289,9 @@
     "formattedDate": "03 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "3-March",
+    "dayFolder": "03-March",
     "problemFolder": "1545-Find-Kth-Bit-in-Nth-Binary-String",
-    "folderPath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String",
+    "folderPath": "solutions/March/03-March/1545-Find-Kth-Bit-in-Nth-Binary-String",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/",
     "leetcodeUrl": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/",
@@ -11311,22 +11311,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/Solution.java"
+        "relativePath": "solutions/March/03-March/1545-Find-Kth-Bit-in-Nth-Binary-String/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.py"
+        "relativePath": "solutions/March/03-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.cpp"
+        "relativePath": "solutions/March/03-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/3-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.js"
+        "relativePath": "solutions/March/03-March/1545-Find-Kth-Bit-in-Nth-Binary-String/solution.js"
       }
     }
   },
@@ -11339,9 +11339,9 @@
     "formattedDate": "02 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "2-March",
+    "dayFolder": "02-March",
     "problemFolder": "1536-Minimum-Swaps-to-Arrange-a-Binary-Grid",
-    "folderPath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid",
+    "folderPath": "solutions/March/02-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/",
@@ -11361,22 +11361,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/Solution.java"
+        "relativePath": "solutions/March/02-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.py"
+        "relativePath": "solutions/March/02-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.cpp"
+        "relativePath": "solutions/March/02-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/2-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.js"
+        "relativePath": "solutions/March/02-March/1536-Minimum-Swaps-to-Arrange-a-Binary-Grid/solution.js"
       }
     }
   },
@@ -11389,9 +11389,9 @@
     "formattedDate": "01 Mar 2026",
     "year": "2026",
     "month": "March",
-    "dayFolder": "1-March",
+    "dayFolder": "01-March",
     "problemFolder": "1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers",
-    "folderPath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers",
+    "folderPath": "solutions/March/01-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
     "leetcodeUrl": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
@@ -11410,22 +11410,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/Solution.java"
+        "relativePath": "solutions/March/01-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.py"
+        "relativePath": "solutions/March/01-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.cpp"
+        "relativePath": "solutions/March/01-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/March/1-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.js"
+        "relativePath": "solutions/March/01-March/1689-Partitioning-Into-Minimum-Number-Of-Deci-Binary-Numbers/solution.js"
       }
     }
   },
@@ -12366,9 +12366,9 @@
     "formattedDate": "09 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "9-February",
+    "dayFolder": "09-February",
     "problemFolder": "1382-Balance-a-Binary-Search-Tree",
-    "folderPath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree",
+    "folderPath": "solutions/February/09-February/1382-Balance-a-Binary-Search-Tree",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/balance-a-binary-search-tree/",
     "leetcodeUrl": "https://leetcode.com/problems/balance-a-binary-search-tree/",
@@ -12389,22 +12389,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/Solution.java"
+        "relativePath": "solutions/February/09-February/1382-Balance-a-Binary-Search-Tree/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/solution.py"
+        "relativePath": "solutions/February/09-February/1382-Balance-a-Binary-Search-Tree/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/solution.cpp"
+        "relativePath": "solutions/February/09-February/1382-Balance-a-Binary-Search-Tree/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/9-February/1382-Balance-a-Binary-Search-Tree/solution.js"
+        "relativePath": "solutions/February/09-February/1382-Balance-a-Binary-Search-Tree/solution.js"
       }
     }
   },
@@ -12417,9 +12417,9 @@
     "formattedDate": "08 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "8-February",
+    "dayFolder": "08-February",
     "problemFolder": "110-Balanced-Binary-Tree",
-    "folderPath": "solutions/February/8-February/110-Balanced-Binary-Tree",
+    "folderPath": "solutions/February/08-February/110-Balanced-Binary-Tree",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/balanced-binary-tree/",
     "leetcodeUrl": "https://leetcode.com/problems/balanced-binary-tree/",
@@ -12439,22 +12439,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/Solution.java"
+        "relativePath": "solutions/February/08-February/110-Balanced-Binary-Tree/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/solution.py"
+        "relativePath": "solutions/February/08-February/110-Balanced-Binary-Tree/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/solution.cpp"
+        "relativePath": "solutions/February/08-February/110-Balanced-Binary-Tree/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/8-February/110-Balanced-Binary-Tree/solution.js"
+        "relativePath": "solutions/February/08-February/110-Balanced-Binary-Tree/solution.js"
       }
     }
   },
@@ -12467,9 +12467,9 @@
     "formattedDate": "07 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "7-February",
+    "dayFolder": "07-February",
     "problemFolder": "1653-Minimum-Deletions-to-Make-String-Balanced",
-    "folderPath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced",
+    "folderPath": "solutions/February/07-February/1653-Minimum-Deletions-to-Make-String-Balanced",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/",
@@ -12490,22 +12490,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/Solution.java"
+        "relativePath": "solutions/February/07-February/1653-Minimum-Deletions-to-Make-String-Balanced/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.py"
+        "relativePath": "solutions/February/07-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.cpp"
+        "relativePath": "solutions/February/07-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/7-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.js"
+        "relativePath": "solutions/February/07-February/1653-Minimum-Deletions-to-Make-String-Balanced/solution.js"
       }
     }
   },
@@ -12518,9 +12518,9 @@
     "formattedDate": "06 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "6-February",
+    "dayFolder": "06-February",
     "problemFolder": "3634-Minimum-Removals-to-Balance-Array",
-    "folderPath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array",
+    "folderPath": "solutions/February/06-February/3634-Minimum-Removals-to-Balance-Array",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/minimum-removals-to-balance-array/",
     "leetcodeUrl": "https://leetcode.com/problems/minimum-removals-to-balance-array/",
@@ -12541,22 +12541,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/Solution.java"
+        "relativePath": "solutions/February/06-February/3634-Minimum-Removals-to-Balance-Array/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/solution.py"
+        "relativePath": "solutions/February/06-February/3634-Minimum-Removals-to-Balance-Array/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/solution.cpp"
+        "relativePath": "solutions/February/06-February/3634-Minimum-Removals-to-Balance-Array/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/6-February/3634-Minimum-Removals-to-Balance-Array/solution.js"
+        "relativePath": "solutions/February/06-February/3634-Minimum-Removals-to-Balance-Array/solution.js"
       }
     }
   },
@@ -12569,9 +12569,9 @@
     "formattedDate": "05 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "5-February",
+    "dayFolder": "05-February",
     "problemFolder": "3379-Transformed-Array",
-    "folderPath": "solutions/February/5-February/3379-Transformed-Array",
+    "folderPath": "solutions/February/05-February/3379-Transformed-Array",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/transformed-array/",
     "leetcodeUrl": "https://leetcode.com/problems/transformed-array/",
@@ -12590,22 +12590,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/5-February/3379-Transformed-Array/Solution.java"
+        "relativePath": "solutions/February/05-February/3379-Transformed-Array/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/5-February/3379-Transformed-Array/solution.py"
+        "relativePath": "solutions/February/05-February/3379-Transformed-Array/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/5-February/3379-Transformed-Array/solution.cpp"
+        "relativePath": "solutions/February/05-February/3379-Transformed-Array/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/5-February/3379-Transformed-Array/solution.js"
+        "relativePath": "solutions/February/05-February/3379-Transformed-Array/solution.js"
       }
     }
   },
@@ -12618,9 +12618,9 @@
     "formattedDate": "04 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "4-February",
+    "dayFolder": "04-February",
     "problemFolder": "3640-Trionic-Array-II",
-    "folderPath": "solutions/February/4-February/3640-Trionic-Array-II",
+    "folderPath": "solutions/February/04-February/3640-Trionic-Array-II",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/trionic-array-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/trionic-array-ii/",
@@ -12641,22 +12641,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/Solution.java"
+        "relativePath": "solutions/February/04-February/3640-Trionic-Array-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/solution.py"
+        "relativePath": "solutions/February/04-February/3640-Trionic-Array-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/solution.cpp"
+        "relativePath": "solutions/February/04-February/3640-Trionic-Array-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/4-February/3640-Trionic-Array-II/solution.js"
+        "relativePath": "solutions/February/04-February/3640-Trionic-Array-II/solution.js"
       }
     }
   },
@@ -12669,9 +12669,9 @@
     "formattedDate": "03 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "3-February",
+    "dayFolder": "03-February",
     "problemFolder": "3637-Trionic-Array-I",
-    "folderPath": "solutions/February/3-February/3637-Trionic-Array-I",
+    "folderPath": "solutions/February/03-February/3637-Trionic-Array-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/trionic-array-i/",
     "leetcodeUrl": "https://leetcode.com/problems/trionic-array-i/",
@@ -12690,22 +12690,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/3-February/3637-Trionic-Array-I/Solution.java"
+        "relativePath": "solutions/February/03-February/3637-Trionic-Array-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/3-February/3637-Trionic-Array-I/solution.py"
+        "relativePath": "solutions/February/03-February/3637-Trionic-Array-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/3-February/3637-Trionic-Array-I/solution.cpp"
+        "relativePath": "solutions/February/03-February/3637-Trionic-Array-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/3-February/3637-Trionic-Array-I/solution.js"
+        "relativePath": "solutions/February/03-February/3637-Trionic-Array-I/solution.js"
       }
     }
   },
@@ -12718,9 +12718,9 @@
     "formattedDate": "02 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "2-February",
+    "dayFolder": "02-February",
     "problemFolder": "3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II",
-    "folderPath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II",
+    "folderPath": "solutions/February/02-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/",
     "leetcodeUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/",
@@ -12740,22 +12740,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/Solution.java"
+        "relativePath": "solutions/February/02-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.py"
+        "relativePath": "solutions/February/02-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.cpp"
+        "relativePath": "solutions/February/02-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/2-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.js"
+        "relativePath": "solutions/February/02-February/3013-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-II/solution.js"
       }
     }
   },
@@ -12768,9 +12768,9 @@
     "formattedDate": "01 Feb 2026",
     "year": "2026",
     "month": "February",
-    "dayFolder": "1-February",
+    "dayFolder": "01-February",
     "problemFolder": "3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I",
-    "folderPath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I",
+    "folderPath": "solutions/February/01-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/",
     "leetcodeUrl": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/",
@@ -12789,22 +12789,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/Solution.java"
+        "relativePath": "solutions/February/01-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.py"
+        "relativePath": "solutions/February/01-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.cpp"
+        "relativePath": "solutions/February/01-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/February/1-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.js"
+        "relativePath": "solutions/February/01-February/3010-Divide-an-Array-Into-Subarrays-With-Minimum-Cost-I/solution.js"
       }
     }
   },
@@ -13901,9 +13901,9 @@
     "formattedDate": "09 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "9-January",
+    "dayFolder": "09-January",
     "problemFolder": "865-Smallest-Subtree-with-all-the-Deepest-Nodes",
-    "folderPath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes",
+    "folderPath": "solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/",
     "leetcodeUrl": "https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/",
@@ -13924,22 +13924,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java"
+        "relativePath": "solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py"
+        "relativePath": "solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp"
+        "relativePath": "solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/9-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js"
+        "relativePath": "solutions/January/09-January/865-Smallest-Subtree-with-all-the-Deepest-Nodes/solution.js"
       }
     }
   },
@@ -13952,9 +13952,9 @@
     "formattedDate": "08 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "8-January",
+    "dayFolder": "08-January",
     "problemFolder": "1458-Max-Dot-Product-of-Two-Subsequences",
-    "folderPath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences",
+    "folderPath": "solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/max-dot-product-of-two-subsequences/",
     "leetcodeUrl": "https://leetcode.com/problems/max-dot-product-of-two-subsequences/",
@@ -13972,22 +13972,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java"
+        "relativePath": "solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py"
+        "relativePath": "solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp"
+        "relativePath": "solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/8-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js"
+        "relativePath": "solutions/January/08-January/1458-Max-Dot-Product-of-Two-Subsequences/solution.js"
       }
     }
   },
@@ -14000,9 +14000,9 @@
     "formattedDate": "07 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "7-January",
+    "dayFolder": "07-January",
     "problemFolder": "1339-Maximum-Product-of-Splitted-Binary-Tree",
-    "folderPath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree",
+    "folderPath": "solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/",
     "leetcodeUrl": "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/",
@@ -14021,22 +14021,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java"
+        "relativePath": "solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py"
+        "relativePath": "solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp"
+        "relativePath": "solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/7-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js"
+        "relativePath": "solutions/January/07-January/1339-Maximum-Product-of-Splitted-Binary-Tree/solution.js"
       }
     }
   },
@@ -14049,9 +14049,9 @@
     "formattedDate": "06 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "6-January",
+    "dayFolder": "06-January",
     "problemFolder": "1161-Maximum-Level-Sum-of-a-Binary-Tree",
-    "folderPath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree",
+    "folderPath": "solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
     "leetcodeUrl": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
@@ -14071,22 +14071,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java"
+        "relativePath": "solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py"
+        "relativePath": "solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp"
+        "relativePath": "solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/6-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js"
+        "relativePath": "solutions/January/06-January/1161-Maximum-Level-Sum-of-a-Binary-Tree/solution.js"
       }
     }
   },
@@ -14099,9 +14099,9 @@
     "formattedDate": "05 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "5-January",
+    "dayFolder": "05-January",
     "problemFolder": "1975-Maximum-Matrix-Sum",
-    "folderPath": "solutions/January/5-January/1975-Maximum-Matrix-Sum",
+    "folderPath": "solutions/January/05-January/1975-Maximum-Matrix-Sum",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/maximum-matrix-sum/",
     "leetcodeUrl": "https://leetcode.com/problems/maximum-matrix-sum/",
@@ -14120,22 +14120,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/Solution.java"
+        "relativePath": "solutions/January/05-January/1975-Maximum-Matrix-Sum/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.py"
+        "relativePath": "solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.cpp"
+        "relativePath": "solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/5-January/1975-Maximum-Matrix-Sum/solution.js"
+        "relativePath": "solutions/January/05-January/1975-Maximum-Matrix-Sum/solution.js"
       }
     }
   },
@@ -14148,9 +14148,9 @@
     "formattedDate": "04 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "4-January",
+    "dayFolder": "04-January",
     "problemFolder": "1390-Four-Divisors",
-    "folderPath": "solutions/January/4-January/1390-Four-Divisors",
+    "folderPath": "solutions/January/04-January/1390-Four-Divisors",
     "difficulty": "Medium",
     "problemUrl": "https://leetcode.com/problems/four-divisors/",
     "leetcodeUrl": "https://leetcode.com/problems/four-divisors/",
@@ -14168,22 +14168,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/4-January/1390-Four-Divisors/Solution.java"
+        "relativePath": "solutions/January/04-January/1390-Four-Divisors/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/4-January/1390-Four-Divisors/solution.py"
+        "relativePath": "solutions/January/04-January/1390-Four-Divisors/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/4-January/1390-Four-Divisors/solution.cpp"
+        "relativePath": "solutions/January/04-January/1390-Four-Divisors/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/4-January/1390-Four-Divisors/solution.js"
+        "relativePath": "solutions/January/04-January/1390-Four-Divisors/solution.js"
       }
     }
   },
@@ -14196,9 +14196,9 @@
     "formattedDate": "03 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "3-January",
+    "dayFolder": "03-January",
     "problemFolder": "1411-Number-of-Ways-to-Paint-N-3-Grid",
-    "folderPath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid",
+    "folderPath": "solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid",
     "difficulty": "Hard",
     "problemUrl": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
     "leetcodeUrl": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
@@ -14216,22 +14216,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java"
+        "relativePath": "solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py"
+        "relativePath": "solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp"
+        "relativePath": "solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/3-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js"
+        "relativePath": "solutions/January/03-January/1411-Number-of-Ways-to-Paint-N-3-Grid/solution.js"
       }
     }
   },
@@ -14244,9 +14244,9 @@
     "formattedDate": "02 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "2-January",
+    "dayFolder": "02-January",
     "problemFolder": "961-N-Repeated-Element-in-Size-2N-Array",
-    "folderPath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array",
+    "folderPath": "solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
     "leetcodeUrl": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
@@ -14264,22 +14264,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java"
+        "relativePath": "solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py"
+        "relativePath": "solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp"
+        "relativePath": "solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/2-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js"
+        "relativePath": "solutions/January/02-January/961-N-Repeated-Element-in-Size-2N-Array/solution.js"
       }
     }
   },
@@ -14292,9 +14292,9 @@
     "formattedDate": "01 Jan 2026",
     "year": "2026",
     "month": "January",
-    "dayFolder": "1-January",
+    "dayFolder": "01-January",
     "problemFolder": "66-Plus-One",
-    "folderPath": "solutions/January/1-January/66-Plus-One",
+    "folderPath": "solutions/January/01-January/66-Plus-One",
     "difficulty": "Easy",
     "problemUrl": "https://leetcode.com/problems/plus-one/",
     "leetcodeUrl": "https://leetcode.com/problems/plus-one/",
@@ -14312,22 +14312,22 @@
       "java": {
         "name": "Java",
         "file": "Solution.java",
-        "relativePath": "solutions/January/1-January/66-Plus-One/Solution.java"
+        "relativePath": "solutions/January/01-January/66-Plus-One/Solution.java"
       },
       "python": {
         "name": "Python",
         "file": "solution.py",
-        "relativePath": "solutions/January/1-January/66-Plus-One/solution.py"
+        "relativePath": "solutions/January/01-January/66-Plus-One/solution.py"
       },
       "cpp": {
         "name": "C++",
         "file": "solution.cpp",
-        "relativePath": "solutions/January/1-January/66-Plus-One/solution.cpp"
+        "relativePath": "solutions/January/01-January/66-Plus-One/solution.cpp"
       },
       "javascript": {
         "name": "JavaScript",
         "file": "solution.js",
-        "relativePath": "solutions/January/1-January/66-Plus-One/solution.js"
+        "relativePath": "solutions/January/01-January/66-Plus-One/solution.js"
       }
     }
   }

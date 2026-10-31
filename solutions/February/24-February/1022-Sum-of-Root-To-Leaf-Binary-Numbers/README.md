@@ -3,7 +3,7 @@
 - **Publication Date:** 24 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Hg9QT2_Jq30?si=kSLv23RshOsewNlS)
 
 ---
 

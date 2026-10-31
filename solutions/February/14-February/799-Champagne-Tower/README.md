@@ -3,7 +3,7 @@
 - **Publication Date:** 14 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/champagne-tower/](https://leetcode.com/problems/champagne-tower/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/0nnCxdoqgFU?si=_QFEzGNNR-wHjenV)
 
 ---
 

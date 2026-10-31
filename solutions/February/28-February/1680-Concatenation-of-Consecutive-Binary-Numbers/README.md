@@ -3,7 +3,7 @@
 - **Publication Date:** 28 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/x253rjBtIGk?si=YK0wgCwnhl-Q-7VN)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 12 March 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/](https://leetcode.com/problems/maximize-spanning-tree-stability-with-Upgrades/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/LPDPv_oHKyw?si=H0oxdjeA6P6TagqZ)
 
 ---
 

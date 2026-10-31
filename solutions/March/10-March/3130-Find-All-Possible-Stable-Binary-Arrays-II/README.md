@@ -3,7 +3,7 @@
 - **Publication Date:** 10 March 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/COkWa38TB30?si=6nDRdcKOALTAz_oo)
 
 ---
 

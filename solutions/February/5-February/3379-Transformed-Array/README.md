@@ -3,7 +3,7 @@
 - **Publication Date:** 05 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/transformed-array/](https://leetcode.com/problems/transformed-array/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/dK_DdeXlt_w?si=fL0LMDIg0Z3la1zG)
 
 ---
 

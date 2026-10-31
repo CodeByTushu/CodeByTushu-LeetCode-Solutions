@@ -3,7 +3,7 @@
 - **Publication Date:** 25 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/equal-sum-grid-partition-i/](https://leetcode.com/problems/equal-sum-grid-partition-i/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/fjDBb-2PJZM?si=3FBqVTeUVRcxgjoc)
 
 ---
 

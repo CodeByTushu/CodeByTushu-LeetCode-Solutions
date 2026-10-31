@@ -3,7 +3,7 @@
 - **Publication Date:** 23 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/-DyeWqkVQxE?si=uUNwp4XTwZyIOlG9)
 
 ---
 

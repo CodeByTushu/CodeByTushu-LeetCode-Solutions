@@ -3,7 +3,7 @@
 - **Publication Date:** 08 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/find-unique-binary-string/](https://leetcode.com/problems/find-unique-binary-string/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/kBxycqLcwjs?si=K6TZ2i66lt-yQFa8)
 
 ---
 

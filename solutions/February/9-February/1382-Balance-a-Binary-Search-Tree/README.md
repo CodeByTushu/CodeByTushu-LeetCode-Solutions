@@ -3,7 +3,7 @@
 - **Publication Date:** 09 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/balance-a-binary-search-tree/](https://leetcode.com/problems/balance-a-binary-search-tree/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Ldfk-A3PtDY?si=7yOq7Ez0qjQvfbxY)
 
 ---
 

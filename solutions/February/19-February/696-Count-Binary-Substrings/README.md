@@ -3,7 +3,7 @@
 - **Publication Date:** 19 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/count-binary-substrings/](https://leetcode.com/problems/count-binary-substrings/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/qBW3EA_i-B0?si=51ayj9IggBiX9xBt)
 
 ---
 

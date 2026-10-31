@@ -3,7 +3,7 @@
 - **Publication Date:** 08 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/balanced-binary-tree/](https://leetcode.com/problems/balanced-binary-tree/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/M7lyfF22fWw?si=VwLy8UhPqLEVP-W7)
 
 ---
 

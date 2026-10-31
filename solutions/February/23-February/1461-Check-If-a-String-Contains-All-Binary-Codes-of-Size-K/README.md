@@ -3,7 +3,7 @@
 - **Publication Date:** 23 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/TfaB30yqMSE?si=BJ94-HDxZOVlB3QS)
 
 ---
 

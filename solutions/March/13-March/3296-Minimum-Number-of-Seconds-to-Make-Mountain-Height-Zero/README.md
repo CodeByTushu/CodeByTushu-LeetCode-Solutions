@@ -3,7 +3,7 @@
 - **Publication Date:** 13 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/Ox-UkxSgQ2c?si=0jddr3GE0_HxBbJM)
 
 ---
 

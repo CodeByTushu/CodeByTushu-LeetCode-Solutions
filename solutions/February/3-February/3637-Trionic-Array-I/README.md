@@ -3,7 +3,7 @@
 - **Publication Date:** 03 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/trionic-array-i/](https://leetcode.com/problems/trionic-array-i/)
-- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX)
 
 ---
 
@@ -95,4 +95,4 @@ Return `true` if `nums` is trionic, otherwise return `false`.
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu)
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/vY-MXcxkmME?si=gkg7UOpqrHuMgZmX)

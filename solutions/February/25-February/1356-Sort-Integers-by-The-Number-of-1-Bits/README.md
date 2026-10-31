@@ -3,7 +3,7 @@
 - **Publication Date:** 25 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/WRLE1EOviQM?si=vHBuKEBGE5lfQ90n)
 
 ---
 

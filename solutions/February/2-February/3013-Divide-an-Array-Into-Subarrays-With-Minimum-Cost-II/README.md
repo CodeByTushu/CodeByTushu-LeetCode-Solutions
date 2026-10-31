@@ -3,7 +3,7 @@
 - **Publication Date:** 02 February 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/)
-- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/hFWwaOrL5is?si=Z8XotQ-BuvflPYsM)
 
 ---
 
@@ -118,4 +118,4 @@ To evaluate the sum of the $m = k - 1$ smallest elements in a sliding window of 
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu)
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/hFWwaOrL5is?si=Z8XotQ-BuvflPYsM)

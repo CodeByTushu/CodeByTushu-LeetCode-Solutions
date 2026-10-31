@@ -3,7 +3,7 @@
 - **Publication Date:** 24 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/construct-product-matrix/](https://leetcode.com/problems/construct-product-matrix/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/AwB8Ly6ns5w?si=mAGjB2D2yw06P6Aq)
 
 ---
 

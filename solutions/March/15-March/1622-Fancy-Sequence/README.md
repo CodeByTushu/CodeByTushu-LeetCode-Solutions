@@ -3,7 +3,7 @@
 - **Publication Date:** 15 March 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/fancy-sequence/](https://leetcode.com/problems/fancy-sequence/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/19NAOdlMwLs?si=XxJ8wLFWJJjn7-Hh)
 
 ---
 

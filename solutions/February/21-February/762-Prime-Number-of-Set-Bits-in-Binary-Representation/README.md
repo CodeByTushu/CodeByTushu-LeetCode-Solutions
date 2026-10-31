@@ -3,7 +3,7 @@
 - **Publication Date:** 21 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/4G9uYb_jTJI?si=t9VoZc-2UOQkPfMf)
 
 ---
 

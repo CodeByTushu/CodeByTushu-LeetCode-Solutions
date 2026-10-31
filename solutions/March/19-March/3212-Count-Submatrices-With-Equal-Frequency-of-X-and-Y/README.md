@@ -3,7 +3,7 @@
 - **Publication Date:** 19 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/77kwNf-CB04?si=VLe2Td1mBby1FI0Z)
 
 ---
 

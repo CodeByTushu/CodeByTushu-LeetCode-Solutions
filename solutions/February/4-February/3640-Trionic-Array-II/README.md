@@ -3,7 +3,7 @@
 - **Publication Date:** 04 February 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/trionic-array-ii/](https://leetcode.com/problems/trionic-array-ii/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ILAiBS_P3qg?si=_mjUVv9lkcdvm2pp)
 
 ---
 

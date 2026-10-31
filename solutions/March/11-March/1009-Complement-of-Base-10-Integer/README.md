@@ -3,7 +3,7 @@
 - **Publication Date:** 11 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/complement-of-base-10-integer/](https://leetcode.com/problems/complement-of-base-10-integer/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/_W2BeP3OtdQ?si=flJ0PowFN8k1WwaY)
 
 ---
 

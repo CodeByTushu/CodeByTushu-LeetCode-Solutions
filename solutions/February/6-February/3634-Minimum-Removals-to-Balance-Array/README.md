@@ -3,7 +3,7 @@
 - **Publication Date:** 06 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-removals-to-balance-array/](https://leetcode.com/problems/minimum-removals-to-balance-array/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/s01Ekh72fRo?si=fqTtMVWwkaAMCa5A)
 
 ---
 

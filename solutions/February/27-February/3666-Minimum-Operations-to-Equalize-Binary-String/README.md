@@ -3,7 +3,7 @@
 - **Publication Date:** 27 February 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3-SY5RkIguk?si=M730V-OM_rnVhCuH)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 03 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IlLYIaEiPEc?si=ahG7inuW7edfhFji)
 
 ---
 

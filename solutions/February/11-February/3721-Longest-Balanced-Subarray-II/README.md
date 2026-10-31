@@ -3,7 +3,7 @@
 - **Publication Date:** 11 February 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/longest-balanced-subarray-ii/](https://leetcode.com/problems/longest-balanced-subarray-ii/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zIGF1-0a6Xs?si=6J-JbM2hBqGdd6-S)
 
 ---
 

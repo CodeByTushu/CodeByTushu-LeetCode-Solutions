@@ -3,7 +3,7 @@
 - **Publication Date:** 14 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/hsP8FsKfNms?si=CQPXAV05LTyOqLSF)
 
 ---
 

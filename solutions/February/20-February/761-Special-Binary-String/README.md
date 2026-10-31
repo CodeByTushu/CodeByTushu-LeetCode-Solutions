@@ -3,7 +3,7 @@
 - **Publication Date:** 20 February 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/special-binary-string/](https://leetcode.com/problems/special-binary-string/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ykWkEIT3ysk?si=4TBEcjDq59ys6r9X)
 
 ---
 

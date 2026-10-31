@@ -3,7 +3,7 @@
 - **Publication Date:** 16 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/reverse-bits/](https://leetcode.com/problems/reverse-bits/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/vMPfJ8aewI8?si=VGvxu1dHWyA7nciX)
 
 ---
 

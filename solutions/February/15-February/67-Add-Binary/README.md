@@ -3,7 +3,7 @@
 - **Publication Date:** 15 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/add-binary/](https://leetcode.com/problems/add-binary/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/wu_CZSIhVF8?si=ULwJ9TCNJCRmXTGR)
 
 ---
 

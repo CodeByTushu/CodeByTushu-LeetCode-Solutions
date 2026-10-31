@@ -3,7 +3,7 @@
 - **Publication Date:** 13 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/longest-balanced-substring-ii/](https://leetcode.com/problems/longest-balanced-substring-ii/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/4R2gCvMxe6k?si=nbcN0VsOjDpzUnEB)
 
 ---
 

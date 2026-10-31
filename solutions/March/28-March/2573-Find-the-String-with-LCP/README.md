@@ -3,7 +3,7 @@
 - **Publication Date:** 28 March 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/find-the-string-with-lcp/](https://leetcode.com/problems/find-the-string-with-lcp/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/IQqdMqcK1U8?si=4sxT_aNp543wvrT8)
 
 ---
 

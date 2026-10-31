@@ -3,7 +3,7 @@
 - **Publication Date:** 31 March 2026
 - **Difficulty:** Hard
 - **Problem Link:** [https://leetcode.com/problems/lexicographically-smallest-generated-string/](https://leetcode.com/problems/lexicographically-smallest-generated-string/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/PHahYN5YCvQ?si=2PurASGKpPkknsbz)
 
 ---
 

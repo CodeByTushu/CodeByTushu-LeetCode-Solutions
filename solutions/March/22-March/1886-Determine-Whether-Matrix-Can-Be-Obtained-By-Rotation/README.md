@@ -3,7 +3,7 @@
 - **Publication Date:** 22 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/KSfTlM9VgtQ?si=wbU6LVYQz06IWVom)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 17 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/largest-submatrix-with-rearrangements/](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/dAz9oaTKglQ?si=4G_EHN3Ibu90KcW_)
 
 ---
 

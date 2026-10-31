@@ -3,7 +3,7 @@
 - **Publication Date:** 20 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/bOQrKf_2RS4?si=udLQwDtKJaHeksa9)
 
 ---
 

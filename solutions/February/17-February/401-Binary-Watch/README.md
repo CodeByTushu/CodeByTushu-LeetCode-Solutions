@@ -3,7 +3,7 @@
 - **Publication Date:** 17 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/binary-watch/](https://leetcode.com/problems/binary-watch/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/MFMzkExKePo?si=0Oc9r8EaDZSt6Eq4)
 
 ---
 

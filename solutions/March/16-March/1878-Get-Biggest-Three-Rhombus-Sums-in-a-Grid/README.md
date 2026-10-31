@@ -3,7 +3,7 @@
 - **Publication Date:** 16 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/4yn1gUNGlKA?si=iH_mLmxuAZEf2eYs)
 
 ---
 

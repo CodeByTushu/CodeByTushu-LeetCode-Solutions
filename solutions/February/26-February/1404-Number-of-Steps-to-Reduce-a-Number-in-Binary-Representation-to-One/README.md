@@ -3,7 +3,7 @@
 - **Publication Date:** 26 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zVUSLtnoHS4?si=8_8rANJHWN_aYf83)
 
 ---
 

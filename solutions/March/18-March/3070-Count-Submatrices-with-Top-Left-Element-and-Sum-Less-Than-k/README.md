@@ -3,7 +3,7 @@
 - **Publication Date:** 18 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/qu8XnFGomTE?si=2OHYNvUI35kshvPf)
 
 ---
 

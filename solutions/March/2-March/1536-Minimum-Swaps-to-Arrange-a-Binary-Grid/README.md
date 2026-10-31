@@ -3,7 +3,7 @@
 - **Publication Date:** 02 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/2LJLLMfp4k0?si=U9zyfFohZCRdejDl)
 
 ---
 

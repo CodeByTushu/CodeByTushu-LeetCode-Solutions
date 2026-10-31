@@ -3,7 +3,7 @@
 - **Publication Date:** 29 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zlIdQF_S5Ag?si=En4U15Arw7uDfuZp)
 
 ---
 

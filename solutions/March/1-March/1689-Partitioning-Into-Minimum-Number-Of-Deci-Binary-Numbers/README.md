@@ -3,7 +3,7 @@
 - **Publication Date:** 01 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/3DiNiDlYOrQ?si=w4X-w63V9R8Sx51n)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 07 March 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/o56kFAuCEVo?si=jjCQFmMHWSTFiZh6)
 
 ---
 

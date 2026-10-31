@@ -3,7 +3,7 @@
 - **Publication Date:** 05 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/gTTz1vj-8Pg?si=tAYlAA3l84kFy57n)
 
 ---
 

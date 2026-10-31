@@ -3,7 +3,7 @@
 - **Publication Date:** 18 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/binary-number-with-alternating-bits/](https://leetcode.com/problems/binary-number-with-alternating-bits/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/zp-G8ooihyI?si=OGkxPTeyJqKLKfyu)
 
 ---
 

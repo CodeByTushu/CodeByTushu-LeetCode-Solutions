@@ -3,7 +3,7 @@
 - **Publication Date:** 27 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/ZEbsF_RRncI?si=SP0ppPsNVpjt5xx_)
 
 ---
 

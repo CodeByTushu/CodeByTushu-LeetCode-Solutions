@@ -3,7 +3,7 @@
 - **Publication Date:** 07 February 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/V-X5l_rWJe4?si=K2o8Ao3JKudyTgxd)
 
 ---
 

@@ -3,7 +3,7 @@
 - **Publication Date:** 01 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/)
-- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QaqpaMoCl3c)
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf)
 
 ---
 
@@ -102,4 +102,4 @@ Return the **minimum possible sum** of the cost of these subarrays.
 
 ## Video Explanation
 
-- 🎥 **Watch the full step-by-step video solution on YouTube:** [CodeByTushu YouTube Channel](https://www.youtube.com/@codebytushu)
+- 🎥 **Watch the full step-by-step video solution on YouTube:** [Watch Video on YouTube](https://youtu.be/f50mXOXajLI?si=Su6nVcR0QtGRDKhf)

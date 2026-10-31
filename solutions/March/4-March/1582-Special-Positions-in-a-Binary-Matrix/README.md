@@ -3,7 +3,7 @@
 - **Publication Date:** 04 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/special-positions-in-a-binary-matrix/](https://leetcode.com/problems/special-positions-in-a-binary-matrix/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/QvvFfL_Qy78?si=MWMStyihCwH6eKOX)
 
 ---
 

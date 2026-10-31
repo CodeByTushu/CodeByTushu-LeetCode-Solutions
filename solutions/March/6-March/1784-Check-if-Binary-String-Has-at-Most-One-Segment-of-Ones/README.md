@@ -3,7 +3,7 @@
 - **Publication Date:** 06 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/check-if-binary-String-has-at-most-one-segment-of-ones/](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/uwKtmEBGEno?si=V4zMS3yiD9EwcuTN)
 
 ---
 

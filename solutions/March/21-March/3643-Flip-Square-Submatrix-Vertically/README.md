@@ -3,7 +3,7 @@
 - **Publication Date:** 21 March 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/flip-square-submatrix-vertically/](https://leetcode.com/problems/flip-square-submatrix-vertically/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/nbEWFP5Eb-k?si=lb8z3Mu1OpI-3M4R)
 
 ---
 

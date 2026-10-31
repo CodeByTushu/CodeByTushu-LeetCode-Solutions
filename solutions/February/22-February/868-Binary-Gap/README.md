@@ -3,7 +3,7 @@
 - **Publication Date:** 22 February 2026
 - **Difficulty:** Easy
 - **Problem Link:** [https://leetcode.com/problems/binary-gap/](https://leetcode.com/problems/binary-gap/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch on YouTube](https://youtu.be/NlGe0aXmClU?si=Dw-IYFmtrNwg-nOv)
 
 ---
 

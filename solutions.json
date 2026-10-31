@@ -9905,6 +9905,53 @@
     }
   },
   {
+    "id": 1848,
+    "title": "Minimum Distance to the Target Element",
+    "slug": "minimum-distance-to-the-target-element",
+    "date": "13 April 2026",
+    "dateIso": "2026-04-13",
+    "formattedDate": "13 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "13-April",
+    "problemFolder": "1848-Minimum-Distance-to-the-Target-Element",
+    "folderPath": "solutions/April/13-April/1848-Minimum-Distance-to-the-Target-Element",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-distance-to-the-target-element/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-distance-to-the-target-element/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array"
+    ],
+    "summary": "Find an index i where nums[i] == target such that |i - start| is minimized.",
+    "approach": "Perform a single linear scan over the array to locate all occurrences of target and update the minimum absolute distance |i - start| with early exit when distance reaches 0.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/13-April/1848-Minimum-Distance-to-the-Target-Element/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/13-April/1848-Minimum-Distance-to-the-Target-Element/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/13-April/1848-Minimum-Distance-to-the-Target-Element/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/13-April/1848-Minimum-Distance-to-the-Target-Element/solution.js"
+      }
+    }
+  },
+  {
     "id": 1320,
     "title": "Minimum Distance to Type a Word Using Two Fingers",
     "slug": "minimum-distance-to-type-a-word-using-two-fingers",

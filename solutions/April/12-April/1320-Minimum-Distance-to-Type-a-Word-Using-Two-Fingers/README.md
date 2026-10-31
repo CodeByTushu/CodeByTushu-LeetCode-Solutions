@@ -107,6 +107,12 @@ When typing the current letter $\text{curr} = \text{word}[i] - 'A'$:
 
 ### Java ☕
 ```java
+/**
+ * Problem: LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.Arrays;
 
 class Solution {
@@ -124,9 +130,11 @@ class Solution {
             for (int j = 0; j < 27; j++) {
                 if (dp[j] == Integer.MAX_VALUE) continue;
 
+                // Case 1: finger at prev moves to curr, other finger remains at j
                 int cost1 = dp[j] + dist(prev, curr);
                 nextDp[j] = Math.min(nextDp[j], cost1);
 
+                // Case 2: finger at j moves to curr, finger at prev becomes other finger
                 int cost2 = dp[j] + dist(j, curr);
                 nextDp[prev] = Math.min(nextDp[prev], cost2);
             }
@@ -152,6 +160,12 @@ class Solution {
 
 ### Python 🐍
 ```python
+"""
+Problem: LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+Difficulty: Hard
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def minimumDistance(self, word: str) -> int:
         def dist(a: int, b: int) -> int:
@@ -185,6 +199,12 @@ class Solution:
 
 ### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <string>
 #include <vector>
 #include <cmath>
@@ -215,11 +235,15 @@ public:
             for (int j = 0; j < 27; ++j) {
                 if (dp[j] == INT_MAX) continue;
 
-                int cost1 = dp[j] + dist(prev, curr);
-                nextDp[j] = min(nextDp[j], cost1);
+                cost1_update: {
+                    int cost1 = dp[j] + dist(prev, curr);
+                    nextDp[j] = min(nextDp[j], cost1);
+                }
 
-                int cost2 = dp[j] + dist(j, curr);
-                nextDp[prev] = min(nextDp[prev], cost2);
+                cost2_update: {
+                    int cost2 = dp[j] + dist(j, curr);
+                    nextDp[prev] = min(nextDp[prev], cost2);
+                }
             }
 
             dp = move(nextDp);
@@ -236,6 +260,12 @@ public:
 
 ### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 /**
  * @param {string} word
  * @return {number}

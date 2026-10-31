@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.*;
 
 class Solution {

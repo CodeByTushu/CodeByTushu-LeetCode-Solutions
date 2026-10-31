@@ -1,13 +1,13 @@
+/**
+ * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <string>
 
 using namespace std;
 
-/**
- * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
- * Language: C++
- * Time Complexity: O(N)
- * Space Complexity: O(N)
- */
 class Solution {
 public:
     string decodeCiphertext(string encodedText, int rows) {

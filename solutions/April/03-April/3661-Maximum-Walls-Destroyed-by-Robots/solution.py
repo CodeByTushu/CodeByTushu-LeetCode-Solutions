@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+Difficulty: Hard
+Language: Python
+Author: CodeByTushu
+"""
 from bisect import bisect_left, bisect_right
 from typing import List
 

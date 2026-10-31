@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <cmath>
 #include <algorithm>

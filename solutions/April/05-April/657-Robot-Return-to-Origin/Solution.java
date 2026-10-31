@@ -1,8 +1,8 @@
 /**
  * Problem: LeetCode 657 - Robot Return to Origin
+ * Difficulty: Easy
  * Language: Java
- * Time Complexity: O(N)
- * Space Complexity: O(1)
+ * Author: CodeByTushu
  */
 class Solution {
     public boolean judgeCircle(String moves) {

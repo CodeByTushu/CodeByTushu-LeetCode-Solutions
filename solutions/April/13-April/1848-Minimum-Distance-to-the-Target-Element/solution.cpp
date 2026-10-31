@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1848 - Minimum Distance to the Target Element
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <cmath>
 #include <algorithm>

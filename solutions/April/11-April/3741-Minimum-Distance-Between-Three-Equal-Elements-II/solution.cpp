@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <algorithm>
 #include <climits>

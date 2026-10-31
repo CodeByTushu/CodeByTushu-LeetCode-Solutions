@@ -1,13 +1,8 @@
 /**
  * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
- * Language: JavaScript (Node.js)
- * Time Complexity: O(N log N + M log M + N log M)
- * Space Complexity: O(N)
- * 
- * @param {number[]} robots
- * @param {number[]} distance
- * @param {number[]} walls
- * @return {number}
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var maxWalls = function(robots, distance, walls) {
     const n = robots.length;

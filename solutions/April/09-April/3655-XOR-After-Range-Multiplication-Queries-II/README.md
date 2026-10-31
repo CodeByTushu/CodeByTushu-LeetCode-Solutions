@@ -101,6 +101,12 @@ $$\text{ans} = \bigoplus_{i=0}^{n-1} \text{nums}[i]$$
 
 ### Java ☕
 ```java
+/**
+ * Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.*;
 
 class Solution {
@@ -186,6 +192,12 @@ class Solution {
 
 ### Python 🐍
 ```python
+"""
+Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+Difficulty: Hard
+Language: Python
+Author: CodeByTushu
+"""
 import math
 from collections import defaultdict
 
@@ -226,6 +238,12 @@ class Solution:
 
 ### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <cmath>
 #include <algorithm>
@@ -309,6 +327,12 @@ public:
 
 ### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 /**
  * @param {number[]} nums
  * @param {number[][]} queries

@@ -92,6 +92,12 @@ Explanation:
 
 ### Java ☕
 ```java
+/**
+ * Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int xorAfterQueries(int[] nums, int[][] queries) {
         long MOD = 1_000_000_007L;
@@ -119,6 +125,12 @@ class Solution {
 
 ### Python 🐍
 ```python
+"""
+Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def xorAfterQueries(self, nums: list[int], queries: list[list[int]]) -> int:
         MOD = 1_000_000_007
@@ -136,6 +148,12 @@ class Solution:
 
 ### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 
 using namespace std;
@@ -168,6 +186,12 @@ public:
 
 ### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 /**
  * @param {number[]} nums
  * @param {number[][]} queries

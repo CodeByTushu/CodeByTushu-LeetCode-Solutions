@@ -102,6 +102,12 @@ Any non-consecutive triplet $(p_a, p_b, p_c)$ with $c - a > 2$ would span a stri
 
 ### Java ☕
 ```java
+/**
+ * Problem: LeetCode 3740 - Minimum Distance Between Three Equal Elements I
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.*;
 
 class Solution {
@@ -130,6 +136,12 @@ class Solution {
 
 ### Python 🐍
 ```python
+"""
+Problem: LeetCode 3740 - Minimum Distance Between Three Equal Elements I
+Difficulty: Easy
+Language: Python
+Author: CodeByTushu
+"""
 from collections import defaultdict
 
 class Solution:
@@ -147,6 +159,12 @@ class Solution:
 
 ### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 3740 - Minimum Distance Between Three Equal Elements I
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
@@ -179,6 +197,12 @@ public:
 
 ### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 3740 - Minimum Distance Between Three Equal Elements I
+ * Difficulty: Easy
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 /**
  * @param {number[]} nums
  * @return {number}

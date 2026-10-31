@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 
 using namespace std;

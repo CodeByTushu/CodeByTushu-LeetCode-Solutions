@@ -1,4 +1,10 @@
 /**
+ * Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
+/**
  * @param {number[]} nums
  * @return {number}
  */

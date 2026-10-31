@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+Difficulty: Hard
+Language: Python
+Author: CodeByTushu
+"""
 import math
 from collections import defaultdict
 

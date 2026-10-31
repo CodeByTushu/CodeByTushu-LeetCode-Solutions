@@ -1,12 +1,12 @@
+/**
+ * Problem: LeetCode 874 - Walking Robot Simulation
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Problem: LeetCode 874 - Walking Robot Simulation
- * Language: Java
- * Time Complexity: O(C * K + M)
- * Space Complexity: O(M)
- */
 class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
         Set<Long> obstacleSet = new HashSet<>(obstacles.length);

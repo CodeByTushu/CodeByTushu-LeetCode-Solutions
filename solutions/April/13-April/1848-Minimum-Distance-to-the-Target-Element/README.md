@@ -78,6 +78,12 @@ Since $N \le 1000$, a single linear traversal through the array easily runs well
 
 ### Java ☕
 ```java
+/**
+ * Problem: LeetCode 1848 - Minimum Distance to the Target Element
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int getMinDistance(int[] nums, int target, int start) {
         int minDistance = Integer.MAX_VALUE;
@@ -94,6 +100,12 @@ class Solution {
 
 ### Python 🐍
 ```python
+"""
+Problem: LeetCode 1848 - Minimum Distance to the Target Element
+Difficulty: Easy
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def getMinDistance(self, nums: list[int], target: int, start: int) -> int:
         min_dist = float('inf')
@@ -107,6 +119,12 @@ class Solution:
 
 ### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 1848 - Minimum Distance to the Target Element
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <cmath>
 #include <algorithm>
@@ -131,6 +149,12 @@ public:
 
 ### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 1848 - Minimum Distance to the Target Element
+ * Difficulty: Easy
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 /**
  * @param {number[]} nums
  * @param {number} target

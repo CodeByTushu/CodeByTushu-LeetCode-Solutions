@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <string>
 #include <vector>
 #include <cmath>

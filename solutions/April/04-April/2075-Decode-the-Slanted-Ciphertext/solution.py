@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def decodeCiphertext(self, encodedText: str, rows: int) -> str:
         """

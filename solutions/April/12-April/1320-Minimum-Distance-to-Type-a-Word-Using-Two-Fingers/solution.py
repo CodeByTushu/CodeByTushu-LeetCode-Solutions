@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+Difficulty: Hard
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def minimumDistance(self, word: str) -> int:
         def dist(a: int, b: int) -> int:

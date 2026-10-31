@@ -1,12 +1,12 @@
+/**
+ * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.Arrays;
 import java.util.Comparator;
 
-/**
- * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
- * Language: Java
- * Time Complexity: O(N log N + M log M + N log M)
- * Space Complexity: O(N)
- */
 class Solution {
     public int maxWalls(int[] robots, int[] distance, int[] walls) {
         int n = robots.length;

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int xorAfterQueries(int[] nums, int[][] queries) {
         long MOD = 1_000_000_007L;

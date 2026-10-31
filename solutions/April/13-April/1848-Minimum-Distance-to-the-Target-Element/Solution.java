@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 1848 - Minimum Distance to the Target Element
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public int getMinDistance(int[] nums, int target, int start) {
         int minDistance = Integer.MAX_VALUE;

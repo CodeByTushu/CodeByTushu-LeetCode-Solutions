@@ -89,8 +89,14 @@ Equivalently, the number of up moves must equal the number of down moves ($\text
 
 ## Solutions
 
-### Java
+### Java ☕
 ```java
+/**
+ * Problem: LeetCode 657 - Robot Return to Origin
+ * Difficulty: Easy
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public boolean judgeCircle(String moves) {
         int x = 0;
@@ -114,10 +120,22 @@ class Solution {
 }
 ```
 
-### Python
+### Python 🐍
 ```python
+"""
+Problem: LeetCode 657 - Robot Return to Origin
+Difficulty: Easy
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
+        """
+        Determines whether the robot returns to the origin (0, 0) after all moves.
+        
+        Time Complexity: O(N)
+        Space Complexity: O(1)
+        """
         x = 0
         y = 0
 
@@ -134,8 +152,14 @@ class Solution:
         return x == 0 and y == 0
 ```
 
-### C++
+### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 657 - Robot Return to Origin
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <string>
 
 using namespace std;
@@ -158,8 +182,14 @@ public:
 };
 ```
 
-### JavaScript
+### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 657 - Robot Return to Origin
+ * Difficulty: Easy
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 var judgeCircle = function(moves) {
     let x = 0;
     let y = 0;

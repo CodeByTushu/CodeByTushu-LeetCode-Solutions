@@ -1,11 +1,8 @@
 /**
  * Problem: LeetCode 657 - Robot Return to Origin
- * Language: JavaScript (Node.js)
- * Time Complexity: O(N)
- * Space Complexity: O(1)
- * 
- * @param {string} moves
- * @return {boolean}
+ * Difficulty: Easy
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var judgeCircle = function(moves) {
     let x = 0;

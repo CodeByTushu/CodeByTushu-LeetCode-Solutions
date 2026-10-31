@@ -1,12 +1,8 @@
 /**
  * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
- * Language: JavaScript (Node.js)
- * Time Complexity: O(N)
- * Space Complexity: O(N)
- * 
- * @param {string} encodedText
- * @param {number} rows
- * @return {string}
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var decodeCiphertext = function(encodedText, rows) {
     if (rows === 1 || !encodedText) {

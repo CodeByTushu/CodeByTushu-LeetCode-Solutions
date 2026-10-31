@@ -114,8 +114,14 @@ During initialization in the constructor, we precompute an ordered sequence of a
 
 ## Solutions
 
-### Java
+### Java ☕
 ```java
+/**
+ * Problem: LeetCode 2069 - Walking Robot Simulation II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Robot {
     private final int[][] coords;
     private final String[] dirs;
@@ -131,27 +137,31 @@ class Robot {
         moved = false;
 
         int index = 0;
+        // Bottom row: (0, 0) to (width - 1, 0)
         for (int i = 0; i < width; i++) {
             coords[index] = new int[]{i, 0};
             dirs[index] = "East";
             index++;
         }
+        // Right col: (width - 1, 1) to (width - 1, height - 1)
         for (int j = 1; j < height; j++) {
             coords[index] = new int[]{width - 1, j};
             dirs[index] = "North";
             index++;
         }
+        // Top row: (width - 2, height - 1) down to (0, height - 1)
         for (int i = width - 2; i >= 0; i--) {
             coords[index] = new int[]{i, height - 1};
             dirs[index] = "West";
             index++;
         }
+        // Left col: (0, height - 2) down to (0, 1)
         for (int j = height - 2; j > 0; j--) {
             coords[index] = new int[]{0, j};
             dirs[index] = "South";
             index++;
         }
-
+        // Arriving at origin after movement faces South
         dirs[0] = "South";
     }
 
@@ -173,11 +183,28 @@ class Robot {
 }
 ```
 
-### Python
+### Python 🐍
 ```python
+"""
+Problem: LeetCode 2069 - Walking Robot Simulation II
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 from typing import List
 
 class Robot:
+    """
+    Simulates a robot moving along the perimeter of a grid.
+    
+    Time Complexity:
+        - __init__: O(W + H)
+        - step: O(1)
+        - getPos: O(1)
+        - getDir: O(1)
+    Space Complexity: O(W + H)
+    """
+
     def __init__(self, width: int, height: int):
         self.perimeter = 2 * (width + height) - 4
         self.coords = []
@@ -217,8 +244,14 @@ class Robot:
         return self.dirs[self.idx]
 ```
 
-### C++
+### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 2069 - Walking Robot Simulation II
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <string>
 
@@ -240,18 +273,22 @@ public:
         idx = 0;
         moved = false;
 
+        // Bottom row
         for (int i = 0; i < width; ++i) {
             coords.push_back({i, 0});
             dirs.push_back("East");
         }
+        // Right col
         for (int j = 1; j < height; ++j) {
             coords.push_back({width - 1, j});
             dirs.push_back("North");
         }
+        // Top row
         for (int i = width - 2; i >= 0; --i) {
             coords.push_back({i, height - 1});
             dirs.push_back("West");
         }
+        // Left col
         for (int j = height - 2; j > 0; --j) {
             coords.push_back({0, j});
             dirs.push_back("South");
@@ -276,8 +313,14 @@ public:
 };
 ```
 
-### JavaScript
+### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 2069 - Walking Robot Simulation II
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 var Robot = function(width, height) {
     this.perimeter = 2 * (width + height) - 4;
     this.coords = [];
@@ -309,15 +352,25 @@ var Robot = function(width, height) {
     this.dirs[0] = "South";
 };
 
+/** 
+ * @param {number} num
+ * @return {void}
+ */
 Robot.prototype.step = function(num) {
     this.moved = true;
     this.idx = (this.idx + num) % this.perimeter;
 };
 
+/**
+ * @return {number[]}
+ */
 Robot.prototype.getPos = function() {
     return this.coords[this.idx];
 };
 
+/**
+ * @return {string}
+ */
 Robot.prototype.getDir = function() {
     if (!this.moved) return "East";
     return this.dirs[this.idx];

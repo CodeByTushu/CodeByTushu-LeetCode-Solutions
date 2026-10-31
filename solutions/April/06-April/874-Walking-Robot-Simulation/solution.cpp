@@ -1,15 +1,15 @@
+/**
+ * Problem: LeetCode 874 - Walking Robot Simulation
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <unordered_set>
 #include <algorithm>
 
 using namespace std;
 
-/**
- * Problem: LeetCode 874 - Walking Robot Simulation
- * Language: C++
- * Time Complexity: O(C * K + M)
- * Space Complexity: O(M)
- */
 class Solution {
 public:
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {

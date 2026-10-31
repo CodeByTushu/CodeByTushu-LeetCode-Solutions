@@ -1,13 +1,13 @@
+/**
+ * Problem: LeetCode 657 - Robot Return to Origin
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <string>
 
 using namespace std;
 
-/**
- * Problem: LeetCode 657 - Robot Return to Origin
- * Language: C++
- * Time Complexity: O(N)
- * Space Complexity: O(1)
- */
 class Solution {
 public:
     bool judgeCircle(string moves) {

@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.*;
 
 class Solution {

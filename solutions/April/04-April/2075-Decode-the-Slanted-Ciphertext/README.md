@@ -111,8 +111,14 @@ The matrix was padded with `' '` to form a complete rectangular grid. In `origin
 
 ## Solutions
 
-### Java
+### Java ☕
 ```java
+/**
+ * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 class Solution {
     public String decodeCiphertext(String encodedText, int rows) {
         if (rows == 1 || encodedText == null || encodedText.isEmpty()) {
@@ -140,10 +146,22 @@ class Solution {
 }
 ```
 
-### Python
+### Python 🐍
 ```python
+"""
+Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def decodeCiphertext(self, encodedText: str, rows: int) -> str:
+        """
+        Decodes a slanted transposition ciphertext matrix back into originalText.
+        
+        Time Complexity: O(N)
+        Space Complexity: O(N)
+        """
         if rows == 1 or not encodedText:
             return encodedText
 
@@ -160,8 +178,14 @@ class Solution:
         return "".join(res).rstrip(" ")
 ```
 
-### C++
+### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <string>
 
 using namespace std;
@@ -193,8 +217,14 @@ public:
 };
 ```
 
-### JavaScript
+### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 var decodeCiphertext = function(encodedText, rows) {
     if (rows === 1 || !encodedText) {
         return encodedText;

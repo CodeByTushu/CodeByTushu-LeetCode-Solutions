@@ -131,8 +131,14 @@ $$\max(\text{dp}[n - 1][0], \text{dp}[n - 1][1])$$
 
 ## Solutions
 
-### Java
+### Java ☕
 ```java
+/**
+ * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -162,6 +168,8 @@ class Solution {
             wRight[i] = countWalls(walls, r[i][0], rightBound[i]);
         }
 
+        // dp0: robot i fires Left
+        // dp1: robot i fires Right
         int dp0 = wLeft[0];
         int dp1 = wRight[0];
 
@@ -184,7 +192,9 @@ class Solution {
     }
 
     private int countWalls(int[] walls, int low, int high) {
-        if (low > high) return 0;
+        if (low > high) {
+            return 0;
+        }
         int start = lowerBound(walls, low);
         int end = upperBound(walls, high);
         return Math.max(0, end - start);
@@ -194,8 +204,11 @@ class Solution {
         int low = 0, high = arr.length;
         while (low < high) {
             int mid = (low + high) >>> 1;
-            if (arr[mid] >= target) high = mid;
-            else low = mid + 1;
+            if (arr[mid] >= target) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
         }
         return low;
     }
@@ -204,21 +217,36 @@ class Solution {
         int low = 0, high = arr.length;
         while (low < high) {
             int mid = (low + high) >>> 1;
-            if (arr[mid] > target) high = mid;
-            else low = mid + 1;
+            if (arr[mid] > target) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
         }
         return low;
     }
 }
 ```
 
-### Python
+### Python 🐍
 ```python
+"""
+Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+Difficulty: Hard
+Language: Python
+Author: CodeByTushu
+"""
 from bisect import bisect_left, bisect_right
 from typing import List
 
 class Solution:
     def maxWalls(self, robots: List[int], distance: List[int], walls: List[int]) -> int:
+        """
+        Calculates the maximum number of unique walls destroyed by robots.
+        
+        Time Complexity: O(N log N + M log M + N log M)
+        Space Complexity: O(N)
+        """
         n = len(robots)
         r = sorted(zip(robots, distance), key=lambda x: x[0])
         walls.sort()
@@ -244,6 +272,8 @@ class Solution:
             right_bound[i] = min(r[i][0] + r[i][1], r_limit)
             w_right[i] = count_walls(r[i][0], right_bound[i])
 
+        # dp0: robot i fires Left
+        # dp1: robot i fires Right
         dp0 = w_left[0]
         dp1 = w_right[0]
 
@@ -261,8 +291,14 @@ class Solution:
         return max(dp0, dp1)
 ```
 
-### C++
+### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <algorithm>
 
@@ -301,6 +337,8 @@ public:
             wRight[i] = countWalls(r[i].first, rightBound[i]);
         }
 
+        // dp0: robot i fires Left
+        // dp1: robot i fires Right
         int dp0 = wLeft[0];
         int dp1 = wRight[0];
 
@@ -324,8 +362,14 @@ public:
 };
 ```
 
-### JavaScript
+### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 var maxWalls = function(robots, distance, walls) {
     const n = robots.length;
     const r = [];
@@ -370,6 +414,8 @@ var maxWalls = function(robots, distance, walls) {
         wRight[i] = countWalls(r[i].pos, rightBound[i]);
     }
 
+    // dp0: robot i fires Left
+    // dp1: robot i fires Right
     let dp0 = wLeft[0];
     let dp1 = wRight[0];
 

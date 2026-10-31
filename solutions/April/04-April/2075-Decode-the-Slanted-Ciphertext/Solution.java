@@ -1,8 +1,8 @@
 /**
  * Problem: LeetCode 2075 - Decode the Slanted Ciphertext
+ * Difficulty: Medium
  * Language: Java
- * Time Complexity: O(N)
- * Space Complexity: O(N)
+ * Author: CodeByTushu
  */
 class Solution {
     public String decodeCiphertext(String encodedText, int rows) {

@@ -1,4 +1,10 @@
 /**
+ * Problem: LeetCode 1848 - Minimum Distance to the Target Element
+ * Difficulty: Easy
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
+/**
  * @param {number[]} nums
  * @param {number} target
  * @param {number} start

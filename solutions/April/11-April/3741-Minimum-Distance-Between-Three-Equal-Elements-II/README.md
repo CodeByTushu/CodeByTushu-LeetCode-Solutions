@@ -103,6 +103,12 @@ If no element appeared $\ge 3$ times, `minDistance` remains unset, and we return
 
 ### Java ☕
 ```java
+/**
+ * Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.*;
 
 class Solution {
@@ -131,6 +137,12 @@ class Solution {
 
 ### Python 🐍
 ```python
+"""
+Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def minimumDistance(self, nums: list[int]) -> int:
         n = len(nums)
@@ -149,6 +161,12 @@ class Solution:
 
 ### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <algorithm>
 #include <climits>
@@ -179,6 +197,12 @@ public:
 
 ### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 /**
  * @param {number[]} nums
  * @return {number}

@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 3741 - Minimum Distance Between Three Equal Elements II
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def minimumDistance(self, nums: list[int]) -> int:
         n = len(nums)

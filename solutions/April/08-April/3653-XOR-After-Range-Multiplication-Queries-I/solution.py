@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 3653 - XOR After Range Multiplication Queries I
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 class Solution:
     def xorAfterQueries(self, nums: list[int], queries: list[list[int]]) -> int:
         MOD = 1_000_000_007

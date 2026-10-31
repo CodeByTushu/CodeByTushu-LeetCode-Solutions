@@ -1,11 +1,8 @@
 /**
  * Problem: LeetCode 2069 - Walking Robot Simulation II
- * Language: JavaScript (Node.js)
- * Time Complexity: Constructor O(W + H), step/getPos/getDir O(1)
- * Space Complexity: O(W + H)
- * 
- * @param {number} width
- * @param {number} height
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var Robot = function(width, height) {
     this.perimeter = 2 * (width + height) - 4;

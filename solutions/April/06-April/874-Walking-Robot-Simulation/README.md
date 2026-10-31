@@ -121,8 +121,14 @@ For each forward movement command $k \in [1, 9]$:
 
 ## Solutions
 
-### Java
+### Java ☕
 ```java
+/**
+ * Problem: LeetCode 874 - Walking Robot Simulation
+ * Difficulty: Medium
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.HashSet;
 import java.util.Set;
 
@@ -134,6 +140,7 @@ class Solution {
             obstacleSet.add(key);
         }
 
+        // Direction vectors: 0: North, 1: East, 2: South, 3: West
         int[] dx = {0, 1, 0, -1};
         int[] dy = {1, 0, -1, 0};
         int d = 0;
@@ -144,10 +151,13 @@ class Solution {
 
         for (int cmd : commands) {
             if (cmd == -1) {
+                // Turn right 90 degrees
                 d = (d + 1) % 4;
             } else if (cmd == -2) {
+                // Turn left 90 degrees
                 d = (d + 3) % 4;
             } else {
+                // Move forward cmd units
                 for (int step = 0; step < cmd; step++) {
                     int nx = x + dx[d];
                     int ny = y + dy[d];
@@ -167,14 +177,27 @@ class Solution {
 }
 ```
 
-### Python
+### Python 🐍
 ```python
+"""
+Problem: LeetCode 874 - Walking Robot Simulation
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 from typing import List
 
 class Solution:
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
+        """
+        Simulates the walking robot on an infinite 2D plane with obstacles.
+        
+        Time Complexity: O(C * K + M)
+        Space Complexity: O(M)
+        """
         obstacle_set = {(ox, oy) for ox, oy in obstacles}
 
+        # 0: North, 1: East, 2: South, 3: West
         dx = [0, 1, 0, -1]
         dy = [1, 0, -1, 0]
         d = 0
@@ -201,8 +224,14 @@ class Solution:
         return max_dist_sq
 ```
 
-### C++
+### C++ ⚡
 ```cpp
+/**
+ * Problem: LeetCode 874 - Walking Robot Simulation
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <unordered_set>
 #include <algorithm>
@@ -219,6 +248,7 @@ public:
             obstacleSet.insert(key);
         }
 
+        // 0: North, 1: East, 2: South, 3: West
         int dx[4] = {0, 1, 0, -1};
         int dy[4] = {1, 0, -1, 0};
         int d = 0;
@@ -252,14 +282,21 @@ public:
 };
 ```
 
-### JavaScript
+### JavaScript 🌐
 ```javascript
+/**
+ * Problem: LeetCode 874 - Walking Robot Simulation
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
 var robotSim = function(commands, obstacles) {
     const obstacleSet = new Set();
     for (let i = 0; i < obstacles.length; i++) {
         obstacleSet.add(`${obstacles[i][0]},${obstacles[i][1]}`);
     }
 
+    // 0: North, 1: East, 2: South, 3: West
     const dx = [0, 1, 0, -1];
     const dy = [1, 0, -1, 0];
     let d = 0;

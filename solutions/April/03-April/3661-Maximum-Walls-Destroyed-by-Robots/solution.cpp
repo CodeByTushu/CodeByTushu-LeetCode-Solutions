@@ -1,14 +1,14 @@
+/**
+ * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-/**
- * Problem: LeetCode 3661 - Maximum Walls Destroyed by Robots
- * Language: C++
- * Time Complexity: O(N log N + M log M + N log M)
- * Space Complexity: O(N)
- */
 class Solution {
 public:
     int maxWalls(vector<int>& robots, vector<int>& distance, vector<int>& walls) {

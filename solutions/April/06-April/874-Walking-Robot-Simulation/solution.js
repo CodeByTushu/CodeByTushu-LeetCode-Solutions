@@ -1,12 +1,8 @@
 /**
  * Problem: LeetCode 874 - Walking Robot Simulation
- * Language: JavaScript (Node.js)
- * Time Complexity: O(C * K + M)
- * Space Complexity: O(M)
- * 
- * @param {number[]} commands
- * @param {number[][]} obstacles
- * @return {number}
+ * Difficulty: Medium
+ * Language: JavaScript
+ * Author: CodeByTushu
  */
 var robotSim = function(commands, obstacles) {
     const obstacleSet = new Set();

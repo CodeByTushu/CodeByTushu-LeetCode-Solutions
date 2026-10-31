@@ -1,4 +1,10 @@
 /**
+ * Problem: LeetCode 3655 - XOR After Range Multiplication Queries II
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
+/**
  * @param {number[]} nums
  * @param {number[][]} queries
  * @return {number}

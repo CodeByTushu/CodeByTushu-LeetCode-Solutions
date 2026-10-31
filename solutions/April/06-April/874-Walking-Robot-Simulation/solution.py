@@ -1,3 +1,9 @@
+"""
+Problem: LeetCode 874 - Walking Robot Simulation
+Difficulty: Medium
+Language: Python
+Author: CodeByTushu
+"""
 from typing import List
 
 class Solution:

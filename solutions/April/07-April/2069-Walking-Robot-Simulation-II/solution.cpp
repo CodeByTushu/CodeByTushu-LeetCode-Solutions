@@ -1,14 +1,14 @@
+/**
+ * Problem: LeetCode 2069 - Walking Robot Simulation II
+ * Difficulty: Medium
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <string>
 
 using namespace std;
 
-/**
- * Problem: LeetCode 2069 - Walking Robot Simulation II
- * Language: C++
- * Time Complexity: Constructor O(W + H), step/getPos/getDir O(1)
- * Space Complexity: O(W + H)
- */
 class Robot {
 private:
     vector<vector<int>> coords;

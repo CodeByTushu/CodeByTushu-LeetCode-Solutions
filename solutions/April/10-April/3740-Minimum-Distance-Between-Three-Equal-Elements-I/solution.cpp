@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3740 - Minimum Distance Between Three Equal Elements I
+ * Difficulty: Easy
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <unordered_map>
 #include <algorithm>

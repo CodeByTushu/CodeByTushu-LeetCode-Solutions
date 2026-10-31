@@ -1,8 +1,8 @@
 /**
  * Problem: LeetCode 2069 - Walking Robot Simulation II
+ * Difficulty: Medium
  * Language: Java
- * Time Complexity: Constructor O(W + H), step/getPos/getDir O(1)
- * Space Complexity: O(W + H)
+ * Author: CodeByTushu
  */
 class Robot {
     private final int[][] coords;

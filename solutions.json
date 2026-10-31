@@ -9905,6 +9905,55 @@
     }
   },
   {
+    "id": 1320,
+    "title": "Minimum Distance to Type a Word Using Two Fingers",
+    "slug": "minimum-distance-to-type-a-word-using-two-fingers",
+    "date": "12 April 2026",
+    "dateIso": "2026-04-12",
+    "formattedDate": "12 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "12-April",
+    "problemFolder": "1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers",
+    "folderPath": "solutions/April/12-April/1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Dynamic Programming",
+      "String",
+      "Math"
+    ],
+    "summary": "Find the minimum distance to type a word using two fingers on a 6-column keyboard grid where initial finger placements are free.",
+    "approach": "Reduce state to the position of the other finger since one finger is always stationed at the previous letter. Transition between the current letter and either finger using dynamic programming in O(27 * N) time and O(1) space.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/12-April/1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/12-April/1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/12-April/1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/12-April/1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers/solution.js"
+      }
+    }
+  },
+  {
     "id": 3741,
     "title": "Minimum Distance Between Three Equal Elements II",
     "slug": "minimum-distance-between-three-equal-elements-ii",

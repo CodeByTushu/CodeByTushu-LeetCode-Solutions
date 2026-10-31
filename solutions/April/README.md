@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Month / Quarter** | April 2026 (Q2 — Spring) |
 | **Status** | `Archive / Ingesting` |
-| **Total Solved** | **17 Problems (Ongoing)** |
+| **Total Solved** | **18 Problems (Ongoing)** |
 | **Language Coverage** | **100%** (Java, Python, C++, JavaScript for every problem) |
 | **Video Walkthroughs** | Available on YouTube |
 
@@ -67,6 +67,7 @@ solutions/April/
 | **3488** | [Closest Equal Element Queries](https://leetcode.com/problems/closest-equal-element-queries/) | <span style="color:#ffc400">**Medium**</span> | 16 April 2026 | [Java](./16-April/3488-Closest-Equal-Element-Queries/Solution.java) | [Python](./16-April/3488-Closest-Equal-Element-Queries/solution.py) | [C++](./16-April/3488-Closest-Equal-Element-Queries/solution.cpp) | [JS](./16-April/3488-Closest-Equal-Element-Queries/solution.js) | [Watch Video](https://youtu.be/V2zmsfz4oGc) | [📁 16-April](./16-April/3488-Closest-Equal-Element-Queries/) |
 | **2515** | [Shortest Distance to Target String in a Circular Array](https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/) | <span style="color:#10b981">**Easy**</span> | 15 April 2026 | [Java](./15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/Solution.java) | [Python](./15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/solution.py) | [C++](./15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/solution.cpp) | [JS](./15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/solution.js) | [Watch Video](https://youtu.be/dBau2j8rHQ4) | [📁 15-April](./15-April/2515-Shortest-Distance-to-Target-String-in-a-Circular-Array/) |
 | **2463** | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/) | <span style="color:#ef4444">**Hard**</span> | 14 April 2026 | [Java](./14-April/2463-Minimum-Total-Distance-Traveled/Solution.java) | [Python](./14-April/2463-Minimum-Total-Distance-Traveled/solution.py) | [C++](./14-April/2463-Minimum-Total-Distance-Traveled/solution.cpp) | [JS](./14-April/2463-Minimum-Total-Distance-Traveled/solution.js) | [Watch Video](https://youtu.be/9sSTzYIWQ50) | [📁 14-April](./14-April/2463-Minimum-Total-Distance-Traveled/) |
+| **2751** | [Robot Collisions](https://leetcode.com/problems/robot-collisions/) | <span style="color:#ef4444">**Hard**</span> | 01 April 2026 | [Java](./01-April/2751-Robot-Collisions/Solution.java) | [Python](./01-April/2751-Robot-Collisions/solution.py) | [C++](./01-April/2751-Robot-Collisions/solution.cpp) | [JS](./01-April/2751-Robot-Collisions/solution.js) | *Coming Soon* | [📁 01-April](./01-April/2751-Robot-Collisions/) |
 
 ---
 

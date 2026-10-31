@@ -9905,6 +9905,56 @@
     }
   },
   {
+    "id": 2751,
+    "title": "Robot Collisions",
+    "slug": "robot-collisions",
+    "date": "01 April 2026",
+    "dateIso": "2026-04-01",
+    "formattedDate": "01 Apr 2026",
+    "year": 2026,
+    "month": "April",
+    "dayFolder": "01-April",
+    "problemFolder": "2751-Robot-Collisions",
+    "folderPath": "solutions/April/01-April/2751-Robot-Collisions",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/robot-collisions/",
+    "leetcodeUrl": "https://leetcode.com/problems/robot-collisions/",
+    "youtubeUrl": "Coming Soon",
+    "tags": [
+      "Array",
+      "Stack",
+      "Sorting",
+      "Simulation"
+    ],
+    "summary": "Simulate robot movements and collisions on a line where robots moving in opposite directions collide based on their health values.",
+    "approach": "Sort robot indices by coordinate position in ascending order. Use a stack to track right-moving robots; upon encountering a left-moving robot, simulate sequential collisions with the stack top, updating or removing robots based on their health until resolved.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/April/01-April/2751-Robot-Collisions/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/April/01-April/2751-Robot-Collisions/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/April/01-April/2751-Robot-Collisions/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/April/01-April/2751-Robot-Collisions/solution.js"
+      }
+    }
+  },
+  {
     "id": "3474",
     "title": "Lexicographically Smallest Generated String",
     "slug": "lexicographically-smallest-generated-string",

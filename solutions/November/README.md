@@ -26,7 +26,7 @@
 | 🟡 **Medium Problems** | **1** | Problem #453 |
 | 🔴 **Hard Problems** | **0** | — |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **0 / 1** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **1 / 1** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,7 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **453** | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | <span style="color:#ffc400">**Medium**</span> | 01 Nov 2026 | [Java](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/Solution.java) | [Python](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.py) | [C++](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.cpp) | [JS](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.js) | Coming Soon | [📁 01-November](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/) |
+| **453** | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | <span style="color:#ffc400">**Medium**</span> | 01 Nov 2026 | [Java](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/Solution.java) | [Python](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.py) | [C++](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.cpp) | [JS](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.js) | [Watch Video](https://youtu.be/kqPfhqadLBs?si=Nfuc_Ph1h2Or5tA6) | [📁 01-November](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/) |
 
 ---
 

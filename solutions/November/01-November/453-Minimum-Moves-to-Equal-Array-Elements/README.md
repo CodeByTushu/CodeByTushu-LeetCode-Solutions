@@ -3,7 +3,7 @@
 - **Publication Date:** 01 November 2026
 - **Difficulty:** Medium
 - **Problem Link:** [https://leetcode.com/problems/minimum-moves-to-equal-array-elements/](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)
-- **YouTube Solution:** *Coming Soon*
+- **YouTube Solution:** [Watch Full Walkthrough on YouTube](https://youtu.be/kqPfhqadLBs?si=Nfuc_Ph1h2Or5tA6)
 
 ---
 

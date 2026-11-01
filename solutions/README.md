@@ -33,23 +33,23 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |
 | 🍂 **September** | Q3 (Autumn) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse September Solutions (30 Days)**](./September/) |
 | 🎃 **October** | **Q4 (Autumn)** | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse October Solutions (31 Days)**](./October/) |
-| 🍁 **November** | Q4 (Late Autumn) | — | 📁 Upcoming Series | [📂 Browse November](./November/) |
+| 🍁 **November** | **Q4 (Late Autumn)** | **1 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (1 Day)**](./November/) |
 | 🎄 **December** | Q4 (Winter Finale) | — | 📁 Upcoming Series | [📂 Browse December](./December/) |
 
 ---
 
-## ⚡ Current Active Series: October 2026
+## ⚡ Current Active Series: November 2026
 
-The **October 2026 Daily Series** is complete! All 31 daily solutions for Days 01 through 31 are fully solved and verified across all four languages.
+The **November 2026 Daily Series** is actively running! Solutions are solved and verified across all four languages with dedicated video walkthroughs.
 
-👉 **[Click here to view the complete October 2026 Archive](./October/)**
+👉 **[Click here to view the complete November 2026 Archive](./November/)**
 
-### October Quick Highlights:
-- 🟢 **Easy Problems (7):** #20, #1021, #2778, #2913, #2089, #2409, #3963
-- 🟡 **Medium Problems (17):** #22, #678, #856, #921, #1541, #2333, #3727, #3723, #3551, #3863, #3942, #3644, #1254, #3619, #3882, #3970, #3665
-- 🔴 **Hard Problems (7):** #32, #301, #2897, #2916, #1569, #3886, #3841
+### November Quick Highlights:
+- 🟢 **Easy Problems (0):** —
+- 🟡 **Medium Problems (1):** #453
+- 🔴 **Hard Problems (0):** —
 - 💻 **Language Coverage:** Java, Python, C++, JavaScript (100%)
-- 🎥 **Video Solutions:** 31 / 31 YouTube walkthroughs attached (100% video coverage!)
+- 🎥 **Video Solutions:** 0 / 1 YouTube walkthroughs attached (Walkthrough Coming Soon)
 
 ---
 
@@ -75,7 +75,7 @@ solutions/
 <p align="center">
   <a href="../README.md"><strong>⬅️ Return to Main Repository</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="./October/"><strong>🎃 Browse October Solutions (31 Solved)</strong></a>
+  <a href="./November/"><strong>🍁 Browse November Solutions (1 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

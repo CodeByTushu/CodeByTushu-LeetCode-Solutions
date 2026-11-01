@@ -1,5 +1,54 @@
 [
   {
+    "id": "453",
+    "title": "Minimum Moves to Equal Array Elements",
+    "slug": "minimum-moves-to-equal-array-elements",
+    "date": "01 November 2026",
+    "dateIso": "2026-11-01",
+    "formattedDate": "01 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "01-November",
+    "problemFolder": "453-Minimum-Moves-to-Equal-Array-Elements",
+    "folderPath": "solutions/November/01-November/453-Minimum-Moves-to-Equal-Array-Elements",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
+    "youtubeUrl": "",
+    "tags": [
+      "Array",
+      "Math",
+      "Greedy"
+    ],
+    "summary": "Find the minimum number of moves to make all array elements equal when each move increments n - 1 elements by 1.",
+    "approach": "Observe that incrementing n - 1 elements by 1 is mathematically equivalent to decrementing 1 element by 1. Find the global minimum element and sum the differences between each element and the minimum.",
+    "timeComplexity": "O(N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/01-November/453-Minimum-Moves-to-Equal-Array-Elements/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/01-November/453-Minimum-Moves-to-Equal-Array-Elements/solution.js"
+      }
+    }
+  },
+  {
     "id": "3665",
     "title": "Twisted Mirror Path Count",
     "slug": "twisted-mirror-path-count",

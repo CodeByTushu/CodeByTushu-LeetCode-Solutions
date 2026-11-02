@@ -33,3 +33,6 @@ Black Logo.PNG
 
 # Local-only master data folder (not for GitHub)
 master-data-2026/
+
+# Local maintenance scripts
+scripts/

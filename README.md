@@ -22,7 +22,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **462** | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | <span style="color:#ffc400">**Medium**</span> | 02 Nov 2026 | [Java](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/Solution.java) | [Python](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.py) | [C++](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.cpp) | [JS](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.js) | [Watch Video](https://youtu.be/6MTGLJ7kADs?si=KrbtCBh6TseWnAv5) | [README](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/README.md) |
+| **462** | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | <span style="color:#ffc400">**Medium**</span> | 02 Nov 2026 | [Java](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/Solution.java) | [Python](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.py) | [C++](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.cpp) | [JS](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.js) | [Watch Video](https://youtu.be/3HambxQKo8k?si=7SDBIZ15EVU-9BPQ) | [README](./solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/README.md) |
 
 <p align="center">
   <a href="./solutions/November/">

@@ -1,5 +1,54 @@
 [
   {
+    "id": "462",
+    "title": "Minimum Moves to Equal Array Elements II",
+    "slug": "minimum-moves-to-equal-array-elements-ii",
+    "date": "02 November 2026",
+    "dateIso": "2026-11-02",
+    "formattedDate": "02 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "02-November",
+    "problemFolder": "462-Minimum-Moves-to-Equal-Array-Elements-II",
+    "folderPath": "solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
+    "youtubeUrl": "https://youtu.be/6MTGLJ7kADs?si=KrbtCBh6TseWnAv5",
+    "tags": [
+      "Array",
+      "Math",
+      "Sorting"
+    ],
+    "summary": "Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal by incrementing or decrementing elements by 1.",
+    "approach": "Sort the array to find the median element nums[n / 2], which minimizes the sum of absolute differences. Accumulate the absolute distance |x - median| for all elements.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "453",
     "title": "Minimum Moves to Equal Array Elements",
     "slug": "minimum-moves-to-equal-array-elements",

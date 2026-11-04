@@ -1,5 +1,56 @@
 [
   {
+    "id": "3505",
+    "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
+    "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
+    "date": "04 November 2026",
+    "dateIso": "2026-11-04",
+    "formattedDate": "04 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "04-November",
+    "problemFolder": "3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal",
+    "folderPath": "solutions/November/04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
+    "youtubeUrl": "https://youtu.be/E5c6Xpy7Zic?si=ayg-5Dri9BumKGop",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Sliding Window",
+      "Binary Indexed Tree",
+      "Coordinate Compression"
+    ],
+    "summary": "Return the minimum number of operations needed to have at least k non-overlapping subarrays of size exactly x in nums, where all elements within each subarray are equal.",
+    "approach": "Maintain sliding window of size x using dual Fenwick trees on compressed coordinates with binary lifting to compute median equalization cost, then run dynamic programming to pick k non-overlapping subarrays.",
+    "timeComplexity": "O(N log N + K * N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/solution.js"
+      }
+    }
+  },
+  {
     "id": "3736",
     "title": "Minimum Moves to Equal Array Elements III",
     "slug": "minimum-moves-to-equal-array-elements-iii",

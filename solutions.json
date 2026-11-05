@@ -1,5 +1,55 @@
 [
   {
+    "id": "1385",
+    "title": "Find the Distance Value Between Two Arrays",
+    "slug": "find-the-distance-value-between-two-arrays",
+    "date": "05 November 2026",
+    "dateIso": "2026-11-05",
+    "formattedDate": "05 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "05-November",
+    "problemFolder": "1385-Find-the-Distance-Value-Between-Two-Arrays",
+    "folderPath": "solutions/November/05-November/1385-Find-the-Distance-Value-Between-Two-Arrays",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
+    "youtubeUrl": "https://youtu.be/EnEvmrJEwbU?si=5r5MGOWMA3xdMqrM",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
+    "summary": "Return the distance value between two integer arrays arr1 and arr2, defined as the number of elements arr1[i] such that no element arr2[j] satisfies |arr1[i] - arr2[j]| <= d.",
+    "approach": "Iterate through each element in arr1 and check against elements in arr2 with early-exit pruning when |a - b| <= d, or use binary search on sorted arr2 to check the exclusion interval [a - d, a + d].",
+    "timeComplexity": "O(N * M)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/solution.js"
+      }
+    }
+  },
+  {
     "id": "3505",
     "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
     "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",

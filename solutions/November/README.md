@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **5** | Days 01 – 05 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **6** | Days 01 – 06 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **2** | Problems #1385, #3736 |
-| 🟡 **Medium Problems** | **2** | Problems #453, #462 |
+| 🟡 **Medium Problems** | **3** | Problems #453, #462, #2747 |
 | 🔴 **Hard Problems** | **1** | Problem #3505 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **5 / 5** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **6 / 6** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2747** | [Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/) | <span style="color:#ffc400">**Medium**</span> | 06 Nov 2026 | [Java](./06-November/2747-Count-Zero-Request-Servers/Solution.java) | [Python](./06-November/2747-Count-Zero-Request-Servers/solution.py) | [C++](./06-November/2747-Count-Zero-Request-Servers/solution.cpp) | [JS](./06-November/2747-Count-Zero-Request-Servers/solution.js) | [Watch Video](https://youtu.be/pBklQPoNIEk?si=NpUFpPVj46qUlkci) | [📁 06-November](./06-November/2747-Count-Zero-Request-Servers/) |
 | **1385** | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | <span style="color:#00b8a3">**Easy**</span> | 05 Nov 2026 | [Java](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/Solution.java) | [Python](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/solution.py) | [C++](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/solution.cpp) | [JS](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/solution.js) | [Watch Video](https://youtu.be/EnEvmrJEwbU?si=5r5MGOWMA3xdMqrM) | [📁 05-November](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/) |
 | **3505** | [Minimum Operations to Make Elements Within K Subarrays Equal](https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/) | <span style="color:#ff375f">**Hard**</span> | 04 Nov 2026 | [Java](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/Solution.java) | [Python](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/solution.py) | [C++](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/solution.cpp) | [JS](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/solution.js) | [Watch Video](https://youtu.be/E5c6Xpy7Zic?si=ayg-5Dri9BumKGop) | [📁 04-November](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/) |
 | **3736** | [Minimum Moves to Equal Array Elements III](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/) | <span style="color:#00b8a3">**Easy**</span> | 03 Nov 2026 | [Java](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/Solution.java) | [Python](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/solution.py) | [C++](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/solution.cpp) | [JS](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/solution.js) | [Watch Video](https://youtu.be/iTmgmYI0wLo?si=x8m1KIcczRBlfKzv) | [📁 03-November](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/) |
@@ -44,6 +45,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[06 November 2026](./06-November/)**: [#2747 Count Zero Request Servers](./06-November/2747-Count-Zero-Request-Servers/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[05 November 2026](./05-November/)**: [#1385 Find the Distance Value Between Two Arrays](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/) — <span style="color:#00b8a3">Easy</span>
 - 📍 **[04 November 2026](./04-November/)**: [#3505 Minimum Operations to Make Elements Within K Subarrays Equal](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/) — <span style="color:#ff375f">Hard</span>
 - 📍 **[03 November 2026](./03-November/)**: [#3736 Minimum Moves to Equal Array Elements III](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/) — <span style="color:#00b8a3">Easy</span>
@@ -54,16 +56,17 @@
 
 ## 🏷️ Problem Categories & Tags in November
 
-- **Array**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Array**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Binary Indexed Tree**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Binary Search**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 - **Coordinate Compression**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Dynamic Programming**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Greedy**: [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Hash Table**: [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Math**: [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
-- **Sliding Window**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
-- **Sorting**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
-- **Two Pointers**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
+- **Sliding Window**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
+- **Sorting**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
+- **Two Pointers**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 
 ---
 

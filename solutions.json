@@ -1,5 +1,56 @@
 [
   {
+    "id": "2747",
+    "title": "Count Zero Request Servers",
+    "slug": "count-zero-request-servers",
+    "date": "06 November 2026",
+    "dateIso": "2026-11-06",
+    "formattedDate": "06 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "06-November",
+    "problemFolder": "2747-Count-Zero-Request-Servers",
+    "folderPath": "solutions/November/06-November/2747-Count-Zero-Request-Servers",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-zero-request-servers/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-zero-request-servers/",
+    "youtubeUrl": "https://youtu.be/pBklQPoNIEk?si=NpUFpPVj46qUlkci",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "summary": "Return an array representing the number of servers that did not receive any requests during the time interval [queries[i] - x, queries[i]].",
+    "approach": "Sort logs by timestamp and queries by their values offline, then maintain an active sliding window with two pointers to count servers with at least one request and subtract from total servers n.",
+    "timeComplexity": "O(M log M + Q log Q)",
+    "auxiliarySpaceComplexity": "O(N + Q)",
+    "spaceComplexity": "O(N + Q)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/06-November/2747-Count-Zero-Request-Servers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/06-November/2747-Count-Zero-Request-Servers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/06-November/2747-Count-Zero-Request-Servers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/06-November/2747-Count-Zero-Request-Servers/solution.js"
+      }
+    }
+  },
+  {
     "id": "1385",
     "title": "Find the Distance Value Between Two Arrays",
     "slug": "find-the-distance-value-between-two-arrays",

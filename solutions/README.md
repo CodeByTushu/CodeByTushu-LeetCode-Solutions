@@ -33,7 +33,7 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |
 | 🍂 **September** | Q3 (Autumn) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse September Solutions (30 Days)**](./September/) |
 | 🎃 **October** | **Q4 (Autumn)** | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse October Solutions (31 Days)**](./October/) |
-| 🍁 **November** | **Q4 (Late Autumn)** | **5 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (5 Days)**](./November/) |
+| 🍁 **November** | **Q4 (Late Autumn)** | **6 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (6 Days)**](./November/) |
 | 🎄 **December** | Q4 (Winter Finale) | — | 📁 Upcoming Series | [📂 Browse December](./December/) |
 
 ---
@@ -46,10 +46,10 @@ The **November 2026 Daily Series** is actively running! Solutions are solved and
 
 ### November Quick Highlights:
 - 🟢 **Easy Problems (2):** #1385, #3736
-- 🟡 **Medium Problems (2):** #453, #462
+- 🟡 **Medium Problems (3):** #453, #462, #2747
 - 🔴 **Hard Problems (1):** #3505
 - 💻 **Language Coverage:** Java, Python, C++, JavaScript (100%)
-- 🎥 **Video Solutions:** 5 / 5 YouTube walkthroughs attached
+- 🎥 **Video Solutions:** 6 / 6 YouTube walkthroughs attached
 
 ---
 
@@ -75,7 +75,7 @@ solutions/
 <p align="center">
   <a href="../README.md"><strong>⬅️ Return to Main Repository</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="./November/"><strong>🍁 Browse November Solutions (5 Solved)</strong></a>
+  <a href="./November/"><strong>🍁 Browse November Solutions (6 Solved)</strong></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://codebytushu.com/Leetcode/"><strong>🌐 Official Live Platform</strong></a>
 </p>

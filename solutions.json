@@ -1,5 +1,54 @@
 [
   {
+    "id": "1882",
+    "title": "Process Tasks Using Servers",
+    "slug": "process-tasks-using-servers",
+    "date": "07 November 2026",
+    "dateIso": "2026-11-07",
+    "formattedDate": "07 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "07-November",
+    "problemFolder": "1882-Process-Tasks-Using-Servers",
+    "folderPath": "solutions/November/07-November/1882-Process-Tasks-Using-Servers",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/process-tasks-using-servers/",
+    "leetcodeUrl": "https://leetcode.com/problems/process-tasks-using-servers/",
+    "youtubeUrl": "https://youtu.be/3Z9Ptd85Lfw?si=P7qI8_YKO6t0t9l5",
+    "tags": [
+      "Array",
+      "Heap (Priority Queue)",
+      "Simulation"
+    ],
+    "summary": "Assign incoming tasks to free servers with minimum weight and minimum index using dual priority queues, fast-forwarding time when all servers are busy.",
+    "approach": "Dual min-heaps: one maintains free servers ordered by (weight, index), and another maintains busy servers ordered by (freeTime, weight, index). Advance time to task arrival time or fast-forward to earliest completion when no server is free, pop the best free server, and schedule the task.",
+    "timeComplexity": "O((N + M) log N)",
+    "auxiliarySpaceComplexity": "O(N + M)",
+    "spaceComplexity": "O(N + M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/07-November/1882-Process-Tasks-Using-Servers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/07-November/1882-Process-Tasks-Using-Servers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/07-November/1882-Process-Tasks-Using-Servers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/07-November/1882-Process-Tasks-Using-Servers/solution.js"
+      }
+    }
+  },
+  {
     "id": "2747",
     "title": "Count Zero Request Servers",
     "slug": "count-zero-request-servers",

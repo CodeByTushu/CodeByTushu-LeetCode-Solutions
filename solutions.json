@@ -1,5 +1,55 @@
 [
   {
+    "id": "1267",
+    "title": "Count Servers that Communicate",
+    "slug": "count-servers-that-communicate",
+    "date": "08 November 2026",
+    "dateIso": "2026-11-08",
+    "formattedDate": "08 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "08-November",
+    "problemFolder": "1267-Count-Servers-that-Communicate",
+    "folderPath": "solutions/November/08-November/1267-Count-Servers-that-Communicate",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/count-servers-that-communicate/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-servers-that-communicate/",
+    "youtubeUrl": "https://youtu.be/tgLVIPhbSfg",
+    "tags": [
+      "Array",
+      "Counting",
+      "Hash Table",
+      "Matrix"
+    ],
+    "summary": "Return the number of servers that can communicate with at least one other server on the same row or column.",
+    "approach": "Precompute server frequencies across rows and columns in a first pass, then count servers in a second pass that satisfy rowCount[i] > 1 or colCount[j] > 1.",
+    "timeComplexity": "O(m * n)",
+    "auxiliarySpaceComplexity": "O(m + n)",
+    "spaceComplexity": "O(m + n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/08-November/1267-Count-Servers-that-Communicate/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/08-November/1267-Count-Servers-that-Communicate/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/08-November/1267-Count-Servers-that-Communicate/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/08-November/1267-Count-Servers-that-Communicate/solution.js"
+      }
+    }
+  },
+  {
     "id": "1882",
     "title": "Process Tasks Using Servers",
     "slug": "process-tasks-using-servers",

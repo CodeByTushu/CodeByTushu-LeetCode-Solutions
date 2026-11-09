@@ -1,5 +1,56 @@
 [
   {
+    "id": "1606",
+    "title": "Find Servers That Handled Most Number of Requests",
+    "slug": "find-servers-that-handled-most-number-of-requests",
+    "date": "09 November 2026",
+    "dateIso": "2026-11-09",
+    "formattedDate": "09 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "09-November",
+    "problemFolder": "1606-Find-Servers-That-Handled-Most-Number-of-Requests",
+    "folderPath": "solutions/November/09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
+    "youtubeUrl": "https://youtu.be/q-VCRrxXHfE",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Heap (Priority Queue)",
+      "Ordered Set",
+      "Simulation"
+    ],
+    "summary": "Track available servers in a balanced BST or dual heaps and busy servers in a min-heap to assign incoming requests cyclically or drop them if all servers are busy.",
+    "approach": "Maintain available servers in a TreeSet (or dual heaps) and busy servers in a min-heap sorted by completion time. For each request, release freed servers, query ceiling(i % k) wrapping around, increment count, and schedule in the heap.",
+    "timeComplexity": "O((k + n) log k)",
+    "auxiliarySpaceComplexity": "O(k)",
+    "spaceComplexity": "O(k)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.js"
+      }
+    }
+  },
+  {
     "id": "1267",
     "title": "Count Servers that Communicate",
     "slug": "count-servers-that-communicate",

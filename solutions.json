@@ -1,5 +1,53 @@
 [
   {
+    "id": "3693",
+    "title": "Climbing Stairs II",
+    "slug": "climbing-stairs-ii",
+    "date": "10 November 2026",
+    "dateIso": "2026-11-10",
+    "formattedDate": "10 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "10-November",
+    "problemFolder": "3693-Climbing-Stairs-II",
+    "folderPath": "solutions/November/10-November/3693-Climbing-Stairs-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/climbing-stairs-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/climbing-stairs-ii/",
+    "youtubeUrl": "https://youtu.be/GfK6WJYlhhs?si=giD2EyQg0ZrmPaa9",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "summary": "Determine the minimum total cost to climb from step 0 to step n given a 1-indexed costs array and quadratic jump penalties for leaps of 1, 2, or 3 steps.",
+    "approach": "Maintain a 1D DP table where dp[j] is the minimum cost to reach step j. For each step j from 1 to n, transition from j-1, j-2, and j-3 by adding the step cost and quadratic jump distance penalty d * d.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/10-November/3693-Climbing-Stairs-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/10-November/3693-Climbing-Stairs-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/10-November/3693-Climbing-Stairs-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/10-November/3693-Climbing-Stairs-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "1606",
     "title": "Find Servers That Handled Most Number of Requests",
     "slug": "find-servers-that-handled-most-number-of-requests",

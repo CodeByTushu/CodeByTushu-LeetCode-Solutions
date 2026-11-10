@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **9** | Days 01 – 09 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **10** | Days 01 – 10 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **2** | Problems #1385, #3736 |
-| 🟡 **Medium Problems** | **5** | Problems #453, #462, #2747, #1882, #1267 |
+| 🟡 **Medium Problems** | **6** | Problems #453, #462, #2747, #1882, #1267, #3693 |
 | 🔴 **Hard Problems** | **2** | Problems #3505, #1606 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **9 / 9** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **10 / 10** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3693** | [Climbing Stairs II](https://leetcode.com/problems/climbing-stairs-ii/) | <span style="color:#ffc400">**Medium**</span> | 10 Nov 2026 | [Java](./10-November/3693-Climbing-Stairs-II/Solution.java) | [Python](./10-November/3693-Climbing-Stairs-II/solution.py) | [C++](./10-November/3693-Climbing-Stairs-II/solution.cpp) | [JS](./10-November/3693-Climbing-Stairs-II/solution.js) | [Watch Video](https://youtu.be/GfK6WJYlhhs?si=giD2EyQg0ZrmPaa9) | [📁 10-November](./10-November/3693-Climbing-Stairs-II/) |
 | **1606** | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | <span style="color:#ff375f">**Hard**</span> | 09 Nov 2026 | [Java](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/Solution.java) | [Python](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.py) | [C++](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.cpp) | [JS](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.js) | [Watch Video](https://youtu.be/q-VCRrxXHfE) | [📁 09-November](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/) |
 | **1267** | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | <span style="color:#ffc400">**Medium**</span> | 08 Nov 2026 | [Java](./08-November/1267-Count-Servers-that-Communicate/Solution.java) | [Python](./08-November/1267-Count-Servers-that-Communicate/solution.py) | [C++](./08-November/1267-Count-Servers-that-Communicate/solution.cpp) | [JS](./08-November/1267-Count-Servers-that-Communicate/solution.js) | [Watch Video](https://youtu.be/tgLVIPhbSfg) | [📁 08-November](./08-November/1267-Count-Servers-that-Communicate/) |
 | **1882** | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | <span style="color:#ffc400">**Medium**</span> | 07 Nov 2026 | [Java](./07-November/1882-Process-Tasks-Using-Servers/Solution.java) | [Python](./07-November/1882-Process-Tasks-Using-Servers/solution.py) | [C++](./07-November/1882-Process-Tasks-Using-Servers/solution.cpp) | [JS](./07-November/1882-Process-Tasks-Using-Servers/solution.js) | [Watch Video](https://youtu.be/3Z9Ptd85Lfw?si=P7qI8_YKO6t0t9l5) | [📁 07-November](./07-November/1882-Process-Tasks-Using-Servers/) |
@@ -48,6 +49,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[10 November 2026](./10-November/)**: [#3693 Climbing Stairs II](./10-November/3693-Climbing-Stairs-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[09 November 2026](./09-November/)**: [#1606 Find Servers That Handled Most Number of Requests](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/) — <span style="color:#ff375f">Hard</span>
 - 📍 **[08 November 2026](./08-November/)**: [#1267 Count Servers that Communicate](./08-November/1267-Count-Servers-that-Communicate/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[07 November 2026](./07-November/)**: [#1882 Process Tasks Using Servers](./07-November/1882-Process-Tasks-Using-Servers/) — <span style="color:#ffc400">Medium</span>
@@ -62,12 +64,12 @@
 
 ## 🏷️ Problem Categories & Tags in November
 
-- **Array**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Array**: [#3693](./10-November/3693-Climbing-Stairs-II/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Binary Indexed Tree**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Binary Search**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 - **Coordinate Compression**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Counting**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
-- **Dynamic Programming**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
+- **Dynamic Programming**: [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Greedy**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Hash Table**: [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Heap (Priority Queue)**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)

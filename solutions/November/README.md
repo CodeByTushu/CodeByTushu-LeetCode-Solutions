@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **10** | Days 01 – 10 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **11** | Days 01 – 11 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **2** | Problems #1385, #3736 |
-| 🟡 **Medium Problems** | **6** | Problems #453, #462, #2747, #1882, #1267, #3693 |
+| 🟡 **Medium Problems** | **7** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789 |
 | 🔴 **Hard Problems** | **2** | Problems #3505, #1606 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **10 / 10** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **11 / 11** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3789** | [Minimum Cost to Acquire Required Items](https://leetcode.com/problems/minimum-cost-to-acquire-required-items/) | <span style="color:#ffc400">**Medium**</span> | 11 Nov 2026 | [Java](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/Solution.java) | [Python](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/solution.py) | [C++](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/solution.cpp) | [JS](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/solution.js) | [Watch Video](https://youtu.be/RNq00dZ0sA0) | [📁 11-November](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/) |
 | **3693** | [Climbing Stairs II](https://leetcode.com/problems/climbing-stairs-ii/) | <span style="color:#ffc400">**Medium**</span> | 10 Nov 2026 | [Java](./10-November/3693-Climbing-Stairs-II/Solution.java) | [Python](./10-November/3693-Climbing-Stairs-II/solution.py) | [C++](./10-November/3693-Climbing-Stairs-II/solution.cpp) | [JS](./10-November/3693-Climbing-Stairs-II/solution.js) | [Watch Video](https://youtu.be/GfK6WJYlhhs?si=giD2EyQg0ZrmPaa9) | [📁 10-November](./10-November/3693-Climbing-Stairs-II/) |
 | **1606** | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | <span style="color:#ff375f">**Hard**</span> | 09 Nov 2026 | [Java](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/Solution.java) | [Python](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.py) | [C++](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.cpp) | [JS](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/solution.js) | [Watch Video](https://youtu.be/q-VCRrxXHfE) | [📁 09-November](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/) |
 | **1267** | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | <span style="color:#ffc400">**Medium**</span> | 08 Nov 2026 | [Java](./08-November/1267-Count-Servers-that-Communicate/Solution.java) | [Python](./08-November/1267-Count-Servers-that-Communicate/solution.py) | [C++](./08-November/1267-Count-Servers-that-Communicate/solution.cpp) | [JS](./08-November/1267-Count-Servers-that-Communicate/solution.js) | [Watch Video](https://youtu.be/tgLVIPhbSfg) | [📁 08-November](./08-November/1267-Count-Servers-that-Communicate/) |
@@ -49,6 +50,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[11 November 2026](./11-November/)**: [#3789 Minimum Cost to Acquire Required Items](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[10 November 2026](./10-November/)**: [#3693 Climbing Stairs II](./10-November/3693-Climbing-Stairs-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[09 November 2026](./09-November/)**: [#1606 Find Servers That Handled Most Number of Requests](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/) — <span style="color:#ff375f">Hard</span>
 - 📍 **[08 November 2026](./08-November/)**: [#1267 Count Servers that Communicate](./08-November/1267-Count-Servers-that-Communicate/) — <span style="color:#ffc400">Medium</span>
@@ -70,10 +72,10 @@
 - **Coordinate Compression**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Counting**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
 - **Dynamic Programming**: [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
-- **Greedy**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Greedy**: [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Hash Table**: [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Heap (Priority Queue)**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
-- **Math**: [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Math**: [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Matrix**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
 - **Ordered Set**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/)
 - **Simulation**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)

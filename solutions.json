@@ -1,5 +1,53 @@
 [
   {
+    "id": "3789",
+    "title": "Minimum Cost to Acquire Required Items",
+    "slug": "minimum-cost-to-acquire-required-items",
+    "date": "11 November 2026",
+    "dateIso": "2026-11-11",
+    "formattedDate": "11 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "11-November",
+    "problemFolder": "3789-Minimum-Cost-to-Acquire-Required-Items",
+    "folderPath": "solutions/November/11-November/3789-Minimum-Cost-to-Acquire-Required-Items",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
+    "youtubeUrl": "https://youtu.be/RNq00dZ0sA0",
+    "tags": [
+      "Greedy",
+      "Math"
+    ],
+    "summary": "Calculate the minimum total cost to acquire at least need1 units of type 1 and need2 units of type 2 using separate items (cost1, cost2) or dual-contribution items (costBoth).",
+    "approach": "Decompose demands into common units min(need1, need2) and excess units, then take the minimum over three closed-form greedy strategies covering independent purchases, pure dual-item over-coverage, and optimal hybrid pairing using 64-bit arithmetic.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/11-November/3789-Minimum-Cost-to-Acquire-Required-Items/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/11-November/3789-Minimum-Cost-to-Acquire-Required-Items/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/11-November/3789-Minimum-Cost-to-Acquire-Required-Items/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/11-November/3789-Minimum-Cost-to-Acquire-Required-Items/solution.js"
+      }
+    }
+  },
+  {
     "id": "3693",
     "title": "Climbing Stairs II",
     "slug": "climbing-stairs-ii",

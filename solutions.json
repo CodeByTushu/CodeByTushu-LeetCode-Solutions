@@ -1,5 +1,52 @@
 [
   {
+    "id": "3105",
+    "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+    "slug": "longest-strictly-increasing-or-strictly-decreasing-subarray",
+    "date": "12 November 2026",
+    "dateIso": "2026-11-12",
+    "formattedDate": "12 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "12-November",
+    "problemFolder": "3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray",
+    "folderPath": "solutions/November/12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
+    "youtubeUrl": "https://youtu.be/nwFpQzEAHvs?si=kJCIXIv5XDvzbuHE",
+    "tags": [
+      "Array"
+    ],
+    "summary": "Find the maximum length of a contiguous subarray that is either strictly increasing or strictly decreasing.",
+    "approach": "Track two active monotonic streak counters (inc and dec) in a single O(n) pass over nums, resetting opposite or both counters on direction change or equality, while maintaining the global maximum ans in O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/solution.js"
+      }
+    }
+  },
+  {
     "id": "3789",
     "title": "Minimum Cost to Acquire Required Items",
     "slug": "minimum-cost-to-acquire-required-items",

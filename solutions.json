@@ -1,5 +1,55 @@
 [
   {
+    "id": "3420",
+    "title": "Count Non-Decreasing Subarrays After K Operations",
+    "slug": "count-non-decreasing-subarrays-after-k-operations",
+    "date": "13 November 2026",
+    "dateIso": "2026-11-13",
+    "formattedDate": "13 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "13-November",
+    "problemFolder": "3420-Count-Non-Decreasing-Subarrays-After-K-Operations",
+    "folderPath": "solutions/November/13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+    "leetcodeUrl": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+    "youtubeUrl": "https://youtu.be/aNiRJCEcYVw",
+    "tags": [
+      "Array",
+      "Monotonic Deque",
+      "Sliding Window",
+      "Two Pointers"
+    ],
+    "summary": "Count the number of contiguous subarrays that can be made non-decreasing by applying at most k increment operations.",
+    "approach": "Reverse sliding window from right to left using a monotonic double-ended queue to maintain step-wise prefix maximum contributions and a prefix sum array to dynamically track subarray increment costs under budget k in O(n) amortized time.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.js"
+      }
+    }
+  },
+  {
     "id": "3105",
     "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
     "slug": "longest-strictly-increasing-or-strictly-decreasing-subarray",

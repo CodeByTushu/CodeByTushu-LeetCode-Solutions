@@ -1,3 +1,10 @@
+"""
+Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 

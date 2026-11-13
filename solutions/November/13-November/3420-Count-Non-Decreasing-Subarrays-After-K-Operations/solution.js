@@ -1,4 +1,11 @@
 /**
+ * Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
+
+/**
  * @param {number[]} nums
  * @param {number} k
  * @return {number}

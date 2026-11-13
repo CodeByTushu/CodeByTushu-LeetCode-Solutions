@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.ArrayDeque;
 
 class Solution {

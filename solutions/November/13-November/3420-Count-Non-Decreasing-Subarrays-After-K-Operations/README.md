@@ -95,6 +95,12 @@ We maintain a double-ended queue storing indices of active maximum steps within 
 
 ### ☕ Java (JDK 17)
 ```java
+/**
+ * Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+ * Difficulty: Hard
+ * Language: Java
+ * Author: CodeByTushu
+ */
 import java.util.ArrayDeque;
 
 class Solution {
@@ -142,6 +148,13 @@ class Solution {
 
 ### 🐍 Python (Python 3)
 ```python
+"""
+Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+Difficulty: Hard
+Language: Python 3
+Author: CodeByTushu
+"""
+
 from collections import deque
 from typing import List
 
@@ -188,6 +201,12 @@ class Solution:
 
 ### ⚡ C++ (C++20)
 ```cpp
+/**
+ * Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <deque>
 
@@ -241,6 +260,13 @@ public:
 
 ### 🌐 JavaScript (Node.js ES2022)
 ```javascript
+/**
+ * Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+ * Difficulty: Hard
+ * Language: JavaScript
+ * Author: CodeByTushu
+ */
+
 /**
  * @param {number[]} nums
  * @param {number} k

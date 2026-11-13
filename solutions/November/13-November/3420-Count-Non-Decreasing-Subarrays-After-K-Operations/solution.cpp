@@ -1,3 +1,9 @@
+/**
+ * Problem: LeetCode 3420 - Count Non-Decreasing Subarrays After K Operations
+ * Difficulty: Hard
+ * Language: C++
+ * Author: CodeByTushu
+ */
 #include <vector>
 #include <deque>
 

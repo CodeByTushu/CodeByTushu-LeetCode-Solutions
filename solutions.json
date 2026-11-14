@@ -1,5 +1,54 @@
 [
   {
+    "id": "3364",
+    "title": "Minimum Positive Sum Subarray",
+    "slug": "minimum-positive-sum-subarray",
+    "date": "14 November 2026",
+    "dateIso": "2026-11-14",
+    "formattedDate": "14 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "14-November",
+    "problemFolder": "3364-Minimum-Positive-Sum-Subarray",
+    "folderPath": "solutions/November/14-November/3364-Minimum-Positive-Sum-Subarray",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
+    "youtubeUrl": "https://youtu.be/Oru2W6lMvJU",
+    "tags": [
+      "Array",
+      "Prefix Sum",
+      "Sliding Window"
+    ],
+    "summary": "Find the minimum sum of a subarray whose size is between l and r inclusive and whose sum is strictly greater than 0.",
+    "approach": "Iterate through every starting index and expand the contiguous window while accumulating the running sum, pruning immediately when subarray length exceeds r, and minimizing positive sums for lengths at least l in O(n * r) time and O(1) space.",
+    "timeComplexity": "O(n * r)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/14-November/3364-Minimum-Positive-Sum-Subarray/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/14-November/3364-Minimum-Positive-Sum-Subarray/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/14-November/3364-Minimum-Positive-Sum-Subarray/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/14-November/3364-Minimum-Positive-Sum-Subarray/solution.js"
+      }
+    }
+  },
+  {
     "id": "3420",
     "title": "Count Non-Decreasing Subarrays After K Operations",
     "slug": "count-non-decreasing-subarrays-after-k-operations",

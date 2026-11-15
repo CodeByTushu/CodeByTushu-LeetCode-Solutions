@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **14** | Days 01 – 14 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **15** | Days 01 – 15 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **4** | Problems #1385, #3736, #3105, #3364 |
-| 🟡 **Medium Problems** | **7** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789 |
+| 🟡 **Medium Problems** | **8** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524 |
 | 🔴 **Hard Problems** | **3** | Problems #3505, #1606, #3420 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **14 / 14** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **15 / 15** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1524** | [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | <span style="color:#ffc400">**Medium**</span> | 15 Nov 2026 | [Java](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/Solution.java) | [Python](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.py) | [C++](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.cpp) | [JS](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.js) | [Watch Video](https://youtu.be/4Qs3N9AYv7E) | [📁 15-November](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/) |
 | **3364** | [Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/) | <span style="color:#00b8a3">**Easy**</span> | 14 Nov 2026 | [Java](./14-November/3364-Minimum-Positive-Sum-Subarray/Solution.java) | [Python](./14-November/3364-Minimum-Positive-Sum-Subarray/solution.py) | [C++](./14-November/3364-Minimum-Positive-Sum-Subarray/solution.cpp) | [JS](./14-November/3364-Minimum-Positive-Sum-Subarray/solution.js) | [Watch Video](https://youtu.be/Oru2W6lMvJU) | [📁 14-November](./14-November/3364-Minimum-Positive-Sum-Subarray/) |
 | **3420** | [Count Non-Decreasing Subarrays After K Operations](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | <span style="color:#ff375f">**Hard**</span> | 13 Nov 2026 | [Java](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/Solution.java) | [Python](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.py) | [C++](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.cpp) | [JS](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.js) | [Watch Video](https://youtu.be/aNiRJCEcYVw) | [📁 13-November](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/) |
 | **3105** | [Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/) | <span style="color:#00b8a3">**Easy**</span> | 12 Nov 2026 | [Java](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/Solution.java) | [Python](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/solution.py) | [C++](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/solution.cpp) | [JS](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/solution.js) | [Watch Video](https://youtu.be/nwFpQzEAHvs?si=kJCIXIv5XDvzbuHE) | [📁 12-November](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/) |
@@ -53,6 +54,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[15 November 2026](./15-November/)**: [#1524 Number of Sub-arrays With Odd Sum](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[14 November 2026](./14-November/)**: [#3364 Minimum Positive Sum Subarray](./14-November/3364-Minimum-Positive-Sum-Subarray/) — <span style="color:#00b8a3">Easy</span>
 - 📍 **[13 November 2026](./13-November/)**: [#3420 Count Non-Decreasing Subarrays After K Operations](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/) — <span style="color:#ff375f">Hard</span>
 - 📍 **[12 November 2026](./12-November/)**: [#3105 Longest Strictly Increasing or Strictly Decreasing Subarray](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/) — <span style="color:#00b8a3">Easy</span>
@@ -72,20 +74,20 @@
 
 ## 🏷️ Problem Categories & Tags in November
 
-- **Array**: [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#3105](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Array**: [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#3105](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Binary Indexed Tree**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Binary Search**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 - **Coordinate Compression**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Counting**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
-- **Dynamic Programming**: [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
+- **Dynamic Programming**: [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Greedy**: [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Hash Table**: [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Heap (Priority Queue)**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
-- **Math**: [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Math**: [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Matrix**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
 - **Monotonic Deque**: [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
 - **Ordered Set**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/)
-- **Prefix Sum**: [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
+- **Prefix Sum**: [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
 - **Simulation**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Sliding Window**: [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Sorting**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)

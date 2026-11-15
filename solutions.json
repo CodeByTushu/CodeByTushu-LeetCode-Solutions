@@ -1,5 +1,55 @@
 [
   {
+    "id": "1524",
+    "title": "Number of Sub-arrays With Odd Sum",
+    "slug": "number-of-sub-arrays-with-odd-sum",
+    "date": "15 November 2026",
+    "dateIso": "2026-11-15",
+    "formattedDate": "15 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "15-November",
+    "problemFolder": "1524-Number-of-Sub-arrays-With-Odd-Sum",
+    "folderPath": "solutions/November/15-November/1524-Number-of-Sub-arrays-With-Odd-Sum",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
+    "youtubeUrl": "https://youtu.be/4Qs3N9AYv7E",
+    "tags": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Prefix Sum"
+    ],
+    "summary": "Given an array of integers arr, return the number of subarrays with an odd sum modulo 10^9 + 7.",
+    "approach": "Maintain running prefix sum parity (modulo 2). An odd prefix minus an even prefix yields an odd subarray sum, and vice versa. Accumulate matching counts in O(n) time and O(1) space.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.js"
+      }
+    }
+  },
+  {
     "id": "3364",
     "title": "Minimum Positive Sum Subarray",
     "slug": "minimum-positive-sum-subarray",

@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **15** | Days 01 – 15 November completed (Active Series 🚀) |
-| 🟢 **Easy Problems** | **4** | Problems #1385, #3736, #3105, #3364 |
+| **Total Solved Problems** | **16** | Days 01 – 16 November completed (Active Series 🚀) |
+| 🟢 **Easy Problems** | **5** | Problems #1385, #3736, #3105, #3364, #2243 |
 | 🟡 **Medium Problems** | **8** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524 |
 | 🔴 **Hard Problems** | **3** | Problems #3505, #1606, #3420 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **15 / 15** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **16 / 16** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2243** | [Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | <span style="color:#00b8a3">**Easy**</span> | 16 Nov 2026 | [Java](./16-November/2243-Calculate-Digit-Sum-of-a-String/Solution.java) | [Python](./16-November/2243-Calculate-Digit-Sum-of-a-String/solution.py) | [C++](./16-November/2243-Calculate-Digit-Sum-of-a-String/solution.cpp) | [JS](./16-November/2243-Calculate-Digit-Sum-of-a-String/solution.js) | [Watch Video](https://youtu.be/Twz9Dts_JBI) | [📁 16-November](./16-November/2243-Calculate-Digit-Sum-of-a-String/) |
 | **1524** | [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | <span style="color:#ffc400">**Medium**</span> | 15 Nov 2026 | [Java](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/Solution.java) | [Python](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.py) | [C++](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.cpp) | [JS](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.js) | [Watch Video](https://youtu.be/4Qs3N9AYv7E) | [📁 15-November](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/) |
 | **3364** | [Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/) | <span style="color:#00b8a3">**Easy**</span> | 14 Nov 2026 | [Java](./14-November/3364-Minimum-Positive-Sum-Subarray/Solution.java) | [Python](./14-November/3364-Minimum-Positive-Sum-Subarray/solution.py) | [C++](./14-November/3364-Minimum-Positive-Sum-Subarray/solution.cpp) | [JS](./14-November/3364-Minimum-Positive-Sum-Subarray/solution.js) | [Watch Video](https://youtu.be/Oru2W6lMvJU) | [📁 14-November](./14-November/3364-Minimum-Positive-Sum-Subarray/) |
 | **3420** | [Count Non-Decreasing Subarrays After K Operations](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | <span style="color:#ff375f">**Hard**</span> | 13 Nov 2026 | [Java](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/Solution.java) | [Python](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.py) | [C++](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.cpp) | [JS](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/solution.js) | [Watch Video](https://youtu.be/aNiRJCEcYVw) | [📁 13-November](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/) |
@@ -54,6 +55,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[16 November 2026](./16-November/)**: [#2243 Calculate Digit Sum of a String](./16-November/2243-Calculate-Digit-Sum-of-a-String/) — <span style="color:#00b8a3">Easy</span>
 - 📍 **[15 November 2026](./15-November/)**: [#1524 Number of Sub-arrays With Odd Sum](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[14 November 2026](./14-November/)**: [#3364 Minimum Positive Sum Subarray](./14-November/3364-Minimum-Positive-Sum-Subarray/) — <span style="color:#00b8a3">Easy</span>
 - 📍 **[13 November 2026](./13-November/)**: [#3420 Count Non-Decreasing Subarrays After K Operations](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/) — <span style="color:#ff375f">Hard</span>
@@ -88,9 +90,10 @@
 - **Monotonic Deque**: [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
 - **Ordered Set**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/)
 - **Prefix Sum**: [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
-- **Simulation**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
+- **Simulation**: [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Sliding Window**: [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Sorting**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
+- **String**: [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/)
 - **Two Pointers**: [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 
 ---

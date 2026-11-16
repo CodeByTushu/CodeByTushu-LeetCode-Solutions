@@ -1,5 +1,53 @@
 [
   {
+    "id": "2243",
+    "title": "Calculate Digit Sum of a String",
+    "slug": "calculate-digit-sum-of-a-string",
+    "date": "16 November 2026",
+    "dateIso": "2026-11-16",
+    "formattedDate": "16 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "16-November",
+    "problemFolder": "2243-Calculate-Digit-Sum-of-a-String",
+    "folderPath": "solutions/November/16-November/2243-Calculate-Digit-Sum-of-a-String",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
+    "leetcodeUrl": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
+    "youtubeUrl": "https://youtu.be/Twz9Dts_JBI",
+    "tags": [
+      "String",
+      "Simulation"
+    ],
+    "summary": "Simulate chunk-wise digit summation of groups of size k until the string length is at most k.",
+    "approach": "Repeatedly partition the string into consecutive blocks of size k, replace each block with the decimal string of its digit sum, and merge blocks until length is at most k.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/16-November/2243-Calculate-Digit-Sum-of-a-String/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/16-November/2243-Calculate-Digit-Sum-of-a-String/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/16-November/2243-Calculate-Digit-Sum-of-a-String/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/16-November/2243-Calculate-Digit-Sum-of-a-String/solution.js"
+      }
+    }
+  },
+  {
     "id": "1524",
     "title": "Number of Sub-arrays With Odd Sum",
     "slug": "number-of-sub-arrays-with-odd-sum",

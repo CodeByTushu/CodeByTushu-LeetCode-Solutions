@@ -1,5 +1,53 @@
 [
   {
+    "id": "2914",
+    "title": "Minimum Number of Changes to Make Binary String Beautiful",
+    "slug": "minimum-number-of-changes-to-make-binary-string-beautiful",
+    "date": "18 November 2026",
+    "dateIso": "2026-11-18",
+    "formattedDate": "18 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "18-November",
+    "problemFolder": "2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful",
+    "folderPath": "solutions/November/18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/",
+    "youtubeUrl": "https://youtu.be/V9h3WfOHQ1U",
+    "tags": [
+      "String",
+      "Greedy"
+    ],
+    "summary": "Find the minimum number of bit flips needed so that an even-length binary string can be partitioned into even-length uniform substrings of only 0s or only 1s.",
+    "approach": "Since every even-length uniform substring can be decomposed into consecutive pairs of length 2 and every valid partition keeps each (2k, 2k+1) pair together, simply iterate in steps of 2 and count mismatched pairs.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.js"
+      }
+    }
+  },
+  {
     "id": "2911",
     "title": "Minimum Changes to Make K Semi-palindromes",
     "slug": "minimum-changes-to-make-k-semi-palindromes",

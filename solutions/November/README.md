@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **17** | Days 01 – 17 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **18** | Days 01 – 18 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **5** | Problems #1385, #3736, #3105, #3364, #2243 |
-| 🟡 **Medium Problems** | **8** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524 |
+| 🟡 **Medium Problems** | **9** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524, #2914 |
 | 🔴 **Hard Problems** | **4** | Problems #3505, #1606, #3420, #2911 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **17 / 17** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **18 / 18** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **2914** | [Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) | <span style="color:#ffc400">**Medium**</span> | 18 Nov 2026 | [Java](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/Solution.java) | [Python](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.py) | [C++](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.cpp) | [JS](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.js) | [Watch Video](https://youtu.be/V9h3WfOHQ1U) | [📁 18-November](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/) |
 | **2911** | [Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) | <span style="color:#ff375f">**Hard**</span> | 17 Nov 2026 | [Java](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/Solution.java) | [Python](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/solution.py) | [C++](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/solution.cpp) | [JS](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/solution.js) | [Watch Video](https://youtu.be/-mdDEBhdJb0) | [📁 17-November](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/) |
 | **2243** | [Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | <span style="color:#00b8a3">**Easy**</span> | 16 Nov 2026 | [Java](./16-November/2243-Calculate-Digit-Sum-of-a-String/Solution.java) | [Python](./16-November/2243-Calculate-Digit-Sum-of-a-String/solution.py) | [C++](./16-November/2243-Calculate-Digit-Sum-of-a-String/solution.cpp) | [JS](./16-November/2243-Calculate-Digit-Sum-of-a-String/solution.js) | [Watch Video](https://youtu.be/Twz9Dts_JBI) | [📁 16-November](./16-November/2243-Calculate-Digit-Sum-of-a-String/) |
 | **1524** | [Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | <span style="color:#ffc400">**Medium**</span> | 15 Nov 2026 | [Java](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/Solution.java) | [Python](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.py) | [C++](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.cpp) | [JS](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/solution.js) | [Watch Video](https://youtu.be/4Qs3N9AYv7E) | [📁 15-November](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/) |
@@ -56,6 +57,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[18 November 2026](./18-November/)**: [#2914 Minimum Number of Changes to Make Binary String Beautiful](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[17 November 2026](./17-November/)**: [#2911 Minimum Changes to Make K Semi-palindromes](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/) — <span style="color:#ff375f">Hard</span>
 - 📍 **[16 November 2026](./16-November/)**: [#2243 Calculate Digit Sum of a String](./16-November/2243-Calculate-Digit-Sum-of-a-String/) — <span style="color:#00b8a3">Easy</span>
 - 📍 **[15 November 2026](./15-November/)**: [#1524 Number of Sub-arrays With Odd Sum](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/) — <span style="color:#ffc400">Medium</span>
@@ -84,7 +86,7 @@
 - **Coordinate Compression**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Counting**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
 - **Dynamic Programming**: [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
-- **Greedy**: [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Greedy**: [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Hash Table**: [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Heap (Priority Queue)**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Math**: [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
@@ -95,7 +97,7 @@
 - **Simulation**: [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Sliding Window**: [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Sorting**: [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
-- **String**: [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/)
+- **String**: [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/)
 - **Two Pointers**: [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 
 ---

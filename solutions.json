@@ -1,5 +1,54 @@
 [
   {
+    "id": "2567",
+    "title": "Minimum Score by Changing Two Elements",
+    "slug": "minimum-score-by-changing-two-elements",
+    "date": "19 November 2026",
+    "dateIso": "2026-11-19",
+    "formattedDate": "19 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "19-November",
+    "problemFolder": "2567-Minimum-Score-by-Changing-Two-Elements",
+    "folderPath": "solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
+    "youtubeUrl": "https://youtu.be/pGxCYi03odI",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting"
+    ],
+    "summary": "Find the minimum score (sum of maximum and minimum absolute differences between any two elements) after changing at most two elements.",
+    "approach": "Since setting one modified element equal to an existing element guarantees low score is 0, we only need to minimize the range (max - min) after modifying 2 elements. After sorting, evaluate the 3 greedy options: change 2 smallest, 1 smallest + 1 largest, or 2 largest elements.",
+    "timeComplexity": "O(n log n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.js"
+      }
+    }
+  },
+  {
     "id": "2914",
     "title": "Minimum Number of Changes to Make Binary String Beautiful",
     "slug": "minimum-number-of-changes-to-make-binary-string-beautiful",

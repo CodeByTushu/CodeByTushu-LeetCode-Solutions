@@ -18,15 +18,15 @@
 
 ---
 
-## ⚡ Today's Daily Problem (Featured: 19 November 2026)
+## ⚡ Today's Daily Problem (Featured: 20 November 2026)
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Notes |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **2567** | [Minimum Score by Changing Two Elements](https://leetcode.com/problems/minimum-score-by-changing-two-elements/) | <span style="color:#ffc400">**Medium**</span> | 19 Nov 2026 | [Java](./solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/Solution.java) | [Python](./solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.py) | [C++](./solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.cpp) | [JS](./solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.js) | [Watch Video](https://youtu.be/pGxCYi03odI) | [README](./solutions/November/19-November/2567-Minimum-Score-by-Changing-Two-Elements/README.md) |
+| **3041** | [Maximize Consecutive Elements in an Array After Modification](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | <span style="color:#ff375f">**Hard**</span> | 20 Nov 2026 | [Java](./solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/Solution.java) | [Python](./solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.py) | [C++](./solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.cpp) | [JS](./solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.js) | [Watch Video](https://youtu.be/WYB-zUEH38c) | [README](./solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/README.md) |
 
 <p align="center">
   <a href="./solutions/November/">
-    <img src="https://img.shields.io/badge/🍁_Open_Active_November_Folder_(Day_19_Solved)-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Open November Archive"/>
+    <img src="https://img.shields.io/badge/🍁_Open_Active_November_Folder_(Day_20_Solved)-10b981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Open November Archive"/>
   </a>
 </p>
 
@@ -71,12 +71,12 @@ CodeByTushu-LeetCode-Solutions/
 
 ## 📊 Repository Statistics (Live & Verified)
 
-- **Total Published Problems:** `251`
+- **Total Published Problems:** `252`
 - **Supported Languages:** `4` (Java, Python, C++, JavaScript)
 - **Difficulty Breakdown:**
   - 🟢 **Easy:** `63`
   - 🟡 **Medium:** `130`
-  - 🔴 **Hard:** `58`
+  - 🔴 **Hard:** `59`
 - **Active Year:** `2026`
 - **Active Months:** `November 2026`, `October 2026`, `September 2026`, `August 2026`, `July 2026`, `June 2026`, `May 2026`, `April 2026`, `January 2026`
 

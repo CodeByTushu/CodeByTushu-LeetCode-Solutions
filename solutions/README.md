@@ -33,7 +33,7 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |
 | 🍂 **September** | Q3 (Autumn) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse September Solutions (30 Days)**](./September/) |
 | 🎃 **October** | **Q4 (Autumn)** | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse October Solutions (31 Days)**](./October/) |
-| 🍁 **November** | **Q4 (Late Autumn)** | **19 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (19 Days)**](./November/) |
+| 🍁 **November** | **Q4 (Late Autumn)** | **20 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (20 Days)**](./November/) |
 | 🎄 **December** | Q4 (Winter Finale) | — | 📁 Upcoming Series | [📂 Browse December](./December/) |
 
 ---
@@ -47,9 +47,9 @@ The **November 2026 Daily Series** is actively running! Solutions are solved and
 ### November Quick Highlights:
 - 🟢 **Easy Problems (5):** #1385, #3736, #3105, #3364, #2243
 - 🟡 **Medium Problems (10):** #453, #462, #2747, #1882, #1267, #3693, #3789, #1524, #2914, #2567
-- 🔴 **Hard Problems (4):** #3505, #1606, #3420, #2911
+- 🔴 **Hard Problems (5):** #3505, #1606, #3420, #2911, #3041
 - 💻 **Language Coverage:** Java, Python, C++, JavaScript (100%)
-- 🎥 **Video Solutions:** 19 / 19 YouTube walkthroughs attached
+- 🎥 **Video Solutions:** 20 / 20 YouTube walkthroughs attached
 
 ---
 

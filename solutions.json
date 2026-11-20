@@ -1,5 +1,54 @@
 [
   {
+    "id": "3041",
+    "title": "Maximize Consecutive Elements in an Array After Modification",
+    "slug": "maximize-consecutive-elements-in-an-array-after-modification",
+    "date": "20 November 2026",
+    "dateIso": "2026-11-20",
+    "formattedDate": "20 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "20-November",
+    "problemFolder": "3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification",
+    "folderPath": "solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification",
+    "difficulty": "Hard",
+    "problemUrl": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/",
+    "youtubeUrl": "https://youtu.be/WYB-zUEH38c",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Sorting"
+    ],
+    "summary": "Find the maximum number of elements you can select such that they are consecutive when sorted, given that each element can be increased by at most 1.",
+    "approach": "Sort nums and maintain a DP array where dp[v] is the maximum length of a consecutive sequence ending at value v. For each element x, update dp[x + 1] = dp[x] + 1 before dp[x] = dp[x - 1] + 1 to prevent using the same element twice.",
+    "timeComplexity": "O(N log N + M)",
+    "auxiliarySpaceComplexity": "O(M)",
+    "spaceComplexity": "O(M)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.js"
+      }
+    }
+  },
+  {
     "id": "2567",
     "title": "Minimum Score by Changing Two Elements",
     "slug": "minimum-score-by-changing-two-elements",

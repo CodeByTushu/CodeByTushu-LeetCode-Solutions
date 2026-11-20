@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **19** | Days 01 – 19 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **20** | Days 01 – 20 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **5** | Problems #1385, #3736, #3105, #3364, #2243 |
 | 🟡 **Medium Problems** | **10** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524, #2914, #2567 |
-| 🔴 **Hard Problems** | **4** | Problems #3505, #1606, #3420, #2911 |
+| 🔴 **Hard Problems** | **5** | Problems #3505, #1606, #3420, #2911, #3041 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **19 / 19** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **20 / 20** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3041** | [Maximize Consecutive Elements in an Array After Modification](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | <span style="color:#ff375f">**Hard**</span> | 20 Nov 2026 | [Java](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/Solution.java) | [Python](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.py) | [C++](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.cpp) | [JS](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/solution.js) | [Watch Video](https://youtu.be/WYB-zUEH38c) | [📁 20-November](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/) |
 | **2567** | [Minimum Score by Changing Two Elements](https://leetcode.com/problems/minimum-score-by-changing-two-elements/) | <span style="color:#ffc400">**Medium**</span> | 19 Nov 2026 | [Java](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/Solution.java) | [Python](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.py) | [C++](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.cpp) | [JS](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/solution.js) | [Watch Video](https://youtu.be/pGxCYi03odI) | [📁 19-November](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/) |
 | **2914** | [Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) | <span style="color:#ffc400">**Medium**</span> | 18 Nov 2026 | [Java](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/Solution.java) | [Python](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.py) | [C++](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.cpp) | [JS](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/solution.js) | [Watch Video](https://youtu.be/V9h3WfOHQ1U) | [📁 18-November](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/) |
 | **2911** | [Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) | <span style="color:#ff375f">**Hard**</span> | 17 Nov 2026 | [Java](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/Solution.java) | [Python](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/solution.py) | [C++](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/solution.cpp) | [JS](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/solution.js) | [Watch Video](https://youtu.be/-mdDEBhdJb0) | [📁 17-November](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/) |
@@ -58,6 +59,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[20 November 2026](./20-November/)**: [#3041 Maximize Consecutive Elements in an Array After Modification](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/) — <span style="color:#ff375f">Hard</span>
 - 📍 **[19 November 2026](./19-November/)**: [#2567 Minimum Score by Changing Two Elements](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[18 November 2026](./18-November/)**: [#2914 Minimum Number of Changes to Make Binary String Beautiful](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[17 November 2026](./17-November/)**: [#2911 Minimum Changes to Make K Semi-palindromes](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/) — <span style="color:#ff375f">Hard</span>
@@ -82,12 +84,12 @@
 
 ## 🏷️ Problem Categories & Tags in November
 
-- **Array**: [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#3105](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Array**: [#3041](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/), [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#3105](./12-November/3105-Longest-Strictly-Increasing-or-Strictly-Decreasing-Subarray/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Binary Indexed Tree**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Binary Search**: [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 - **Coordinate Compression**: [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Counting**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
-- **Dynamic Programming**: [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
+- **Dynamic Programming**: [#3041](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Greedy**: [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Hash Table**: [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Heap (Priority Queue)**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
@@ -98,7 +100,7 @@
 - **Prefix Sum**: [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
 - **Simulation**: [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Sliding Window**: [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
-- **Sorting**: [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
+- **Sorting**: [#3041](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/), [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
 - **String**: [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/)
 - **Two Pointers**: [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/)
 

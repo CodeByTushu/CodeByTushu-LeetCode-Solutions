@@ -1,5 +1,55 @@
 [
   {
+    "id": "3331",
+    "title": "Find Subtree Sizes After Changes",
+    "slug": "find-subtree-sizes-after-changes",
+    "date": "21 November 2026",
+    "dateIso": "2026-11-21",
+    "formattedDate": "21 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "21-November",
+    "problemFolder": "3331-Find-Subtree-Sizes-After-Changes",
+    "folderPath": "solutions/November/21-November/3331-Find-Subtree-Sizes-After-Changes",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/find-subtree-sizes-after-changes/",
+    "leetcodeUrl": "https://leetcode.com/problems/find-subtree-sizes-after-changes/",
+    "youtubeUrl": "https://youtu.be/rUtL-v8qYQA",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Dynamic Programming",
+      "String"
+    ],
+    "summary": "Find the size of the subtree rooted at each node after simultaneously reassigning each node's parent to its closest ancestor with the same character.",
+    "approach": "Run an iterative DFS maintaining an array of size 26 for the deepest ancestor carrying each character. Update new parents in O(1) time and calculate subtree sizes using reverse preorder accumulation in linear time.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/21-November/3331-Find-Subtree-Sizes-After-Changes/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/21-November/3331-Find-Subtree-Sizes-After-Changes/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/21-November/3331-Find-Subtree-Sizes-After-Changes/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/21-November/3331-Find-Subtree-Sizes-After-Changes/solution.js"
+      }
+    }
+  },
+  {
     "id": "3041",
     "title": "Maximize Consecutive Elements in an Array After Modification",
     "slug": "maximize-consecutive-elements-in-an-array-after-modification",

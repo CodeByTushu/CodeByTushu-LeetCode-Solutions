@@ -33,7 +33,7 @@ Select any month below to jump straight to that month's folder and view its date
 | 🌴 **August** | Q3 (Late Summer) | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse August Solutions (31 Days)**](./August/) |
 | 🍂 **September** | Q3 (Autumn) | **30 Solved** | 🟢 **Complete Series** | [👉 **Browse September Solutions (30 Days)**](./September/) |
 | 🎃 **October** | **Q4 (Autumn)** | **31 Solved** | 🟢 **Complete Series** | [👉 **Browse October Solutions (31 Days)**](./October/) |
-| 🍁 **November** | **Q4 (Late Autumn)** | **21 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (21 Days)**](./November/) |
+| 🍁 **November** | **Q4 (Late Autumn)** | **22 Solved** | 🟢 **Active Series** | [👉 **Browse November Solutions (22 Days)**](./November/) |
 | 🎄 **December** | Q4 (Winter Finale) | — | 📁 Upcoming Series | [📂 Browse December](./December/) |
 
 ---
@@ -45,11 +45,11 @@ The **November 2026 Daily Series** is actively running! Solutions are solved and
 👉 **[Click here to view the complete November 2026 Archive](./November/)**
 
 ### November Quick Highlights:
-- 🟢 **Easy Problems (5):** #1385, #3736, #3105, #3364, #2243
+- 🟢 **Easy Problems (6):** #1385, #3736, #3105, #3364, #2243, #2124
 - 🟡 **Medium Problems (11):** #453, #462, #2747, #1882, #1267, #3693, #3789, #1524, #2914, #2567, #3331
 - 🔴 **Hard Problems (5):** #3505, #1606, #3420, #2911, #3041
 - 💻 **Language Coverage:** Java, Python, C++, JavaScript (100%)
-- 🎥 **Video Solutions:** 21 / 21 YouTube walkthroughs attached
+- 🎥 **Video Solutions:** 22 / 22 YouTube walkthroughs attached
 
 ---
 

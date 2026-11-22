@@ -1,5 +1,53 @@
 [
   {
+    "id": "2124",
+    "title": "Check if All A's Appears Before All B's",
+    "slug": "check-if-all-as-appears-before-all-bs",
+    "date": "22 November 2026",
+    "dateIso": "2026-11-22",
+    "formattedDate": "22 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "22-November",
+    "problemFolder": "2124-Check-if-All-As-Appears-Before-All-Bs",
+    "folderPath": "solutions/November/22-November/2124-Check-if-All-As-Appears-Before-All-Bs",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
+    "leetcodeUrl": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
+    "youtubeUrl": "https://youtu.be/XW6lICRGxH0",
+    "tags": [
+      "String",
+      "Two Pointers"
+    ],
+    "summary": "Check whether every 'a' appears before every 'b' in a binary string of 'a's and 'b's by verifying that the invalid transition 'ba' never occurs.",
+    "approach": "A string is valid if and only if no 'a' appears after any 'b', which is equivalent to saying the substring 'ba' never occurs. Perform a linear scan to check for the presence of 'ba'.",
+    "timeComplexity": "O(n)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/22-November/2124-Check-if-All-As-Appears-Before-All-Bs/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/22-November/2124-Check-if-All-As-Appears-Before-All-Bs/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/22-November/2124-Check-if-All-As-Appears-Before-All-Bs/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/22-November/2124-Check-if-All-As-Appears-Before-All-Bs/solution.js"
+      }
+    }
+  },
+  {
     "id": "3331",
     "title": "Find Subtree Sizes After Changes",
     "slug": "find-subtree-sizes-after-changes",

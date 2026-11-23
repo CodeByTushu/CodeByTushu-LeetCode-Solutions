@@ -1,5 +1,56 @@
 [
   {
+    "id": "1352",
+    "title": "Product of the Last K Numbers",
+    "slug": "product-of-the-last-k-numbers",
+    "date": "23 November 2026",
+    "dateIso": "2026-11-23",
+    "formattedDate": "23 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "23-November",
+    "problemFolder": "1352-Product-of-the-Last-K-Numbers",
+    "folderPath": "solutions/November/23-November/1352-Product-of-the-Last-K-Numbers",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/product-of-the-last-k-numbers/",
+    "leetcodeUrl": "https://leetcode.com/problems/product-of-the-last-k-numbers/",
+    "youtubeUrl": "https://youtu.be/AG3BZB3_gVc",
+    "tags": [
+      "Array",
+      "Math",
+      "Design",
+      "Data Stream",
+      "Prefix Sum"
+    ],
+    "summary": "Design a data structure that appends integers from a stream and computes the product of the last k integers in O(1) time using cumulative prefix division.",
+    "approach": "Maintain a running prefix product list initialized with 1. On receiving 0, reset the list to [1] since earlier elements cannot contribute to non-zero products. For getProduct(k), if k is greater than or equal to the prefix list size, return 0 (as the window contains a zero); otherwise, divide the last prefix product by the prefix product before the window in O(1) time.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/23-November/1352-Product-of-the-Last-K-Numbers/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/23-November/1352-Product-of-the-Last-K-Numbers/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/23-November/1352-Product-of-the-Last-K-Numbers/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/23-November/1352-Product-of-the-Last-K-Numbers/solution.js"
+      }
+    }
+  },
+  {
     "id": "2124",
     "title": "Check if All A's Appears Before All B's",
     "slug": "check-if-all-as-appears-before-all-bs",

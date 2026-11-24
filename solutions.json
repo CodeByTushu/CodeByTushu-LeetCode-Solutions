@@ -1,5 +1,55 @@
 [
   {
+    "id": "3411",
+    "title": "Maximum Subarray With Equal Products",
+    "slug": "maximum-subarray-with-equal-products",
+    "date": "24 November 2026",
+    "dateIso": "2026-11-24",
+    "formattedDate": "24 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "24-November",
+    "problemFolder": "3411-Maximum-Subarray-With-Equal-Products",
+    "folderPath": "solutions/November/24-November/3411-Maximum-Subarray-With-Equal-Products",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/maximum-subarray-with-equal-products/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray-with-equal-products/",
+    "youtubeUrl": "https://youtu.be/oAEHQ75KOz4",
+    "tags": [
+      "Array",
+      "Math",
+      "Number Theory",
+      "Sliding Window"
+    ],
+    "summary": "Find the length of the longest subarray where the product of all elements equals the product of their LCM and GCD.",
+    "approach": "Iterate over all possible starting indices i and incrementally extend the subarray ending at j. Maintain running product, GCD, and LCM. Whenever prod == lcm * gcd, update the maximum length with j - i + 1.",
+    "timeComplexity": "O(N^2)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/24-November/3411-Maximum-Subarray-With-Equal-Products/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/24-November/3411-Maximum-Subarray-With-Equal-Products/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/24-November/3411-Maximum-Subarray-With-Equal-Products/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/24-November/3411-Maximum-Subarray-With-Equal-Products/solution.js"
+      }
+    }
+  },
+  {
     "id": "1352",
     "title": "Product of the Last K Numbers",
     "slug": "product-of-the-last-k-numbers",

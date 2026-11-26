@@ -1,5 +1,54 @@
 [
   {
+    "id": "3360",
+    "title": "Stone Removal Game",
+    "slug": "stone-removal-game",
+    "date": "26 November 2026",
+    "dateIso": "2026-11-26",
+    "formattedDate": "26 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "26-November",
+    "problemFolder": "3360-Stone-Removal-Game",
+    "folderPath": "solutions/November/26-November/3360-Stone-Removal-Game",
+    "difficulty": "Easy",
+    "problemUrl": "https://leetcode.com/problems/stone-removal-game/",
+    "leetcodeUrl": "https://leetcode.com/problems/stone-removal-game/",
+    "youtubeUrl": "https://youtu.be/Xg43IHEr838",
+    "tags": [
+      "Math",
+      "Simulation",
+      "Game Theory"
+    ],
+    "summary": "Determine if Alice wins the stone removal game starting with 10 stones and decreasing by 1 stone each turn.",
+    "approach": "Simulate the turn-by-turn game using a while loop. Maintain stones remaining n, remove count starting from 10, and a turn flag. Stop when n < remove; the current player whose turn it is loses, meaning Alice wins if it is Bob's turn.",
+    "timeComplexity": "O(1)",
+    "auxiliarySpaceComplexity": "O(1)",
+    "spaceComplexity": "O(1)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/26-November/3360-Stone-Removal-Game/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/26-November/3360-Stone-Removal-Game/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/26-November/3360-Stone-Removal-Game/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/26-November/3360-Stone-Removal-Game/solution.js"
+      }
+    }
+  },
+  {
     "id": "3934",
     "title": "Smallest Unique Subarray",
     "slug": "smallest-unique-subarray",

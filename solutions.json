@@ -1,5 +1,55 @@
 [
   {
+    "id": "3946",
+    "title": "Maximum Number of Items From Sale I",
+    "slug": "maximum-number-of-items-from-sale-i",
+    "date": "27 November 2026",
+    "dateIso": "2026-11-27",
+    "formattedDate": "27 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "27-November",
+    "problemFolder": "3946-Maximum-Number-of-Items-From-Sale-I",
+    "folderPath": "solutions/November/27-November/3946-Maximum-Number-of-Items-From-Sale-I",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/",
+    "youtubeUrl": "https://youtu.be/HmBehaLdruM",
+    "tags": [
+      "Dynamic Programming",
+      "Knapsack",
+      "Math",
+      "Number Theory"
+    ],
+    "summary": "Maximize total purchased and free item copies within budget where buying the first copy of an item grants free copies of items whose factor is divisible by it.",
+    "approach": "Precompute bonus free copies for buying each item once using pair-wise factor divisibility. Use 0/1 knapsack for the first purchase of each item (value = 1 + free copies), then unbounded knapsack buying extra copies of the cheapest item with remaining budget.",
+    "timeComplexity": "O(N^2 + N * budget)",
+    "auxiliarySpaceComplexity": "O(N + budget)",
+    "spaceComplexity": "O(N + budget)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/27-November/3946-Maximum-Number-of-Items-From-Sale-I/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/27-November/3946-Maximum-Number-of-Items-From-Sale-I/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/27-November/3946-Maximum-Number-of-Items-From-Sale-I/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/27-November/3946-Maximum-Number-of-Items-From-Sale-I/solution.js"
+      }
+    }
+  },
+  {
     "id": "3360",
     "title": "Stone Removal Game",
     "slug": "stone-removal-game",

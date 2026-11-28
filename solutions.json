@@ -1,5 +1,55 @@
 [
   {
+    "id": "3947",
+    "title": "Maximum Number of Items From Sale II",
+    "slug": "maximum-number-of-items-from-sale-ii",
+    "date": "28 November 2026",
+    "dateIso": "2026-11-28",
+    "formattedDate": "28 Nov 2026",
+    "year": "2026",
+    "month": "November",
+    "dayFolder": "28-November",
+    "problemFolder": "3947-Maximum-Number-of-Items-From-Sale-II",
+    "folderPath": "solutions/November/28-November/3947-Maximum-Number-of-Items-From-Sale-II",
+    "difficulty": "Medium",
+    "problemUrl": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/",
+    "youtubeUrl": "https://youtu.be/uhBSMI9ZJ0A",
+    "tags": [
+      "Greedy",
+      "Math",
+      "Number Theory",
+      "Sorting"
+    ],
+    "summary": "Maximize total purchased and free item copies within budget where each purchased copy unlocks at most one free divisible copy.",
+    "approach": "Precompute eligible multiples per factor using a harmonic sieve in O(N log N). Since value-2 copies are only beneficial when price < 2 * minPrice, greedily take value-2 copies in ascending price order, spending any leftover budget on the cheapest item.",
+    "timeComplexity": "O(N log N)",
+    "auxiliarySpaceComplexity": "O(N)",
+    "spaceComplexity": "O(N)",
+    "languages": {
+      "java": {
+        "name": "Java",
+        "file": "Solution.java",
+        "relativePath": "solutions/November/28-November/3947-Maximum-Number-of-Items-From-Sale-II/Solution.java"
+      },
+      "python": {
+        "name": "Python",
+        "file": "solution.py",
+        "relativePath": "solutions/November/28-November/3947-Maximum-Number-of-Items-From-Sale-II/solution.py"
+      },
+      "cpp": {
+        "name": "C++",
+        "file": "solution.cpp",
+        "relativePath": "solutions/November/28-November/3947-Maximum-Number-of-Items-From-Sale-II/solution.cpp"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "file": "solution.js",
+        "relativePath": "solutions/November/28-November/3947-Maximum-Number-of-Items-From-Sale-II/solution.js"
+      }
+    }
+  },
+  {
     "id": "3946",
     "title": "Maximum Number of Items From Sale I",
     "slug": "maximum-number-of-items-from-sale-i",

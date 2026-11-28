@@ -21,12 +21,12 @@
 
 | Metric | Count | Details |
 | :--- | :---: | :--- |
-| **Total Solved Problems** | **27** | Days 01 – 27 November completed (Active Series 🚀) |
+| **Total Solved Problems** | **28** | Days 01 – 28 November completed (Active Series 🚀) |
 | 🟢 **Easy Problems** | **8** | Problems #1385, #3736, #3105, #3364, #2243, #2124, #3411, #3360 |
-| 🟡 **Medium Problems** | **13** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524, #2914, #2567, #3331, #1352, #3946 |
+| 🟡 **Medium Problems** | **14** | Problems #453, #462, #2747, #1882, #1267, #3693, #3789, #1524, #2914, #2567, #3331, #1352, #3946, #3947 |
 | 🔴 **Hard Problems** | **6** | Problems #3505, #1606, #3420, #2911, #3041, #3934 |
 | 💻 **Language Coverage** | **100%** | Java, Python, C++, JavaScript for every single problem |
-| 🎥 **Video Walkthroughs** | **27 / 27** | YouTube solution walkthroughs attached |
+| 🎥 **Video Walkthroughs** | **28 / 28** | YouTube solution walkthroughs attached |
 
 ---
 
@@ -34,6 +34,7 @@
 
 | # | Problem Title | Difficulty | Date | Java | Python | C++ | JS | Video | Problem Folder |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **3947** | [Maximum Number of Items From Sale II](https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/) | <span style="color:#ffc400">**Medium**</span> | 28 Nov 2026 | [Java](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/Solution.java) | [Python](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/solution.py) | [C++](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/solution.cpp) | [JS](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/solution.js) | [Watch Video](https://youtu.be/uhBSMI9ZJ0A) | [📁 28-November](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/) |
 | **3946** | [Maximum Number of Items From Sale I](https://leetcode.com/problems/maximum-number-of-items-from-sale-i/) | <span style="color:#ffc400">**Medium**</span> | 27 Nov 2026 | [Java](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/Solution.java) | [Python](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/solution.py) | [C++](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/solution.cpp) | [JS](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/solution.js) | [Watch Video](https://youtu.be/HmBehaLdruM) | [📁 27-November](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/) |
 | **3360** | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | <span style="color:#00b8a3">**Easy**</span> | 26 Nov 2026 | [Java](./26-November/3360-Stone-Removal-Game/Solution.java) | [Python](./26-November/3360-Stone-Removal-Game/solution.py) | [C++](./26-November/3360-Stone-Removal-Game/solution.cpp) | [JS](./26-November/3360-Stone-Removal-Game/solution.js) | [Watch Video](https://youtu.be/Xg43IHEr838) | [📁 26-November](./26-November/3360-Stone-Removal-Game/) |
 | **3934** | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | <span style="color:#ff375f">**Hard**</span> | 25 Nov 2026 | [Java](./25-November/3934-Smallest-Unique-Subarray/Solution.java) | [Python](./25-November/3934-Smallest-Unique-Subarray/solution.py) | [C++](./25-November/3934-Smallest-Unique-Subarray/solution.cpp) | [JS](./25-November/3934-Smallest-Unique-Subarray/solution.js) | [Watch Video](https://youtu.be/u9HXwxzWzgw) | [📁 25-November](./25-November/3934-Smallest-Unique-Subarray/) |
@@ -66,6 +67,7 @@
 
 ## 📅 Date-Wise Directory Navigation
 
+- 📍 **[28 November 2026](./28-November/)**: [#3947 Maximum Number of Items From Sale II](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[27 November 2026](./27-November/)**: [#3946 Maximum Number of Items From Sale I](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/) — <span style="color:#ffc400">Medium</span>
 - 📍 **[26 November 2026](./26-November/)**: [#3360 Stone Removal Game](./26-November/3360-Stone-Removal-Game/) — <span style="color:#00b8a3">Easy</span>
 - 📍 **[25 November 2026](./25-November/)**: [#3934 Smallest Unique Subarray](./25-November/3934-Smallest-Unique-Subarray/) — <span style="color:#ff375f">Hard</span>
@@ -107,20 +109,20 @@
 - **Design**: [#1352](./23-November/1352-Product-of-the-Last-K-Numbers/)
 - **Dynamic Programming**: [#3946](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/), [#3331](./21-November/3331-Find-Subtree-Sizes-After-Changes/), [#3041](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3693](./10-November/3693-Climbing-Stairs-II/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
 - **Game Theory**: [#3360](./26-November/3360-Stone-Removal-Game/)
-- **Greedy**: [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Greedy**: [#3947](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/), [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Hash Table**: [#1267](./08-November/1267-Count-Servers-that-Communicate/), [#2747](./06-November/2747-Count-Zero-Request-Servers/)
 - **Heap (Priority Queue)**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Knapsack**: [#3946](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/)
-- **Math**: [#3946](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/), [#3360](./26-November/3360-Stone-Removal-Game/), [#3411](./24-November/3411-Maximum-Subarray-With-Equal-Products/), [#1352](./23-November/1352-Product-of-the-Last-K-Numbers/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
+- **Math**: [#3947](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/), [#3946](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/), [#3360](./26-November/3360-Stone-Removal-Game/), [#3411](./24-November/3411-Maximum-Subarray-With-Equal-Products/), [#1352](./23-November/1352-Product-of-the-Last-K-Numbers/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3789](./11-November/3789-Minimum-Cost-to-Acquire-Required-Items/), [#3736](./03-November/3736-Minimum-Moves-to-Equal-Array-Elements-III/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/), [#453](./01-November/453-Minimum-Moves-to-Equal-Array-Elements/)
 - **Matrix**: [#1267](./08-November/1267-Count-Servers-that-Communicate/)
 - **Monotonic Deque**: [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
-- **Number Theory**: [#3946](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/), [#3411](./24-November/3411-Maximum-Subarray-With-Equal-Products/)
+- **Number Theory**: [#3947](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/), [#3946](./27-November/3946-Maximum-Number-of-Items-From-Sale-I/), [#3411](./24-November/3411-Maximum-Subarray-With-Equal-Products/)
 - **Ordered Set**: [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/)
 - **Prefix Sum**: [#1352](./23-November/1352-Product-of-the-Last-K-Numbers/), [#1524](./15-November/1524-Number-of-Sub-arrays-With-Odd-Sum/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/)
 - **Rolling Hash**: [#3934](./25-November/3934-Smallest-Unique-Subarray/)
 - **Simulation**: [#3360](./26-November/3360-Stone-Removal-Game/), [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/), [#1606](./09-November/1606-Find-Servers-That-Handled-Most-Number-of-Requests/), [#1882](./07-November/1882-Process-Tasks-Using-Servers/)
 - **Sliding Window**: [#3411](./24-November/3411-Maximum-Subarray-With-Equal-Products/), [#3364](./14-November/3364-Minimum-Positive-Sum-Subarray/), [#3420](./13-November/3420-Count-Non-Decreasing-Subarrays-After-K-Operations/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#3505](./04-November/3505-Minimum-Operations-to-Make-Elements-Within-K-Subarrays-Equal/)
-- **Sorting**: [#3041](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/), [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
+- **Sorting**: [#3947](./28-November/3947-Maximum-Number-of-Items-From-Sale-II/), [#3041](./20-November/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification/), [#2567](./19-November/2567-Minimum-Score-by-Changing-Two-Elements/), [#2747](./06-November/2747-Count-Zero-Request-Servers/), [#1385](./05-November/1385-Find-the-Distance-Value-Between-Two-Arrays/), [#462](./02-November/462-Minimum-Moves-to-Equal-Array-Elements-II/)
 - **String**: [#2124](./22-November/2124-Check-if-All-As-Appears-Before-All-Bs/), [#3331](./21-November/3331-Find-Subtree-Sizes-After-Changes/), [#2914](./18-November/2914-Minimum-Number-of-Changes-to-Make-Binary-String-Beautiful/), [#2911](./17-November/2911-Minimum-Changes-to-Make-K-Semi-palindromes/), [#2243](./16-November/2243-Calculate-Digit-Sum-of-a-String/)
 - **String Hashing**: [#3934](./25-November/3934-Smallest-Unique-Subarray/)
 - **Tree**: [#3331](./21-November/3331-Find-Subtree-Sizes-After-Changes/)
